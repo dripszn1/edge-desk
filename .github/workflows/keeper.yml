@@ -1,0 +1,59 @@
+name: keeper
+
+# Backlog #21. GitHub cron has not fired once on this public repo, but workflow_dispatch works,
+# so this one cheap job (stdlib python, no pip) dispatches collect.yml every 30 min during
+# collect hours and live.yml during game windows, then re-dispatches itself before the 6 h job
+# limit. Only one keeper runs at a time. collect.yml restarts it if the chain ever breaks.
+# Read-only: never places or prepares orders.
+on:
+  schedule:
+    - cron: "5 */3 * * *"          # in case cron ever starts working; guard prevents doubles
+  workflow_dispatch:
+    inputs:
+      chained:
+        description: "Set by the previous keeper run when it re-dispatches itself"
+        required: false
+        default: "false"
+
+permissions:
+  contents: read
+  actions: write
+
+jobs:
+  guard:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    outputs:
+      go: ${{ steps.g.outputs.go }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: g
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          active=$(gh run list --repo "$GITHUB_REPOSITORY" --workflow keeper.yml --limit 20 \
+                     --json databaseId,status \
+                     -q "[.[] | select(.databaseId != ${GITHUB_RUN_ID}) | select(.status==\"in_progress\" or .status==\"queued\" or .status==\"pending\" or .status==\"waiting\")] | length" \
+                   || echo 0)
+          python3 -m edge_desk.keeper guard "${active:-0}" "${{ github.event.inputs.chained || 'false' }}"
+
+  keep:
+    needs: guard
+    if: needs.guard.outputs.go == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    concurrency:
+      group: keeper
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v4
+      - name: Keeper loop (dispatch collect / live as needed)
+        id: k
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 -m edge_desk.keeper loop
+      - name: Re-dispatch keeper
+        if: always() && steps.k.outputs.redispatch == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run keeper.yml --repo "$GITHUB_REPOSITORY" --ref "$GITHUB_REF_NAME" -f chained=true
