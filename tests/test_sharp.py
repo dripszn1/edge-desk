@@ -197,3 +197,13 @@ def test_gate_needs_30_bets_positive_t(tmp_path):
     assert sharp.gate(p)[0] is False
     pd.DataFrame({"status": "settled", "pnl": -pnl, "stake": 5.0}).to_csv(p, index=False)
     assert sharp.gate(p)[0] is False
+
+
+def test_far_tail_rungs_never_priced():
+    # Over 24.5 with a 44.5 sharp total is 20 points out: outside the backtested range, so even a
+    # "mispriced" far-tail rung (NO at 3c) is never flagged; the near rung still is.
+    far = _row("KXNFLTOTAL-26NOV12WASNYG-25", "KXNFLTOTAL", 24.5, 0.96, 0.97)
+    near = _row("KXNFLTOTAL-26NOV12WASNYG-45", "KXNFLTOTAL", 44.5, 0.38, 0.40)
+    flags, st = _flags(df=pd.DataFrame([far, near]))
+    assert all(not f["ticker"].endswith("-25") for f in flags)
+    assert st.get("rungs_out_of_range") == 1

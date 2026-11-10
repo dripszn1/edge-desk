@@ -71,6 +71,16 @@ jobs:
       - name: Scan for structural + model flags (NFL, CFB)
         if: steps.fresh.outputs.skip != 'true'
         run: python -m edge_desk.scan
+      - name: Phone alerts for new flags (ntfy; skips if no NTFY_TOPIC) + weekly Kalshi link check
+        if: steps.fresh.outputs.skip != 'true'
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          PUSHOVER_TOKEN: ${{ secrets.PUSHOVER_TOKEN }}
+          PUSHOVER_USER: ${{ secrets.PUSHOVER_USER }}
+        run: |
+          python -m edge_desk.alerts verify-url || true
+          python -m edge_desk.alerts
+        continue-on-error: true
       - name: Line-move lag (sharp moves vs Kalshi follow time -> data/odds/lag.csv)
         if: steps.fresh.outputs.skip != 'true'
         run: python -m edge_desk.lag

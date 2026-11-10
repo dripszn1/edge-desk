@@ -19,6 +19,7 @@ from pathlib import Path
 
 import pandas as pd
 
+from .alerts import kalshi_url
 from . import config, odds
 from .kickoffs import CT, to_ct
 
@@ -75,7 +76,8 @@ def _play_line(f: dict) -> str:
     contract = f"{f.get('side')} {f.get('leg1_desc') or f.get('ticker')}"
     return (f"- {f['_tag']}: {game} | {contract} @ {float(f['price']) * 100:.0f}¢, fair "
             f"{float(f['fair']) * 100:.0f}¢, edge {float(f['edge']) * 100:.1f}¢ after fees | "
-            f"${float(f['stake']):.2f} paper | {f.get('kickoff_ct') or to_ct(f.get('kickoff_utc'))}")
+            f"${float(f['stake']):.2f} paper | {f.get('kickoff_ct') or to_ct(f.get('kickoff_utc'))}"
+            f" | [Kalshi]({f.get('kalshi_url') or kalshi_url(f.get('ticker'), f.get('event_ticker'))})")
 
 
 def _load(path: Path) -> pd.DataFrame:

@@ -24,3 +24,15 @@ jobs:
           code=$(curl -s -o /tmp/c.json -w '%{http_code}' -H "Authorization: Bearer $KEY" "https://api.collegefootballdata.com/lines?year=2025&week=1&team=Texas")
           echo "HTTP $code"; python3 -c "import json;d=json.load(open('/tmp/c.json'));print('games:',len(d),'| books:',sorted({l['provider'] for g in d for l in g.get('lines',[])}))"
           [ "$code" = 200 ]
+      - name: ntfy test alert (skips if NTFY_TOPIC missing)
+        env: { TOPIC: "${{ secrets.NTFY_TOPIC }}" }
+        run: |
+          [ -z "$TOPIC" ] && { echo "NTFY_TOPIC missing - skipped"; exit 0; }
+          code=$(curl -s -o /dev/null -w '%{http_code}' \
+            -H "Title: edge-desk test 3 (PAPER, locked-phone check)" \
+            -H "Tags: white_check_mark" \
+            -H "Priority: high" \
+            -H "Click: https://kalshi.com/sports/football" \
+            -d "Alerts are wired up. Tap to open Kalshi football. Real flags will show contract, price, fair value, max price and size." \
+            "https://ntfy.sh/$TOPIC")
+          echo "ntfy HTTP $code"; [ "$code" = 200 ]

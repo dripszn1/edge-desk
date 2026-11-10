@@ -12,6 +12,7 @@ import pandas as pd
 
 from . import config
 from .kickoffs import to_ct
+from .alerts import kalshi_url
 from .scan import is_stale
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -73,9 +74,14 @@ def build(latest: dict, bets: pd.DataFrame, led: pd.DataFrame, now: datetime | N
     snap_ts = latest.get("snapshot_ts")
     stale = bool(latest.get("stale", True)) or is_stale(snap_ts, now)   # re-check at build time
     flags = [] if stale else [f for f in latest.get("flags", []) if f.get("phase", "pregame") == "pregame"]
+    for f in flags:
+        f.setdefault("kalshi_url", kalshi_url(str(f.get("leg1", "")).split(" ", 1)[-1], f.get("event_ticker")))
     today_bets = bets[bets["date_ct"] == today] if len(bets) else bets
     cols = ["date_ct", "league", "kind", "event", "leg1", "leg2", "sets", "stake", "fees", "pnl",
-            "status", "kickoff_ct"]
+            "status", "kickoff_ct", "kalshi_url"]
+    if len(today_bets):        # #18: a Kalshi link on every row
+        today_bets = today_bets.copy()
+        today_bets["kalshi_url"] = [kalshi_url(str(l).split(" ", 1)[-1]) for l in today_bets["leg1"]]
     return {
         "generated_ts": now.strftime("%Y-%m-%dT%H:%M:%SZ"),
         "generated_ct": to_ct(now.strftime("%Y-%m-%dT%H:%M:%SZ")),

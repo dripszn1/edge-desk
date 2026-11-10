@@ -162,6 +162,39 @@ def write_event_map(df: pd.DataFrame, path: Path = ROOT / "data" / "kickoffs" / 
     new.sort_values("event_ticker").to_csv(path, index=False)
 
 
+def flag_key(f: dict) -> tuple:
+    """One contract (or two-leg set) per signal: the dedupe key for logs and alerts (#16/#17)."""
+    return (f.get("kind"), f.get("leg1"), f.get("leg2") if f.get("kind") in ("LADDER", "EXCLUSIVE", "COVER") else None)
+
+
+def with_url(flags: list[dict]) -> list[dict]:
+    """#18: every flag record carries its Kalshi page (same builder as the phone alerts)."""
+    from .alerts import kalshi_url
+    tmpl = None
+    for f in flags:
+        if not f.get("kalshi_url"):
+            if tmpl is None:
+                from .alerts import load_url_format
+                tmpl = load_url_format()
+            tick = f.get("ticker") or str(f.get("leg1") or "").split(" ", 1)[-1]
+            f["kalshi_url"] = kalshi_url(tick, f.get("event_ticker"), tmpl)
+    return flags
+
+
+def new_only(flags: list[dict], seen: set | None) -> list[dict]:
+    """Flags not logged before in this live session. `seen=None` keeps them all (batch runs).
+    Marks the returned flags as seen, so a contract is logged once however often it re-appears."""
+    if seen is None:
+        return flags
+    out = []
+    for f in flags:
+        k = flag_key(f)
+        if k not in seen:
+            seen.add(k)
+            out.append(f)
+    return out
+
+
 def _append_csv(rows: list[dict], out: Path) -> None:
     if not rows:
         return
@@ -185,7 +218,7 @@ def lost_today(ledger: Path = ROOT / "data" / "paper_ledger.csv", now: datetime 
 RESULT_LOADERS = {"NFL": nfl_results.load, "CFB": cfb_results.load}
 
 
-def run_model(df: pd.DataFrame, ts: str | None, leagues=("NFL", "CFB")) -> dict:
+def run_model(df: pd.DataFrame, ts: str | None, leagues=("NFL", "CFB"), seen: set | None = None) -> dict:
     """MODEL flags per league. Live only if that league's backtest gate is open; else shadow.
     Leagues share one daily loss cap: each league only gets what the earlier ones left."""
     out = {"status": {}, "live": [], "shadow": []}
@@ -193,19 +226,21 @@ def run_model(df: pd.DataFrame, ts: str | None, leagues=("NFL", "CFB")) -> dict:
     for lg in leagues:
         try:
             flags, status = model.model_flags(df, RESULT_LOADERS[lg](), ts, lost_today=lost, league=lg)
+            flags = with_url(flags)
         except Exception as e:   # one league's bug must not block the other
             flags, status = [], {"ok": False, "reason": f"error: {e}"}
         is_open, why = model.gate(league=lg)
         status["gate"] = why
         out["status"][lg] = status
-        _append_csv(flags, FLAG_DIR / ("model_flags.csv" if is_open else "model_shadow.csv"))
+        _append_csv(new_only(flags, seen), FLAG_DIR / ("model_flags.csv" if is_open else "model_shadow.csv"))
         out["live" if is_open else "shadow"].extend(flags)
         if is_open:
             lost += sum(f["stake"] for f in flags)   # live stakes use up today's room
     return out
 
 
-def run_sharp(df: pd.DataFrame, ts: str | None, lost: float | None = None, leagues=("NFL", "CFB")) -> dict:
+def run_sharp(df: pd.DataFrame, ts: str | None, lost: float | None = None, leagues=("NFL", "CFB"),
+              seen: set | None = None) -> dict:
     """SHARP flags (Kalshi vs sharp sportsbook line), per league. Live only if that league's gate
     is open; else shadow. Leagues share one daily loss cap."""
     lost = lost_today() if lost is None else lost
@@ -214,32 +249,42 @@ def run_sharp(df: pd.DataFrame, ts: str | None, lost: float | None = None, leagu
     for lg in leagues:
         try:
             flags, status = sharp.sharp_flags(df, lines, sharp.history(lg), ts, lost_today=lost, league=lg)
+            flags = with_url(flags)
         except Exception as e:   # never lose other flags over a SHARP bug
             flags, status = [], {"ok": False, "reason": f"error: {e}"}
         is_open, why = sharp.gate(league=lg)
         status["gate"] = why
         out["status"][lg] = status
-        _append_csv(flags, sharp.LIVE if is_open else sharp.SHADOW)
+        _append_csv(new_only(flags, seen), sharp.LIVE if is_open else sharp.SHADOW)
         out["live" if is_open else "shadow"].extend(flags)
         if is_open:
             lost += sum(f["stake"] for f in flags)
     return out
 
 
-def run() -> list[dict]:
-    df, ts = latest_snapshot()
+def run(df: pd.DataFrame | None = None, ts: str | None = None, seen: set | None = None,
+        partial: bool = False) -> list[dict]:
+    """Scan one snapshot. Batch runs read the newest snapshot file. The live loop (#16) passes its
+    in-memory frame (every row from ONE pass, one snapshot_ts), a `seen` set so each contract is
+    logged once, and `partial=True` for hot-games-only passes (event map / latest.json untouched)."""
+    if df is None:
+        df, ts = latest_snapshot()
     FLAG_DIR.mkdir(parents=True, exist_ok=True)
     stale = is_stale(ts)
     df = kickoffs.tag_kalshi(df, ts)   # Kalshi's own clock; ESPN no longer needed
-    flags = [] if stale else scan(df)
-    write_event_map(df)
-    _append_csv(flags, FLAG_DIR / "flags.csv")
+    flags = [] if stale else with_url(scan(df))
+    if not partial:
+        write_event_map(df)
+    _append_csv(new_only(flags, seen), FLAG_DIR / "flags.csv")
     try:
-        m = run_model(df, ts)
+        m = run_model(df, ts, seen=seen)
     except Exception as e:   # never lose structural flags over a model bug
         m = {"status": {"error": str(e)}, "live": [], "shadow": []}
     live_model = sum(f["stake"] for f in m["live"])
-    sh = run_sharp(df, ts, lost_today() + live_model)
+    sh = run_sharp(df, ts, lost_today() + live_model, seen=seen)
+    run.last = {"flags": flags, "model": m, "sharp": sh}
+    if partial:
+        return flags
     (FLAG_DIR / "latest.json").write_text(json.dumps(
         {"snapshot_ts": ts, "stale": stale, "markets_scanned": int(len(df)),
          "kickoff_source": "kalshi occurrence_datetime - 3h",
