@@ -39,9 +39,12 @@ LOG_COLS = ["key", "type", "kind", "title", "ticker", "price", "max_price", "edg
             "quote_utc", "detected_utc", "sent_utc", "detect_to_send_s", "quote_to_send_s", "channels"]
 
 # candidate templates, checked in this order by `verify-url` inside Actions
-URL_TEMPLATES = ["https://kalshi.com/markets/{series}/{event}",
-                 "https://kalshi.com/markets/{event}"]
-FALLBACK_TEMPLATE = "https://kalshi.com/markets/{series}"
+# Kalshi's real web format is /markets/{series}/{any-slug}/{event} (verified 2026-11-10 from live
+# kalshi.com pages, e.g. /markets/kxnflspread/pro-football-spread/kxnflspread-26oct25kcsea and
+# /markets/kxnhlspread/event/kxnhlspread-26oct30seacgy: the middle slug is free text).
+# The series-only page errors on Kalshi, so it is never used as a fallback.
+URL_TEMPLATES = ["https://kalshi.com/markets/{series}/event/{event}"]
+FALLBACK_TEMPLATE = URL_TEMPLATES[0]  # never the series-only page (it errors)
 
 
 def _utc(t) -> datetime:
@@ -62,7 +65,8 @@ def series_of(ticker: str | None) -> str:
 def load_url_format(path: Path | None = None) -> str:
     try:
         j = json.loads((path or URL_FORMAT).read_text())
-        return j.get("template") or URL_TEMPLATES[0]
+        t = j.get("template") or URL_TEMPLATES[0]
+        return t if "{event}" in t else URL_TEMPLATES[0]
     except Exception:  # noqa: BLE001 - unverified -> default
         return URL_TEMPLATES[0]
 
