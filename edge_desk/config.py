@@ -27,3 +27,16 @@ ESPN_STALE_MINUTES = 90    # kickoff data older than this -> phase unknown -> no
 PREGAME_MIN_LEAD_MINUTES = 10  # flag only if kickoff is at least this far after the snapshot
 
 TIMEZONE = "America/Chicago"
+
+# Game-day live mode (backlog #16, .github/workflows/live.yml). Cadence/budget settings, not risk limits.
+LIVE_SNAPSHOT_SECONDS = 30        # target loop cadence
+LIVE_SLOW_SECONDS = 120           # if a full pass is too slow: full pass this often, hot games every 30 s
+LIVE_HOT_HOURS = 3                # "hot" = kickoff within this many hours
+LIVE_MAX_BACKOFF_SECONDS = 120    # cadence ceiling while Kalshi returns 429
+LIVE_PERSIST_MINUTES = 15         # write a full snapshot to data/snapshots this often (collect.yml then skips)
+LIVE_COMMIT_MINUTES = 15          # grade/digest + git commit this often
+LIVE_ODDS_CHECK_MINUTES = 10      # ask odds.plan_pulls this often (budgeted; most checks pull nothing)
+LIVE_ODDS_NEAR_HOURS = 1.5        # "near kickoff" for the faster odds interval
+LIVE_MAX_RUN_MINUTES = 330        # exit before GitHub's 6 h job limit, then re-dispatch
+LIVE_EARLY_START_MINUTES = 15     # a run fired this close before a window waits for it
+LIVE_MINUTES_BUDGET_MONTH = 15000 # Actions minutes for live.yml per month (windows ~ 14,000 min)

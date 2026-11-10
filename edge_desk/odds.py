@@ -178,8 +178,12 @@ def remaining(state: dict, now) -> int:
     return int(state["remaining"])
 
 
-def plan_pulls(state: dict, now, next_kickoff: dict) -> list[str]:
-    """Which leagues to pull now. `next_kickoff[league]` = soonest upcoming commence (or None)."""
+def plan_pulls(state: dict, now, next_kickoff: dict, near_h: float | None = None,
+               near_interval_h: float | None = None) -> list[str]:
+    """Which leagues to pull now. `next_kickoff[league]` = soonest upcoming commence (or None).
+    Live mode (#16) passes near_h/near_interval_h: a league whose kickoff is within near_h may be
+    pulled every near_interval_h instead of GAMEDAY_INTERVAL_H. The reserve and the daily
+    allowance still apply, so the monthly plan can't be overspent."""
     now = _ts(now)
     left = remaining(state, now) - ODDS_RESERVE
     base = max(left, 0) / days_left_in_month(now)
@@ -196,6 +200,8 @@ def plan_pulls(state: dict, now, next_kickoff: dict) -> list[str]:
             continue                                       # nothing upcoming -> nothing to price
         gd = soon(lg)
         interval = GAMEDAY_INTERVAL_H if gd else IDLE_INTERVAL_H
+        if near_h is not None and near_interval_h is not None and (_ts(k) - now).total_seconds() <= near_h * 3600:
+            interval = min(interval, near_interval_h)
         last = state.get("last_pull", {}).get(lg)
         if last and (now - _ts(last)).total_seconds() < interval * 3600:
             continue
@@ -272,14 +278,14 @@ def next_kickoffs(key: str, now) -> dict:
     return out
 
 
-def run(now=None) -> list[str]:
+def run(now=None, near_h: float | None = None, near_interval_h: float | None = None) -> list[str]:
     key = os.environ.get("ODDS_API_KEY", "").strip()
     if not key:
         print("odds: ODDS_API_KEY not set, skipping (no sharp-line data this run)")
         return []
     now = _ts(now or datetime.now(timezone.utc))
     state = load_state()
-    plan = plan_pulls(state, now, next_kickoffs(key, now))
+    plan = plan_pulls(state, now, next_kickoffs(key, now), near_h, near_interval_h)
     print(f"odds: credits left ~{remaining(state, now)}, spent today {spent_today(state, now)}, plan {plan or 'none'}")
     for lg in plan:
         try:
