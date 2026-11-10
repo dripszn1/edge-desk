@@ -1,0 +1,26 @@
+name: check-keys
+# Verifies ODDS_API_KEY and CFBD_API_KEY work. Never prints the keys.
+on:
+  workflow_dispatch: {}
+  push:
+    branches: [dev]
+    paths: [".github/workflows/check-keys.yml"]
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: The Odds API (free endpoint, costs no quota)
+        env: { KEY: "${{ secrets.ODDS_API_KEY }}" }
+        run: |
+          [ -z "$KEY" ] && { echo "ODDS_API_KEY missing"; exit 1; }
+          code=$(curl -s -o /tmp/o.json -D /tmp/h.txt -w '%{http_code}' "https://api.the-odds-api.com/v4/sports?apiKey=$KEY")
+          echo "HTTP $code"; grep -i 'x-requests-remaining' /tmp/h.txt || true
+          python3 -c "import json;d=json.load(open('/tmp/o.json'));print('sports listed:',len(d),'| NFL:',any(s['key']=='americanfootball_nfl' for s in d),'| CFB:',any(s['key']=='americanfootball_ncaaf' for s in d))"
+          [ "$code" = 200 ]
+      - name: CollegeFootballData
+        env: { KEY: "${{ secrets.CFBD_API_KEY }}" }
+        run: |
+          [ -z "$KEY" ] && { echo "CFBD_API_KEY missing"; exit 1; }
+          code=$(curl -s -o /tmp/c.json -w '%{http_code}' -H "Authorization: Bearer $KEY" "https://api.collegefootballdata.com/lines?year=2025&week=1&team=Texas")
+          echo "HTTP $code"; python3 -c "import json;d=json.load(open('/tmp/c.json'));print('games:',len(d),'| books:',sorted({l['provider'] for g in d for l in g.get('lines',[])}))"
+          [ "$code" = 200 ]

@@ -1,0 +1,45 @@
+# Rules for any Claude agent working in edge-desk
+
+Scope: **NFL + CFB only.** Don't add CBB or other leagues unless Emerson says so.
+
+Read SPEC.md first. It is the contract; this file is how to work.
+
+## Never
+- Place, simulate-submit, or prepare live orders on Kalshi or anywhere else. Read-only data only.
+- Loosen a risk limit in `edge_desk/config.py` (bankroll, MAX_BET, DAILY_LOSS_CAP, DRAWDOWN_STOP, PAPER_MODE) without Emerson's written OK in chat.
+- Push to `main`. Overnight work goes to the `dev` branch; Emerson merges.
+- Delete data in `data/`.
+
+## Always
+- Run `python -m pytest -q` before every commit. Red tests = no commit.
+- Every new signal ships with a test that fails until fees, stale data, and look-ahead are handled.
+- Store times in UTC; show them in America/Chicago.
+- Note: Claude's cloud workspace cannot reach Kalshi. Live data arrives via the GitHub Actions
+  workflow (`.github/workflows/collect.yml`), committed to `data/`. Build and test against those snapshots.
+
+## Morning report
+End every overnight run by appending to `REPORTS.md` (newest on top):
+date, what shipped, tests status, what broke, what needs Emerson. Five bullets max.
+
+## Backlog
+Work strictly top-down; one item finished beats three half-done.
+- [x] 1. Collector + Actions workflow
+- [x] 2. Structural scanner (ladder / exclusive / cover) + paper log
+- [x] 3. Kickoff times: pull ESPN scoreboard (NFL, CFB, CBB) in the workflow, join to Kalshi events, tag each market pregame/live; scanner flags pregame only by default
+- [x] 4. Grader: settle paper flags from Kalshi `result` fields in later snapshots; daily P&L after fees in `data/paper_ledger.csv`
+- [x] 5. Dashboard data: `data/dashboard.json` (today's flags, record, P&L, by league/signal)
+- [x] 5b. Kickoffs now come from Kalshi (`occurrence_datetime` − 3h), not ESPN: 447/447 NFL+CFB events tagged. CBB parked (scope is NFL + CFB until an edge is proven). `espn.py` is kept but unused.
+- [x] 6. Team-rating model, NFL first: margin + total projections from public results → fair prob per rung → MODEL flags at MIN_MODEL_EDGE, with walk-forward backtest
+- [x] 6a. Result: on 2018–25 the model loses to closing lines (−4.0¢/contract after fees, t=−4.07), so MODEL flags are gated to `data/flags/model_shadow.csv` until the backtest shows >0 with t≥2 (`model.gate`). Shadow flags vs real Kalshi prices still need grading.
+- [x] 7. Extend model to CFB (cfbfastR-data schedules, FBS-vs-FBS only, name matching 134/134 on the 11-10 snapshot). Gate stays closed: that source has no closing lines, so no market benchmark yet; flags go to shadow.
+- [x] 8. Weekly skill-or-luck report (t-stat, 10,000 coin-flip sims, edge by week) → `data/weekly_report.json`, for paper bets and for MODEL shadow bets (now graded against real Kalshi results in `data/model_shadow_bets.csv`). Verdict needs ≥30 settled bets.
+- [x] 9. Hard rules from a betting-history review: never flag parlays/combos, crypto markets, or any contract priced above 90c.
+- [x] 10. Sharp-line fair value (`edge_desk/odds.py`, workflow step before the snapshot; budget sim: ~470 of 500 credits/month, never below a 25-credit reserve; Pinnacle else sharp consensus at the modal point; stale >6h / look-ahead / in-play quotes dropped). Original ask: TOP PRIORITY. pull sportsbook odds (The Odds API, secret `ODDS_API_KEY`, NFL + CFB, spreads/totals/h2h, prefer Pinnacle, else a de-vigged consensus of sharp books) inside the Actions workflow, on a request budget that fits the free tier (500 req/mo: e.g. a few pulls per day, more on game days, cache everything to data/odds/). Remove the vig to get fair probabilities. If the secret is missing, the step must skip cleanly (workflow stays green).
+- [x] 11. Kalshi vs sharp (`edge_desk/sharp.py`): SHARP flags shadow-logged to `data/flags/sharp_shadow.csv`, graded into `data/sharp_shadow_bets.csv`, gate opens at ≥30 settled, P&L>0, t≥2. Rung pricing backtest 2018–25 (`data/model/sharp_backtest.json`): empirical key-number spread distribution beats a normal curve (log loss 0.6146 vs 0.6169; mass on exactly 3 at −3 is 8.6% vs normal's 3.0%); for totals the empirical version lost in both 2012–17 and 2018–25, so totals use a normal with fitted SD. NFL only until #13. Calibration ≠ edge: the real test is the shadow record vs Kalshi prices.
+- [x] 12. Line-move lag (`edge_desk/lag.py`, runs after the scan; verdict in `data/odds/lag_summary.json` once ≥10 moves are seen; lag is measured from when we *detect* the move, since pulls are hours apart). Original ask: Line-move lag: when the sharp line moves ≥1 pt between snapshots, measure how long Kalshi's matching rungs take to follow; log lag stats in data/odds/lag.csv. Report whether a timing edge exists.
+- [x] 13. CFB market data (`edge_desk/cfb_lines.py`: full history once, then current season every 12h, ~120 of 1,000 free calls/month; consensus line else provider median; attached to CFB games by game id; CFB MODEL backtest re-runs as soon as lines appear; SHARP now covers CFB with school-name prefix matching, ambiguous → no match). Unverified until the first Actions run with the key: real CFBD field names and Odds API CFB team spellings. Original ask: CFB market data: CollegeFootballData API (secret `CFBD_API_KEY`) for historical CFB closing lines → benchmark the CFB model and the SHARP method for CFB. Skip cleanly if the secret is missing.
+- [x] 14. Game-day digest (`edge_desk/digest.py`, last workflow step before commit). Rebuilt every run, so the recap reads "since the last digest" as the last 24h; stale Kalshi data → no plays shown. Original ask: Game-day digest (needed before Sat 11/14): generator `python -m edge_desk.digest` run in the Actions workflow, writing `data/digest.md` (newest) + `data/digests/<date>.md`. Content, plain language, times in CT: (a) upcoming slate within 36h: every SHARP/MODEL shadow play it *would* make: game, contract, Kalshi price, fair price, edge in ¢, paper size, kickoff CT; "no plays" is a valid answer; (b) recap of shadow/paper bets graded since the last digest: W/L, P&L after fees, running record; (c) one-line status: odds credits left, data freshness, gate open/closed. Under 25 lines. A separate scheduled task (not the builder) reads `data/digest.md` and pings Emerson.
+- [x] 15. Collector reliability (`edge_desk/fresh.py` stdlib guard right after checkout; backup cron at :15; worst case ~1,440 billed min/month; digest status shows Kalshi data age + STALE). Original ask: Collector reliability: GitHub cron skips/delays slots. Add a second offset schedule (e.g. minutes 15,45) and make collect/scan skip when the latest snapshot is <20 min old, so slots are covered without duplicate data. Add a freshness check to the digest status line. Keep total Actions minutes within the free 2,000/month.
+- [ ] 16. TOP PRIORITY (before Sat 11/14). Game-day live mode: a second workflow `live.yml` that, during game windows (CT: Tue/Wed/Thu/Fri 5:30–11:30 PM for MACtion/TNF, Sat 10 AM–11:30 PM, Sun 11 AM–10:30 PM, Mon 6–11:30 PM), runs ONE long job that loops: Kalshi snapshot every 2 min, sharp odds every N min (N from config, sized to the Odds API plan: free tier → only near kickoffs), scan + SHARP/MODEL after each snapshot, commit data every ~15 min, exits before the 6h job limit (chain a re-dispatch of itself via `workflow_dispatch` with the built-in GITHUB_TOKEN if the window continues). Kick-off: scheduled cron at window start + a backup cron 20 min later that exits if a live run is already active. Respect an Actions-minutes budget from config (`LIVE_MINUTES_BUDGET_MONTH`); log minutes used in data/live_log.csv.
+- [ ] 17. Instant phone alerts via ntfy.sh (secret `NTFY_TOPIC`; skip cleanly if missing): when a SHARP/MODEL/structural flag first appears (dedupe per contract), push within the same loop iteration: title "PAPER" or "LIVE" (LIVE only when that signal's gate is open), body = game, contract in plain words, Kalshi ask, fair price, edge ¢, max price to pay (fair − fee − MIN_MODEL_EDGE), size in $ and contracts, kickoff CT; click action = direct Kalshi market URL. Verify the URL format against a real market inside Actions (HTTP 200) and fall back to the event page. Also push when a flagged price moves past the max price ("gone, don't chase"). Never more than 1 push per contract; respect daily cap.
+- [ ] 18. Kalshi link in every flag record, digest line and dashboard row (same URL builder as #17).

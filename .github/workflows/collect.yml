@@ -1,0 +1,106 @@
+name: collect-and-scan
+
+# Every 30 min, 8am-11pm Central (14:00-05:30 UTC), plus an hourly :15 backup slot because
+# GitHub drops/delays many scheduled runs. A slot that lands < 20 min after the latest snapshot
+# exits right after checkout (no duplicate data). Worst case if every slot fires:
+# 48 runs/day x ~1 billed min x 30 = ~1,440 min/month, inside the free 2,000. Read-only: never places orders.
+on:
+  schedule:
+    - cron: "*/30 14-23,0-5 * * *"
+    - cron: "15 14-23,0-5 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: collect
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Freshness guard (scheduled runs skip if the latest snapshot is < 20 min old)
+        id: fresh
+        if: github.event_name == 'schedule'
+        run: python3 -m edge_desk.fresh 20
+      - uses: actions/setup-python@v5
+        if: steps.fresh.outputs.skip != 'true'
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: pip install -r requirements.txt
+        if: steps.fresh.outputs.skip != 'true'
+      - name: Tests (must pass before any data is used)
+        if: steps.fresh.outputs.skip != 'true'
+        run: python -m pytest -q
+      - name: NFL public results (nflverse; refetch if >12h old) - before the snapshot, so no look-ahead
+        if: steps.fresh.outputs.skip != 'true'
+        run: python -m edge_desk.nfl_results 12
+        continue-on-error: true   # missing/old results -> model makes no flags (fails safe)
+      - name: CFB public results (cfbfastR-data schedules; refetch if >12h old)
+        if: steps.fresh.outputs.skip != 'true'
+        run: python -m edge_desk.cfb_results 12
+        continue-on-error: true   # missing/old results -> model makes no flags (fails safe)
+      - name: CFB closing lines (CollegeFootballData; skips if no CFBD_API_KEY) - market benchmark only
+        if: steps.fresh.outputs.skip != 'true'
+        run: python -m edge_desk.cfb_lines
+        env:
+          CFBD_API_KEY: ${{ secrets.CFBD_API_KEY }}
+        continue-on-error: true
+      - name: Model walk-forward backtests (weekly per league; sets each league's gate)
+        if: steps.fresh.outputs.skip != 'true'
+        run: python -m edge_desk.backtest --if-stale NFL CFB
+        continue-on-error: true
+      - name: SHARP rung-pricing backtest (closing line -> fair rungs -> outcomes; data/model/sharp_backtest.json)
+        if: steps.fresh.outputs.skip != 'true'
+        run: python -m edge_desk.sharp
+        continue-on-error: true
+      - name: Sharp sportsbook odds (The Odds API; budgeted to the free tier, skips if no key) - before the snapshot, so no look-ahead
+        if: steps.fresh.outputs.skip != 'true'
+        run: python -m edge_desk.odds
+        env:
+          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+        continue-on-error: true   # missing key / API down -> no sharp data, workflow stays green
+      - name: Collect Kalshi snapshot
+        if: steps.fresh.outputs.skip != 'true'
+        run: python -m edge_desk.collect
+      - name: Scan for structural + model flags (NFL, CFB)
+        if: steps.fresh.outputs.skip != 'true'
+        run: python -m edge_desk.scan
+      - name: Line-move lag (sharp moves vs Kalshi follow time -> data/odds/lag.csv)
+        if: steps.fresh.outputs.skip != 'true'
+        run: python -m edge_desk.lag
+        continue-on-error: true
+      - name: Fetch Kalshi results for flagged tickers
+        if: steps.fresh.outputs.skip != 'true'
+        run: python -m edge_desk.settle
+        continue-on-error: true   # missing results -> bets stay pending
+      - name: Grade paper flags (P&L after fees -> data/paper_ledger.csv) + model shadow bets
+        if: steps.fresh.outputs.skip != 'true'
+        run: python -m edge_desk.grade
+        continue-on-error: true   # never lose the Kalshi snapshot over a grading bug
+      - name: Skill-or-luck report (data/weekly_report.json; paper + model shadow)
+        if: steps.fresh.outputs.skip != 'true'
+        run: python -m edge_desk.weekly
+        continue-on-error: true
+      - name: Dashboard data (data/dashboard.json)
+        if: steps.fresh.outputs.skip != 'true'
+        run: python -m edge_desk.dashboard
+        continue-on-error: true   # never lose the Kalshi snapshot over a grading bug
+      - name: Game-day digest (data/digest.md, read by the alert task)
+        if: steps.fresh.outputs.skip != 'true'
+        run: python -m edge_desk.digest
+        continue-on-error: true
+      - name: Commit data
+        if: steps.fresh.outputs.skip != 'true'
+        run: |
+          git config user.name "edge-desk-bot"
+          git config user.email "edge-desk-bot@users.noreply.github.com"
+          git add data
+          git diff --cached --quiet && exit 0
+          git commit -m "data: snapshot $(date -u +%Y-%m-%dT%H:%MZ)"
+          for i in 1 2 3; do git pull --rebase -q && git push -q && break; sleep 5; done

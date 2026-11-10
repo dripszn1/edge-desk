@@ -1,0 +1,38 @@
+{
+  "league": "CFB",
+  "run_ts": "2026-11-10T15:19:43Z",
+  "tuned_on": [
+    2016,
+    2021
+  ],
+  "tested_on": [
+    2022,
+    2025
+  ],
+  "params": {
+    "half_life_days": 240.0,
+    "ridge": 0.1,
+    "sd_margin": 16.9,
+    "sd_total": 17.7
+  },
+  "live_params": {
+    "half_life_days": 240.0,
+    "ridge": 0.1,
+    "sd_margin": 16.9,
+    "sd_total": 17.7
+  },
+  "min_model_edge": 0.03,
+  "half_spread": 0.01,
+  "test": {
+    "games": 14832,
+    "mae_margin_model": 13.022,
+    "mae_total_model": 13.583,
+    "mae_margin_closing_line": null,
+    "mae_total_closing_line": null,
+    "proxy": {
+      "SPREAD": {},
+      "TOTAL": {},
+      "ALL": {}
+    }
+  }
+}

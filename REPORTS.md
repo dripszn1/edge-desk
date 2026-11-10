@@ -1,0 +1,36 @@
+# Reports (newest first)
+
+## 2026-11-10 (afternoon builder run)
+- Shipped to `dev`, backlog #10–#15, all ticked: sharp odds from The Odds API on a free-tier budget (simulated month: ~470 of 500 credits, never below a 25-credit reserve); SHARP signal (Kalshi rungs priced off the sharp line, fees in, shadow-gated per league, NFL + CFB); line-move lag study; CFB closing lines from CollegeFootballData; game-day digest `data/digest.md` (plays in the next 36h, 24h recap, status line); backup :15 cron with a 20-min freshness guard. No risk limits changed; nothing places orders.
+- Tests: 161/161 green (70 new). Each guard (odds fetched after the snapshot, stale odds >6h, in-play quotes, future games in the rung distribution, fees, 90¢ cap, daily cap, one per event) has a test that fails if it's removed. I checked two of these by breaking the guard and watching the tests go red.
+- Honest results: the rung-pricing method was backtested walk-forward on NFL 2018–25 (2,227 games). The empirical key-number spread distribution beats a normal curve (log loss 0.6146 vs 0.6169; at −3 it puts 8.6% on exactly 3, vs 3.0% for the normal). For totals the empirical version lost in both 2012–17 and 2018–25, so totals use a fitted normal. This shows the rung prices are calibrated, **not that there is an edge**. Edge has to come from the shadow record against real Kalshi prices (gate: ≥30 settled, P&L>0, t≥2).
+- Broke / watch: the collect schedule is barely firing. Since the 30-min cron went live there has been 1 scheduled run (12:53Z); the other 5 runs were manual. The backup cron won't help if GitHub keeps dropping slots. Unverified until the first Actions run with the keys: real CFBD field names, and how The Odds API spells CFB team names (check `events_no_sharp_line` in `data/flags/latest.json`). The CFB MODEL gate could open once CFBD lines arrive (it re-runs automatically), and live MODEL/SHARP flags still aren't wired into the paper ledger.
+- Needs Emerson: (1) merge the dev→main PR (scheduled runs only use `main`). (2) Confirm the `ODDS_API_KEY` and `CFBD_API_KEY` secrets exist (run the `check-keys` workflow). (3) Decide on a more reliable trigger than GitHub cron, e.g. an external ping to `workflow_dispatch`. (4) Point the alert task at `data/digest.md` before Saturday.
+
+## 2026-11-10 (daytime builder run)
+- Shipped to `dev`: #7 CFB model (public cfbfastR-data schedules fetched in Actions, FBS-vs-FBS only, name matching 134/134 Kalshi CFB events on today's snapshot) and #8 skill-or-luck report (`data/weekly_report.json`: t-stat, 10,000 coin-flip replays, edge by week). Shadow MODEL flags are now graded against real Kalshi results (`data/model_shadow_bets.csv`), which is the first test of the model against Kalshi's own prices. Also enforced your audit rule: no contract above 90¢ is ever flagged (`MAX_FLAG_PRICE = 0.90`, stricter; no limits loosened).
+- Tests: 91/91 green (21 new). The first `main` run of #6 matched the local backtest exactly: −4.0¢/contract, t=−4.07, NFL gate closed, 5 shadow flags.
+- CFB result: walk-forward 2022–25 FBS games, margin MAE 12.7 / total MAE 13.1. The source has no closing lines, so there's no market benchmark and the CFB gate stays closed. Both leagues' flags go to shadow only.
+- Broke / watch: results CSVs are now rewritten only when the data changes, with the fetch time kept in a `*_fetched.json` sidecar. `data/nfl/games.csv` migrates on its next refetch (within 12h). If the gate ever opens, live MODEL flags aren't wired into the paper ledger yet; that has to land before any gate opens.
+- Needs Emerson: merge `dev` → `main`. The backlog is empty after this. Suggested next: give the shadow log ~2 weeks (needs ≥30 settled bets for a verdict), and find a CFB closing-line source so the CFB gate can be tested.
+
+## 2026-11-10 (overnight builder, night 3)
+- Shipped backlog #6 to `dev`: NFL team-rating model (offence/defence ratings from nflverse public scores, fetched in Actions) → projected margin + total → fair prob per Kalshi spread/total rung → MODEL flags at 3¢ after fees, quarter Kelly, $10 cap, one per event, combined stakes ≤ the $20 daily cap. Walk-forward backtest tuned on 2012–17, tested on 2018–25.
+- Verdict: **no edge**. The model is less accurate than closing lines (margin MAE 10.28 vs 9.83) and, buying Kalshi-style rungs priced off the closing line, loses −4.0¢/contract after fees (2,461 bets, t = −4.07). It adds nothing beyond the line (correlation 0.00 with line errors). So MODEL flags are **gated**: they're logged to `data/flags/model_shadow.csv`, not alerted, until the backtest shows >0 with t ≥ 2. No risk limits changed.
+- Tests: 70/70 green (18 new: look-ahead, results fetched after the snapshot, stale/lagging results feed, fees at order size, daily cap, one flag per event, gate). Breaking any guard turns 8 of them red.
+- Broke / unverified: the backtest uses sportsbook closing lines as a stand-in for Kalshi prices (we have no Kalshi price history yet). Shadow flags against real Kalshi prices aren't graded yet (the grader only handles two-leg flags). Today's shadow run would have backed totals ~7 points above Kalshi's line, which points to missing injury/QB news, not an edge.
+- Needs Emerson: review `dev` and merge it into `main` so Actions starts fetching NFL results and writes `data/model/nfl_backtest.json`. Decide whether #7 (CFB) is worth building given this result. CFB lines are softer, so it's the better bet for an edge, but it needs a CFB results feed pulled in Actions.
+
+## 2026-11-10 (overnight builder)
+- Shipped backlog #3–5 to `dev`: ESPN kickoffs joined to Kalshi events with pregame/live/unknown tags (scanner flags pregame only, kickoff shown in CT); grader settling paper flags from Kalshi results with fees recomputed per leg, daily cap + drawdown stop → `data/paper_ledger.csv`; `data/dashboard.json`.
+- Tests: 46/46 green locally (was 12). New tests cover stale ESPN/snapshot data, look-ahead (ESPN or results fetched after the snapshot are refused), and fees on every leg.
+- Broke / unverified: ESPN name matching is tested only against fixtures — the cloud workspace can't reach ESPN. After the first real run, check `unmatched_events` in `data/flags/latest.json`. If the ESPN step fails, every market is tagged `unknown` and nothing gets flagged (fails safe).
+- Watch: the 30-min cron hasn't fired yet. The only run so far is the manual one at 04:21Z, and the 04:30–05:30Z slots were skipped. GitHub often delays schedules on new repos; if nothing has run by ~15:00Z, trigger it by hand from the Actions tab.
+- Needs Emerson: review `dev` and merge it into `main` (scheduled runs only use `main`'s code), then run the workflow once by hand to check ESPN matching. No risk limits were changed; I added two stricter settings: `ESPN_STALE_MINUTES=90` and `PREGAME_MIN_LEAD_MINUTES=10`.
+
+## 2026-11-09 (setup night)
+- Shipped: collector, structural scanner, fees/sizing, 12 tests, GitHub Actions running every 30 min 8am–11pm CT.
+- First live snapshot: 6,432 markets (NFL 698, CFB 3,763, CBB 1,971 across spreads/totals/winners).
+- Flags: 0. Best near-miss was −0.1¢ after fees, so the structural gaps are being arbitraged away. Expected; the real edge has to come from the model (backlog #6).
+- Tests: 12/12 green in Actions.
+- Needs Emerson: nothing tonight.

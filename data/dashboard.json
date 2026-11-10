@@ -1,0 +1,63 @@
+{
+  "generated_ts": "2026-11-10T15:19:53Z",
+  "generated_ct": "Tue Nov 10, 9:19 AM CT",
+  "today_ct": "2026-11-10",
+  "snapshot": {
+    "ts": "2026-11-10T15:19:44Z",
+    "ct": "Tue Nov 10, 9:19 AM CT",
+    "stale": false,
+    "markets_scanned": 4437,
+    "kickoff_source": "kalshi occurrence_datetime - 3h",
+    "phases": {
+      "CFB": {
+        "pregame": 3763
+      },
+      "NFL": {
+        "pregame": 674
+      }
+    }
+  },
+  "flags_now": [],
+  "today": {
+    "record": {
+      "bets": 0,
+      "settled": 0,
+      "wins": 0,
+      "losses": 0,
+      "pushes": 0,
+      "pending": 0,
+      "staked": 0.0,
+      "fees": 0.0,
+      "pnl": 0.0,
+      "roi": null
+    },
+    "bets": []
+  },
+  "record": {
+    "bets": 0,
+    "settled": 0,
+    "wins": 0,
+    "losses": 0,
+    "pushes": 0,
+    "pending": 0,
+    "staked": 0.0,
+    "fees": 0.0,
+    "pnl": 0.0,
+    "roi": null
+  },
+  "by_league": {},
+  "by_signal": {},
+  "ledger": [],
+  "risk": {
+    "bankroll": 200.0,
+    "peak": 200.0,
+    "drawdown": 0.0,
+    "drawdown_stop": 50.0,
+    "lost_today": 0.0,
+    "daily_loss_cap": 20.0,
+    "daily_cap_hit": false,
+    "paused": false,
+    "paper_mode": true,
+    "max_bet": 10.0
+  }
+}

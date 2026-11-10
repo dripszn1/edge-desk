@@ -1,0 +1,69 @@
+{
+  "run_ts": "2026-11-10T14:37:45Z",
+  "tuned_on": [
+    2012,
+    2017
+  ],
+  "tested_on": [
+    2018,
+    2025
+  ],
+  "params": {
+    "half_life_days": 240.0,
+    "ridge": 10.0,
+    "score": 21.254,
+    "sd_margin": 13.536,
+    "sd_total": 13.632
+  },
+  "live_params": {
+    "half_life_days": 240.0,
+    "ridge": 10.0,
+    "sd_margin": 13.5,
+    "sd_total": 13.6
+  },
+  "min_model_edge": 0.03,
+  "half_spread": 0.01,
+  "test": {
+    "games": 2227,
+    "mae_margin_model": 10.282,
+    "mae_total_model": 10.768,
+    "mae_margin_closing_line": 9.829,
+    "mae_total_closing_line": 10.417,
+    "proxy": {
+      "SPREAD": {
+        "bets": 1334,
+        "win_rate": 0.4183,
+        "avg_price": 0.4334,
+        "avg_claimed_edge": 0.0979,
+        "pnl_per_contract": -0.0323,
+        "t_stat": -2.43
+      },
+      "TOTAL": {
+        "bets": 1127,
+        "win_rate": 0.4064,
+        "avg_price": 0.4375,
+        "avg_claimed_edge": 0.0827,
+        "pnl_per_contract": -0.0484,
+        "t_stat": -3.37
+      },
+      "ALL": {
+        "bets": 2461,
+        "win_rate": 0.4128,
+        "avg_price": 0.4353,
+        "avg_claimed_edge": 0.091,
+        "pnl_per_contract": -0.0397,
+        "t_stat": -4.07
+      }
+    },
+    "proxy_by_season": {
+      "2018": -0.0306,
+      "2019": -0.0103,
+      "2020": -0.0378,
+      "2021": 0.004,
+      "2022": -0.066,
+      "2023": -0.0379,
+      "2024": -0.0854,
+      "2025": -0.0558
+    }
+  }
+}

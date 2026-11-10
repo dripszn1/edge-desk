@@ -1,0 +1,21 @@
+{
+  "generated_utc": "2026-11-10T15:19:53Z",
+  "generated_ct": "Tue Nov 10, 9:19 AM CT",
+  "paper_mode": true,
+  "rules": {
+    "min_bets": 30,
+    "skill_t": 2.0,
+    "skill_beat_pct": 0.95,
+    "sims": 10000
+  },
+  "paper": {
+    "settled": 0,
+    "verdict": "not enough data",
+    "why": "no settled bets yet"
+  },
+  "model_shadow": {
+    "settled": 0,
+    "verdict": "not enough data",
+    "why": "no settled bets yet"
+  }
+}
