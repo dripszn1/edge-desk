@@ -12,6 +12,7 @@ on:
 
 permissions:
   contents: write
+  actions: write
 
 concurrency:
   group: collect
@@ -114,3 +115,13 @@ jobs:
           git diff --cached --quiet && exit 0
           git commit -m "data: snapshot $(date -u +%Y-%m-%dT%H:%MZ)"
           for i in 1 2 3; do git pull --rebase -q && git push -q && break; sleep 5; done
+      - name: Restart the keeper if its chain broke (backlog #21)
+        if: always()
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh workflow view keeper.yml --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1 || exit 0
+          active=$(gh run list --repo "$GITHUB_REPOSITORY" --workflow keeper.yml --limit 10 --json status \
+                     -q '[.[] | select(.status=="in_progress" or .status=="queued" or .status=="pending" or .status=="waiting")] | length' || echo 1)
+          [ "${active:-1}" = "0" ] && gh workflow run keeper.yml --repo "$GITHUB_REPOSITORY" --ref "$GITHUB_REF_NAME" || true
