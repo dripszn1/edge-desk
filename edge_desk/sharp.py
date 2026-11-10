@@ -57,7 +57,10 @@ ODDS_MAX_AGE_MIN = 90          # no SHARP flag from a sharp line older than this
 ODDS_MAX_AGE_NEAR_KO_MIN = 60  # ...or older than this within NEAR_KO_H of kickoff
 NEAR_KO_H = 3
 EDGE_SANITY_CAP = 0.12         # an "edge" this big vs a sharp line is almost always a data/matching error
-REJECTED = Path(__file__).resolve().parents[1] / "data" / "flags" / "rejected.csv"
+# Low-confidence plays are NOT thrown away: they are logged here with the reason, graded like
+# everything else, and only promoted to alerts once their own record proves them (Emerson, 11-10:
+# "if the data is pointing that way we don't want to skip").
+REJECTED = Path(__file__).resolve().parents[1] / "data" / "flags" / "sharp_tracked.csv"
 
 
 def odds_too_old(snapshot_ts, odds_fetched_ts, kickoff_utc) -> bool:
@@ -357,12 +360,13 @@ def sharp_flags(df: pd.DataFrame, lines: pd.DataFrame, games: pd.DataFrame, snap
         if rp is None:
             continue
         p_yes, line, src = rp
+        why = []
         if abs(float(row["floor_strike"]) - line) > MAX_RUNG_OFFSET_BY_LEAGUE.get(league, MAX_RUNG_OFFSET):
             status["rungs_out_of_range"] = status.get("rungs_out_of_range", 0) + 1
-            continue
+            why.append("rung far from sharp line (unvalidated range)")
         if odds_too_old(row["snapshot_ts"], fe["fetched_ts"].max(), row.get("kickoff_utc")):
             status["odds_too_old"] = status.get("odds_too_old", 0) + 1
-            continue
+            why.append("sharp line stale")
         mult = float(row.get("fee_multiplier") or 1.0)
         for side, price, size, p in (("YES", row["yes_ask"], row.get("yes_ask_size") or 0, p_yes),
                                      ("NO", round(1 - row["yes_bid"], 4), row.get("yes_bid_size") or 0, 1 - p_yes)):
@@ -377,9 +381,12 @@ def sharp_flags(df: pd.DataFrame, lines: pd.DataFrame, games: pd.DataFrame, snap
                  "fee_multiplier": mult, "sharp_line": line, "sharp_source": src,
                  "odds_fetched_ts": str(fe["fetched_ts"].max()), "kickoff_utc": row.get("kickoff_utc"),
                  "kickoff_ct": row.get("kickoff_ct") or to_ct(row.get("kickoff_utc"))}
+            reasons = list(why)
             if f["edge"] > EDGE_SANITY_CAP:
-                log_rejected(f, "edge above sanity cap")
                 status["rejected_edge_cap"] = status.get("rejected_edge_cap", 0) + 1
+                reasons.append("edge above sanity cap")
+            if reasons:
+                log_rejected(f, "; ".join(reasons))       # tracked + graded, never alerted
                 continue
             if ev not in best or f["edge"] > best[ev]["edge"]:
                 best[ev] = f
