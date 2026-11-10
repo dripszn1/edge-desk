@@ -1,4 +1,4 @@
-name: check-keys
+name: check-keys  # re-run 2026-11-10
 # Verifies ODDS_API_KEY and CFBD_API_KEY work. Never prints the keys.
 on:
   workflow_dispatch: {}
