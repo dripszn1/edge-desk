@@ -251,6 +251,8 @@ def decide(groups: list[tuple[list[dict], bool]], quotes: dict, state: dict, now
     cands.sort(key=lambda x: (not x[1], rank.get(x[0].get("kind"), 3),
                               -float(x[0].get("edge", x[0].get("edge_per_set", 0)) or 0)))
     for f, g in cands:
+        if f.get("kind") == "MODEL":
+            continue                                        # failed its backtest: logged, never pushed
         k = key_of(f)
         if k in alerts:
             continue

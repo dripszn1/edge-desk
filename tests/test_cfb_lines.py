@@ -53,7 +53,7 @@ def test_refresh_only_current_season(monkeypatch, tmp_path):
 
 
 # ---- CFB name matching + SHARP CFB ----
-def _odds(home="Auburn Tigers", away="Mississippi State Bulldogs", home_pt=-7.0, ts="2026-11-14T13:00:00Z", extra=()):
+def _odds(home="Auburn Tigers", away="Mississippi State Bulldogs", home_pt=-7.0, ts="2026-11-14T14:30:00Z", extra=()):
     evs = [(f"e_{home}", home, away, home_pt)] + list(extra)
     pay = [{"id": eid, "commence_time": KO, "home_team": h, "away_team": a, "bookmakers": [{"key": "pinnacle", "markets": [
         {"key": "spreads", "outcomes": [{"name": h, "price": -110, "point": pt}, {"name": a, "price": -110, "point": -pt}]},
@@ -107,8 +107,9 @@ def _cfb_hist():
 
 
 def test_cfb_sharp_flag_fees_and_side():
-    """Auburn -7 at the sharp book; Kalshi sells 'Auburn by 6.5+' at 30c -> YES edge after fees."""
-    flags, st = sharp.sharp_flags(pd.DataFrame([_row()]), _odds(), _cfb_hist(), SNAP,
+    """Auburn -7 at the sharp book; Kalshi sells 'Auburn by 6.5+' at 44c -> YES edge after fees.
+    (A 30c ask would be a ~20c 'edge': the >12c sanity cap rejects that as a likely data error.)"""
+    flags, st = sharp.sharp_flags(pd.DataFrame([_row(bid=0.42, ask=0.44)]), _odds(), _cfb_hist(), SNAP,
                                   now=pd.Timestamp(SNAP), league="CFB")
     assert st["ok"] and len(flags) == 1
     f = flags[0]
@@ -136,3 +137,25 @@ def test_gate_is_per_league(tmp_path):
     pd.DataFrame({"status": "settled", "pnl": pnl, "stake": 5.0, "league": "NFL"}).to_csv(p, index=False)
     assert sharp.gate(p, league="NFL")[0] is True
     assert sharp.gate(p, league="CFB")[0] is False
+
+
+def test_cfb_edge_sanity_cap_rejects_huge_edge(tmp_path, monkeypatch):
+    monkeypatch.setattr(sharp, "REJECTED", tmp_path / "rejected.csv")
+    flags, st = sharp.sharp_flags(pd.DataFrame([_row()]), _odds(), _cfb_hist(), SNAP,
+                                  now=pd.Timestamp(SNAP), league="CFB")
+    assert flags == [] and st.get("rejected_edge_cap") == 1 and (tmp_path / "rejected.csv").exists()
+
+
+def test_cfb_far_rung_skipped():
+    """CFB: a rung 8.5 pts from the sharp line is outside the +-6 CFB cap."""
+    flags, st = sharp.sharp_flags(pd.DataFrame([_row(strike=15.5, bid=0.10, ask=0.12,
+                                  ticker="KXNCAAFSPREAD-26NOV14AUBMSST-AUB16")]), _odds(), _cfb_hist(), SNAP,
+                                  now=pd.Timestamp(SNAP), league="CFB")
+    assert flags == [] and st.get("rungs_out_of_range") == 1
+
+
+def test_stale_odds_guard():
+    snap = "2026-11-14T15:00:00Z"
+    assert not sharp.odds_too_old(snap, "2026-11-14T14:00:00Z", "2026-11-15T00:00:00Z")  # 60 min, far from KO
+    assert sharp.odds_too_old(snap, "2026-11-14T13:00:00Z", "2026-11-15T00:00:00Z")      # 120 min
+    assert sharp.odds_too_old(snap, "2026-11-14T13:55:00Z", "2026-11-14T17:00:00Z")      # 65 min, KO in 2h

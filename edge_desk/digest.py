@@ -61,8 +61,8 @@ def plays(latest: dict, now) -> list[dict]:
         return []
     now = _ts(now)
     out = []
-    for key, tag in (("sharp_flags", "SHARP"), ("sharp_shadow", "SHARP shadow"),
-                     ("model_flags", "MODEL"), ("model_shadow", "MODEL shadow")):
+    # MODEL failed its backtest: it is graded quietly, never shown as a play
+    for key, tag in (("sharp_flags", "SHARP"), ("sharp_shadow", "SHARP shadow")):
         for f in latest.get(key) or []:
             ko = f.get("kickoff_utc")
             if not ko or not (now < _ts(ko) <= now + pd.Timedelta(hours=WINDOW_H)):
