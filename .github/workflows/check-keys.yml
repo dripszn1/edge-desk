@@ -24,15 +24,20 @@ jobs:
           code=$(curl -s -o /tmp/c.json -w '%{http_code}' -H "Authorization: Bearer $KEY" "https://api.collegefootballdata.com/lines?year=2025&week=1&team=Texas")
           echo "HTTP $code"; python3 -c "import json;d=json.load(open('/tmp/c.json'));print('games:',len(d),'| books:',sorted({l['provider'] for g in d for l in g.get('lines',[])}))"
           [ "$code" = 200 ]
-      - name: ntfy test alert (skips if NTFY_TOPIC missing)
+      - name: ntfy resend (fixed Kalshi links, 2026-11-10)
         env: { TOPIC: "${{ secrets.NTFY_TOPIC }}" }
         run: |
           [ -z "$TOPIC" ] && { echo "NTFY_TOPIC missing - skipped"; exit 0; }
-          code=$(curl -s -o /dev/null -w '%{http_code}' \
-            -H "Title: edge-desk test 3 (PAPER, locked-phone check)" \
-            -H "Tags: white_check_mark" \
-            -H "Priority: high" \
-            -H "Click: https://kalshi.com/sports/football" \
-            -d "Alerts are wired up. Tap to open Kalshi football. Real flags will show contract, price, fair value, max price and size." \
-            "https://ntfy.sh/$TOPIC")
-          echo "ntfy HTTP $code"; [ "$code" = 200 ]
+          send () {
+            curl -s -o /dev/null -w 'ntfy HTTP %{http_code}\n' -H "Title: $1" -H "Tags: football" -H "Priority: high" \
+              -H "Click: $3" -H "Actions: view, Open Kalshi, $3" -d "$2" "https://ntfy.sh/$TOPIC"
+          }
+          send "RESEND PAPER SHARP CFB" "Alabama vs Vanderbilt
+          Buy YES: Alabama wins by over 24.5 points
+          Kalshi ask 28c, fair 33c (link test, fixed)" "https://kalshi.com/markets/kxncaafspread/event/kxncaafspread-26nov14alavan"
+          send "RESEND PAPER SHARP CFB" "Boston College vs Notre Dame
+          Buy YES: Notre Dame wins by over 35.5 points
+          Kalshi ask 32c, fair 37c (link test, fixed)" "https://kalshi.com/markets/kxncaafspread/event/kxncaafspread-26nov14bcnd"
+          send "RESEND PAPER MODEL NFL" "Pittsburgh vs Cincinnati
+          Buy YES: Pittsburgh wins by over 7.5 points
+          Kalshi ask 13c, fair 24c (link test, fixed)" "https://kalshi.com/markets/kxnflspread/event/kxnflspread-26nov15pitcin"
