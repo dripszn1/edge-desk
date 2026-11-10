@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-11-10T15:19:53Z",
-  "generated_ct": "Tue Nov 10, 9:19 AM CT",
+  "generated_utc": "2026-11-10T19:57:20Z",
+  "generated_ct": "Tue Nov 10, 1:57 PM CT",
   "paper_mode": true,
   "rules": {
     "min_bets": 30,
@@ -14,6 +14,11 @@
     "why": "no settled bets yet"
   },
   "model_shadow": {
+    "settled": 0,
+    "verdict": "not enough data",
+    "why": "no settled bets yet"
+  },
+  "sharp_shadow": {
     "settled": 0,
     "verdict": "not enough data",
     "why": "no settled bets yet"

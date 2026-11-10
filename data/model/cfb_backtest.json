@@ -1,6 +1,6 @@
 {
   "league": "CFB",
-  "run_ts": "2026-11-10T15:19:43Z",
+  "run_ts": "2026-11-10T19:56:58Z",
   "tuned_on": [
     2016,
     2021
@@ -27,12 +27,39 @@
     "games": 14832,
     "mae_margin_model": 13.022,
     "mae_total_model": 13.583,
-    "mae_margin_closing_line": null,
-    "mae_total_closing_line": null,
+    "mae_margin_closing_line": 11.997,
+    "mae_total_closing_line": 12.609,
     "proxy": {
-      "SPREAD": {},
-      "TOTAL": {},
-      "ALL": {}
+      "SPREAD": {
+        "bets": 3674,
+        "win_rate": 0.3952,
+        "avg_price": 0.4135,
+        "avg_claimed_edge": 0.1057,
+        "pnl_per_contract": -0.0356,
+        "t_stat": -4.43
+      },
+      "TOTAL": {
+        "bets": 3588,
+        "win_rate": 0.4696,
+        "avg_price": 0.4708,
+        "avg_claimed_edge": 0.0979,
+        "pnl_per_contract": -0.0191,
+        "t_stat": -2.31
+      },
+      "ALL": {
+        "bets": 7262,
+        "win_rate": 0.432,
+        "avg_price": 0.4418,
+        "avg_claimed_edge": 0.1019,
+        "pnl_per_contract": -0.0274,
+        "t_stat": -4.76
+      }
+    },
+    "proxy_by_season": {
+      "2022": -0.0406,
+      "2023": -0.0242,
+      "2024": -0.0221,
+      "2025": -0.024
     }
   }
 }
