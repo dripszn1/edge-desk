@@ -222,7 +222,11 @@ def decide(groups: list[tuple[list[dict], bool]], quotes: dict, state: dict, now
     alerts = state.setdefault("alerts", {})
     room = config.DAILY_LOSS_CAP - lost_today - pushed_stake_today(state, now)
     cands = [(f, g) for flags, g in groups for f in flags]
-    cands.sort(key=lambda x: -float(x[0].get("edge", x[0].get("edge_per_set", 0)) or 0))
+    # open gates first, then structural/SHARP before MODEL (whose backtest is negative), then edge,
+    # so the daily cap is spent on the most credible flags
+    rank = {"LADDER": 0, "EXCLUSIVE": 0, "COVER": 0, "SHARP": 1, "MODEL": 2}
+    cands.sort(key=lambda x: (not x[1], rank.get(x[0].get("kind"), 3),
+                              -float(x[0].get("edge", x[0].get("edge_per_set", 0)) or 0)))
     for f, g in cands:
         k = key_of(f)
         if k in alerts:

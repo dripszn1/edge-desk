@@ -219,3 +219,11 @@ def test_links_in_flags_digest_dashboard(monkeypatch, tmp_path):
                           "fees": 0.01, "pnl": 0, "status": "pending", "kickoff_ct": "", "snapshot_ts": "2026-11-14T15:00:00Z"}])
     d = dashboard.build({"snapshot_ts": None}, bets, pd.DataFrame(), NOW)
     assert d["today"]["bets"][0]["kalshi_url"].endswith("/kxnflspread-26nov15larari")
+
+
+def test_cap_spent_on_credible_signals_first(tmp_path):
+    model = {**sharp_flag(ticker="KXNFLTOTAL-26NOV15M-45", price=0.30, fair=0.60, stake=9.0), "kind": "MODEL"}
+    sh = [sharp_flag(ticker=f"KXNFLSPREAD-26NOV15S{i}-X3", stake=9.0) for i in range(2)]
+    out = alerts.process([([model], False), (sh, False)], {}, NOW, post=Post(),
+                         state_path=tmp_path / "s.json", log_path=tmp_path / "l.csv")
+    assert [a["kind"] for a in out] == ["SHARP", "SHARP"]     # bigger MODEL edge waits behind SHARP
