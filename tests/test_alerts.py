@@ -56,7 +56,7 @@ def test_new_alert_body_and_title():
     for s in ("Los Angeles R at Arizona", "Buy YES: Arizona wins by over 3.5", "ask 45¢", "fair 52¢",
               "Max price", "$9.00 = 20 contracts", "Sun Nov 15, 3:05 PM CT", "sent 10:00:00 CT"):
         assert s in b, s
-    assert a["click"] == "https://kalshi.com/markets/kxnflspread/kxnflspread-26nov15larari"
+    assert a["click"] == "https://kalshi.com/markets/kxnflspread/event/kxnflspread-26nov15larari"
 
 
 def test_live_title_needs_open_gate_and_paper_mode_off(monkeypatch):
@@ -171,13 +171,13 @@ def test_speed_log_and_median(tmp_path):
 # ---------- links ----------
 def test_kalshi_url_and_verify():
     assert alerts.kalshi_url("KXNCAAFTOTAL-26NOV14OSUMICH-51", "KXNCAAFTOTAL-26NOV14OSUMICH",
-                             alerts.URL_TEMPLATES[0]) == "https://kalshi.com/markets/kxncaaftotal/kxncaaftotal-26nov14osumich"
+                             alerts.URL_TEMPLATES[0]) == "https://kalshi.com/markets/kxncaaftotal/event/kxncaaftotal-26nov14osumich"
 
-    def get_ok_second(u):
-        ok = u == "https://kalshi.com/markets/kxnflgame-26nov15larari"
+    def get_ok(u):
+        ok = u == "https://kalshi.com/markets/kxnflgame/event/kxnflgame-26nov15larari"
         return type("R", (), {"status_code": 200 if ok else 404, "url": u, "text": "kxnflgame-26nov15larari" if ok else ""})()
-    r = alerts.verify_url("KXNFLGAME-26NOV15LARARI-ARI", "KXNFLGAME-26NOV15LARARI", get_ok_second)
-    assert r["verified"] and r["template"] == alerts.URL_TEMPLATES[1]
+    r = alerts.verify_url("KXNFLGAME-26NOV15LARARI-ARI", "KXNFLGAME-26NOV15LARARI", get_ok)
+    assert r["verified"] and r["template"] == alerts.URL_TEMPLATES[0]
 
     def get_spa(u):     # 200 for everything but never mentions the event -> not trusted
         return type("R", (), {"status_code": 200, "url": u, "text": "<html>app</html>"})()
@@ -211,9 +211,9 @@ def test_links_in_flags_digest_dashboard(monkeypatch, tmp_path):
     df = pd.DataFrame([row("KXNFLSPREAD-26NOV15AB-A3", "A", 2.5, 0.54, 0.55, event="KXNFLSPREAD-26NOV15AB"),
                        row("KXNFLSPREAD-26NOV15AB-A7", "A", 6.5, 0.70, 0.71, event="KXNFLSPREAD-26NOV15AB")])
     f = scan.with_url(scan.scan(df))
-    assert f[0]["kalshi_url"] == "https://kalshi.com/markets/kxnflspread/kxnflspread-26nov15ab"
+    assert f[0]["kalshi_url"] == "https://kalshi.com/markets/kxnflspread/event/kxnflspread-26nov15ab"
     line = digest._play_line({**sharp_flag(), "_tag": "SHARP shadow"})
-    assert "[Kalshi](https://kalshi.com/markets/kxnflspread/kxnflspread-26nov15larari)" in line
+    assert "[Kalshi](https://kalshi.com/markets/kxnflspread/event/kxnflspread-26nov15larari)" in line
     bets = pd.DataFrame([{"date_ct": "2026-11-14", "league": "NFL", "kind": "SHARP", "event": "x",
                           "leg1": "YES KXNFLSPREAD-26NOV15LARARI-ARI3", "leg2": None, "sets": 1, "stake": 1,
                           "fees": 0.01, "pnl": 0, "status": "pending", "kickoff_ct": "", "snapshot_ts": "2026-11-14T15:00:00Z"}])
