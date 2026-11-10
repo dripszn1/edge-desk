@@ -87,10 +87,29 @@ def verify_url(sample_ticker: str, sample_event: str, get=None) -> dict:
             ok = r.status_code == 200 and sample_event.lower() in r.text[:2000000].lower()
             tried.append({"url": u, "status": r.status_code, "mentions_event": ok})
             if ok:
-                return {"template": t, "verified": True, "tried": tried}
+                return {"template": t, "verified": True, "inconclusive": False, "tried": tried}
         except Exception as e:  # noqa: BLE001
             tried.append({"url": u, "error": type(e).__name__})
-    return {"template": FALLBACK_TEMPLATE, "verified": False, "tried": tried}
+    # 429 / 5xx / network errors say nothing about the URL format -> retry within hours, not a week
+    inconclusive = not any(x.get("status") in (200, 404, 410) for x in tried)
+    return {"template": FALLBACK_TEMPLATE, "verified": False, "inconclusive": inconclusive, "tried": tried}
+
+
+URL_RECHECK_HOURS = 7 * 24
+URL_RETRY_HOURS = 6
+
+
+def url_check_due(prev: dict, now) -> bool:
+    try:
+        age_h = (_utc(now) - _utc(prev["checked_utc"])).total_seconds() / 3600
+    except Exception:  # noqa: BLE001 - never checked
+        return True
+    if age_h < 0:
+        return True
+    inc = prev.get("inconclusive")
+    if inc is None:                     # files written before this field existed
+        inc = not prev.get("verified") and not any(x.get("status") in (200, 404, 410) for x in prev.get("tried", []))
+    return age_h >= (URL_RETRY_HOURS if inc else URL_RECHECK_HOURS)
 
 
 # ---------- pricing ----------
@@ -352,7 +371,7 @@ def main(argv=None) -> int:
             return 0
         try:
             prev = json.loads(URL_FORMAT.read_text())
-            if (datetime.now(UTC) - _utc(prev["checked_utc"])).days < 7:
+            if not url_check_due(prev, datetime.now(UTC)):
                 print(f"alerts: url template checked {prev['checked_utc']}, verified={prev.get('verified')}")
                 return 0
         except Exception:  # noqa: BLE001 - never checked -> check now

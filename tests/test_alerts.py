@@ -227,3 +227,28 @@ def test_cap_spent_on_credible_signals_first(tmp_path):
     out = alerts.process([([model], False), (sh, False)], {}, NOW, post=Post(),
                          state_path=tmp_path / "s.json", log_path=tmp_path / "l.csv")
     assert [a["kind"] for a in out] == ["SHARP", "SHARP"]     # bigger MODEL edge waits behind SHARP
+
+
+def test_rate_limited_url_check_is_retried_soon():
+    def get_429(u):
+        return type("R", (), {"status_code": 429, "url": u, "text": ""})()
+    r = alerts.verify_url("KXNFLGAME-26NOV15LARARI-ARI", "KXNFLGAME-26NOV15LARARI", get_429)
+    assert not r["verified"] and r["inconclusive"]
+    now = datetime(2026, 11, 14, 16, 0, tzinfo=UTC)
+    r["checked_utc"] = "2026-11-14T08:00:00Z"                 # 8 h ago, inconclusive -> recheck
+    assert alerts.url_check_due(r, now) is True
+    r["checked_utc"] = "2026-11-14T13:00:00Z"                 # 3 h ago -> wait
+    assert alerts.url_check_due(r, now) is False
+
+    def get_404(u):
+        return type("R", (), {"status_code": 404, "url": u, "text": ""})()
+    r = alerts.verify_url("KXNFLGAME-26NOV15LARARI-ARI", "KXNFLGAME-26NOV15LARARI", get_404)
+    assert not r["inconclusive"]
+    r["checked_utc"] = "2026-11-12T16:00:00Z"                 # definitive answer, 2 days old -> keep
+    assert alerts.url_check_due(r, now) is False
+    assert alerts.url_check_due({}, now) is True
+
+
+def test_old_url_file_without_inconclusive_field():
+    prev = {"verified": False, "tried": [{"url": "x", "status": 429}], "checked_utc": "2026-11-14T08:00:00Z"}
+    assert alerts.url_check_due(prev, datetime(2026, 11, 14, 16, 0, tzinfo=UTC)) is True
