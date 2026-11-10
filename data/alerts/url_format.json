@@ -1,0 +1,17 @@
+{
+ "template": "https://kalshi.com/markets/{series}",
+ "verified": false,
+ "tried": [
+  {
+   "url": "https://kalshi.com/markets/kxnflspread/kxnflspread-26nov12wasnyg",
+   "status": 429,
+   "mentions_event": false
+  },
+  {
+   "url": "https://kalshi.com/markets/kxnflspread-26nov12wasnyg",
+   "status": 429,
+   "mentions_event": false
+  }
+ ],
+ "checked_utc": "2026-11-10T22:44:59Z"
+}
