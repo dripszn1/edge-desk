@@ -29,7 +29,7 @@ jobs:
         run: |
           [ -z "$TOPIC" ] && { echo "NTFY_TOPIC missing - skipped"; exit 0; }
           code=$(curl -s -o /dev/null -w '%{http_code}' \
-            -H "Title: edge-desk test 2 (PAPER, high priority)" \
+            -H "Title: edge-desk test 3 (PAPER, locked-phone check)" \
             -H "Tags: white_check_mark" \
             -H "Priority: high" \
             -H "Click: https://kalshi.com/sports/football" \
