@@ -50,6 +50,9 @@ MIN_N = 300
 PRIOR_N = 20
 SD = {"spread": 13.3, "total": 13.6}      # only for the prior and the normal benchmark
 KICKOFF_TOL = pd.Timedelta(hours=6)       # odds commence vs Kalshi kickoff
+MAX_RUNG_OFFSET = 10.5   # only price rungs inside the backtested range (OFFSETS = line +-10); the
+                         # far tails of the totals normal run fat (NFL 2012-25: P(under line-20)
+                         # normal 6.6% vs actual 5.1%), which made deep NO-on-low-overs look +EV
 GATE_MIN_BETS = 30
 GATE_MIN_T = 2.0
 
@@ -322,6 +325,9 @@ def sharp_flags(df: pd.DataFrame, lines: pd.DataFrame, games: pd.DataFrame, snap
         if rp is None:
             continue
         p_yes, line, src = rp
+        if abs(float(row["floor_strike"]) - line) > MAX_RUNG_OFFSET:
+            status["rungs_out_of_range"] = status.get("rungs_out_of_range", 0) + 1
+            continue
         mult = float(row.get("fee_multiplier") or 1.0)
         for side, price, size, p in (("YES", row["yes_ask"], row.get("yes_ask_size") or 0, p_yes),
                                      ("NO", round(1 - row["yes_bid"], 4), row.get("yes_bid_size") or 0, 1 - p_yes)):
