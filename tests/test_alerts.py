@@ -252,3 +252,11 @@ def test_rate_limited_url_check_is_retried_soon():
 def test_old_url_file_without_inconclusive_field():
     prev = {"verified": False, "tried": [{"url": "x", "status": 429}], "checked_utc": "2026-11-14T08:00:00Z"}
     assert alerts.url_check_due(prev, datetime(2026, 11, 14, 16, 0, tzinfo=UTC)) is True
+
+
+def test_model_flags_never_pushed():
+    f = {"kind": "MODEL", "ticker": "KXNCAAFSPREAD-26NOV11MASSTOL-TOL22", "event_ticker": "KXNCAAFSPREAD-26NOV11MASSTOL",
+         "side": "YES", "price": 0.31, "fair": 0.55, "edge": 0.217, "contracts": 1, "stake": 0.33,
+         "kickoff_utc": "2026-11-12T00:30:00Z", "event": "UMass vs Toledo: Spread", "leg1_desc": "Toledo wins by over 21.5 points"}
+    out = alerts.decide([([f], False)], {}, {}, "2026-11-10T23:30:00Z")
+    assert out == []

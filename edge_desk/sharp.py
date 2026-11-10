@@ -51,6 +51,41 @@ PRIOR_N = 20
 SD = {"spread": 13.3, "total": 13.6}      # only for the prior and the normal benchmark
 KICKOFF_TOL = pd.Timedelta(hours=6)       # odds commence vs Kalshi kickoff
 MAX_RUNG_OFFSET = 10.5   # only price rungs inside the backtested range (OFFSETS = line +-10); the
+# CFB: NFL-validated cap doesn't transfer; stay near the main line until a CFB backtest says otherwise
+MAX_RUNG_OFFSET_BY_LEAGUE = {"NFL": 10.5, "CFB": 6.0}
+ODDS_MAX_AGE_MIN = 90          # no SHARP flag from a sharp line older than this...
+ODDS_MAX_AGE_NEAR_KO_MIN = 60  # ...or older than this within NEAR_KO_H of kickoff
+NEAR_KO_H = 3
+EDGE_SANITY_CAP = 0.12         # an "edge" this big vs a sharp line is almost always a data/matching error
+# Low-confidence plays are NOT thrown away: they are logged here with the reason, graded like
+# everything else, and only promoted to alerts once their own record proves them (Emerson, 11-10:
+# "if the data is pointing that way we don't want to skip").
+REJECTED = Path(__file__).resolve().parents[1] / "data" / "flags" / "sharp_tracked.csv"
+
+
+def odds_too_old(snapshot_ts, odds_fetched_ts, kickoff_utc) -> bool:
+    """True when the sharp line is too stale to trust for this snapshot."""
+    try:
+        snap = pd.Timestamp(snapshot_ts); fet = pd.Timestamp(odds_fetched_ts)
+    except Exception:  # noqa: BLE001
+        return True
+    if snap.tzinfo is None: snap = snap.tz_localize("UTC")
+    if fet.tzinfo is None: fet = fet.tz_localize("UTC")
+    age = (snap - fet).total_seconds() / 60
+    limit = ODDS_MAX_AGE_MIN
+    if kickoff_utc:
+        ko = pd.Timestamp(kickoff_utc)
+        if ko.tzinfo is None: ko = ko.tz_localize("UTC")
+        if ko - snap <= pd.Timedelta(hours=NEAR_KO_H):
+            limit = ODDS_MAX_AGE_NEAR_KO_MIN
+    return age > limit
+
+
+def log_rejected(f: dict, reason: str) -> None:
+    REJECTED.parent.mkdir(parents=True, exist_ok=True)
+    row = pd.DataFrame([{**{k: f.get(k) for k in ("snapshot_ts", "league", "event", "ticker", "side", "price",
+                                                    "fair", "edge", "sharp_line", "odds_fetched_ts")}, "reason": reason}])
+    row.to_csv(REJECTED, mode="a", header=not REJECTED.exists(), index=False)
                          # far tails of the totals normal run fat (NFL 2012-25: P(under line-20)
                          # normal 6.6% vs actual 5.1%), which made deep NO-on-low-overs look +EV
 GATE_MIN_BETS = 30
@@ -325,9 +360,13 @@ def sharp_flags(df: pd.DataFrame, lines: pd.DataFrame, games: pd.DataFrame, snap
         if rp is None:
             continue
         p_yes, line, src = rp
-        if abs(float(row["floor_strike"]) - line) > MAX_RUNG_OFFSET:
+        why = []
+        if abs(float(row["floor_strike"]) - line) > MAX_RUNG_OFFSET_BY_LEAGUE.get(league, MAX_RUNG_OFFSET):
             status["rungs_out_of_range"] = status.get("rungs_out_of_range", 0) + 1
-            continue
+            why.append("rung far from sharp line (unvalidated range)")
+        if odds_too_old(row["snapshot_ts"], fe["fetched_ts"].max(), row.get("kickoff_utc")):
+            status["odds_too_old"] = status.get("odds_too_old", 0) + 1
+            why.append("sharp line stale")
         mult = float(row.get("fee_multiplier") or 1.0)
         for side, price, size, p in (("YES", row["yes_ask"], row.get("yes_ask_size") or 0, p_yes),
                                      ("NO", round(1 - row["yes_bid"], 4), row.get("yes_bid_size") or 0, 1 - p_yes)):
@@ -342,6 +381,13 @@ def sharp_flags(df: pd.DataFrame, lines: pd.DataFrame, games: pd.DataFrame, snap
                  "fee_multiplier": mult, "sharp_line": line, "sharp_source": src,
                  "odds_fetched_ts": str(fe["fetched_ts"].max()), "kickoff_utc": row.get("kickoff_utc"),
                  "kickoff_ct": row.get("kickoff_ct") or to_ct(row.get("kickoff_utc"))}
+            reasons = list(why)
+            if f["edge"] > EDGE_SANITY_CAP:
+                status["rejected_edge_cap"] = status.get("rejected_edge_cap", 0) + 1
+                reasons.append("edge above sanity cap")
+            if reasons:
+                log_rejected(f, "; ".join(reasons))       # tracked + graded, never alerted
+                continue
             if ev not in best or f["edge"] > best[ev]["edge"]:
                 best[ev] = f
     status["events_priced"] = sum(1 for v in seen.values() if not v[1].empty)

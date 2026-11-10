@@ -1,5 +1,12 @@
 # Reports (newest first)
 
+## 2026-11-10 (late-afternoon builder run)
+- Shipped (already merged to `main` in PR #2): #21 keeper (`keeper.yml` + `edge_desk/keeper.py`). Every 5 min, one cheap stdlib job dispatches collect.yml if the last collect is ≥30 min old (paused while live runs) and live.yml during game windows, then re-dispatches itself before the 6 h job limit. collect.yml restarts it if the chain breaks. Also: a Kalshi link check that gets 429 is now retried after 6 h instead of being cached for 7 days.
+- Tests: 227/227 green on `dev`.
+- Honest results: the 22:44Z collect sent the first real ntfy pushes: 8 PAPER alerts (7 SHARP, 1 MODEL), detect→push ≈0.6 s, quote→push ≈11 s. SHARP's sharp quotes were 2.8 h older than the Kalshi prices they were compared with, so some of those "edges" may be line moves Kalshi had already priced in. All gates are still closed.
+- Watchdog: collect was 2h48m stale, so I dispatched collect.yml. I dispatched live.yml at 22:44Z (it exited: outside the window) and again at 23:16Z: its loop is running for tonight's window. The keeper started at 23:17Z from collect's restart step, and a duplicate dispatch from me was correctly skipped by its guard. The first scheduled cron run (collect, 23:15Z) has now fired.
+- Needs Emerson: nothing urgent. Another session was committing #22/#23 to `dev` during this run, so I didn't open a dev→main PR over that in-progress work.
+
 ## 2026-11-10 (evening builder run)
 - Shipped to `dev`: #16 live game-day mode (`live.yml` + `edge_desk/live.py`: guard job checks the CT window, monthly minutes budget and whether a run is already active; one loop ≤330 min running Kalshi every ~30 s, hot games only if a full pass is too slow, odds checked every 10 min but still capped by the free-tier budget; each pass scanned on its own, snapshot + grade + digest + commit every 15 min, then it re-dispatches itself). #17 ntfy alerts (optional Pushover): one push per contract plus one "gone, don't chase"; max price is fee-inclusive; pushes count against the $20 daily cap. #18 Kalshi link on flags, digest and dashboard. #19 speed log in `data/alerts_log.csv`. #20 SHARP prices only rungs within ±10.5 pts of the line. No risk limits changed; nothing places orders.
 - Tests: 211/211 green (51 new). I removed each guard in turn to make sure a test goes red: stale passes, fee-inclusive max price, per-contract dedupe, daily cap and the far-tail cutoff.
