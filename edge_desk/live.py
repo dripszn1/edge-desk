@@ -55,7 +55,7 @@ WINDOWS = {
     6: ((11, 0), (22, 30)),
 }
 LOG_COLS = ["run_id", "started_utc", "ended_utc", "minutes", "full_passes", "hot_passes",
-            "snapshots_saved", "commits", "odds_checks", "flags_logged", "errors", "exit_reason"]
+            "snapshots_saved", "commits", "odds_checks", "flags_logged", "alerts", "errors", "exit_reason"]
 
 
 # ---------- windows ----------
@@ -296,6 +296,19 @@ def seed_seen(now: datetime, hours: float = 36) -> set:
     return seen
 
 
+def default_alerts(df, ts: str) -> list:
+    """Alert on what scan.run just found (scan.run.last), priced against this pass's quotes."""
+    from . import alerts, scan
+    last = getattr(scan.run, "last", None)
+    if not last:
+        return []
+    m, sh = last["model"], last["sharp"]
+    groups = [(last["flags"], False), (m.get("live", []), True), (m.get("shadow", []), False),
+              (sh.get("live", []), True), (sh.get("shadow", []), False)]
+    scan.run.last = None                               # never alert twice on the same scan
+    return alerts.process(groups, alerts.quotes_of(df), lost_today=scan.lost_today())
+
+
 # ---------- post steps + git ----------
 POST_STEPS = ["lag", "settle", "grade", "weekly", "dashboard", "digest"]
 
@@ -352,19 +365,21 @@ class Session:
     stop_at: datetime
     window_end: datetime
     stats: dict = field(default_factory=lambda: {k: 0 for k in
-                        ("full_passes", "hot_passes", "snapshots_saved", "commits", "odds_checks", "flags_logged")})
+                        ("full_passes", "hot_passes", "snapshots_saved", "commits", "odds_checks", "flags_logged",
+                         "alerts")})
     errors: list = field(default_factory=list)
 
 
 def run_loop(now_fn=lambda: datetime.now(UTC), clock=time.monotonic, sleep=time.sleep,
              fetch_full=full_pass, fetch_hot=hot_pass, odds_fn=None, scan_fn=None,
              persist_fn=persist, post_fn=post_steps, commit_fn=git_commit, used_min: float | None = None,
-             seen: set | None = None) -> Session:
+             seen: set | None = None, alert_fn=None) -> Session:
     """Run until the deadline. All I/O is injectable so the ordering guarantees are testable."""
     from . import kickoffs, odds, scan
     odds_fn = odds_fn or (lambda: odds.run(near_h=config.LIVE_ODDS_NEAR_HOURS,
                                            near_interval_h=odds_interval_hours(odds.MONTHLY_CREDITS)))
     scan_fn = scan_fn or (lambda df, ts, seen, partial: scan.run(df, ts, seen=seen, partial=partial))
+    alert_fn = alert_fn or default_alerts
     start = _utc(now_fn())
     w = current_window(start, config.LIVE_EARLY_START_MINUTES)
     if w is None:
@@ -415,6 +430,10 @@ def run_loop(now_fn=lambda: datetime.now(UTC), clock=time.monotonic, sleep=time.
             except Exception as e:  # noqa: BLE001 - keep looping
                 sess.errors.append(f"scan: {type(e).__name__}: {e}")
             sess.stats["flags_logged"] += len(seen) - before
+            try:                                       # #17: push in the same iteration
+                sess.stats["alerts"] = sess.stats.get("alerts", 0) + len(alert_fn(df, ts) or [])
+            except Exception as e:  # noqa: BLE001
+                sess.errors.append(f"alerts: {type(e).__name__}")
             # 4) persist a full snapshot every LIVE_PERSIST_MINUTES
             if kind == "full" and (last_persist is None or now - last_persist >= timedelta(minutes=config.LIVE_PERSIST_MINUTES)):
                 if persist_fn(df, ts, errs):

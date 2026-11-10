@@ -77,10 +77,16 @@ jobs:
           python -m edge_desk.cfb_results 12 || true
           python -m edge_desk.cfb_lines || true
           python -m edge_desk.backtest --if-stale NFL CFB || true
+      - name: Kalshi link format check (HTTP 200 against a real market; weekly)
+        continue-on-error: true
+        run: python -m edge_desk.alerts verify-url
       - name: Live loop
         id: loop
         env:
           ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          PUSHOVER_TOKEN: ${{ secrets.PUSHOVER_TOKEN }}
+          PUSHOVER_USER: ${{ secrets.PUSHOVER_USER }}
         run: |
           git config user.name "edge-desk-bot"
           git config user.email "edge-desk-bot@users.noreply.github.com"

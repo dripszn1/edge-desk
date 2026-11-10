@@ -192,7 +192,7 @@ def _run(monkeypatch, tmp_path, start, minutes, frame_fn, odds_log=None, scans=N
     return live.run_loop(now_fn=c.now, clock=c.clock, sleep=c.sleep, fetch_full=fetch,
                          fetch_hot=lambda *a: (pd.DataFrame(), [], False), odds_fn=odds_fn, scan_fn=scan_fn,
                          persist_fn=lambda *a: None, post_fn=lambda: [], commit_fn=lambda m: False,
-                         used_min=0, seen=set() if seen is None else seen)
+                         used_min=0, seen=set() if seen is None else seen, alert_fn=lambda df, ts: [])
 
 
 def test_loop_logs_each_contract_once(monkeypatch, tmp_path):
@@ -254,7 +254,8 @@ def test_loop_outside_window_does_nothing(monkeypatch, tmp_path):
     c = FakeClock(ct(2026, 11, 11, 12, 0))
     s = live.run_loop(now_fn=c.now, clock=c.clock, sleep=c.sleep,
                       fetch_full=lambda *a: pytest.fail("no Kalshi calls outside a window"),
-                      odds_fn=lambda: pytest.fail("no odds outside a window"), used_min=0, seen=set())
+                      odds_fn=lambda: pytest.fail("no odds outside a window"), used_min=0, seen=set(),
+                      alert_fn=lambda df, ts: pytest.fail("no alerts outside a window"))
     assert s.stats["full_passes"] == 0
 
 
@@ -266,6 +267,7 @@ def test_loop_stops_at_deadline_and_commits(monkeypatch, tmp_path):
     s = live.run_loop(now_fn=c.now, clock=c.clock, sleep=c.sleep,
                       fetch_full=lambda m, ts: (pd.DataFrame(), [], False), odds_fn=lambda: None,
                       scan_fn=lambda *a: None, persist_fn=lambda *a: None, post_fn=lambda: [],
-                      commit_fn=lambda m: commits.append(m) or True, used_min=0, seen=set())
+                      commit_fn=lambda m: commits.append(m) or True, used_min=0, seen=set(),
+                      alert_fn=lambda df, ts: [])
     assert c.t <= s.stop_at + timedelta(seconds=1)
     assert len(commits) >= 3 and commits[-1].endswith("(end)")   # every 15 min + final

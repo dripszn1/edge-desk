@@ -167,6 +167,20 @@ def flag_key(f: dict) -> tuple:
     return (f.get("kind"), f.get("leg1"), f.get("leg2") if f.get("kind") in ("LADDER", "EXCLUSIVE", "COVER") else None)
 
 
+def with_url(flags: list[dict]) -> list[dict]:
+    """#18: every flag record carries its Kalshi page (same builder as the phone alerts)."""
+    from .alerts import kalshi_url
+    tmpl = None
+    for f in flags:
+        if not f.get("kalshi_url"):
+            if tmpl is None:
+                from .alerts import load_url_format
+                tmpl = load_url_format()
+            tick = f.get("ticker") or str(f.get("leg1") or "").split(" ", 1)[-1]
+            f["kalshi_url"] = kalshi_url(tick, f.get("event_ticker"), tmpl)
+    return flags
+
+
 def new_only(flags: list[dict], seen: set | None) -> list[dict]:
     """Flags not logged before in this live session. `seen=None` keeps them all (batch runs).
     Marks the returned flags as seen, so a contract is logged once however often it re-appears."""
@@ -212,6 +226,7 @@ def run_model(df: pd.DataFrame, ts: str | None, leagues=("NFL", "CFB"), seen: se
     for lg in leagues:
         try:
             flags, status = model.model_flags(df, RESULT_LOADERS[lg](), ts, lost_today=lost, league=lg)
+            flags = with_url(flags)
         except Exception as e:   # one league's bug must not block the other
             flags, status = [], {"ok": False, "reason": f"error: {e}"}
         is_open, why = model.gate(league=lg)
@@ -234,6 +249,7 @@ def run_sharp(df: pd.DataFrame, ts: str | None, lost: float | None = None, leagu
     for lg in leagues:
         try:
             flags, status = sharp.sharp_flags(df, lines, sharp.history(lg), ts, lost_today=lost, league=lg)
+            flags = with_url(flags)
         except Exception as e:   # never lose other flags over a SHARP bug
             flags, status = [], {"ok": False, "reason": f"error: {e}"}
         is_open, why = sharp.gate(league=lg)
@@ -256,7 +272,7 @@ def run(df: pd.DataFrame | None = None, ts: str | None = None, seen: set | None 
     FLAG_DIR.mkdir(parents=True, exist_ok=True)
     stale = is_stale(ts)
     df = kickoffs.tag_kalshi(df, ts)   # Kalshi's own clock; ESPN no longer needed
-    flags = [] if stale else scan(df)
+    flags = [] if stale else with_url(scan(df))
     if not partial:
         write_event_map(df)
     _append_csv(new_only(flags, seen), FLAG_DIR / "flags.csv")
