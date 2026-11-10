@@ -29,8 +29,9 @@ jobs:
         run: |
           [ -z "$TOPIC" ] && { echo "NTFY_TOPIC missing - skipped"; exit 0; }
           code=$(curl -s -o /dev/null -w '%{http_code}' \
-            -H "Title: edge-desk test (PAPER)" \
+            -H "Title: edge-desk test 2 (PAPER, high priority)" \
             -H "Tags: white_check_mark" \
+            -H "Priority: high" \
             -H "Click: https://kalshi.com/sports/football" \
             -d "Alerts are wired up. Tap to open Kalshi football. Real flags will show contract, price, fair value, max price and size." \
             "https://ntfy.sh/$TOPIC")
