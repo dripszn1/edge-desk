@@ -113,6 +113,12 @@ jobs:
         if: steps.fresh.outputs.skip != 'true'
         run: python -m edge_desk.digest
         continue-on-error: true
+      - name: Archive snapshot weeks older than 14 days to GitHub Releases (removed only after checksum verify; #25)
+        if: steps.fresh.outputs.skip != 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python -m edge_desk.archive
+        continue-on-error: true
       - name: Commit data
         if: steps.fresh.outputs.skip != 'true'
         run: |
