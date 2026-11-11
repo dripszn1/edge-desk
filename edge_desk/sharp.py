@@ -167,8 +167,8 @@ class LineDist:
         self.normal = kind == "total"
         if len(lines) >= 100:                       # prior / normal SD fitted on the training games
             self.sd = float(np.std(outcomes - lines, ddof=1))
-        o = np.argsort(lines)
-        self.lines, self.out = lines[o], outcomes[o]
+        o = np.lexsort((outcomes, lines))           # (#36) canonical order: ties by value, never by
+        self.lines, self.out = lines[o], outcomes[o]  # input position or the CPU's sort algorithm
         self.n = len(self.lines)
 
     def p_greater(self, line: float, strike: float) -> float:
@@ -183,8 +183,10 @@ class LineDist:
             hit = (self.out[near] > strike).astype(float)
         else:
             k = min(MIN_N, self.n)
-            idx = np.argsort(np.abs(d))[:k]
-            w = np.ones(k)
+            a = np.abs(d)
+            cut = np.partition(a, k - 1)[k - 1]           # (#36) the k-th nearest gap; every game tied
+            idx = np.flatnonzero(a <= cut + 1e-9)        # with it is in, so no tie is broken by order
+            w = np.ones(len(idx))
             hit = (self.out[idx] - d[idx] > strike).astype(float)   # shift by the line gap
         return float((w @ hit + PRIOR_N * prior) / (w.sum() + PRIOR_N))
 
