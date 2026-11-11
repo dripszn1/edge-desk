@@ -73,5 +73,7 @@ Work strictly top-down; one item finished beats three half-done.
 
 - [x] 34. Alert/test hygiene: (a) "gone, don't chase" pushes now log `quote_utc` + quote→send seconds in `data/alerts_log.csv` (all 3 gone rows on 11-10/11 had none), and a gone push is never sent on a quote older than the one the flag was raised on (collect and live share alert state); (b) `tests/conftest.py` fails the test session if any file under `data/` changes, since collect.yml runs the tests and then `git add data` (that's how 4 future-stamped fixture rows reached `sharp_tracked.csv`).
 
+- [ ] 35. "Gone" when the LINE moves, not just the price (Emerson 11-11): today a "gone, don't chase" push fires only when Kalshi's price passes the max price. If the sharp line moves against an alerted play (e.g. JMU -3.5 → -5, so fair drops below price + fee + MIN_MODEL_EDGE), send the same single "gone" push ("line moved: fair now X¢, skip it"), re-using the max-price recompute on each fresh sharp pull. Still max 1 gone per contract; never on a stale (>90/60 min) line; test that a moved line fires once and a stale line never fires.
+
 ## Parked (do NOT start without Emerson's written go-ahead in chat)
 - Kalshi API key: (1) websocket price feed for faster alerts, (2) later, order placement. Preconditions Emerson set: a signal's gate is open AND it has stayed profitable live; then the kill switch, daily cap, max price and per-bet cap must be enforced in code before any order path exists, and every order starts with a one-tap confirm from Emerson.
