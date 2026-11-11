@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-11-11T12:34:49Z",
-  "generated_ct": "Wed Nov 11, 6:34 AM CT",
+  "generated_utc": "2026-11-11T13:48:18Z",
+  "generated_ct": "Wed Nov 11, 7:48 AM CT",
   "paper_mode": true,
   "rules": {
     "min_bets": 30,
@@ -64,7 +64,23 @@
   "sharp_shadow_cbb": {
     "settled": 0,
     "verdict": "not enough data",
-    "why": "no settled bets yet"
+    "why": "no settled bets yet",
+    "by_market": {
+      "MONEYLINE": {
+        "settled": 0,
+        "pnl": null,
+        "roi": null,
+        "t_stat": null,
+        "verdict": "not enough data"
+      },
+      "SPREAD/TOTAL": {
+        "settled": 0,
+        "pnl": null,
+        "roi": null,
+        "t_stat": null,
+        "verdict": "not enough data"
+      }
+    }
   },
   "sharp_tracked": {
     "settled": 0,
@@ -88,5 +104,59 @@
       }
     },
     "propose_widen": []
+  },
+  "clv": {
+    "shadow": {
+      "cbb": {
+        "n": 0,
+        "avg_clv_c": null,
+        "avg_raw_c": null,
+        "beat_close_pct": null,
+        "t_stat": null,
+        "events": 0,
+        "t_by_event": null,
+        "stale": 0,
+        "pending": 1,
+        "no_close": 0
+      },
+      "football": {
+        "n": 1,
+        "avg_clv_c": 0.89,
+        "avg_raw_c": 1.5,
+        "beat_close_pct": 100.0,
+        "t_stat": null,
+        "events": 1,
+        "t_by_event": null,
+        "stale": 0,
+        "pending": 33,
+        "no_close": 0
+      }
+    },
+    "tracked": {
+      "cbb": {
+        "n": 63,
+        "avg_clv_c": -2.31,
+        "avg_raw_c": -1.06,
+        "beat_close_pct": 1.6,
+        "t_stat": -19.87,
+        "events": 10,
+        "t_by_event": -18.52,
+        "stale": 0,
+        "pending": 7,
+        "no_close": 0
+      },
+      "football": {
+        "n": 0,
+        "avg_clv_c": null,
+        "avg_raw_c": null,
+        "beat_close_pct": null,
+        "t_stat": null,
+        "events": 0,
+        "t_by_event": null,
+        "stale": 0,
+        "pending": 79,
+        "no_close": 0
+      }
+    }
   }
 }
