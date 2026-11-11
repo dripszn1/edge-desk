@@ -15560,3 +15560,1037 @@ snapshot_ts,league,event,ticker,side,price,fair,edge,sharp_line,odds_fetched_ts,
 2026-11-11T02:05:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-169,NO,0.73,0.7956,0.0515,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
 2026-11-11T02:05:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-173,NO,0.81,0.8798,0.059,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
 2026-11-11T02:05:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-181,NO,0.89,0.9692,0.072,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:05:56Z,CFB,Alabama vs Vanderbilt: Spread,KXNCAAFSPREAD-26NOV14ALAVAN-ALA28,YES,0.23,0.2791,0.0362,16.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:05:56Z,CFB,Alabama vs Vanderbilt: Spread,KXNCAAFSPREAD-26NOV14ALAVAN-ALA25,YES,0.28,0.3285,0.0335,16.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:05:56Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE4,NO,0.29,0.3372,0.0322,10.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:05:56Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE3,NO,0.23,0.2871,0.0438,10.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:05:56Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE2,NO,0.22,0.2675,0.0347,10.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:05:56Z,CFB,Sacramento St. vs Central Michigan: Total Points,KXNCAAFTOTAL-26NOV11SACCMU-27,NO,0.1,0.1403,0.0336,44.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:05:56Z,CFB,Illinois vs UCLA: Total Points,KXNCAAFTOTAL-26NOV13ILLUCLA-31,NO,0.1,0.1473,0.0406,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:05:56Z,CFB,Illinois vs UCLA: Total Points,KXNCAAFTOTAL-26NOV13ILLUCLA-34,NO,0.15,0.194,0.0348,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:05:56Z,CFB,Illinois vs UCLA: Total Points,KXNCAAFTOTAL-26NOV13ILLUCLA-37,NO,0.2,0.2488,0.0376,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:05:56Z,CFB,East Carolina vs Charlotte: Total Points,KXNCAAFTOTAL-26NOV14ECUCHAR-26,NO,0.07,0.1146,0.0398,45.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:05:56Z,CFB,Texas vs LSU: Total Points,KXNCAAFTOTAL-26NOV14TEXLSU-27,NO,0.07,0.1146,0.0398,46.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:05:56Z,CFB,Baylor vs BYU: Total Points,KXNCAAFTOTAL-26NOV14BAYBYU-30,NO,0.08,0.1207,0.0351,48.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:05:56Z,CFB,Michigan vs Oregon: Total Points,KXNCAAFTOTAL-26NOV14MICHORE-22,NO,0.09,0.1545,0.0585,38.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:05:56Z,CFB,Michigan vs Oregon: Total Points,KXNCAAFTOTAL-26NOV14MICHORE-25,NO,0.15,0.2026,0.0433,38.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:05:56Z,CFB,Nevada vs Northern Illinois: Total Points,KXNCAAFTOTAL-26NOV14NEVNIU-27,NO,0.06,0.0977,0.0334,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:05:56Z,CFB,Minnesota vs Penn St.: Total Points,KXNCAAFTOTAL-26NOV14MINNPSU-27,NO,0.13,0.1696,0.0313,42.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:05:56Z,CFB,Utah St. vs San Diego St.: Total Points,KXNCAAFTOTAL-26NOV14USUSDSU-28,NO,0.15,0.194,0.0348,41.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:05:56Z,CFB,Utah St. vs San Diego St.: Total Points,KXNCAAFTOTAL-26NOV14USUSDSU-31,NO,0.19,0.2488,0.0478,41.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:05:56Z,CFB,North Dakota St. vs Hawai'i: Total Points,KXNCAAFTOTAL-26NOV14NDSUHAW-24,NO,0.13,0.1775,0.0395,38.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:05:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-139,YES,0.88,0.9627,0.0745,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:05:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-143,YES,0.83,0.9243,0.0843,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:05:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-146,YES,0.8,0.8798,0.0681,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:05:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-149,YES,0.73,0.8194,0.0755,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:05:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-152,YES,0.67,0.7429,0.057,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:05:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-154,YES,0.63,0.6838,0.0366,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:05:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-166,NO,0.66,0.714,0.0383,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:05:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-169,NO,0.73,0.7956,0.0515,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:05:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-173,NO,0.81,0.8798,0.059,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:05:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-177,NO,0.83,0.936,0.096,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:05:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-181,NO,0.89,0.9692,0.072,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:05:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-182,NO,0.9,0.9748,0.0678,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:06:26Z,CFB,Alabama vs Vanderbilt: Spread,KXNCAAFSPREAD-26NOV14ALAVAN-ALA28,YES,0.23,0.2791,0.0362,16.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:06:26Z,CFB,Alabama vs Vanderbilt: Spread,KXNCAAFSPREAD-26NOV14ALAVAN-ALA25,YES,0.28,0.3285,0.0335,16.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:06:26Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE4,NO,0.29,0.3372,0.0322,10.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:06:26Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE3,NO,0.23,0.2871,0.0438,10.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:06:26Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE2,NO,0.22,0.2675,0.0347,10.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:06:26Z,CFB,Sacramento St. vs Central Michigan: Total Points,KXNCAAFTOTAL-26NOV11SACCMU-27,NO,0.1,0.1403,0.0336,44.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:06:26Z,CFB,Illinois vs UCLA: Total Points,KXNCAAFTOTAL-26NOV13ILLUCLA-31,NO,0.1,0.1473,0.0406,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:06:26Z,CFB,Illinois vs UCLA: Total Points,KXNCAAFTOTAL-26NOV13ILLUCLA-34,NO,0.15,0.194,0.0348,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:06:26Z,CFB,Illinois vs UCLA: Total Points,KXNCAAFTOTAL-26NOV13ILLUCLA-37,NO,0.2,0.2488,0.0376,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:06:26Z,CFB,East Carolina vs Charlotte: Total Points,KXNCAAFTOTAL-26NOV14ECUCHAR-26,NO,0.07,0.1146,0.0398,45.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:06:26Z,CFB,Texas vs LSU: Total Points,KXNCAAFTOTAL-26NOV14TEXLSU-27,NO,0.07,0.1146,0.0398,46.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:06:26Z,CFB,Baylor vs BYU: Total Points,KXNCAAFTOTAL-26NOV14BAYBYU-30,NO,0.08,0.1207,0.0351,48.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:06:26Z,CFB,Michigan vs Oregon: Total Points,KXNCAAFTOTAL-26NOV14MICHORE-22,NO,0.09,0.1545,0.0585,38.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:06:26Z,CFB,Michigan vs Oregon: Total Points,KXNCAAFTOTAL-26NOV14MICHORE-25,NO,0.15,0.2026,0.0433,38.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:06:26Z,CFB,Nevada vs Northern Illinois: Total Points,KXNCAAFTOTAL-26NOV14NEVNIU-27,NO,0.06,0.0977,0.0334,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:06:26Z,CFB,Minnesota vs Penn St.: Total Points,KXNCAAFTOTAL-26NOV14MINNPSU-27,NO,0.13,0.1696,0.0313,42.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:06:26Z,CFB,Utah St. vs San Diego St.: Total Points,KXNCAAFTOTAL-26NOV14USUSDSU-28,NO,0.15,0.194,0.0348,41.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:06:26Z,CFB,Utah St. vs San Diego St.: Total Points,KXNCAAFTOTAL-26NOV14USUSDSU-31,NO,0.19,0.2488,0.0478,41.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:06:26Z,CFB,North Dakota St. vs Hawai'i: Total Points,KXNCAAFTOTAL-26NOV14NDSUHAW-24,NO,0.13,0.1775,0.0395,38.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:06:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-139,YES,0.88,0.9627,0.0745,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:06:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-143,YES,0.83,0.9243,0.0843,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:06:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-146,YES,0.8,0.8798,0.0681,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:06:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-149,YES,0.73,0.8194,0.0755,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:06:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-152,YES,0.67,0.7429,0.057,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:06:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-154,YES,0.63,0.6838,0.0366,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:06:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-166,NO,0.66,0.714,0.0383,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:06:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-169,NO,0.73,0.7956,0.0515,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:06:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-173,NO,0.81,0.8798,0.059,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:06:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-177,NO,0.83,0.936,0.096,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:06:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-181,NO,0.89,0.9692,0.072,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:06:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-182,NO,0.9,0.9748,0.0678,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:06:56Z,CFB,Alabama vs Vanderbilt: Spread,KXNCAAFSPREAD-26NOV14ALAVAN-ALA28,YES,0.23,0.2791,0.0362,16.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:06:56Z,CFB,Alabama vs Vanderbilt: Spread,KXNCAAFSPREAD-26NOV14ALAVAN-ALA25,YES,0.28,0.3285,0.0335,16.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:06:56Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE4,NO,0.29,0.3372,0.0322,10.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:06:56Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE3,NO,0.23,0.2871,0.0438,10.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:06:56Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE2,NO,0.22,0.2675,0.0347,10.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:06:56Z,CFB,Sacramento St. vs Central Michigan: Total Points,KXNCAAFTOTAL-26NOV11SACCMU-27,NO,0.1,0.1403,0.0336,44.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:06:56Z,CFB,Illinois vs UCLA: Total Points,KXNCAAFTOTAL-26NOV13ILLUCLA-31,NO,0.1,0.1473,0.0406,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:06:56Z,CFB,Illinois vs UCLA: Total Points,KXNCAAFTOTAL-26NOV13ILLUCLA-34,NO,0.15,0.194,0.0348,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:06:56Z,CFB,Illinois vs UCLA: Total Points,KXNCAAFTOTAL-26NOV13ILLUCLA-37,NO,0.2,0.2488,0.0376,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:06:56Z,CFB,East Carolina vs Charlotte: Total Points,KXNCAAFTOTAL-26NOV14ECUCHAR-26,NO,0.07,0.1146,0.0398,45.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:06:56Z,CFB,Texas vs LSU: Total Points,KXNCAAFTOTAL-26NOV14TEXLSU-27,NO,0.07,0.1146,0.0398,46.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:06:56Z,CFB,Baylor vs BYU: Total Points,KXNCAAFTOTAL-26NOV14BAYBYU-30,NO,0.08,0.1207,0.0351,48.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:06:56Z,CFB,Michigan vs Oregon: Total Points,KXNCAAFTOTAL-26NOV14MICHORE-22,NO,0.09,0.1545,0.0585,38.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:06:56Z,CFB,Michigan vs Oregon: Total Points,KXNCAAFTOTAL-26NOV14MICHORE-25,NO,0.15,0.2026,0.0433,38.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:06:56Z,CFB,Nevada vs Northern Illinois: Total Points,KXNCAAFTOTAL-26NOV14NEVNIU-27,NO,0.06,0.0977,0.0334,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:06:56Z,CFB,Minnesota vs Penn St.: Total Points,KXNCAAFTOTAL-26NOV14MINNPSU-27,NO,0.13,0.1696,0.0313,42.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:06:56Z,CFB,Utah St. vs San Diego St.: Total Points,KXNCAAFTOTAL-26NOV14USUSDSU-28,NO,0.15,0.194,0.0348,41.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:06:56Z,CFB,Utah St. vs San Diego St.: Total Points,KXNCAAFTOTAL-26NOV14USUSDSU-31,NO,0.19,0.2488,0.0478,41.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:06:56Z,CFB,North Dakota St. vs Hawai'i: Total Points,KXNCAAFTOTAL-26NOV14NDSUHAW-24,NO,0.13,0.1775,0.0395,38.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:06:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-139,YES,0.88,0.9627,0.0745,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:06:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-143,YES,0.83,0.9243,0.0843,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:06:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-146,YES,0.8,0.8798,0.0681,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:06:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-149,YES,0.73,0.8194,0.0755,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:06:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-152,YES,0.67,0.7429,0.057,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:06:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-154,YES,0.63,0.6838,0.0366,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:06:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-166,NO,0.66,0.714,0.0383,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:06:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-169,NO,0.73,0.7956,0.0515,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:06:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-173,NO,0.81,0.8798,0.059,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:06:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-177,NO,0.83,0.936,0.096,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:06:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-181,NO,0.89,0.9692,0.072,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:06:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-182,NO,0.9,0.9748,0.0678,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:07:26Z,CFB,Alabama vs Vanderbilt: Spread,KXNCAAFSPREAD-26NOV14ALAVAN-ALA28,YES,0.23,0.2791,0.0362,16.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:07:26Z,CFB,Alabama vs Vanderbilt: Spread,KXNCAAFSPREAD-26NOV14ALAVAN-ALA25,YES,0.28,0.3285,0.0335,16.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:07:26Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE4,NO,0.29,0.3372,0.0322,10.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:07:26Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE3,NO,0.23,0.2871,0.0438,10.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:07:26Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE2,NO,0.22,0.2675,0.0347,10.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:07:26Z,CFB,Sacramento St. vs Central Michigan: Total Points,KXNCAAFTOTAL-26NOV11SACCMU-27,NO,0.1,0.1403,0.0336,44.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:07:26Z,CFB,Illinois vs UCLA: Total Points,KXNCAAFTOTAL-26NOV13ILLUCLA-31,NO,0.1,0.1473,0.0406,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:07:26Z,CFB,Illinois vs UCLA: Total Points,KXNCAAFTOTAL-26NOV13ILLUCLA-34,NO,0.15,0.194,0.0348,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:07:26Z,CFB,Illinois vs UCLA: Total Points,KXNCAAFTOTAL-26NOV13ILLUCLA-37,NO,0.2,0.2488,0.0376,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:07:26Z,CFB,East Carolina vs Charlotte: Total Points,KXNCAAFTOTAL-26NOV14ECUCHAR-26,NO,0.07,0.1146,0.0398,45.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:07:26Z,CFB,Texas vs LSU: Total Points,KXNCAAFTOTAL-26NOV14TEXLSU-27,NO,0.07,0.1146,0.0398,46.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:07:26Z,CFB,Baylor vs BYU: Total Points,KXNCAAFTOTAL-26NOV14BAYBYU-30,NO,0.08,0.1207,0.0351,48.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:07:26Z,CFB,Michigan vs Oregon: Total Points,KXNCAAFTOTAL-26NOV14MICHORE-22,NO,0.09,0.1545,0.0585,38.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:07:26Z,CFB,Michigan vs Oregon: Total Points,KXNCAAFTOTAL-26NOV14MICHORE-25,NO,0.15,0.2026,0.0433,38.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:07:26Z,CFB,Nevada vs Northern Illinois: Total Points,KXNCAAFTOTAL-26NOV14NEVNIU-27,NO,0.06,0.0977,0.0334,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:07:26Z,CFB,Minnesota vs Penn St.: Total Points,KXNCAAFTOTAL-26NOV14MINNPSU-27,NO,0.13,0.1696,0.0313,42.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:07:26Z,CFB,Utah St. vs San Diego St.: Total Points,KXNCAAFTOTAL-26NOV14USUSDSU-28,NO,0.15,0.194,0.0348,41.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:07:26Z,CFB,Utah St. vs San Diego St.: Total Points,KXNCAAFTOTAL-26NOV14USUSDSU-31,NO,0.19,0.2488,0.0478,41.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:07:26Z,CFB,North Dakota St. vs Hawai'i: Total Points,KXNCAAFTOTAL-26NOV14NDSUHAW-24,NO,0.13,0.1775,0.0395,38.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:07:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-139,YES,0.88,0.9627,0.0745,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:07:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-143,YES,0.83,0.9243,0.0843,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:07:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-146,YES,0.8,0.8798,0.0681,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:07:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-149,YES,0.73,0.8194,0.0755,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:07:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-152,YES,0.67,0.7429,0.057,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:07:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-154,YES,0.63,0.6838,0.0366,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:07:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-166,NO,0.66,0.714,0.0383,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:07:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-169,NO,0.73,0.7956,0.0515,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:07:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-173,NO,0.81,0.8798,0.059,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:07:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-177,NO,0.83,0.936,0.096,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:07:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-181,NO,0.89,0.9692,0.072,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:07:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-182,NO,0.9,0.9748,0.0678,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:07:56Z,CFB,Alabama vs Vanderbilt: Spread,KXNCAAFSPREAD-26NOV14ALAVAN-ALA28,YES,0.23,0.2791,0.0362,16.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:07:56Z,CFB,Alabama vs Vanderbilt: Spread,KXNCAAFSPREAD-26NOV14ALAVAN-ALA25,YES,0.28,0.3285,0.0335,16.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:07:56Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE4,NO,0.29,0.3372,0.0322,10.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:07:56Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE3,NO,0.23,0.2871,0.0438,10.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:07:56Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE2,NO,0.22,0.2675,0.0347,10.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:07:56Z,CFB,Sacramento St. vs Central Michigan: Total Points,KXNCAAFTOTAL-26NOV11SACCMU-27,NO,0.1,0.1403,0.0336,44.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:07:56Z,CFB,Illinois vs UCLA: Total Points,KXNCAAFTOTAL-26NOV13ILLUCLA-31,NO,0.1,0.1473,0.0406,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:07:56Z,CFB,Illinois vs UCLA: Total Points,KXNCAAFTOTAL-26NOV13ILLUCLA-34,NO,0.15,0.194,0.0348,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:07:56Z,CFB,Illinois vs UCLA: Total Points,KXNCAAFTOTAL-26NOV13ILLUCLA-37,NO,0.2,0.2488,0.0376,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:07:56Z,CFB,East Carolina vs Charlotte: Total Points,KXNCAAFTOTAL-26NOV14ECUCHAR-26,NO,0.07,0.1146,0.0398,45.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:07:56Z,CFB,Texas vs LSU: Total Points,KXNCAAFTOTAL-26NOV14TEXLSU-27,NO,0.07,0.1146,0.0398,46.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:07:56Z,CFB,Baylor vs BYU: Total Points,KXNCAAFTOTAL-26NOV14BAYBYU-30,NO,0.08,0.1207,0.0351,48.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:07:56Z,CFB,Michigan vs Oregon: Total Points,KXNCAAFTOTAL-26NOV14MICHORE-22,NO,0.09,0.1545,0.0585,38.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:07:56Z,CFB,Michigan vs Oregon: Total Points,KXNCAAFTOTAL-26NOV14MICHORE-25,NO,0.15,0.2026,0.0433,38.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:07:56Z,CFB,Nevada vs Northern Illinois: Total Points,KXNCAAFTOTAL-26NOV14NEVNIU-27,NO,0.06,0.0977,0.0334,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:07:56Z,CFB,Minnesota vs Penn St.: Total Points,KXNCAAFTOTAL-26NOV14MINNPSU-27,NO,0.13,0.1696,0.0313,42.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:07:56Z,CFB,Utah St. vs San Diego St.: Total Points,KXNCAAFTOTAL-26NOV14USUSDSU-28,NO,0.15,0.194,0.0348,41.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:07:56Z,CFB,Utah St. vs San Diego St.: Total Points,KXNCAAFTOTAL-26NOV14USUSDSU-31,NO,0.19,0.2488,0.0478,41.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:07:56Z,CFB,North Dakota St. vs Hawai'i: Total Points,KXNCAAFTOTAL-26NOV14NDSUHAW-24,NO,0.13,0.1775,0.0395,38.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:07:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-139,YES,0.88,0.9627,0.0745,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:07:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-143,YES,0.83,0.9243,0.0843,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:07:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-146,YES,0.8,0.8798,0.0681,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:07:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-149,YES,0.73,0.8194,0.0755,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:07:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-152,YES,0.67,0.7429,0.057,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:07:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-154,YES,0.63,0.6838,0.0366,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:07:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-166,NO,0.66,0.714,0.0383,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:07:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-169,NO,0.73,0.7956,0.0515,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:07:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-173,NO,0.81,0.8798,0.059,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:07:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-177,NO,0.83,0.936,0.096,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:07:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-181,NO,0.89,0.9692,0.072,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:07:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-182,NO,0.9,0.9748,0.0678,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:08:26Z,CFB,James Madison vs UConn: Spread,KXNCAAFSPREAD-26NOV14JMUCONN-JMU4,NO,0.47,0.5303,0.0428,3.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:08:26Z,CFB,Alabama vs Vanderbilt: Spread,KXNCAAFSPREAD-26NOV14ALAVAN-ALA28,YES,0.23,0.2791,0.0362,16.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:08:26Z,CFB,Alabama vs Vanderbilt: Spread,KXNCAAFSPREAD-26NOV14ALAVAN-ALA25,YES,0.28,0.3285,0.0335,16.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:08:26Z,CFB,Texas vs LSU: Spread,KXNCAAFSPREAD-26NOV14TEXLSU-LSU4,NO,0.48,0.5303,0.032,3.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:08:26Z,CFB,Texas vs LSU: Spread,KXNCAAFSPREAD-26NOV14TEXLSU-LSU3,NO,0.4,0.4499,0.0316,3.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:08:26Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE6,NO,0.32,0.3777,0.0414,10.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:08:26Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE5,NO,0.31,0.3613,0.0356,10.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:08:26Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE4,NO,0.29,0.3372,0.0322,10.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:08:26Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE3,NO,0.23,0.2871,0.0438,10.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:08:26Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE2,NO,0.22,0.2675,0.0347,10.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:08:26Z,CFB,Sacramento St. vs Central Michigan: Total Points,KXNCAAFTOTAL-26NOV11SACCMU-27,NO,0.1,0.1403,0.0336,44.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:08:26Z,CFB,Illinois vs UCLA: Total Points,KXNCAAFTOTAL-26NOV13ILLUCLA-31,NO,0.1,0.1473,0.0406,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:08:26Z,CFB,Illinois vs UCLA: Total Points,KXNCAAFTOTAL-26NOV13ILLUCLA-34,NO,0.15,0.194,0.0348,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:08:26Z,CFB,Illinois vs UCLA: Total Points,KXNCAAFTOTAL-26NOV13ILLUCLA-37,NO,0.2,0.2488,0.0376,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:08:26Z,CFB,East Carolina vs Charlotte: Total Points,KXNCAAFTOTAL-26NOV14ECUCHAR-26,NO,0.07,0.1146,0.0398,45.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:08:26Z,CFB,Texas vs LSU: Total Points,KXNCAAFTOTAL-26NOV14TEXLSU-27,NO,0.07,0.1146,0.0398,46.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:08:26Z,CFB,Baylor vs BYU: Total Points,KXNCAAFTOTAL-26NOV14BAYBYU-30,NO,0.08,0.1207,0.0351,48.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:08:26Z,CFB,Michigan vs Oregon: Total Points,KXNCAAFTOTAL-26NOV14MICHORE-22,NO,0.09,0.1545,0.0585,38.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:08:26Z,CFB,Michigan vs Oregon: Total Points,KXNCAAFTOTAL-26NOV14MICHORE-25,NO,0.15,0.2026,0.0433,38.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:08:26Z,CFB,Nevada vs Northern Illinois: Total Points,KXNCAAFTOTAL-26NOV14NEVNIU-27,NO,0.06,0.0977,0.0334,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:08:26Z,CFB,Minnesota vs Penn St.: Total Points,KXNCAAFTOTAL-26NOV14MINNPSU-27,NO,0.13,0.1696,0.0313,42.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:08:26Z,CFB,Utah St. vs San Diego St.: Total Points,KXNCAAFTOTAL-26NOV14USUSDSU-28,NO,0.15,0.194,0.0348,41.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:08:26Z,CFB,Utah St. vs San Diego St.: Total Points,KXNCAAFTOTAL-26NOV14USUSDSU-31,NO,0.19,0.2488,0.0478,41.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:08:26Z,CFB,North Dakota St. vs Hawai'i: Total Points,KXNCAAFTOTAL-26NOV14NDSUHAW-24,NO,0.13,0.1775,0.0395,38.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:08:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-139,YES,0.88,0.9627,0.0745,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:08:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-143,YES,0.83,0.9243,0.0843,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:08:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-146,YES,0.8,0.8798,0.0681,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:08:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-149,YES,0.73,0.8194,0.0755,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:08:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-152,YES,0.67,0.7429,0.057,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:08:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-154,YES,0.63,0.6838,0.0366,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:08:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-166,NO,0.66,0.714,0.0383,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:08:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-169,NO,0.73,0.7956,0.0515,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:08:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-173,NO,0.81,0.8798,0.059,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:08:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-177,NO,0.83,0.936,0.096,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:08:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-181,NO,0.89,0.9692,0.072,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:08:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-182,NO,0.9,0.9748,0.0678,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:08:56Z,CFB,James Madison vs UConn: Spread,KXNCAAFSPREAD-26NOV14JMUCONN-JMU4,NO,0.47,0.5303,0.0428,3.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:08:56Z,CFB,Alabama vs Vanderbilt: Spread,KXNCAAFSPREAD-26NOV14ALAVAN-ALA28,YES,0.23,0.2791,0.0362,16.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:08:56Z,CFB,Alabama vs Vanderbilt: Spread,KXNCAAFSPREAD-26NOV14ALAVAN-ALA25,YES,0.28,0.3285,0.0335,16.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:08:56Z,CFB,Texas vs LSU: Spread,KXNCAAFSPREAD-26NOV14TEXLSU-LSU4,NO,0.48,0.5303,0.032,3.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:08:56Z,CFB,Texas vs LSU: Spread,KXNCAAFSPREAD-26NOV14TEXLSU-LSU3,NO,0.4,0.4499,0.0316,3.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:08:56Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE6,NO,0.32,0.3777,0.0414,10.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:08:56Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE5,NO,0.31,0.3613,0.0356,10.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:08:56Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE4,NO,0.29,0.3372,0.0322,10.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:08:56Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE3,NO,0.23,0.2871,0.0438,10.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:08:56Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE2,NO,0.22,0.2675,0.0347,10.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:08:56Z,CFB,Sacramento St. vs Central Michigan: Total Points,KXNCAAFTOTAL-26NOV11SACCMU-27,NO,0.1,0.1403,0.0336,44.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:08:56Z,CFB,Illinois vs UCLA: Total Points,KXNCAAFTOTAL-26NOV13ILLUCLA-31,NO,0.1,0.1473,0.0406,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:08:56Z,CFB,Illinois vs UCLA: Total Points,KXNCAAFTOTAL-26NOV13ILLUCLA-34,NO,0.15,0.194,0.0348,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:08:56Z,CFB,Illinois vs UCLA: Total Points,KXNCAAFTOTAL-26NOV13ILLUCLA-37,NO,0.2,0.2488,0.0376,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:08:56Z,CFB,East Carolina vs Charlotte: Total Points,KXNCAAFTOTAL-26NOV14ECUCHAR-26,NO,0.07,0.1146,0.0398,45.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:08:56Z,CFB,Texas vs LSU: Total Points,KXNCAAFTOTAL-26NOV14TEXLSU-27,NO,0.07,0.1146,0.0398,46.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:08:56Z,CFB,Baylor vs BYU: Total Points,KXNCAAFTOTAL-26NOV14BAYBYU-30,NO,0.08,0.1207,0.0351,48.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:08:56Z,CFB,Michigan vs Oregon: Total Points,KXNCAAFTOTAL-26NOV14MICHORE-22,NO,0.09,0.1545,0.0585,38.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:08:56Z,CFB,Michigan vs Oregon: Total Points,KXNCAAFTOTAL-26NOV14MICHORE-25,NO,0.15,0.2026,0.0433,38.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:08:56Z,CFB,Nevada vs Northern Illinois: Total Points,KXNCAAFTOTAL-26NOV14NEVNIU-27,NO,0.06,0.0977,0.0334,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:08:56Z,CFB,Minnesota vs Penn St.: Total Points,KXNCAAFTOTAL-26NOV14MINNPSU-27,NO,0.13,0.1696,0.0313,42.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:08:56Z,CFB,Utah St. vs San Diego St.: Total Points,KXNCAAFTOTAL-26NOV14USUSDSU-28,NO,0.15,0.194,0.0348,41.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:08:56Z,CFB,Utah St. vs San Diego St.: Total Points,KXNCAAFTOTAL-26NOV14USUSDSU-31,NO,0.19,0.2488,0.0478,41.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:08:56Z,CFB,North Dakota St. vs Hawai'i: Total Points,KXNCAAFTOTAL-26NOV14NDSUHAW-24,NO,0.13,0.1775,0.0395,38.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:08:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-139,YES,0.88,0.9627,0.0745,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:08:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-143,YES,0.83,0.9243,0.0843,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:08:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-146,YES,0.8,0.8798,0.0681,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:08:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-149,YES,0.73,0.8194,0.0755,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:08:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-152,YES,0.67,0.7429,0.057,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:08:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-154,YES,0.63,0.6838,0.0366,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:08:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-166,NO,0.66,0.714,0.0383,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:08:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-169,NO,0.73,0.7956,0.0515,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:08:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-173,NO,0.81,0.8798,0.059,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:08:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-177,NO,0.83,0.936,0.096,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:08:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-181,NO,0.89,0.9692,0.072,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:08:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-182,NO,0.9,0.9748,0.0678,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:09:26Z,CFB,James Madison vs UConn: Spread,KXNCAAFSPREAD-26NOV14JMUCONN-JMU4,NO,0.47,0.5303,0.0428,3.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:09:26Z,CFB,Alabama vs Vanderbilt: Spread,KXNCAAFSPREAD-26NOV14ALAVAN-ALA28,YES,0.23,0.2791,0.0362,16.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:09:26Z,CFB,Alabama vs Vanderbilt: Spread,KXNCAAFSPREAD-26NOV14ALAVAN-ALA25,YES,0.28,0.3285,0.0335,16.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:09:26Z,CFB,Texas vs LSU: Spread,KXNCAAFSPREAD-26NOV14TEXLSU-LSU4,NO,0.48,0.5303,0.032,3.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:09:26Z,CFB,Texas vs LSU: Spread,KXNCAAFSPREAD-26NOV14TEXLSU-LSU3,NO,0.4,0.4499,0.0316,3.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:09:26Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE6,NO,0.32,0.3777,0.0414,10.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:09:26Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE5,NO,0.31,0.3613,0.0356,10.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:09:26Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE4,NO,0.29,0.3372,0.0322,10.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:09:26Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE3,NO,0.23,0.2871,0.0438,10.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:09:26Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE2,NO,0.22,0.2675,0.0347,10.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:09:26Z,CFB,Sacramento St. vs Central Michigan: Total Points,KXNCAAFTOTAL-26NOV11SACCMU-27,NO,0.1,0.1403,0.0336,44.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:09:26Z,CFB,Illinois vs UCLA: Total Points,KXNCAAFTOTAL-26NOV13ILLUCLA-31,NO,0.1,0.1473,0.0406,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:09:26Z,CFB,Illinois vs UCLA: Total Points,KXNCAAFTOTAL-26NOV13ILLUCLA-34,NO,0.15,0.194,0.0348,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:09:26Z,CFB,Illinois vs UCLA: Total Points,KXNCAAFTOTAL-26NOV13ILLUCLA-37,NO,0.2,0.2488,0.0376,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:09:26Z,CFB,East Carolina vs Charlotte: Total Points,KXNCAAFTOTAL-26NOV14ECUCHAR-26,NO,0.07,0.1146,0.0398,45.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:09:26Z,CFB,Texas vs LSU: Total Points,KXNCAAFTOTAL-26NOV14TEXLSU-27,NO,0.07,0.1146,0.0398,46.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:09:26Z,CFB,Baylor vs BYU: Total Points,KXNCAAFTOTAL-26NOV14BAYBYU-30,NO,0.08,0.1207,0.0351,48.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:09:26Z,CFB,Michigan vs Oregon: Total Points,KXNCAAFTOTAL-26NOV14MICHORE-22,NO,0.09,0.1545,0.0585,38.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:09:26Z,CFB,Michigan vs Oregon: Total Points,KXNCAAFTOTAL-26NOV14MICHORE-25,NO,0.15,0.2026,0.0433,38.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:09:26Z,CFB,Nevada vs Northern Illinois: Total Points,KXNCAAFTOTAL-26NOV14NEVNIU-27,NO,0.06,0.0977,0.0334,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:09:26Z,CFB,Minnesota vs Penn St.: Total Points,KXNCAAFTOTAL-26NOV14MINNPSU-27,NO,0.13,0.1696,0.0313,42.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:09:26Z,CFB,Utah St. vs San Diego St.: Total Points,KXNCAAFTOTAL-26NOV14USUSDSU-28,NO,0.15,0.194,0.0348,41.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:09:26Z,CFB,Utah St. vs San Diego St.: Total Points,KXNCAAFTOTAL-26NOV14USUSDSU-31,NO,0.19,0.2488,0.0478,41.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:09:26Z,CFB,North Dakota St. vs Hawai'i: Total Points,KXNCAAFTOTAL-26NOV14NDSUHAW-24,NO,0.13,0.1775,0.0395,38.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:09:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-139,YES,0.88,0.9627,0.0745,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:09:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-143,YES,0.83,0.9243,0.0843,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:09:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-146,YES,0.8,0.8798,0.0681,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:09:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-149,YES,0.73,0.8194,0.0755,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:09:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-152,YES,0.67,0.7429,0.057,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:09:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-154,YES,0.63,0.6838,0.0366,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:09:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-166,NO,0.66,0.714,0.0383,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:09:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-169,NO,0.73,0.7956,0.0515,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:09:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-173,NO,0.81,0.8798,0.059,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:09:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-177,NO,0.83,0.936,0.096,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:09:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-181,NO,0.89,0.9692,0.072,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:09:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-182,NO,0.9,0.9748,0.0678,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:09:56Z,CFB,James Madison vs UConn: Spread,KXNCAAFSPREAD-26NOV14JMUCONN-JMU4,NO,0.47,0.5303,0.0428,3.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:09:56Z,CFB,Alabama vs Vanderbilt: Spread,KXNCAAFSPREAD-26NOV14ALAVAN-ALA28,YES,0.23,0.2791,0.0362,16.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:09:56Z,CFB,Alabama vs Vanderbilt: Spread,KXNCAAFSPREAD-26NOV14ALAVAN-ALA25,YES,0.28,0.3285,0.0335,16.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:09:56Z,CFB,Texas vs LSU: Spread,KXNCAAFSPREAD-26NOV14TEXLSU-LSU4,NO,0.48,0.5303,0.032,3.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:09:56Z,CFB,Texas vs LSU: Spread,KXNCAAFSPREAD-26NOV14TEXLSU-LSU3,NO,0.4,0.4499,0.0316,3.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:09:56Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE6,NO,0.32,0.3777,0.0414,10.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:09:56Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE5,NO,0.31,0.3613,0.0356,10.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:09:56Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE4,NO,0.29,0.3372,0.0322,10.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:09:56Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE3,NO,0.23,0.2871,0.0438,10.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:09:56Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE2,NO,0.22,0.2675,0.0347,10.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:09:56Z,CFB,Sacramento St. vs Central Michigan: Total Points,KXNCAAFTOTAL-26NOV11SACCMU-27,NO,0.1,0.1403,0.0336,44.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:09:56Z,CFB,Illinois vs UCLA: Total Points,KXNCAAFTOTAL-26NOV13ILLUCLA-31,NO,0.1,0.1473,0.0406,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:09:56Z,CFB,Illinois vs UCLA: Total Points,KXNCAAFTOTAL-26NOV13ILLUCLA-34,NO,0.15,0.194,0.0348,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:09:56Z,CFB,Illinois vs UCLA: Total Points,KXNCAAFTOTAL-26NOV13ILLUCLA-37,NO,0.2,0.2488,0.0376,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:09:56Z,CFB,East Carolina vs Charlotte: Total Points,KXNCAAFTOTAL-26NOV14ECUCHAR-26,NO,0.07,0.1146,0.0398,45.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:09:56Z,CFB,Texas vs LSU: Total Points,KXNCAAFTOTAL-26NOV14TEXLSU-27,NO,0.07,0.1146,0.0398,46.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:09:56Z,CFB,Baylor vs BYU: Total Points,KXNCAAFTOTAL-26NOV14BAYBYU-30,NO,0.08,0.1207,0.0351,48.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:09:56Z,CFB,Michigan vs Oregon: Total Points,KXNCAAFTOTAL-26NOV14MICHORE-22,NO,0.09,0.1545,0.0585,38.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:09:56Z,CFB,Michigan vs Oregon: Total Points,KXNCAAFTOTAL-26NOV14MICHORE-25,NO,0.15,0.2026,0.0433,38.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:09:56Z,CFB,Nevada vs Northern Illinois: Total Points,KXNCAAFTOTAL-26NOV14NEVNIU-27,NO,0.06,0.0977,0.0334,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:09:56Z,CFB,Minnesota vs Penn St.: Total Points,KXNCAAFTOTAL-26NOV14MINNPSU-27,NO,0.13,0.1696,0.0313,42.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:09:56Z,CFB,Utah St. vs San Diego St.: Total Points,KXNCAAFTOTAL-26NOV14USUSDSU-28,NO,0.15,0.194,0.0348,41.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:09:56Z,CFB,Utah St. vs San Diego St.: Total Points,KXNCAAFTOTAL-26NOV14USUSDSU-31,NO,0.19,0.2488,0.0478,41.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:09:56Z,CFB,North Dakota St. vs Hawai'i: Total Points,KXNCAAFTOTAL-26NOV14NDSUHAW-24,NO,0.13,0.1775,0.0395,38.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:09:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-139,YES,0.88,0.9627,0.0745,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:09:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-143,YES,0.83,0.9243,0.0843,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:09:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-146,YES,0.8,0.8798,0.0681,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:09:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-149,YES,0.73,0.8194,0.0755,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:09:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-152,YES,0.67,0.7429,0.057,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:09:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-154,YES,0.63,0.6838,0.0366,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:09:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-166,NO,0.66,0.714,0.0383,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:09:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-169,NO,0.73,0.7956,0.0515,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:09:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-173,NO,0.81,0.8798,0.059,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:09:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-177,NO,0.83,0.936,0.096,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:09:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-181,NO,0.89,0.9692,0.072,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:09:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-182,NO,0.9,0.9748,0.0678,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:10:28Z,CFB,James Madison vs UConn: Spread,KXNCAAFSPREAD-26NOV14JMUCONN-JMU4,NO,0.47,0.5303,0.0428,3.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:10:28Z,CFB,Alabama vs Vanderbilt: Spread,KXNCAAFSPREAD-26NOV14ALAVAN-ALA28,YES,0.23,0.2791,0.0362,16.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:10:28Z,CFB,Alabama vs Vanderbilt: Spread,KXNCAAFSPREAD-26NOV14ALAVAN-ALA25,YES,0.28,0.3285,0.0335,16.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:10:28Z,CFB,Texas vs LSU: Spread,KXNCAAFSPREAD-26NOV14TEXLSU-LSU4,NO,0.48,0.5303,0.032,3.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:10:28Z,CFB,Texas vs LSU: Spread,KXNCAAFSPREAD-26NOV14TEXLSU-LSU3,NO,0.4,0.4499,0.0316,3.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:10:28Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE6,NO,0.32,0.3777,0.0414,10.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:10:28Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE5,NO,0.31,0.3613,0.0356,10.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:10:28Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE4,NO,0.29,0.3372,0.0322,10.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:10:28Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE3,NO,0.23,0.2871,0.0438,10.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:10:28Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE2,NO,0.22,0.2675,0.0347,10.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:10:28Z,CFB,Sacramento St. vs Central Michigan: Total Points,KXNCAAFTOTAL-26NOV11SACCMU-27,NO,0.1,0.1403,0.0336,44.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:10:28Z,CFB,Illinois vs UCLA: Total Points,KXNCAAFTOTAL-26NOV13ILLUCLA-31,NO,0.1,0.1473,0.0406,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:10:28Z,CFB,Illinois vs UCLA: Total Points,KXNCAAFTOTAL-26NOV13ILLUCLA-34,NO,0.15,0.194,0.0348,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:10:28Z,CFB,Illinois vs UCLA: Total Points,KXNCAAFTOTAL-26NOV13ILLUCLA-37,NO,0.2,0.2488,0.0376,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:10:28Z,CFB,East Carolina vs Charlotte: Total Points,KXNCAAFTOTAL-26NOV14ECUCHAR-26,NO,0.07,0.1146,0.0398,45.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:10:28Z,CFB,Texas vs LSU: Total Points,KXNCAAFTOTAL-26NOV14TEXLSU-27,NO,0.07,0.1146,0.0398,46.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:10:28Z,CFB,Baylor vs BYU: Total Points,KXNCAAFTOTAL-26NOV14BAYBYU-30,NO,0.08,0.1207,0.0351,48.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:10:28Z,CFB,Michigan vs Oregon: Total Points,KXNCAAFTOTAL-26NOV14MICHORE-22,NO,0.09,0.1545,0.0585,38.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:10:28Z,CFB,Michigan vs Oregon: Total Points,KXNCAAFTOTAL-26NOV14MICHORE-25,NO,0.15,0.2026,0.0433,38.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:10:28Z,CFB,Nevada vs Northern Illinois: Total Points,KXNCAAFTOTAL-26NOV14NEVNIU-27,NO,0.06,0.0977,0.0334,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:10:28Z,CFB,Minnesota vs Penn St.: Total Points,KXNCAAFTOTAL-26NOV14MINNPSU-27,NO,0.13,0.1696,0.0313,42.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:10:28Z,CFB,Utah St. vs San Diego St.: Total Points,KXNCAAFTOTAL-26NOV14USUSDSU-28,NO,0.15,0.194,0.0348,41.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:10:28Z,CFB,Utah St. vs San Diego St.: Total Points,KXNCAAFTOTAL-26NOV14USUSDSU-31,NO,0.19,0.2488,0.0478,41.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:10:28Z,CFB,North Dakota St. vs Hawai'i: Total Points,KXNCAAFTOTAL-26NOV14NDSUHAW-24,NO,0.13,0.1775,0.0395,38.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:10:28Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-139,YES,0.88,0.9627,0.0745,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:10:28Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-143,YES,0.83,0.9243,0.0843,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:10:28Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-146,YES,0.8,0.8798,0.0681,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:10:28Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-149,YES,0.73,0.8194,0.0755,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:10:28Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-152,YES,0.67,0.7429,0.057,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:10:28Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-154,YES,0.63,0.6838,0.0366,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:10:28Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-166,NO,0.66,0.714,0.0383,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:10:28Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-169,NO,0.73,0.7956,0.0515,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:10:28Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-173,NO,0.81,0.8798,0.059,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:10:28Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-177,NO,0.83,0.936,0.096,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:10:28Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-181,NO,0.89,0.9692,0.072,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:10:28Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-182,NO,0.9,0.9748,0.0678,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:10:56Z,CFB,James Madison vs UConn: Spread,KXNCAAFSPREAD-26NOV14JMUCONN-JMU4,NO,0.47,0.5303,0.0428,3.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:10:56Z,CFB,Alabama vs Vanderbilt: Spread,KXNCAAFSPREAD-26NOV14ALAVAN-ALA28,YES,0.23,0.2791,0.0362,16.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:10:56Z,CFB,Alabama vs Vanderbilt: Spread,KXNCAAFSPREAD-26NOV14ALAVAN-ALA25,YES,0.28,0.3285,0.0335,16.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:10:56Z,CFB,Texas vs LSU: Spread,KXNCAAFSPREAD-26NOV14TEXLSU-LSU4,NO,0.48,0.5303,0.032,3.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:10:56Z,CFB,Texas vs LSU: Spread,KXNCAAFSPREAD-26NOV14TEXLSU-LSU3,NO,0.4,0.4499,0.0316,3.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:10:56Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE6,NO,0.32,0.3777,0.0414,10.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:10:56Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE5,NO,0.31,0.3613,0.0356,10.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:10:56Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE4,NO,0.29,0.3372,0.0322,10.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:10:56Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE3,NO,0.23,0.2871,0.0438,10.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:10:56Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE2,NO,0.22,0.2675,0.0347,10.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:10:56Z,CFB,Sacramento St. vs Central Michigan: Total Points,KXNCAAFTOTAL-26NOV11SACCMU-27,NO,0.1,0.1403,0.0336,44.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:10:56Z,CFB,Illinois vs UCLA: Total Points,KXNCAAFTOTAL-26NOV13ILLUCLA-31,NO,0.1,0.1473,0.0406,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:10:56Z,CFB,Illinois vs UCLA: Total Points,KXNCAAFTOTAL-26NOV13ILLUCLA-34,NO,0.15,0.194,0.0348,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:10:56Z,CFB,Illinois vs UCLA: Total Points,KXNCAAFTOTAL-26NOV13ILLUCLA-37,NO,0.2,0.2488,0.0376,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:10:56Z,CFB,East Carolina vs Charlotte: Total Points,KXNCAAFTOTAL-26NOV14ECUCHAR-26,NO,0.07,0.1146,0.0398,45.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:10:56Z,CFB,Texas vs LSU: Total Points,KXNCAAFTOTAL-26NOV14TEXLSU-27,NO,0.07,0.1146,0.0398,46.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:10:56Z,CFB,Baylor vs BYU: Total Points,KXNCAAFTOTAL-26NOV14BAYBYU-30,NO,0.08,0.1207,0.0351,48.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:10:56Z,CFB,Michigan vs Oregon: Total Points,KXNCAAFTOTAL-26NOV14MICHORE-22,NO,0.09,0.1545,0.0585,38.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:10:56Z,CFB,Michigan vs Oregon: Total Points,KXNCAAFTOTAL-26NOV14MICHORE-25,NO,0.15,0.2026,0.0433,38.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:10:56Z,CFB,Nevada vs Northern Illinois: Total Points,KXNCAAFTOTAL-26NOV14NEVNIU-27,NO,0.06,0.0977,0.0334,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:10:56Z,CFB,Minnesota vs Penn St.: Total Points,KXNCAAFTOTAL-26NOV14MINNPSU-27,NO,0.13,0.1696,0.0313,42.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:10:56Z,CFB,Utah St. vs San Diego St.: Total Points,KXNCAAFTOTAL-26NOV14USUSDSU-28,NO,0.15,0.194,0.0348,41.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:10:56Z,CFB,Utah St. vs San Diego St.: Total Points,KXNCAAFTOTAL-26NOV14USUSDSU-31,NO,0.19,0.2488,0.0478,41.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:10:56Z,CFB,North Dakota St. vs Hawai'i: Total Points,KXNCAAFTOTAL-26NOV14NDSUHAW-24,NO,0.13,0.1775,0.0395,38.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:10:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-139,YES,0.88,0.9627,0.0745,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:10:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-143,YES,0.83,0.9243,0.0843,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:10:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-146,YES,0.8,0.8798,0.0681,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:10:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-149,YES,0.73,0.8194,0.0755,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:10:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-152,YES,0.67,0.7429,0.057,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:10:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-154,YES,0.63,0.6838,0.0366,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:10:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-166,NO,0.66,0.714,0.0383,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:10:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-169,NO,0.73,0.7956,0.0515,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:10:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-173,NO,0.81,0.8798,0.059,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:10:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-177,NO,0.83,0.936,0.096,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:10:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-181,NO,0.89,0.9692,0.072,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:10:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-182,NO,0.9,0.9748,0.0678,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:11:26Z,CFB,James Madison vs UConn: Spread,KXNCAAFSPREAD-26NOV14JMUCONN-JMU4,NO,0.47,0.5303,0.0428,3.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:11:26Z,CFB,Alabama vs Vanderbilt: Spread,KXNCAAFSPREAD-26NOV14ALAVAN-ALA28,YES,0.23,0.2791,0.0362,16.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:11:26Z,CFB,Alabama vs Vanderbilt: Spread,KXNCAAFSPREAD-26NOV14ALAVAN-ALA25,YES,0.28,0.3285,0.0335,16.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:11:26Z,CFB,Texas vs LSU: Spread,KXNCAAFSPREAD-26NOV14TEXLSU-LSU4,NO,0.48,0.5303,0.032,3.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:11:26Z,CFB,Texas vs LSU: Spread,KXNCAAFSPREAD-26NOV14TEXLSU-LSU3,NO,0.4,0.4499,0.0316,3.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:11:26Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE6,NO,0.32,0.3777,0.0414,10.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:11:26Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE5,NO,0.31,0.3613,0.0356,10.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:11:26Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE4,NO,0.29,0.3372,0.0322,10.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:11:26Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE3,NO,0.23,0.2871,0.0438,10.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:11:26Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE2,NO,0.22,0.2675,0.0347,10.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:11:26Z,CFB,Sacramento St. vs Central Michigan: Total Points,KXNCAAFTOTAL-26NOV11SACCMU-27,NO,0.1,0.1403,0.0336,44.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:11:26Z,CFB,Illinois vs UCLA: Total Points,KXNCAAFTOTAL-26NOV13ILLUCLA-31,NO,0.1,0.1473,0.0406,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:11:26Z,CFB,Illinois vs UCLA: Total Points,KXNCAAFTOTAL-26NOV13ILLUCLA-34,NO,0.15,0.194,0.0348,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:11:26Z,CFB,Illinois vs UCLA: Total Points,KXNCAAFTOTAL-26NOV13ILLUCLA-37,NO,0.2,0.2488,0.0376,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:11:26Z,CFB,East Carolina vs Charlotte: Total Points,KXNCAAFTOTAL-26NOV14ECUCHAR-26,NO,0.07,0.1146,0.0398,45.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:11:26Z,CFB,Texas vs LSU: Total Points,KXNCAAFTOTAL-26NOV14TEXLSU-27,NO,0.07,0.1146,0.0398,46.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:11:26Z,CFB,Baylor vs BYU: Total Points,KXNCAAFTOTAL-26NOV14BAYBYU-30,NO,0.08,0.1207,0.0351,48.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:11:26Z,CFB,Michigan vs Oregon: Total Points,KXNCAAFTOTAL-26NOV14MICHORE-22,NO,0.09,0.1545,0.0585,38.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:11:26Z,CFB,Michigan vs Oregon: Total Points,KXNCAAFTOTAL-26NOV14MICHORE-25,NO,0.15,0.2026,0.0433,38.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:11:26Z,CFB,Nevada vs Northern Illinois: Total Points,KXNCAAFTOTAL-26NOV14NEVNIU-27,NO,0.06,0.0977,0.0334,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:11:26Z,CFB,Minnesota vs Penn St.: Total Points,KXNCAAFTOTAL-26NOV14MINNPSU-27,NO,0.13,0.1696,0.0313,42.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:11:26Z,CFB,Utah St. vs San Diego St.: Total Points,KXNCAAFTOTAL-26NOV14USUSDSU-28,NO,0.15,0.194,0.0348,41.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:11:26Z,CFB,Utah St. vs San Diego St.: Total Points,KXNCAAFTOTAL-26NOV14USUSDSU-31,NO,0.19,0.2488,0.0478,41.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:11:26Z,CFB,North Dakota St. vs Hawai'i: Total Points,KXNCAAFTOTAL-26NOV14NDSUHAW-24,NO,0.13,0.1775,0.0395,38.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:11:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-139,YES,0.88,0.9627,0.0745,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:11:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-143,YES,0.83,0.9243,0.0843,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:11:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-146,YES,0.8,0.8798,0.0681,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:11:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-149,YES,0.73,0.8194,0.0755,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:11:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-152,YES,0.67,0.7429,0.057,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:11:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-154,YES,0.63,0.6838,0.0366,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:11:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-166,NO,0.66,0.714,0.0383,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:11:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-169,NO,0.73,0.7956,0.0515,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:11:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-173,NO,0.81,0.8798,0.059,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:11:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-177,NO,0.83,0.936,0.096,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:11:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-181,NO,0.89,0.9692,0.072,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:11:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-182,NO,0.9,0.9748,0.0678,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:11:56Z,CFB,James Madison vs UConn: Spread,KXNCAAFSPREAD-26NOV14JMUCONN-JMU4,NO,0.47,0.5303,0.0428,3.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:11:56Z,CFB,Alabama vs Vanderbilt: Spread,KXNCAAFSPREAD-26NOV14ALAVAN-ALA28,YES,0.23,0.2791,0.0362,16.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:11:56Z,CFB,Alabama vs Vanderbilt: Spread,KXNCAAFSPREAD-26NOV14ALAVAN-ALA25,YES,0.28,0.3285,0.0335,16.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:11:56Z,CFB,Texas vs LSU: Spread,KXNCAAFSPREAD-26NOV14TEXLSU-LSU4,NO,0.48,0.5303,0.032,3.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:11:56Z,CFB,Texas vs LSU: Spread,KXNCAAFSPREAD-26NOV14TEXLSU-LSU3,NO,0.4,0.4499,0.0316,3.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:11:56Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE6,NO,0.32,0.3777,0.0414,10.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:11:56Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE5,NO,0.31,0.3613,0.0356,10.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:11:56Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE4,NO,0.29,0.3372,0.0322,10.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:11:56Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE3,NO,0.23,0.2871,0.0438,10.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:11:56Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE2,NO,0.22,0.2675,0.0347,10.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:11:56Z,CFB,Sacramento St. vs Central Michigan: Total Points,KXNCAAFTOTAL-26NOV11SACCMU-27,NO,0.1,0.1403,0.0336,44.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:11:56Z,CFB,Illinois vs UCLA: Total Points,KXNCAAFTOTAL-26NOV13ILLUCLA-31,NO,0.1,0.1473,0.0406,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:11:56Z,CFB,Illinois vs UCLA: Total Points,KXNCAAFTOTAL-26NOV13ILLUCLA-34,NO,0.15,0.194,0.0348,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:11:56Z,CFB,Illinois vs UCLA: Total Points,KXNCAAFTOTAL-26NOV13ILLUCLA-37,NO,0.2,0.2488,0.0376,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:11:56Z,CFB,East Carolina vs Charlotte: Total Points,KXNCAAFTOTAL-26NOV14ECUCHAR-26,NO,0.07,0.1146,0.0398,45.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:11:56Z,CFB,Texas vs LSU: Total Points,KXNCAAFTOTAL-26NOV14TEXLSU-27,NO,0.07,0.1146,0.0398,46.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:11:56Z,CFB,Baylor vs BYU: Total Points,KXNCAAFTOTAL-26NOV14BAYBYU-30,NO,0.08,0.1207,0.0351,48.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:11:56Z,CFB,Michigan vs Oregon: Total Points,KXNCAAFTOTAL-26NOV14MICHORE-22,NO,0.09,0.1545,0.0585,38.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:11:56Z,CFB,Michigan vs Oregon: Total Points,KXNCAAFTOTAL-26NOV14MICHORE-25,NO,0.15,0.2026,0.0433,38.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:11:56Z,CFB,Nevada vs Northern Illinois: Total Points,KXNCAAFTOTAL-26NOV14NEVNIU-27,NO,0.06,0.0977,0.0334,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:11:56Z,CFB,Minnesota vs Penn St.: Total Points,KXNCAAFTOTAL-26NOV14MINNPSU-27,NO,0.13,0.1696,0.0313,42.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:11:56Z,CFB,Utah St. vs San Diego St.: Total Points,KXNCAAFTOTAL-26NOV14USUSDSU-28,NO,0.15,0.194,0.0348,41.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:11:56Z,CFB,Utah St. vs San Diego St.: Total Points,KXNCAAFTOTAL-26NOV14USUSDSU-31,NO,0.19,0.2488,0.0478,41.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:11:56Z,CFB,North Dakota St. vs Hawai'i: Total Points,KXNCAAFTOTAL-26NOV14NDSUHAW-24,NO,0.13,0.1775,0.0395,38.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:11:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-139,YES,0.88,0.9627,0.0745,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:11:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-143,YES,0.83,0.9243,0.0843,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:11:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-146,YES,0.8,0.8798,0.0681,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:11:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-149,YES,0.73,0.8194,0.0755,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:11:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-152,YES,0.67,0.7429,0.057,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:11:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-154,YES,0.63,0.6838,0.0366,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:11:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-166,NO,0.66,0.714,0.0383,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:11:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-169,NO,0.73,0.7956,0.0515,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:11:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-173,NO,0.81,0.8798,0.059,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:11:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-177,NO,0.83,0.936,0.096,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:11:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-181,NO,0.89,0.9692,0.072,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:11:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-182,NO,0.9,0.9748,0.0678,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:12:26Z,CFB,James Madison vs UConn: Spread,KXNCAAFSPREAD-26NOV14JMUCONN-JMU4,NO,0.47,0.5303,0.0428,3.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:12:26Z,CFB,Alabama vs Vanderbilt: Spread,KXNCAAFSPREAD-26NOV14ALAVAN-ALA28,YES,0.23,0.2791,0.0362,16.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:12:26Z,CFB,Alabama vs Vanderbilt: Spread,KXNCAAFSPREAD-26NOV14ALAVAN-ALA25,YES,0.28,0.3285,0.0335,16.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:12:26Z,CFB,Texas vs LSU: Spread,KXNCAAFSPREAD-26NOV14TEXLSU-LSU4,NO,0.48,0.5303,0.032,3.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:12:26Z,CFB,Texas vs LSU: Spread,KXNCAAFSPREAD-26NOV14TEXLSU-LSU3,NO,0.4,0.4499,0.0316,3.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:12:26Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE6,NO,0.32,0.3777,0.0414,10.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:12:26Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE5,NO,0.31,0.3613,0.0356,10.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:12:26Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE4,NO,0.29,0.3372,0.0322,10.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:12:26Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE3,NO,0.23,0.2871,0.0438,10.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:12:26Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE2,NO,0.22,0.2675,0.0347,10.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:12:26Z,CFB,Sacramento St. vs Central Michigan: Total Points,KXNCAAFTOTAL-26NOV11SACCMU-27,NO,0.1,0.1403,0.0336,44.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:12:26Z,CFB,Illinois vs UCLA: Total Points,KXNCAAFTOTAL-26NOV13ILLUCLA-31,NO,0.1,0.1473,0.0406,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:12:26Z,CFB,Illinois vs UCLA: Total Points,KXNCAAFTOTAL-26NOV13ILLUCLA-34,NO,0.15,0.194,0.0348,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:12:26Z,CFB,Illinois vs UCLA: Total Points,KXNCAAFTOTAL-26NOV13ILLUCLA-37,NO,0.2,0.2488,0.0376,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:12:26Z,CFB,East Carolina vs Charlotte: Total Points,KXNCAAFTOTAL-26NOV14ECUCHAR-26,NO,0.07,0.1146,0.0398,45.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:12:26Z,CFB,Texas vs LSU: Total Points,KXNCAAFTOTAL-26NOV14TEXLSU-27,NO,0.07,0.1146,0.0398,46.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:12:26Z,CFB,Baylor vs BYU: Total Points,KXNCAAFTOTAL-26NOV14BAYBYU-30,NO,0.08,0.1207,0.0351,48.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:12:26Z,CFB,Michigan vs Oregon: Total Points,KXNCAAFTOTAL-26NOV14MICHORE-22,NO,0.09,0.1545,0.0585,38.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:12:26Z,CFB,Michigan vs Oregon: Total Points,KXNCAAFTOTAL-26NOV14MICHORE-25,NO,0.15,0.2026,0.0433,38.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:12:26Z,CFB,Nevada vs Northern Illinois: Total Points,KXNCAAFTOTAL-26NOV14NEVNIU-27,NO,0.06,0.0977,0.0334,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:12:26Z,CFB,Minnesota vs Penn St.: Total Points,KXNCAAFTOTAL-26NOV14MINNPSU-27,NO,0.13,0.1696,0.0313,42.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:12:26Z,CFB,Utah St. vs San Diego St.: Total Points,KXNCAAFTOTAL-26NOV14USUSDSU-28,NO,0.15,0.194,0.0348,41.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:12:26Z,CFB,Utah St. vs San Diego St.: Total Points,KXNCAAFTOTAL-26NOV14USUSDSU-31,NO,0.19,0.2488,0.0478,41.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:12:26Z,CFB,North Dakota St. vs Hawai'i: Total Points,KXNCAAFTOTAL-26NOV14NDSUHAW-24,NO,0.13,0.1775,0.0395,38.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:12:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-139,YES,0.88,0.9627,0.0745,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:12:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-143,YES,0.83,0.9243,0.0843,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:12:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-146,YES,0.8,0.8798,0.0681,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:12:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-149,YES,0.73,0.8194,0.0755,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:12:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-152,YES,0.67,0.7429,0.057,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:12:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-154,YES,0.63,0.6838,0.0366,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:12:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-166,NO,0.66,0.714,0.0383,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:12:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-169,NO,0.73,0.7956,0.0515,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:12:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-173,NO,0.81,0.8798,0.059,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:12:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-177,NO,0.83,0.936,0.096,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:12:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-181,NO,0.89,0.9692,0.072,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:12:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-182,NO,0.9,0.9748,0.0678,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:12:56Z,CFB,James Madison vs UConn: Spread,KXNCAAFSPREAD-26NOV14JMUCONN-JMU4,NO,0.47,0.5303,0.0428,3.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:12:56Z,CFB,Alabama vs Vanderbilt: Spread,KXNCAAFSPREAD-26NOV14ALAVAN-ALA28,YES,0.23,0.2791,0.0362,16.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:12:56Z,CFB,Alabama vs Vanderbilt: Spread,KXNCAAFSPREAD-26NOV14ALAVAN-ALA25,YES,0.28,0.3285,0.0335,16.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:12:56Z,CFB,Texas vs LSU: Spread,KXNCAAFSPREAD-26NOV14TEXLSU-LSU4,NO,0.48,0.5303,0.032,3.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:12:56Z,CFB,Texas vs LSU: Spread,KXNCAAFSPREAD-26NOV14TEXLSU-LSU3,NO,0.4,0.4499,0.0316,3.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:12:56Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE6,NO,0.32,0.3777,0.0414,10.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:12:56Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE5,NO,0.31,0.3613,0.0356,10.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:12:56Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE4,NO,0.29,0.3372,0.0322,10.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:12:56Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE3,NO,0.23,0.2871,0.0438,10.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:12:56Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE2,NO,0.22,0.2675,0.0347,10.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:12:56Z,CFB,Sacramento St. vs Central Michigan: Total Points,KXNCAAFTOTAL-26NOV11SACCMU-27,NO,0.1,0.1403,0.0336,44.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:12:56Z,CFB,Illinois vs UCLA: Total Points,KXNCAAFTOTAL-26NOV13ILLUCLA-31,NO,0.1,0.1473,0.0406,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:12:56Z,CFB,Illinois vs UCLA: Total Points,KXNCAAFTOTAL-26NOV13ILLUCLA-34,NO,0.15,0.194,0.0348,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:12:56Z,CFB,Illinois vs UCLA: Total Points,KXNCAAFTOTAL-26NOV13ILLUCLA-37,NO,0.2,0.2488,0.0376,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:12:56Z,CFB,East Carolina vs Charlotte: Total Points,KXNCAAFTOTAL-26NOV14ECUCHAR-26,NO,0.07,0.1146,0.0398,45.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:12:56Z,CFB,Texas vs LSU: Total Points,KXNCAAFTOTAL-26NOV14TEXLSU-27,NO,0.07,0.1146,0.0398,46.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:12:56Z,CFB,Baylor vs BYU: Total Points,KXNCAAFTOTAL-26NOV14BAYBYU-30,NO,0.08,0.1207,0.0351,48.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:12:56Z,CFB,Michigan vs Oregon: Total Points,KXNCAAFTOTAL-26NOV14MICHORE-22,NO,0.09,0.1545,0.0585,38.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:12:56Z,CFB,Michigan vs Oregon: Total Points,KXNCAAFTOTAL-26NOV14MICHORE-25,NO,0.15,0.2026,0.0433,38.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:12:56Z,CFB,Nevada vs Northern Illinois: Total Points,KXNCAAFTOTAL-26NOV14NEVNIU-27,NO,0.06,0.0977,0.0334,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:12:56Z,CFB,Minnesota vs Penn St.: Total Points,KXNCAAFTOTAL-26NOV14MINNPSU-27,NO,0.13,0.1696,0.0313,42.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:12:56Z,CFB,Utah St. vs San Diego St.: Total Points,KXNCAAFTOTAL-26NOV14USUSDSU-28,NO,0.15,0.194,0.0348,41.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:12:56Z,CFB,Utah St. vs San Diego St.: Total Points,KXNCAAFTOTAL-26NOV14USUSDSU-31,NO,0.19,0.2488,0.0478,41.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:12:56Z,CFB,North Dakota St. vs Hawai'i: Total Points,KXNCAAFTOTAL-26NOV14NDSUHAW-24,NO,0.13,0.1775,0.0395,38.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:12:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-139,YES,0.88,0.9627,0.0745,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:12:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-143,YES,0.83,0.9243,0.0843,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:12:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-146,YES,0.8,0.8798,0.0681,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:12:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-149,YES,0.73,0.8194,0.0755,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:12:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-152,YES,0.67,0.7429,0.057,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:12:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-154,YES,0.63,0.6838,0.0366,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:12:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-166,NO,0.66,0.714,0.0383,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:12:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-169,NO,0.73,0.7956,0.0515,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:12:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-173,NO,0.81,0.8798,0.059,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:12:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-177,NO,0.83,0.936,0.096,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:12:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-181,NO,0.89,0.9692,0.072,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:12:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-182,NO,0.9,0.9748,0.0678,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:13:26Z,CFB,James Madison vs UConn: Spread,KXNCAAFSPREAD-26NOV14JMUCONN-JMU4,NO,0.47,0.5303,0.0428,3.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:13:26Z,CFB,Alabama vs Vanderbilt: Spread,KXNCAAFSPREAD-26NOV14ALAVAN-ALA28,YES,0.23,0.2791,0.0362,16.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:13:26Z,CFB,Alabama vs Vanderbilt: Spread,KXNCAAFSPREAD-26NOV14ALAVAN-ALA25,YES,0.28,0.3285,0.0335,16.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:13:26Z,CFB,Texas vs LSU: Spread,KXNCAAFSPREAD-26NOV14TEXLSU-LSU4,NO,0.48,0.5303,0.032,3.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:13:26Z,CFB,Texas vs LSU: Spread,KXNCAAFSPREAD-26NOV14TEXLSU-LSU3,NO,0.4,0.4499,0.0316,3.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:13:26Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE6,NO,0.32,0.3777,0.0414,10.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:13:26Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE5,NO,0.31,0.3613,0.0356,10.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:13:26Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE4,NO,0.29,0.3372,0.0322,10.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:13:26Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE3,NO,0.23,0.2871,0.0438,10.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:13:26Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE2,NO,0.22,0.2675,0.0347,10.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:13:26Z,CFB,Sacramento St. vs Central Michigan: Total Points,KXNCAAFTOTAL-26NOV11SACCMU-27,NO,0.1,0.1403,0.0336,44.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:13:26Z,CFB,Illinois vs UCLA: Total Points,KXNCAAFTOTAL-26NOV13ILLUCLA-31,NO,0.1,0.1473,0.0406,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:13:26Z,CFB,Illinois vs UCLA: Total Points,KXNCAAFTOTAL-26NOV13ILLUCLA-34,NO,0.15,0.194,0.0348,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:13:26Z,CFB,Illinois vs UCLA: Total Points,KXNCAAFTOTAL-26NOV13ILLUCLA-37,NO,0.2,0.2488,0.0376,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:13:26Z,CFB,East Carolina vs Charlotte: Total Points,KXNCAAFTOTAL-26NOV14ECUCHAR-26,NO,0.07,0.1146,0.0398,45.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:13:26Z,CFB,Texas vs LSU: Total Points,KXNCAAFTOTAL-26NOV14TEXLSU-27,NO,0.07,0.1146,0.0398,46.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:13:26Z,CFB,Baylor vs BYU: Total Points,KXNCAAFTOTAL-26NOV14BAYBYU-30,NO,0.08,0.1207,0.0351,48.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:13:26Z,CFB,Michigan vs Oregon: Total Points,KXNCAAFTOTAL-26NOV14MICHORE-22,NO,0.09,0.1545,0.0585,38.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:13:26Z,CFB,Michigan vs Oregon: Total Points,KXNCAAFTOTAL-26NOV14MICHORE-25,NO,0.15,0.2026,0.0433,38.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:13:26Z,CFB,Nevada vs Northern Illinois: Total Points,KXNCAAFTOTAL-26NOV14NEVNIU-27,NO,0.06,0.0977,0.0334,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:13:26Z,CFB,Minnesota vs Penn St.: Total Points,KXNCAAFTOTAL-26NOV14MINNPSU-27,NO,0.13,0.1696,0.0313,42.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:13:26Z,CFB,Utah St. vs San Diego St.: Total Points,KXNCAAFTOTAL-26NOV14USUSDSU-28,NO,0.15,0.194,0.0348,41.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:13:26Z,CFB,Utah St. vs San Diego St.: Total Points,KXNCAAFTOTAL-26NOV14USUSDSU-31,NO,0.19,0.2488,0.0478,41.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:13:26Z,CFB,North Dakota St. vs Hawai'i: Total Points,KXNCAAFTOTAL-26NOV14NDSUHAW-24,NO,0.13,0.1775,0.0395,38.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:13:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-139,YES,0.88,0.9627,0.0745,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:13:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-143,YES,0.83,0.9243,0.0843,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:13:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-146,YES,0.77,0.8798,0.0973,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:13:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-149,YES,0.73,0.8194,0.0755,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:13:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-152,YES,0.67,0.7429,0.057,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:13:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-154,YES,0.63,0.6838,0.0366,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:13:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-166,NO,0.66,0.714,0.0383,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:13:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-169,NO,0.73,0.7956,0.0515,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:13:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-173,NO,0.81,0.8798,0.059,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:13:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-177,NO,0.83,0.936,0.096,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:13:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-181,NO,0.89,0.9692,0.072,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:13:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-182,NO,0.9,0.9748,0.0678,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:13:56Z,CFB,James Madison vs UConn: Spread,KXNCAAFSPREAD-26NOV14JMUCONN-JMU4,NO,0.47,0.5303,0.0428,3.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:13:56Z,CFB,Alabama vs Vanderbilt: Spread,KXNCAAFSPREAD-26NOV14ALAVAN-ALA28,YES,0.23,0.2791,0.0362,16.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:13:56Z,CFB,Alabama vs Vanderbilt: Spread,KXNCAAFSPREAD-26NOV14ALAVAN-ALA25,YES,0.28,0.3285,0.0335,16.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:13:56Z,CFB,Texas vs LSU: Spread,KXNCAAFSPREAD-26NOV14TEXLSU-LSU4,NO,0.48,0.5303,0.032,3.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:13:56Z,CFB,Texas vs LSU: Spread,KXNCAAFSPREAD-26NOV14TEXLSU-LSU3,NO,0.4,0.4499,0.0316,3.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:13:56Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE6,NO,0.32,0.3777,0.0414,10.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:13:56Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE5,NO,0.31,0.3613,0.0356,10.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:13:56Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE4,NO,0.29,0.3372,0.0322,10.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:13:56Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE3,NO,0.23,0.2871,0.0438,10.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:13:56Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE2,NO,0.22,0.2675,0.0347,10.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:13:56Z,CFB,Sacramento St. vs Central Michigan: Total Points,KXNCAAFTOTAL-26NOV11SACCMU-27,NO,0.1,0.1403,0.0336,44.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:13:56Z,CFB,Illinois vs UCLA: Total Points,KXNCAAFTOTAL-26NOV13ILLUCLA-31,NO,0.1,0.1473,0.0406,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:13:56Z,CFB,Illinois vs UCLA: Total Points,KXNCAAFTOTAL-26NOV13ILLUCLA-34,NO,0.15,0.194,0.0348,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:13:56Z,CFB,Illinois vs UCLA: Total Points,KXNCAAFTOTAL-26NOV13ILLUCLA-37,NO,0.2,0.2488,0.0376,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:13:56Z,CFB,East Carolina vs Charlotte: Total Points,KXNCAAFTOTAL-26NOV14ECUCHAR-26,NO,0.07,0.1146,0.0398,45.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:13:56Z,CFB,Texas vs LSU: Total Points,KXNCAAFTOTAL-26NOV14TEXLSU-27,NO,0.07,0.1146,0.0398,46.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:13:56Z,CFB,Baylor vs BYU: Total Points,KXNCAAFTOTAL-26NOV14BAYBYU-30,NO,0.08,0.1207,0.0351,48.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:13:56Z,CFB,Michigan vs Oregon: Total Points,KXNCAAFTOTAL-26NOV14MICHORE-22,NO,0.09,0.1545,0.0585,38.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:13:56Z,CFB,Michigan vs Oregon: Total Points,KXNCAAFTOTAL-26NOV14MICHORE-25,NO,0.15,0.2026,0.0433,38.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:13:56Z,CFB,Nevada vs Northern Illinois: Total Points,KXNCAAFTOTAL-26NOV14NEVNIU-27,NO,0.06,0.0977,0.0334,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:13:56Z,CFB,Minnesota vs Penn St.: Total Points,KXNCAAFTOTAL-26NOV14MINNPSU-27,NO,0.13,0.1696,0.0313,42.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:13:56Z,CFB,Utah St. vs San Diego St.: Total Points,KXNCAAFTOTAL-26NOV14USUSDSU-28,NO,0.15,0.194,0.0348,41.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:13:56Z,CFB,Utah St. vs San Diego St.: Total Points,KXNCAAFTOTAL-26NOV14USUSDSU-31,NO,0.19,0.2488,0.0478,41.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:13:56Z,CFB,North Dakota St. vs Hawai'i: Total Points,KXNCAAFTOTAL-26NOV14NDSUHAW-24,NO,0.13,0.1775,0.0395,38.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:13:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-139,YES,0.88,0.9627,0.0745,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:13:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-143,YES,0.83,0.9243,0.0843,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:13:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-146,YES,0.77,0.8798,0.0973,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:13:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-149,YES,0.73,0.8194,0.0755,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:13:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-152,YES,0.67,0.7429,0.057,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:13:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-154,YES,0.63,0.6838,0.0366,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:13:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-166,NO,0.66,0.714,0.0383,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:13:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-169,NO,0.73,0.7956,0.0515,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:13:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-173,NO,0.81,0.8798,0.059,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:13:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-177,NO,0.83,0.936,0.096,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:13:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-181,NO,0.89,0.9692,0.072,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:13:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-182,NO,0.9,0.9748,0.0678,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:14:26Z,CFB,James Madison vs UConn: Spread,KXNCAAFSPREAD-26NOV14JMUCONN-JMU4,NO,0.47,0.5303,0.0428,3.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:14:26Z,CFB,Alabama vs Vanderbilt: Spread,KXNCAAFSPREAD-26NOV14ALAVAN-ALA28,YES,0.23,0.2791,0.0362,16.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:14:26Z,CFB,Alabama vs Vanderbilt: Spread,KXNCAAFSPREAD-26NOV14ALAVAN-ALA25,YES,0.28,0.3285,0.0335,16.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:14:26Z,CFB,Texas vs LSU: Spread,KXNCAAFSPREAD-26NOV14TEXLSU-LSU4,NO,0.48,0.5303,0.032,3.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:14:26Z,CFB,Texas vs LSU: Spread,KXNCAAFSPREAD-26NOV14TEXLSU-LSU3,NO,0.4,0.4499,0.0316,3.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:14:26Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE6,NO,0.32,0.3777,0.0414,10.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:14:26Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE5,NO,0.31,0.3613,0.0356,10.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:14:26Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE4,NO,0.29,0.3372,0.0322,10.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:14:26Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE3,NO,0.23,0.2871,0.0438,10.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:14:26Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE2,NO,0.22,0.2675,0.0347,10.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:14:26Z,CFB,Sacramento St. vs Central Michigan: Total Points,KXNCAAFTOTAL-26NOV11SACCMU-27,NO,0.1,0.1403,0.0336,44.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:14:26Z,CFB,Illinois vs UCLA: Total Points,KXNCAAFTOTAL-26NOV13ILLUCLA-31,NO,0.1,0.1473,0.0406,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:14:26Z,CFB,Illinois vs UCLA: Total Points,KXNCAAFTOTAL-26NOV13ILLUCLA-34,NO,0.15,0.194,0.0348,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:14:26Z,CFB,Illinois vs UCLA: Total Points,KXNCAAFTOTAL-26NOV13ILLUCLA-37,NO,0.2,0.2488,0.0376,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:14:26Z,CFB,East Carolina vs Charlotte: Total Points,KXNCAAFTOTAL-26NOV14ECUCHAR-26,NO,0.07,0.1146,0.0398,45.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:14:26Z,CFB,Texas vs LSU: Total Points,KXNCAAFTOTAL-26NOV14TEXLSU-27,NO,0.07,0.1146,0.0398,46.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:14:26Z,CFB,Baylor vs BYU: Total Points,KXNCAAFTOTAL-26NOV14BAYBYU-30,NO,0.08,0.1207,0.0351,48.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:14:26Z,CFB,Michigan vs Oregon: Total Points,KXNCAAFTOTAL-26NOV14MICHORE-22,NO,0.09,0.1545,0.0585,38.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:14:26Z,CFB,Michigan vs Oregon: Total Points,KXNCAAFTOTAL-26NOV14MICHORE-25,NO,0.15,0.2026,0.0433,38.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:14:26Z,CFB,Nevada vs Northern Illinois: Total Points,KXNCAAFTOTAL-26NOV14NEVNIU-27,NO,0.06,0.0977,0.0334,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:14:26Z,CFB,Minnesota vs Penn St.: Total Points,KXNCAAFTOTAL-26NOV14MINNPSU-27,NO,0.13,0.1696,0.0313,42.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:14:26Z,CFB,Utah St. vs San Diego St.: Total Points,KXNCAAFTOTAL-26NOV14USUSDSU-28,NO,0.15,0.194,0.0348,41.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:14:26Z,CFB,Utah St. vs San Diego St.: Total Points,KXNCAAFTOTAL-26NOV14USUSDSU-31,NO,0.19,0.2488,0.0478,41.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:14:26Z,CFB,North Dakota St. vs Hawai'i: Total Points,KXNCAAFTOTAL-26NOV14NDSUHAW-24,NO,0.13,0.1775,0.0395,38.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:14:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-139,YES,0.88,0.9627,0.0745,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:14:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-143,YES,0.83,0.9243,0.0843,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:14:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-146,YES,0.77,0.8798,0.0973,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:14:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-149,YES,0.73,0.8194,0.0755,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:14:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-152,YES,0.67,0.7429,0.057,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:14:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-154,YES,0.63,0.6838,0.0366,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:14:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-166,NO,0.66,0.714,0.0383,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:14:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-169,NO,0.73,0.7956,0.0515,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:14:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-173,NO,0.81,0.8798,0.059,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:14:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-177,NO,0.83,0.936,0.096,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:14:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-181,NO,0.89,0.9692,0.072,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:14:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-182,NO,0.9,0.9748,0.0678,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:14:56Z,CFB,James Madison vs UConn: Spread,KXNCAAFSPREAD-26NOV14JMUCONN-JMU4,NO,0.47,0.5303,0.0428,3.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:14:56Z,CFB,Alabama vs Vanderbilt: Spread,KXNCAAFSPREAD-26NOV14ALAVAN-ALA28,YES,0.23,0.2791,0.0362,16.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:14:56Z,CFB,Alabama vs Vanderbilt: Spread,KXNCAAFSPREAD-26NOV14ALAVAN-ALA25,YES,0.28,0.3285,0.0335,16.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:14:56Z,CFB,Texas vs LSU: Spread,KXNCAAFSPREAD-26NOV14TEXLSU-LSU4,NO,0.48,0.5303,0.032,3.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:14:56Z,CFB,Texas vs LSU: Spread,KXNCAAFSPREAD-26NOV14TEXLSU-LSU3,NO,0.4,0.4499,0.0316,3.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:14:56Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE6,NO,0.32,0.3777,0.0414,10.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:14:56Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE5,NO,0.31,0.3613,0.0356,10.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:14:56Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE4,NO,0.29,0.3372,0.0322,10.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:14:56Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE3,NO,0.23,0.2871,0.0438,10.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:14:56Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE2,NO,0.22,0.2675,0.0347,10.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:14:56Z,CFB,Sacramento St. vs Central Michigan: Total Points,KXNCAAFTOTAL-26NOV11SACCMU-27,NO,0.1,0.1403,0.0336,44.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:14:56Z,CFB,Illinois vs UCLA: Total Points,KXNCAAFTOTAL-26NOV13ILLUCLA-31,NO,0.1,0.1473,0.0406,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:14:56Z,CFB,Illinois vs UCLA: Total Points,KXNCAAFTOTAL-26NOV13ILLUCLA-34,NO,0.15,0.194,0.0348,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:14:56Z,CFB,Illinois vs UCLA: Total Points,KXNCAAFTOTAL-26NOV13ILLUCLA-37,NO,0.2,0.2488,0.0376,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:14:56Z,CFB,East Carolina vs Charlotte: Total Points,KXNCAAFTOTAL-26NOV14ECUCHAR-26,NO,0.07,0.1146,0.0398,45.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:14:56Z,CFB,Texas vs LSU: Total Points,KXNCAAFTOTAL-26NOV14TEXLSU-27,NO,0.07,0.1146,0.0398,46.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:14:56Z,CFB,Baylor vs BYU: Total Points,KXNCAAFTOTAL-26NOV14BAYBYU-30,NO,0.08,0.1207,0.0351,48.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:14:56Z,CFB,Michigan vs Oregon: Total Points,KXNCAAFTOTAL-26NOV14MICHORE-22,NO,0.09,0.1545,0.0585,38.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:14:56Z,CFB,Michigan vs Oregon: Total Points,KXNCAAFTOTAL-26NOV14MICHORE-25,NO,0.15,0.2026,0.0433,38.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:14:56Z,CFB,Nevada vs Northern Illinois: Total Points,KXNCAAFTOTAL-26NOV14NEVNIU-27,NO,0.06,0.0977,0.0334,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:14:56Z,CFB,Minnesota vs Penn St.: Total Points,KXNCAAFTOTAL-26NOV14MINNPSU-27,NO,0.13,0.1696,0.0313,42.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:14:56Z,CFB,Utah St. vs San Diego St.: Total Points,KXNCAAFTOTAL-26NOV14USUSDSU-28,NO,0.15,0.194,0.0348,41.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:14:56Z,CFB,Utah St. vs San Diego St.: Total Points,KXNCAAFTOTAL-26NOV14USUSDSU-31,NO,0.19,0.2488,0.0478,41.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:14:56Z,CFB,North Dakota St. vs Hawai'i: Total Points,KXNCAAFTOTAL-26NOV14NDSUHAW-24,NO,0.13,0.1775,0.0395,38.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:14:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-139,YES,0.88,0.9627,0.0745,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:14:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-143,YES,0.83,0.9243,0.0843,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:14:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-146,YES,0.77,0.8798,0.0973,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:14:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-149,YES,0.73,0.8194,0.0755,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:14:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-152,YES,0.67,0.7429,0.057,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:14:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-154,YES,0.63,0.6838,0.0366,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:14:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-166,NO,0.66,0.714,0.0383,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:14:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-169,NO,0.73,0.7956,0.0515,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:14:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-173,NO,0.81,0.8798,0.059,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:14:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-177,NO,0.83,0.936,0.096,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:14:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-181,NO,0.89,0.9692,0.072,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:14:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-182,NO,0.9,0.9748,0.0678,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:15:26Z,CFB,James Madison vs UConn: Spread,KXNCAAFSPREAD-26NOV14JMUCONN-JMU4,NO,0.47,0.5303,0.0428,3.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:15:26Z,CFB,Alabama vs Vanderbilt: Spread,KXNCAAFSPREAD-26NOV14ALAVAN-ALA28,YES,0.23,0.2791,0.0362,16.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:15:26Z,CFB,Alabama vs Vanderbilt: Spread,KXNCAAFSPREAD-26NOV14ALAVAN-ALA25,YES,0.28,0.3285,0.0335,16.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:15:26Z,CFB,Texas vs LSU: Spread,KXNCAAFSPREAD-26NOV14TEXLSU-LSU4,NO,0.48,0.5303,0.032,3.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:15:26Z,CFB,Texas vs LSU: Spread,KXNCAAFSPREAD-26NOV14TEXLSU-LSU3,NO,0.4,0.4499,0.0316,3.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:15:26Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE6,NO,0.32,0.3777,0.0414,10.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:15:26Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE5,NO,0.31,0.3613,0.0356,10.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:15:26Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE4,NO,0.29,0.3372,0.0322,10.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:15:26Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE3,NO,0.23,0.2871,0.0438,10.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:15:26Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE2,NO,0.22,0.2675,0.0347,10.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:15:26Z,CFB,Sacramento St. vs Central Michigan: Total Points,KXNCAAFTOTAL-26NOV11SACCMU-27,NO,0.1,0.1403,0.0336,44.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:15:26Z,CFB,Illinois vs UCLA: Total Points,KXNCAAFTOTAL-26NOV13ILLUCLA-31,NO,0.1,0.1473,0.0406,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:15:26Z,CFB,Illinois vs UCLA: Total Points,KXNCAAFTOTAL-26NOV13ILLUCLA-34,NO,0.15,0.194,0.0348,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:15:26Z,CFB,Illinois vs UCLA: Total Points,KXNCAAFTOTAL-26NOV13ILLUCLA-37,NO,0.2,0.2488,0.0376,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:15:26Z,CFB,East Carolina vs Charlotte: Total Points,KXNCAAFTOTAL-26NOV14ECUCHAR-26,NO,0.07,0.1146,0.0398,45.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:15:26Z,CFB,Texas vs LSU: Total Points,KXNCAAFTOTAL-26NOV14TEXLSU-27,NO,0.07,0.1146,0.0398,46.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:15:26Z,CFB,Baylor vs BYU: Total Points,KXNCAAFTOTAL-26NOV14BAYBYU-30,NO,0.08,0.1207,0.0351,48.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:15:26Z,CFB,Michigan vs Oregon: Total Points,KXNCAAFTOTAL-26NOV14MICHORE-22,NO,0.09,0.1545,0.0585,38.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:15:26Z,CFB,Michigan vs Oregon: Total Points,KXNCAAFTOTAL-26NOV14MICHORE-25,NO,0.15,0.2026,0.0433,38.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:15:26Z,CFB,Nevada vs Northern Illinois: Total Points,KXNCAAFTOTAL-26NOV14NEVNIU-27,NO,0.06,0.0977,0.0334,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:15:26Z,CFB,Minnesota vs Penn St.: Total Points,KXNCAAFTOTAL-26NOV14MINNPSU-27,NO,0.13,0.1696,0.0313,42.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:15:26Z,CFB,Utah St. vs San Diego St.: Total Points,KXNCAAFTOTAL-26NOV14USUSDSU-28,NO,0.15,0.194,0.0348,41.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:15:26Z,CFB,Utah St. vs San Diego St.: Total Points,KXNCAAFTOTAL-26NOV14USUSDSU-31,NO,0.19,0.2488,0.0478,41.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:15:26Z,CFB,North Dakota St. vs Hawai'i: Total Points,KXNCAAFTOTAL-26NOV14NDSUHAW-24,NO,0.13,0.1775,0.0395,38.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:15:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-139,YES,0.88,0.9627,0.0745,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:15:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-146,YES,0.77,0.8798,0.0973,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:15:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-149,YES,0.73,0.8194,0.0755,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:15:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-152,YES,0.67,0.7429,0.057,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:15:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-154,YES,0.63,0.6838,0.0366,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:15:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-166,NO,0.66,0.714,0.0383,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:15:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-169,NO,0.73,0.7956,0.0515,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:15:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-173,NO,0.81,0.8798,0.059,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:15:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-177,NO,0.83,0.936,0.096,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:15:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-181,NO,0.89,0.9692,0.072,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:15:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-182,NO,0.9,0.9748,0.0678,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:15:56Z,CFB,James Madison vs UConn: Spread,KXNCAAFSPREAD-26NOV14JMUCONN-JMU4,NO,0.47,0.5303,0.0428,3.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:15:56Z,CFB,Alabama vs Vanderbilt: Spread,KXNCAAFSPREAD-26NOV14ALAVAN-ALA28,YES,0.23,0.2791,0.0362,16.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:15:56Z,CFB,Alabama vs Vanderbilt: Spread,KXNCAAFSPREAD-26NOV14ALAVAN-ALA25,YES,0.28,0.3285,0.0335,16.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:15:56Z,CFB,Texas vs LSU: Spread,KXNCAAFSPREAD-26NOV14TEXLSU-LSU4,NO,0.48,0.5303,0.032,3.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:15:56Z,CFB,Texas vs LSU: Spread,KXNCAAFSPREAD-26NOV14TEXLSU-LSU3,NO,0.4,0.4499,0.0316,3.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:15:56Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE6,NO,0.32,0.3777,0.0414,10.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:15:56Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE5,NO,0.31,0.3613,0.0356,10.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:15:56Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE4,NO,0.29,0.3372,0.0322,10.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:15:56Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE3,NO,0.23,0.2871,0.0438,10.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:15:56Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE2,NO,0.22,0.2675,0.0347,10.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:15:56Z,CFB,Sacramento St. vs Central Michigan: Total Points,KXNCAAFTOTAL-26NOV11SACCMU-27,NO,0.1,0.1403,0.0336,44.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:15:56Z,CFB,Illinois vs UCLA: Total Points,KXNCAAFTOTAL-26NOV13ILLUCLA-31,NO,0.1,0.1473,0.0406,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:15:56Z,CFB,Illinois vs UCLA: Total Points,KXNCAAFTOTAL-26NOV13ILLUCLA-34,NO,0.15,0.194,0.0348,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:15:56Z,CFB,Illinois vs UCLA: Total Points,KXNCAAFTOTAL-26NOV13ILLUCLA-37,NO,0.2,0.2488,0.0376,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:15:56Z,CFB,East Carolina vs Charlotte: Total Points,KXNCAAFTOTAL-26NOV14ECUCHAR-26,NO,0.07,0.1146,0.0398,45.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:15:56Z,CFB,Texas vs LSU: Total Points,KXNCAAFTOTAL-26NOV14TEXLSU-27,NO,0.07,0.1146,0.0398,46.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:15:56Z,CFB,Baylor vs BYU: Total Points,KXNCAAFTOTAL-26NOV14BAYBYU-30,NO,0.08,0.1207,0.0351,48.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:15:56Z,CFB,Michigan vs Oregon: Total Points,KXNCAAFTOTAL-26NOV14MICHORE-22,NO,0.09,0.1545,0.0585,38.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:15:56Z,CFB,Michigan vs Oregon: Total Points,KXNCAAFTOTAL-26NOV14MICHORE-25,NO,0.15,0.2026,0.0433,38.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:15:56Z,CFB,Nevada vs Northern Illinois: Total Points,KXNCAAFTOTAL-26NOV14NEVNIU-27,NO,0.06,0.0977,0.0334,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:15:56Z,CFB,Minnesota vs Penn St.: Total Points,KXNCAAFTOTAL-26NOV14MINNPSU-27,NO,0.13,0.1696,0.0313,42.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:15:56Z,CFB,Utah St. vs San Diego St.: Total Points,KXNCAAFTOTAL-26NOV14USUSDSU-28,NO,0.15,0.194,0.0348,41.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:15:56Z,CFB,Utah St. vs San Diego St.: Total Points,KXNCAAFTOTAL-26NOV14USUSDSU-31,NO,0.19,0.2488,0.0478,41.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:15:56Z,CFB,North Dakota St. vs Hawai'i: Total Points,KXNCAAFTOTAL-26NOV14NDSUHAW-24,NO,0.13,0.1775,0.0395,38.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:15:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-139,YES,0.88,0.9627,0.0745,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:15:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-143,YES,0.83,0.9243,0.0843,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:15:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-146,YES,0.78,0.8798,0.0873,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:15:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-149,YES,0.73,0.8194,0.0755,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:15:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-152,YES,0.67,0.7429,0.057,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:15:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-154,YES,0.63,0.6838,0.0366,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:15:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-166,NO,0.66,0.714,0.0383,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:15:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-169,NO,0.73,0.7956,0.0515,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:15:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-173,NO,0.81,0.8798,0.059,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:15:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-177,NO,0.83,0.936,0.096,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:15:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-181,NO,0.89,0.9692,0.072,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:15:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-182,NO,0.9,0.9748,0.0678,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:16:26Z,CFB,James Madison vs UConn: Spread,KXNCAAFSPREAD-26NOV14JMUCONN-JMU4,NO,0.47,0.5303,0.0428,3.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:16:26Z,CFB,Alabama vs Vanderbilt: Spread,KXNCAAFSPREAD-26NOV14ALAVAN-ALA28,YES,0.23,0.2791,0.0362,16.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:16:26Z,CFB,Alabama vs Vanderbilt: Spread,KXNCAAFSPREAD-26NOV14ALAVAN-ALA25,YES,0.28,0.3285,0.0335,16.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:16:26Z,CFB,Texas vs LSU: Spread,KXNCAAFSPREAD-26NOV14TEXLSU-LSU4,NO,0.48,0.5303,0.032,3.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:16:26Z,CFB,Texas vs LSU: Spread,KXNCAAFSPREAD-26NOV14TEXLSU-LSU3,NO,0.4,0.4499,0.0316,3.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:16:26Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE6,NO,0.32,0.3777,0.0414,10.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:16:26Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE5,NO,0.31,0.3613,0.0356,10.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:16:26Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE4,NO,0.29,0.3372,0.0322,10.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:16:26Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE3,NO,0.23,0.2871,0.0438,10.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:16:26Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE2,NO,0.22,0.2675,0.0347,10.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:16:26Z,CFB,Sacramento St. vs Central Michigan: Total Points,KXNCAAFTOTAL-26NOV11SACCMU-27,NO,0.1,0.1403,0.0336,44.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:16:26Z,CFB,Illinois vs UCLA: Total Points,KXNCAAFTOTAL-26NOV13ILLUCLA-31,NO,0.1,0.1473,0.0406,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:16:26Z,CFB,Illinois vs UCLA: Total Points,KXNCAAFTOTAL-26NOV13ILLUCLA-34,NO,0.15,0.194,0.0348,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:16:26Z,CFB,Illinois vs UCLA: Total Points,KXNCAAFTOTAL-26NOV13ILLUCLA-37,NO,0.2,0.2488,0.0376,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:16:26Z,CFB,East Carolina vs Charlotte: Total Points,KXNCAAFTOTAL-26NOV14ECUCHAR-26,NO,0.07,0.1146,0.0398,45.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:16:26Z,CFB,Texas vs LSU: Total Points,KXNCAAFTOTAL-26NOV14TEXLSU-27,NO,0.07,0.1146,0.0398,46.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:16:26Z,CFB,Baylor vs BYU: Total Points,KXNCAAFTOTAL-26NOV14BAYBYU-30,NO,0.08,0.1207,0.0351,48.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:16:26Z,CFB,Michigan vs Oregon: Total Points,KXNCAAFTOTAL-26NOV14MICHORE-22,NO,0.09,0.1545,0.0585,38.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:16:26Z,CFB,Michigan vs Oregon: Total Points,KXNCAAFTOTAL-26NOV14MICHORE-25,NO,0.15,0.2026,0.0433,38.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:16:26Z,CFB,Nevada vs Northern Illinois: Total Points,KXNCAAFTOTAL-26NOV14NEVNIU-27,NO,0.06,0.0977,0.0334,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:16:26Z,CFB,Minnesota vs Penn St.: Total Points,KXNCAAFTOTAL-26NOV14MINNPSU-27,NO,0.13,0.1696,0.0313,42.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:16:26Z,CFB,Utah St. vs San Diego St.: Total Points,KXNCAAFTOTAL-26NOV14USUSDSU-28,NO,0.15,0.194,0.0348,41.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:16:26Z,CFB,Utah St. vs San Diego St.: Total Points,KXNCAAFTOTAL-26NOV14USUSDSU-31,NO,0.19,0.2488,0.0478,41.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:16:26Z,CFB,North Dakota St. vs Hawai'i: Total Points,KXNCAAFTOTAL-26NOV14NDSUHAW-24,NO,0.13,0.1775,0.0395,38.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:16:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-139,YES,0.88,0.9627,0.0745,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:16:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-143,YES,0.83,0.9243,0.0843,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:16:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-146,YES,0.78,0.8798,0.0873,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:16:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-149,YES,0.73,0.8194,0.0755,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:16:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-152,YES,0.67,0.7429,0.057,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:16:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-154,YES,0.63,0.6838,0.0366,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:16:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-166,NO,0.66,0.714,0.0383,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:16:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-169,NO,0.73,0.7956,0.0515,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:16:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-173,NO,0.81,0.8798,0.059,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:16:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-177,NO,0.83,0.936,0.096,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:16:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-181,NO,0.89,0.9692,0.072,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:16:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-182,NO,0.9,0.9748,0.0678,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:16:56Z,CFB,James Madison vs UConn: Spread,KXNCAAFSPREAD-26NOV14JMUCONN-JMU4,NO,0.47,0.5303,0.0428,3.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:16:56Z,CFB,Alabama vs Vanderbilt: Spread,KXNCAAFSPREAD-26NOV14ALAVAN-ALA28,YES,0.23,0.2791,0.0362,16.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:16:56Z,CFB,Alabama vs Vanderbilt: Spread,KXNCAAFSPREAD-26NOV14ALAVAN-ALA25,YES,0.28,0.3285,0.0335,16.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:16:56Z,CFB,Texas vs LSU: Spread,KXNCAAFSPREAD-26NOV14TEXLSU-LSU4,NO,0.48,0.5303,0.032,3.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:16:56Z,CFB,Texas vs LSU: Spread,KXNCAAFSPREAD-26NOV14TEXLSU-LSU3,NO,0.4,0.4499,0.0316,3.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:16:56Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE6,NO,0.32,0.3777,0.0414,10.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:16:56Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE5,NO,0.31,0.3613,0.0356,10.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:16:56Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE4,NO,0.29,0.3372,0.0322,10.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:16:56Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE3,NO,0.23,0.2871,0.0438,10.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:16:56Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE2,NO,0.22,0.2675,0.0347,10.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:16:56Z,CFB,Sacramento St. vs Central Michigan: Total Points,KXNCAAFTOTAL-26NOV11SACCMU-27,NO,0.1,0.1403,0.0336,44.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:16:56Z,CFB,Illinois vs UCLA: Total Points,KXNCAAFTOTAL-26NOV13ILLUCLA-31,NO,0.1,0.1473,0.0406,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:16:56Z,CFB,Illinois vs UCLA: Total Points,KXNCAAFTOTAL-26NOV13ILLUCLA-34,NO,0.15,0.194,0.0348,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:16:56Z,CFB,Illinois vs UCLA: Total Points,KXNCAAFTOTAL-26NOV13ILLUCLA-37,NO,0.2,0.2488,0.0376,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:16:56Z,CFB,East Carolina vs Charlotte: Total Points,KXNCAAFTOTAL-26NOV14ECUCHAR-26,NO,0.07,0.1146,0.0398,45.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:16:56Z,CFB,Texas vs LSU: Total Points,KXNCAAFTOTAL-26NOV14TEXLSU-27,NO,0.07,0.1146,0.0398,46.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:16:56Z,CFB,Baylor vs BYU: Total Points,KXNCAAFTOTAL-26NOV14BAYBYU-30,NO,0.08,0.1207,0.0351,48.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:16:56Z,CFB,Michigan vs Oregon: Total Points,KXNCAAFTOTAL-26NOV14MICHORE-22,NO,0.09,0.1545,0.0585,38.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:16:56Z,CFB,Michigan vs Oregon: Total Points,KXNCAAFTOTAL-26NOV14MICHORE-25,NO,0.15,0.2026,0.0433,38.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:16:56Z,CFB,Nevada vs Northern Illinois: Total Points,KXNCAAFTOTAL-26NOV14NEVNIU-27,NO,0.06,0.0977,0.0334,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:16:56Z,CFB,Minnesota vs Penn St.: Total Points,KXNCAAFTOTAL-26NOV14MINNPSU-27,NO,0.13,0.1696,0.0313,42.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:16:56Z,CFB,Utah St. vs San Diego St.: Total Points,KXNCAAFTOTAL-26NOV14USUSDSU-28,NO,0.15,0.194,0.0348,41.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:16:56Z,CFB,Utah St. vs San Diego St.: Total Points,KXNCAAFTOTAL-26NOV14USUSDSU-31,NO,0.19,0.2488,0.0478,41.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:16:56Z,CFB,North Dakota St. vs Hawai'i: Total Points,KXNCAAFTOTAL-26NOV14NDSUHAW-24,NO,0.13,0.1775,0.0395,38.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:16:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-139,YES,0.88,0.9627,0.0745,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:16:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-143,YES,0.83,0.9243,0.0843,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:16:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-146,YES,0.78,0.8798,0.0873,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:16:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-149,YES,0.73,0.8194,0.0755,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:16:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-152,YES,0.67,0.7429,0.057,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:16:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-154,YES,0.63,0.6838,0.0366,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:16:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-166,NO,0.66,0.714,0.0383,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:16:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-169,NO,0.73,0.7956,0.0515,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:16:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-173,NO,0.81,0.8798,0.059,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:16:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-177,NO,0.83,0.936,0.096,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:16:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-181,NO,0.89,0.9692,0.072,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:16:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-182,NO,0.9,0.9748,0.0678,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:17:26Z,CFB,James Madison vs UConn: Spread,KXNCAAFSPREAD-26NOV14JMUCONN-JMU4,NO,0.47,0.5303,0.0428,3.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:17:26Z,CFB,Alabama vs Vanderbilt: Spread,KXNCAAFSPREAD-26NOV14ALAVAN-ALA28,YES,0.23,0.2791,0.0362,16.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:17:26Z,CFB,Alabama vs Vanderbilt: Spread,KXNCAAFSPREAD-26NOV14ALAVAN-ALA25,YES,0.28,0.3285,0.0335,16.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:17:26Z,CFB,Texas vs LSU: Spread,KXNCAAFSPREAD-26NOV14TEXLSU-LSU4,NO,0.48,0.5303,0.032,3.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:17:26Z,CFB,Texas vs LSU: Spread,KXNCAAFSPREAD-26NOV14TEXLSU-LSU3,NO,0.4,0.4499,0.0316,3.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:17:26Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE6,NO,0.32,0.3777,0.0414,10.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:17:26Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE5,NO,0.31,0.3613,0.0356,10.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:17:26Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE4,NO,0.29,0.3372,0.0322,10.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:17:26Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE3,NO,0.23,0.2871,0.0438,10.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:17:26Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE2,NO,0.22,0.2675,0.0347,10.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:17:26Z,CFB,Sacramento St. vs Central Michigan: Total Points,KXNCAAFTOTAL-26NOV11SACCMU-27,NO,0.1,0.1403,0.0336,44.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:17:26Z,CFB,Illinois vs UCLA: Total Points,KXNCAAFTOTAL-26NOV13ILLUCLA-31,NO,0.1,0.1473,0.0406,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:17:26Z,CFB,Illinois vs UCLA: Total Points,KXNCAAFTOTAL-26NOV13ILLUCLA-34,NO,0.15,0.194,0.0348,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:17:26Z,CFB,Illinois vs UCLA: Total Points,KXNCAAFTOTAL-26NOV13ILLUCLA-37,NO,0.2,0.2488,0.0376,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:17:26Z,CFB,East Carolina vs Charlotte: Total Points,KXNCAAFTOTAL-26NOV14ECUCHAR-26,NO,0.07,0.1146,0.0398,45.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:17:26Z,CFB,Texas vs LSU: Total Points,KXNCAAFTOTAL-26NOV14TEXLSU-27,NO,0.07,0.1146,0.0398,46.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:17:26Z,CFB,Baylor vs BYU: Total Points,KXNCAAFTOTAL-26NOV14BAYBYU-30,NO,0.08,0.1207,0.0351,48.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:17:26Z,CFB,Michigan vs Oregon: Total Points,KXNCAAFTOTAL-26NOV14MICHORE-22,NO,0.09,0.1545,0.0585,38.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:17:26Z,CFB,Michigan vs Oregon: Total Points,KXNCAAFTOTAL-26NOV14MICHORE-25,NO,0.15,0.2026,0.0433,38.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:17:26Z,CFB,Nevada vs Northern Illinois: Total Points,KXNCAAFTOTAL-26NOV14NEVNIU-27,NO,0.06,0.0977,0.0334,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:17:26Z,CFB,Minnesota vs Penn St.: Total Points,KXNCAAFTOTAL-26NOV14MINNPSU-27,NO,0.13,0.1696,0.0313,42.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:17:26Z,CFB,Utah St. vs San Diego St.: Total Points,KXNCAAFTOTAL-26NOV14USUSDSU-28,NO,0.15,0.194,0.0348,41.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:17:26Z,CFB,Utah St. vs San Diego St.: Total Points,KXNCAAFTOTAL-26NOV14USUSDSU-31,NO,0.19,0.2488,0.0478,41.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:17:26Z,CFB,North Dakota St. vs Hawai'i: Total Points,KXNCAAFTOTAL-26NOV14NDSUHAW-24,NO,0.13,0.1775,0.0395,38.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:17:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-139,YES,0.9,0.9627,0.0557,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:17:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-143,YES,0.85,0.9243,0.0652,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:17:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-146,YES,0.79,0.8798,0.0781,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:17:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-149,YES,0.73,0.8194,0.0755,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:17:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-152,YES,0.67,0.7429,0.057,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:17:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-154,YES,0.63,0.6838,0.0366,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:17:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-166,NO,0.66,0.714,0.0383,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:17:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-169,NO,0.73,0.7956,0.0515,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:17:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-173,NO,0.81,0.8798,0.059,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:17:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-177,NO,0.86,0.936,0.0669,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:17:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-181,NO,0.89,0.9692,0.072,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:17:56Z,CFB,James Madison vs UConn: Spread,KXNCAAFSPREAD-26NOV14JMUCONN-JMU4,NO,0.47,0.5303,0.0428,3.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:17:56Z,CFB,Alabama vs Vanderbilt: Spread,KXNCAAFSPREAD-26NOV14ALAVAN-ALA28,YES,0.23,0.2791,0.0362,16.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:17:56Z,CFB,Alabama vs Vanderbilt: Spread,KXNCAAFSPREAD-26NOV14ALAVAN-ALA25,YES,0.28,0.3285,0.0335,16.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:17:56Z,CFB,Texas vs LSU: Spread,KXNCAAFSPREAD-26NOV14TEXLSU-LSU4,NO,0.48,0.5303,0.032,3.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:17:56Z,CFB,Texas vs LSU: Spread,KXNCAAFSPREAD-26NOV14TEXLSU-LSU3,NO,0.4,0.4499,0.0316,3.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:17:56Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE6,NO,0.32,0.3777,0.0414,10.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:17:56Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE5,NO,0.31,0.3613,0.0356,10.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:17:56Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE4,NO,0.29,0.3372,0.0322,10.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:17:56Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE3,NO,0.23,0.2871,0.0438,10.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:17:56Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE2,NO,0.22,0.2675,0.0347,10.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:17:56Z,CFB,Sacramento St. vs Central Michigan: Total Points,KXNCAAFTOTAL-26NOV11SACCMU-27,NO,0.1,0.1403,0.0336,44.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:17:56Z,CFB,Illinois vs UCLA: Total Points,KXNCAAFTOTAL-26NOV13ILLUCLA-31,NO,0.1,0.1473,0.0406,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:17:56Z,CFB,Illinois vs UCLA: Total Points,KXNCAAFTOTAL-26NOV13ILLUCLA-34,NO,0.15,0.194,0.0348,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:17:56Z,CFB,Illinois vs UCLA: Total Points,KXNCAAFTOTAL-26NOV13ILLUCLA-37,NO,0.2,0.2488,0.0376,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:17:56Z,CFB,East Carolina vs Charlotte: Total Points,KXNCAAFTOTAL-26NOV14ECUCHAR-26,NO,0.07,0.1146,0.0398,45.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:17:56Z,CFB,Texas vs LSU: Total Points,KXNCAAFTOTAL-26NOV14TEXLSU-27,NO,0.07,0.1146,0.0398,46.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:17:56Z,CFB,Baylor vs BYU: Total Points,KXNCAAFTOTAL-26NOV14BAYBYU-30,NO,0.08,0.1207,0.0351,48.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:17:56Z,CFB,Michigan vs Oregon: Total Points,KXNCAAFTOTAL-26NOV14MICHORE-22,NO,0.09,0.1545,0.0585,38.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:17:56Z,CFB,Michigan vs Oregon: Total Points,KXNCAAFTOTAL-26NOV14MICHORE-25,NO,0.15,0.2026,0.0433,38.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:17:56Z,CFB,Nevada vs Northern Illinois: Total Points,KXNCAAFTOTAL-26NOV14NEVNIU-27,NO,0.06,0.0977,0.0334,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:17:56Z,CFB,Minnesota vs Penn St.: Total Points,KXNCAAFTOTAL-26NOV14MINNPSU-27,NO,0.13,0.1696,0.0313,42.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:17:56Z,CFB,Utah St. vs San Diego St.: Total Points,KXNCAAFTOTAL-26NOV14USUSDSU-28,NO,0.15,0.194,0.0348,41.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:17:56Z,CFB,Utah St. vs San Diego St.: Total Points,KXNCAAFTOTAL-26NOV14USUSDSU-31,NO,0.19,0.2488,0.0478,41.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:17:56Z,CFB,North Dakota St. vs Hawai'i: Total Points,KXNCAAFTOTAL-26NOV14NDSUHAW-24,NO,0.13,0.1775,0.0395,38.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:17:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-143,YES,0.87,0.9243,0.0461,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:17:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-146,YES,0.8,0.8798,0.0681,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:17:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-149,YES,0.73,0.8194,0.0755,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:17:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-152,YES,0.67,0.7429,0.057,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:17:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-154,YES,0.63,0.6838,0.0366,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:17:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-166,NO,0.66,0.714,0.0383,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:17:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-169,NO,0.73,0.7956,0.0515,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:17:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-173,NO,0.81,0.8798,0.059,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:17:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-177,NO,0.88,0.936,0.0478,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:18:26Z,CFB,James Madison vs UConn: Spread,KXNCAAFSPREAD-26NOV14JMUCONN-JMU4,NO,0.47,0.5303,0.0428,3.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:18:26Z,CFB,Alabama vs Vanderbilt: Spread,KXNCAAFSPREAD-26NOV14ALAVAN-ALA28,YES,0.23,0.2791,0.0362,16.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:18:26Z,CFB,Alabama vs Vanderbilt: Spread,KXNCAAFSPREAD-26NOV14ALAVAN-ALA25,YES,0.28,0.3285,0.0335,16.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:18:26Z,CFB,Texas vs LSU: Spread,KXNCAAFSPREAD-26NOV14TEXLSU-LSU4,NO,0.48,0.5303,0.032,3.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:18:26Z,CFB,Texas vs LSU: Spread,KXNCAAFSPREAD-26NOV14TEXLSU-LSU3,NO,0.4,0.4499,0.0316,3.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:18:26Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE6,NO,0.32,0.3777,0.0414,10.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:18:26Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE5,NO,0.31,0.3613,0.0356,10.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:18:26Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE4,NO,0.29,0.3372,0.0322,10.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:18:26Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE3,NO,0.23,0.2871,0.0438,10.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:18:26Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE2,NO,0.22,0.2675,0.0347,10.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:18:26Z,CFB,Sacramento St. vs Central Michigan: Total Points,KXNCAAFTOTAL-26NOV11SACCMU-27,NO,0.1,0.1403,0.0336,44.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:18:26Z,CFB,Illinois vs UCLA: Total Points,KXNCAAFTOTAL-26NOV13ILLUCLA-31,NO,0.1,0.1473,0.0406,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:18:26Z,CFB,Illinois vs UCLA: Total Points,KXNCAAFTOTAL-26NOV13ILLUCLA-34,NO,0.15,0.194,0.0348,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:18:26Z,CFB,Illinois vs UCLA: Total Points,KXNCAAFTOTAL-26NOV13ILLUCLA-37,NO,0.2,0.2488,0.0376,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:18:26Z,CFB,East Carolina vs Charlotte: Total Points,KXNCAAFTOTAL-26NOV14ECUCHAR-26,NO,0.07,0.1146,0.0398,45.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:18:26Z,CFB,Texas vs LSU: Total Points,KXNCAAFTOTAL-26NOV14TEXLSU-27,NO,0.07,0.1146,0.0398,46.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:18:26Z,CFB,Baylor vs BYU: Total Points,KXNCAAFTOTAL-26NOV14BAYBYU-30,NO,0.08,0.1207,0.0351,48.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:18:26Z,CFB,Michigan vs Oregon: Total Points,KXNCAAFTOTAL-26NOV14MICHORE-22,NO,0.09,0.1545,0.0585,38.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:18:26Z,CFB,Michigan vs Oregon: Total Points,KXNCAAFTOTAL-26NOV14MICHORE-25,NO,0.15,0.2026,0.0433,38.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:18:26Z,CFB,Nevada vs Northern Illinois: Total Points,KXNCAAFTOTAL-26NOV14NEVNIU-27,NO,0.06,0.0977,0.0334,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:18:26Z,CFB,Minnesota vs Penn St.: Total Points,KXNCAAFTOTAL-26NOV14MINNPSU-27,NO,0.13,0.1696,0.0313,42.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:18:26Z,CFB,Utah St. vs San Diego St.: Total Points,KXNCAAFTOTAL-26NOV14USUSDSU-28,NO,0.15,0.194,0.0348,41.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:18:26Z,CFB,Utah St. vs San Diego St.: Total Points,KXNCAAFTOTAL-26NOV14USUSDSU-31,NO,0.19,0.2488,0.0478,41.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:18:26Z,CFB,North Dakota St. vs Hawai'i: Total Points,KXNCAAFTOTAL-26NOV14NDSUHAW-24,NO,0.13,0.1775,0.0395,38.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:18:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-143,YES,0.87,0.9243,0.0461,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:18:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-146,YES,0.8,0.8798,0.0681,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:18:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-149,YES,0.73,0.8194,0.0755,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:18:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-152,YES,0.67,0.7429,0.057,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:18:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-154,YES,0.63,0.6838,0.0366,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:18:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-166,NO,0.66,0.714,0.0383,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:18:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-169,NO,0.73,0.7956,0.0515,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:18:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-173,NO,0.81,0.8798,0.059,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:18:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-177,NO,0.88,0.936,0.0478,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:18:56Z,CFB,James Madison vs UConn: Spread,KXNCAAFSPREAD-26NOV14JMUCONN-JMU4,NO,0.47,0.5303,0.0428,3.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:18:56Z,CFB,Alabama vs Vanderbilt: Spread,KXNCAAFSPREAD-26NOV14ALAVAN-ALA28,YES,0.23,0.2791,0.0362,16.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:18:56Z,CFB,Alabama vs Vanderbilt: Spread,KXNCAAFSPREAD-26NOV14ALAVAN-ALA25,YES,0.28,0.3285,0.0335,16.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:18:56Z,CFB,Texas vs LSU: Spread,KXNCAAFSPREAD-26NOV14TEXLSU-LSU4,NO,0.48,0.5303,0.032,3.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:18:56Z,CFB,Texas vs LSU: Spread,KXNCAAFSPREAD-26NOV14TEXLSU-LSU3,NO,0.4,0.4499,0.0316,3.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:18:56Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE6,NO,0.32,0.3777,0.0414,10.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:18:56Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE5,NO,0.31,0.3613,0.0356,10.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:18:56Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE4,NO,0.29,0.3372,0.0322,10.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:18:56Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE3,NO,0.23,0.2871,0.0438,10.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:18:56Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE2,NO,0.22,0.2675,0.0347,10.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:18:56Z,CFB,Sacramento St. vs Central Michigan: Total Points,KXNCAAFTOTAL-26NOV11SACCMU-27,NO,0.1,0.1403,0.0336,44.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:18:56Z,CFB,Illinois vs UCLA: Total Points,KXNCAAFTOTAL-26NOV13ILLUCLA-31,NO,0.1,0.1473,0.0406,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:18:56Z,CFB,Illinois vs UCLA: Total Points,KXNCAAFTOTAL-26NOV13ILLUCLA-34,NO,0.15,0.194,0.0348,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:18:56Z,CFB,Illinois vs UCLA: Total Points,KXNCAAFTOTAL-26NOV13ILLUCLA-37,NO,0.2,0.2488,0.0376,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:18:56Z,CFB,East Carolina vs Charlotte: Total Points,KXNCAAFTOTAL-26NOV14ECUCHAR-26,NO,0.07,0.1146,0.0398,45.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:18:56Z,CFB,Texas vs LSU: Total Points,KXNCAAFTOTAL-26NOV14TEXLSU-27,NO,0.07,0.1146,0.0398,46.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:18:56Z,CFB,Baylor vs BYU: Total Points,KXNCAAFTOTAL-26NOV14BAYBYU-30,NO,0.08,0.1207,0.0351,48.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:18:56Z,CFB,Michigan vs Oregon: Total Points,KXNCAAFTOTAL-26NOV14MICHORE-22,NO,0.09,0.1545,0.0585,38.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:18:56Z,CFB,Michigan vs Oregon: Total Points,KXNCAAFTOTAL-26NOV14MICHORE-25,NO,0.15,0.2026,0.0433,38.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:18:56Z,CFB,Nevada vs Northern Illinois: Total Points,KXNCAAFTOTAL-26NOV14NEVNIU-27,NO,0.06,0.0977,0.0334,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:18:56Z,CFB,Minnesota vs Penn St.: Total Points,KXNCAAFTOTAL-26NOV14MINNPSU-27,NO,0.13,0.1696,0.0313,42.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:18:56Z,CFB,Utah St. vs San Diego St.: Total Points,KXNCAAFTOTAL-26NOV14USUSDSU-28,NO,0.15,0.194,0.0348,41.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:18:56Z,CFB,Utah St. vs San Diego St.: Total Points,KXNCAAFTOTAL-26NOV14USUSDSU-31,NO,0.19,0.2488,0.0478,41.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:18:56Z,CFB,North Dakota St. vs Hawai'i: Total Points,KXNCAAFTOTAL-26NOV14NDSUHAW-24,NO,0.13,0.1775,0.0395,38.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:18:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-139,YES,0.87,0.9627,0.0845,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:18:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-143,YES,0.83,0.9243,0.0843,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:18:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-146,YES,0.79,0.8798,0.0781,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:18:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-149,YES,0.73,0.8194,0.0755,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:18:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-152,YES,0.67,0.7429,0.057,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:18:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-154,YES,0.63,0.6838,0.0366,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:18:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-166,NO,0.66,0.714,0.0383,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:18:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-169,NO,0.73,0.7956,0.0515,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:18:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-173,NO,0.81,0.8798,0.059,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:18:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-177,NO,0.84,0.936,0.086,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:19:26Z,CFB,James Madison vs UConn: Spread,KXNCAAFSPREAD-26NOV14JMUCONN-JMU4,NO,0.47,0.5303,0.0428,3.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:19:26Z,CFB,Alabama vs Vanderbilt: Spread,KXNCAAFSPREAD-26NOV14ALAVAN-ALA28,YES,0.23,0.2791,0.0362,16.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:19:26Z,CFB,Alabama vs Vanderbilt: Spread,KXNCAAFSPREAD-26NOV14ALAVAN-ALA25,YES,0.28,0.3285,0.0335,16.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:19:26Z,CFB,Texas vs LSU: Spread,KXNCAAFSPREAD-26NOV14TEXLSU-LSU4,NO,0.48,0.5303,0.032,3.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:19:26Z,CFB,Texas vs LSU: Spread,KXNCAAFSPREAD-26NOV14TEXLSU-LSU3,NO,0.4,0.4499,0.0316,3.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:19:26Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE6,NO,0.32,0.3777,0.0414,10.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:19:26Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE5,NO,0.31,0.3613,0.0356,10.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:19:26Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE4,NO,0.29,0.3372,0.0322,10.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:19:26Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE3,NO,0.23,0.2871,0.0438,10.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:19:26Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE2,NO,0.22,0.2675,0.0347,10.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:19:26Z,CFB,Sacramento St. vs Central Michigan: Total Points,KXNCAAFTOTAL-26NOV11SACCMU-27,NO,0.1,0.1403,0.0336,44.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:19:26Z,CFB,Illinois vs UCLA: Total Points,KXNCAAFTOTAL-26NOV13ILLUCLA-31,NO,0.1,0.1473,0.0406,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:19:26Z,CFB,Illinois vs UCLA: Total Points,KXNCAAFTOTAL-26NOV13ILLUCLA-34,NO,0.15,0.194,0.0348,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:19:26Z,CFB,Illinois vs UCLA: Total Points,KXNCAAFTOTAL-26NOV13ILLUCLA-37,NO,0.2,0.2488,0.0376,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:19:26Z,CFB,East Carolina vs Charlotte: Total Points,KXNCAAFTOTAL-26NOV14ECUCHAR-26,NO,0.07,0.1146,0.0398,45.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:19:26Z,CFB,Texas vs LSU: Total Points,KXNCAAFTOTAL-26NOV14TEXLSU-27,NO,0.07,0.1146,0.0398,46.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:19:26Z,CFB,Baylor vs BYU: Total Points,KXNCAAFTOTAL-26NOV14BAYBYU-30,NO,0.08,0.1207,0.0351,48.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:19:26Z,CFB,Michigan vs Oregon: Total Points,KXNCAAFTOTAL-26NOV14MICHORE-22,NO,0.09,0.1545,0.0585,38.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:19:26Z,CFB,Michigan vs Oregon: Total Points,KXNCAAFTOTAL-26NOV14MICHORE-25,NO,0.15,0.2026,0.0433,38.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:19:26Z,CFB,Nevada vs Northern Illinois: Total Points,KXNCAAFTOTAL-26NOV14NEVNIU-27,NO,0.06,0.0977,0.0334,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:19:26Z,CFB,Minnesota vs Penn St.: Total Points,KXNCAAFTOTAL-26NOV14MINNPSU-27,NO,0.13,0.1696,0.0313,42.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:19:26Z,CFB,Utah St. vs San Diego St.: Total Points,KXNCAAFTOTAL-26NOV14USUSDSU-28,NO,0.15,0.194,0.0348,41.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:19:26Z,CFB,Utah St. vs San Diego St.: Total Points,KXNCAAFTOTAL-26NOV14USUSDSU-31,NO,0.19,0.2488,0.0478,41.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:19:26Z,CFB,North Dakota St. vs Hawai'i: Total Points,KXNCAAFTOTAL-26NOV14NDSUHAW-24,NO,0.13,0.1775,0.0395,38.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:19:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-139,YES,0.87,0.9627,0.0845,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:19:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-143,YES,0.83,0.9243,0.0843,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:19:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-146,YES,0.79,0.8798,0.0781,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:19:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-149,YES,0.73,0.8194,0.0755,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:19:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-152,YES,0.67,0.7429,0.057,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:19:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-154,YES,0.63,0.6838,0.0366,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:19:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-166,NO,0.66,0.714,0.0383,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:19:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-169,NO,0.73,0.7956,0.0515,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:19:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-173,NO,0.81,0.8798,0.059,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:19:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-177,NO,0.83,0.936,0.096,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:19:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-181,NO,0.89,0.9692,0.072,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:19:26Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-182,NO,0.9,0.9748,0.0678,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:19:56Z,CFB,James Madison vs UConn: Spread,KXNCAAFSPREAD-26NOV14JMUCONN-JMU4,NO,0.47,0.5303,0.0428,3.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:19:56Z,CFB,Alabama vs Vanderbilt: Spread,KXNCAAFSPREAD-26NOV14ALAVAN-ALA28,YES,0.23,0.2791,0.0362,16.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:19:56Z,CFB,Alabama vs Vanderbilt: Spread,KXNCAAFSPREAD-26NOV14ALAVAN-ALA25,YES,0.28,0.3285,0.0335,16.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:19:56Z,CFB,Texas vs LSU: Spread,KXNCAAFSPREAD-26NOV14TEXLSU-LSU4,NO,0.48,0.5303,0.032,3.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:19:56Z,CFB,Texas vs LSU: Spread,KXNCAAFSPREAD-26NOV14TEXLSU-LSU3,NO,0.4,0.4499,0.0316,3.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:19:56Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE6,NO,0.32,0.3777,0.0414,10.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:19:56Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE5,NO,0.31,0.3613,0.0356,10.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:19:56Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE4,NO,0.29,0.3372,0.0322,10.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:19:56Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE3,NO,0.23,0.2871,0.0438,10.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:19:56Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE2,NO,0.22,0.2675,0.0347,10.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:19:56Z,CFB,Sacramento St. vs Central Michigan: Total Points,KXNCAAFTOTAL-26NOV11SACCMU-27,NO,0.1,0.1403,0.0336,44.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:19:56Z,CFB,Illinois vs UCLA: Total Points,KXNCAAFTOTAL-26NOV13ILLUCLA-31,NO,0.1,0.1473,0.0406,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:19:56Z,CFB,Illinois vs UCLA: Total Points,KXNCAAFTOTAL-26NOV13ILLUCLA-34,NO,0.15,0.194,0.0348,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:19:56Z,CFB,Illinois vs UCLA: Total Points,KXNCAAFTOTAL-26NOV13ILLUCLA-37,NO,0.2,0.2488,0.0376,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:19:56Z,CFB,East Carolina vs Charlotte: Total Points,KXNCAAFTOTAL-26NOV14ECUCHAR-26,NO,0.07,0.1146,0.0398,45.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:19:56Z,CFB,Texas vs LSU: Total Points,KXNCAAFTOTAL-26NOV14TEXLSU-27,NO,0.07,0.1146,0.0398,46.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:19:56Z,CFB,Baylor vs BYU: Total Points,KXNCAAFTOTAL-26NOV14BAYBYU-30,NO,0.08,0.1207,0.0351,48.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:19:56Z,CFB,Michigan vs Oregon: Total Points,KXNCAAFTOTAL-26NOV14MICHORE-22,NO,0.09,0.1545,0.0585,38.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:19:56Z,CFB,Michigan vs Oregon: Total Points,KXNCAAFTOTAL-26NOV14MICHORE-25,NO,0.15,0.2026,0.0433,38.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:19:56Z,CFB,Nevada vs Northern Illinois: Total Points,KXNCAAFTOTAL-26NOV14NEVNIU-27,NO,0.06,0.0977,0.0334,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:19:56Z,CFB,Minnesota vs Penn St.: Total Points,KXNCAAFTOTAL-26NOV14MINNPSU-27,NO,0.13,0.1696,0.0313,42.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:19:56Z,CFB,Utah St. vs San Diego St.: Total Points,KXNCAAFTOTAL-26NOV14USUSDSU-28,NO,0.15,0.194,0.0348,41.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:19:56Z,CFB,Utah St. vs San Diego St.: Total Points,KXNCAAFTOTAL-26NOV14USUSDSU-31,NO,0.19,0.2488,0.0478,41.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:19:56Z,CFB,North Dakota St. vs Hawai'i: Total Points,KXNCAAFTOTAL-26NOV14NDSUHAW-24,NO,0.13,0.1775,0.0395,38.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:19:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-139,YES,0.87,0.9627,0.0845,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:19:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-143,YES,0.83,0.9243,0.0843,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:19:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-146,YES,0.79,0.8798,0.0781,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:19:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-149,YES,0.73,0.8194,0.0755,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:19:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-152,YES,0.67,0.7429,0.057,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:19:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-154,YES,0.63,0.6838,0.0366,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:19:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-155,YES,0.6,0.6522,0.0339,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:19:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-166,NO,0.66,0.714,0.0383,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:19:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-169,NO,0.73,0.7956,0.0515,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:19:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-173,NO,0.81,0.8798,0.059,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:19:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-177,NO,0.83,0.936,0.096,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:19:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-181,NO,0.89,0.9692,0.072,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:19:56Z,CBB,Kansas vs Kentucky: Point Total,KXNCAAMBTOTAL-26NOV10KUUK-182,NO,0.9,0.9748,0.0678,159.0,2026-11-11T02:00:26Z,rung far from sharp line (unvalidated range)
+2026-11-11T02:20:27Z,CFB,James Madison vs UConn: Spread,KXNCAAFSPREAD-26NOV14JMUCONN-JMU4,NO,0.47,0.5303,0.0428,3.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:20:27Z,CFB,Alabama vs Vanderbilt: Spread,KXNCAAFSPREAD-26NOV14ALAVAN-ALA28,YES,0.23,0.2791,0.0362,16.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:20:27Z,CFB,Alabama vs Vanderbilt: Spread,KXNCAAFSPREAD-26NOV14ALAVAN-ALA25,YES,0.28,0.3285,0.0335,16.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:20:27Z,CFB,Texas vs LSU: Spread,KXNCAAFSPREAD-26NOV14TEXLSU-LSU4,NO,0.48,0.5303,0.032,3.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:20:27Z,CFB,Texas vs LSU: Spread,KXNCAAFSPREAD-26NOV14TEXLSU-LSU3,NO,0.4,0.4499,0.0316,3.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:20:27Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE6,NO,0.32,0.3777,0.0414,10.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:20:27Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE5,NO,0.31,0.3613,0.0356,10.5,2026-11-11T00:38:11Z,sharp line stale
+2026-11-11T02:20:27Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE4,NO,0.29,0.3372,0.0322,10.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:20:27Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE3,NO,0.23,0.2871,0.0438,10.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:20:27Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE2,NO,0.22,0.2675,0.0347,10.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:20:27Z,CFB,Sacramento St. vs Central Michigan: Total Points,KXNCAAFTOTAL-26NOV11SACCMU-27,NO,0.1,0.1403,0.0336,44.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:20:27Z,CFB,Illinois vs UCLA: Total Points,KXNCAAFTOTAL-26NOV13ILLUCLA-31,NO,0.1,0.1473,0.0406,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:20:27Z,CFB,Illinois vs UCLA: Total Points,KXNCAAFTOTAL-26NOV13ILLUCLA-34,NO,0.15,0.194,0.0348,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:20:27Z,CFB,Illinois vs UCLA: Total Points,KXNCAAFTOTAL-26NOV13ILLUCLA-37,NO,0.2,0.2488,0.0376,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:20:27Z,CFB,East Carolina vs Charlotte: Total Points,KXNCAAFTOTAL-26NOV14ECUCHAR-26,NO,0.07,0.1146,0.0398,45.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:20:27Z,CFB,Texas vs LSU: Total Points,KXNCAAFTOTAL-26NOV14TEXLSU-27,NO,0.07,0.1146,0.0398,46.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:20:27Z,CFB,Baylor vs BYU: Total Points,KXNCAAFTOTAL-26NOV14BAYBYU-30,NO,0.08,0.1207,0.0351,48.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:20:27Z,CFB,Michigan vs Oregon: Total Points,KXNCAAFTOTAL-26NOV14MICHORE-22,NO,0.09,0.1545,0.0585,38.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:20:27Z,CFB,Michigan vs Oregon: Total Points,KXNCAAFTOTAL-26NOV14MICHORE-25,NO,0.15,0.2026,0.0433,38.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:20:27Z,CFB,Nevada vs Northern Illinois: Total Points,KXNCAAFTOTAL-26NOV14NEVNIU-27,NO,0.06,0.0977,0.0334,47.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:20:27Z,CFB,Minnesota vs Penn St.: Total Points,KXNCAAFTOTAL-26NOV14MINNPSU-27,NO,0.13,0.1696,0.0313,42.0,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:20:27Z,CFB,Utah St. vs San Diego St.: Total Points,KXNCAAFTOTAL-26NOV14USUSDSU-28,NO,0.15,0.194,0.0348,41.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:20:27Z,CFB,Utah St. vs San Diego St.: Total Points,KXNCAAFTOTAL-26NOV14USUSDSU-31,NO,0.19,0.2488,0.0478,41.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T02:20:27Z,CFB,North Dakota St. vs Hawai'i: Total Points,KXNCAAFTOTAL-26NOV14NDSUHAW-24,NO,0.13,0.1775,0.0395,38.5,2026-11-11T00:38:11Z,rung far from sharp line (unvalidated range); sharp line stale
