@@ -77,3 +77,12 @@ def test_run_writes_both_files(tmp_path, monkeypatch):
     monkeypatch.setattr(digest, "BET_FILES", {})
     digest.run(NOW)
     assert (tmp_path / "digest.md").exists() and (tmp_path / "digests" / "2026-11-14.md").exists()
+
+
+def test_recap_keeps_cbb_apart_from_football():
+    b = pd.DataFrame({"status": ["settled", "settled"], "pnl": [5.0, -1.0], "league": ["NFL", "CBB"],
+                      "settled_ts": ["2026-11-14T03:00:00Z", "2026-11-14T04:00:00Z"]})
+    md = digest.build(_latest(), {"SHARP shadow": b}, {}, NOW)
+    fb = [l for l in md.splitlines() if l.startswith("- SHARP shadow football:")][0]
+    cbb = [l for l in md.splitlines() if l.startswith("- SHARP shadow CBB:")][0]
+    assert "running 1-0, $+5.00" in fb and "running 0-1, $-1.00" in cbb

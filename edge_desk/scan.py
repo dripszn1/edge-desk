@@ -253,6 +253,8 @@ def run_sharp(df: pd.DataFrame, ts: str | None, lost: float | None = None, leagu
         except Exception as e:   # never lose other flags over a SHARP bug
             flags, status = [], {"ok": False, "reason": f"error: {e}"}
         is_open, why = sharp.gate(league=lg)
+        if lg in sharp.SHADOW_ONLY:
+            is_open, why = False, f"shadow-only league ({why})"
         status["gate"] = why
         out["status"][lg] = status
         _append_csv(new_only(flags, seen), sharp.LIVE if is_open else sharp.SHADOW)

@@ -172,7 +172,7 @@ def _sent_ct(now) -> str:
 
 
 def build_new(f: dict, gate_open: bool, now, template: str | None = None) -> dict:
-    live = gate_open and not config.PAPER_MODE
+    live = gate_open and not config.PAPER_MODE and f.get("league") != "CBB"   # CBB: shadow test only (#22)
     game = str(f.get("event") or "")
     ko = f.get("kickoff_ct") or ""
     if f.get("kind") in STRUCTURAL:

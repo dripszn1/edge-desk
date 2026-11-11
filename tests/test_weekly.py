@@ -95,3 +95,12 @@ def test_edge_by_week():
     r = weekly.assess(_settled(40, 20, weeks=2), n_sims=500)
     assert [w["week_of"] for w in r["by_week"]] == ["2026-11-02", "2026-11-09"]
     assert all("realised_edge_c" in w and "claimed_edge_c" in w for w in r["by_week"])
+
+
+def test_sharp_scorecards_never_pool_cbb():
+    rows = [dict(status="settled", pnl=1.0, stake=2.0, fees=0.1, league=lg, kind="SHARP", price=0.5, contracts=4,
+                 date_ct="2026-11-14")
+            for lg in ("NFL", "CFB", "CBB")]
+    rep = weekly.sharp_split(pd.DataFrame(rows))
+    assert rep["sharp_shadow"]["settled"] == 2 and rep["sharp_shadow_cbb"]["settled"] == 1
+    assert weekly.sharp_split(pd.DataFrame())["sharp_shadow_cbb"]["settled"] == 0

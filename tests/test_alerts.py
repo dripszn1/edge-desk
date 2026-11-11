@@ -65,6 +65,8 @@ def test_live_title_needs_open_gate_and_paper_mode_off(monkeypatch):
     monkeypatch.setattr(config, "PAPER_MODE", False)
     assert alerts.build_new(sharp_flag(), True, NOW)["title"].startswith("LIVE")
     assert alerts.build_new(sharp_flag(), False, NOW)["title"].startswith("PAPER")
+    cbb = dict(sharp_flag(), league="CBB")
+    assert alerts.build_new(cbb, True, NOW)["title"].startswith("PAPER SHARP CBB")   # CBB never LIVE
 
 
 def test_priority_by_edge():
