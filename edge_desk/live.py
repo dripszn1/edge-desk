@@ -401,7 +401,7 @@ def run_loop(now_fn=lambda: datetime.now(UTC), clock=time.monotonic, sleep=time.
     """Run until the deadline. All I/O is injectable so the ordering guarantees are testable."""
     from . import kickoffs, odds, scan
     odds_fn = odds_fn or (lambda: odds.run(near_h=config.LIVE_ODDS_NEAR_HOURS,
-                                           near_interval_h=odds_interval_hours(odds.MONTHLY_CREDITS)))
+                                           near_interval_h=odds_interval_hours(odds.quota(odds.load_state()))))
     scan_fn = scan_fn or (lambda df, ts, seen, partial: scan.run(df, ts, seen=seen, partial=partial))
     alert_fn = alert_fn or default_alerts
     log_fn = log_fn or upsert_log
@@ -423,7 +423,8 @@ def run_loop(now_fn=lambda: datetime.now(UTC), clock=time.monotonic, sleep=time.
             break
         t0 = clock()
         # 1) sharp odds first: anything they price was fetched before this pass's snapshot_ts
-        if last_odds is None or (now - last_odds) >= timedelta(minutes=config.LIVE_ODDS_CHECK_MINUTES):
+        odds_every = odds.check_minutes(odds.load_state(), config.LIVE_ODDS_CHECK_MINUTES)   # 5 on a big plan (#30)
+        if last_odds is None or (now - last_odds) >= timedelta(minutes=odds_every):
             try:
                 odds_fn()
             except Exception as e:  # noqa: BLE001

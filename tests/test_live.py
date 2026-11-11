@@ -298,3 +298,16 @@ def test_upsert_replaces_same_run_only(tmp_path):
     live.upsert_log({"run_id": "a", "started_utc": "2026-11-14T16:00:00Z", "minutes": 40, "exit_reason": "window end"}, p)
     r = pd.read_csv(p)
     assert sorted(r["run_id"]) == ["a", "b"] and r.set_index("run_id").loc["a", "minutes"] == 40
+
+
+def test_loop_odds_check_follows_plan_size(monkeypatch, tmp_path):
+    """#30: a 20k plan checks odds every 5 min, the free tier every LIVE_ODDS_CHECK_MINUTES."""
+    from edge_desk import odds
+    start = datetime(2026, 11, 14, 16, 0, tzinfo=UTC)
+    monkeypatch.setattr(odds, "load_state", lambda *a: {"remaining": 476, "used": 24})
+    free = []
+    _run(monkeypatch, tmp_path, start, 30, _pass_frame, free)
+    monkeypatch.setattr(odds, "load_state", lambda *a: {"remaining": 19000, "used": 1000})
+    big = []
+    _run(monkeypatch, tmp_path / "b", start, 30, _pass_frame, big)
+    assert len(free) <= 3 + 1 and len(big) >= 6

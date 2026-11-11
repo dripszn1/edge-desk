@@ -149,7 +149,7 @@ def status_line(latest: dict, odds_state: dict, now) -> str:
                 g = str(st.get("gate", "?"))
                 gates.append(f"{label} {lg} {'open' if g.startswith('open') else 'closed'}")
     return (f"Status: Kalshi data {_fmt_age(snap)} ({fresh}); sharp odds {_fmt_age(_age_min(last_odds, now) if last_odds else None)}; "
-            f"odds credits left {credits if credits is not None else 'unknown'}; gates: {', '.join(gates) or 'unknown'}")
+            f"odds credits left {f'{credits} of {odds.quota(odds_state)}' if credits is not None else 'unknown'}; gates: {', '.join(gates) or 'unknown'}")
 
 
 def build(latest: dict, bets: dict, odds_state: dict, now) -> str:
