@@ -102,17 +102,38 @@ def _load(path: Path) -> pd.DataFrame:
         return pd.DataFrame()
 
 
+SHARP_TRACKED = ROOT / "data" / "sharp_tracked_bets.csv"
+
+
+def tracked_report(bets: pd.DataFrame, n_sims: int = N_SIMS) -> dict:
+    """Low-confidence SHARP plays: overall, and by why they were held back. A bucket with a real
+    record (>= MIN_BETS settled, P&L > 0, t >= SKILL_T) is proposed for widening (Emerson decides)."""
+    out = assess(bets, n_sims)
+    out["by_reason"], out["propose_widen"] = {}, []
+    if bets is None or bets.empty or "reason_bucket" not in bets:
+        return out
+    for b, g in bets.groupby("reason_bucket"):
+        a = assess(g, n_sims)
+        a.pop("by_week", None)
+        out["by_reason"][b] = a
+        if a["settled"] >= MIN_BETS and (a.get("pnl") or 0) > 0 and (a.get("t_stat") or 0) >= SKILL_T:
+            out["propose_widen"].append(b)
+    return out
+
+
 def run(now: datetime | None = None) -> dict:
     now = now or datetime.now(timezone.utc)
     ts = now.strftime("%Y-%m-%dT%H:%M:%SZ")
     rep = {"generated_utc": ts, "generated_ct": to_ct(ts), "paper_mode": config.PAPER_MODE,
            "rules": {"min_bets": MIN_BETS, "skill_t": SKILL_T, "skill_beat_pct": SKILL_PCTL, "sims": N_SIMS},
            "paper": assess(_load(PAPER)), "model_shadow": assess(_load(SHADOW)),
-           "sharp_shadow": assess(_load(SHARP_SHADOW))}
+           "sharp_shadow": assess(_load(SHARP_SHADOW)), "sharp_tracked": tracked_report(_load(SHARP_TRACKED))}
     OUT.write_text(json.dumps(rep, indent=2, default=str))
     print(f"weekly: paper {rep['paper']['verdict']} ({rep['paper']['settled']}) | "
           f"model shadow {rep['model_shadow']['verdict']} ({rep['model_shadow']['settled']}) | "
-          f"sharp shadow {rep['sharp_shadow']['verdict']} ({rep['sharp_shadow']['settled']})")
+          f"sharp shadow {rep['sharp_shadow']['verdict']} ({rep['sharp_shadow']['settled']}) | "
+          f"sharp tracked {rep['sharp_tracked']['verdict']} ({rep['sharp_tracked']['settled']})"
+          + (f" | PROPOSE WIDEN: {', '.join(rep['sharp_tracked']['propose_widen'])}" if rep['sharp_tracked'].get('propose_widen') else ""))
     return rep
 
 

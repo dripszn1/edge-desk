@@ -32,7 +32,8 @@ RECAP_H = 24
 MAX_LINES = 25
 MAX_PLAYS = 10
 BET_FILES = {"paper": DATA / "paper_bets.csv", "MODEL shadow": DATA / "model_shadow_bets.csv",
-             "SHARP shadow": DATA / "sharp_shadow_bets.csv"}
+             "SHARP shadow": DATA / "sharp_shadow_bets.csv",
+             "SHARP tracked (held back)": DATA / "sharp_tracked_bets.csv"}
 
 
 def _ts(x):
@@ -109,6 +110,20 @@ def recap(bets: dict[str, pd.DataFrame], now) -> list[str]:
     return lines or ["- nothing settled yet"]
 
 
+def held_back_by_reason(b: pd.DataFrame | None, now) -> list[str]:
+    """One line: running record of the held-back SHARP plays per reason (far rung, stale line...)."""
+    if b is None or b.empty or "reason_bucket" not in b:
+        return []
+    s = b[b["status"] == "settled"].copy()
+    s["_st"] = pd.to_datetime(s["settled_ts"], utc=True, errors="coerce")
+    s = s[s["_st"] <= _ts(now)]
+    if s.empty:
+        return []
+    parts = [f"{k} {int((g['pnl'] > 0).sum())}-{int((g['pnl'] <= 0).sum())} ${g['pnl'].sum():+.2f}"
+             for k, g in s.groupby("reason_bucket")]
+    return ["  held back by reason: " + " · ".join(parts)]
+
+
 def status_line(latest: dict, odds_state: dict, now) -> str:
     snap = _age_min((latest or {}).get("snapshot_ts"), now)
     pulls = (odds_state or {}).get("last_pull") or {}
@@ -138,7 +153,8 @@ def build(latest: dict, bets: dict, odds_state: dict, now) -> str:
         body = [_play_line(f) for f in p[:MAX_PLAYS]]
         if len(p) > MAX_PLAYS:
             body.append(f"- +{len(p) - MAX_PLAYS} more in data/flags/latest.json")
-    rc = ["", f"Settled in the last {RECAP_H}h:"] + recap(bets, now)
+    rc = (["", f"Settled in the last {RECAP_H}h:"] + recap(bets, now)
+          + held_back_by_reason(bets.get("SHARP tracked (held back)"), now))
     tail = ["", status_line(latest, odds_state, now)]
     lines = head + body + rc + tail
     if len(lines) > MAX_LINES:                       # trim plays first, keep recap + status

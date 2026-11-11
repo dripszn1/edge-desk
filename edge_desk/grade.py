@@ -194,6 +194,53 @@ SHARP_SHADOW = ROOT / "data" / "flags" / "sharp_shadow.csv"
 SHARP_BETS_OUT = ROOT / "data" / "sharp_shadow_bets.csv"
 
 
+TRACKED = ROOT / "data" / "flags" / "sharp_tracked.csv"
+TRACKED_BETS_OUT = ROOT / "data" / "sharp_tracked_bets.csv"
+REASON_BUCKETS = (("far from sharp line", "far_rung"), ("line stale", "stale_line"), ("sanity cap", "sanity_cap"))
+
+
+def reason_bucket(reason) -> str:
+    """'rung far ... ; sharp line stale' -> 'far_rung+stale_line' (stable order)."""
+    r = str(reason or "")
+    b = [tag for needle, tag in REASON_BUCKETS if needle in r]
+    return "+".join(b) or "other"
+
+
+def tracked_bets(tracked: pd.DataFrame, results: pd.DataFrame, now: datetime | None = None) -> pd.DataFrame:
+    """Grade the low-confidence SHARP plays (far rungs, stale lines, >cap edges) exactly like
+    SHARP shadow bets: first sighting of each (side, ticker) is the entry, sized by the same
+    quarter-Kelly/$10 rules (at least 1 contract so every play is graded), fees at that size,
+    settled only from a final result fetched after the entry. Rows stamped in the future are
+    ignored (never look-ahead)."""
+    now_ts = pd.Timestamp(now or datetime.now(timezone.utc))
+    cols = MODEL_BET_COLS + ["reason", "reason_bucket"]
+    if tracked is None or tracked.empty:
+        return pd.DataFrame(columns=cols)
+    t = tracked.copy()
+    t["_ts"] = pd.to_datetime(t["snapshot_ts"], utc=True, errors="coerce")
+    t = t[t["_ts"].notna() & (t["_ts"] <= now_ts)]
+    t = t[pd.to_numeric(t["price"], errors="coerce").between(0, 1, inclusive="neither")
+          & pd.to_numeric(t["fair"], errors="coerce").notna()]
+    if t.empty:
+        return pd.DataFrame(columns=cols)
+    t["leg1"] = t["side"].astype(str) + " " + t["ticker"].astype(str)
+    t = t.sort_values("_ts").drop_duplicates(["leg1"], keep="first")
+    from .sizing import bet_size
+    n = []
+    for r in t.to_dict("records"):
+        price, fair = float(r["price"]), float(r["fair"])
+        fee1 = taker_fee(price, 1)
+        stake = bet_size(fair, price, fee1)
+        n.append(max(1, int(stake // (price + fee1)) if price + fee1 > 0 else 1))
+    t["contracts"] = n
+    t["market"] = t["ticker"].astype(str).str.split("-").str[0].str.replace(r"^KX(NFL|NCAAF|NCAAMB)", "", regex=True)
+    out = model_bets(t.drop(columns=["_ts"]), results, now, source="tracked", kind="SHARP")
+    rmap = dict(zip(t["leg1"], t["reason"]))
+    out["reason"] = out["leg1"].map(rmap)
+    out["reason_bucket"] = out["reason"].map(reason_bucket)
+    return out[cols]
+
+
 def run() -> pd.DataFrame:
     flags = pd.read_csv(FLAGS) if FLAGS.exists() else pd.DataFrame()
     results = pd.read_csv(RESULTS) if RESULTS.exists() else pd.DataFrame(
@@ -206,6 +253,10 @@ def run() -> pd.DataFrame:
     sb = model_bets(sh, results, kind="SHARP")
     sb.to_csv(SHARP_BETS_OUT, index=False)
     print(f"sharp shadow bets {len(sb)} | " + (str(sb["status"].value_counts().to_dict()) if len(sb) else "{}"))
+    tr = pd.read_csv(TRACKED) if TRACKED.exists() else pd.DataFrame()
+    tb = tracked_bets(tr, results)
+    tb.to_csv(TRACKED_BETS_OUT, index=False)
+    print(f"sharp tracked bets {len(tb)} | " + (str(tb["status"].value_counts().to_dict()) if len(tb) else "{}"))
     print(f"model shadow bets {len(mb)} | " + (str(mb["status"].value_counts().to_dict()) if len(mb) else "{}"))
     led = ledger(bets)
     bets.to_csv(BETS_OUT, index=False)
