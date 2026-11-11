@@ -56,7 +56,9 @@ MAX_RUNG_OFFSET_BY_LEAGUE = {"NFL": 10.5, "CFB": 6.0, "CBB": 3.0}
 # CBB has no historical closing-line feed yet, so its rungs use a normal around the sharp line with
 # typical NCAAB residual SDs (assumption, not fitted). Only rungs within +-3 pts of the line alert,
 # where the SD matters least; everything else is tracked (#24). Replace with fitted SDs when #22 lands.
-CBB_SD = {"spread": 11.0, "total": 11.5}
+CBB_SD = {"spread": 11.0, "total": 11.5}   # fallback only, until data/cbb/lines.csv has history
+CBB_MIN_FIT_GAMES = 500     # settled CBB games with a closing line needed to fit the SDs
+SHADOW_ONLY = ("CBB",)      # Emerson: CBB is a shadow/PAPER test; never live, whatever its gate says
 ODDS_MAX_AGE_MIN = 90          # no SHARP flag from a sharp line older than this...
 ODDS_MAX_AGE_NEAR_KO_MIN = 60  # ...or older than this within NEAR_KO_H of kickoff
 NEAR_KO_H = 3
@@ -155,6 +157,25 @@ def build_dists(games: pd.DataFrame, before) -> dict[str, LineDist]:
     g = g[pd.to_datetime(g["kickoff_utc"], utc=True) < _ts(before)]
     return {"spread": LineDist(g["spread_line"], g["home_score"] - g["away_score"], "spread"),
             "total": LineDist(g["total_line"], g["home_score"] + g["away_score"], "total")}
+
+
+def cbb_dists(games: pd.DataFrame | None, before) -> dict[str, LineDist]:
+    """CBB rung distributions: normal around the sharp line, SD fitted walk-forward from settled
+    games tipped before `before` (build_dists' look-ahead guard); the assumed CBB_SD until there
+    are CBB_MIN_FIT_GAMES of them."""
+    fitted = build_dists(games, before) if games is not None and not games.empty else {}
+    out = {}
+    for k in ("spread", "total"):
+        d = fitted.get(k)
+        n = (d.n // 2 if k == "spread" else d.n) if d is not None else 0
+        if d is None or n < CBB_MIN_FIT_GAMES:
+            d = LineDist([], [], k)
+            d.sd, d.source = CBB_SD[k], f"assumed ({n} games < {CBB_MIN_FIT_GAMES})"
+        else:
+            d.source = f"fitted on {n} games"
+        d.normal = True
+        out[k] = d
+    return out
 
 
 # ---------- backtest: closing line -> fair rung prices -> realised outcomes ----------
@@ -346,11 +367,8 @@ def sharp_flags(df: pd.DataFrame, lines: pd.DataFrame, games: pd.DataFrame, snap
         status["reason"] = "no usable sharp odds (missing key, none fetched, or older than %dh)" % odds.ODDS_STALE_HOURS
         return [], status
     if league == "CBB":
-        dists = {}
-        for k in ("spread", "total"):
-            d = LineDist([], [], k)
-            d.sd, d.normal = CBB_SD[k], True
-            dists[k] = d
+        dists = cbb_dists(games, snapshot_ts)
+        status["cbb_sd"] = {k: {"sd": round(d.sd, 2), "source": d.source} for k, d in dists.items()}
     elif games is None or games.empty or games["spread_line"].notna().sum() < 500:
         status["reason"] = "no historical closing lines for the rung distribution"
         return [], status
@@ -424,15 +442,17 @@ def sharp_flags(df: pd.DataFrame, lines: pd.DataFrame, games: pd.DataFrame, snap
 
 
 # ---------- gate ----------
-def gate(bets_path: Path | None = None, league: str | None = None) -> tuple[bool, str]:
+def gate(bets_path: Path | None = None, league: str | None = None, market: str | None = None) -> tuple[bool, str]:
     """Open only when graded SHARP shadow bets (of `league`, if given) show >0 P&L with t >= 2
-    over >= 30 settled."""
+    over >= 30 settled. market="ML" -> moneylines only; otherwise spreads/totals only (#23)."""
     from .weekly import t_stat
     try:
         b = pd.read_csv(bets_path or SHADOW_BETS)
         s = b[b["status"] == "settled"]
         if league is not None and "league" in s:
             s = s[s["league"] == league]
+        if "market" in s:
+            s = s[s["market"] == "ML"] if market == "ML" else s[s["market"] != "ML"]
     except Exception:
         return False, "gated: no graded SHARP shadow bets yet"
     if len(s) < GATE_MIN_BETS:
@@ -445,22 +465,66 @@ def gate(bets_path: Path | None = None, league: str | None = None) -> tuple[bool
 
 
 CFB_BACKTEST_OUT = ROOT / "data" / "model" / "sharp_cfb_backtest.json"
+CBB_BACKTEST_OUT = ROOT / "data" / "model" / "sharp_cbb_backtest.json"
+
+
+def cbb_sd_check(games: pd.DataFrame, max_off: float = 3.0) -> dict:
+    """Walk-forward per season: SD fitted on earlier seasons vs the assumed CBB_SD, scored by log
+    loss on rungs within +-max_off of the closing line (the only CBB rungs that alert)."""
+    g = games.dropna(subset=["home_score", "away_score", "spread_line", "total_line"]).copy()
+    g["margin"] = g["home_score"] - g["away_score"]
+    g["total"] = g["home_score"] + g["away_score"]
+    eps, out = 1e-6, {}
+    seasons = sorted(int(x) for x in g["season"].dropna().unique())
+    for kind, lc, oc in (("spread", "spread_line", "margin"), ("total", "total_line", "total")):
+        Pf, Pa, Y, per = [], [], [], []
+        for s in seasons:
+            test = g[g["season"] == s]
+            first = pd.to_datetime(test["kickoff_utc"], utc=True).min()
+            d = cbb_dists(games, first)[kind]
+            if not d.source.startswith("fitted"):
+                continue
+            n0 = len(Y)
+            for L, y in zip(test[lc].to_numpy(float), test[oc].to_numpy(float)):
+                for off in np.arange(-max_off, max_off + 1):
+                    k = math.floor(L) + 0.5 + float(off)
+                    if abs(k - L) > max_off:
+                        continue
+                    Pf.append(_normal_p(L, k, d.sd)); Pa.append(_normal_p(L, k, CBB_SD[kind])); Y.append(float(y > k))
+            per.append({"season": s, "sd_fitted": round(d.sd, 2), "games": int(len(test)), "rungs": len(Y) - n0})
+        if not Y:
+            out[kind] = {"note": "not enough earlier seasons to fit"}
+            continue
+        Pf, Pa, Y = map(np.asarray, (Pf, Pa, Y))
+        ll = lambda p: float(-np.mean(Y * np.log(np.clip(p, eps, 1)) + (1 - Y) * np.log(np.clip(1 - p, eps, 1))))
+        out[kind] = {"rungs": int(len(Y)), "logloss_fitted": round(ll(Pf), 5),
+                     "logloss_assumed": round(ll(Pa), 5), "sd_assumed": CBB_SD[kind],
+                     "fitted_better": bool(ll(Pf) < ll(Pa)), "by_season": per}
+    return out
 
 
 def history(league: str) -> pd.DataFrame:
     """Past games with closing lines for the rung distribution."""
-    from . import cfb_results, nfl_results
+    from . import cbb_lines, cfb_results, nfl_results
+    if league == "CBB":
+        return cbb_lines.history()
     return nfl_results.load() if league == "NFL" else cfb_results.load()
 
 
 def run_backtest() -> dict:
     reps = {}
-    for lg, out in (("NFL", BACKTEST_OUT), ("CFB", CFB_BACKTEST_OUT)):
+    for lg, out in (("NFL", BACKTEST_OUT), ("CFB", CFB_BACKTEST_OUT), ("CBB", CBB_BACKTEST_OUT)):
         g = history(lg)
         if g.empty or g["spread_line"].notna().sum() < 500:
             print(f"sharp backtest {lg}: no closing lines yet, skip")
             continue
-        rep = backtest(g)
+        if lg == "CBB":
+            ss = sorted(int(x) for x in g["season"].dropna().unique())[1:]
+            rep = backtest(g, seasons=ss)
+            rep["method"] = {"spread": "normal, SD fitted walk-forward", "total": "normal, SD fitted walk-forward"}
+            rep["sd_check"] = cbb_sd_check(g)
+        else:
+            rep = backtest(g)
         rep["league"] = lg
         out.parent.mkdir(parents=True, exist_ok=True)
         out.write_text(json.dumps(rep, indent=2))

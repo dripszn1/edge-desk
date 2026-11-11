@@ -22,7 +22,8 @@ def ct(y, m, d, h, mi):
     (ct(2026, 11, 14, 23, 30), False),   # end is exclusive
     (ct(2026, 11, 15, 22, 31), False),   # Sun ends 10:30 PM
     (ct(2026, 11, 15, 11, 0), True),
-    (ct(2026, 11, 16, 17, 59), False),   # Mon starts 6 PM
+    (ct(2026, 11, 16, 17, 29), False),   # Mon starts 5:30 PM (CBB tips)
+    (ct(2026, 11, 16, 17, 30), True),
     (ct(2026, 11, 16, 18, 0), True),
     (ct(2026, 11, 10, 17, 30), True),    # Tue MACtion
     (ct(2026, 11, 11, 12, 0), False),    # Wed midday
@@ -271,3 +272,29 @@ def test_loop_stops_at_deadline_and_commits(monkeypatch, tmp_path):
                       alert_fn=lambda df, ts: [])
     assert c.t <= s.stop_at + timedelta(seconds=1)
     assert len(commits) >= 3 and commits[-1].endswith("(end)")   # every 15 min + final
+
+
+def test_checkpoint_logs_minutes_even_if_run_is_killed(monkeypatch, tmp_path):
+    """Each 15-min commit upserts this run's live_log row, so a cancelled run still counts."""
+    monkeypatch.setattr(scan, "FLAG_DIR", tmp_path)
+    log = tmp_path / "ll.csv"
+    c = FakeClock(datetime(2026, 11, 14, 16, 0, tzinfo=UTC))
+    monkeypatch.setattr(live, "deadline", lambda *a, **k: c.t + timedelta(minutes=40))
+    live.run_loop(now_fn=c.now, clock=c.clock, sleep=c.sleep,
+                  fetch_full=lambda m, ts: (pd.DataFrame(), [], False), odds_fn=lambda: None,
+                  scan_fn=lambda *a: None, persist_fn=lambda *a: None, post_fn=lambda: [],
+                  commit_fn=lambda m: True, used_min=0, seen=set(), alert_fn=lambda df, ts: [],
+                  log_fn=lambda row: live.upsert_log(row, log))
+    rows = pd.read_csv(log)
+    assert len(rows) == 1 and rows["exit_reason"].iloc[0].startswith("running")   # one row per run, replaced
+    assert rows["minutes"].iloc[0] >= 30
+    assert live.minutes_used_this_month(datetime(2026, 11, 14, 17, tzinfo=UTC), log) >= 30
+
+
+def test_upsert_replaces_same_run_only(tmp_path):
+    p = tmp_path / "l.csv"
+    live.upsert_log({"run_id": "a", "started_utc": "2026-11-14T16:00:00Z", "minutes": 10}, p)
+    live.upsert_log({"run_id": "b", "started_utc": "2026-11-14T17:00:00Z", "minutes": 5}, p)
+    live.upsert_log({"run_id": "a", "started_utc": "2026-11-14T16:00:00Z", "minutes": 40, "exit_reason": "window end"}, p)
+    r = pd.read_csv(p)
+    assert sorted(r["run_id"]) == ["a", "b"] and r.set_index("run_id").loc["a", "minutes"] == 40

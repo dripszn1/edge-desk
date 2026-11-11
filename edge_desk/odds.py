@@ -56,6 +56,17 @@ GAMEDAY_INTERVAL_H = 4
 IDLE_INTERVAL_H = 24
 ODDS_STALE_HOURS = 6         # fair value older than this -> unusable
 
+# CBB (#22): football always comes first. CBB may only spend credits above a football floor
+# (reserve + FOOTBALL_DAILY_CREDITS for every day left in the month), at most CBB_PULLS_PER_DAY
+# pulls per Central day (one before the evening slate, one near the main tips), only when a tip
+# is within CBB_PULL_LEAD_H, and at least CBB_MIN_GAP_H apart. CBB spend never counts against
+# football's daily allowance.
+FOOTBALL = ("NFL", "CFB")
+FOOTBALL_DAILY_CREDITS = 15  # ~470/month: what the football plan needs per day
+CBB_PULLS_PER_DAY = 2
+CBB_PULL_LEAD_H = 4
+CBB_MIN_GAP_H = 2
+
 LINE_COLS = ["fetched_ts", "league", "event_id", "commence_utc", "home_team", "away_team",
              "book", "book_update_utc", "market", "outcome", "point", "price", "implied", "fair"]
 
@@ -164,9 +175,38 @@ def days_left_in_month(now) -> int:
     return calendar.monthrange(now.year, now.month)[1] - now.day + 1
 
 
-def spent_today(state: dict, now) -> int:
+def spent_today(state: dict, now, leagues=None) -> int:
+    """Credits spent today (UTC day). With `leagues`, only those leagues' spend (needs the
+    per-league log; older days without it count everything as football)."""
     day = _ts(now).strftime("%Y-%m-%d")
-    return int(state.get("spent", {}).get(day, 0))
+    total = int(state.get("spent", {}).get(day, 0))
+    if leagues is None:
+        return total
+    by = state.get("spent_by_league", {}).get(day)
+    if by is None:
+        return total if set(leagues) & set(FOOTBALL) else 0
+    return int(sum(v for k, v in by.items() if k in leagues))
+
+
+def _ct_day(now) -> str:
+    return _ts(now).tz_convert("America/Chicago").strftime("%Y-%m-%d")
+
+
+def football_floor(now) -> int:
+    """Credits CBB must leave untouched: the reserve plus football's need for the rest of the month."""
+    return ODDS_RESERVE + FOOTBALL_DAILY_CREDITS * days_left_in_month(now)
+
+
+def cbb_ok(state: dict, now, kickoff, left_after_football: int) -> bool:
+    now = _ts(now)
+    if kickoff is None or _ts(kickoff) <= now or (_ts(kickoff) - now).total_seconds() > CBB_PULL_LEAD_H * 3600:
+        return False
+    if state.get("pulls", {}).get("CBB", {}).get(_ct_day(now), 0) >= CBB_PULLS_PER_DAY:
+        return False
+    last = state.get("last_pull", {}).get("CBB")
+    if last and (now - _ts(last)).total_seconds() < CBB_MIN_GAP_H * 3600:
+        return False
+    return left_after_football - COST_PER_PULL >= football_floor(now)
 
 
 def remaining(state: dict, now) -> int:
@@ -187,13 +227,14 @@ def plan_pulls(state: dict, now, next_kickoff: dict, near_h: float | None = None
     now = _ts(now)
     left = remaining(state, now) - ODDS_RESERVE
     base = max(left, 0) / days_left_in_month(now)
-    spent = spent_today(state, now)
+    spent = spent_today(state, now, FOOTBALL)
     plan = []
     # game-day leagues first, soonest kickoff first
     def soon(lg):
         k = next_kickoff.get(lg)
         return k is not None and _ts(k) > now and (_ts(k) - now).total_seconds() <= GAMEDAY_WINDOW_H * 3600
-    order = sorted(SPORTS, key=lambda lg: (not soon(lg), _ts(next_kickoff[lg]) if next_kickoff.get(lg) else now))
+    order = sorted((lg for lg in SPORTS if lg in FOOTBALL),
+                   key=lambda lg: (not soon(lg), _ts(next_kickoff[lg]) if next_kickoff.get(lg) else now))
     for lg in order:
         k = next_kickoff.get(lg)
         if k is None or _ts(k) <= now:
@@ -212,6 +253,9 @@ def plan_pulls(state: dict, now, next_kickoff: dict, near_h: float | None = None
         plan.append(lg)
         spent += COST_PER_PULL
         left -= COST_PER_PULL
+    # CBB last, only from what football doesn't need (skipped first when credits run short)
+    if "CBB" in SPORTS and cbb_ok(state, now, next_kickoff.get("CBB"), left + ODDS_RESERVE):
+        plan.append("CBB")
     return plan
 
 
@@ -225,6 +269,17 @@ def record_pull(state: dict, league: str, now, headers: dict) -> dict:
     day = now.strftime("%Y-%m-%d")
     s.setdefault("spent", {})[day] = int(s.get("spent", {}).get(day, 0)) + cost
     s["spent"] = dict(sorted(s["spent"].items())[-40:])    # keep ~a month of history
+    by = dict(s.get("spent_by_league", {}))
+    d = dict(by.get(day, {}))
+    d[league] = int(d.get(league, 0)) + cost
+    by[day] = d
+    s["spent_by_league"] = dict(sorted(by.items())[-40:])
+    pulls = {k: dict(v) for k, v in s.get("pulls", {}).items()}
+    lg = pulls.setdefault(league, {})
+    cday = _ct_day(now)
+    lg[cday] = int(lg.get(cday, 0)) + 1
+    pulls[league] = dict(sorted(lg.items())[-40:])
+    s["pulls"] = pulls
     if rem is not None:
         s["remaining"] = int(float(rem))
         s["remaining_seen_utc"] = _iso(now)
@@ -286,7 +341,7 @@ def run(now=None, near_h: float | None = None, near_interval_h: float | None = N
     now = _ts(now or datetime.now(timezone.utc))
     state = load_state()
     plan = plan_pulls(state, now, next_kickoffs(key, now), near_h, near_interval_h)
-    print(f"odds: credits left ~{remaining(state, now)}, spent today {spent_today(state, now)}, plan {plan or 'none'}")
+    print(f"odds: credits left ~{remaining(state, now)}, spent today {spent_today(state, now)} (CBB {spent_today(state, now, ('CBB',))}), plan {plan or 'none'}")
     for lg in plan:
         try:
             payload, headers = _get(f"{API}/sports/{SPORTS[lg]}/odds", {

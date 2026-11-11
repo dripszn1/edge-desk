@@ -121,17 +121,36 @@ def tracked_report(bets: pd.DataFrame, n_sims: int = N_SIMS) -> dict:
     return out
 
 
+def sharp_split(b: pd.DataFrame) -> dict:
+    """SHARP shadow scorecards: football (NFL+CFB) and CBB kept apart (#22), never pooled."""
+    if b.empty or "league" not in b:
+        return {"sharp_shadow": assess(b), "sharp_shadow_cbb": assess(pd.DataFrame())}
+    out = {}
+    for key, part in (("sharp_shadow", b[b["league"] != "CBB"]), ("sharp_shadow_cbb", b[b["league"] == "CBB"])):
+        a = assess(part)
+        if "market" in part and len(part):          # MONEYLINE breakdown (#23), spreads/totals apart
+            ml = part["market"] == "ML"
+            a["by_market"] = {"MONEYLINE": _brief(assess(part[ml])), "SPREAD/TOTAL": _brief(assess(part[~ml]))}
+        out[key] = a
+    return out
+
+
+def _brief(a: dict) -> dict:
+    return {k: a.get(k) for k in ("settled", "pnl", "roi", "t_stat", "verdict")}
+
+
 def run(now: datetime | None = None) -> dict:
     now = now or datetime.now(timezone.utc)
     ts = now.strftime("%Y-%m-%dT%H:%M:%SZ")
     rep = {"generated_utc": ts, "generated_ct": to_ct(ts), "paper_mode": config.PAPER_MODE,
            "rules": {"min_bets": MIN_BETS, "skill_t": SKILL_T, "skill_beat_pct": SKILL_PCTL, "sims": N_SIMS},
            "paper": assess(_load(PAPER)), "model_shadow": assess(_load(SHADOW)),
-           "sharp_shadow": assess(_load(SHARP_SHADOW)), "sharp_tracked": tracked_report(_load(SHARP_TRACKED))}
+           **sharp_split(_load(SHARP_SHADOW)), "sharp_tracked": tracked_report(_load(SHARP_TRACKED))}
     OUT.write_text(json.dumps(rep, indent=2, default=str))
     print(f"weekly: paper {rep['paper']['verdict']} ({rep['paper']['settled']}) | "
           f"model shadow {rep['model_shadow']['verdict']} ({rep['model_shadow']['settled']}) | "
           f"sharp shadow {rep['sharp_shadow']['verdict']} ({rep['sharp_shadow']['settled']}) | "
+          f"sharp CBB {rep['sharp_shadow_cbb']['verdict']} ({rep['sharp_shadow_cbb']['settled']}) | "
           f"sharp tracked {rep['sharp_tracked']['verdict']} ({rep['sharp_tracked']['settled']})"
           + (f" | PROPOSE WIDEN: {', '.join(rep['sharp_tracked']['propose_widen'])}" if rep['sharp_tracked'].get('propose_widen') else ""))
     return rep

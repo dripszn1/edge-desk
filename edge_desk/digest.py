@@ -88,10 +88,22 @@ def _load(path: Path) -> pd.DataFrame:
         return pd.DataFrame()
 
 
+def _split_cbb(bets: dict) -> dict:
+    """CBB is its own scorecard (#22): never pooled with football."""
+    out = {}
+    for name, b in bets.items():
+        if b is not None and not b.empty and "league" in b and (b["league"] == "CBB").any():
+            out[f"{name} football"] = b[b["league"] != "CBB"]
+            out[f"{name} CBB"] = b[b["league"] == "CBB"]
+        else:
+            out[name] = b
+    return out
+
+
 def recap(bets: dict[str, pd.DataFrame], now) -> list[str]:
     now = _ts(now)
     lines = []
-    for name, b in bets.items():
+    for name, b in _split_cbb(bets).items():
         if b is None or b.empty or "status" not in b:
             continue
         s = b[b["status"] == "settled"].copy()

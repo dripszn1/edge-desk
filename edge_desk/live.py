@@ -46,7 +46,7 @@ UTC = timezone.utc
 
 # weekday (Mon=0) -> (start, end) local CT times as (h, m)
 WINDOWS = {
-    0: ((18, 0), (23, 30)),
+    0: ((17, 30), (23, 30)),   # Mon: MNF 7:15 PM; CBB tips from ~5:30 PM (#22)
     1: ((17, 30), (23, 30)),
     2: ((17, 30), (23, 30)),
     3: ((17, 30), (23, 30)),
@@ -354,6 +354,30 @@ def append_log(row: dict, path: Path | None = None) -> None:
         w.writerow({k: row.get(k, "") for k in LOG_COLS})
 
 
+def upsert_log(row: dict, path: Path | None = None) -> None:
+    """Write this run's row, replacing an earlier checkpoint row with the same run_id, so a run
+    that is cancelled or killed still leaves its minutes and stats (budget stays honest)."""
+    path = path or LIVE_LOG
+    rows = []
+    if path.exists():
+        with path.open() as fh:
+            rows = [r for r in csv.DictReader(fh) if r.get("run_id") != str(row.get("run_id"))]
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open("w", newline="") as fh:
+        w = csv.DictWriter(fh, fieldnames=LOG_COLS)
+        w.writeheader()
+        for r in rows:
+            w.writerow({k: r.get(k, "") for k in LOG_COLS})
+        w.writerow({k: row.get(k, "") for k in LOG_COLS})
+
+
+def checkpoint_row(sess, now: datetime, reason: str = "running (checkpoint)") -> dict:
+    return {"run_id": os.environ.get("GITHUB_RUN_ID", "local"),
+            "started_utc": sess.started.strftime("%Y-%m-%dT%H:%M:%SZ"),
+            "ended_utc": _utc(now).strftime("%Y-%m-%dT%H:%M:%SZ"), "minutes": billed_minutes(sess.started, now),
+            **sess.stats, "errors": " ; ".join(sess.errors[:20]), "exit_reason": reason}
+
+
 def billed_minutes(start: datetime, end: datetime, setup_min: float = 2) -> int:
     return int(math.ceil((_utc(end) - _utc(start)).total_seconds() / 60 + setup_min))
 
@@ -373,13 +397,14 @@ class Session:
 def run_loop(now_fn=lambda: datetime.now(UTC), clock=time.monotonic, sleep=time.sleep,
              fetch_full=full_pass, fetch_hot=hot_pass, odds_fn=None, scan_fn=None,
              persist_fn=persist, post_fn=post_steps, commit_fn=git_commit, used_min: float | None = None,
-             seen: set | None = None, alert_fn=None) -> Session:
+             seen: set | None = None, alert_fn=None, log_fn=None) -> Session:
     """Run until the deadline. All I/O is injectable so the ordering guarantees are testable."""
     from . import kickoffs, odds, scan
     odds_fn = odds_fn or (lambda: odds.run(near_h=config.LIVE_ODDS_NEAR_HOURS,
                                            near_interval_h=odds_interval_hours(odds.MONTHLY_CREDITS)))
     scan_fn = scan_fn or (lambda df, ts, seen, partial: scan.run(df, ts, seen=seen, partial=partial))
     alert_fn = alert_fn or default_alerts
+    log_fn = log_fn or upsert_log
     start = _utc(now_fn())
     w = current_window(start, config.LIVE_EARLY_START_MINUTES)
     if w is None:
@@ -444,6 +469,10 @@ def run_loop(now_fn=lambda: datetime.now(UTC), clock=time.monotonic, sleep=time.
             last_commit = now
         elif now - last_commit >= timedelta(minutes=config.LIVE_COMMIT_MINUTES):
             sess.errors += post_fn()
+            try:                                       # checkpoint: a cancelled run still logs its minutes
+                log_fn(checkpoint_row(sess, now))
+            except Exception as e:  # noqa: BLE001
+                sess.errors.append(f"log: {type(e).__name__}")
             if commit_fn(f"data: live {ts}"):
                 sess.stats["commits"] += 1
             last_commit = now
@@ -485,10 +514,7 @@ def main(argv=None) -> int:
         mins = billed_minutes(sess.started, end)
         reason = ("window end" if end >= sess.window_end - timedelta(minutes=1)
                   else "job limit / budget" if end >= sess.stop_at else "outside window")
-        append_log({"run_id": os.environ.get("GITHUB_RUN_ID", "local"),
-                    "started_utc": sess.started.strftime("%Y-%m-%dT%H:%M:%SZ"),
-                    "ended_utc": end.strftime("%Y-%m-%dT%H:%M:%SZ"), "minutes": mins,
-                    **sess.stats, "errors": " ; ".join(sess.errors[:20]), "exit_reason": reason})
+        upsert_log(checkpoint_row(sess, end, reason))
         redo = should_redispatch(end, sess.window_end, used + mins)
         _gh_output(redispatch=str(redo).lower())
         git_commit(f"data: live log {end:%Y-%m-%dT%H:%MZ}")

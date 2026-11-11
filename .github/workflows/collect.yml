@@ -21,7 +21,7 @@ concurrency:
 jobs:
   run:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
       - name: Freshness guard (scheduled runs skip if the latest snapshot is < 20 min old)
@@ -50,6 +50,13 @@ jobs:
         if: steps.fresh.outputs.skip != 'true'
         run: python -m edge_desk.cfb_lines
         env:
+          CFBD_API_KEY: ${{ secrets.CFBD_API_KEY }}
+        continue-on-error: true
+      - name: CBB closing lines + scores (CollegeBasketballData; skips if no key) - fits the CBB SHARP rung SDs only
+        if: steps.fresh.outputs.skip != 'true'
+        run: python -m edge_desk.cbb_lines
+        env:
+          CBBD_API_KEY: ${{ secrets.CBBD_API_KEY }}
           CFBD_API_KEY: ${{ secrets.CFBD_API_KEY }}
         continue-on-error: true
       - name: Model walk-forward backtests (weekly per league; sets each league's gate)
@@ -105,6 +112,12 @@ jobs:
       - name: Game-day digest (data/digest.md, read by the alert task)
         if: steps.fresh.outputs.skip != 'true'
         run: python -m edge_desk.digest
+        continue-on-error: true
+      - name: Archive snapshot weeks older than 14 days to GitHub Releases (removed only after checksum verify; #25)
+        if: steps.fresh.outputs.skip != 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python -m edge_desk.archive
         continue-on-error: true
       - name: Commit data
         if: steps.fresh.outputs.skip != 'true'
