@@ -103,3 +103,24 @@ def test_cbb_never_live_even_if_gate_open(monkeypatch):
     out = scan.run_sharp(pd.DataFrame(), "2026-11-11T00:00:00Z", lost=0.0, leagues=("CBB",))
     assert out["live"] == [] and len(out["shadow"]) == 1
     assert out["status"]["CBB"]["gate"].startswith("shadow-only")
+
+
+def test_history_drops_unplayed_forfeits_and_in_progress(tmp_path):
+    """#29: CBBD stores unplayed/cancelled/in-progress games as 0-0 and forfeits as 1-0/2-0. On the
+    11-11 pull 390 such rows (3 from tonight) pushed the fitted CBB total SD to 22.6 (real ~16)."""
+    p = tmp_path / "lines.csv"
+    h = _hist(n=6, fetched=FETCH)
+    h.loc[0, ["home_score", "away_score"]] = 0, 0           # unplayed / cancelled
+    h.loc[1, ["home_score", "away_score"]] = 2, 0           # forfeit
+    h.loc[2, "kickoff_utc"] = "2026-11-11T10:30:00Z"        # tipped 1.5h before the fetch: maybe not final
+    h.to_csv(p, index=False)
+    got = cbb_lines.history("2026-11-11T13:00:00Z", p)
+    assert sorted(got["game_id"]) == [3, 4, 5]
+
+
+def test_cbb_dists_ignore_zero_zero_rows():
+    h = _hist(n=1200, sd_t=12.0)
+    bad = _hist(n=60, seed=5, start="2023-01-01")
+    bad[["home_score", "away_score"]] = 0.0
+    d = sharp.cbb_dists(pd.concat([h, bad], ignore_index=True), "2030-01-01T00:00:00Z")
+    assert abs(d["total"].sd - 12.0) < 0.7

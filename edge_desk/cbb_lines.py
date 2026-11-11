@@ -30,6 +30,8 @@ API = "https://api.collegebasketballdata.com"
 FIRST_SEASON = 2021          # season label = calendar year it ends (2021 = 2020-21)
 REFRESH_HOURS = 12
 REFRESH_DAYS = 10
+MIN_TEAM_SCORE = 20         # #29: 0-0 = unplayed/cancelled/not final yet, 1-0/2-0 = forfeit
+FINAL_AFTER_H = 3           # scores fetched sooner than this after the tip may be mid-game
 COLS = ["game_id", "season", "kickoff_utc", "home_team", "away_team", "home_score", "away_score",
         "spread_line", "total_line", "providers", "source", "fetched_ts"]
 
@@ -79,13 +81,26 @@ def load(path: Path | None = None) -> pd.DataFrame:
     return pd.read_csv(path)
 
 
+def final_games(g: pd.DataFrame) -> pd.DataFrame:
+    """Only games whose stored score is a real final: both teams >= MIN_TEAM_SCORE and the row was
+    fetched >= FINAL_AFTER_H after the tip (when those columns exist)."""
+    if g is None or g.empty:
+        return g
+    g = g.dropna(subset=["home_score", "away_score"])
+    g = g[(g["home_score"] >= MIN_TEAM_SCORE) & (g["away_score"] >= MIN_TEAM_SCORE)]
+    if "fetched_ts" in g and "kickoff_utc" in g:
+        lag = pd.to_datetime(g["fetched_ts"], utc=True) - pd.to_datetime(g["kickoff_utc"], utc=True)
+        g = g[lag >= pd.Timedelta(hours=FINAL_AFTER_H)]
+    return g
+
+
 def history(as_of=None, path: Path | None = None) -> pd.DataFrame:
     """Settled games usable at `as_of`: fetched at/before it (look-ahead guard) and tipped before it.
     Same columns as the football history frames, so sharp.build_dists / backtest work unchanged."""
     g = load(path)
     if g.empty:
         return g
-    g = g.dropna(subset=["home_score", "away_score"])
+    g = final_games(g)
     if as_of is not None:
         t = pd.Timestamp(as_of)
         t = t.tz_convert("UTC") if t.tzinfo else t.tz_localize("UTC")

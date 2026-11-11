@@ -67,6 +67,16 @@ CBB_PULLS_PER_DAY = 2
 CBB_PULL_LEAD_H = 4
 CBB_MIN_GAP_H = 2
 
+# Confirm pulls (#28): SHARP holds back any play whose sharp line is >90 min old (60 near kickoff),
+# but game-day pulls are 4h apart, so most candidates were never checked against a fresh line.
+# When the latest scan (<= CONFIRM_MAX_SCAN_AGE_MIN old) has football plays held back ONLY for a
+# stale line, that league may be re-pulled after CONFIRM_MIN_GAP_H instead of the usual interval.
+# The reserve and the daily allowance still apply, so the monthly plan can't be overspent; the
+# credits just move to the moments when a fresh line could turn into a play. Never for CBB.
+CONFIRM_MIN_GAP_H = 1.0
+CONFIRM_MAX_SCAN_AGE_MIN = 45
+LATEST_SCAN = ROOT / "data" / "flags" / "latest.json"
+
 LINE_COLS = ["fetched_ts", "league", "event_id", "commence_utc", "home_team", "away_team",
              "book", "book_update_utc", "market", "outcome", "point", "price", "implied", "fair"]
 
@@ -218,8 +228,27 @@ def remaining(state: dict, now) -> int:
     return int(state["remaining"])
 
 
+def confirm_leagues(now, path: Path | None = None) -> set[str]:
+    """Football leagues whose latest scan held back plays only for a stale sharp line (#28)."""
+    now = _ts(now)
+    try:
+        d = json.loads((path or LATEST_SCAN).read_text())
+        snap = _ts(d["snapshot_ts"])
+    except Exception:  # noqa: BLE001 - no scan yet -> nothing to confirm
+        return set()
+    age = (now - snap).total_seconds() / 60
+    if age < 0 or age > CONFIRM_MAX_SCAN_AGE_MIN:
+        return set()
+    out = set()
+    for k, v in (d.get("sharp") or {}).items():
+        lg = k.split()[0]
+        if lg in FOOTBALL and isinstance(v, dict) and int(v.get("stale_only") or 0) > 0:
+            out.add(lg)
+    return out
+
+
 def plan_pulls(state: dict, now, next_kickoff: dict, near_h: float | None = None,
-               near_interval_h: float | None = None) -> list[str]:
+               near_interval_h: float | None = None, confirm=()) -> list[str]:
     """Which leagues to pull now. `next_kickoff[league]` = soonest upcoming commence (or None).
     Live mode (#16) passes near_h/near_interval_h: a league whose kickoff is within near_h may be
     pulled every near_interval_h instead of GAMEDAY_INTERVAL_H. The reserve and the daily
@@ -243,6 +272,8 @@ def plan_pulls(state: dict, now, next_kickoff: dict, near_h: float | None = None
         interval = GAMEDAY_INTERVAL_H if gd else IDLE_INTERVAL_H
         if near_h is not None and near_interval_h is not None and (_ts(k) - now).total_seconds() <= near_h * 3600:
             interval = min(interval, near_interval_h)
+        if lg in confirm:
+            interval = min(interval, CONFIRM_MIN_GAP_H)
         last = state.get("last_pull", {}).get(lg)
         if last and (now - _ts(last)).total_seconds() < interval * 3600:
             continue
@@ -333,15 +364,18 @@ def next_kickoffs(key: str, now) -> dict:
     return out
 
 
-def run(now=None, near_h: float | None = None, near_interval_h: float | None = None) -> list[str]:
+def run(now=None, near_h: float | None = None, near_interval_h: float | None = None,
+        confirm=None) -> list[str]:
     key = os.environ.get("ODDS_API_KEY", "").strip()
     if not key:
         print("odds: ODDS_API_KEY not set, skipping (no sharp-line data this run)")
         return []
     now = _ts(now or datetime.now(timezone.utc))
     state = load_state()
-    plan = plan_pulls(state, now, next_kickoffs(key, now), near_h, near_interval_h)
-    print(f"odds: credits left ~{remaining(state, now)}, spent today {spent_today(state, now)} (CBB {spent_today(state, now, ('CBB',))}), plan {plan or 'none'}")
+    confirm = confirm_leagues(now) if confirm is None else set(confirm)
+    plan = plan_pulls(state, now, next_kickoffs(key, now), near_h, near_interval_h, confirm)
+    print(f"odds: credits left ~{remaining(state, now)}, spent today {spent_today(state, now)} (CBB {spent_today(state, now, ('CBB',))}), "
+          f"confirm {sorted(confirm) or 'none'}, plan {plan or 'none'}")
     for lg in plan:
         try:
             payload, headers = _get(f"{API}/sports/{SPORTS[lg]}/odds", {
