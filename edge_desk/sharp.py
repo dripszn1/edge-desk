@@ -421,6 +421,15 @@ def rung_prob(dists: dict, fair_ev: pd.DataFrame, row: dict, sides: dict) -> tup
     return dists["total"].p_greater(line, strike), line, tt.iloc[0]["source"]
 
 
+def fair_entry(row: dict, fair: float, price, fe: pd.DataFrame, line, stale: bool) -> dict:
+    """#35: this scan's fair value for one side of one contract, so an alerted play can be called
+    'gone' when a fresh sharp pull moves the line against it (even when it is no longer a flag)."""
+    return {"fair": round(float(fair), 4), "price": None if price is None else float(price),
+            "odds_fetched_ts": str(fe["fetched_ts"].max()), "snapshot_ts": str(row.get("snapshot_ts")),
+            "sharp_line": None if line is None else float(line), "stale": bool(stale),
+            "kickoff_utc": row.get("kickoff_utc")}
+
+
 def sharp_flags(df: pd.DataFrame, lines: pd.DataFrame, games: pd.DataFrame, snapshot_ts: str | None,
                 lost_today: float = 0.0, now=None, league: str = "NFL") -> tuple[list[dict], dict]:
     from .scan import is_stale
@@ -445,7 +454,8 @@ def sharp_flags(df: pd.DataFrame, lines: pd.DataFrame, games: pd.DataFrame, snap
     q = df[(df["league"] == league) & df["series"].isin(SERIES[league])
            & (df["status"] == "active") & (df.get("phase", "unknown") == "pregame")
            & (df["strike_type"] == "greater")].dropna(subset=["floor_strike", "yes_bid", "yes_ask"])
-    best, seen = {}, {}
+    best, seen, fairs = {}, {}, {}
+    status["_fairs"] = fairs                            # #35: popped by scan.run_sharp, never in latest.json
     ev_vol = (df[df["league"] == league].groupby("event_ticker")["volume_24h"].sum()
               if "volume_24h" in df else pd.Series(dtype=float))
     for row in q.to_dict("records"):
@@ -470,8 +480,10 @@ def sharp_flags(df: pd.DataFrame, lines: pd.DataFrame, games: pd.DataFrame, snap
             status["odds_too_old"] = status.get("odds_too_old", 0) + 1
             why.append("sharp line stale")
         mult = float(row.get("fee_multiplier") or 1.0)
+        stale_line = "sharp line stale" in why
         for side, price, size, p in (("YES", row["yes_ask"], row.get("yes_ask_size") or 0, p_yes),
                                      ("NO", round(1 - row["yes_bid"], 4), row.get("yes_bid_size") or 0, 1 - p_yes)):
+            fairs[f"{row['ticker']}|{side}"] = fair_entry(row, p, price, fe, line, stale_line)   # #35
             if league == "CBB" and (size or 0) < config.CBB_MIN_SIZE:
                 continue
             s = price_side(p, price, size, mult, config.DAILY_LOSS_CAP - lost_today)

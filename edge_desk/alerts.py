@@ -6,7 +6,9 @@ Missing secrets -> nothing is sent, the run stays green. The topic is a secret: 
 printed or written to data/.
 
 Per contract (signal + leg[s]) at most ONE "new" push, plus at most ONE "gone, don't chase" push
-when its live price moves past the max price. New pushes respect the daily loss cap: the stakes
+when its live price moves past the max price, or (#35) when a FRESH sharp pull moves the fair value so
+the current price no longer clears fee + MIN_MODEL_EDGE ("line moved"). A stale sharp line, or the
+same pull the alert was raised on, never fires a line-moved push. New pushes respect the daily loss cap: the stakes
 already pushed today (CT) plus this one must fit in DAILY_LOSS_CAP - lost_today.
 
 Title: "LIVE" only when that signal's gate is open AND config.PAPER_MODE is off; else "PAPER".
@@ -272,9 +274,69 @@ def pushed_stake_today(state: dict, now) -> float:
 
 
 # ---------- decide ----------
+def fair_key(ticker, side) -> str:
+    return f"{ticker}|{side}"
+
+
+def line_moved(alert: dict, fe: dict | None, price: float | None, quote_ts=None) -> float | None:
+    """#35: the new fair value if a FRESH sharp pull moved it so `price` no longer clears
+    fee + MIN_MODEL_EDGE; else None. `fe` = this scan's fair entry for the alerted side."""
+    if not fe or fe.get("stale") or fe.get("fair") is None or not fe.get("odds_fetched_ts"):
+        return None                                     # never on a stale (>90/60 min) line
+    if alert.get("legs") or alert.get("kind") != "SHARP":
+        return None
+    try:
+        new_pull = _utc(fe["odds_fetched_ts"])
+        ref = alert.get("odds_fetched_ts") or alert.get("quote_utc") or alert.get("sent_utc")
+        if ref and new_pull <= _utc(ref):
+            return None                                 # same (or older) pull the alert was raised on
+        if fe.get("snapshot_ts") and alert.get("quote_utc") and _utc(fe["snapshot_ts"]) < _utc(alert["quote_utc"]):
+            return None
+    except Exception:  # noqa: BLE001 - unreadable time: can't say it moved
+        return None
+    p = price if price is not None else fe.get("price")
+    p = p if p is not None else alert.get("price")
+    if p is None:
+        return None
+    fair = float(fe["fair"])
+    n = alert.get("contracts")
+    if not n:
+        try:
+            n = max(int(round(float(alert.get("stake") or 0) / float(alert.get("price") or p))), 1)
+        except (TypeError, ValueError, ZeroDivisionError):
+            n = 1
+    mp = max_price(fair, int(n), float(alert.get("fee_multiplier") or 1.0))
+    return fair if (mp is None or float(p) > mp + 1e-9) else None
+
+
+def build_line_gone(alert: dict, fair: float, price: float | None, now, fe: dict | None = None,
+                    row: dict | None = None) -> dict:
+    tick = alert.get("ticker") or ""
+    row, fe = row or {}, fe or {}
+    game = alert.get("game") or row.get("event_title")
+    desc = alert.get("desc") or row.get("yes_sub_title")
+    side = _side_word(alert.get("side"))
+    was = f" (was {float(alert['fair']) * 100:.0f}¢)" if alert.get("fair") is not None else ""
+    line = ""
+    if fe.get("sharp_line") is not None and alert.get("sharp_line") is not None:
+        line = f" Sharp line {float(alert['sharp_line']):g} → {float(fe['sharp_line']):g}."
+    at = f" {side} at {price * 100:.0f}¢ no longer clears fees + edge." if price is not None else ""
+    q = row.get("snapshot_ts") or fe.get("snapshot_ts")
+    return {"type": "gone", "key": alert["key"], "kind": alert.get("kind"),
+            "title": f"GONE {alert.get('kind')}: line moved, don't chase",
+            "body": f"{order_lines(game, desc, tick)}\nLine moved: fair now {fair * 100:.0f}¢{was}.{line}{at} "
+                    f"Skip it.\nsent {_sent_ct(now)}",
+            "priority": 3, "click": kalshi_url(tick, alert.get("event_ticker")), "ticker": tick,
+            "price": price if price is not None else "", "max_price": alert.get("max_price"), "edge": "",
+            "stake": "", "quote_utc": _iso(q) if q else None, "reason": "line_moved"}
+
+
 def decide(groups: list[tuple[list[dict], bool]], quotes: dict, state: dict, now,
-           lost_today: float = 0.0, template: str | None = None) -> list[dict]:
-    """Alerts to send now. `groups` = [(flags, gate_open), ...]. Mutates `state` as if sent."""
+           lost_today: float = 0.0, template: str | None = None, fairs: dict | None = None) -> list[dict]:
+    """Alerts to send now. `groups` = [(flags, gate_open), ...]. Mutates `state` as if sent.
+    `fairs` = {"TICKER|SIDE": {fair, odds_fetched_ts, snapshot_ts, stale, price, sharp_line}} from
+    this scan's SHARP pricing (#35, line-moved gone pushes)."""
+    fairs = fairs or {}
     out = []
     alerts = state.setdefault("alerts", {})
     room = config.DAILY_LOSS_CAP - lost_today - pushed_stake_today(state, now)
@@ -299,7 +361,10 @@ def decide(groups: list[tuple[list[dict], bool]], quotes: dict, state: dict, now
         alerts[k] = {**{x: a[x] for x in ("ticker", "kind", "side", "legs", "max_price", "click", "stake",
                                            "kickoff_utc")}, "key": k, "sent_utc": _iso(now), "gone": False,
                      "desc": f.get("leg1_desc") or "", "game": f.get("event") or "",
-                     "event_ticker": f.get("event_ticker"), "quote_utc": f.get("snapshot_ts")}
+                     "event_ticker": f.get("event_ticker"), "quote_utc": f.get("snapshot_ts"),
+                     "price": a["price"], "fair": f.get("fair"), "contracts": f.get("contracts"),
+                     "fee_multiplier": f.get("fee_multiplier"), "odds_fetched_ts": f.get("odds_fetched_ts"),
+                     "sharp_line": f.get("sharp_line")}
         out.append(a)
     already_gone = _gone_keys_logged()
     for k, a in alerts.items():
@@ -317,6 +382,12 @@ def decide(groups: list[tuple[list[dict], bool]], quotes: dict, state: dict, now
         if p is not None and p > a["max_price"] + 1e-9:
             a["gone"] = True
             out.append(build_gone(a, p, now, row))
+            continue
+        fe = fairs.get(fair_key(a.get("ticker"), a.get("side")))
+        new_fair = line_moved(a, fe, p, qts)
+        if new_fair is not None:
+            a["gone"] = True
+            out.append(build_line_gone(a, new_fair, p if p is not None else fe.get("price"), now, fe, row))
     return out
 
 
@@ -384,12 +455,13 @@ def median_latency(path: Path | None = None) -> float | None:
 
 
 def process(groups, quotes: dict, now=None, lost_today: float = 0.0, post=_post,
-            state_path: Path | None = None, log_path: Path | None = None, clock=None) -> list[dict]:
+            state_path: Path | None = None, log_path: Path | None = None, clock=None,
+            fairs: dict | None = None) -> list[dict]:
     """Decide, send, log, save. `clock()` gives the send time (defaults to wall clock)."""
     clock = clock or (lambda: datetime.now(UTC))
     detected = _utc(now or clock())
     state = load_state(state_path)
-    todo = decide(groups, quotes, state, detected, lost_today)
+    todo = decide(groups, quotes, state, detected, lost_today, fairs=fairs)
     for a in todo:
         ch = send(a, post)
         log(a, detected, clock(), ch, log_path)
@@ -444,7 +516,8 @@ def main(argv=None) -> int:
         print("alerts: latest scan is stale, nothing sent")
         return 0
     df, _ = latest_snapshot()
-    sent = process(groups_from_latest(latest), quotes_of(df), lost_today=lost_today())
+    sent = process(groups_from_latest(latest), quotes_of(df), lost_today=lost_today(),
+                   fairs=latest.get("sharp_fairs") or {})
     print(f"alerts: {len(sent)} sent ({sum(a['type'] == 'new' for a in sent)} new); "
           f"ntfy={'on' if os.environ.get('NTFY_TOPIC') else 'off'}")
     return 0

@@ -306,7 +306,8 @@ def default_alerts(df, ts: str) -> list:
     groups = [(last["flags"], False), (m.get("live", []), True), (m.get("shadow", []), False),
               (sh.get("live", []), True), (sh.get("shadow", []), False)]
     scan.run.last = None                               # never alert twice on the same scan
-    return alerts.process(groups, alerts.quotes_of(df), lost_today=scan.lost_today())
+    return alerts.process(groups, alerts.quotes_of(df), lost_today=scan.lost_today(),
+                          fairs=sh.get("fairs") or {})
 
 
 # ---------- post steps + git ----------

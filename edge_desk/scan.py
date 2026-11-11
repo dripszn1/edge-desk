@@ -244,11 +244,12 @@ def run_sharp(df: pd.DataFrame, ts: str | None, lost: float | None = None, leagu
     """SHARP flags (Kalshi vs sharp sportsbook line), per league. Live only if that league's gate
     is open; else shadow. Leagues share one daily loss cap."""
     lost = lost_today() if lost is None else lost
-    out = {"status": {}, "live": [], "shadow": []}
+    out = {"status": {}, "live": [], "shadow": [], "fairs": {}}
     lines = odds.load_lines()
     for lg in leagues:
         try:
             flags, status = sharp.sharp_flags(df, lines, sharp.history(lg), ts, lost_today=lost, league=lg)
+            out["fairs"].update(status.pop("_fairs", None) or {})
             flags = with_url(flags)
         except Exception as e:   # never lose other flags over a SHARP bug
             flags, status = [], {"ok": False, "reason": f"error: {e}"}
@@ -264,6 +265,7 @@ def run_sharp(df: pd.DataFrame, ts: str | None, lost: float | None = None, leagu
     for lg in leagues:                                 # moneylines (#23): their own gate per league
         try:
             flags, status = moneyline.ml_flags(df, lines, ts, lost_today=lost, league=lg)
+            out["fairs"].update(status.pop("_fairs", None) or {})
             flags = with_url(flags)
         except Exception as e:
             flags, status = [], {"ok": False, "reason": f"error: {e}"}
@@ -277,6 +279,15 @@ def run_sharp(df: pd.DataFrame, ts: str | None, lost: float | None = None, leagu
         if is_open:
             lost += sum(f["stake"] for f in flags)
     return out
+
+
+def alert_fairs(fairs: dict) -> dict:
+    """#35: only the fair entries for alerted, not-yet-gone contracts go into latest.json (thousands
+    of rungs are priced per scan; collect.yml's alert step needs just these)."""
+    from . import alerts
+    keys = {alerts.fair_key(a.get("ticker"), a.get("side"))
+            for a in alerts.load_state().get("alerts", {}).values() if not a.get("gone")}
+    return {k: v for k, v in fairs.items() if k in keys}
 
 
 def run(df: pd.DataFrame | None = None, ts: str | None = None, seen: set | None = None,
@@ -307,7 +318,8 @@ def run(df: pd.DataFrame | None = None, ts: str | None = None, seen: set | None 
          "kickoff_source": "kalshi occurrence_datetime - 3h",
          "phases": phase_summary(df), "unmatched_events": unmatched(df), "flags": flags,
          "model": m["status"], "model_flags": m["live"], "model_shadow": m["shadow"],
-         "sharp": sh["status"], "sharp_flags": sh["live"], "sharp_shadow": sh["shadow"]},
+         "sharp": sh["status"], "sharp_flags": sh["live"], "sharp_shadow": sh["shadow"],
+         "sharp_fairs": alert_fairs(sh.get("fairs") or {})},
         indent=2, default=str))
     print(f"snapshot {ts} | stale={stale} | markets={len(df)} | phases={phase_summary(df)} | flags={len(flags)}"
           f" | model: " + "; ".join(f"{lg} {st.get('reason')} / {st.get('gate')}" for lg, st in m["status"].items()
