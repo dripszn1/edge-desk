@@ -46,7 +46,7 @@ UTC = timezone.utc
 
 # weekday (Mon=0) -> (start, end) local CT times as (h, m)
 WINDOWS = {
-    0: ((18, 0), (23, 30)),
+    0: ((17, 30), (23, 30)),   # Mon: MNF 7:15 PM; CBB tips from ~5:30 PM (#22)
     1: ((17, 30), (23, 30)),
     2: ((17, 30), (23, 30)),
     3: ((17, 30), (23, 30)),

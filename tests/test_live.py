@@ -22,7 +22,8 @@ def ct(y, m, d, h, mi):
     (ct(2026, 11, 14, 23, 30), False),   # end is exclusive
     (ct(2026, 11, 15, 22, 31), False),   # Sun ends 10:30 PM
     (ct(2026, 11, 15, 11, 0), True),
-    (ct(2026, 11, 16, 17, 59), False),   # Mon starts 6 PM
+    (ct(2026, 11, 16, 17, 29), False),   # Mon starts 5:30 PM (CBB tips)
+    (ct(2026, 11, 16, 17, 30), True),
     (ct(2026, 11, 16, 18, 0), True),
     (ct(2026, 11, 10, 17, 30), True),    # Tue MACtion
     (ct(2026, 11, 11, 12, 0), False),    # Wed midday
