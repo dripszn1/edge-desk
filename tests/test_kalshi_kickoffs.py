@@ -38,5 +38,5 @@ def test_no_snapshot_means_unknown():
     assert (tag_kalshi(_df(["2026-11-14T23:00:00Z"]), None).phase == "unknown").all()
 
 
-def test_cbb_parked():
-    assert "CBB" not in config.SERIES and set(config.SERIES) == {"NFL", "CFB"}
+def test_scope_nfl_cfb_cbb():
+    assert set(config.SERIES) == {"NFL", "CFB", "CBB"}

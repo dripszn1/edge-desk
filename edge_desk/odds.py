@@ -40,7 +40,7 @@ LINES = ODDS_DIR / "lines.csv"
 STATE = ODDS_DIR / "state.json"
 
 API = "https://api.the-odds-api.com/v4"
-SPORTS = {"NFL": "americanfootball_nfl", "CFB": "americanfootball_ncaaf"}
+SPORTS = {"NFL": "americanfootball_nfl", "CFB": "americanfootball_ncaaf", "CBB": "basketball_ncaab"}
 MARKETS = ("h2h", "spreads", "totals")
 SHARP_BOOKS = ("pinnacle", "lowvig", "betonlineag")          # in preference order
 OTHER_BOOKS = ("draftkings", "fanduel")                      # stored, never used for fair value
