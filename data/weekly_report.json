@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-11-11T03:40:26Z",
-  "generated_ct": "Tue Nov 10, 9:40 PM CT",
+  "generated_utc": "2026-11-11T03:55:28Z",
+  "generated_ct": "Tue Nov 10, 9:55 PM CT",
   "paper_mode": true,
   "rules": {
     "min_bets": 30,
@@ -19,9 +19,31 @@
     "why": "no settled bets yet"
   },
   "sharp_shadow": {
-    "settled": 0,
+    "settled": 1,
+    "staked": 1.73,
+    "fees": 0.11,
+    "pnl": -1.73,
+    "roi": -1.0,
+    "t_stat": null,
+    "coin_flip": {
+      "sims": 10000,
+      "bets": 1,
+      "real_pnl": -1.73,
+      "sim_median_pnl": -1.73,
+      "beat_pct": 0.0
+    },
+    "by_week": [
+      {
+        "week_of": "2026-11-09",
+        "bets": 1,
+        "pnl": -1.73,
+        "roi": -1.0,
+        "claimed_edge_c": 3.74,
+        "realised_edge_c": -9.61
+      }
+    ],
     "verdict": "not enough data",
-    "why": "no settled bets yet",
+    "why": "1 settled bets (< 30)",
     "by_market": {
       "MONEYLINE": {
         "settled": 0,
@@ -31,9 +53,9 @@
         "verdict": "not enough data"
       },
       "SPREAD/TOTAL": {
-        "settled": 0,
-        "pnl": null,
-        "roi": null,
+        "settled": 1,
+        "pnl": -1.73,
+        "roi": -1.0,
         "t_stat": null,
         "verdict": "not enough data"
       }
