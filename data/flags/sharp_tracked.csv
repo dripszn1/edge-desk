@@ -25085,3 +25085,41 @@ snapshot_ts,league,event,ticker,side,price,fair,edge,sharp_line,odds_fetched_ts,
 2026-11-11T18:56:26Z,CBB,Marquette vs Michigan: Spread,KXNCAAMBSPREAD-26NOV11MARQMICH-MARQ2,NO,0.63,0.686,0.0389,-4.0,2026-11-11T14:51:27Z,rung far from sharp line (unvalidated range); sharp line stale
 2026-11-11T18:56:26Z,CBB,Santa Clara vs North Texas: Spread,KXNCAAMBSPREAD-26NOV11SCUUNT-UNT2,NO,0.57,0.6377,0.05,-2.5,2026-11-11T14:51:27Z,rung far from sharp line (unvalidated range); sharp line stale
 2026-11-11T18:56:26Z,CBB,UMass Lowell vs UMass: Point Total,KXNCAAMBTOTAL-26NOV11MASSLMASS-150,NO,0.48,0.5721,0.0742,146.5,2026-11-11T14:51:27Z,sharp line stale
+2026-11-11T19:26:35Z,NFL,Buffalo vs New York J: Spread,KXNFLSPREAD-26NOV15BUFNYJ-BUF3,NO,0.23,0.2974,0.0549,8.5,2026-11-11T17:56:11Z,sharp line stale
+2026-11-11T19:26:35Z,NFL,Buffalo vs New York J: Spread,KXNFLSPREAD-26NOV15BUFNYJ-BUF2,NO,0.23,0.2798,0.0369,8.5,2026-11-11T17:56:11Z,sharp line stale
+2026-11-11T19:26:35Z,NFL,Buffalo vs New York J: Spread,KXNFLSPREAD-26NOV15BUFNYJ-NYJ2,YES,0.2,0.242,0.0303,-8.5,2026-11-11T17:56:11Z,sharp line stale
+2026-11-11T19:26:35Z,NFL,Jacksonville vs Tennessee: Spread,KXNFLSPREAD-26NOV15JACTEN-JAC18,NO,0.67,0.7256,0.0394,10.5,2026-11-11T17:56:11Z,sharp line stale
+2026-11-11T19:26:35Z,NFL,Seattle vs Las Vegas: Spread,KXNFLSPREAD-26NOV15SEALV-SEA21,YES,0.12,0.1711,0.0434,6.5,2026-11-11T17:56:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T19:26:35Z,NFL,Seattle vs Las Vegas: Spread,KXNFLSPREAD-26NOV15SEALV-SEA15,YES,0.24,0.2921,0.0384,6.5,2026-11-11T17:56:11Z,sharp line stale
+2026-11-11T19:26:35Z,NFL,Miami vs Indianapolis: Total Points,KXNFLTOTAL-26NOV15MIAIND-22,NO,0.07,0.1064,0.0317,38.0,2026-11-11T17:56:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T19:26:35Z,NFL,Los Angeles C vs Baltimore: Total Points,KXNFLTOTAL-26NOV16LACBAL-24,NO,0.09,0.1287,0.0327,38.5,2026-11-11T17:56:11Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T19:26:35Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE3,NO,0.24,0.2871,0.0343,10.5,2026-11-11T19:26:31Z,rung far from sharp line (unvalidated range)
+2026-11-11T19:26:35Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE2,NO,0.22,0.2675,0.0347,10.5,2026-11-11T19:26:31Z,rung far from sharp line (unvalidated range)
+2026-11-11T19:26:35Z,CFB,Stanford vs Virginia Tech: Spread,KXNCAAFSPREAD-26NOV14STANVT-VT8,NO,0.32,0.3694,0.0327,14.5,2026-11-11T19:26:31Z,rung far from sharp line (unvalidated range)
+2026-11-11T19:26:35Z,CFB,Sacramento St. vs Central Michigan: Total Points,KXNCAAFTOTAL-26NOV11SACCMU-24,NO,0.07,0.1146,0.0398,43.0,2026-11-11T19:26:31Z,rung far from sharp line (unvalidated range)
+2026-11-11T19:26:35Z,CFB,Sacramento St. vs Central Michigan: Total Points,KXNCAAFTOTAL-26NOV11SACCMU-27,NO,0.1,0.1545,0.0481,43.0,2026-11-11T19:26:31Z,rung far from sharp line (unvalidated range)
+2026-11-11T19:26:35Z,CFB,Sacramento St. vs Central Michigan: Total Points,KXNCAAFTOTAL-26NOV11SACCMU-30,NO,0.15,0.2026,0.0433,43.0,2026-11-11T19:26:31Z,rung far from sharp line (unvalidated range)
+2026-11-11T19:26:35Z,CFB,East Carolina vs Charlotte: Total Points,KXNCAAFTOTAL-26NOV14ECUCHAR-26,NO,0.07,0.1146,0.0398,45.0,2026-11-11T19:26:31Z,rung far from sharp line (unvalidated range)
+2026-11-11T19:26:35Z,CFB,Baylor vs BYU: Total Points,KXNCAAFTOTAL-26NOV14BAYBYU-30,NO,0.08,0.1207,0.0351,48.5,2026-11-11T19:26:31Z,rung far from sharp line (unvalidated range)
+2026-11-11T19:26:35Z,CFB,Michigan vs Oregon: Total Points,KXNCAAFTOTAL-26NOV14MICHORE-22,NO,0.09,0.1545,0.0585,38.0,2026-11-11T19:26:31Z,rung far from sharp line (unvalidated range)
+2026-11-11T19:26:35Z,CFB,Nevada vs Northern Illinois: Total Points,KXNCAAFTOTAL-26NOV14NEVNIU-27,NO,0.06,0.0977,0.0334,47.5,2026-11-11T19:26:31Z,rung far from sharp line (unvalidated range)
+2026-11-11T19:26:35Z,CFB,Minnesota vs Penn St.: Total Points,KXNCAAFTOTAL-26NOV14MINNPSU-24,NO,0.09,0.127,0.031,42.0,2026-11-11T19:26:31Z,rung far from sharp line (unvalidated range)
+2026-11-11T19:26:35Z,CFB,Minnesota vs Penn St.: Total Points,KXNCAAFTOTAL-26NOV14MINNPSU-27,NO,0.12,0.1696,0.042,42.0,2026-11-11T19:26:31Z,rung far from sharp line (unvalidated range)
+2026-11-11T19:26:35Z,CFB,Utah St. vs San Diego St.: Total Points,KXNCAAFTOTAL-26NOV14USUSDSU-28,NO,0.15,0.194,0.0348,41.5,2026-11-11T19:26:31Z,rung far from sharp line (unvalidated range)
+2026-11-11T19:26:35Z,CBB,Jacksonville St. vs Houston: Spread,KXNCAAMBSPREAD-26NOV11JVSTHOU-HOU29,YES,0.7,0.7456,0.0306,36.0,2026-11-11T14:51:27Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T19:26:35Z,CBB,Santa Clara vs North Texas: Spread,KXNCAAMBSPREAD-26NOV11SCUUNT-SCU5,YES,0.38,0.4301,0.0334,2.5,2026-11-11T14:51:27Z,sharp line stale
+2026-11-11T19:26:35Z,CBB,South Florida vs Saint Joseph's: Point Total,KXNCAAMBTOTAL-26NOV11USFJOES-145,NO,0.34,0.3926,0.0369,149.0,2026-11-11T14:51:27Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T19:26:35Z,CBB,South Florida vs Saint Joseph's: Point Total,KXNCAAMBTOTAL-26NOV11USFJOES-148,NO,0.41,0.4638,0.0355,149.0,2026-11-11T14:51:27Z,sharp line stale
+2026-11-11T19:26:35Z,CBB,South Florida vs Saint Joseph's: Point Total,KXNCAAMBTOTAL-26NOV11USFJOES-150,NO,0.44,0.5121,0.0541,149.0,2026-11-11T14:51:27Z,sharp line stale
+2026-11-11T19:26:35Z,CBB,South Florida vs Saint Joseph's: Point Total,KXNCAAMBTOTAL-26NOV11USFJOES-152,NO,0.48,0.5602,0.0627,149.0,2026-11-11T14:51:27Z,sharp line stale
+2026-11-11T19:26:35Z,CBB,South Florida vs Saint Joseph's: Point Total,KXNCAAMBTOTAL-26NOV11USFJOES-155,NO,0.57,0.6304,0.0429,149.0,2026-11-11T14:51:27Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T19:26:35Z,CBB,South Florida vs Saint Joseph's: Point Total,KXNCAAMBTOTAL-26NOV11USFJOES-158,NO,0.64,0.6966,0.0403,149.0,2026-11-11T14:51:27Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T19:26:35Z,CBB,South Florida vs Saint Joseph's: Point Total,KXNCAAMBTOTAL-26NOV11USFJOES-162,NO,0.73,0.7754,0.0304,149.0,2026-11-11T14:51:27Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T19:26:35Z,CBB,UMass Lowell vs UMass: Point Total,KXNCAAMBTOTAL-26NOV11MASSLMASS-138,NO,0.22,0.2929,0.0608,146.5,2026-11-11T14:51:27Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T19:26:35Z,CBB,UMass Lowell vs UMass: Point Total,KXNCAAMBTOTAL-26NOV11MASSLMASS-152,NO,0.54,0.6189,0.0608,146.5,2026-11-11T14:51:27Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T19:26:35Z,CBB,Old Dominion vs Norfolk St.: Point Total,KXNCAAMBTOTAL-26NOV11ODUNORF-134,YES,0.59,0.6418,0.0335,139.5,2026-11-11T14:51:27Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T19:26:35Z,CBB,Old Dominion vs Norfolk St.: Point Total,KXNCAAMBTOTAL-26NOV11ODUNORF-138,YES,0.48,0.5482,0.0504,139.5,2026-11-11T14:51:27Z,sharp line stale
+2026-11-11T19:26:35Z,CBB,Old Dominion vs Norfolk St.: Point Total,KXNCAAMBTOTAL-26NOV11ODUNORF-142,YES,0.39,0.4518,0.0443,139.5,2026-11-11T14:51:27Z,sharp line stale
+2026-11-11T19:26:35Z,CBB,Old Dominion vs Norfolk St.: Point Total,KXNCAAMBTOTAL-26NOV11ODUNORF-148,YES,0.26,0.3141,0.0403,139.5,2026-11-11T14:51:27Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-11T19:26:35Z,CBB,Santa Clara vs North Texas: Point Total,KXNCAAMBTOTAL-26NOV11SCUUNT-149,NO,0.39,0.4398,0.0332,151.0,2026-11-11T14:51:27Z,sharp line stale
+2026-11-11T19:26:35Z,CBB,Santa Clara vs North Texas: Point Total,KXNCAAMBTOTAL-26NOV11SCUUNT-153,NO,0.48,0.5362,0.0376,151.0,2026-11-11T14:51:27Z,sharp line stale
