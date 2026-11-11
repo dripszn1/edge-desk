@@ -53,14 +53,14 @@ def test_refresh_only_current_season(monkeypatch, tmp_path):
 
 
 # ---- CFB name matching + SHARP CFB ----
-def _odds(home="Auburn Tigers", away="Mississippi State Bulldogs", home_pt=-7.0, ts="2026-11-14T14:30:00Z", extra=()):
+def _odds(home="Auburn Tigers", away="Mississippi State Bulldogs", home_pt=-7.0, ts="2026-11-14T14:30:00Z", extra=(), league="CFB"):
     evs = [(f"e_{home}", home, away, home_pt)] + list(extra)
     pay = [{"id": eid, "commence_time": KO, "home_team": h, "away_team": a, "bookmakers": [{"key": "pinnacle", "markets": [
         {"key": "spreads", "outcomes": [{"name": h, "price": -110, "point": pt}, {"name": a, "price": -110, "point": -pt}]},
         {"key": "totals", "outcomes": [{"name": "Over", "price": -110, "point": 50.5},
                                         {"name": "Under", "price": -110, "point": 50.5}]}]}]}
            for eid, h, a, pt in evs]
-    return odds.parse(pay, "CFB", ts)
+    return odds.parse(pay, league, ts)
 
 
 def _row(title="Auburn vs Mississippi St.", sub="AUB vs MSST (Nov 14)", ticker="KXNCAAFSPREAD-26NOV14AUBMSST-AUB7",
@@ -159,3 +159,28 @@ def test_stale_odds_guard():
     assert not sharp.odds_too_old(snap, "2026-11-14T14:00:00Z", "2026-11-15T00:00:00Z")  # 60 min, far from KO
     assert sharp.odds_too_old(snap, "2026-11-14T13:00:00Z", "2026-11-15T00:00:00Z")      # 120 min
     assert sharp.odds_too_old(snap, "2026-11-14T13:55:00Z", "2026-11-14T17:00:00Z")      # 65 min, KO in 2h
+
+
+def _cbb_row(vol=6000.0, size=500, strike=4.5, bid=0.50, ask=0.52):
+    r = _row(title="Duke vs Kansas", sub="DUKE vs KU (Nov 14)", ticker="KXNCAAMBSPREAD-26NOV14DUKEKU-DUKE5",
+             strike=strike, bid=bid, ask=ask)
+    r.update(league="CBB", series="KXNCAAMBSPREAD", volume_24h=vol, yes_ask_size=size, yes_bid_size=size)
+    return r
+
+
+def test_cbb_flags_with_volume_and_normal_dist():
+    flags, st = sharp.sharp_flags(pd.DataFrame([_cbb_row()]), _odds(home="Duke Blue Devils", away="Kansas Jayhawks", league="CBB"),
+                                  None, SNAP, now=pd.Timestamp(SNAP), league="CBB")
+    assert st["ok"] and len(flags) == 1 and flags[0]["league"] == "CBB"
+
+
+def test_cbb_low_volume_untouched():
+    flags, st = sharp.sharp_flags(pd.DataFrame([_cbb_row(vol=100.0)]), _odds(home="Duke Blue Devils", away="Kansas Jayhawks", league="CBB"),
+                                  None, SNAP, now=pd.Timestamp(SNAP), league="CBB")
+    assert flags == [] and st.get("low_volume") == 1
+
+
+def test_cbb_thin_size_untouched():
+    flags, st = sharp.sharp_flags(pd.DataFrame([_cbb_row(size=10)]), _odds(home="Duke Blue Devils", away="Kansas Jayhawks", league="CBB"),
+                                  None, SNAP, now=pd.Timestamp(SNAP), league="CBB")
+    assert flags == []

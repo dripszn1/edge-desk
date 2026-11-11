@@ -158,8 +158,8 @@ def test_run_writes_cache_and_state(monkeypatch, tmp_path):
         return [_ev()], {"x-requests-remaining": "480", "x-requests-last": "3"}
     monkeypatch.setattr(odds, "_get", fake)
     plan = odds.run(NOW)
-    assert set(plan) == {"NFL", "CFB"}
+    assert set(plan) == {"NFL", "CFB", "CBB"}
     st = json.loads((tmp_path / "state.json").read_text())
-    assert st["remaining"] == 480 and st["spent"]["2026-11-14"] == 6
-    assert len(list((tmp_path / "raw" / "2026-11-14").glob("*.json"))) == 2
+    assert st["remaining"] == 480 and st["spent"]["2026-11-14"] == 9
+    assert len(list((tmp_path / "raw" / "2026-11-14").glob("*.json"))) == 3
     assert (tmp_path / "fair_latest.csv").exists()

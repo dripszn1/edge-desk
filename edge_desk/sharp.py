@@ -52,7 +52,11 @@ SD = {"spread": 13.3, "total": 13.6}      # only for the prior and the normal be
 KICKOFF_TOL = pd.Timedelta(hours=6)       # odds commence vs Kalshi kickoff
 MAX_RUNG_OFFSET = 10.5   # only price rungs inside the backtested range (OFFSETS = line +-10); the
 # CFB: NFL-validated cap doesn't transfer; stay near the main line until a CFB backtest says otherwise
-MAX_RUNG_OFFSET_BY_LEAGUE = {"NFL": 10.5, "CFB": 6.0}
+MAX_RUNG_OFFSET_BY_LEAGUE = {"NFL": 10.5, "CFB": 6.0, "CBB": 3.0}
+# CBB has no historical closing-line feed yet, so its rungs use a normal around the sharp line with
+# typical NCAAB residual SDs (assumption, not fitted). Only rungs within +-3 pts of the line alert,
+# where the SD matters least; everything else is tracked (#24). Replace with fitted SDs when #22 lands.
+CBB_SD = {"spread": 11.0, "total": 11.5}
 ODDS_MAX_AGE_MIN = 90          # no SHARP flag from a sharp line older than this...
 ODDS_MAX_AGE_NEAR_KO_MIN = 60  # ...or older than this within NEAR_KO_H of kickoff
 NEAR_KO_H = 3
@@ -225,7 +229,8 @@ def _odds_event(fair: pd.DataFrame, home_full: str, away_full: str, kickoff) -> 
     return m if m["event_id"].nunique() == 1 else fair.iloc[0:0]
 
 
-SERIES = {"NFL": ("KXNFLSPREAD", "KXNFLTOTAL"), "CFB": ("KXNCAAFSPREAD", "KXNCAAFTOTAL")}
+SERIES = {"NFL": ("KXNFLSPREAD", "KXNFLTOTAL"), "CFB": ("KXNCAAFSPREAD", "KXNCAAFTOTAL"),
+          "CBB": ("KXNCAAMBSPREAD", "KXNCAAMBTOTAL")}
 
 # Kalshi CFB short names -> how sportsbooks spell the school (cleaned, before the mascot)
 CFB_BOOK_ALIASES = {
@@ -340,16 +345,28 @@ def sharp_flags(df: pd.DataFrame, lines: pd.DataFrame, games: pd.DataFrame, snap
     if fair.empty:
         status["reason"] = "no usable sharp odds (missing key, none fetched, or older than %dh)" % odds.ODDS_STALE_HOURS
         return [], status
-    if games is None or games.empty or games["spread_line"].notna().sum() < 500:
+    if league == "CBB":
+        dists = {}
+        for k in ("spread", "total"):
+            d = LineDist([], [], k)
+            d.sd, d.normal = CBB_SD[k], True
+            dists[k] = d
+    elif games is None or games.empty or games["spread_line"].notna().sum() < 500:
         status["reason"] = "no historical closing lines for the rung distribution"
         return [], status
-    dists = build_dists(games, snapshot_ts)
+    else:
+        dists = build_dists(games, snapshot_ts)
     status.update(ok=True, reason="ok", odds_fetched=str(fair["fetched_ts"].max()))
     q = df[(df["league"] == league) & df["series"].isin(SERIES[league])
            & (df["status"] == "active") & (df.get("phase", "unknown") == "pregame")
            & (df["strike_type"] == "greater")].dropna(subset=["floor_strike", "yes_bid", "yes_ask"])
     best, seen = {}, {}
+    ev_vol = (df[df["league"] == league].groupby("event_ticker")["volume_24h"].sum()
+              if "volume_24h" in df else pd.Series(dtype=float))
     for row in q.to_dict("records"):
+        if league == "CBB" and float(ev_vol.get(row["event_ticker"], 0) or 0) < config.CBB_MIN_EVENT_VOL_24H:
+            status["low_volume"] = status.get("low_volume", 0) + 1
+            continue                                   # Emerson: no volume -> don't touch
         ev = row["event_ticker"]
         if ev not in seen:
             seen[ev] = match_event(league, row, fair)
@@ -370,6 +387,8 @@ def sharp_flags(df: pd.DataFrame, lines: pd.DataFrame, games: pd.DataFrame, snap
         mult = float(row.get("fee_multiplier") or 1.0)
         for side, price, size, p in (("YES", row["yes_ask"], row.get("yes_ask_size") or 0, p_yes),
                                      ("NO", round(1 - row["yes_bid"], 4), row.get("yes_bid_size") or 0, 1 - p_yes)):
+            if league == "CBB" and (size or 0) < config.CBB_MIN_SIZE:
+                continue
             s = price_side(p, price, size, mult, config.DAILY_LOSS_CAP - lost_today)
             if not s:
                 continue

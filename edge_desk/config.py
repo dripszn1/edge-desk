@@ -6,7 +6,8 @@ KALSHI_BASE = "https://api.elections.kalshi.com/trade-api/v2"
 SERIES = {
     "NFL": ["KXNFLSPREAD", "KXNFLTOTAL", "KXNFLGAME"],
     "CFB": ["KXNCAAFSPREAD", "KXNCAAFTOTAL", "KXNCAAFGAME"],
-    # CBB parked until NFL/CFB prove an edge: "CBB": ["KXNCAAMBSPREAD", "KXNCAAMBTOTAL", "KXNCAAMBGAME"],
+    # CBB: SHARP-only shadow test (Emerson OK 2026-11-10); never pooled with football
+    "CBB": ["KXNCAAMBSPREAD", "KXNCAAMBTOTAL", "KXNCAAMBGAME"],
 }
 
 # Risk (SPEC.md "Hard rules")
@@ -40,3 +41,7 @@ LIVE_ODDS_NEAR_HOURS = 1.5        # "near kickoff" for the faster odds interval
 LIVE_MAX_RUN_MINUTES = 330        # exit before GitHub's 6 h job limit, then re-dispatch
 LIVE_EARLY_START_MINUTES = 15     # a run fired this close before a window waits for it
 LIVE_MINUTES_BUDGET_MONTH = 15000 # Actions minutes for live.yml per month (windows ~ 14,000 min)
+
+# CBB liquidity rule (Emerson: "games without volume: don't touch")
+CBB_MIN_EVENT_VOL_24H = 5000   # contracts traded across the event in 24h
+CBB_MIN_SIZE = 50              # contracts available at the flagged price
