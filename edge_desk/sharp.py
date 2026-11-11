@@ -56,7 +56,8 @@ MAX_RUNG_OFFSET_BY_LEAGUE = {"NFL": 10.5, "CFB": 6.0, "CBB": 3.0}
 # CBB has no historical closing-line feed yet, so its rungs use a normal around the sharp line with
 # typical NCAAB residual SDs (assumption, not fitted). Only rungs within +-3 pts of the line alert,
 # where the SD matters least; everything else is tracked (#24). Replace with fitted SDs when #22 lands.
-CBB_SD = {"spread": 11.0, "total": 11.5}   # fallback only, until data/cbb/lines.csv has history
+CBB_SD = {"spread": 11.4, "total": 16.5}   # fallback only, until data/cbb/lines.csv has history.
+# (#29) Was 11.0/11.5; CBBD 2021-26 finals (32k games, 0-0/forfeit rows dropped) fit 11.35 / 16.5.
 CBB_MIN_FIT_GAMES = 500     # settled CBB games with a closing line needed to fit the SDs
 SHADOW_ONLY = ("CBB",)      # Emerson: CBB is a shadow/PAPER test; never live, whatever its gate says
 ODDS_MAX_AGE_MIN = 90          # no SHARP flag from a sharp line older than this...
@@ -200,6 +201,8 @@ def cbb_dists(games: pd.DataFrame | None, before) -> dict[str, LineDist]:
     """CBB rung distributions: normal around the sharp line, SD fitted walk-forward from settled
     games tipped before `before` (build_dists' look-ahead guard); the assumed CBB_SD until there
     are CBB_MIN_FIT_GAMES of them."""
+    from .cbb_lines import final_games
+    games = final_games(games) if games is not None else None
     fitted = build_dists(games, before) if games is not None and not games.empty else {}
     out = {}
     for k in ("spread", "total"):
