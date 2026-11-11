@@ -1,5 +1,12 @@
 # Reports (newest first)
 
+## 2026-11-11 (builder, 19:45Z run)
+- Shipped to `dev`: **#35 "gone" when the line moves.** Until now a "gone, don't chase" push only fired when Kalshi's price went past the max price. Now it also fires when a *fresh* sharp pull moves the fair value so the current price no longer clears the fee + 3¢ edge, e.g. "Line moved: fair now 47¢ (was 52¢). Sharp line -3.5 → -2." Each scan now keeps a fair value for every priced rung, including ones that are no longer flags; the live loop uses it in memory, and collect gets it via `latest.json` (alerted contracts only). Still max 1 gone per contract.
+- Tests: 332/332 green (7 new). It never fires on a stale line, on the same pull the alert used, after kickoff, or for a small move that still clears. The fee is counted at the alert's size. I removed the stale and same-pull guards to check, and each turned a test red.
+- Honest results: on the 19:26Z snapshot no line-moved push would fire (the JMU NO alert is still fair 53¢ vs 47¢). Nothing new has settled. Odds plan still reads 500 credits (446 left), so most NFL/CBB rungs are still held back as stale (NFL line 1.5h old at 19:26Z).
+- Watchdog: collect was 20 min old (fine). I dispatched live.yml on main; it should exit cleanly because tonight's window opens at 5:30 PM CT. The keeper chain is alive (run #7).
+- Needs Emerson: merge the dev→main PR (#35 only alerts from `main`). If you've upgraded The Odds API, the headers still say 500, so check `ODDS_API_KEY`.
+
 ## 2026-11-11 (builder, 16:45Z run)
 - Shipped to `dev` (the backlog was empty, so I added this as #34): **alert and test hygiene.** "Gone, don't chase" pushes now record the Kalshi quote time and quote→push seconds in `alerts_log.csv` (all 3 gone pushes so far had none). A gone push is also never sent off a quote older than the one the flag was raised on, since collect and live share the same alert state. And the test suite now fails if any test changes a file under `data/`. collect.yml runs the tests and then commits `data/`, which is how the 4 future-dated fixture rows ended up in `sharp_tracked.csv`.
 - Tests: 325/325 green (3 new). I checked the data guard with a throwaway test that writes to `data/`: the run exits 1.

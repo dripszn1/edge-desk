@@ -49,7 +49,8 @@ def ml_flags(df: pd.DataFrame, lines: pd.DataFrame, snapshot_ts: str | None, los
            & (df.get("phase", "unknown") == "pregame")].dropna(subset=["yes_bid", "yes_ask"])
     ev_vol = (df[df["league"] == league].groupby("event_ticker")["volume_24h"].sum()
               if "volume_24h" in df else pd.Series(dtype=float))
-    best, seen = {}, {}
+    best, seen, fairs = {}, {}, {}
+    status["_fairs"] = fairs                            # #35: popped by scan.run_sharp
     for row in q.to_dict("records"):
         ev = row["event_ticker"]
         if league == "CBB" and float(ev_vol.get(ev, 0) or 0) < config.CBB_MIN_EVENT_VOL_24H:
@@ -70,8 +71,10 @@ def ml_flags(df: pd.DataFrame, lines: pd.DataFrame, snapshot_ts: str | None, los
             status["odds_too_old"] = status.get("odds_too_old", 0) + 1
             why.append("sharp line stale")
         mult = float(row.get("fee_multiplier") or 1.0)
+        stale_line = "sharp line stale" in why
         for side, price, size, p in (("YES", row["yes_ask"], row.get("yes_ask_size") or 0, p_yes),
                                      ("NO", round(1 - row["yes_bid"], 4), row.get("yes_bid_size") or 0, 1 - p_yes)):
+            fairs[f"{row['ticker']}|{side}"] = sharp.fair_entry(row, p, price, fe, None, stale_line)   # #35
             if league == "CBB" and (size or 0) < config.CBB_MIN_SIZE:
                 continue
             s = price_side(p, price, size, mult, config.DAILY_LOSS_CAP - lost_today)
