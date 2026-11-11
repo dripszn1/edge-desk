@@ -1,8 +1,4 @@
 league,event_id,commence_utc,home_team,away_team,market,outcome,point,fair,source,n_books,fetched_ts
-CBB,afbca1bca5b21e68b1f1a233e9f127b9,2026-11-12T02:00:00Z,Colorado St Rams,Portland St Vikings,h2h,Colorado St Rams,,0.905225,pinnacle,1,2026-11-11T12:34:05Z
-CBB,afbca1bca5b21e68b1f1a233e9f127b9,2026-11-12T02:00:00Z,Colorado St Rams,Portland St Vikings,h2h,Portland St Vikings,,0.094775,pinnacle,1,2026-11-11T12:34:05Z
-CBB,7519c97618a3f43c4af47a05aeb69e78,2026-11-12T03:00:00Z,Seattle Redhawks,UTSA Roadrunners,h2h,Seattle Redhawks,,0.916193,pinnacle,1,2026-11-11T12:34:05Z
-CBB,7519c97618a3f43c4af47a05aeb69e78,2026-11-12T03:00:00Z,Seattle Redhawks,UTSA Roadrunners,h2h,UTSA Roadrunners,,0.083807,pinnacle,1,2026-11-11T12:34:05Z
 CBB,759951fe63ce023850658a6be1c38e38,2026-11-11T16:30:00Z,East Texas A&M Lions,Fairleigh Dickinson Knights,spreads,East Texas A&M Lions,-11.5,0.504452,pinnacle,1,2026-11-11T14:51:27Z
 CBB,759951fe63ce023850658a6be1c38e38,2026-11-11T16:30:00Z,East Texas A&M Lions,Fairleigh Dickinson Knights,spreads,Fairleigh Dickinson Knights,11.5,0.495548,pinnacle,1,2026-11-11T14:51:27Z
 CBB,759951fe63ce023850658a6be1c38e38,2026-11-11T16:30:00Z,East Texas A&M Lions,Fairleigh Dickinson Knights,totals,Over,139.5,0.491336,pinnacle,1,2026-11-11T14:51:27Z
@@ -227,6 +223,8 @@ CBB,aa7576381a4cbdf1b32445e296e34a24,2026-11-12T02:00:00Z,Grand Canyon Antelopes
 CBB,aa7576381a4cbdf1b32445e296e34a24,2026-11-12T02:00:00Z,Grand Canyon Antelopes,Cal Poly Mustangs,spreads,Grand Canyon Antelopes,-18.5,0.495548,pinnacle,1,2026-11-11T14:51:27Z
 CBB,aa7576381a4cbdf1b32445e296e34a24,2026-11-12T02:00:00Z,Grand Canyon Antelopes,Cal Poly Mustangs,totals,Over,181.5,0.502165,pinnacle,1,2026-11-11T14:51:27Z
 CBB,aa7576381a4cbdf1b32445e296e34a24,2026-11-12T02:00:00Z,Grand Canyon Antelopes,Cal Poly Mustangs,totals,Under,181.5,0.497835,pinnacle,1,2026-11-11T14:51:27Z
+CBB,afbca1bca5b21e68b1f1a233e9f127b9,2026-11-12T02:00:00Z,Colorado St Rams,Portland St Vikings,h2h,Colorado St Rams,,0.923529,consensus:2,2,2026-11-11T14:51:27Z
+CBB,afbca1bca5b21e68b1f1a233e9f127b9,2026-11-12T02:00:00Z,Colorado St Rams,Portland St Vikings,h2h,Portland St Vikings,,0.076471,consensus:2,2,2026-11-11T14:51:27Z
 CBB,afbca1bca5b21e68b1f1a233e9f127b9,2026-11-12T02:00:00Z,Colorado St Rams,Portland St Vikings,spreads,Colorado St Rams,-17.0,0.484385,pinnacle,1,2026-11-11T14:51:27Z
 CBB,afbca1bca5b21e68b1f1a233e9f127b9,2026-11-12T02:00:00Z,Colorado St Rams,Portland St Vikings,spreads,Portland St Vikings,17.0,0.515615,pinnacle,1,2026-11-11T14:51:27Z
 CBB,afbca1bca5b21e68b1f1a233e9f127b9,2026-11-12T02:00:00Z,Colorado St Rams,Portland St Vikings,totals,Over,151.0,0.489166,pinnacle,1,2026-11-11T14:51:27Z
@@ -257,6 +255,8 @@ CBB,3387415c1bb29e69af3695a6527e5586,2026-11-12T03:00:00Z,Oregon Ducks,Miss Vall
 CBB,3387415c1bb29e69af3695a6527e5586,2026-11-12T03:00:00Z,Oregon Ducks,Miss Valley St Delta Devils,spreads,Oregon Ducks,-37.0,0.5,pinnacle,1,2026-11-11T14:51:27Z
 CBB,3387415c1bb29e69af3695a6527e5586,2026-11-12T03:00:00Z,Oregon Ducks,Miss Valley St Delta Devils,totals,Over,149.0,0.5,pinnacle,1,2026-11-11T14:51:27Z
 CBB,3387415c1bb29e69af3695a6527e5586,2026-11-12T03:00:00Z,Oregon Ducks,Miss Valley St Delta Devils,totals,Under,149.0,0.5,pinnacle,1,2026-11-11T14:51:27Z
+CBB,7519c97618a3f43c4af47a05aeb69e78,2026-11-12T03:00:00Z,Seattle Redhawks,UTSA Roadrunners,h2h,Seattle Redhawks,,0.91638,consensus:2,2,2026-11-11T14:51:27Z
+CBB,7519c97618a3f43c4af47a05aeb69e78,2026-11-12T03:00:00Z,Seattle Redhawks,UTSA Roadrunners,h2h,UTSA Roadrunners,,0.08362,consensus:2,2,2026-11-11T14:51:27Z
 CBB,7519c97618a3f43c4af47a05aeb69e78,2026-11-12T03:00:00Z,Seattle Redhawks,UTSA Roadrunners,spreads,Seattle Redhawks,-17.0,0.491091,pinnacle,1,2026-11-11T14:51:27Z
 CBB,7519c97618a3f43c4af47a05aeb69e78,2026-11-12T03:00:00Z,Seattle Redhawks,UTSA Roadrunners,spreads,UTSA Roadrunners,17.0,0.508909,pinnacle,1,2026-11-11T14:51:27Z
 CBB,7519c97618a3f43c4af47a05aeb69e78,2026-11-12T03:00:00Z,Seattle Redhawks,UTSA Roadrunners,totals,Over,148.5,0.497835,pinnacle,1,2026-11-11T14:51:27Z
