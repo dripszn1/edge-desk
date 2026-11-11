@@ -206,12 +206,27 @@ def current_price(alert: dict, quotes: dict) -> float | None:
 
 
 def build_gone(alert: dict, now_price: float, now) -> dict:
+    tick = alert.get("ticker") or ""
+    what = alert.get("desc") or tick                      # plain words when we stored them
+    side = alert.get("side") or ""
     return {"type": "gone", "key": alert["key"], "kind": alert.get("kind"),
             "title": f"GONE {alert.get('kind')}: don't chase",
-            "body": f"{alert.get('ticker')} now {now_price * 100:.0f}¢, past max "
+            "body": f"{side} {what}\nnow {now_price * 100:.0f}¢, past your max "
                     f"{(alert.get('max_price') or 0) * 100:.0f}¢. Skip it.\nsent {_sent_ct(now)}",
-            "priority": 3, "click": alert.get("click"), "ticker": alert.get("ticker"), "price": now_price,
+            # rebuild the link: old state rows hold the broken series-only URL
+            "priority": 3, "click": kalshi_url(tick, alert.get("event_ticker")), "ticker": tick, "price": now_price,
             "max_price": alert.get("max_price"), "edge": "", "stake": ""}
+
+
+def _gone_keys_logged(path: Path | None = None) -> set:
+    """Keys that already got a 'gone' push (any runner). Guards against duplicate pushes when the
+    live loop and collect.yml overlap with different copies of state.json."""
+    try:
+        import csv
+        with open(path or LOG, newline="") as fh:
+            return {r["key"] for r in csv.DictReader(fh) if r.get("type") == "gone"}
+    except Exception:  # noqa: BLE001
+        return set()
 
 
 # ---------- state ----------
@@ -263,10 +278,13 @@ def decide(groups: list[tuple[list[dict], bool]], quotes: dict, state: dict, now
             continue                                        # daily cap: skip, don't shrink silently
         room -= a["stake"]
         alerts[k] = {**{x: a[x] for x in ("ticker", "kind", "side", "legs", "max_price", "click", "stake",
-                                           "kickoff_utc")}, "key": k, "sent_utc": _iso(now), "gone": False}
+                                           "kickoff_utc")}, "key": k, "sent_utc": _iso(now), "gone": False,
+                     "desc": f.get("leg1_desc") or "", "event_ticker": f.get("event_ticker")}
         out.append(a)
+    already_gone = _gone_keys_logged()
     for k, a in alerts.items():
-        if a.get("gone") or a.get("max_price") is None:
+        if a.get("gone") or a.get("max_price") is None or k in already_gone:
+            a["gone"] = a.get("gone") or k in already_gone
             continue
         ko = a.get("kickoff_utc")
         if ko and _utc(ko) <= _utc(now):
