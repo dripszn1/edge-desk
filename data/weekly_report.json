@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-11-11T23:02:53Z",
-  "generated_ct": "Wed Nov 11, 5:02 PM CT",
+  "generated_utc": "2026-11-11T23:45:50Z",
+  "generated_ct": "Wed Nov 11, 5:45 PM CT",
   "paper_mode": true,
   "rules": {
     "min_bets": 30,
@@ -190,15 +190,15 @@
     },
     "tracked": {
       "cbb": {
-        "n": 82,
-        "avg_clv_c": -1.88,
-        "avg_raw_c": -0.54,
-        "beat_close_pct": 7.3,
-        "t_stat": -8.04,
-        "events": 13,
-        "t_by_event": -2.39,
+        "n": 84,
+        "avg_clv_c": -1.8,
+        "avg_raw_c": -0.45,
+        "beat_close_pct": 9.5,
+        "t_stat": -7.63,
+        "events": 14,
+        "t_by_event": -2.06,
         "stale": 0,
-        "pending": 45,
+        "pending": 43,
         "no_close": 0
       },
       "football": {
@@ -210,7 +210,7 @@
         "events": 0,
         "t_by_event": null,
         "stale": 0,
-        "pending": 106,
+        "pending": 108,
         "no_close": 0
       }
     }
