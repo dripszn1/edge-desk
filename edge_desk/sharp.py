@@ -226,6 +226,31 @@ def _normal_p(line, strike, sd):
     return 0.5 * math.erfc((strike - line) / (sd * math.sqrt(2)))
 
 
+OFFSET_BANDS = ((0.0, 3.0), (3.0, 6.0), (6.0, 10.5))   # |rung - line|, matching the per-league caps
+
+
+def offset_bands(P_e, P_n, Y, OFF) -> list[dict]:
+    """(#33) Calibration by distance from the line. Each rung is folded to its longshot side
+    (pred = min(p, 1-p), hit = that side won), so over/under errors don't cancel: a band whose
+    longshot_gap is clearly negative is one where we overprice longshots (fair too high -> fake
+    edges on far rungs). Calibration only; widening a cap still needs a tracked record (#24)."""
+    P_e, P_n, Y, A = map(np.asarray, (P_e, P_n, Y, np.abs(np.asarray(OFF))))
+    out = []
+    for i, (lo, hi) in enumerate(OFFSET_BANDS):
+        m = ((A > lo) if i else (A >= lo)) & (A <= hi)
+        if not m.any():
+            continue
+        p, pn, y = P_e[m], P_n[m], Y[m]
+        flip = p > 0.5
+        q, hit = np.where(flip, 1 - p, p), np.where(flip, 1 - y, y)
+        out.append({"band": f"{lo:g}-{hi:g}", "rungs": int(m.sum()),
+                    "brier": round(float(np.mean((p - y) ** 2)), 5),
+                    "brier_normal": round(float(np.mean((pn - y) ** 2)), 5),
+                    "longshot_pred": round(float(q.mean()), 4), "longshot_actual": round(float(hit.mean()), 4),
+                    "longshot_gap": round(float(hit.mean() - q.mean()), 4)})
+    return out
+
+
 def backtest(games: pd.DataFrame, seasons=range(2018, 2026)) -> dict:
     g = games.dropna(subset=["home_score", "away_score", "spread_line", "total_line"]).copy()
     g["margin"] = g["home_score"] - g["away_score"]
@@ -257,6 +282,7 @@ def backtest(games: pd.DataFrame, seasons=range(2018, 2026)) -> dict:
                 cal.append({"bucket": f"{lo:.1f}-{lo + 0.1:.1f}", "n": int(m.sum()),
                             "pred": round(float(P_e[m].mean()), 4), "actual": round(float(Y[m].mean()), 4)})
         near = np.abs(OFF) <= 4                      # rungs within 4 pts of the line: where Kalshi trades
+        by_off = offset_bands(P_e, P_n, Y, OFF)
         res[kind] = {
             "rungs": int(len(Y)), "games": int(len(Y) // len(OFFSETS)),
             "brier_empirical": round(float(np.mean((P_e - Y) ** 2)), 5),
@@ -266,6 +292,7 @@ def backtest(games: pd.DataFrame, seasons=range(2018, 2026)) -> dict:
             "near_line_brier_normal": round(float(np.mean((P_n[near] - Y[near]) ** 2)), 5),
             "max_calibration_gap": round(max(abs(c["pred"] - c["actual"]) for c in cal), 4),
             "calibration": cal,
+            "by_offset": by_off,
         }
     d = build_dists(games, pd.Timestamp("2100-01-01", tz="UTC"))["spread"]
     res["key_numbers_at_minus3"] = {

@@ -48,16 +48,49 @@ def should_skip(min_minutes: float, snap_dir: Path | None = None, now: datetime 
     return a is not None and 0 <= a < min_minutes      # a snapshot "from the future" never skips
 
 
+LIVE_FRESH_MINUTES = 45   # live saves a snapshot every 15 min; older than this -> its loop isn't saving
+
+
+def _now() -> datetime:
+    return datetime.now(timezone.utc)
+
+
+def decide(now: datetime, snap_dir: Path | None, threshold: float, event: str, live_active: int) -> dict:
+    """Should this collect run stand down? (#15 + #32)
+    - scheduled slot within `threshold` min of the latest snapshot -> skip ("fresh");
+    - any run (dispatch too) while a live run is in progress AND the latest snapshot is younger than
+      LIVE_FRESH_MINUTES -> skip ("live"): live already pulls odds, scans, alerts and commits, and two
+      writers race on data/odds/state.json, alert dedupe and appended CSVs (live keeps its side on a
+      rebase conflict, so collect's credit spend and rows were lost; 11-11 04:45/04:48 double CFB pull).
+    No snapshot or one stamped in the future never skips."""
+    a = age_minutes(snap_dir, now)
+    a = None if a is None else round(a, 1)
+    ok = a is not None and a >= 0
+    if live_active > 0 and ok and a < LIVE_FRESH_MINUTES:
+        return {"skip": True, "reason": "live", "age_min": a}
+    if event == "schedule" and ok and a < threshold:
+        return {"skip": True, "reason": "fresh", "age_min": a}
+    return {"skip": False, "reason": "", "age_min": a}
+
+
+def _opt(argv: list[str], name: str, default: str) -> str:
+    return argv[argv.index(name) + 1] if name in argv and argv.index(name) + 1 < len(argv) else default
+
+
 def main(argv=None) -> int:
-    argv = sys.argv[1:] if argv is None else argv
-    mins = float(argv[0]) if argv else 20
-    a = age_minutes()
-    skip = should_skip(mins)
-    print(f"latest snapshot {'none' if a is None else f'{a:.1f} min old'}; skip={str(skip).lower()} (threshold {mins:g} min)")
+    argv = sys.argv[1:] if argv is None else list(argv)
+    mins = float(argv[0]) if argv and not argv[0].startswith("--") else 20
+    event = _opt(argv, "--event", "schedule")
+    raw = _opt(argv, "--live-active", "0").strip()
+    live = int(raw) if raw.isdigit() else 0          # unknown -> assume no live run, collect (fails safe)
+    d = decide(_now(), SNAP_DIR, mins, event, live)
+    a = d["age_min"]
+    print(f"latest snapshot {'none' if a is None else f'{a:.1f} min old'}; event {event}; live runs {live}; "
+          f"skip={str(d['skip']).lower()}{' (' + d['reason'] + ')' if d['skip'] else ''} (threshold {mins:g} min)")
     out = os.environ.get("GITHUB_OUTPUT")
     if out:
         with open(out, "a") as fh:
-            fh.write(f"skip={str(skip).lower()}\n")
+            fh.write(f"skip={str(d['skip']).lower()}\n")
     return 0
 
 

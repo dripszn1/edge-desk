@@ -207,3 +207,27 @@ def test_far_tail_rungs_never_priced():
     flags, st = _flags(df=pd.DataFrame([far, near]))
     assert all(not f["ticker"].endswith("-25") for f in flags)
     assert st.get("rungs_out_of_range") == 1
+
+
+# ---- #33: calibration by rung distance from the line (longshot side) ----
+def test_backtest_by_offset_bands_and_longshot_calibration():
+    rng = np.random.default_rng(7)
+    n = 3000
+    h = _hist(n=n)
+    h["season"] = pd.to_datetime(h["kickoff_utc"]).dt.year
+    # totals: Laplace residuals with SD 13 -> a fitted normal overprices far rungs' longshot side
+    tot = (h["total_line"] + rng.laplace(0, 13 / np.sqrt(2), n)).round().clip(3)
+    m = h["home_score"] - h["away_score"]
+    h["home_score"] = (tot + m) / 2
+    h["away_score"] = (tot - m) / 2
+    r = sharp.backtest(h, seasons=[2025])
+    bands = r["total"]["by_offset"]
+    assert [b["band"] for b in bands] == ["0-3", "3-6", "6-10.5"]
+    assert sum(b["rungs"] for b in bands) == r["total"]["rungs"]
+    near, far = bands[0], bands[2]
+    for b in bands:
+        assert 0 < b["longshot_pred"] <= 0.5 and 0 <= b["longshot_actual"] <= 1
+        assert b["longshot_gap"] == pytest.approx(b["longshot_actual"] - b["longshot_pred"], abs=1e-4)
+    assert far["longshot_gap"] < -0.02                      # normal overprices the far longshots
+    assert abs(far["longshot_gap"]) > abs(near["longshot_gap"])
+    assert "by_offset" in r["spread"]
