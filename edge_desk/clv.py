@@ -146,6 +146,20 @@ def summary(c: pd.DataFrame) -> dict:
     return out
 
 
+FINAL_AFTER = pd.Timedelta(hours=1)
+
+
+def final_rows(prev: pd.DataFrame, now) -> pd.DataFrame:
+    """Cached rows that can no longer change: kickoff more than FINAL_AFTER ago (late-committed
+    pregame snapshots have landed by then) and a close already decided (ok / stale). Keeps the
+    live loop's 15-min weekly step from re-reading every snapshot day."""
+    if prev is None or prev.empty or "close_status" not in prev:
+        return pd.DataFrame(columns=COLS)
+    ko = pd.to_datetime(prev["kickoff_utc"], utc=True, errors="coerce")
+    m = prev["close_status"].isin(["ok", "stale"]) & ko.notna() & (pd.Timestamp(now) - ko > FINAL_AFTER)
+    return prev[m].reindex(columns=COLS)
+
+
 def load_snapshots(tickers: set[str], start: pd.Timestamp, end: pd.Timestamp) -> pd.DataFrame:
     """Only the needed tickers/columns from day folders between start and end (UTC dates)."""
     parts = []
@@ -185,11 +199,20 @@ def run(now=None) -> dict:
         return {}
     bets = pd.concat(frames, ignore_index=True)
     bets = bets[pd.to_datetime(bets["snapshot_ts"], utc=True, errors="coerce").notna()]
-    tickers = set(bets["leg1"].astype(str).str.split(" ", n=1).str[1])
-    start = pd.to_datetime(bets["snapshot_ts"], utc=True).min()
-    snaps = load_snapshots(tickers, start, now)
-    c = closing_value(bets, snaps, now)
-    c.to_csv(OUT, index=False)
+    try:
+        prev = pd.read_csv(OUT)
+    except Exception:
+        prev = pd.DataFrame(columns=COLS)
+    done = final_rows(prev, now)
+    keep = done[done["bet_id"].isin(bets["bet_id"]) & done["source"].isin(bets["source"])]
+    todo = bets[~(bets["bet_id"] + "|" + bets["source"]).isin(keep["bet_id"] + "|" + keep["source"])]
+    c = keep
+    if len(todo):
+        tickers = set(todo["leg1"].astype(str).str.split(" ", n=1).str[1])
+        start = pd.to_datetime(todo["snapshot_ts"], utc=True).min()
+        snaps = load_snapshots(tickers, start, now)
+        c = pd.concat([keep, closing_value(todo, snaps, now)], ignore_index=True)
+    c[COLS].to_csv(OUT, index=False)
     s = summary(c)
     print("clv: " + " | ".join(f"{src} {grp} n={v['n']} ({v['events']} games) avg {v['avg_clv_c']}c "
                                f"t/game={v['t_by_event']} "

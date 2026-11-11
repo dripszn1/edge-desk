@@ -97,3 +97,29 @@ def test_future_stamped_snapshot_cannot_move_kickoff_or_close():
     r = out.iloc[0]
     assert r["close_status"] == "ok" and abs(r["close_mid"] - 0.41) < 1e-9
     assert r["kickoff_utc"] == KO
+
+
+def test_cache_keeps_only_settled_closes():
+    prev = pd.DataFrame([
+        {"bet_id": "a", "source": "shadow", "close_status": "ok", "kickoff_utc": "2026-11-14T18:00:00Z", "clv_c": 1.0},
+        {"bet_id": "b", "source": "shadow", "close_status": "ok", "kickoff_utc": "2026-11-14T23:30:00Z", "clv_c": 1.0},
+        {"bet_id": "c", "source": "shadow", "close_status": "pending", "kickoff_utc": "2026-11-14T18:00:00Z"},
+        {"bet_id": "d", "source": "shadow", "close_status": "no_close", "kickoff_utc": "2026-11-14T18:00:00Z"},
+    ])
+    kept = clv.final_rows(prev, NOW)               # NOW = 11-15 00:00Z
+    assert kept["bet_id"].tolist() == ["a"]        # b kicked off <1h ago; c/d can still change
+
+
+def test_run_reuses_cache(tmp_path, monkeypatch):
+    monkeypatch.setattr(clv, "OUT", tmp_path / "clv.csv")
+    bf = tmp_path / "b.csv"
+    pd.DataFrame([bet()]).drop(columns=["source"]).assign(bet_id="x").to_csv(bf, index=False)
+    monkeypatch.setattr(clv, "BET_FILES", {"shadow": bf})
+    calls = []
+    monkeypatch.setattr(clv, "load_snapshots", lambda *a: calls.append(1) or pd.DataFrame(
+        [snap("2026-11-14T17:50:00Z", 0.40, 0.42)]))
+    clv.run(NOW)
+    clv.run(NOW)
+    assert len(calls) == 1
+    out = pd.read_csv(tmp_path / "clv.csv")
+    assert len(out) == 1 and out.iloc[0]["close_status"] == "ok"
