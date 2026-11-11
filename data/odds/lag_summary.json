@@ -1,11 +1,13 @@
 {
-  "moves": 0,
-  "evaluated": 0,
-  "status": {},
+  "moves": 5,
+  "evaluated": 5,
+  "status": {
+    "already_moved": 5
+  },
   "rules": {
     "move_pts": 1.0,
     "follow_frac": 0.5,
     "act_minutes": 30
   },
-  "verdict": "not enough data (0 evaluated moves < 10)"
+  "verdict": "not enough data (5 evaluated moves < 10)"
 }
