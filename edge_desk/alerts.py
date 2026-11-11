@@ -155,13 +155,25 @@ def _plain(side: str, desc: str) -> str:
     return f"Buy YES: {desc}" if side == "YES" else f"Buy NO: {desc} (you win if it does NOT happen)"
 
 
+def _side_word(side: str | None) -> str:
+    return {"YES": "Yes", "NO": "No"}.get(str(side or "").upper(), str(side or ""))
+
+
+def order_lines(game: str | None, desc: str | None, ticker: str | None) -> str:
+    """The two lines you see on Kalshi: event title, then the market (rung) title.
+    Falls back to the ticker only when no title is known."""
+    game = str(game or "").strip()
+    desc = str(desc or "").strip() or str(ticker or "")
+    return f"{game}\n{desc}" if game else desc
+
+
 def _sent_ct(now) -> str:
     return _utc(now).astimezone(CT).strftime("%H:%M:%S CT")
 
 
 def build_new(f: dict, gate_open: bool, now, template: str | None = None) -> dict:
     live = gate_open and not config.PAPER_MODE
-    game = str(f.get("event") or "").split(":")[0]
+    game = str(f.get("event") or "")
     ko = f.get("kickoff_ct") or ""
     if f.get("kind") in STRUCTURAL:
         mc = structural_max_cost(f)
@@ -177,10 +189,11 @@ def build_new(f: dict, gate_open: bool, now, template: str | None = None) -> dic
         n = int(f.get("contracts") or 0)
         mp = max_price(float(f["fair"]), n, mult)
         edge, min_e, stake, price, tick = float(f["edge"]), config.MIN_MODEL_EDGE, float(f.get("stake") or 0), float(f["price"]), f.get("ticker")
-        body = (f"{game}\n{_plain(f.get('side'), f.get('leg1_desc') or tick)}\n"
-                f"Kalshi ask {price * 100:.0f}¢, fair {float(f['fair']) * 100:.0f}¢, edge {edge * 100:.1f}¢ after fees\n"
-                f"Max price {'—' if mp is None else f'{mp * 100:.0f}¢'}. Size ${stake:.2f} = {n} contracts. "
-                f"Kickoff {ko}")
+        cap = "" if mp is None else f" (pay up to {mp * 100:.0f}¢)"
+        body = (f"{order_lines(game, f.get('leg1_desc'), tick)}\n"
+                f"Buy {_side_word(f.get('side'))} at {price * 100:.0f}¢{cap}\n"
+                f"Fair {float(f['fair']) * 100:.0f}¢ · edge +{edge * 100:.1f}¢ after fees\n"
+                f"${stake:.2f} = {n} contracts · kickoff {ko}")
     body += f"\nsent {_sent_ct(now)}"
     title = f"{'LIVE' if live else 'PAPER'} {f.get('kind')} {f.get('league', '')}".strip()
     return {"type": "new", "key": key_of(f), "kind": f.get("kind"), "title": title, "body": body,
@@ -205,14 +218,17 @@ def current_price(alert: dict, quotes: dict) -> float | None:
     return side_price(r, alert.get("side")) if r else None
 
 
-def build_gone(alert: dict, now_price: float, now) -> dict:
+def build_gone(alert: dict, now_price: float, now, row: dict | None = None) -> dict:
     tick = alert.get("ticker") or ""
-    what = alert.get("desc") or tick                      # plain words when we stored them
-    side = alert.get("side") or ""
+    row = row or {}
+    # titles as Kalshi shows them; old state rows lack them, so fall back to the live quote row
+    game = alert.get("game") or row.get("event_title")
+    desc = alert.get("desc") or row.get("yes_sub_title")
+    side = _side_word(alert.get("side"))
     return {"type": "gone", "key": alert["key"], "kind": alert.get("kind"),
             "title": f"GONE {alert.get('kind')}: don't chase",
-            "body": f"{side} {what}\nnow {now_price * 100:.0f}¢, past your max "
-                    f"{(alert.get('max_price') or 0) * 100:.0f}¢. Skip it.\nsent {_sent_ct(now)}",
+            "body": f"{order_lines(game, desc, tick)}\n{side} is now {now_price * 100:.0f}¢, past your "
+                    f"{(alert.get('max_price') or 0) * 100:.0f}¢ max. Skip it.\nsent {_sent_ct(now)}",
             # rebuild the link: old state rows hold the broken series-only URL
             "priority": 3, "click": kalshi_url(tick, alert.get("event_ticker")), "ticker": tick, "price": now_price,
             "max_price": alert.get("max_price"), "edge": "", "stake": ""}
@@ -279,7 +295,8 @@ def decide(groups: list[tuple[list[dict], bool]], quotes: dict, state: dict, now
         room -= a["stake"]
         alerts[k] = {**{x: a[x] for x in ("ticker", "kind", "side", "legs", "max_price", "click", "stake",
                                            "kickoff_utc")}, "key": k, "sent_utc": _iso(now), "gone": False,
-                     "desc": f.get("leg1_desc") or "", "event_ticker": f.get("event_ticker")}
+                     "desc": f.get("leg1_desc") or "", "game": f.get("event") or "",
+                     "event_ticker": f.get("event_ticker")}
         out.append(a)
     already_gone = _gone_keys_logged()
     for k, a in alerts.items():
@@ -292,7 +309,7 @@ def decide(groups: list[tuple[list[dict], bool]], quotes: dict, state: dict, now
         p = current_price(a, quotes)
         if p is not None and p > a["max_price"] + 1e-9:
             a["gone"] = True
-            out.append(build_gone(a, p, now))
+            out.append(build_gone(a, p, now, quotes.get(a.get("ticker"))))
     return out
 
 
@@ -382,7 +399,8 @@ def groups_from_latest(latest: dict, model_gate: bool = False, sharp_gate: bool 
 def quotes_of(df) -> dict:
     if df is None or len(df) == 0:
         return {}
-    return {r["ticker"]: r for r in df[["ticker", "yes_bid", "yes_ask"]].to_dict("records")}
+    cols = [c for c in ("ticker", "yes_bid", "yes_ask", "event_title", "yes_sub_title") if c in df.columns]
+    return {r["ticker"]: r for r in df[cols].to_dict("records")}
 
 
 def main(argv=None) -> int:

@@ -53,8 +53,9 @@ def test_new_alert_body_and_title():
     a = alerts.build_new(sharp_flag(), gate_open=False, now=NOW)
     assert a["title"].startswith("PAPER")
     b = a["body"]
-    for s in ("Los Angeles R at Arizona", "Buy YES: Arizona wins by over 3.5", "ask 45¢", "fair 52¢",
-              "Max price", "$9.00 = 20 contracts", "Sun Nov 15, 3:05 PM CT", "sent 10:00:00 CT"):
+    # mirrors the Kalshi ticket: event title, market title, then the side button
+    assert b.startswith("Los Angeles R at Arizona: Spread\nArizona wins by over 3.5 points\nBuy Yes at 45¢")
+    for s in ("pay up to", "Fair 52¢", "$9.00 = 20 contracts", "Sun Nov 15, 3:05 PM CT", "sent 10:00:00 CT"):
         assert s in b, s
     assert a["click"] == "https://kalshi.com/markets/kxnflspread/event/kxnflspread-26nov15larari"
 
@@ -75,7 +76,18 @@ def test_priority_by_edge():
 
 def test_no_side_reads_plainly():
     a = alerts.build_new(sharp_flag(side="NO"), False, NOW)
-    assert "Buy NO: Arizona wins by over 3.5 points (you win if it does NOT happen)" in a["body"]
+    assert "Arizona wins by over 3.5 points\nBuy No at " in a["body"]
+    assert "KXNFL" not in a["body"]
+
+
+def test_gone_without_stored_titles_uses_quote_row():
+    old = {"key": "k", "kind": "SHARP", "ticker": "KXNCAAFSPREAD-26NOV14MICHORE-ORE2", "side": "NO",
+           "max_price": 0.22, "event_ticker": "KXNCAAFSPREAD-26NOV14MICHORE"}
+    row = {"event_title": "Michigan vs Oregon: Spread", "yes_sub_title": "Oregon wins by over 1.5 points"}
+    g = alerts.build_gone(old, 0.23, NOW, row)
+    assert g["body"].startswith("Michigan vs Oregon: Spread\nOregon wins by over 1.5 points\n"
+                                "No is now 23¢, past your 22¢ max. Skip it.")
+    assert "KXNCAAF" not in g["body"]
 
 
 def test_structural_alert():
