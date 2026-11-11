@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-11-11T02:20:40Z",
-  "generated_ct": "Tue Nov 10, 8:20 PM CT",
+  "generated_utc": "2026-11-11T02:40:26Z",
+  "generated_ct": "Tue Nov 10, 8:40 PM CT",
   "paper_mode": true,
   "rules": {
     "min_bets": 30,
@@ -19,6 +19,27 @@
     "why": "no settled bets yet"
   },
   "sharp_shadow": {
+    "settled": 0,
+    "verdict": "not enough data",
+    "why": "no settled bets yet",
+    "by_market": {
+      "MONEYLINE": {
+        "settled": 0,
+        "pnl": null,
+        "roi": null,
+        "t_stat": null,
+        "verdict": "not enough data"
+      },
+      "SPREAD/TOTAL": {
+        "settled": 0,
+        "pnl": null,
+        "roi": null,
+        "t_stat": null,
+        "verdict": "not enough data"
+      }
+    }
+  },
+  "sharp_shadow_cbb": {
     "settled": 0,
     "verdict": "not enough data",
     "why": "no settled bets yet"
