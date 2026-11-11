@@ -20,7 +20,7 @@ from pathlib import Path
 
 import pandas as pd
 
-from . import cfb_results, config, kickoffs, model, nfl_results, odds, sharp
+from . import cfb_results, config, kickoffs, model, moneyline, nfl_results, odds, sharp
 from .fees import fee_per_contract
 from .sizing import structural_size
 
@@ -257,6 +257,21 @@ def run_sharp(df: pd.DataFrame, ts: str | None, lost: float | None = None, leagu
             is_open, why = False, f"shadow-only league ({why})"
         status["gate"] = why
         out["status"][lg] = status
+        _append_csv(new_only(flags, seen), sharp.LIVE if is_open else sharp.SHADOW)
+        out["live" if is_open else "shadow"].extend(flags)
+        if is_open:
+            lost += sum(f["stake"] for f in flags)
+    for lg in leagues:                                 # moneylines (#23): their own gate per league
+        try:
+            flags, status = moneyline.ml_flags(df, lines, ts, lost_today=lost, league=lg)
+            flags = with_url(flags)
+        except Exception as e:
+            flags, status = [], {"ok": False, "reason": f"error: {e}"}
+        is_open, why = sharp.gate(league=lg, market="ML")
+        if lg in sharp.SHADOW_ONLY:
+            is_open, why = False, f"shadow-only league ({why})"
+        status["gate"] = why
+        out["status"][f"{lg} ML"] = status
         _append_csv(new_only(flags, seen), sharp.LIVE if is_open else sharp.SHADOW)
         out["live" if is_open else "shadow"].extend(flags)
         if is_open:

@@ -196,6 +196,8 @@ def build_new(f: dict, gate_open: bool, now, template: str | None = None) -> dic
                 f"${stake:.2f} = {n} contracts · kickoff {ko}")
     body += f"\nsent {_sent_ct(now)}"
     title = f"{'LIVE' if live else 'PAPER'} {f.get('kind')} {f.get('league', '')}".strip()
+    if f.get("market") == "ML":
+        title += " ML"                                  # "PAPER SHARP NFL ML" (#23)
     return {"type": "new", "key": key_of(f), "kind": f.get("kind"), "title": title, "body": body,
             "priority": 5 if edge >= 2 * min_e else 4, "click": kalshi_url(tick, f.get("event_ticker"), template),
             "ticker": tick, "price": round(price, 4), "max_price": mp, "edge": edge, "stake": stake,

@@ -125,7 +125,18 @@ def sharp_split(b: pd.DataFrame) -> dict:
     """SHARP shadow scorecards: football (NFL+CFB) and CBB kept apart (#22), never pooled."""
     if b.empty or "league" not in b:
         return {"sharp_shadow": assess(b), "sharp_shadow_cbb": assess(pd.DataFrame())}
-    return {"sharp_shadow": assess(b[b["league"] != "CBB"]), "sharp_shadow_cbb": assess(b[b["league"] == "CBB"])}
+    out = {}
+    for key, part in (("sharp_shadow", b[b["league"] != "CBB"]), ("sharp_shadow_cbb", b[b["league"] == "CBB"])):
+        a = assess(part)
+        if "market" in part and len(part):          # MONEYLINE breakdown (#23), spreads/totals apart
+            ml = part["market"] == "ML"
+            a["by_market"] = {"MONEYLINE": _brief(assess(part[ml])), "SPREAD/TOTAL": _brief(assess(part[~ml]))}
+        out[key] = a
+    return out
+
+
+def _brief(a: dict) -> dict:
+    return {k: a.get(k) for k in ("settled", "pnl", "roi", "t_stat", "verdict")}
 
 
 def run(now: datetime | None = None) -> dict:

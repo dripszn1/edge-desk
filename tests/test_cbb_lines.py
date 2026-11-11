@@ -92,7 +92,9 @@ def test_no_key_skips(monkeypatch):
 
 def test_cbb_never_live_even_if_gate_open(monkeypatch):
     from edge_desk import scan
-    monkeypatch.setattr(sharp, "gate", lambda league=None, bets_path=None: (True, "open: test"))
+    monkeypatch.setattr(sharp, "gate", lambda league=None, bets_path=None, market=None: (True, "open: test"))
+    from edge_desk import moneyline
+    monkeypatch.setattr(moneyline, "ml_flags", lambda *a, **k: ([], {"ok": True}))
     fake = [{"league": "CBB", "ticker": "X", "stake": 1.0, "kind": "SHARP"}]
     monkeypatch.setattr(sharp, "sharp_flags", lambda *a, **k: (list(fake) if k.get("league") == "CBB" else [], {"ok": True}))
     monkeypatch.setattr(scan, "with_url", lambda f: f)

@@ -442,15 +442,17 @@ def sharp_flags(df: pd.DataFrame, lines: pd.DataFrame, games: pd.DataFrame, snap
 
 
 # ---------- gate ----------
-def gate(bets_path: Path | None = None, league: str | None = None) -> tuple[bool, str]:
+def gate(bets_path: Path | None = None, league: str | None = None, market: str | None = None) -> tuple[bool, str]:
     """Open only when graded SHARP shadow bets (of `league`, if given) show >0 P&L with t >= 2
-    over >= 30 settled."""
+    over >= 30 settled. market="ML" -> moneylines only; otherwise spreads/totals only (#23)."""
     from .weekly import t_stat
     try:
         b = pd.read_csv(bets_path or SHADOW_BETS)
         s = b[b["status"] == "settled"]
         if league is not None and "league" in s:
             s = s[s["league"] == league]
+        if "market" in s:
+            s = s[s["market"] == "ML"] if market == "ML" else s[s["market"] != "ML"]
     except Exception:
         return False, "gated: no graded SHARP shadow bets yet"
     if len(s) < GATE_MIN_BETS:
