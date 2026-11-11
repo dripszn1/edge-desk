@@ -87,11 +87,48 @@ def odds_too_old(snapshot_ts, odds_fetched_ts, kickoff_utc) -> bool:
     return age > limit
 
 
+# (#27) path -> {(ticker, side): signature of the last row logged}. The live loop re-scans every
+# 30 s; a held-back play is re-logged only when it is new or something about it changed. Grading
+# uses the first sighting, so dropping identical repeats changes no result.
+_TRACK_SEEN: dict[str, dict] = {}
+_TRACK_COLS = ("snapshot_ts", "league", "event", "ticker", "side", "price",
+               "fair", "edge", "sharp_line", "odds_fetched_ts")
+
+
+def _track_sig(price, fair, line, odds_ts, reason) -> tuple:
+    def r(x, n):
+        try:
+            return round(float(x), n)
+        except (TypeError, ValueError):
+            return None
+    return (r(price, 4), r(fair, 3), r(line, 2), str(odds_ts), str(reason))
+
+
+def _track_seen() -> dict:
+    key = str(REJECTED)
+    if key not in _TRACK_SEEN:
+        seen = {}
+        if REJECTED.exists():
+            try:
+                old = pd.read_csv(REJECTED, dtype=str)
+                for r in old.itertuples(index=False):
+                    seen[(r.ticker, r.side)] = _track_sig(r.price, r.fair, r.sharp_line, r.odds_fetched_ts, r.reason)
+            except Exception:  # noqa: BLE001 - an unreadable log just means "log everything"
+                seen = {}
+        _TRACK_SEEN[key] = seen
+    return _TRACK_SEEN[key]
+
+
 def log_rejected(f: dict, reason: str) -> None:
+    seen = _track_seen()
+    k = (str(f.get("ticker")), str(f.get("side")))
+    sig = _track_sig(f.get("price"), f.get("fair"), f.get("sharp_line"), f.get("odds_fetched_ts"), reason)
+    if seen.get(k) == sig:
+        return
     REJECTED.parent.mkdir(parents=True, exist_ok=True)
-    row = pd.DataFrame([{**{k: f.get(k) for k in ("snapshot_ts", "league", "event", "ticker", "side", "price",
-                                                    "fair", "edge", "sharp_line", "odds_fetched_ts")}, "reason": reason}])
+    row = pd.DataFrame([{**{c: f.get(c) for c in _TRACK_COLS}, "reason": reason}])
     row.to_csv(REJECTED, mode="a", header=not REJECTED.exists(), index=False)
+    seen[k] = sig
                          # far tails of the totals normal run fat (NFL 2012-25: P(under line-20)
                          # normal 6.6% vs actual 5.1%), which made deep NO-on-low-overs look +EV
 GATE_MIN_BETS = 30
