@@ -58,6 +58,35 @@
         "pred": 0.8088,
         "actual": 0.8035
       }
+    ],
+    "by_offset": [
+      {
+        "band": "0-3",
+        "rungs": 14537,
+        "brier": 0.24459,
+        "brier_normal": 0.24506,
+        "longshot_pred": 0.4382,
+        "longshot_actual": 0.4365,
+        "longshot_gap": -0.0016
+      },
+      {
+        "band": "3-6",
+        "rungs": 13362,
+        "brier": 0.22166,
+        "brier_normal": 0.22295,
+        "longshot_pred": 0.3441,
+        "longshot_actual": 0.3361,
+        "longshot_gap": -0.008
+      },
+      {
+        "band": "6-10.5",
+        "rungs": 18868,
+        "brier": 0.18133,
+        "brier_normal": 0.18234,
+        "longshot_pred": 0.2469,
+        "longshot_actual": 0.2404,
+        "longshot_gap": -0.0065
+      }
     ]
   },
   "total": {
@@ -106,6 +135,35 @@
         "n": 7884,
         "pred": 0.7379,
         "actual": 0.7509
+      }
+    ],
+    "by_offset": [
+      {
+        "band": "0-3",
+        "rungs": 14565,
+        "brier": 0.24682,
+        "brier_normal": 0.24682,
+        "longshot_pred": 0.4516,
+        "longshot_actual": 0.4522,
+        "longshot_gap": 0.0006
+      },
+      {
+        "band": "3-6",
+        "rungs": 13362,
+        "brier": 0.22868,
+        "brier_normal": 0.22868,
+        "longshot_pred": 0.3603,
+        "longshot_actual": 0.3561,
+        "longshot_gap": -0.0042
+      },
+      {
+        "band": "6-10.5",
+        "rungs": 18840,
+        "brier": 0.19088,
+        "brier_normal": 0.19088,
+        "longshot_pred": 0.2651,
+        "longshot_actual": 0.2587,
+        "longshot_gap": -0.0064
       }
     ]
   },
