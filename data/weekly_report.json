@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-11-11T19:57:43Z",
-  "generated_ct": "Wed Nov 11, 1:57 PM CT",
+  "generated_utc": "2026-11-11T21:00:28Z",
+  "generated_ct": "Wed Nov 11, 3:00 PM CT",
   "paper_mode": true,
   "rules": {
     "min_bets": 30,
@@ -62,9 +62,31 @@
     }
   },
   "sharp_shadow_cbb": {
-    "settled": 0,
+    "settled": 1,
+    "staked": 3.41,
+    "fees": 0.11,
+    "pnl": 2.59,
+    "roi": 0.7595,
+    "t_stat": null,
+    "coin_flip": {
+      "sims": 10000,
+      "bets": 1,
+      "real_pnl": 2.59,
+      "sim_median_pnl": 2.59,
+      "beat_pct": 0.4537
+    },
+    "by_week": [
+      {
+        "week_of": "2026-11-09",
+        "bets": 1,
+        "pnl": 2.59,
+        "roi": 0.7595,
+        "claimed_edge_c": 3.59,
+        "realised_edge_c": 43.17
+      }
+    ],
     "verdict": "not enough data",
-    "why": "no settled bets yet",
+    "why": "1 settled bets (< 30)",
     "by_market": {
       "MONEYLINE": {
         "settled": 0,
@@ -74,18 +96,40 @@
         "verdict": "not enough data"
       },
       "SPREAD/TOTAL": {
-        "settled": 0,
-        "pnl": null,
-        "roi": null,
+        "settled": 1,
+        "pnl": 2.59,
+        "roi": 0.7595,
         "t_stat": null,
         "verdict": "not enough data"
       }
     }
   },
   "sharp_tracked": {
-    "settled": 0,
+    "settled": 1,
+    "staked": 3.41,
+    "fees": 0.11,
+    "pnl": 2.59,
+    "roi": 0.7595,
+    "t_stat": null,
+    "coin_flip": {
+      "sims": 10000,
+      "bets": 1,
+      "real_pnl": 2.59,
+      "sim_median_pnl": 2.59,
+      "beat_pct": 0.4537
+    },
+    "by_week": [
+      {
+        "week_of": "2026-11-09",
+        "bets": 1,
+        "pnl": 2.59,
+        "roi": 0.7595,
+        "claimed_edge_c": 3.59,
+        "realised_edge_c": 43.17
+      }
+    ],
     "verdict": "not enough data",
-    "why": "no settled bets yet",
+    "why": "1 settled bets (< 30)",
     "by_reason": {
       "far_rung": {
         "settled": 0,
@@ -98,9 +142,21 @@
         "why": "no settled bets yet"
       },
       "stale_line": {
-        "settled": 0,
+        "settled": 1,
+        "staked": 3.41,
+        "fees": 0.11,
+        "pnl": 2.59,
+        "roi": 0.7595,
+        "t_stat": null,
+        "coin_flip": {
+          "sims": 10000,
+          "bets": 1,
+          "real_pnl": 2.59,
+          "sim_median_pnl": 2.59,
+          "beat_pct": 0.4537
+        },
         "verdict": "not enough data",
-        "why": "no settled bets yet"
+        "why": "1 settled bets (< 30)"
       }
     },
     "propose_widen": []
@@ -134,15 +190,15 @@
     },
     "tracked": {
       "cbb": {
-        "n": 65,
-        "avg_clv_c": -2.29,
-        "avg_raw_c": -1.02,
-        "beat_close_pct": 1.5,
-        "t_stat": -20.11,
-        "events": 11,
-        "t_by_event": -18.47,
+        "n": 82,
+        "avg_clv_c": -1.88,
+        "avg_raw_c": -0.54,
+        "beat_close_pct": 7.3,
+        "t_stat": -8.04,
+        "events": 13,
+        "t_by_event": -2.39,
         "stale": 0,
-        "pending": 62,
+        "pending": 45,
         "no_close": 0
       },
       "football": {
@@ -154,7 +210,7 @@
         "events": 0,
         "t_by_event": null,
         "stale": 0,
-        "pending": 91,
+        "pending": 104,
         "no_close": 0
       }
     }
