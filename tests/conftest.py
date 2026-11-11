@@ -12,3 +12,9 @@ def _tracked_to_tmp(tmp_path, monkeypatch):
 @pytest.fixture(autouse=True)
 def _alert_log_to_tmp(tmp_path, monkeypatch):
     monkeypatch.setattr(alerts, "LOG", tmp_path / "alerts_log.csv")
+
+
+@pytest.fixture(autouse=True)
+def _live_log_to_tmp(tmp_path, monkeypatch):
+    from edge_desk import live
+    monkeypatch.setattr(live, "LIVE_LOG", tmp_path / "live_log.csv")
