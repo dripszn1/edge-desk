@@ -88,6 +88,8 @@ def ml_flags(df: pd.DataFrame, lines: pd.DataFrame, snapshot_ts: str | None, los
             if f["edge"] > sharp.EDGE_SANITY_CAP:
                 status["rejected_edge_cap"] = status.get("rejected_edge_cap", 0) + 1
                 reasons.append("edge above sanity cap")
+            if reasons == ["sharp line stale"]:              # #28: a fresh line could make it a play
+                status["stale_only"] = status.get("stale_only", 0) + 1
             if reasons:
                 sharp.log_rejected(f, "; ".join(reasons))
                 continue
