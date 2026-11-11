@@ -146,6 +146,11 @@ def run(now: datetime | None = None) -> dict:
            "rules": {"min_bets": MIN_BETS, "skill_t": SKILL_T, "skill_beat_pct": SKILL_PCTL, "sims": N_SIMS},
            "paper": assess(_load(PAPER)), "model_shadow": assess(_load(SHADOW)),
            **sharp_split(_load(SHARP_SHADOW)), "sharp_tracked": tracked_report(_load(SHARP_TRACKED))}
+    try:                                   # #31 closing-price value; never blocks the report
+        from . import clv
+        rep["clv"] = clv.run(now)
+    except Exception as e:                 # noqa: BLE001
+        rep["clv"] = {"error": str(e)[:200]}
     OUT.write_text(json.dumps(rep, indent=2, default=str))
     print(f"weekly: paper {rep['paper']['verdict']} ({rep['paper']['settled']}) | "
           f"model shadow {rep['model_shadow']['verdict']} ({rep['model_shadow']['settled']}) | "

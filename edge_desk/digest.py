@@ -136,6 +136,19 @@ def held_back_by_reason(b: pd.DataFrame | None, now) -> list[str]:
     return ["  held back by reason: " + " · ".join(parts)]
 
 
+def clv_line(c: pd.DataFrame | None) -> list[str]:
+    """One line: did entries beat Kalshi's pregame close after the entry fee (#31)?"""
+    from . import clv
+    s = clv.summary(c) if c is not None and not c.empty and "close_status" in c else {}
+    parts = []
+    for src, label in (("shadow", "shadow"), ("tracked", "held back")):
+        for grp, v in (s.get(src) or {}).items():
+            if v.get("n"):
+                parts.append(f"{label} {'CBB' if grp == 'cbb' else 'football'} {v['avg_clv_c']:+.1f}c "
+                             f"({v['beat_close_pct']:.0f}% of {v['n']}, {v['events']} games)")
+    return ["  vs Kalshi close after fee: " + " · ".join(parts)] if parts else []
+
+
 def status_line(latest: dict, odds_state: dict, now) -> str:
     snap = _age_min((latest or {}).get("snapshot_ts"), now)
     pulls = (odds_state or {}).get("last_pull") or {}
@@ -152,7 +165,7 @@ def status_line(latest: dict, odds_state: dict, now) -> str:
             f"odds credits left {f'{credits} of {odds.quota(odds_state)}' if credits is not None else 'unknown'}; gates: {', '.join(gates) or 'unknown'}")
 
 
-def build(latest: dict, bets: dict, odds_state: dict, now) -> str:
+def build(latest: dict, bets: dict, odds_state: dict, now, clv: pd.DataFrame | None = None) -> str:
     now = _ts(now)
     p = plays(latest, now)
     head = [f"# edge-desk digest, {to_ct(now.strftime('%Y-%m-%dT%H:%M:%SZ'))}", "",
@@ -166,7 +179,8 @@ def build(latest: dict, bets: dict, odds_state: dict, now) -> str:
         if len(p) > MAX_PLAYS:
             body.append(f"- +{len(p) - MAX_PLAYS} more in data/flags/latest.json")
     rc = (["", f"Settled in the last {RECAP_H}h:"] + recap(bets, now)
-          + held_back_by_reason(bets.get("SHARP tracked (held back)"), now))
+          + held_back_by_reason(bets.get("SHARP tracked (held back)"), now)
+          + clv_line(clv))
     tail = ["", status_line(latest, odds_state, now)]
     lines = head + body + rc + tail
     if len(lines) > MAX_LINES:                       # trim plays first, keep recap + status
@@ -181,7 +195,8 @@ def run(now=None) -> str:
         latest = json.loads((DATA / "flags" / "latest.json").read_text())
     except Exception:
         latest = {}
-    md = build(latest, {k: _load(v) for k, v in BET_FILES.items()}, odds.load_state(), now)
+    md = build(latest, {k: _load(v) for k, v in BET_FILES.items()}, odds.load_state(), now,
+               clv=_load(DATA / "clv_bets.csv"))
     OUT.write_text(md)
     ARCHIVE.mkdir(parents=True, exist_ok=True)
     (ARCHIVE / f"{now.tz_convert(CT).date().isoformat()}.md").write_text(md)
