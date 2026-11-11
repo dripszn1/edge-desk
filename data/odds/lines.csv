@@ -7447,3 +7447,633 @@ fetched_ts,league,event_id,commence_utc,home_team,away_team,book,book_update_utc
 2026-11-11T00:51:58Z,CBB,92cc2f2a169d4efd4f1a0ac9d25672bc,2026-11-12T04:00:00Z,California Golden Bears,USC Trojans,fanduel,2026-11-11T00:51:18Z,spreads,USC Trojans,-7.5,-112,0.528302,0.50433
 2026-11-11T00:51:58Z,CBB,92cc2f2a169d4efd4f1a0ac9d25672bc,2026-11-12T04:00:00Z,California Golden Bears,USC Trojans,fanduel,2026-11-11T00:51:18Z,totals,Over,160.5,-115,0.534884,0.510834
 2026-11-11T00:51:58Z,CBB,92cc2f2a169d4efd4f1a0ac9d25672bc,2026-11-12T04:00:00Z,California Golden Bears,USC Trojans,fanduel,2026-11-11T00:51:18Z,totals,Under,160.5,-105,0.512195,0.489166
+2026-11-11T02:00:26Z,CBB,ac091b3b15d1fcf0312f8c0500329879,2026-11-11T02:35:00Z,Kentucky Wildcats,Kansas Jayhawks,draftkings,2026-11-11T02:00:00Z,h2h,Kansas Jayhawks,,-218,0.685535,0.657475
+2026-11-11T02:00:26Z,CBB,ac091b3b15d1fcf0312f8c0500329879,2026-11-11T02:35:00Z,Kentucky Wildcats,Kansas Jayhawks,draftkings,2026-11-11T02:00:00Z,h2h,Kentucky Wildcats,,180,0.357143,0.342525
+2026-11-11T02:00:26Z,CBB,ac091b3b15d1fcf0312f8c0500329879,2026-11-11T02:35:00Z,Kentucky Wildcats,Kansas Jayhawks,draftkings,2026-11-11T02:00:00Z,spreads,Kansas Jayhawks,-4.5,-115,0.534884,0.510834
+2026-11-11T02:00:26Z,CBB,ac091b3b15d1fcf0312f8c0500329879,2026-11-11T02:35:00Z,Kentucky Wildcats,Kansas Jayhawks,draftkings,2026-11-11T02:00:00Z,spreads,Kentucky Wildcats,4.5,-105,0.512195,0.489166
+2026-11-11T02:00:26Z,CBB,ac091b3b15d1fcf0312f8c0500329879,2026-11-11T02:35:00Z,Kentucky Wildcats,Kansas Jayhawks,draftkings,2026-11-11T02:00:00Z,totals,Over,158.5,-112,0.528302,0.50433
+2026-11-11T02:00:26Z,CBB,ac091b3b15d1fcf0312f8c0500329879,2026-11-11T02:35:00Z,Kentucky Wildcats,Kansas Jayhawks,draftkings,2026-11-11T02:00:00Z,totals,Under,158.5,-108,0.519231,0.49567
+2026-11-11T02:00:26Z,CBB,ac091b3b15d1fcf0312f8c0500329879,2026-11-11T02:35:00Z,Kentucky Wildcats,Kansas Jayhawks,fanduel,2026-11-11T01:59:39Z,h2h,Kansas Jayhawks,,-220,0.6875,0.65812
+2026-11-11T02:00:26Z,CBB,ac091b3b15d1fcf0312f8c0500329879,2026-11-11T02:35:00Z,Kentucky Wildcats,Kansas Jayhawks,fanduel,2026-11-11T01:59:39Z,h2h,Kentucky Wildcats,,180,0.357143,0.34188
+2026-11-11T02:00:26Z,CBB,ac091b3b15d1fcf0312f8c0500329879,2026-11-11T02:35:00Z,Kentucky Wildcats,Kansas Jayhawks,fanduel,2026-11-11T01:59:39Z,spreads,Kansas Jayhawks,-5.5,-102,0.50495,0.48072
+2026-11-11T02:00:26Z,CBB,ac091b3b15d1fcf0312f8c0500329879,2026-11-11T02:35:00Z,Kentucky Wildcats,Kansas Jayhawks,fanduel,2026-11-11T01:59:39Z,spreads,Kentucky Wildcats,5.5,-120,0.545455,0.51928
+2026-11-11T02:00:26Z,CBB,ac091b3b15d1fcf0312f8c0500329879,2026-11-11T02:35:00Z,Kentucky Wildcats,Kansas Jayhawks,fanduel,2026-11-11T01:59:39Z,totals,Over,157.5,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,ac091b3b15d1fcf0312f8c0500329879,2026-11-11T02:35:00Z,Kentucky Wildcats,Kansas Jayhawks,fanduel,2026-11-11T01:59:39Z,totals,Under,157.5,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,ac091b3b15d1fcf0312f8c0500329879,2026-11-11T02:35:00Z,Kentucky Wildcats,Kansas Jayhawks,betonlineag,2026-11-11T02:00:16Z,h2h,Kansas Jayhawks,,-215,0.68254,0.658888
+2026-11-11T02:00:26Z,CBB,ac091b3b15d1fcf0312f8c0500329879,2026-11-11T02:35:00Z,Kentucky Wildcats,Kansas Jayhawks,betonlineag,2026-11-11T02:00:16Z,h2h,Kentucky Wildcats,,183,0.353357,0.341112
+2026-11-11T02:00:26Z,CBB,ac091b3b15d1fcf0312f8c0500329879,2026-11-11T02:35:00Z,Kentucky Wildcats,Kansas Jayhawks,betonlineag,2026-11-11T02:00:16Z,spreads,Kansas Jayhawks,-5.0,-107,0.516908,0.493504
+2026-11-11T02:00:26Z,CBB,ac091b3b15d1fcf0312f8c0500329879,2026-11-11T02:35:00Z,Kentucky Wildcats,Kansas Jayhawks,betonlineag,2026-11-11T02:00:16Z,spreads,Kentucky Wildcats,5.0,-113,0.530516,0.506496
+2026-11-11T02:00:26Z,CBB,ac091b3b15d1fcf0312f8c0500329879,2026-11-11T02:35:00Z,Kentucky Wildcats,Kansas Jayhawks,betonlineag,2026-11-11T02:00:16Z,totals,Over,158.5,-112,0.528302,0.50433
+2026-11-11T02:00:26Z,CBB,ac091b3b15d1fcf0312f8c0500329879,2026-11-11T02:35:00Z,Kentucky Wildcats,Kansas Jayhawks,betonlineag,2026-11-11T02:00:16Z,totals,Under,158.5,-108,0.519231,0.49567
+2026-11-11T02:00:26Z,CBB,ac091b3b15d1fcf0312f8c0500329879,2026-11-11T02:35:00Z,Kentucky Wildcats,Kansas Jayhawks,lowvig,2026-11-11T02:00:21Z,h2h,Kansas Jayhawks,,-215,0.68254,0.658888
+2026-11-11T02:00:26Z,CBB,ac091b3b15d1fcf0312f8c0500329879,2026-11-11T02:35:00Z,Kentucky Wildcats,Kansas Jayhawks,lowvig,2026-11-11T02:00:21Z,h2h,Kentucky Wildcats,,183,0.353357,0.341112
+2026-11-11T02:00:26Z,CBB,ac091b3b15d1fcf0312f8c0500329879,2026-11-11T02:35:00Z,Kentucky Wildcats,Kansas Jayhawks,lowvig,2026-11-11T02:00:21Z,spreads,Kansas Jayhawks,-5.0,-103,0.507389,0.493128
+2026-11-11T02:00:26Z,CBB,ac091b3b15d1fcf0312f8c0500329879,2026-11-11T02:35:00Z,Kentucky Wildcats,Kansas Jayhawks,lowvig,2026-11-11T02:00:21Z,spreads,Kentucky Wildcats,5.0,-109,0.521531,0.506872
+2026-11-11T02:00:26Z,CBB,ac091b3b15d1fcf0312f8c0500329879,2026-11-11T02:35:00Z,Kentucky Wildcats,Kansas Jayhawks,lowvig,2026-11-11T02:00:21Z,totals,Over,158.5,-110,0.52381,0.504452
+2026-11-11T02:00:26Z,CBB,ac091b3b15d1fcf0312f8c0500329879,2026-11-11T02:35:00Z,Kentucky Wildcats,Kansas Jayhawks,lowvig,2026-11-11T02:00:21Z,totals,Under,158.5,-106,0.514563,0.495548
+2026-11-11T02:00:26Z,CBB,ac091b3b15d1fcf0312f8c0500329879,2026-11-11T02:35:00Z,Kentucky Wildcats,Kansas Jayhawks,pinnacle,2026-11-11T02:00:15Z,h2h,Kansas Jayhawks,,-201,0.667774,0.64909
+2026-11-11T02:00:26Z,CBB,ac091b3b15d1fcf0312f8c0500329879,2026-11-11T02:35:00Z,Kentucky Wildcats,Kansas Jayhawks,pinnacle,2026-11-11T02:00:15Z,h2h,Kentucky Wildcats,,177,0.361011,0.35091
+2026-11-11T02:00:26Z,CBB,ac091b3b15d1fcf0312f8c0500329879,2026-11-11T02:35:00Z,Kentucky Wildcats,Kansas Jayhawks,pinnacle,2026-11-11T02:00:15Z,spreads,Kansas Jayhawks,-5.0,-108,0.519231,0.5
+2026-11-11T02:00:26Z,CBB,ac091b3b15d1fcf0312f8c0500329879,2026-11-11T02:35:00Z,Kentucky Wildcats,Kansas Jayhawks,pinnacle,2026-11-11T02:00:15Z,spreads,Kentucky Wildcats,5.0,-108,0.519231,0.5
+2026-11-11T02:00:26Z,CBB,ac091b3b15d1fcf0312f8c0500329879,2026-11-11T02:35:00Z,Kentucky Wildcats,Kansas Jayhawks,pinnacle,2026-11-11T02:00:15Z,totals,Over,159.0,-108,0.519231,0.49567
+2026-11-11T02:00:26Z,CBB,ac091b3b15d1fcf0312f8c0500329879,2026-11-11T02:35:00Z,Kentucky Wildcats,Kansas Jayhawks,pinnacle,2026-11-11T02:00:15Z,totals,Under,159.0,-112,0.528302,0.50433
+2026-11-11T02:00:26Z,CBB,ec95fa37f8cd117d2b0e8da4db83b192,2026-11-11T03:00:00Z,San Francisco Dons,Montana Grizzlies,betonlineag,2026-11-11T02:00:16Z,h2h,Montana Grizzlies,,520,0.16129,0.155075
+2026-11-11T02:00:26Z,CBB,ec95fa37f8cd117d2b0e8da4db83b192,2026-11-11T03:00:00Z,San Francisco Dons,Montana Grizzlies,betonlineag,2026-11-11T02:00:16Z,h2h,San Francisco Dons,,-725,0.878788,0.844925
+2026-11-11T02:00:26Z,CBB,ec95fa37f8cd117d2b0e8da4db83b192,2026-11-11T03:00:00Z,San Francisco Dons,Montana Grizzlies,betonlineag,2026-11-11T02:00:16Z,spreads,Montana Grizzlies,11.5,-115,0.534884,0.510834
+2026-11-11T02:00:26Z,CBB,ec95fa37f8cd117d2b0e8da4db83b192,2026-11-11T03:00:00Z,San Francisco Dons,Montana Grizzlies,betonlineag,2026-11-11T02:00:16Z,spreads,San Francisco Dons,-11.5,-105,0.512195,0.489166
+2026-11-11T02:00:26Z,CBB,ec95fa37f8cd117d2b0e8da4db83b192,2026-11-11T03:00:00Z,San Francisco Dons,Montana Grizzlies,betonlineag,2026-11-11T02:00:16Z,totals,Over,148.0,-106,0.514563,0.491336
+2026-11-11T02:00:26Z,CBB,ec95fa37f8cd117d2b0e8da4db83b192,2026-11-11T03:00:00Z,San Francisco Dons,Montana Grizzlies,betonlineag,2026-11-11T02:00:16Z,totals,Under,148.0,-114,0.53271,0.508664
+2026-11-11T02:00:26Z,CBB,ec95fa37f8cd117d2b0e8da4db83b192,2026-11-11T03:00:00Z,San Francisco Dons,Montana Grizzlies,lowvig,2026-11-11T02:00:21Z,h2h,Montana Grizzlies,,520,0.16129,0.155075
+2026-11-11T02:00:26Z,CBB,ec95fa37f8cd117d2b0e8da4db83b192,2026-11-11T03:00:00Z,San Francisco Dons,Montana Grizzlies,lowvig,2026-11-11T02:00:21Z,h2h,San Francisco Dons,,-725,0.878788,0.844925
+2026-11-11T02:00:26Z,CBB,ec95fa37f8cd117d2b0e8da4db83b192,2026-11-11T03:00:00Z,San Francisco Dons,Montana Grizzlies,lowvig,2026-11-11T02:00:21Z,spreads,Montana Grizzlies,11.5,-111,0.526066,0.511462
+2026-11-11T02:00:26Z,CBB,ec95fa37f8cd117d2b0e8da4db83b192,2026-11-11T03:00:00Z,San Francisco Dons,Montana Grizzlies,lowvig,2026-11-11T02:00:21Z,spreads,San Francisco Dons,-11.5,-101,0.502488,0.488538
+2026-11-11T02:00:26Z,CBB,ec95fa37f8cd117d2b0e8da4db83b192,2026-11-11T03:00:00Z,San Francisco Dons,Montana Grizzlies,lowvig,2026-11-11T02:00:21Z,totals,Over,148.0,-104,0.509804,0.491091
+2026-11-11T02:00:26Z,CBB,ec95fa37f8cd117d2b0e8da4db83b192,2026-11-11T03:00:00Z,San Francisco Dons,Montana Grizzlies,lowvig,2026-11-11T02:00:21Z,totals,Under,148.0,-112,0.528302,0.508909
+2026-11-11T02:00:26Z,CBB,ec95fa37f8cd117d2b0e8da4db83b192,2026-11-11T03:00:00Z,San Francisco Dons,Montana Grizzlies,fanduel,2026-11-11T01:59:40Z,h2h,Montana Grizzlies,,520,0.16129,0.154545
+2026-11-11T02:00:26Z,CBB,ec95fa37f8cd117d2b0e8da4db83b192,2026-11-11T03:00:00Z,San Francisco Dons,Montana Grizzlies,fanduel,2026-11-11T01:59:40Z,h2h,San Francisco Dons,,-750,0.882353,0.845455
+2026-11-11T02:00:26Z,CBB,ec95fa37f8cd117d2b0e8da4db83b192,2026-11-11T03:00:00Z,San Francisco Dons,Montana Grizzlies,fanduel,2026-11-11T01:59:40Z,spreads,Montana Grizzlies,11.5,-115,0.534884,0.510834
+2026-11-11T02:00:26Z,CBB,ec95fa37f8cd117d2b0e8da4db83b192,2026-11-11T03:00:00Z,San Francisco Dons,Montana Grizzlies,fanduel,2026-11-11T01:59:40Z,spreads,San Francisco Dons,-11.5,-105,0.512195,0.489166
+2026-11-11T02:00:26Z,CBB,ec95fa37f8cd117d2b0e8da4db83b192,2026-11-11T03:00:00Z,San Francisco Dons,Montana Grizzlies,fanduel,2026-11-11T01:59:40Z,totals,Over,147.5,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,ec95fa37f8cd117d2b0e8da4db83b192,2026-11-11T03:00:00Z,San Francisco Dons,Montana Grizzlies,fanduel,2026-11-11T01:59:40Z,totals,Under,147.5,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,ec95fa37f8cd117d2b0e8da4db83b192,2026-11-11T03:00:00Z,San Francisco Dons,Montana Grizzlies,draftkings,2026-11-11T02:00:00Z,h2h,Montana Grizzlies,,550,0.153846,0.147541
+2026-11-11T02:00:26Z,CBB,ec95fa37f8cd117d2b0e8da4db83b192,2026-11-11T03:00:00Z,San Francisco Dons,Montana Grizzlies,draftkings,2026-11-11T02:00:00Z,h2h,San Francisco Dons,,-800,0.888889,0.852459
+2026-11-11T02:00:26Z,CBB,ec95fa37f8cd117d2b0e8da4db83b192,2026-11-11T03:00:00Z,San Francisco Dons,Montana Grizzlies,draftkings,2026-11-11T02:00:00Z,spreads,Montana Grizzlies,11.5,-112,0.528302,0.50433
+2026-11-11T02:00:26Z,CBB,ec95fa37f8cd117d2b0e8da4db83b192,2026-11-11T03:00:00Z,San Francisco Dons,Montana Grizzlies,draftkings,2026-11-11T02:00:00Z,spreads,San Francisco Dons,-11.5,-108,0.519231,0.49567
+2026-11-11T02:00:26Z,CBB,ec95fa37f8cd117d2b0e8da4db83b192,2026-11-11T03:00:00Z,San Francisco Dons,Montana Grizzlies,draftkings,2026-11-11T02:00:00Z,totals,Over,147.5,-112,0.528302,0.50433
+2026-11-11T02:00:26Z,CBB,ec95fa37f8cd117d2b0e8da4db83b192,2026-11-11T03:00:00Z,San Francisco Dons,Montana Grizzlies,draftkings,2026-11-11T02:00:00Z,totals,Under,147.5,-108,0.519231,0.49567
+2026-11-11T02:00:26Z,CBB,ec95fa37f8cd117d2b0e8da4db83b192,2026-11-11T03:00:00Z,San Francisco Dons,Montana Grizzlies,pinnacle,2026-11-11T02:00:15Z,h2h,Montana Grizzlies,,534,0.157729,0.151876
+2026-11-11T02:00:26Z,CBB,ec95fa37f8cd117d2b0e8da4db83b192,2026-11-11T03:00:00Z,San Francisco Dons,Montana Grizzlies,pinnacle,2026-11-11T02:00:15Z,h2h,San Francisco Dons,,-739,0.88081,0.848124
+2026-11-11T02:00:26Z,CBB,ec95fa37f8cd117d2b0e8da4db83b192,2026-11-11T03:00:00Z,San Francisco Dons,Montana Grizzlies,pinnacle,2026-11-11T02:00:15Z,spreads,Montana Grizzlies,11.5,-111,0.526066,0.50668
+2026-11-11T02:00:26Z,CBB,ec95fa37f8cd117d2b0e8da4db83b192,2026-11-11T03:00:00Z,San Francisco Dons,Montana Grizzlies,pinnacle,2026-11-11T02:00:15Z,spreads,San Francisco Dons,-11.5,-105,0.512195,0.49332
+2026-11-11T02:00:26Z,CBB,ec95fa37f8cd117d2b0e8da4db83b192,2026-11-11T03:00:00Z,San Francisco Dons,Montana Grizzlies,pinnacle,2026-11-11T02:00:15Z,totals,Over,147.5,-106,0.514563,0.491336
+2026-11-11T02:00:26Z,CBB,ec95fa37f8cd117d2b0e8da4db83b192,2026-11-11T03:00:00Z,San Francisco Dons,Montana Grizzlies,pinnacle,2026-11-11T02:00:15Z,totals,Under,147.5,-114,0.53271,0.508664
+2026-11-11T02:00:26Z,CBB,759951fe63ce023850658a6be1c38e38,2026-11-11T16:30:00Z,East Texas A&M Lions,Fairleigh Dickinson Knights,fanduel,2026-11-11T01:59:40Z,h2h,East Texas A&M Lions,,-630,0.863014,0.825983
+2026-11-11T02:00:26Z,CBB,759951fe63ce023850658a6be1c38e38,2026-11-11T16:30:00Z,East Texas A&M Lions,Fairleigh Dickinson Knights,fanduel,2026-11-11T01:59:40Z,h2h,Fairleigh Dickinson Knights,,450,0.181818,0.174017
+2026-11-11T02:00:26Z,CBB,759951fe63ce023850658a6be1c38e38,2026-11-11T16:30:00Z,East Texas A&M Lions,Fairleigh Dickinson Knights,fanduel,2026-11-11T01:59:40Z,spreads,East Texas A&M Lions,-10.5,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,759951fe63ce023850658a6be1c38e38,2026-11-11T16:30:00Z,East Texas A&M Lions,Fairleigh Dickinson Knights,fanduel,2026-11-11T01:59:40Z,spreads,Fairleigh Dickinson Knights,10.5,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,759951fe63ce023850658a6be1c38e38,2026-11-11T16:30:00Z,East Texas A&M Lions,Fairleigh Dickinson Knights,fanduel,2026-11-11T01:59:40Z,totals,Over,139.5,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,759951fe63ce023850658a6be1c38e38,2026-11-11T16:30:00Z,East Texas A&M Lions,Fairleigh Dickinson Knights,fanduel,2026-11-11T01:59:40Z,totals,Under,139.5,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,759951fe63ce023850658a6be1c38e38,2026-11-11T16:30:00Z,East Texas A&M Lions,Fairleigh Dickinson Knights,betonlineag,2026-11-11T02:00:16Z,spreads,East Texas A&M Lions,-12.0,-115,0.534884,0.510834
+2026-11-11T02:00:26Z,CBB,759951fe63ce023850658a6be1c38e38,2026-11-11T16:30:00Z,East Texas A&M Lions,Fairleigh Dickinson Knights,betonlineag,2026-11-11T02:00:16Z,spreads,Fairleigh Dickinson Knights,12.0,-105,0.512195,0.489166
+2026-11-11T02:00:26Z,CBB,759951fe63ce023850658a6be1c38e38,2026-11-11T16:30:00Z,East Texas A&M Lions,Fairleigh Dickinson Knights,betonlineag,2026-11-11T02:00:16Z,totals,Over,140.0,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,759951fe63ce023850658a6be1c38e38,2026-11-11T16:30:00Z,East Texas A&M Lions,Fairleigh Dickinson Knights,betonlineag,2026-11-11T02:00:16Z,totals,Under,140.0,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,759951fe63ce023850658a6be1c38e38,2026-11-11T16:30:00Z,East Texas A&M Lions,Fairleigh Dickinson Knights,lowvig,2026-11-11T02:00:21Z,spreads,East Texas A&M Lions,-12.0,-111,0.526066,0.511462
+2026-11-11T02:00:26Z,CBB,759951fe63ce023850658a6be1c38e38,2026-11-11T16:30:00Z,East Texas A&M Lions,Fairleigh Dickinson Knights,lowvig,2026-11-11T02:00:21Z,spreads,Fairleigh Dickinson Knights,12.0,-101,0.502488,0.488538
+2026-11-11T02:00:26Z,CBB,759951fe63ce023850658a6be1c38e38,2026-11-11T16:30:00Z,East Texas A&M Lions,Fairleigh Dickinson Knights,lowvig,2026-11-11T02:00:21Z,totals,Over,140.0,-108,0.519231,0.5
+2026-11-11T02:00:26Z,CBB,759951fe63ce023850658a6be1c38e38,2026-11-11T16:30:00Z,East Texas A&M Lions,Fairleigh Dickinson Knights,lowvig,2026-11-11T02:00:21Z,totals,Under,140.0,-108,0.519231,0.5
+2026-11-11T02:00:26Z,CBB,eb4ac6c20fe9cf690a2a2409335a3341,2026-11-11T17:00:00Z,Florida A&M Rattlers,UMKC Kangaroos,betonlineag,2026-11-11T02:00:16Z,spreads,Florida A&M Rattlers,8.0,-105,0.512195,0.489166
+2026-11-11T02:00:26Z,CBB,eb4ac6c20fe9cf690a2a2409335a3341,2026-11-11T17:00:00Z,Florida A&M Rattlers,UMKC Kangaroos,betonlineag,2026-11-11T02:00:16Z,spreads,UMKC Kangaroos,-8.0,-115,0.534884,0.510834
+2026-11-11T02:00:26Z,CBB,eb4ac6c20fe9cf690a2a2409335a3341,2026-11-11T17:00:00Z,Florida A&M Rattlers,UMKC Kangaroos,betonlineag,2026-11-11T02:00:16Z,totals,Over,153.0,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,eb4ac6c20fe9cf690a2a2409335a3341,2026-11-11T17:00:00Z,Florida A&M Rattlers,UMKC Kangaroos,betonlineag,2026-11-11T02:00:16Z,totals,Under,153.0,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,eb4ac6c20fe9cf690a2a2409335a3341,2026-11-11T17:00:00Z,Florida A&M Rattlers,UMKC Kangaroos,lowvig,2026-11-11T02:00:21Z,spreads,Florida A&M Rattlers,8.0,-101,0.502488,0.488538
+2026-11-11T02:00:26Z,CBB,eb4ac6c20fe9cf690a2a2409335a3341,2026-11-11T17:00:00Z,Florida A&M Rattlers,UMKC Kangaroos,lowvig,2026-11-11T02:00:21Z,spreads,UMKC Kangaroos,-8.0,-111,0.526066,0.511462
+2026-11-11T02:00:26Z,CBB,eb4ac6c20fe9cf690a2a2409335a3341,2026-11-11T17:00:00Z,Florida A&M Rattlers,UMKC Kangaroos,lowvig,2026-11-11T02:00:21Z,totals,Over,153.0,-108,0.519231,0.5
+2026-11-11T02:00:26Z,CBB,eb4ac6c20fe9cf690a2a2409335a3341,2026-11-11T17:00:00Z,Florida A&M Rattlers,UMKC Kangaroos,lowvig,2026-11-11T02:00:21Z,totals,Under,153.0,-108,0.519231,0.5
+2026-11-11T02:00:26Z,CBB,aa97877f068fe75687ae212a2c848bd9,2026-11-11T18:00:00Z,Albany Great Danes,Dartmouth Big Green,fanduel,2026-11-11T01:59:40Z,h2h,Albany Great Danes,,110,0.47619,0.455617
+2026-11-11T02:00:26Z,CBB,aa97877f068fe75687ae212a2c848bd9,2026-11-11T18:00:00Z,Albany Great Danes,Dartmouth Big Green,fanduel,2026-11-11T01:59:40Z,h2h,Dartmouth Big Green,,-132,0.568966,0.544383
+2026-11-11T02:00:26Z,CBB,aa97877f068fe75687ae212a2c848bd9,2026-11-11T18:00:00Z,Albany Great Danes,Dartmouth Big Green,fanduel,2026-11-11T01:59:40Z,spreads,Albany Great Danes,2.5,-120,0.545455,0.51928
+2026-11-11T02:00:26Z,CBB,aa97877f068fe75687ae212a2c848bd9,2026-11-11T18:00:00Z,Albany Great Danes,Dartmouth Big Green,fanduel,2026-11-11T01:59:40Z,spreads,Dartmouth Big Green,-2.5,-102,0.50495,0.48072
+2026-11-11T02:00:26Z,CBB,aa97877f068fe75687ae212a2c848bd9,2026-11-11T18:00:00Z,Albany Great Danes,Dartmouth Big Green,fanduel,2026-11-11T01:59:40Z,totals,Over,145.5,-106,0.514563,0.491336
+2026-11-11T02:00:26Z,CBB,aa97877f068fe75687ae212a2c848bd9,2026-11-11T18:00:00Z,Albany Great Danes,Dartmouth Big Green,fanduel,2026-11-11T01:59:40Z,totals,Under,145.5,-114,0.53271,0.508664
+2026-11-11T02:00:26Z,CBB,aa97877f068fe75687ae212a2c848bd9,2026-11-11T18:00:00Z,Albany Great Danes,Dartmouth Big Green,betonlineag,2026-11-11T02:00:16Z,spreads,Albany Great Danes,1.5,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,aa97877f068fe75687ae212a2c848bd9,2026-11-11T18:00:00Z,Albany Great Danes,Dartmouth Big Green,betonlineag,2026-11-11T02:00:16Z,spreads,Dartmouth Big Green,-1.5,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,aa97877f068fe75687ae212a2c848bd9,2026-11-11T18:00:00Z,Albany Great Danes,Dartmouth Big Green,betonlineag,2026-11-11T02:00:16Z,totals,Over,144.0,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,aa97877f068fe75687ae212a2c848bd9,2026-11-11T18:00:00Z,Albany Great Danes,Dartmouth Big Green,betonlineag,2026-11-11T02:00:16Z,totals,Under,144.0,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,aa97877f068fe75687ae212a2c848bd9,2026-11-11T18:00:00Z,Albany Great Danes,Dartmouth Big Green,lowvig,2026-11-11T02:00:21Z,spreads,Albany Great Danes,1.5,-106,0.514563,0.5
+2026-11-11T02:00:26Z,CBB,aa97877f068fe75687ae212a2c848bd9,2026-11-11T18:00:00Z,Albany Great Danes,Dartmouth Big Green,lowvig,2026-11-11T02:00:21Z,spreads,Dartmouth Big Green,-1.5,-106,0.514563,0.5
+2026-11-11T02:00:26Z,CBB,aa97877f068fe75687ae212a2c848bd9,2026-11-11T18:00:00Z,Albany Great Danes,Dartmouth Big Green,lowvig,2026-11-11T02:00:21Z,totals,Over,144.0,-108,0.519231,0.5
+2026-11-11T02:00:26Z,CBB,aa97877f068fe75687ae212a2c848bd9,2026-11-11T18:00:00Z,Albany Great Danes,Dartmouth Big Green,lowvig,2026-11-11T02:00:21Z,totals,Under,144.0,-108,0.519231,0.5
+2026-11-11T02:00:26Z,CBB,aa97877f068fe75687ae212a2c848bd9,2026-11-11T18:00:00Z,Albany Great Danes,Dartmouth Big Green,draftkings,2026-11-11T02:00:00Z,h2h,Albany Great Danes,,110,0.47619,0.457256
+2026-11-11T02:00:26Z,CBB,aa97877f068fe75687ae212a2c848bd9,2026-11-11T18:00:00Z,Albany Great Danes,Dartmouth Big Green,draftkings,2026-11-11T02:00:00Z,h2h,Dartmouth Big Green,,-130,0.565217,0.542744
+2026-11-11T02:00:26Z,CBB,aa97877f068fe75687ae212a2c848bd9,2026-11-11T18:00:00Z,Albany Great Danes,Dartmouth Big Green,draftkings,2026-11-11T02:00:00Z,spreads,Albany Great Danes,1.5,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,aa97877f068fe75687ae212a2c848bd9,2026-11-11T18:00:00Z,Albany Great Danes,Dartmouth Big Green,draftkings,2026-11-11T02:00:00Z,spreads,Dartmouth Big Green,-1.5,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,aa97877f068fe75687ae212a2c848bd9,2026-11-11T18:00:00Z,Albany Great Danes,Dartmouth Big Green,draftkings,2026-11-11T02:00:00Z,totals,Over,143.5,-115,0.534884,0.510834
+2026-11-11T02:00:26Z,CBB,aa97877f068fe75687ae212a2c848bd9,2026-11-11T18:00:00Z,Albany Great Danes,Dartmouth Big Green,draftkings,2026-11-11T02:00:00Z,totals,Under,143.5,-105,0.512195,0.489166
+2026-11-11T02:00:26Z,CBB,8a85464bb774b0a913a1c829899c30c2,2026-11-11T19:11:00Z,UC Davis Aggies,Incarnate Word Cardinals,betonlineag,2026-11-11T02:00:16Z,spreads,Incarnate Word Cardinals,10.0,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,8a85464bb774b0a913a1c829899c30c2,2026-11-11T19:11:00Z,UC Davis Aggies,Incarnate Word Cardinals,betonlineag,2026-11-11T02:00:16Z,spreads,UC Davis Aggies,-10.0,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,8a85464bb774b0a913a1c829899c30c2,2026-11-11T19:11:00Z,UC Davis Aggies,Incarnate Word Cardinals,betonlineag,2026-11-11T02:00:16Z,totals,Over,146.0,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,8a85464bb774b0a913a1c829899c30c2,2026-11-11T19:11:00Z,UC Davis Aggies,Incarnate Word Cardinals,betonlineag,2026-11-11T02:00:16Z,totals,Under,146.0,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,8a85464bb774b0a913a1c829899c30c2,2026-11-11T19:11:00Z,UC Davis Aggies,Incarnate Word Cardinals,lowvig,2026-11-11T02:00:21Z,spreads,Incarnate Word Cardinals,10.0,-106,0.514563,0.5
+2026-11-11T02:00:26Z,CBB,8a85464bb774b0a913a1c829899c30c2,2026-11-11T19:11:00Z,UC Davis Aggies,Incarnate Word Cardinals,lowvig,2026-11-11T02:00:21Z,spreads,UC Davis Aggies,-10.0,-106,0.514563,0.5
+2026-11-11T02:00:26Z,CBB,8a85464bb774b0a913a1c829899c30c2,2026-11-11T19:11:00Z,UC Davis Aggies,Incarnate Word Cardinals,lowvig,2026-11-11T02:00:21Z,totals,Over,146.0,-108,0.519231,0.5
+2026-11-11T02:00:26Z,CBB,8a85464bb774b0a913a1c829899c30c2,2026-11-11T19:11:00Z,UC Davis Aggies,Incarnate Word Cardinals,lowvig,2026-11-11T02:00:21Z,totals,Under,146.0,-108,0.519231,0.5
+2026-11-11T02:00:26Z,CBB,b4a1814a6efc7eb096e5ac5e857915b5,2026-11-11T20:00:00Z,Air Force Falcons,Loyola (Chi) Ramblers,betonlineag,2026-11-11T02:00:16Z,spreads,Air Force Falcons,8.5,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,b4a1814a6efc7eb096e5ac5e857915b5,2026-11-11T20:00:00Z,Air Force Falcons,Loyola (Chi) Ramblers,betonlineag,2026-11-11T02:00:16Z,spreads,Loyola (Chi) Ramblers,-8.5,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,b4a1814a6efc7eb096e5ac5e857915b5,2026-11-11T20:00:00Z,Air Force Falcons,Loyola (Chi) Ramblers,betonlineag,2026-11-11T02:00:16Z,totals,Over,155.0,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,b4a1814a6efc7eb096e5ac5e857915b5,2026-11-11T20:00:00Z,Air Force Falcons,Loyola (Chi) Ramblers,betonlineag,2026-11-11T02:00:16Z,totals,Under,155.0,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,b4a1814a6efc7eb096e5ac5e857915b5,2026-11-11T20:00:00Z,Air Force Falcons,Loyola (Chi) Ramblers,lowvig,2026-11-11T02:00:21Z,spreads,Air Force Falcons,8.5,-106,0.514563,0.5
+2026-11-11T02:00:26Z,CBB,b4a1814a6efc7eb096e5ac5e857915b5,2026-11-11T20:00:00Z,Air Force Falcons,Loyola (Chi) Ramblers,lowvig,2026-11-11T02:00:21Z,spreads,Loyola (Chi) Ramblers,-8.5,-106,0.514563,0.5
+2026-11-11T02:00:26Z,CBB,b4a1814a6efc7eb096e5ac5e857915b5,2026-11-11T20:00:00Z,Air Force Falcons,Loyola (Chi) Ramblers,lowvig,2026-11-11T02:00:21Z,totals,Over,155.0,-108,0.519231,0.5
+2026-11-11T02:00:26Z,CBB,b4a1814a6efc7eb096e5ac5e857915b5,2026-11-11T20:00:00Z,Air Force Falcons,Loyola (Chi) Ramblers,lowvig,2026-11-11T02:00:21Z,totals,Under,155.0,-108,0.519231,0.5
+2026-11-11T02:00:26Z,CBB,b4a1814a6efc7eb096e5ac5e857915b5,2026-11-11T20:00:00Z,Air Force Falcons,Loyola (Chi) Ramblers,draftkings,2026-11-11T02:00:00Z,spreads,Air Force Falcons,8.5,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,b4a1814a6efc7eb096e5ac5e857915b5,2026-11-11T20:00:00Z,Air Force Falcons,Loyola (Chi) Ramblers,draftkings,2026-11-11T02:00:00Z,spreads,Loyola (Chi) Ramblers,-8.5,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,b4a1814a6efc7eb096e5ac5e857915b5,2026-11-11T20:00:00Z,Air Force Falcons,Loyola (Chi) Ramblers,draftkings,2026-11-11T02:00:00Z,totals,Over,155.5,-112,0.528302,0.50433
+2026-11-11T02:00:26Z,CBB,b4a1814a6efc7eb096e5ac5e857915b5,2026-11-11T20:00:00Z,Air Force Falcons,Loyola (Chi) Ramblers,draftkings,2026-11-11T02:00:00Z,totals,Under,155.5,-108,0.519231,0.49567
+2026-11-11T02:00:26Z,CBB,b4a1814a6efc7eb096e5ac5e857915b5,2026-11-11T20:00:00Z,Air Force Falcons,Loyola (Chi) Ramblers,fanduel,2026-11-11T01:59:40Z,h2h,Air Force Falcons,,275,0.266667,0.255319
+2026-11-11T02:00:26Z,CBB,b4a1814a6efc7eb096e5ac5e857915b5,2026-11-11T20:00:00Z,Air Force Falcons,Loyola (Chi) Ramblers,fanduel,2026-11-11T01:59:40Z,h2h,Loyola (Chi) Ramblers,,-350,0.777778,0.744681
+2026-11-11T02:00:26Z,CBB,b4a1814a6efc7eb096e5ac5e857915b5,2026-11-11T20:00:00Z,Air Force Falcons,Loyola (Chi) Ramblers,fanduel,2026-11-11T01:59:40Z,spreads,Air Force Falcons,8.5,-120,0.545455,0.51928
+2026-11-11T02:00:26Z,CBB,b4a1814a6efc7eb096e5ac5e857915b5,2026-11-11T20:00:00Z,Air Force Falcons,Loyola (Chi) Ramblers,fanduel,2026-11-11T01:59:40Z,spreads,Loyola (Chi) Ramblers,-8.5,-102,0.50495,0.48072
+2026-11-11T02:00:26Z,CBB,b4a1814a6efc7eb096e5ac5e857915b5,2026-11-11T20:00:00Z,Air Force Falcons,Loyola (Chi) Ramblers,fanduel,2026-11-11T01:59:40Z,totals,Over,156.5,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,b4a1814a6efc7eb096e5ac5e857915b5,2026-11-11T20:00:00Z,Air Force Falcons,Loyola (Chi) Ramblers,fanduel,2026-11-11T01:59:40Z,totals,Under,156.5,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,fb4e0baed91adfe2f7de6ca28ed533e8,2026-11-11T20:00:00Z,Saint Joseph's Hawks,South Florida Bulls,betonlineag,2026-11-11T02:00:16Z,spreads,Saint Joseph's Hawks,8.0,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,fb4e0baed91adfe2f7de6ca28ed533e8,2026-11-11T20:00:00Z,Saint Joseph's Hawks,South Florida Bulls,betonlineag,2026-11-11T02:00:16Z,spreads,South Florida Bulls,-8.0,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,fb4e0baed91adfe2f7de6ca28ed533e8,2026-11-11T20:00:00Z,Saint Joseph's Hawks,South Florida Bulls,betonlineag,2026-11-11T02:00:16Z,totals,Over,151.0,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,fb4e0baed91adfe2f7de6ca28ed533e8,2026-11-11T20:00:00Z,Saint Joseph's Hawks,South Florida Bulls,betonlineag,2026-11-11T02:00:16Z,totals,Under,151.0,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,fb4e0baed91adfe2f7de6ca28ed533e8,2026-11-11T20:00:00Z,Saint Joseph's Hawks,South Florida Bulls,lowvig,2026-11-11T02:00:21Z,spreads,Saint Joseph's Hawks,8.0,-106,0.514563,0.5
+2026-11-11T02:00:26Z,CBB,fb4e0baed91adfe2f7de6ca28ed533e8,2026-11-11T20:00:00Z,Saint Joseph's Hawks,South Florida Bulls,lowvig,2026-11-11T02:00:21Z,spreads,South Florida Bulls,-8.0,-106,0.514563,0.5
+2026-11-11T02:00:26Z,CBB,fb4e0baed91adfe2f7de6ca28ed533e8,2026-11-11T20:00:00Z,Saint Joseph's Hawks,South Florida Bulls,lowvig,2026-11-11T02:00:21Z,totals,Over,151.0,-108,0.519231,0.5
+2026-11-11T02:00:26Z,CBB,fb4e0baed91adfe2f7de6ca28ed533e8,2026-11-11T20:00:00Z,Saint Joseph's Hawks,South Florida Bulls,lowvig,2026-11-11T02:00:21Z,totals,Under,151.0,-108,0.519231,0.5
+2026-11-11T02:00:26Z,CBB,fb4e0baed91adfe2f7de6ca28ed533e8,2026-11-11T20:00:00Z,Saint Joseph's Hawks,South Florida Bulls,fanduel,2026-11-11T01:59:40Z,h2h,Saint Joseph's Hawks,,255,0.28169,0.269923
+2026-11-11T02:00:26Z,CBB,fb4e0baed91adfe2f7de6ca28ed533e8,2026-11-11T20:00:00Z,Saint Joseph's Hawks,South Florida Bulls,fanduel,2026-11-11T01:59:40Z,h2h,South Florida Bulls,,-320,0.761905,0.730077
+2026-11-11T02:00:26Z,CBB,fb4e0baed91adfe2f7de6ca28ed533e8,2026-11-11T20:00:00Z,Saint Joseph's Hawks,South Florida Bulls,fanduel,2026-11-11T01:59:40Z,spreads,Saint Joseph's Hawks,7.5,-114,0.53271,0.508664
+2026-11-11T02:00:26Z,CBB,fb4e0baed91adfe2f7de6ca28ed533e8,2026-11-11T20:00:00Z,Saint Joseph's Hawks,South Florida Bulls,fanduel,2026-11-11T01:59:40Z,spreads,South Florida Bulls,-7.5,-106,0.514563,0.491336
+2026-11-11T02:00:26Z,CBB,fb4e0baed91adfe2f7de6ca28ed533e8,2026-11-11T20:00:00Z,Saint Joseph's Hawks,South Florida Bulls,fanduel,2026-11-11T01:59:40Z,totals,Over,151.5,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,fb4e0baed91adfe2f7de6ca28ed533e8,2026-11-11T20:00:00Z,Saint Joseph's Hawks,South Florida Bulls,fanduel,2026-11-11T01:59:40Z,totals,Under,151.5,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,fb4e0baed91adfe2f7de6ca28ed533e8,2026-11-11T20:00:00Z,Saint Joseph's Hawks,South Florida Bulls,draftkings,2026-11-11T02:00:00Z,h2h,Saint Joseph's Hawks,,260,0.277778,0.266458
+2026-11-11T02:00:26Z,CBB,fb4e0baed91adfe2f7de6ca28ed533e8,2026-11-11T20:00:00Z,Saint Joseph's Hawks,South Florida Bulls,draftkings,2026-11-11T02:00:00Z,h2h,South Florida Bulls,,-325,0.764706,0.733542
+2026-11-11T02:00:26Z,CBB,fb4e0baed91adfe2f7de6ca28ed533e8,2026-11-11T20:00:00Z,Saint Joseph's Hawks,South Florida Bulls,draftkings,2026-11-11T02:00:00Z,spreads,Saint Joseph's Hawks,7.5,-105,0.512195,0.489166
+2026-11-11T02:00:26Z,CBB,fb4e0baed91adfe2f7de6ca28ed533e8,2026-11-11T20:00:00Z,Saint Joseph's Hawks,South Florida Bulls,draftkings,2026-11-11T02:00:00Z,spreads,South Florida Bulls,-7.5,-115,0.534884,0.510834
+2026-11-11T02:00:26Z,CBB,fb4e0baed91adfe2f7de6ca28ed533e8,2026-11-11T20:00:00Z,Saint Joseph's Hawks,South Florida Bulls,draftkings,2026-11-11T02:00:00Z,totals,Over,151.5,-108,0.519231,0.49567
+2026-11-11T02:00:26Z,CBB,fb4e0baed91adfe2f7de6ca28ed533e8,2026-11-11T20:00:00Z,Saint Joseph's Hawks,South Florida Bulls,draftkings,2026-11-11T02:00:00Z,totals,Under,151.5,-112,0.528302,0.50433
+2026-11-11T02:00:26Z,CBB,83af3d625408a5c5f1b726fe740fc2ef,2026-11-11T21:00:00Z,East Carolina Pirates,North Carolina A&T Aggies,betonlineag,2026-11-11T02:00:16Z,spreads,East Carolina Pirates,-10.5,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,83af3d625408a5c5f1b726fe740fc2ef,2026-11-11T21:00:00Z,East Carolina Pirates,North Carolina A&T Aggies,betonlineag,2026-11-11T02:00:16Z,spreads,North Carolina A&T Aggies,10.5,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,83af3d625408a5c5f1b726fe740fc2ef,2026-11-11T21:00:00Z,East Carolina Pirates,North Carolina A&T Aggies,betonlineag,2026-11-11T02:00:16Z,totals,Over,151.5,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,83af3d625408a5c5f1b726fe740fc2ef,2026-11-11T21:00:00Z,East Carolina Pirates,North Carolina A&T Aggies,betonlineag,2026-11-11T02:00:16Z,totals,Under,151.5,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,83af3d625408a5c5f1b726fe740fc2ef,2026-11-11T21:00:00Z,East Carolina Pirates,North Carolina A&T Aggies,lowvig,2026-11-11T02:00:21Z,spreads,East Carolina Pirates,-10.5,-106,0.514563,0.5
+2026-11-11T02:00:26Z,CBB,83af3d625408a5c5f1b726fe740fc2ef,2026-11-11T21:00:00Z,East Carolina Pirates,North Carolina A&T Aggies,lowvig,2026-11-11T02:00:21Z,spreads,North Carolina A&T Aggies,10.5,-106,0.514563,0.5
+2026-11-11T02:00:26Z,CBB,83af3d625408a5c5f1b726fe740fc2ef,2026-11-11T21:00:00Z,East Carolina Pirates,North Carolina A&T Aggies,lowvig,2026-11-11T02:00:21Z,totals,Over,151.5,-108,0.519231,0.5
+2026-11-11T02:00:26Z,CBB,83af3d625408a5c5f1b726fe740fc2ef,2026-11-11T21:00:00Z,East Carolina Pirates,North Carolina A&T Aggies,lowvig,2026-11-11T02:00:21Z,totals,Under,151.5,-108,0.519231,0.5
+2026-11-11T02:00:26Z,CBB,83af3d625408a5c5f1b726fe740fc2ef,2026-11-11T21:00:00Z,East Carolina Pirates,North Carolina A&T Aggies,draftkings,2026-11-11T02:00:00Z,spreads,East Carolina Pirates,-10.5,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,83af3d625408a5c5f1b726fe740fc2ef,2026-11-11T21:00:00Z,East Carolina Pirates,North Carolina A&T Aggies,draftkings,2026-11-11T02:00:00Z,spreads,North Carolina A&T Aggies,10.5,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,83af3d625408a5c5f1b726fe740fc2ef,2026-11-11T21:00:00Z,East Carolina Pirates,North Carolina A&T Aggies,draftkings,2026-11-11T02:00:00Z,totals,Over,151.5,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,83af3d625408a5c5f1b726fe740fc2ef,2026-11-11T21:00:00Z,East Carolina Pirates,North Carolina A&T Aggies,draftkings,2026-11-11T02:00:00Z,totals,Under,151.5,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,83af3d625408a5c5f1b726fe740fc2ef,2026-11-11T21:00:00Z,East Carolina Pirates,North Carolina A&T Aggies,fanduel,2026-11-11T01:59:40Z,h2h,East Carolina Pirates,,-610,0.859155,0.822677
+2026-11-11T02:00:26Z,CBB,83af3d625408a5c5f1b726fe740fc2ef,2026-11-11T21:00:00Z,East Carolina Pirates,North Carolina A&T Aggies,fanduel,2026-11-11T01:59:40Z,h2h,North Carolina A&T Aggies,,440,0.185185,0.177323
+2026-11-11T02:00:26Z,CBB,83af3d625408a5c5f1b726fe740fc2ef,2026-11-11T21:00:00Z,East Carolina Pirates,North Carolina A&T Aggies,fanduel,2026-11-11T01:59:40Z,spreads,East Carolina Pirates,-10.5,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,83af3d625408a5c5f1b726fe740fc2ef,2026-11-11T21:00:00Z,East Carolina Pirates,North Carolina A&T Aggies,fanduel,2026-11-11T01:59:40Z,spreads,North Carolina A&T Aggies,10.5,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,83af3d625408a5c5f1b726fe740fc2ef,2026-11-11T21:00:00Z,East Carolina Pirates,North Carolina A&T Aggies,fanduel,2026-11-11T01:59:40Z,totals,Over,152.5,-115,0.534884,0.510834
+2026-11-11T02:00:26Z,CBB,83af3d625408a5c5f1b726fe740fc2ef,2026-11-11T21:00:00Z,East Carolina Pirates,North Carolina A&T Aggies,fanduel,2026-11-11T01:59:40Z,totals,Under,152.5,-105,0.512195,0.489166
+2026-11-11T02:00:26Z,CBB,0c0027ceb34cc2898a318f1453a25a68,2026-11-11T22:00:00Z,San Diego St Aztecs,Bethune-Cookman Wildcats,fanduel,2026-11-11T01:59:40Z,h2h,Bethune-Cookman Wildcats,,1600,0.058824,0.05672
+2026-11-11T02:00:26Z,CBB,0c0027ceb34cc2898a318f1453a25a68,2026-11-11T22:00:00Z,San Diego St Aztecs,Bethune-Cookman Wildcats,fanduel,2026-11-11T01:59:40Z,h2h,San Diego St Aztecs,,-4500,0.978261,0.94328
+2026-11-11T02:00:26Z,CBB,0c0027ceb34cc2898a318f1453a25a68,2026-11-11T22:00:00Z,San Diego St Aztecs,Bethune-Cookman Wildcats,fanduel,2026-11-11T01:59:40Z,spreads,Bethune-Cookman Wildcats,18.5,-105,0.512195,0.489166
+2026-11-11T02:00:26Z,CBB,0c0027ceb34cc2898a318f1453a25a68,2026-11-11T22:00:00Z,San Diego St Aztecs,Bethune-Cookman Wildcats,fanduel,2026-11-11T01:59:40Z,spreads,San Diego St Aztecs,-18.5,-115,0.534884,0.510834
+2026-11-11T02:00:26Z,CBB,0c0027ceb34cc2898a318f1453a25a68,2026-11-11T22:00:00Z,San Diego St Aztecs,Bethune-Cookman Wildcats,fanduel,2026-11-11T01:59:40Z,totals,Over,152.5,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,0c0027ceb34cc2898a318f1453a25a68,2026-11-11T22:00:00Z,San Diego St Aztecs,Bethune-Cookman Wildcats,fanduel,2026-11-11T01:59:40Z,totals,Under,152.5,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,0c0027ceb34cc2898a318f1453a25a68,2026-11-11T22:00:00Z,San Diego St Aztecs,Bethune-Cookman Wildcats,betonlineag,2026-11-11T02:00:16Z,spreads,Bethune-Cookman Wildcats,18.0,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,0c0027ceb34cc2898a318f1453a25a68,2026-11-11T22:00:00Z,San Diego St Aztecs,Bethune-Cookman Wildcats,betonlineag,2026-11-11T02:00:16Z,spreads,San Diego St Aztecs,-18.0,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,0c0027ceb34cc2898a318f1453a25a68,2026-11-11T22:00:00Z,San Diego St Aztecs,Bethune-Cookman Wildcats,betonlineag,2026-11-11T02:00:16Z,totals,Over,152.0,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,0c0027ceb34cc2898a318f1453a25a68,2026-11-11T22:00:00Z,San Diego St Aztecs,Bethune-Cookman Wildcats,betonlineag,2026-11-11T02:00:16Z,totals,Under,152.0,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,0c0027ceb34cc2898a318f1453a25a68,2026-11-11T22:00:00Z,San Diego St Aztecs,Bethune-Cookman Wildcats,lowvig,2026-11-11T02:00:21Z,spreads,Bethune-Cookman Wildcats,18.0,-106,0.514563,0.5
+2026-11-11T02:00:26Z,CBB,0c0027ceb34cc2898a318f1453a25a68,2026-11-11T22:00:00Z,San Diego St Aztecs,Bethune-Cookman Wildcats,lowvig,2026-11-11T02:00:21Z,spreads,San Diego St Aztecs,-18.0,-106,0.514563,0.5
+2026-11-11T02:00:26Z,CBB,0c0027ceb34cc2898a318f1453a25a68,2026-11-11T22:00:00Z,San Diego St Aztecs,Bethune-Cookman Wildcats,lowvig,2026-11-11T02:00:21Z,totals,Over,152.0,-108,0.519231,0.5
+2026-11-11T02:00:26Z,CBB,0c0027ceb34cc2898a318f1453a25a68,2026-11-11T22:00:00Z,San Diego St Aztecs,Bethune-Cookman Wildcats,lowvig,2026-11-11T02:00:21Z,totals,Under,152.0,-108,0.519231,0.5
+2026-11-11T02:00:26Z,CBB,0c0027ceb34cc2898a318f1453a25a68,2026-11-11T22:00:00Z,San Diego St Aztecs,Bethune-Cookman Wildcats,draftkings,2026-11-11T02:00:00Z,h2h,Bethune-Cookman Wildcats,,1000,0.090909,0.087558
+2026-11-11T02:00:26Z,CBB,0c0027ceb34cc2898a318f1453a25a68,2026-11-11T22:00:00Z,San Diego St Aztecs,Bethune-Cookman Wildcats,draftkings,2026-11-11T02:00:00Z,h2h,San Diego St Aztecs,,-1800,0.947368,0.912442
+2026-11-11T02:00:26Z,CBB,0c0027ceb34cc2898a318f1453a25a68,2026-11-11T22:00:00Z,San Diego St Aztecs,Bethune-Cookman Wildcats,draftkings,2026-11-11T02:00:00Z,spreads,Bethune-Cookman Wildcats,17.5,-102,0.50495,0.482636
+2026-11-11T02:00:26Z,CBB,0c0027ceb34cc2898a318f1453a25a68,2026-11-11T22:00:00Z,San Diego St Aztecs,Bethune-Cookman Wildcats,draftkings,2026-11-11T02:00:00Z,spreads,San Diego St Aztecs,-17.5,-118,0.541284,0.517364
+2026-11-11T02:00:26Z,CBB,0c0027ceb34cc2898a318f1453a25a68,2026-11-11T22:00:00Z,San Diego St Aztecs,Bethune-Cookman Wildcats,draftkings,2026-11-11T02:00:00Z,totals,Over,152.5,-105,0.512195,0.489166
+2026-11-11T02:00:26Z,CBB,0c0027ceb34cc2898a318f1453a25a68,2026-11-11T22:00:00Z,San Diego St Aztecs,Bethune-Cookman Wildcats,draftkings,2026-11-11T02:00:00Z,totals,Under,152.5,-115,0.534884,0.510834
+2026-11-11T02:00:26Z,CBB,b153a909b36dcd998bab181db782802c,2026-11-11T22:30:00Z,Navy Midshipmen,Pennsylvania Quakers,fanduel,2026-11-11T01:59:40Z,h2h,Navy Midshipmen,,390,0.204082,0.195228
+2026-11-11T02:00:26Z,CBB,b153a909b36dcd998bab181db782802c,2026-11-11T22:30:00Z,Navy Midshipmen,Pennsylvania Quakers,fanduel,2026-11-11T01:59:40Z,h2h,Pennsylvania Quakers,,-530,0.84127,0.804772
+2026-11-11T02:00:26Z,CBB,b153a909b36dcd998bab181db782802c,2026-11-11T22:30:00Z,Navy Midshipmen,Pennsylvania Quakers,fanduel,2026-11-11T01:59:40Z,spreads,Navy Midshipmen,10.5,-120,0.545455,0.51928
+2026-11-11T02:00:26Z,CBB,b153a909b36dcd998bab181db782802c,2026-11-11T22:30:00Z,Navy Midshipmen,Pennsylvania Quakers,fanduel,2026-11-11T01:59:40Z,spreads,Pennsylvania Quakers,-10.5,-102,0.50495,0.48072
+2026-11-11T02:00:26Z,CBB,b153a909b36dcd998bab181db782802c,2026-11-11T22:30:00Z,Navy Midshipmen,Pennsylvania Quakers,fanduel,2026-11-11T01:59:40Z,totals,Over,148.5,-115,0.534884,0.510834
+2026-11-11T02:00:26Z,CBB,b153a909b36dcd998bab181db782802c,2026-11-11T22:30:00Z,Navy Midshipmen,Pennsylvania Quakers,fanduel,2026-11-11T01:59:40Z,totals,Under,148.5,-105,0.512195,0.489166
+2026-11-11T02:00:26Z,CBB,b153a909b36dcd998bab181db782802c,2026-11-11T22:30:00Z,Navy Midshipmen,Pennsylvania Quakers,betonlineag,2026-11-11T02:00:16Z,spreads,Navy Midshipmen,9.5,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,b153a909b36dcd998bab181db782802c,2026-11-11T22:30:00Z,Navy Midshipmen,Pennsylvania Quakers,betonlineag,2026-11-11T02:00:16Z,spreads,Pennsylvania Quakers,-9.5,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,b153a909b36dcd998bab181db782802c,2026-11-11T22:30:00Z,Navy Midshipmen,Pennsylvania Quakers,betonlineag,2026-11-11T02:00:16Z,totals,Over,149.0,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,b153a909b36dcd998bab181db782802c,2026-11-11T22:30:00Z,Navy Midshipmen,Pennsylvania Quakers,betonlineag,2026-11-11T02:00:16Z,totals,Under,149.0,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,b153a909b36dcd998bab181db782802c,2026-11-11T22:30:00Z,Navy Midshipmen,Pennsylvania Quakers,lowvig,2026-11-11T02:00:21Z,spreads,Navy Midshipmen,9.5,-106,0.514563,0.5
+2026-11-11T02:00:26Z,CBB,b153a909b36dcd998bab181db782802c,2026-11-11T22:30:00Z,Navy Midshipmen,Pennsylvania Quakers,lowvig,2026-11-11T02:00:21Z,spreads,Pennsylvania Quakers,-9.5,-106,0.514563,0.5
+2026-11-11T02:00:26Z,CBB,b153a909b36dcd998bab181db782802c,2026-11-11T22:30:00Z,Navy Midshipmen,Pennsylvania Quakers,lowvig,2026-11-11T02:00:21Z,totals,Over,149.0,-108,0.519231,0.5
+2026-11-11T02:00:26Z,CBB,b153a909b36dcd998bab181db782802c,2026-11-11T22:30:00Z,Navy Midshipmen,Pennsylvania Quakers,lowvig,2026-11-11T02:00:21Z,totals,Under,149.0,-108,0.519231,0.5
+2026-11-11T02:00:26Z,CBB,5b6355f8a6a8f6fe34a477c2b8e3a7e7,2026-11-11T23:00:00Z,VMI Keydets,North Carolina Central Eagles,fanduel,2026-11-11T01:59:40Z,h2h,North Carolina Central Eagles,,205,0.327869,0.313397
+2026-11-11T02:00:26Z,CBB,5b6355f8a6a8f6fe34a477c2b8e3a7e7,2026-11-11T23:00:00Z,VMI Keydets,North Carolina Central Eagles,fanduel,2026-11-11T01:59:40Z,h2h,VMI Keydets,,-255,0.71831,0.686603
+2026-11-11T02:00:26Z,CBB,5b6355f8a6a8f6fe34a477c2b8e3a7e7,2026-11-11T23:00:00Z,VMI Keydets,North Carolina Central Eagles,fanduel,2026-11-11T01:59:40Z,spreads,North Carolina Central Eagles,5.5,-102,0.50495,0.48072
+2026-11-11T02:00:26Z,CBB,5b6355f8a6a8f6fe34a477c2b8e3a7e7,2026-11-11T23:00:00Z,VMI Keydets,North Carolina Central Eagles,fanduel,2026-11-11T01:59:40Z,spreads,VMI Keydets,-5.5,-120,0.545455,0.51928
+2026-11-11T02:00:26Z,CBB,5b6355f8a6a8f6fe34a477c2b8e3a7e7,2026-11-11T23:00:00Z,VMI Keydets,North Carolina Central Eagles,fanduel,2026-11-11T01:59:40Z,totals,Over,151.5,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,5b6355f8a6a8f6fe34a477c2b8e3a7e7,2026-11-11T23:00:00Z,VMI Keydets,North Carolina Central Eagles,fanduel,2026-11-11T01:59:40Z,totals,Under,151.5,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,5b6355f8a6a8f6fe34a477c2b8e3a7e7,2026-11-11T23:00:00Z,VMI Keydets,North Carolina Central Eagles,betonlineag,2026-11-11T02:00:16Z,spreads,North Carolina Central Eagles,6.5,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,5b6355f8a6a8f6fe34a477c2b8e3a7e7,2026-11-11T23:00:00Z,VMI Keydets,North Carolina Central Eagles,betonlineag,2026-11-11T02:00:16Z,spreads,VMI Keydets,-6.5,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,5b6355f8a6a8f6fe34a477c2b8e3a7e7,2026-11-11T23:00:00Z,VMI Keydets,North Carolina Central Eagles,betonlineag,2026-11-11T02:00:16Z,totals,Over,150.0,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,5b6355f8a6a8f6fe34a477c2b8e3a7e7,2026-11-11T23:00:00Z,VMI Keydets,North Carolina Central Eagles,betonlineag,2026-11-11T02:00:16Z,totals,Under,150.0,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,5b6355f8a6a8f6fe34a477c2b8e3a7e7,2026-11-11T23:00:00Z,VMI Keydets,North Carolina Central Eagles,lowvig,2026-11-11T02:00:21Z,spreads,North Carolina Central Eagles,6.5,-106,0.514563,0.5
+2026-11-11T02:00:26Z,CBB,5b6355f8a6a8f6fe34a477c2b8e3a7e7,2026-11-11T23:00:00Z,VMI Keydets,North Carolina Central Eagles,lowvig,2026-11-11T02:00:21Z,spreads,VMI Keydets,-6.5,-106,0.514563,0.5
+2026-11-11T02:00:26Z,CBB,5b6355f8a6a8f6fe34a477c2b8e3a7e7,2026-11-11T23:00:00Z,VMI Keydets,North Carolina Central Eagles,lowvig,2026-11-11T02:00:21Z,totals,Over,150.0,-108,0.519231,0.5
+2026-11-11T02:00:26Z,CBB,5b6355f8a6a8f6fe34a477c2b8e3a7e7,2026-11-11T23:00:00Z,VMI Keydets,North Carolina Central Eagles,lowvig,2026-11-11T02:00:21Z,totals,Under,150.0,-108,0.519231,0.5
+2026-11-11T02:00:26Z,CBB,5b6355f8a6a8f6fe34a477c2b8e3a7e7,2026-11-11T23:00:00Z,VMI Keydets,North Carolina Central Eagles,draftkings,2026-11-11T02:00:00Z,h2h,North Carolina Central Eagles,,215,0.31746,0.30423
+2026-11-11T02:00:26Z,CBB,5b6355f8a6a8f6fe34a477c2b8e3a7e7,2026-11-11T23:00:00Z,VMI Keydets,North Carolina Central Eagles,draftkings,2026-11-11T02:00:00Z,h2h,VMI Keydets,,-265,0.726027,0.69577
+2026-11-11T02:00:26Z,CBB,5b6355f8a6a8f6fe34a477c2b8e3a7e7,2026-11-11T23:00:00Z,VMI Keydets,North Carolina Central Eagles,draftkings,2026-11-11T02:00:00Z,spreads,North Carolina Central Eagles,6.5,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,5b6355f8a6a8f6fe34a477c2b8e3a7e7,2026-11-11T23:00:00Z,VMI Keydets,North Carolina Central Eagles,draftkings,2026-11-11T02:00:00Z,spreads,VMI Keydets,-6.5,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,5b6355f8a6a8f6fe34a477c2b8e3a7e7,2026-11-11T23:00:00Z,VMI Keydets,North Carolina Central Eagles,draftkings,2026-11-11T02:00:00Z,totals,Over,150.5,-105,0.512195,0.489166
+2026-11-11T02:00:26Z,CBB,5b6355f8a6a8f6fe34a477c2b8e3a7e7,2026-11-11T23:00:00Z,VMI Keydets,North Carolina Central Eagles,draftkings,2026-11-11T02:00:00Z,totals,Under,150.5,-115,0.534884,0.510834
+2026-11-11T02:00:26Z,CBB,c07a4ccdd6e2560b5829395b56863dc1,2026-11-11T23:30:00Z,Temple Owls,Charleston Cougars,betonlineag,2026-11-11T02:00:16Z,spreads,Charleston Cougars,0.0,-105,0.512195,0.489166
+2026-11-11T02:00:26Z,CBB,c07a4ccdd6e2560b5829395b56863dc1,2026-11-11T23:30:00Z,Temple Owls,Charleston Cougars,betonlineag,2026-11-11T02:00:16Z,spreads,Temple Owls,0.0,-115,0.534884,0.510834
+2026-11-11T02:00:26Z,CBB,c07a4ccdd6e2560b5829395b56863dc1,2026-11-11T23:30:00Z,Temple Owls,Charleston Cougars,betonlineag,2026-11-11T02:00:16Z,totals,Over,153.5,-115,0.534884,0.510834
+2026-11-11T02:00:26Z,CBB,c07a4ccdd6e2560b5829395b56863dc1,2026-11-11T23:30:00Z,Temple Owls,Charleston Cougars,betonlineag,2026-11-11T02:00:16Z,totals,Under,153.5,-105,0.512195,0.489166
+2026-11-11T02:00:26Z,CBB,c07a4ccdd6e2560b5829395b56863dc1,2026-11-11T23:30:00Z,Temple Owls,Charleston Cougars,lowvig,2026-11-11T02:00:21Z,spreads,Charleston Cougars,0.0,-101,0.502488,0.488538
+2026-11-11T02:00:26Z,CBB,c07a4ccdd6e2560b5829395b56863dc1,2026-11-11T23:30:00Z,Temple Owls,Charleston Cougars,lowvig,2026-11-11T02:00:21Z,spreads,Temple Owls,0.0,-111,0.526066,0.511462
+2026-11-11T02:00:26Z,CBB,c07a4ccdd6e2560b5829395b56863dc1,2026-11-11T23:30:00Z,Temple Owls,Charleston Cougars,lowvig,2026-11-11T02:00:21Z,totals,Over,153.5,-113,0.530516,0.511141
+2026-11-11T02:00:26Z,CBB,c07a4ccdd6e2560b5829395b56863dc1,2026-11-11T23:30:00Z,Temple Owls,Charleston Cougars,lowvig,2026-11-11T02:00:21Z,totals,Under,153.5,-103,0.507389,0.488859
+2026-11-11T02:00:26Z,CBB,c07a4ccdd6e2560b5829395b56863dc1,2026-11-11T23:30:00Z,Temple Owls,Charleston Cougars,draftkings,2026-11-11T02:00:00Z,h2h,Charleston Cougars,,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,c07a4ccdd6e2560b5829395b56863dc1,2026-11-11T23:30:00Z,Temple Owls,Charleston Cougars,draftkings,2026-11-11T02:00:00Z,h2h,Temple Owls,,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,c07a4ccdd6e2560b5829395b56863dc1,2026-11-11T23:30:00Z,Temple Owls,Charleston Cougars,draftkings,2026-11-11T02:00:00Z,spreads,Charleston Cougars,1.5,-115,0.534884,0.510834
+2026-11-11T02:00:26Z,CBB,c07a4ccdd6e2560b5829395b56863dc1,2026-11-11T23:30:00Z,Temple Owls,Charleston Cougars,draftkings,2026-11-11T02:00:00Z,spreads,Temple Owls,-1.5,-105,0.512195,0.489166
+2026-11-11T02:00:26Z,CBB,c07a4ccdd6e2560b5829395b56863dc1,2026-11-11T23:30:00Z,Temple Owls,Charleston Cougars,draftkings,2026-11-11T02:00:00Z,totals,Over,154.5,-108,0.519231,0.49567
+2026-11-11T02:00:26Z,CBB,c07a4ccdd6e2560b5829395b56863dc1,2026-11-11T23:30:00Z,Temple Owls,Charleston Cougars,draftkings,2026-11-11T02:00:00Z,totals,Under,154.5,-112,0.528302,0.50433
+2026-11-11T02:00:26Z,CBB,c07a4ccdd6e2560b5829395b56863dc1,2026-11-11T23:30:00Z,Temple Owls,Charleston Cougars,fanduel,2026-11-11T01:59:40Z,h2h,Charleston Cougars,,-113,0.530516,0.507633
+2026-11-11T02:00:26Z,CBB,c07a4ccdd6e2560b5829395b56863dc1,2026-11-11T23:30:00Z,Temple Owls,Charleston Cougars,fanduel,2026-11-11T01:59:40Z,h2h,Temple Owls,,-106,0.514563,0.492367
+2026-11-11T02:00:26Z,CBB,c07a4ccdd6e2560b5829395b56863dc1,2026-11-11T23:30:00Z,Temple Owls,Charleston Cougars,fanduel,2026-11-11T01:59:40Z,spreads,Charleston Cougars,-1.5,100,0.5,0.476395
+2026-11-11T02:00:26Z,CBB,c07a4ccdd6e2560b5829395b56863dc1,2026-11-11T23:30:00Z,Temple Owls,Charleston Cougars,fanduel,2026-11-11T01:59:40Z,spreads,Temple Owls,1.5,-122,0.54955,0.523605
+2026-11-11T02:00:26Z,CBB,c07a4ccdd6e2560b5829395b56863dc1,2026-11-11T23:30:00Z,Temple Owls,Charleston Cougars,fanduel,2026-11-11T01:59:40Z,totals,Over,154.5,-114,0.53271,0.508664
+2026-11-11T02:00:26Z,CBB,c07a4ccdd6e2560b5829395b56863dc1,2026-11-11T23:30:00Z,Temple Owls,Charleston Cougars,fanduel,2026-11-11T01:59:40Z,totals,Under,154.5,-106,0.514563,0.491336
+2026-11-11T02:00:26Z,CBB,460ff0fdd5edcbe00e3f8cb6e74d6fbb,2026-11-11T23:30:00Z,IUPUI Jaguars,Southern Indiana Screaming Eagles,betonlineag,2026-11-11T02:00:16Z,spreads,IUPUI Jaguars,-6.0,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,460ff0fdd5edcbe00e3f8cb6e74d6fbb,2026-11-11T23:30:00Z,IUPUI Jaguars,Southern Indiana Screaming Eagles,betonlineag,2026-11-11T02:00:16Z,spreads,Southern Indiana Screaming Eagles,6.0,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,460ff0fdd5edcbe00e3f8cb6e74d6fbb,2026-11-11T23:30:00Z,IUPUI Jaguars,Southern Indiana Screaming Eagles,betonlineag,2026-11-11T02:00:16Z,totals,Over,160.0,-115,0.534884,0.510834
+2026-11-11T02:00:26Z,CBB,460ff0fdd5edcbe00e3f8cb6e74d6fbb,2026-11-11T23:30:00Z,IUPUI Jaguars,Southern Indiana Screaming Eagles,betonlineag,2026-11-11T02:00:16Z,totals,Under,160.0,-105,0.512195,0.489166
+2026-11-11T02:00:26Z,CBB,460ff0fdd5edcbe00e3f8cb6e74d6fbb,2026-11-11T23:30:00Z,IUPUI Jaguars,Southern Indiana Screaming Eagles,lowvig,2026-11-11T02:00:21Z,spreads,IUPUI Jaguars,-6.0,-106,0.514563,0.5
+2026-11-11T02:00:26Z,CBB,460ff0fdd5edcbe00e3f8cb6e74d6fbb,2026-11-11T23:30:00Z,IUPUI Jaguars,Southern Indiana Screaming Eagles,lowvig,2026-11-11T02:00:21Z,spreads,Southern Indiana Screaming Eagles,6.0,-106,0.514563,0.5
+2026-11-11T02:00:26Z,CBB,460ff0fdd5edcbe00e3f8cb6e74d6fbb,2026-11-11T23:30:00Z,IUPUI Jaguars,Southern Indiana Screaming Eagles,lowvig,2026-11-11T02:00:21Z,totals,Over,160.0,-113,0.530516,0.511141
+2026-11-11T02:00:26Z,CBB,460ff0fdd5edcbe00e3f8cb6e74d6fbb,2026-11-11T23:30:00Z,IUPUI Jaguars,Southern Indiana Screaming Eagles,lowvig,2026-11-11T02:00:21Z,totals,Under,160.0,-103,0.507389,0.488859
+2026-11-11T02:00:26Z,CBB,460ff0fdd5edcbe00e3f8cb6e74d6fbb,2026-11-11T23:30:00Z,IUPUI Jaguars,Southern Indiana Screaming Eagles,fanduel,2026-11-11T01:59:40Z,h2h,IUPUI Jaguars,,-285,0.74026,0.709544
+2026-11-11T02:00:26Z,CBB,460ff0fdd5edcbe00e3f8cb6e74d6fbb,2026-11-11T23:30:00Z,IUPUI Jaguars,Southern Indiana Screaming Eagles,fanduel,2026-11-11T01:59:40Z,h2h,Southern Indiana Screaming Eagles,,230,0.30303,0.290456
+2026-11-11T02:00:26Z,CBB,460ff0fdd5edcbe00e3f8cb6e74d6fbb,2026-11-11T23:30:00Z,IUPUI Jaguars,Southern Indiana Screaming Eagles,fanduel,2026-11-11T01:59:40Z,spreads,IUPUI Jaguars,-6.5,-114,0.53271,0.508664
+2026-11-11T02:00:26Z,CBB,460ff0fdd5edcbe00e3f8cb6e74d6fbb,2026-11-11T23:30:00Z,IUPUI Jaguars,Southern Indiana Screaming Eagles,fanduel,2026-11-11T01:59:40Z,spreads,Southern Indiana Screaming Eagles,6.5,-106,0.514563,0.491336
+2026-11-11T02:00:26Z,CBB,460ff0fdd5edcbe00e3f8cb6e74d6fbb,2026-11-11T23:30:00Z,IUPUI Jaguars,Southern Indiana Screaming Eagles,fanduel,2026-11-11T01:59:40Z,totals,Over,162.5,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,460ff0fdd5edcbe00e3f8cb6e74d6fbb,2026-11-11T23:30:00Z,IUPUI Jaguars,Southern Indiana Screaming Eagles,fanduel,2026-11-11T01:59:40Z,totals,Under,162.5,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,460ff0fdd5edcbe00e3f8cb6e74d6fbb,2026-11-11T23:30:00Z,IUPUI Jaguars,Southern Indiana Screaming Eagles,draftkings,2026-11-11T02:00:00Z,spreads,IUPUI Jaguars,-5.5,-115,0.534884,0.510834
+2026-11-11T02:00:26Z,CBB,460ff0fdd5edcbe00e3f8cb6e74d6fbb,2026-11-11T23:30:00Z,IUPUI Jaguars,Southern Indiana Screaming Eagles,draftkings,2026-11-11T02:00:00Z,spreads,Southern Indiana Screaming Eagles,5.5,-105,0.512195,0.489166
+2026-11-11T02:00:26Z,CBB,460ff0fdd5edcbe00e3f8cb6e74d6fbb,2026-11-11T23:30:00Z,IUPUI Jaguars,Southern Indiana Screaming Eagles,draftkings,2026-11-11T02:00:00Z,totals,Over,161.5,-105,0.512195,0.489166
+2026-11-11T02:00:26Z,CBB,460ff0fdd5edcbe00e3f8cb6e74d6fbb,2026-11-11T23:30:00Z,IUPUI Jaguars,Southern Indiana Screaming Eagles,draftkings,2026-11-11T02:00:00Z,totals,Under,161.5,-115,0.534884,0.510834
+2026-11-11T02:00:26Z,CBB,3701dfd3294546a83cc0c666d61f49eb,2026-11-12T00:00:00Z,East Tennessee St Buccaneers,Campbell Fighting Camels,betonlineag,2026-11-11T02:00:16Z,spreads,Campbell Fighting Camels,6.0,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,3701dfd3294546a83cc0c666d61f49eb,2026-11-12T00:00:00Z,East Tennessee St Buccaneers,Campbell Fighting Camels,betonlineag,2026-11-11T02:00:16Z,spreads,East Tennessee St Buccaneers,-6.0,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,3701dfd3294546a83cc0c666d61f49eb,2026-11-12T00:00:00Z,East Tennessee St Buccaneers,Campbell Fighting Camels,betonlineag,2026-11-11T02:00:16Z,totals,Over,147.5,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,3701dfd3294546a83cc0c666d61f49eb,2026-11-12T00:00:00Z,East Tennessee St Buccaneers,Campbell Fighting Camels,betonlineag,2026-11-11T02:00:16Z,totals,Under,147.5,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,3701dfd3294546a83cc0c666d61f49eb,2026-11-12T00:00:00Z,East Tennessee St Buccaneers,Campbell Fighting Camels,lowvig,2026-11-11T02:00:21Z,spreads,Campbell Fighting Camels,6.0,-106,0.514563,0.5
+2026-11-11T02:00:26Z,CBB,3701dfd3294546a83cc0c666d61f49eb,2026-11-12T00:00:00Z,East Tennessee St Buccaneers,Campbell Fighting Camels,lowvig,2026-11-11T02:00:21Z,spreads,East Tennessee St Buccaneers,-6.0,-106,0.514563,0.5
+2026-11-11T02:00:26Z,CBB,3701dfd3294546a83cc0c666d61f49eb,2026-11-12T00:00:00Z,East Tennessee St Buccaneers,Campbell Fighting Camels,lowvig,2026-11-11T02:00:21Z,totals,Over,147.5,-108,0.519231,0.5
+2026-11-11T02:00:26Z,CBB,3701dfd3294546a83cc0c666d61f49eb,2026-11-12T00:00:00Z,East Tennessee St Buccaneers,Campbell Fighting Camels,lowvig,2026-11-11T02:00:21Z,totals,Under,147.5,-108,0.519231,0.5
+2026-11-11T02:00:26Z,CBB,3701dfd3294546a83cc0c666d61f49eb,2026-11-12T00:00:00Z,East Tennessee St Buccaneers,Campbell Fighting Camels,draftkings,2026-11-11T02:00:00Z,spreads,Campbell Fighting Camels,5.5,-108,0.519231,0.49567
+2026-11-11T02:00:26Z,CBB,3701dfd3294546a83cc0c666d61f49eb,2026-11-12T00:00:00Z,East Tennessee St Buccaneers,Campbell Fighting Camels,draftkings,2026-11-11T02:00:00Z,spreads,East Tennessee St Buccaneers,-5.5,-112,0.528302,0.50433
+2026-11-11T02:00:26Z,CBB,3701dfd3294546a83cc0c666d61f49eb,2026-11-12T00:00:00Z,East Tennessee St Buccaneers,Campbell Fighting Camels,draftkings,2026-11-11T02:00:00Z,totals,Over,147.5,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,3701dfd3294546a83cc0c666d61f49eb,2026-11-12T00:00:00Z,East Tennessee St Buccaneers,Campbell Fighting Camels,draftkings,2026-11-11T02:00:00Z,totals,Under,147.5,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,2ad8e525847167b94b3fe19623b9447a,2026-11-12T00:00:00Z,St. Bonaventure Bonnies,Cornell Big Red,betonlineag,2026-11-11T02:00:16Z,spreads,Cornell Big Red,7.5,-105,0.512195,0.489166
+2026-11-11T02:00:26Z,CBB,2ad8e525847167b94b3fe19623b9447a,2026-11-12T00:00:00Z,St. Bonaventure Bonnies,Cornell Big Red,betonlineag,2026-11-11T02:00:16Z,spreads,St. Bonaventure Bonnies,-7.5,-115,0.534884,0.510834
+2026-11-11T02:00:26Z,CBB,2ad8e525847167b94b3fe19623b9447a,2026-11-12T00:00:00Z,St. Bonaventure Bonnies,Cornell Big Red,betonlineag,2026-11-11T02:00:16Z,totals,Over,154.5,-115,0.534884,0.510834
+2026-11-11T02:00:26Z,CBB,2ad8e525847167b94b3fe19623b9447a,2026-11-12T00:00:00Z,St. Bonaventure Bonnies,Cornell Big Red,betonlineag,2026-11-11T02:00:16Z,totals,Under,154.5,-105,0.512195,0.489166
+2026-11-11T02:00:26Z,CBB,2ad8e525847167b94b3fe19623b9447a,2026-11-12T00:00:00Z,St. Bonaventure Bonnies,Cornell Big Red,lowvig,2026-11-11T02:00:21Z,spreads,Cornell Big Red,7.5,-101,0.502488,0.488538
+2026-11-11T02:00:26Z,CBB,2ad8e525847167b94b3fe19623b9447a,2026-11-12T00:00:00Z,St. Bonaventure Bonnies,Cornell Big Red,lowvig,2026-11-11T02:00:21Z,spreads,St. Bonaventure Bonnies,-7.5,-111,0.526066,0.511462
+2026-11-11T02:00:26Z,CBB,2ad8e525847167b94b3fe19623b9447a,2026-11-12T00:00:00Z,St. Bonaventure Bonnies,Cornell Big Red,lowvig,2026-11-11T02:00:21Z,totals,Over,154.5,-113,0.530516,0.511141
+2026-11-11T02:00:26Z,CBB,2ad8e525847167b94b3fe19623b9447a,2026-11-12T00:00:00Z,St. Bonaventure Bonnies,Cornell Big Red,lowvig,2026-11-11T02:00:21Z,totals,Under,154.5,-103,0.507389,0.488859
+2026-11-11T02:00:26Z,CBB,2ad8e525847167b94b3fe19623b9447a,2026-11-12T00:00:00Z,St. Bonaventure Bonnies,Cornell Big Red,draftkings,2026-11-11T02:00:00Z,spreads,Cornell Big Red,7.5,-105,0.512195,0.489166
+2026-11-11T02:00:26Z,CBB,2ad8e525847167b94b3fe19623b9447a,2026-11-12T00:00:00Z,St. Bonaventure Bonnies,Cornell Big Red,draftkings,2026-11-11T02:00:00Z,spreads,St. Bonaventure Bonnies,-7.5,-115,0.534884,0.510834
+2026-11-11T02:00:26Z,CBB,2ad8e525847167b94b3fe19623b9447a,2026-11-12T00:00:00Z,St. Bonaventure Bonnies,Cornell Big Red,draftkings,2026-11-11T02:00:00Z,totals,Over,154.5,-115,0.534884,0.510834
+2026-11-11T02:00:26Z,CBB,2ad8e525847167b94b3fe19623b9447a,2026-11-12T00:00:00Z,St. Bonaventure Bonnies,Cornell Big Red,draftkings,2026-11-11T02:00:00Z,totals,Under,154.5,-105,0.512195,0.489166
+2026-11-11T02:00:26Z,CBB,6f26440351de53a17fb83781075b7698,2026-11-12T00:00:00Z,Delaware Blue Hens,James Madison Dukes,betonlineag,2026-11-11T02:00:16Z,spreads,Delaware Blue Hens,3.5,-105,0.512195,0.489166
+2026-11-11T02:00:26Z,CBB,6f26440351de53a17fb83781075b7698,2026-11-12T00:00:00Z,Delaware Blue Hens,James Madison Dukes,betonlineag,2026-11-11T02:00:16Z,spreads,James Madison Dukes,-3.5,-115,0.534884,0.510834
+2026-11-11T02:00:26Z,CBB,6f26440351de53a17fb83781075b7698,2026-11-12T00:00:00Z,Delaware Blue Hens,James Madison Dukes,betonlineag,2026-11-11T02:00:16Z,totals,Over,148.0,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,6f26440351de53a17fb83781075b7698,2026-11-12T00:00:00Z,Delaware Blue Hens,James Madison Dukes,betonlineag,2026-11-11T02:00:16Z,totals,Under,148.0,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,6f26440351de53a17fb83781075b7698,2026-11-12T00:00:00Z,Delaware Blue Hens,James Madison Dukes,lowvig,2026-11-11T02:00:21Z,spreads,Delaware Blue Hens,3.5,-101,0.502488,0.488538
+2026-11-11T02:00:26Z,CBB,6f26440351de53a17fb83781075b7698,2026-11-12T00:00:00Z,Delaware Blue Hens,James Madison Dukes,lowvig,2026-11-11T02:00:21Z,spreads,James Madison Dukes,-3.5,-111,0.526066,0.511462
+2026-11-11T02:00:26Z,CBB,6f26440351de53a17fb83781075b7698,2026-11-12T00:00:00Z,Delaware Blue Hens,James Madison Dukes,lowvig,2026-11-11T02:00:21Z,totals,Over,148.0,-108,0.519231,0.5
+2026-11-11T02:00:26Z,CBB,6f26440351de53a17fb83781075b7698,2026-11-12T00:00:00Z,Delaware Blue Hens,James Madison Dukes,lowvig,2026-11-11T02:00:21Z,totals,Under,148.0,-108,0.519231,0.5
+2026-11-11T02:00:26Z,CBB,6f26440351de53a17fb83781075b7698,2026-11-12T00:00:00Z,Delaware Blue Hens,James Madison Dukes,draftkings,2026-11-11T02:00:00Z,spreads,Delaware Blue Hens,3.5,-105,0.512195,0.489166
+2026-11-11T02:00:26Z,CBB,6f26440351de53a17fb83781075b7698,2026-11-12T00:00:00Z,Delaware Blue Hens,James Madison Dukes,draftkings,2026-11-11T02:00:00Z,spreads,James Madison Dukes,-3.5,-115,0.534884,0.510834
+2026-11-11T02:00:26Z,CBB,6f26440351de53a17fb83781075b7698,2026-11-12T00:00:00Z,Delaware Blue Hens,James Madison Dukes,draftkings,2026-11-11T02:00:00Z,totals,Over,147.5,-105,0.512195,0.489166
+2026-11-11T02:00:26Z,CBB,6f26440351de53a17fb83781075b7698,2026-11-12T00:00:00Z,Delaware Blue Hens,James Madison Dukes,draftkings,2026-11-11T02:00:00Z,totals,Under,147.5,-115,0.534884,0.510834
+2026-11-11T02:00:26Z,CBB,6f26440351de53a17fb83781075b7698,2026-11-12T00:00:00Z,Delaware Blue Hens,James Madison Dukes,fanduel,2026-11-11T01:59:40Z,h2h,Delaware Blue Hens,,146,0.406504,0.388333
+2026-11-11T02:00:26Z,CBB,6f26440351de53a17fb83781075b7698,2026-11-12T00:00:00Z,Delaware Blue Hens,James Madison Dukes,fanduel,2026-11-11T01:59:40Z,h2h,James Madison Dukes,,-178,0.640288,0.611667
+2026-11-11T02:00:26Z,CBB,6f26440351de53a17fb83781075b7698,2026-11-12T00:00:00Z,Delaware Blue Hens,James Madison Dukes,fanduel,2026-11-11T01:59:40Z,spreads,Delaware Blue Hens,4.5,-120,0.545455,0.51928
+2026-11-11T02:00:26Z,CBB,6f26440351de53a17fb83781075b7698,2026-11-12T00:00:00Z,Delaware Blue Hens,James Madison Dukes,fanduel,2026-11-11T01:59:40Z,spreads,James Madison Dukes,-4.5,-102,0.50495,0.48072
+2026-11-11T02:00:26Z,CBB,6f26440351de53a17fb83781075b7698,2026-11-12T00:00:00Z,Delaware Blue Hens,James Madison Dukes,fanduel,2026-11-11T01:59:40Z,totals,Over,147.5,-115,0.534884,0.510834
+2026-11-11T02:00:26Z,CBB,6f26440351de53a17fb83781075b7698,2026-11-12T00:00:00Z,Delaware Blue Hens,James Madison Dukes,fanduel,2026-11-11T01:59:40Z,totals,Under,147.5,-105,0.512195,0.489166
+2026-11-11T02:00:26Z,CBB,a5647dffff37f54bd901019578095560,2026-11-12T00:00:00Z,Florida Atlantic Owls,William & Mary Tribe,betonlineag,2026-11-11T02:00:16Z,spreads,Florida Atlantic Owls,-5.0,-115,0.534884,0.510834
+2026-11-11T02:00:26Z,CBB,a5647dffff37f54bd901019578095560,2026-11-12T00:00:00Z,Florida Atlantic Owls,William & Mary Tribe,betonlineag,2026-11-11T02:00:16Z,spreads,William & Mary Tribe,5.0,-105,0.512195,0.489166
+2026-11-11T02:00:26Z,CBB,a5647dffff37f54bd901019578095560,2026-11-12T00:00:00Z,Florida Atlantic Owls,William & Mary Tribe,betonlineag,2026-11-11T02:00:16Z,totals,Over,162.5,-115,0.534884,0.510834
+2026-11-11T02:00:26Z,CBB,a5647dffff37f54bd901019578095560,2026-11-12T00:00:00Z,Florida Atlantic Owls,William & Mary Tribe,betonlineag,2026-11-11T02:00:16Z,totals,Under,162.5,-105,0.512195,0.489166
+2026-11-11T02:00:26Z,CBB,a5647dffff37f54bd901019578095560,2026-11-12T00:00:00Z,Florida Atlantic Owls,William & Mary Tribe,lowvig,2026-11-11T02:00:21Z,spreads,Florida Atlantic Owls,-5.0,-111,0.526066,0.511462
+2026-11-11T02:00:26Z,CBB,a5647dffff37f54bd901019578095560,2026-11-12T00:00:00Z,Florida Atlantic Owls,William & Mary Tribe,lowvig,2026-11-11T02:00:21Z,spreads,William & Mary Tribe,5.0,-101,0.502488,0.488538
+2026-11-11T02:00:26Z,CBB,a5647dffff37f54bd901019578095560,2026-11-12T00:00:00Z,Florida Atlantic Owls,William & Mary Tribe,lowvig,2026-11-11T02:00:21Z,totals,Over,162.5,-113,0.530516,0.511141
+2026-11-11T02:00:26Z,CBB,a5647dffff37f54bd901019578095560,2026-11-12T00:00:00Z,Florida Atlantic Owls,William & Mary Tribe,lowvig,2026-11-11T02:00:21Z,totals,Under,162.5,-103,0.507389,0.488859
+2026-11-11T02:00:26Z,CBB,a5647dffff37f54bd901019578095560,2026-11-12T00:00:00Z,Florida Atlantic Owls,William & Mary Tribe,draftkings,2026-11-11T02:00:00Z,spreads,Florida Atlantic Owls,-5.5,-108,0.519231,0.49567
+2026-11-11T02:00:26Z,CBB,a5647dffff37f54bd901019578095560,2026-11-12T00:00:00Z,Florida Atlantic Owls,William & Mary Tribe,draftkings,2026-11-11T02:00:00Z,spreads,William & Mary Tribe,5.5,-112,0.528302,0.50433
+2026-11-11T02:00:26Z,CBB,a5647dffff37f54bd901019578095560,2026-11-12T00:00:00Z,Florida Atlantic Owls,William & Mary Tribe,draftkings,2026-11-11T02:00:00Z,totals,Over,162.5,-115,0.534884,0.510834
+2026-11-11T02:00:26Z,CBB,a5647dffff37f54bd901019578095560,2026-11-12T00:00:00Z,Florida Atlantic Owls,William & Mary Tribe,draftkings,2026-11-11T02:00:00Z,totals,Under,162.5,-105,0.512195,0.489166
+2026-11-11T02:00:26Z,CBB,a5647dffff37f54bd901019578095560,2026-11-12T00:00:00Z,Florida Atlantic Owls,William & Mary Tribe,fanduel,2026-11-11T01:59:40Z,h2h,Florida Atlantic Owls,,-210,0.677419,0.651529
+2026-11-11T02:00:26Z,CBB,a5647dffff37f54bd901019578095560,2026-11-12T00:00:00Z,Florida Atlantic Owls,William & Mary Tribe,fanduel,2026-11-11T01:59:40Z,h2h,William & Mary Tribe,,176,0.362319,0.348471
+2026-11-11T02:00:26Z,CBB,a5647dffff37f54bd901019578095560,2026-11-12T00:00:00Z,Florida Atlantic Owls,William & Mary Tribe,fanduel,2026-11-11T01:59:40Z,spreads,Florida Atlantic Owls,-4.5,-120,0.545455,0.51928
+2026-11-11T02:00:26Z,CBB,a5647dffff37f54bd901019578095560,2026-11-12T00:00:00Z,Florida Atlantic Owls,William & Mary Tribe,fanduel,2026-11-11T01:59:40Z,spreads,William & Mary Tribe,4.5,-102,0.50495,0.48072
+2026-11-11T02:00:26Z,CBB,a5647dffff37f54bd901019578095560,2026-11-12T00:00:00Z,Florida Atlantic Owls,William & Mary Tribe,fanduel,2026-11-11T01:59:40Z,totals,Over,163.5,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,a5647dffff37f54bd901019578095560,2026-11-12T00:00:00Z,Florida Atlantic Owls,William & Mary Tribe,fanduel,2026-11-11T01:59:40Z,totals,Under,163.5,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,9e33af22fe8e08e53ec595237d2c8ee9,2026-11-12T00:00:00Z,Holy Cross Crusaders,Furman Paladins,fanduel,2026-11-11T01:59:40Z,h2h,Furman Paladins,,-880,0.897959,0.859276
+2026-11-11T02:00:26Z,CBB,9e33af22fe8e08e53ec595237d2c8ee9,2026-11-12T00:00:00Z,Holy Cross Crusaders,Furman Paladins,fanduel,2026-11-11T01:59:40Z,h2h,Holy Cross Crusaders,,580,0.147059,0.140724
+2026-11-11T02:00:26Z,CBB,9e33af22fe8e08e53ec595237d2c8ee9,2026-11-12T00:00:00Z,Holy Cross Crusaders,Furman Paladins,fanduel,2026-11-11T01:59:40Z,spreads,Furman Paladins,-12.5,-102,0.50495,0.48072
+2026-11-11T02:00:26Z,CBB,9e33af22fe8e08e53ec595237d2c8ee9,2026-11-12T00:00:00Z,Holy Cross Crusaders,Furman Paladins,fanduel,2026-11-11T01:59:40Z,spreads,Holy Cross Crusaders,12.5,-120,0.545455,0.51928
+2026-11-11T02:00:26Z,CBB,9e33af22fe8e08e53ec595237d2c8ee9,2026-11-12T00:00:00Z,Holy Cross Crusaders,Furman Paladins,fanduel,2026-11-11T01:59:40Z,totals,Over,147.5,-115,0.534884,0.510834
+2026-11-11T02:00:26Z,CBB,9e33af22fe8e08e53ec595237d2c8ee9,2026-11-12T00:00:00Z,Holy Cross Crusaders,Furman Paladins,fanduel,2026-11-11T01:59:40Z,totals,Under,147.5,-105,0.512195,0.489166
+2026-11-11T02:00:26Z,CBB,9e33af22fe8e08e53ec595237d2c8ee9,2026-11-12T00:00:00Z,Holy Cross Crusaders,Furman Paladins,betonlineag,2026-11-11T02:00:16Z,spreads,Furman Paladins,-13.5,-105,0.512195,0.489166
+2026-11-11T02:00:26Z,CBB,9e33af22fe8e08e53ec595237d2c8ee9,2026-11-12T00:00:00Z,Holy Cross Crusaders,Furman Paladins,betonlineag,2026-11-11T02:00:16Z,spreads,Holy Cross Crusaders,13.5,-115,0.534884,0.510834
+2026-11-11T02:00:26Z,CBB,9e33af22fe8e08e53ec595237d2c8ee9,2026-11-12T00:00:00Z,Holy Cross Crusaders,Furman Paladins,betonlineag,2026-11-11T02:00:16Z,totals,Over,149.5,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,9e33af22fe8e08e53ec595237d2c8ee9,2026-11-12T00:00:00Z,Holy Cross Crusaders,Furman Paladins,betonlineag,2026-11-11T02:00:16Z,totals,Under,149.5,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,9e33af22fe8e08e53ec595237d2c8ee9,2026-11-12T00:00:00Z,Holy Cross Crusaders,Furman Paladins,lowvig,2026-11-11T02:00:21Z,spreads,Furman Paladins,-13.5,-101,0.502488,0.488538
+2026-11-11T02:00:26Z,CBB,9e33af22fe8e08e53ec595237d2c8ee9,2026-11-12T00:00:00Z,Holy Cross Crusaders,Furman Paladins,lowvig,2026-11-11T02:00:21Z,spreads,Holy Cross Crusaders,13.5,-111,0.526066,0.511462
+2026-11-11T02:00:26Z,CBB,9e33af22fe8e08e53ec595237d2c8ee9,2026-11-12T00:00:00Z,Holy Cross Crusaders,Furman Paladins,lowvig,2026-11-11T02:00:21Z,totals,Over,149.5,-108,0.519231,0.5
+2026-11-11T02:00:26Z,CBB,9e33af22fe8e08e53ec595237d2c8ee9,2026-11-12T00:00:00Z,Holy Cross Crusaders,Furman Paladins,lowvig,2026-11-11T02:00:21Z,totals,Under,149.5,-108,0.519231,0.5
+2026-11-11T02:00:26Z,CBB,9e33af22fe8e08e53ec595237d2c8ee9,2026-11-12T00:00:00Z,Holy Cross Crusaders,Furman Paladins,draftkings,2026-11-11T02:00:00Z,h2h,Furman Paladins,,-850,0.894737,0.857944
+2026-11-11T02:00:26Z,CBB,9e33af22fe8e08e53ec595237d2c8ee9,2026-11-12T00:00:00Z,Holy Cross Crusaders,Furman Paladins,draftkings,2026-11-11T02:00:00Z,h2h,Holy Cross Crusaders,,575,0.148148,0.142056
+2026-11-11T02:00:26Z,CBB,9e33af22fe8e08e53ec595237d2c8ee9,2026-11-12T00:00:00Z,Holy Cross Crusaders,Furman Paladins,draftkings,2026-11-11T02:00:00Z,spreads,Furman Paladins,-13.5,-105,0.512195,0.489166
+2026-11-11T02:00:26Z,CBB,9e33af22fe8e08e53ec595237d2c8ee9,2026-11-12T00:00:00Z,Holy Cross Crusaders,Furman Paladins,draftkings,2026-11-11T02:00:00Z,spreads,Holy Cross Crusaders,13.5,-115,0.534884,0.510834
+2026-11-11T02:00:26Z,CBB,9e33af22fe8e08e53ec595237d2c8ee9,2026-11-12T00:00:00Z,Holy Cross Crusaders,Furman Paladins,draftkings,2026-11-11T02:00:00Z,totals,Over,149.5,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,9e33af22fe8e08e53ec595237d2c8ee9,2026-11-12T00:00:00Z,Holy Cross Crusaders,Furman Paladins,draftkings,2026-11-11T02:00:00Z,totals,Under,149.5,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,6712d238dc9bc8354686dde1ee6cd6f2,2026-11-12T00:00:00Z,Indiana St Sycamores,Milwaukee Panthers,betonlineag,2026-11-11T02:00:16Z,spreads,Indiana St Sycamores,-5.0,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,6712d238dc9bc8354686dde1ee6cd6f2,2026-11-12T00:00:00Z,Indiana St Sycamores,Milwaukee Panthers,betonlineag,2026-11-11T02:00:16Z,spreads,Milwaukee Panthers,5.0,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,6712d238dc9bc8354686dde1ee6cd6f2,2026-11-12T00:00:00Z,Indiana St Sycamores,Milwaukee Panthers,betonlineag,2026-11-11T02:00:16Z,totals,Over,151.5,-115,0.534884,0.510834
+2026-11-11T02:00:26Z,CBB,6712d238dc9bc8354686dde1ee6cd6f2,2026-11-12T00:00:00Z,Indiana St Sycamores,Milwaukee Panthers,betonlineag,2026-11-11T02:00:16Z,totals,Under,151.5,-105,0.512195,0.489166
+2026-11-11T02:00:26Z,CBB,6712d238dc9bc8354686dde1ee6cd6f2,2026-11-12T00:00:00Z,Indiana St Sycamores,Milwaukee Panthers,lowvig,2026-11-11T02:00:21Z,spreads,Indiana St Sycamores,-5.0,-106,0.514563,0.5
+2026-11-11T02:00:26Z,CBB,6712d238dc9bc8354686dde1ee6cd6f2,2026-11-12T00:00:00Z,Indiana St Sycamores,Milwaukee Panthers,lowvig,2026-11-11T02:00:21Z,spreads,Milwaukee Panthers,5.0,-106,0.514563,0.5
+2026-11-11T02:00:26Z,CBB,6712d238dc9bc8354686dde1ee6cd6f2,2026-11-12T00:00:00Z,Indiana St Sycamores,Milwaukee Panthers,lowvig,2026-11-11T02:00:21Z,totals,Over,151.5,-113,0.530516,0.511141
+2026-11-11T02:00:26Z,CBB,6712d238dc9bc8354686dde1ee6cd6f2,2026-11-12T00:00:00Z,Indiana St Sycamores,Milwaukee Panthers,lowvig,2026-11-11T02:00:21Z,totals,Under,151.5,-103,0.507389,0.488859
+2026-11-11T02:00:26Z,CBB,6712d238dc9bc8354686dde1ee6cd6f2,2026-11-12T00:00:00Z,Indiana St Sycamores,Milwaukee Panthers,draftkings,2026-11-11T02:00:00Z,h2h,Indiana St Sycamores,,-225,0.692308,0.663648
+2026-11-11T02:00:26Z,CBB,6712d238dc9bc8354686dde1ee6cd6f2,2026-11-12T00:00:00Z,Indiana St Sycamores,Milwaukee Panthers,draftkings,2026-11-11T02:00:00Z,h2h,Milwaukee Panthers,,185,0.350877,0.336352
+2026-11-11T02:00:26Z,CBB,6712d238dc9bc8354686dde1ee6cd6f2,2026-11-12T00:00:00Z,Indiana St Sycamores,Milwaukee Panthers,draftkings,2026-11-11T02:00:00Z,spreads,Indiana St Sycamores,-5.5,-108,0.519231,0.49567
+2026-11-11T02:00:26Z,CBB,6712d238dc9bc8354686dde1ee6cd6f2,2026-11-12T00:00:00Z,Indiana St Sycamores,Milwaukee Panthers,draftkings,2026-11-11T02:00:00Z,spreads,Milwaukee Panthers,5.5,-112,0.528302,0.50433
+2026-11-11T02:00:26Z,CBB,6712d238dc9bc8354686dde1ee6cd6f2,2026-11-12T00:00:00Z,Indiana St Sycamores,Milwaukee Panthers,draftkings,2026-11-11T02:00:00Z,totals,Over,151.5,-115,0.534884,0.510834
+2026-11-11T02:00:26Z,CBB,6712d238dc9bc8354686dde1ee6cd6f2,2026-11-12T00:00:00Z,Indiana St Sycamores,Milwaukee Panthers,draftkings,2026-11-11T02:00:00Z,totals,Under,151.5,-105,0.512195,0.489166
+2026-11-11T02:00:26Z,CBB,015a3bad9e6d4b3ce108f6e7c663ed88,2026-11-12T00:00:00Z,UNC Wilmington Seahawks,Kent State Golden Flashes,betonlineag,2026-11-11T02:00:16Z,spreads,Kent State Golden Flashes,5.5,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,015a3bad9e6d4b3ce108f6e7c663ed88,2026-11-12T00:00:00Z,UNC Wilmington Seahawks,Kent State Golden Flashes,betonlineag,2026-11-11T02:00:16Z,spreads,UNC Wilmington Seahawks,-5.5,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,015a3bad9e6d4b3ce108f6e7c663ed88,2026-11-12T00:00:00Z,UNC Wilmington Seahawks,Kent State Golden Flashes,betonlineag,2026-11-11T02:00:16Z,totals,Over,154.0,-115,0.534884,0.510834
+2026-11-11T02:00:26Z,CBB,015a3bad9e6d4b3ce108f6e7c663ed88,2026-11-12T00:00:00Z,UNC Wilmington Seahawks,Kent State Golden Flashes,betonlineag,2026-11-11T02:00:16Z,totals,Under,154.0,-105,0.512195,0.489166
+2026-11-11T02:00:26Z,CBB,015a3bad9e6d4b3ce108f6e7c663ed88,2026-11-12T00:00:00Z,UNC Wilmington Seahawks,Kent State Golden Flashes,lowvig,2026-11-11T02:00:21Z,spreads,Kent State Golden Flashes,5.5,-106,0.514563,0.5
+2026-11-11T02:00:26Z,CBB,015a3bad9e6d4b3ce108f6e7c663ed88,2026-11-12T00:00:00Z,UNC Wilmington Seahawks,Kent State Golden Flashes,lowvig,2026-11-11T02:00:21Z,spreads,UNC Wilmington Seahawks,-5.5,-106,0.514563,0.5
+2026-11-11T02:00:26Z,CBB,015a3bad9e6d4b3ce108f6e7c663ed88,2026-11-12T00:00:00Z,UNC Wilmington Seahawks,Kent State Golden Flashes,lowvig,2026-11-11T02:00:21Z,totals,Over,154.0,-113,0.530516,0.511141
+2026-11-11T02:00:26Z,CBB,015a3bad9e6d4b3ce108f6e7c663ed88,2026-11-12T00:00:00Z,UNC Wilmington Seahawks,Kent State Golden Flashes,lowvig,2026-11-11T02:00:21Z,totals,Under,154.0,-103,0.507389,0.488859
+2026-11-11T02:00:26Z,CBB,015a3bad9e6d4b3ce108f6e7c663ed88,2026-11-12T00:00:00Z,UNC Wilmington Seahawks,Kent State Golden Flashes,draftkings,2026-11-11T02:00:00Z,spreads,Kent State Golden Flashes,5.5,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,015a3bad9e6d4b3ce108f6e7c663ed88,2026-11-12T00:00:00Z,UNC Wilmington Seahawks,Kent State Golden Flashes,draftkings,2026-11-11T02:00:00Z,spreads,UNC Wilmington Seahawks,-5.5,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,015a3bad9e6d4b3ce108f6e7c663ed88,2026-11-12T00:00:00Z,UNC Wilmington Seahawks,Kent State Golden Flashes,draftkings,2026-11-11T02:00:00Z,totals,Over,154.5,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,015a3bad9e6d4b3ce108f6e7c663ed88,2026-11-12T00:00:00Z,UNC Wilmington Seahawks,Kent State Golden Flashes,draftkings,2026-11-11T02:00:00Z,totals,Under,154.5,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,c5a909abd1412b4f70b5e5448a0b3b13,2026-11-12T00:00:00Z,Michigan Wolverines,Marquette Golden Eagles,betonlineag,2026-11-11T02:00:16Z,spreads,Marquette Golden Eagles,4.0,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,c5a909abd1412b4f70b5e5448a0b3b13,2026-11-12T00:00:00Z,Michigan Wolverines,Marquette Golden Eagles,betonlineag,2026-11-11T02:00:16Z,spreads,Michigan Wolverines,-4.0,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,c5a909abd1412b4f70b5e5448a0b3b13,2026-11-12T00:00:00Z,Michigan Wolverines,Marquette Golden Eagles,betonlineag,2026-11-11T02:00:16Z,totals,Over,153.0,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,c5a909abd1412b4f70b5e5448a0b3b13,2026-11-12T00:00:00Z,Michigan Wolverines,Marquette Golden Eagles,betonlineag,2026-11-11T02:00:16Z,totals,Under,153.0,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,c5a909abd1412b4f70b5e5448a0b3b13,2026-11-12T00:00:00Z,Michigan Wolverines,Marquette Golden Eagles,lowvig,2026-11-11T02:00:21Z,spreads,Marquette Golden Eagles,4.0,-106,0.514563,0.5
+2026-11-11T02:00:26Z,CBB,c5a909abd1412b4f70b5e5448a0b3b13,2026-11-12T00:00:00Z,Michigan Wolverines,Marquette Golden Eagles,lowvig,2026-11-11T02:00:21Z,spreads,Michigan Wolverines,-4.0,-106,0.514563,0.5
+2026-11-11T02:00:26Z,CBB,c5a909abd1412b4f70b5e5448a0b3b13,2026-11-12T00:00:00Z,Michigan Wolverines,Marquette Golden Eagles,lowvig,2026-11-11T02:00:21Z,totals,Over,153.0,-108,0.519231,0.5
+2026-11-11T02:00:26Z,CBB,c5a909abd1412b4f70b5e5448a0b3b13,2026-11-12T00:00:00Z,Michigan Wolverines,Marquette Golden Eagles,lowvig,2026-11-11T02:00:21Z,totals,Under,153.0,-108,0.519231,0.5
+2026-11-11T02:00:26Z,CBB,c5a909abd1412b4f70b5e5448a0b3b13,2026-11-12T00:00:00Z,Michigan Wolverines,Marquette Golden Eagles,fanduel,2026-11-11T01:59:40Z,h2h,Marquette Golden Eagles,,150,0.4,0.382632
+2026-11-11T02:00:26Z,CBB,c5a909abd1412b4f70b5e5448a0b3b13,2026-11-12T00:00:00Z,Michigan Wolverines,Marquette Golden Eagles,fanduel,2026-11-11T01:59:40Z,h2h,Michigan Wolverines,,-182,0.64539,0.617368
+2026-11-11T02:00:26Z,CBB,c5a909abd1412b4f70b5e5448a0b3b13,2026-11-12T00:00:00Z,Michigan Wolverines,Marquette Golden Eagles,fanduel,2026-11-11T01:59:40Z,spreads,Marquette Golden Eagles,4.5,-115,0.534884,0.510834
+2026-11-11T02:00:26Z,CBB,c5a909abd1412b4f70b5e5448a0b3b13,2026-11-12T00:00:00Z,Michigan Wolverines,Marquette Golden Eagles,fanduel,2026-11-11T01:59:40Z,spreads,Michigan Wolverines,-4.5,-105,0.512195,0.489166
+2026-11-11T02:00:26Z,CBB,c5a909abd1412b4f70b5e5448a0b3b13,2026-11-12T00:00:00Z,Michigan Wolverines,Marquette Golden Eagles,fanduel,2026-11-11T01:59:40Z,totals,Over,154.5,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,c5a909abd1412b4f70b5e5448a0b3b13,2026-11-12T00:00:00Z,Michigan Wolverines,Marquette Golden Eagles,fanduel,2026-11-11T01:59:40Z,totals,Under,154.5,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,c5a909abd1412b4f70b5e5448a0b3b13,2026-11-12T00:00:00Z,Michigan Wolverines,Marquette Golden Eagles,draftkings,2026-11-11T02:00:00Z,h2h,Marquette Golden Eagles,,154,0.393701,0.377533
+2026-11-11T02:00:26Z,CBB,c5a909abd1412b4f70b5e5448a0b3b13,2026-11-12T00:00:00Z,Michigan Wolverines,Marquette Golden Eagles,draftkings,2026-11-11T02:00:00Z,h2h,Michigan Wolverines,,-185,0.649123,0.622467
+2026-11-11T02:00:26Z,CBB,c5a909abd1412b4f70b5e5448a0b3b13,2026-11-12T00:00:00Z,Michigan Wolverines,Marquette Golden Eagles,draftkings,2026-11-11T02:00:00Z,spreads,Marquette Golden Eagles,3.5,-102,0.50495,0.482636
+2026-11-11T02:00:26Z,CBB,c5a909abd1412b4f70b5e5448a0b3b13,2026-11-12T00:00:00Z,Michigan Wolverines,Marquette Golden Eagles,draftkings,2026-11-11T02:00:00Z,spreads,Michigan Wolverines,-3.5,-118,0.541284,0.517364
+2026-11-11T02:00:26Z,CBB,c5a909abd1412b4f70b5e5448a0b3b13,2026-11-12T00:00:00Z,Michigan Wolverines,Marquette Golden Eagles,draftkings,2026-11-11T02:00:00Z,totals,Over,152.5,-115,0.534884,0.510834
+2026-11-11T02:00:26Z,CBB,c5a909abd1412b4f70b5e5448a0b3b13,2026-11-12T00:00:00Z,Michigan Wolverines,Marquette Golden Eagles,draftkings,2026-11-11T02:00:00Z,totals,Under,152.5,-105,0.512195,0.489166
+2026-11-11T02:00:26Z,CBB,9b4db17df2378cbaea3151c4ba09821d,2026-11-12T00:00:00Z,VCU Rams,NJIT Highlanders,fanduel,2026-11-11T01:59:40Z,spreads,NJIT Highlanders,28.5,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,9b4db17df2378cbaea3151c4ba09821d,2026-11-12T00:00:00Z,VCU Rams,NJIT Highlanders,fanduel,2026-11-11T01:59:40Z,spreads,VCU Rams,-28.5,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,9b4db17df2378cbaea3151c4ba09821d,2026-11-12T00:00:00Z,VCU Rams,NJIT Highlanders,fanduel,2026-11-11T01:59:40Z,totals,Over,148.5,-115,0.534884,0.510834
+2026-11-11T02:00:26Z,CBB,9b4db17df2378cbaea3151c4ba09821d,2026-11-12T00:00:00Z,VCU Rams,NJIT Highlanders,fanduel,2026-11-11T01:59:40Z,totals,Under,148.5,-105,0.512195,0.489166
+2026-11-11T02:00:26Z,CBB,9b4db17df2378cbaea3151c4ba09821d,2026-11-12T00:00:00Z,VCU Rams,NJIT Highlanders,betonlineag,2026-11-11T02:00:16Z,spreads,NJIT Highlanders,30.0,-115,0.534884,0.510834
+2026-11-11T02:00:26Z,CBB,9b4db17df2378cbaea3151c4ba09821d,2026-11-12T00:00:00Z,VCU Rams,NJIT Highlanders,betonlineag,2026-11-11T02:00:16Z,spreads,VCU Rams,-30.0,-105,0.512195,0.489166
+2026-11-11T02:00:26Z,CBB,9b4db17df2378cbaea3151c4ba09821d,2026-11-12T00:00:00Z,VCU Rams,NJIT Highlanders,betonlineag,2026-11-11T02:00:16Z,totals,Over,147.5,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,9b4db17df2378cbaea3151c4ba09821d,2026-11-12T00:00:00Z,VCU Rams,NJIT Highlanders,betonlineag,2026-11-11T02:00:16Z,totals,Under,147.5,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,9b4db17df2378cbaea3151c4ba09821d,2026-11-12T00:00:00Z,VCU Rams,NJIT Highlanders,lowvig,2026-11-11T02:00:21Z,spreads,NJIT Highlanders,30.0,-111,0.526066,0.511462
+2026-11-11T02:00:26Z,CBB,9b4db17df2378cbaea3151c4ba09821d,2026-11-12T00:00:00Z,VCU Rams,NJIT Highlanders,lowvig,2026-11-11T02:00:21Z,spreads,VCU Rams,-30.0,-101,0.502488,0.488538
+2026-11-11T02:00:26Z,CBB,9b4db17df2378cbaea3151c4ba09821d,2026-11-12T00:00:00Z,VCU Rams,NJIT Highlanders,lowvig,2026-11-11T02:00:21Z,totals,Over,147.5,-108,0.519231,0.5
+2026-11-11T02:00:26Z,CBB,9b4db17df2378cbaea3151c4ba09821d,2026-11-12T00:00:00Z,VCU Rams,NJIT Highlanders,lowvig,2026-11-11T02:00:21Z,totals,Under,147.5,-108,0.519231,0.5
+2026-11-11T02:00:26Z,CBB,f775ba08093ec59845cac67fe33e8803,2026-11-12T00:00:00Z,Notre Dame Fighting Irish,South Carolina St Bulldogs,betonlineag,2026-11-11T02:00:16Z,spreads,Notre Dame Fighting Irish,-28.0,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,f775ba08093ec59845cac67fe33e8803,2026-11-12T00:00:00Z,Notre Dame Fighting Irish,South Carolina St Bulldogs,betonlineag,2026-11-11T02:00:16Z,spreads,South Carolina St Bulldogs,28.0,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,f775ba08093ec59845cac67fe33e8803,2026-11-12T00:00:00Z,Notre Dame Fighting Irish,South Carolina St Bulldogs,betonlineag,2026-11-11T02:00:16Z,totals,Over,148.0,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,f775ba08093ec59845cac67fe33e8803,2026-11-12T00:00:00Z,Notre Dame Fighting Irish,South Carolina St Bulldogs,betonlineag,2026-11-11T02:00:16Z,totals,Under,148.0,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,f775ba08093ec59845cac67fe33e8803,2026-11-12T00:00:00Z,Notre Dame Fighting Irish,South Carolina St Bulldogs,lowvig,2026-11-11T02:00:21Z,spreads,Notre Dame Fighting Irish,-28.0,-106,0.514563,0.5
+2026-11-11T02:00:26Z,CBB,f775ba08093ec59845cac67fe33e8803,2026-11-12T00:00:00Z,Notre Dame Fighting Irish,South Carolina St Bulldogs,lowvig,2026-11-11T02:00:21Z,spreads,South Carolina St Bulldogs,28.0,-106,0.514563,0.5
+2026-11-11T02:00:26Z,CBB,f775ba08093ec59845cac67fe33e8803,2026-11-12T00:00:00Z,Notre Dame Fighting Irish,South Carolina St Bulldogs,lowvig,2026-11-11T02:00:21Z,totals,Over,148.0,-108,0.519231,0.5
+2026-11-11T02:00:26Z,CBB,f775ba08093ec59845cac67fe33e8803,2026-11-12T00:00:00Z,Notre Dame Fighting Irish,South Carolina St Bulldogs,lowvig,2026-11-11T02:00:21Z,totals,Under,148.0,-108,0.519231,0.5
+2026-11-11T02:00:26Z,CBB,4759cdf6363bef48c1455c003b0d4645,2026-11-12T00:00:00Z,Princeton Tigers,Stony Brook Seawolves,betonlineag,2026-11-11T02:00:16Z,spreads,Princeton Tigers,-5.0,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,4759cdf6363bef48c1455c003b0d4645,2026-11-12T00:00:00Z,Princeton Tigers,Stony Brook Seawolves,betonlineag,2026-11-11T02:00:16Z,spreads,Stony Brook Seawolves,5.0,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,4759cdf6363bef48c1455c003b0d4645,2026-11-12T00:00:00Z,Princeton Tigers,Stony Brook Seawolves,betonlineag,2026-11-11T02:00:16Z,totals,Over,138.0,-105,0.512195,0.489166
+2026-11-11T02:00:26Z,CBB,4759cdf6363bef48c1455c003b0d4645,2026-11-12T00:00:00Z,Princeton Tigers,Stony Brook Seawolves,betonlineag,2026-11-11T02:00:16Z,totals,Under,138.0,-115,0.534884,0.510834
+2026-11-11T02:00:26Z,CBB,4759cdf6363bef48c1455c003b0d4645,2026-11-12T00:00:00Z,Princeton Tigers,Stony Brook Seawolves,lowvig,2026-11-11T02:00:21Z,spreads,Princeton Tigers,-5.0,-106,0.514563,0.5
+2026-11-11T02:00:26Z,CBB,4759cdf6363bef48c1455c003b0d4645,2026-11-12T00:00:00Z,Princeton Tigers,Stony Brook Seawolves,lowvig,2026-11-11T02:00:21Z,spreads,Stony Brook Seawolves,5.0,-106,0.514563,0.5
+2026-11-11T02:00:26Z,CBB,4759cdf6363bef48c1455c003b0d4645,2026-11-12T00:00:00Z,Princeton Tigers,Stony Brook Seawolves,lowvig,2026-11-11T02:00:21Z,totals,Over,138.0,-103,0.507389,0.488859
+2026-11-11T02:00:26Z,CBB,4759cdf6363bef48c1455c003b0d4645,2026-11-12T00:00:00Z,Princeton Tigers,Stony Brook Seawolves,lowvig,2026-11-11T02:00:21Z,totals,Under,138.0,-113,0.530516,0.511141
+2026-11-11T02:00:26Z,CBB,4759cdf6363bef48c1455c003b0d4645,2026-11-12T00:00:00Z,Princeton Tigers,Stony Brook Seawolves,draftkings,2026-11-11T02:00:00Z,h2h,Princeton Tigers,,-192,0.657534,0.63094
+2026-11-11T02:00:26Z,CBB,4759cdf6363bef48c1455c003b0d4645,2026-11-12T00:00:00Z,Princeton Tigers,Stony Brook Seawolves,draftkings,2026-11-11T02:00:00Z,h2h,Stony Brook Seawolves,,160,0.384615,0.36906
+2026-11-11T02:00:26Z,CBB,4759cdf6363bef48c1455c003b0d4645,2026-11-12T00:00:00Z,Princeton Tigers,Stony Brook Seawolves,draftkings,2026-11-11T02:00:00Z,spreads,Princeton Tigers,-4.5,-115,0.534884,0.510834
+2026-11-11T02:00:26Z,CBB,4759cdf6363bef48c1455c003b0d4645,2026-11-12T00:00:00Z,Princeton Tigers,Stony Brook Seawolves,draftkings,2026-11-11T02:00:00Z,spreads,Stony Brook Seawolves,4.5,-105,0.512195,0.489166
+2026-11-11T02:00:26Z,CBB,4759cdf6363bef48c1455c003b0d4645,2026-11-12T00:00:00Z,Princeton Tigers,Stony Brook Seawolves,draftkings,2026-11-11T02:00:00Z,totals,Over,137.5,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,4759cdf6363bef48c1455c003b0d4645,2026-11-12T00:00:00Z,Princeton Tigers,Stony Brook Seawolves,draftkings,2026-11-11T02:00:00Z,totals,Under,137.5,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,ab097a031b98bea79556def8937e59c5,2026-11-12T00:00:00Z,South Carolina Gamecocks,Saint Peter's Peacocks,betonlineag,2026-11-11T02:00:16Z,spreads,Saint Peter's Peacocks,21.5,-105,0.512195,0.489166
+2026-11-11T02:00:26Z,CBB,ab097a031b98bea79556def8937e59c5,2026-11-12T00:00:00Z,South Carolina Gamecocks,Saint Peter's Peacocks,betonlineag,2026-11-11T02:00:16Z,spreads,South Carolina Gamecocks,-21.5,-115,0.534884,0.510834
+2026-11-11T02:00:26Z,CBB,ab097a031b98bea79556def8937e59c5,2026-11-12T00:00:00Z,South Carolina Gamecocks,Saint Peter's Peacocks,betonlineag,2026-11-11T02:00:16Z,totals,Over,129.0,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,ab097a031b98bea79556def8937e59c5,2026-11-12T00:00:00Z,South Carolina Gamecocks,Saint Peter's Peacocks,betonlineag,2026-11-11T02:00:16Z,totals,Under,129.0,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,ab097a031b98bea79556def8937e59c5,2026-11-12T00:00:00Z,South Carolina Gamecocks,Saint Peter's Peacocks,lowvig,2026-11-11T02:00:21Z,spreads,Saint Peter's Peacocks,21.5,-101,0.502488,0.488538
+2026-11-11T02:00:26Z,CBB,ab097a031b98bea79556def8937e59c5,2026-11-12T00:00:00Z,South Carolina Gamecocks,Saint Peter's Peacocks,lowvig,2026-11-11T02:00:21Z,spreads,South Carolina Gamecocks,-21.5,-111,0.526066,0.511462
+2026-11-11T02:00:26Z,CBB,ab097a031b98bea79556def8937e59c5,2026-11-12T00:00:00Z,South Carolina Gamecocks,Saint Peter's Peacocks,lowvig,2026-11-11T02:00:21Z,totals,Over,129.0,-108,0.519231,0.5
+2026-11-11T02:00:26Z,CBB,ab097a031b98bea79556def8937e59c5,2026-11-12T00:00:00Z,South Carolina Gamecocks,Saint Peter's Peacocks,lowvig,2026-11-11T02:00:21Z,totals,Under,129.0,-108,0.519231,0.5
+2026-11-11T02:00:26Z,CBB,ab097a031b98bea79556def8937e59c5,2026-11-12T00:00:00Z,South Carolina Gamecocks,Saint Peter's Peacocks,draftkings,2026-11-11T02:00:00Z,spreads,Saint Peter's Peacocks,21.5,-105,0.512195,0.489166
+2026-11-11T02:00:26Z,CBB,ab097a031b98bea79556def8937e59c5,2026-11-12T00:00:00Z,South Carolina Gamecocks,Saint Peter's Peacocks,draftkings,2026-11-11T02:00:00Z,spreads,South Carolina Gamecocks,-21.5,-115,0.534884,0.510834
+2026-11-11T02:00:26Z,CBB,ab097a031b98bea79556def8937e59c5,2026-11-12T00:00:00Z,South Carolina Gamecocks,Saint Peter's Peacocks,draftkings,2026-11-11T02:00:00Z,totals,Over,129.5,-108,0.519231,0.49567
+2026-11-11T02:00:26Z,CBB,ab097a031b98bea79556def8937e59c5,2026-11-12T00:00:00Z,South Carolina Gamecocks,Saint Peter's Peacocks,draftkings,2026-11-11T02:00:00Z,totals,Under,129.5,-112,0.528302,0.50433
+2026-11-11T02:00:26Z,CBB,ab097a031b98bea79556def8937e59c5,2026-11-12T00:00:00Z,South Carolina Gamecocks,Saint Peter's Peacocks,fanduel,2026-11-11T01:59:40Z,h2h,Saint Peter's Peacocks,,2500,0.038462,0.037394
+2026-11-11T02:00:26Z,CBB,ab097a031b98bea79556def8937e59c5,2026-11-12T00:00:00Z,South Carolina Gamecocks,Saint Peter's Peacocks,fanduel,2026-11-11T01:59:40Z,h2h,South Carolina Gamecocks,,-10000,0.990099,0.962606
+2026-11-11T02:00:26Z,CBB,ab097a031b98bea79556def8937e59c5,2026-11-12T00:00:00Z,South Carolina Gamecocks,Saint Peter's Peacocks,fanduel,2026-11-11T01:59:40Z,spreads,Saint Peter's Peacocks,22.5,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,ab097a031b98bea79556def8937e59c5,2026-11-12T00:00:00Z,South Carolina Gamecocks,Saint Peter's Peacocks,fanduel,2026-11-11T01:59:40Z,spreads,South Carolina Gamecocks,-22.5,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,ab097a031b98bea79556def8937e59c5,2026-11-12T00:00:00Z,South Carolina Gamecocks,Saint Peter's Peacocks,fanduel,2026-11-11T01:59:40Z,totals,Over,129.5,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,ab097a031b98bea79556def8937e59c5,2026-11-12T00:00:00Z,South Carolina Gamecocks,Saint Peter's Peacocks,fanduel,2026-11-11T01:59:40Z,totals,Under,129.5,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,cec8567863868eee57cefdef4d499a5a,2026-11-12T00:30:00Z,Sam Houston St Bearkats,Pepperdine Waves,betonlineag,2026-11-11T02:00:16Z,spreads,Pepperdine Waves,0.0,-105,0.512195,0.489166
+2026-11-11T02:00:26Z,CBB,cec8567863868eee57cefdef4d499a5a,2026-11-12T00:30:00Z,Sam Houston St Bearkats,Pepperdine Waves,betonlineag,2026-11-11T02:00:16Z,spreads,Sam Houston St Bearkats,0.0,-115,0.534884,0.510834
+2026-11-11T02:00:26Z,CBB,cec8567863868eee57cefdef4d499a5a,2026-11-12T00:30:00Z,Sam Houston St Bearkats,Pepperdine Waves,betonlineag,2026-11-11T02:00:16Z,totals,Over,159.0,-115,0.534884,0.510834
+2026-11-11T02:00:26Z,CBB,cec8567863868eee57cefdef4d499a5a,2026-11-12T00:30:00Z,Sam Houston St Bearkats,Pepperdine Waves,betonlineag,2026-11-11T02:00:16Z,totals,Under,159.0,-105,0.512195,0.489166
+2026-11-11T02:00:26Z,CBB,cec8567863868eee57cefdef4d499a5a,2026-11-12T00:30:00Z,Sam Houston St Bearkats,Pepperdine Waves,lowvig,2026-11-11T02:00:21Z,spreads,Pepperdine Waves,0.0,-101,0.502488,0.488538
+2026-11-11T02:00:26Z,CBB,cec8567863868eee57cefdef4d499a5a,2026-11-12T00:30:00Z,Sam Houston St Bearkats,Pepperdine Waves,lowvig,2026-11-11T02:00:21Z,spreads,Sam Houston St Bearkats,0.0,-111,0.526066,0.511462
+2026-11-11T02:00:26Z,CBB,cec8567863868eee57cefdef4d499a5a,2026-11-12T00:30:00Z,Sam Houston St Bearkats,Pepperdine Waves,lowvig,2026-11-11T02:00:21Z,totals,Over,159.0,-113,0.530516,0.511141
+2026-11-11T02:00:26Z,CBB,cec8567863868eee57cefdef4d499a5a,2026-11-12T00:30:00Z,Sam Houston St Bearkats,Pepperdine Waves,lowvig,2026-11-11T02:00:21Z,totals,Under,159.0,-103,0.507389,0.488859
+2026-11-11T02:00:26Z,CBB,cec8567863868eee57cefdef4d499a5a,2026-11-12T00:30:00Z,Sam Houston St Bearkats,Pepperdine Waves,draftkings,2026-11-11T02:00:00Z,h2h,Pepperdine Waves,,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,cec8567863868eee57cefdef4d499a5a,2026-11-12T00:30:00Z,Sam Houston St Bearkats,Pepperdine Waves,draftkings,2026-11-11T02:00:00Z,h2h,Sam Houston St Bearkats,,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,cec8567863868eee57cefdef4d499a5a,2026-11-12T00:30:00Z,Sam Houston St Bearkats,Pepperdine Waves,draftkings,2026-11-11T02:00:00Z,spreads,Pepperdine Waves,1.5,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,cec8567863868eee57cefdef4d499a5a,2026-11-12T00:30:00Z,Sam Houston St Bearkats,Pepperdine Waves,draftkings,2026-11-11T02:00:00Z,spreads,Sam Houston St Bearkats,-1.5,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,cec8567863868eee57cefdef4d499a5a,2026-11-12T00:30:00Z,Sam Houston St Bearkats,Pepperdine Waves,draftkings,2026-11-11T02:00:00Z,totals,Over,159.5,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,cec8567863868eee57cefdef4d499a5a,2026-11-12T00:30:00Z,Sam Houston St Bearkats,Pepperdine Waves,draftkings,2026-11-11T02:00:00Z,totals,Under,159.5,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,727c66ecc80b721c8a7b0252fe67f115,2026-11-12T01:00:00Z,Arkansas Razorbacks,Robert Morris Colonials,betonlineag,2026-11-11T02:00:16Z,spreads,Arkansas Razorbacks,-29.5,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,727c66ecc80b721c8a7b0252fe67f115,2026-11-12T01:00:00Z,Arkansas Razorbacks,Robert Morris Colonials,betonlineag,2026-11-11T02:00:16Z,spreads,Robert Morris Colonials,29.5,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,727c66ecc80b721c8a7b0252fe67f115,2026-11-12T01:00:00Z,Arkansas Razorbacks,Robert Morris Colonials,betonlineag,2026-11-11T02:00:16Z,totals,Over,155.5,-118,0.541284,0.517364
+2026-11-11T02:00:26Z,CBB,727c66ecc80b721c8a7b0252fe67f115,2026-11-12T01:00:00Z,Arkansas Razorbacks,Robert Morris Colonials,betonlineag,2026-11-11T02:00:16Z,totals,Under,155.5,-102,0.50495,0.482636
+2026-11-11T02:00:26Z,CBB,727c66ecc80b721c8a7b0252fe67f115,2026-11-12T01:00:00Z,Arkansas Razorbacks,Robert Morris Colonials,lowvig,2026-11-11T02:00:21Z,spreads,Arkansas Razorbacks,-29.5,-106,0.514563,0.5
+2026-11-11T02:00:26Z,CBB,727c66ecc80b721c8a7b0252fe67f115,2026-11-12T01:00:00Z,Arkansas Razorbacks,Robert Morris Colonials,lowvig,2026-11-11T02:00:21Z,spreads,Robert Morris Colonials,29.5,-106,0.514563,0.5
+2026-11-11T02:00:26Z,CBB,727c66ecc80b721c8a7b0252fe67f115,2026-11-12T01:00:00Z,Arkansas Razorbacks,Robert Morris Colonials,lowvig,2026-11-11T02:00:21Z,totals,Over,155.5,-117,0.539171,0.518847
+2026-11-11T02:00:26Z,CBB,727c66ecc80b721c8a7b0252fe67f115,2026-11-12T01:00:00Z,Arkansas Razorbacks,Robert Morris Colonials,lowvig,2026-11-11T02:00:21Z,totals,Under,155.5,100,0.5,0.481153
+2026-11-11T02:00:26Z,CBB,727c66ecc80b721c8a7b0252fe67f115,2026-11-12T01:00:00Z,Arkansas Razorbacks,Robert Morris Colonials,draftkings,2026-11-11T02:00:00Z,h2h,Arkansas Razorbacks,,-100000,0.999001,0.98075
+2026-11-11T02:00:26Z,CBB,727c66ecc80b721c8a7b0252fe67f115,2026-11-12T01:00:00Z,Arkansas Razorbacks,Robert Morris Colonials,draftkings,2026-11-11T02:00:00Z,h2h,Robert Morris Colonials,,5000,0.019608,0.01925
+2026-11-11T02:00:26Z,CBB,727c66ecc80b721c8a7b0252fe67f115,2026-11-12T01:00:00Z,Arkansas Razorbacks,Robert Morris Colonials,draftkings,2026-11-11T02:00:00Z,spreads,Arkansas Razorbacks,-29.5,-115,0.534884,0.510834
+2026-11-11T02:00:26Z,CBB,727c66ecc80b721c8a7b0252fe67f115,2026-11-12T01:00:00Z,Arkansas Razorbacks,Robert Morris Colonials,draftkings,2026-11-11T02:00:00Z,spreads,Robert Morris Colonials,29.5,-105,0.512195,0.489166
+2026-11-11T02:00:26Z,CBB,727c66ecc80b721c8a7b0252fe67f115,2026-11-12T01:00:00Z,Arkansas Razorbacks,Robert Morris Colonials,draftkings,2026-11-11T02:00:00Z,totals,Over,156.5,-105,0.512195,0.489166
+2026-11-11T02:00:26Z,CBB,727c66ecc80b721c8a7b0252fe67f115,2026-11-12T01:00:00Z,Arkansas Razorbacks,Robert Morris Colonials,draftkings,2026-11-11T02:00:00Z,totals,Under,156.5,-115,0.534884,0.510834
+2026-11-11T02:00:26Z,CBB,727c66ecc80b721c8a7b0252fe67f115,2026-11-12T01:00:00Z,Arkansas Razorbacks,Robert Morris Colonials,fanduel,2026-11-11T01:59:40Z,spreads,Arkansas Razorbacks,-29.5,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,727c66ecc80b721c8a7b0252fe67f115,2026-11-12T01:00:00Z,Arkansas Razorbacks,Robert Morris Colonials,fanduel,2026-11-11T01:59:40Z,spreads,Robert Morris Colonials,29.5,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,727c66ecc80b721c8a7b0252fe67f115,2026-11-12T01:00:00Z,Arkansas Razorbacks,Robert Morris Colonials,fanduel,2026-11-11T01:59:40Z,totals,Over,154.5,-115,0.534884,0.510834
+2026-11-11T02:00:26Z,CBB,727c66ecc80b721c8a7b0252fe67f115,2026-11-12T01:00:00Z,Arkansas Razorbacks,Robert Morris Colonials,fanduel,2026-11-11T01:59:40Z,totals,Under,154.5,-105,0.512195,0.489166
+2026-11-11T02:00:26Z,CBB,8be8e7e6cde374ce6f951b17a29a62c3,2026-11-12T01:00:00Z,Houston Cougars,Jacksonville St Gamecocks,betonlineag,2026-11-11T02:00:16Z,spreads,Houston Cougars,-35.0,-105,0.512195,0.489166
+2026-11-11T02:00:26Z,CBB,8be8e7e6cde374ce6f951b17a29a62c3,2026-11-12T01:00:00Z,Houston Cougars,Jacksonville St Gamecocks,betonlineag,2026-11-11T02:00:16Z,spreads,Jacksonville St Gamecocks,35.0,-115,0.534884,0.510834
+2026-11-11T02:00:26Z,CBB,8be8e7e6cde374ce6f951b17a29a62c3,2026-11-12T01:00:00Z,Houston Cougars,Jacksonville St Gamecocks,betonlineag,2026-11-11T02:00:16Z,totals,Over,137.5,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,8be8e7e6cde374ce6f951b17a29a62c3,2026-11-12T01:00:00Z,Houston Cougars,Jacksonville St Gamecocks,betonlineag,2026-11-11T02:00:16Z,totals,Under,137.5,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,8be8e7e6cde374ce6f951b17a29a62c3,2026-11-12T01:00:00Z,Houston Cougars,Jacksonville St Gamecocks,lowvig,2026-11-11T02:00:21Z,spreads,Houston Cougars,-35.0,-101,0.502488,0.488538
+2026-11-11T02:00:26Z,CBB,8be8e7e6cde374ce6f951b17a29a62c3,2026-11-12T01:00:00Z,Houston Cougars,Jacksonville St Gamecocks,lowvig,2026-11-11T02:00:21Z,spreads,Jacksonville St Gamecocks,35.0,-111,0.526066,0.511462
+2026-11-11T02:00:26Z,CBB,8be8e7e6cde374ce6f951b17a29a62c3,2026-11-12T01:00:00Z,Houston Cougars,Jacksonville St Gamecocks,lowvig,2026-11-11T02:00:21Z,totals,Over,137.5,-108,0.519231,0.5
+2026-11-11T02:00:26Z,CBB,8be8e7e6cde374ce6f951b17a29a62c3,2026-11-12T01:00:00Z,Houston Cougars,Jacksonville St Gamecocks,lowvig,2026-11-11T02:00:21Z,totals,Under,137.5,-108,0.519231,0.5
+2026-11-11T02:00:26Z,CBB,8be8e7e6cde374ce6f951b17a29a62c3,2026-11-12T01:00:00Z,Houston Cougars,Jacksonville St Gamecocks,fanduel,2026-11-11T01:59:40Z,spreads,Houston Cougars,-34.5,-120,0.545455,0.51928
+2026-11-11T02:00:26Z,CBB,8be8e7e6cde374ce6f951b17a29a62c3,2026-11-12T01:00:00Z,Houston Cougars,Jacksonville St Gamecocks,fanduel,2026-11-11T01:59:40Z,spreads,Jacksonville St Gamecocks,34.5,-102,0.50495,0.48072
+2026-11-11T02:00:26Z,CBB,8be8e7e6cde374ce6f951b17a29a62c3,2026-11-12T01:00:00Z,Houston Cougars,Jacksonville St Gamecocks,fanduel,2026-11-11T01:59:40Z,totals,Over,137.5,-115,0.534884,0.510834
+2026-11-11T02:00:26Z,CBB,8be8e7e6cde374ce6f951b17a29a62c3,2026-11-12T01:00:00Z,Houston Cougars,Jacksonville St Gamecocks,fanduel,2026-11-11T01:59:40Z,totals,Under,137.5,-105,0.512195,0.489166
+2026-11-11T02:00:26Z,CBB,8be8e7e6cde374ce6f951b17a29a62c3,2026-11-12T01:00:00Z,Houston Cougars,Jacksonville St Gamecocks,draftkings,2026-11-11T02:00:00Z,spreads,Houston Cougars,-34.5,-112,0.528302,0.50433
+2026-11-11T02:00:26Z,CBB,8be8e7e6cde374ce6f951b17a29a62c3,2026-11-12T01:00:00Z,Houston Cougars,Jacksonville St Gamecocks,draftkings,2026-11-11T02:00:00Z,spreads,Jacksonville St Gamecocks,34.5,-108,0.519231,0.49567
+2026-11-11T02:00:26Z,CBB,8be8e7e6cde374ce6f951b17a29a62c3,2026-11-12T01:00:00Z,Houston Cougars,Jacksonville St Gamecocks,draftkings,2026-11-11T02:00:00Z,totals,Over,137.5,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,8be8e7e6cde374ce6f951b17a29a62c3,2026-11-12T01:00:00Z,Houston Cougars,Jacksonville St Gamecocks,draftkings,2026-11-11T02:00:00Z,totals,Under,137.5,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,797335cb74e596831cb223b996eda670,2026-11-12T01:00:00Z,North Texas Mean Green,Santa Clara Broncos,betonlineag,2026-11-11T02:00:16Z,spreads,North Texas Mean Green,1.0,-115,0.534884,0.510834
+2026-11-11T02:00:26Z,CBB,797335cb74e596831cb223b996eda670,2026-11-12T01:00:00Z,North Texas Mean Green,Santa Clara Broncos,betonlineag,2026-11-11T02:00:16Z,spreads,Santa Clara Broncos,-1.0,-105,0.512195,0.489166
+2026-11-11T02:00:26Z,CBB,797335cb74e596831cb223b996eda670,2026-11-12T01:00:00Z,North Texas Mean Green,Santa Clara Broncos,betonlineag,2026-11-11T02:00:16Z,totals,Over,150.0,-120,0.545455,0.521739
+2026-11-11T02:00:26Z,CBB,797335cb74e596831cb223b996eda670,2026-11-12T01:00:00Z,North Texas Mean Green,Santa Clara Broncos,betonlineag,2026-11-11T02:00:16Z,totals,Under,150.0,100,0.5,0.478261
+2026-11-11T02:00:26Z,CBB,797335cb74e596831cb223b996eda670,2026-11-12T01:00:00Z,North Texas Mean Green,Santa Clara Broncos,lowvig,2026-11-11T02:00:21Z,spreads,North Texas Mean Green,1.0,-111,0.526066,0.511462
+2026-11-11T02:00:26Z,CBB,797335cb74e596831cb223b996eda670,2026-11-12T01:00:00Z,North Texas Mean Green,Santa Clara Broncos,lowvig,2026-11-11T02:00:21Z,spreads,Santa Clara Broncos,-1.0,-101,0.502488,0.488538
+2026-11-11T02:00:26Z,CBB,797335cb74e596831cb223b996eda670,2026-11-12T01:00:00Z,North Texas Mean Green,Santa Clara Broncos,lowvig,2026-11-11T02:00:21Z,totals,Over,150.0,-119,0.543379,0.52327
+2026-11-11T02:00:26Z,CBB,797335cb74e596831cb223b996eda670,2026-11-12T01:00:00Z,North Texas Mean Green,Santa Clara Broncos,lowvig,2026-11-11T02:00:21Z,totals,Under,150.0,102,0.49505,0.47673
+2026-11-11T02:00:26Z,CBB,797335cb74e596831cb223b996eda670,2026-11-12T01:00:00Z,North Texas Mean Green,Santa Clara Broncos,draftkings,2026-11-11T02:00:00Z,h2h,North Texas Mean Green,,-105,0.512195,0.489166
+2026-11-11T02:00:26Z,CBB,797335cb74e596831cb223b996eda670,2026-11-12T01:00:00Z,North Texas Mean Green,Santa Clara Broncos,draftkings,2026-11-11T02:00:00Z,h2h,Santa Clara Broncos,,-115,0.534884,0.510834
+2026-11-11T02:00:26Z,CBB,797335cb74e596831cb223b996eda670,2026-11-12T01:00:00Z,North Texas Mean Green,Santa Clara Broncos,draftkings,2026-11-11T02:00:00Z,spreads,North Texas Mean Green,1.5,-125,0.555556,0.532468
+2026-11-11T02:00:26Z,CBB,797335cb74e596831cb223b996eda670,2026-11-12T01:00:00Z,North Texas Mean Green,Santa Clara Broncos,draftkings,2026-11-11T02:00:00Z,spreads,Santa Clara Broncos,-1.5,105,0.487805,0.467532
+2026-11-11T02:00:26Z,CBB,797335cb74e596831cb223b996eda670,2026-11-12T01:00:00Z,North Texas Mean Green,Santa Clara Broncos,draftkings,2026-11-11T02:00:00Z,totals,Over,150.5,-115,0.534884,0.510834
+2026-11-11T02:00:26Z,CBB,797335cb74e596831cb223b996eda670,2026-11-12T01:00:00Z,North Texas Mean Green,Santa Clara Broncos,draftkings,2026-11-11T02:00:00Z,totals,Under,150.5,-105,0.512195,0.489166
+2026-11-11T02:00:26Z,CBB,b4c3775da0df075aa79f9f881d83ffde,2026-11-12T01:00:00Z,Tulsa Golden Hurricane,Oral Roberts Golden Eagles,betonlineag,2026-11-11T02:00:16Z,spreads,Oral Roberts Golden Eagles,17.0,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,b4c3775da0df075aa79f9f881d83ffde,2026-11-12T01:00:00Z,Tulsa Golden Hurricane,Oral Roberts Golden Eagles,betonlineag,2026-11-11T02:00:16Z,spreads,Tulsa Golden Hurricane,-17.0,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,b4c3775da0df075aa79f9f881d83ffde,2026-11-12T01:00:00Z,Tulsa Golden Hurricane,Oral Roberts Golden Eagles,betonlineag,2026-11-11T02:00:16Z,totals,Over,153.5,-115,0.534884,0.510834
+2026-11-11T02:00:26Z,CBB,b4c3775da0df075aa79f9f881d83ffde,2026-11-12T01:00:00Z,Tulsa Golden Hurricane,Oral Roberts Golden Eagles,betonlineag,2026-11-11T02:00:16Z,totals,Under,153.5,-105,0.512195,0.489166
+2026-11-11T02:00:26Z,CBB,b4c3775da0df075aa79f9f881d83ffde,2026-11-12T01:00:00Z,Tulsa Golden Hurricane,Oral Roberts Golden Eagles,lowvig,2026-11-11T02:00:21Z,spreads,Oral Roberts Golden Eagles,17.0,-106,0.514563,0.5
+2026-11-11T02:00:26Z,CBB,b4c3775da0df075aa79f9f881d83ffde,2026-11-12T01:00:00Z,Tulsa Golden Hurricane,Oral Roberts Golden Eagles,lowvig,2026-11-11T02:00:21Z,spreads,Tulsa Golden Hurricane,-17.0,-106,0.514563,0.5
+2026-11-11T02:00:26Z,CBB,b4c3775da0df075aa79f9f881d83ffde,2026-11-12T01:00:00Z,Tulsa Golden Hurricane,Oral Roberts Golden Eagles,lowvig,2026-11-11T02:00:21Z,totals,Over,153.5,-113,0.530516,0.511141
+2026-11-11T02:00:26Z,CBB,b4c3775da0df075aa79f9f881d83ffde,2026-11-12T01:00:00Z,Tulsa Golden Hurricane,Oral Roberts Golden Eagles,lowvig,2026-11-11T02:00:21Z,totals,Under,153.5,-103,0.507389,0.488859
+2026-11-11T02:00:26Z,CBB,b4c3775da0df075aa79f9f881d83ffde,2026-11-12T01:00:00Z,Tulsa Golden Hurricane,Oral Roberts Golden Eagles,draftkings,2026-11-11T02:00:00Z,spreads,Oral Roberts Golden Eagles,18.5,-118,0.541284,0.517364
+2026-11-11T02:00:26Z,CBB,b4c3775da0df075aa79f9f881d83ffde,2026-11-12T01:00:00Z,Tulsa Golden Hurricane,Oral Roberts Golden Eagles,draftkings,2026-11-11T02:00:00Z,spreads,Tulsa Golden Hurricane,-18.5,-102,0.50495,0.482636
+2026-11-11T02:00:26Z,CBB,b4c3775da0df075aa79f9f881d83ffde,2026-11-12T01:00:00Z,Tulsa Golden Hurricane,Oral Roberts Golden Eagles,draftkings,2026-11-11T02:00:00Z,totals,Over,153.5,-115,0.534884,0.510834
+2026-11-11T02:00:26Z,CBB,b4c3775da0df075aa79f9f881d83ffde,2026-11-12T01:00:00Z,Tulsa Golden Hurricane,Oral Roberts Golden Eagles,draftkings,2026-11-11T02:00:00Z,totals,Under,153.5,-105,0.512195,0.489166
+2026-11-11T02:00:26Z,CBB,7a535301a94288a573a2206f13a52cd9,2026-11-12T01:00:00Z,South Dakota St Jackrabbits,Valparaiso Beacons,betonlineag,2026-11-11T02:00:16Z,spreads,South Dakota St Jackrabbits,2.0,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,7a535301a94288a573a2206f13a52cd9,2026-11-12T01:00:00Z,South Dakota St Jackrabbits,Valparaiso Beacons,betonlineag,2026-11-11T02:00:16Z,spreads,Valparaiso Beacons,-2.0,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,7a535301a94288a573a2206f13a52cd9,2026-11-12T01:00:00Z,South Dakota St Jackrabbits,Valparaiso Beacons,betonlineag,2026-11-11T02:00:16Z,totals,Over,142.5,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,7a535301a94288a573a2206f13a52cd9,2026-11-12T01:00:00Z,South Dakota St Jackrabbits,Valparaiso Beacons,betonlineag,2026-11-11T02:00:16Z,totals,Under,142.5,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,7a535301a94288a573a2206f13a52cd9,2026-11-12T01:00:00Z,South Dakota St Jackrabbits,Valparaiso Beacons,lowvig,2026-11-11T02:00:21Z,spreads,South Dakota St Jackrabbits,2.0,-106,0.514563,0.5
+2026-11-11T02:00:26Z,CBB,7a535301a94288a573a2206f13a52cd9,2026-11-12T01:00:00Z,South Dakota St Jackrabbits,Valparaiso Beacons,lowvig,2026-11-11T02:00:21Z,spreads,Valparaiso Beacons,-2.0,-106,0.514563,0.5
+2026-11-11T02:00:26Z,CBB,7a535301a94288a573a2206f13a52cd9,2026-11-12T01:00:00Z,South Dakota St Jackrabbits,Valparaiso Beacons,lowvig,2026-11-11T02:00:21Z,totals,Over,142.5,-108,0.519231,0.5
+2026-11-11T02:00:26Z,CBB,7a535301a94288a573a2206f13a52cd9,2026-11-12T01:00:00Z,South Dakota St Jackrabbits,Valparaiso Beacons,lowvig,2026-11-11T02:00:21Z,totals,Under,142.5,-108,0.519231,0.5
+2026-11-11T02:00:26Z,CBB,7a535301a94288a573a2206f13a52cd9,2026-11-12T01:00:00Z,South Dakota St Jackrabbits,Valparaiso Beacons,draftkings,2026-11-11T02:00:00Z,h2h,South Dakota St Jackrabbits,,120,0.454545,0.436508
+2026-11-11T02:00:26Z,CBB,7a535301a94288a573a2206f13a52cd9,2026-11-12T01:00:00Z,South Dakota St Jackrabbits,Valparaiso Beacons,draftkings,2026-11-11T02:00:00Z,h2h,Valparaiso Beacons,,-142,0.586777,0.563492
+2026-11-11T02:00:26Z,CBB,7a535301a94288a573a2206f13a52cd9,2026-11-12T01:00:00Z,South Dakota St Jackrabbits,Valparaiso Beacons,draftkings,2026-11-11T02:00:00Z,spreads,South Dakota St Jackrabbits,2.5,-118,0.541284,0.517364
+2026-11-11T02:00:26Z,CBB,7a535301a94288a573a2206f13a52cd9,2026-11-12T01:00:00Z,South Dakota St Jackrabbits,Valparaiso Beacons,draftkings,2026-11-11T02:00:00Z,spreads,Valparaiso Beacons,-2.5,-102,0.50495,0.482636
+2026-11-11T02:00:26Z,CBB,7a535301a94288a573a2206f13a52cd9,2026-11-12T01:00:00Z,South Dakota St Jackrabbits,Valparaiso Beacons,draftkings,2026-11-11T02:00:00Z,totals,Over,142.5,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,7a535301a94288a573a2206f13a52cd9,2026-11-12T01:00:00Z,South Dakota St Jackrabbits,Valparaiso Beacons,draftkings,2026-11-11T02:00:00Z,totals,Under,142.5,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,aa7576381a4cbdf1b32445e296e34a24,2026-11-12T02:00:00Z,Grand Canyon Antelopes,Cal Poly Mustangs,betonlineag,2026-11-11T02:00:16Z,spreads,Cal Poly Mustangs,18.5,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,aa7576381a4cbdf1b32445e296e34a24,2026-11-12T02:00:00Z,Grand Canyon Antelopes,Cal Poly Mustangs,betonlineag,2026-11-11T02:00:16Z,spreads,Grand Canyon Antelopes,-18.5,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,aa7576381a4cbdf1b32445e296e34a24,2026-11-12T02:00:00Z,Grand Canyon Antelopes,Cal Poly Mustangs,betonlineag,2026-11-11T02:00:16Z,totals,Over,178.0,-118,0.541284,0.517364
+2026-11-11T02:00:26Z,CBB,aa7576381a4cbdf1b32445e296e34a24,2026-11-12T02:00:00Z,Grand Canyon Antelopes,Cal Poly Mustangs,betonlineag,2026-11-11T02:00:16Z,totals,Under,178.0,-102,0.50495,0.482636
+2026-11-11T02:00:26Z,CBB,aa7576381a4cbdf1b32445e296e34a24,2026-11-12T02:00:00Z,Grand Canyon Antelopes,Cal Poly Mustangs,lowvig,2026-11-11T02:00:21Z,spreads,Cal Poly Mustangs,18.5,-106,0.514563,0.5
+2026-11-11T02:00:26Z,CBB,aa7576381a4cbdf1b32445e296e34a24,2026-11-12T02:00:00Z,Grand Canyon Antelopes,Cal Poly Mustangs,lowvig,2026-11-11T02:00:21Z,spreads,Grand Canyon Antelopes,-18.5,-106,0.514563,0.5
+2026-11-11T02:00:26Z,CBB,aa7576381a4cbdf1b32445e296e34a24,2026-11-12T02:00:00Z,Grand Canyon Antelopes,Cal Poly Mustangs,lowvig,2026-11-11T02:00:21Z,totals,Over,178.0,-117,0.539171,0.518847
+2026-11-11T02:00:26Z,CBB,aa7576381a4cbdf1b32445e296e34a24,2026-11-12T02:00:00Z,Grand Canyon Antelopes,Cal Poly Mustangs,lowvig,2026-11-11T02:00:21Z,totals,Under,178.0,100,0.5,0.481153
+2026-11-11T02:00:26Z,CBB,aa7576381a4cbdf1b32445e296e34a24,2026-11-12T02:00:00Z,Grand Canyon Antelopes,Cal Poly Mustangs,draftkings,2026-11-11T02:00:00Z,spreads,Cal Poly Mustangs,18.5,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,aa7576381a4cbdf1b32445e296e34a24,2026-11-12T02:00:00Z,Grand Canyon Antelopes,Cal Poly Mustangs,draftkings,2026-11-11T02:00:00Z,spreads,Grand Canyon Antelopes,-18.5,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,aa7576381a4cbdf1b32445e296e34a24,2026-11-12T02:00:00Z,Grand Canyon Antelopes,Cal Poly Mustangs,draftkings,2026-11-11T02:00:00Z,totals,Over,179.5,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,aa7576381a4cbdf1b32445e296e34a24,2026-11-12T02:00:00Z,Grand Canyon Antelopes,Cal Poly Mustangs,draftkings,2026-11-11T02:00:00Z,totals,Under,179.5,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,afbca1bca5b21e68b1f1a233e9f127b9,2026-11-12T02:00:00Z,Colorado St Rams,Portland St Vikings,betonlineag,2026-11-11T02:00:16Z,spreads,Colorado St Rams,-15.0,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,afbca1bca5b21e68b1f1a233e9f127b9,2026-11-12T02:00:00Z,Colorado St Rams,Portland St Vikings,betonlineag,2026-11-11T02:00:16Z,spreads,Portland St Vikings,15.0,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,afbca1bca5b21e68b1f1a233e9f127b9,2026-11-12T02:00:00Z,Colorado St Rams,Portland St Vikings,betonlineag,2026-11-11T02:00:16Z,totals,Over,147.5,-115,0.534884,0.510834
+2026-11-11T02:00:26Z,CBB,afbca1bca5b21e68b1f1a233e9f127b9,2026-11-12T02:00:00Z,Colorado St Rams,Portland St Vikings,betonlineag,2026-11-11T02:00:16Z,totals,Under,147.5,-105,0.512195,0.489166
+2026-11-11T02:00:26Z,CBB,afbca1bca5b21e68b1f1a233e9f127b9,2026-11-12T02:00:00Z,Colorado St Rams,Portland St Vikings,lowvig,2026-11-11T02:00:21Z,spreads,Colorado St Rams,-15.0,-106,0.514563,0.5
+2026-11-11T02:00:26Z,CBB,afbca1bca5b21e68b1f1a233e9f127b9,2026-11-12T02:00:00Z,Colorado St Rams,Portland St Vikings,lowvig,2026-11-11T02:00:21Z,spreads,Portland St Vikings,15.0,-106,0.514563,0.5
+2026-11-11T02:00:26Z,CBB,afbca1bca5b21e68b1f1a233e9f127b9,2026-11-12T02:00:00Z,Colorado St Rams,Portland St Vikings,lowvig,2026-11-11T02:00:21Z,totals,Over,147.5,-113,0.530516,0.511141
+2026-11-11T02:00:26Z,CBB,afbca1bca5b21e68b1f1a233e9f127b9,2026-11-12T02:00:00Z,Colorado St Rams,Portland St Vikings,lowvig,2026-11-11T02:00:21Z,totals,Under,147.5,-103,0.507389,0.488859
+2026-11-11T02:00:26Z,CBB,afbca1bca5b21e68b1f1a233e9f127b9,2026-11-12T02:00:00Z,Colorado St Rams,Portland St Vikings,draftkings,2026-11-11T02:00:00Z,spreads,Colorado St Rams,-14.5,-112,0.528302,0.50433
+2026-11-11T02:00:26Z,CBB,afbca1bca5b21e68b1f1a233e9f127b9,2026-11-12T02:00:00Z,Colorado St Rams,Portland St Vikings,draftkings,2026-11-11T02:00:00Z,spreads,Portland St Vikings,14.5,-108,0.519231,0.49567
+2026-11-11T02:00:26Z,CBB,afbca1bca5b21e68b1f1a233e9f127b9,2026-11-12T02:00:00Z,Colorado St Rams,Portland St Vikings,draftkings,2026-11-11T02:00:00Z,totals,Over,147.5,-115,0.534884,0.510834
+2026-11-11T02:00:26Z,CBB,afbca1bca5b21e68b1f1a233e9f127b9,2026-11-12T02:00:00Z,Colorado St Rams,Portland St Vikings,draftkings,2026-11-11T02:00:00Z,totals,Under,147.5,-105,0.512195,0.489166
+2026-11-11T02:00:26Z,CBB,66797ed562dc7033f7796ca495f88219,2026-11-12T02:00:00Z,Nebraska Cornhuskers,Lindenwood Lions,betonlineag,2026-11-11T02:00:16Z,spreads,Lindenwood Lions,35.0,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,66797ed562dc7033f7796ca495f88219,2026-11-12T02:00:00Z,Nebraska Cornhuskers,Lindenwood Lions,betonlineag,2026-11-11T02:00:16Z,spreads,Nebraska Cornhuskers,-35.0,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,66797ed562dc7033f7796ca495f88219,2026-11-12T02:00:00Z,Nebraska Cornhuskers,Lindenwood Lions,betonlineag,2026-11-11T02:00:16Z,totals,Over,151.0,-115,0.534884,0.510834
+2026-11-11T02:00:26Z,CBB,66797ed562dc7033f7796ca495f88219,2026-11-12T02:00:00Z,Nebraska Cornhuskers,Lindenwood Lions,betonlineag,2026-11-11T02:00:16Z,totals,Under,151.0,-105,0.512195,0.489166
+2026-11-11T02:00:26Z,CBB,66797ed562dc7033f7796ca495f88219,2026-11-12T02:00:00Z,Nebraska Cornhuskers,Lindenwood Lions,lowvig,2026-11-11T02:00:21Z,spreads,Lindenwood Lions,35.0,-106,0.514563,0.5
+2026-11-11T02:00:26Z,CBB,66797ed562dc7033f7796ca495f88219,2026-11-12T02:00:00Z,Nebraska Cornhuskers,Lindenwood Lions,lowvig,2026-11-11T02:00:21Z,spreads,Nebraska Cornhuskers,-35.0,-106,0.514563,0.5
+2026-11-11T02:00:26Z,CBB,66797ed562dc7033f7796ca495f88219,2026-11-12T02:00:00Z,Nebraska Cornhuskers,Lindenwood Lions,lowvig,2026-11-11T02:00:21Z,totals,Over,151.0,-113,0.530516,0.511141
+2026-11-11T02:00:26Z,CBB,66797ed562dc7033f7796ca495f88219,2026-11-12T02:00:00Z,Nebraska Cornhuskers,Lindenwood Lions,lowvig,2026-11-11T02:00:21Z,totals,Under,151.0,-103,0.507389,0.488859
+2026-11-11T02:00:26Z,CBB,66797ed562dc7033f7796ca495f88219,2026-11-12T02:00:00Z,Nebraska Cornhuskers,Lindenwood Lions,draftkings,2026-11-11T02:00:00Z,spreads,Lindenwood Lions,34.5,-108,0.519231,0.49567
+2026-11-11T02:00:26Z,CBB,66797ed562dc7033f7796ca495f88219,2026-11-12T02:00:00Z,Nebraska Cornhuskers,Lindenwood Lions,draftkings,2026-11-11T02:00:00Z,spreads,Nebraska Cornhuskers,-34.5,-112,0.528302,0.50433
+2026-11-11T02:00:26Z,CBB,66797ed562dc7033f7796ca495f88219,2026-11-12T02:00:00Z,Nebraska Cornhuskers,Lindenwood Lions,draftkings,2026-11-11T02:00:00Z,totals,Over,151.5,-108,0.519231,0.49567
+2026-11-11T02:00:26Z,CBB,66797ed562dc7033f7796ca495f88219,2026-11-12T02:00:00Z,Nebraska Cornhuskers,Lindenwood Lions,draftkings,2026-11-11T02:00:00Z,totals,Under,151.5,-112,0.528302,0.50433
+2026-11-11T02:00:26Z,CBB,3cc19d97cf26e86153795e21abb5f55d,2026-11-12T02:00:00Z,UC Santa Barbara Gauchos,Nevada Wolf Pack,betonlineag,2026-11-11T02:00:16Z,spreads,Nevada Wolf Pack,-1.5,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,3cc19d97cf26e86153795e21abb5f55d,2026-11-12T02:00:00Z,UC Santa Barbara Gauchos,Nevada Wolf Pack,betonlineag,2026-11-11T02:00:16Z,spreads,UC Santa Barbara Gauchos,1.5,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,3cc19d97cf26e86153795e21abb5f55d,2026-11-12T02:00:00Z,UC Santa Barbara Gauchos,Nevada Wolf Pack,betonlineag,2026-11-11T02:00:16Z,totals,Over,145.0,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,3cc19d97cf26e86153795e21abb5f55d,2026-11-12T02:00:00Z,UC Santa Barbara Gauchos,Nevada Wolf Pack,betonlineag,2026-11-11T02:00:16Z,totals,Under,145.0,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,3cc19d97cf26e86153795e21abb5f55d,2026-11-12T02:00:00Z,UC Santa Barbara Gauchos,Nevada Wolf Pack,lowvig,2026-11-11T02:00:21Z,spreads,Nevada Wolf Pack,-1.5,-106,0.514563,0.5
+2026-11-11T02:00:26Z,CBB,3cc19d97cf26e86153795e21abb5f55d,2026-11-12T02:00:00Z,UC Santa Barbara Gauchos,Nevada Wolf Pack,lowvig,2026-11-11T02:00:21Z,spreads,UC Santa Barbara Gauchos,1.5,-106,0.514563,0.5
+2026-11-11T02:00:26Z,CBB,3cc19d97cf26e86153795e21abb5f55d,2026-11-12T02:00:00Z,UC Santa Barbara Gauchos,Nevada Wolf Pack,lowvig,2026-11-11T02:00:21Z,totals,Over,145.0,-108,0.519231,0.5
+2026-11-11T02:00:26Z,CBB,3cc19d97cf26e86153795e21abb5f55d,2026-11-12T02:00:00Z,UC Santa Barbara Gauchos,Nevada Wolf Pack,lowvig,2026-11-11T02:00:21Z,totals,Under,145.0,-108,0.519231,0.5
+2026-11-11T02:00:26Z,CBB,3cc19d97cf26e86153795e21abb5f55d,2026-11-12T02:00:00Z,UC Santa Barbara Gauchos,Nevada Wolf Pack,fanduel,2026-11-11T01:59:40Z,h2h,Nevada Wolf Pack,,-114,0.53271,0.509817
+2026-11-11T02:00:26Z,CBB,3cc19d97cf26e86153795e21abb5f55d,2026-11-12T02:00:00Z,UC Santa Barbara Gauchos,Nevada Wolf Pack,fanduel,2026-11-11T01:59:40Z,h2h,UC Santa Barbara Gauchos,,-105,0.512195,0.490183
+2026-11-11T02:00:26Z,CBB,3cc19d97cf26e86153795e21abb5f55d,2026-11-12T02:00:00Z,UC Santa Barbara Gauchos,Nevada Wolf Pack,fanduel,2026-11-11T01:59:40Z,spreads,Nevada Wolf Pack,-1.5,-105,0.512195,0.489166
+2026-11-11T02:00:26Z,CBB,3cc19d97cf26e86153795e21abb5f55d,2026-11-12T02:00:00Z,UC Santa Barbara Gauchos,Nevada Wolf Pack,fanduel,2026-11-11T01:59:40Z,spreads,UC Santa Barbara Gauchos,1.5,-115,0.534884,0.510834
+2026-11-11T02:00:26Z,CBB,3cc19d97cf26e86153795e21abb5f55d,2026-11-12T02:00:00Z,UC Santa Barbara Gauchos,Nevada Wolf Pack,fanduel,2026-11-11T01:59:40Z,totals,Over,144.5,-115,0.534884,0.510834
+2026-11-11T02:00:26Z,CBB,3cc19d97cf26e86153795e21abb5f55d,2026-11-12T02:00:00Z,UC Santa Barbara Gauchos,Nevada Wolf Pack,fanduel,2026-11-11T01:59:40Z,totals,Under,144.5,-105,0.512195,0.489166
+2026-11-11T02:00:26Z,CBB,3cc19d97cf26e86153795e21abb5f55d,2026-11-12T02:00:00Z,UC Santa Barbara Gauchos,Nevada Wolf Pack,draftkings,2026-11-11T02:00:00Z,h2h,Nevada Wolf Pack,,-122,0.54955,0.526087
+2026-11-11T02:00:26Z,CBB,3cc19d97cf26e86153795e21abb5f55d,2026-11-12T02:00:00Z,UC Santa Barbara Gauchos,Nevada Wolf Pack,draftkings,2026-11-11T02:00:00Z,h2h,UC Santa Barbara Gauchos,,102,0.49505,0.473913
+2026-11-11T02:00:26Z,CBB,3cc19d97cf26e86153795e21abb5f55d,2026-11-12T02:00:00Z,UC Santa Barbara Gauchos,Nevada Wolf Pack,draftkings,2026-11-11T02:00:00Z,spreads,Nevada Wolf Pack,-1.5,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,3cc19d97cf26e86153795e21abb5f55d,2026-11-12T02:00:00Z,UC Santa Barbara Gauchos,Nevada Wolf Pack,draftkings,2026-11-11T02:00:00Z,spreads,UC Santa Barbara Gauchos,1.5,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,3cc19d97cf26e86153795e21abb5f55d,2026-11-12T02:00:00Z,UC Santa Barbara Gauchos,Nevada Wolf Pack,draftkings,2026-11-11T02:00:00Z,totals,Over,145.5,-105,0.512195,0.489166
+2026-11-11T02:00:26Z,CBB,3cc19d97cf26e86153795e21abb5f55d,2026-11-12T02:00:00Z,UC Santa Barbara Gauchos,Nevada Wolf Pack,draftkings,2026-11-11T02:00:00Z,totals,Under,145.5,-115,0.534884,0.510834
+2026-11-11T02:00:26Z,CBB,4a67ec53bead3f5556b92ef5ad63885c,2026-11-12T03:00:00Z,Long Beach St 49ers,Pacific Tigers,betonlineag,2026-11-11T02:00:16Z,spreads,Long Beach St 49ers,6.0,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,4a67ec53bead3f5556b92ef5ad63885c,2026-11-12T03:00:00Z,Long Beach St 49ers,Pacific Tigers,betonlineag,2026-11-11T02:00:16Z,spreads,Pacific Tigers,-6.0,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,4a67ec53bead3f5556b92ef5ad63885c,2026-11-12T03:00:00Z,Long Beach St 49ers,Pacific Tigers,betonlineag,2026-11-11T02:00:16Z,totals,Over,138.0,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,4a67ec53bead3f5556b92ef5ad63885c,2026-11-12T03:00:00Z,Long Beach St 49ers,Pacific Tigers,betonlineag,2026-11-11T02:00:16Z,totals,Under,138.0,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,4a67ec53bead3f5556b92ef5ad63885c,2026-11-12T03:00:00Z,Long Beach St 49ers,Pacific Tigers,lowvig,2026-11-11T02:00:21Z,spreads,Long Beach St 49ers,6.0,-106,0.514563,0.5
+2026-11-11T02:00:26Z,CBB,4a67ec53bead3f5556b92ef5ad63885c,2026-11-12T03:00:00Z,Long Beach St 49ers,Pacific Tigers,lowvig,2026-11-11T02:00:21Z,spreads,Pacific Tigers,-6.0,-106,0.514563,0.5
+2026-11-11T02:00:26Z,CBB,4a67ec53bead3f5556b92ef5ad63885c,2026-11-12T03:00:00Z,Long Beach St 49ers,Pacific Tigers,lowvig,2026-11-11T02:00:21Z,totals,Over,138.0,-108,0.519231,0.5
+2026-11-11T02:00:26Z,CBB,4a67ec53bead3f5556b92ef5ad63885c,2026-11-12T03:00:00Z,Long Beach St 49ers,Pacific Tigers,lowvig,2026-11-11T02:00:21Z,totals,Under,138.0,-108,0.519231,0.5
+2026-11-11T02:00:26Z,CBB,4a67ec53bead3f5556b92ef5ad63885c,2026-11-12T03:00:00Z,Long Beach St 49ers,Pacific Tigers,draftkings,2026-11-11T02:00:00Z,spreads,Long Beach St 49ers,6.5,-112,0.528302,0.50433
+2026-11-11T02:00:26Z,CBB,4a67ec53bead3f5556b92ef5ad63885c,2026-11-12T03:00:00Z,Long Beach St 49ers,Pacific Tigers,draftkings,2026-11-11T02:00:00Z,spreads,Pacific Tigers,-6.5,-108,0.519231,0.49567
+2026-11-11T02:00:26Z,CBB,4a67ec53bead3f5556b92ef5ad63885c,2026-11-12T03:00:00Z,Long Beach St 49ers,Pacific Tigers,draftkings,2026-11-11T02:00:00Z,totals,Over,138.5,-105,0.512195,0.489166
+2026-11-11T02:00:26Z,CBB,4a67ec53bead3f5556b92ef5ad63885c,2026-11-12T03:00:00Z,Long Beach St 49ers,Pacific Tigers,draftkings,2026-11-11T02:00:00Z,totals,Under,138.5,-115,0.534884,0.510834
+2026-11-11T02:00:26Z,CBB,4a67ec53bead3f5556b92ef5ad63885c,2026-11-12T03:00:00Z,Long Beach St 49ers,Pacific Tigers,fanduel,2026-11-11T01:59:40Z,h2h,Long Beach St 49ers,,198,0.33557,0.319635
+2026-11-11T02:00:26Z,CBB,4a67ec53bead3f5556b92ef5ad63885c,2026-11-12T03:00:00Z,Long Beach St 49ers,Pacific Tigers,fanduel,2026-11-11T01:59:40Z,h2h,Pacific Tigers,,-250,0.714286,0.680365
+2026-11-11T02:00:26Z,CBB,4a67ec53bead3f5556b92ef5ad63885c,2026-11-12T03:00:00Z,Long Beach St 49ers,Pacific Tigers,fanduel,2026-11-11T01:59:40Z,spreads,Long Beach St 49ers,6.5,-118,0.541284,0.514975
+2026-11-11T02:00:26Z,CBB,4a67ec53bead3f5556b92ef5ad63885c,2026-11-12T03:00:00Z,Long Beach St 49ers,Pacific Tigers,fanduel,2026-11-11T01:59:40Z,spreads,Pacific Tigers,-6.5,-104,0.509804,0.485025
+2026-11-11T02:00:26Z,CBB,4a67ec53bead3f5556b92ef5ad63885c,2026-11-12T03:00:00Z,Long Beach St 49ers,Pacific Tigers,fanduel,2026-11-11T01:59:40Z,totals,Over,138.5,-115,0.534884,0.510834
+2026-11-11T02:00:26Z,CBB,4a67ec53bead3f5556b92ef5ad63885c,2026-11-12T03:00:00Z,Long Beach St 49ers,Pacific Tigers,fanduel,2026-11-11T01:59:40Z,totals,Under,138.5,-105,0.512195,0.489166
+2026-11-11T02:00:26Z,CBB,7519c97618a3f43c4af47a05aeb69e78,2026-11-12T03:00:00Z,Seattle Redhawks,UTSA Roadrunners,betonlineag,2026-11-11T02:00:16Z,spreads,Seattle Redhawks,-15.0,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,7519c97618a3f43c4af47a05aeb69e78,2026-11-12T03:00:00Z,Seattle Redhawks,UTSA Roadrunners,betonlineag,2026-11-11T02:00:16Z,spreads,UTSA Roadrunners,15.0,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,7519c97618a3f43c4af47a05aeb69e78,2026-11-12T03:00:00Z,Seattle Redhawks,UTSA Roadrunners,betonlineag,2026-11-11T02:00:16Z,totals,Over,150.0,-115,0.534884,0.510834
+2026-11-11T02:00:26Z,CBB,7519c97618a3f43c4af47a05aeb69e78,2026-11-12T03:00:00Z,Seattle Redhawks,UTSA Roadrunners,betonlineag,2026-11-11T02:00:16Z,totals,Under,150.0,-105,0.512195,0.489166
+2026-11-11T02:00:26Z,CBB,7519c97618a3f43c4af47a05aeb69e78,2026-11-12T03:00:00Z,Seattle Redhawks,UTSA Roadrunners,lowvig,2026-11-11T02:00:21Z,spreads,Seattle Redhawks,-15.0,-106,0.514563,0.5
+2026-11-11T02:00:26Z,CBB,7519c97618a3f43c4af47a05aeb69e78,2026-11-12T03:00:00Z,Seattle Redhawks,UTSA Roadrunners,lowvig,2026-11-11T02:00:21Z,spreads,UTSA Roadrunners,15.0,-106,0.514563,0.5
+2026-11-11T02:00:26Z,CBB,7519c97618a3f43c4af47a05aeb69e78,2026-11-12T03:00:00Z,Seattle Redhawks,UTSA Roadrunners,lowvig,2026-11-11T02:00:21Z,totals,Over,150.0,-113,0.530516,0.511141
+2026-11-11T02:00:26Z,CBB,7519c97618a3f43c4af47a05aeb69e78,2026-11-12T03:00:00Z,Seattle Redhawks,UTSA Roadrunners,lowvig,2026-11-11T02:00:21Z,totals,Under,150.0,-103,0.507389,0.488859
+2026-11-11T02:00:26Z,CBB,7519c97618a3f43c4af47a05aeb69e78,2026-11-12T03:00:00Z,Seattle Redhawks,UTSA Roadrunners,draftkings,2026-11-11T02:00:00Z,spreads,Seattle Redhawks,-15.5,-102,0.50495,0.482636
+2026-11-11T02:00:26Z,CBB,7519c97618a3f43c4af47a05aeb69e78,2026-11-12T03:00:00Z,Seattle Redhawks,UTSA Roadrunners,draftkings,2026-11-11T02:00:00Z,spreads,UTSA Roadrunners,15.5,-118,0.541284,0.517364
+2026-11-11T02:00:26Z,CBB,7519c97618a3f43c4af47a05aeb69e78,2026-11-12T03:00:00Z,Seattle Redhawks,UTSA Roadrunners,draftkings,2026-11-11T02:00:00Z,totals,Over,150.5,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,7519c97618a3f43c4af47a05aeb69e78,2026-11-12T03:00:00Z,Seattle Redhawks,UTSA Roadrunners,draftkings,2026-11-11T02:00:00Z,totals,Under,150.5,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,92cc2f2a169d4efd4f1a0ac9d25672bc,2026-11-12T04:00:00Z,California Golden Bears,USC Trojans,betonlineag,2026-11-11T02:00:16Z,spreads,California Golden Bears,7.0,-105,0.512195,0.489166
+2026-11-11T02:00:26Z,CBB,92cc2f2a169d4efd4f1a0ac9d25672bc,2026-11-12T04:00:00Z,California Golden Bears,USC Trojans,betonlineag,2026-11-11T02:00:16Z,spreads,USC Trojans,-7.0,-115,0.534884,0.510834
+2026-11-11T02:00:26Z,CBB,92cc2f2a169d4efd4f1a0ac9d25672bc,2026-11-12T04:00:00Z,California Golden Bears,USC Trojans,betonlineag,2026-11-11T02:00:16Z,totals,Over,160.0,-115,0.534884,0.510834
+2026-11-11T02:00:26Z,CBB,92cc2f2a169d4efd4f1a0ac9d25672bc,2026-11-12T04:00:00Z,California Golden Bears,USC Trojans,betonlineag,2026-11-11T02:00:16Z,totals,Under,160.0,-105,0.512195,0.489166
+2026-11-11T02:00:26Z,CBB,92cc2f2a169d4efd4f1a0ac9d25672bc,2026-11-12T04:00:00Z,California Golden Bears,USC Trojans,lowvig,2026-11-11T02:00:21Z,spreads,California Golden Bears,7.0,-101,0.502488,0.488538
+2026-11-11T02:00:26Z,CBB,92cc2f2a169d4efd4f1a0ac9d25672bc,2026-11-12T04:00:00Z,California Golden Bears,USC Trojans,lowvig,2026-11-11T02:00:21Z,spreads,USC Trojans,-7.0,-111,0.526066,0.511462
+2026-11-11T02:00:26Z,CBB,92cc2f2a169d4efd4f1a0ac9d25672bc,2026-11-12T04:00:00Z,California Golden Bears,USC Trojans,lowvig,2026-11-11T02:00:21Z,totals,Over,160.0,-113,0.530516,0.511141
+2026-11-11T02:00:26Z,CBB,92cc2f2a169d4efd4f1a0ac9d25672bc,2026-11-12T04:00:00Z,California Golden Bears,USC Trojans,lowvig,2026-11-11T02:00:21Z,totals,Under,160.0,-103,0.507389,0.488859
+2026-11-11T02:00:26Z,CBB,92cc2f2a169d4efd4f1a0ac9d25672bc,2026-11-12T04:00:00Z,California Golden Bears,USC Trojans,draftkings,2026-11-11T02:00:00Z,h2h,California Golden Bears,,260,0.277778,0.266458
+2026-11-11T02:00:26Z,CBB,92cc2f2a169d4efd4f1a0ac9d25672bc,2026-11-12T04:00:00Z,California Golden Bears,USC Trojans,draftkings,2026-11-11T02:00:00Z,h2h,USC Trojans,,-325,0.764706,0.733542
+2026-11-11T02:00:26Z,CBB,92cc2f2a169d4efd4f1a0ac9d25672bc,2026-11-12T04:00:00Z,California Golden Bears,USC Trojans,draftkings,2026-11-11T02:00:00Z,spreads,California Golden Bears,7.5,-112,0.528302,0.50433
+2026-11-11T02:00:26Z,CBB,92cc2f2a169d4efd4f1a0ac9d25672bc,2026-11-12T04:00:00Z,California Golden Bears,USC Trojans,draftkings,2026-11-11T02:00:00Z,spreads,USC Trojans,-7.5,-108,0.519231,0.49567
+2026-11-11T02:00:26Z,CBB,92cc2f2a169d4efd4f1a0ac9d25672bc,2026-11-12T04:00:00Z,California Golden Bears,USC Trojans,draftkings,2026-11-11T02:00:00Z,totals,Over,160.5,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,92cc2f2a169d4efd4f1a0ac9d25672bc,2026-11-12T04:00:00Z,California Golden Bears,USC Trojans,draftkings,2026-11-11T02:00:00Z,totals,Under,160.5,-110,0.52381,0.5
+2026-11-11T02:00:26Z,CBB,92cc2f2a169d4efd4f1a0ac9d25672bc,2026-11-12T04:00:00Z,California Golden Bears,USC Trojans,fanduel,2026-11-11T01:59:40Z,h2h,California Golden Bears,,275,0.266667,0.255319
+2026-11-11T02:00:26Z,CBB,92cc2f2a169d4efd4f1a0ac9d25672bc,2026-11-12T04:00:00Z,California Golden Bears,USC Trojans,fanduel,2026-11-11T01:59:40Z,h2h,USC Trojans,,-350,0.777778,0.744681
+2026-11-11T02:00:26Z,CBB,92cc2f2a169d4efd4f1a0ac9d25672bc,2026-11-12T04:00:00Z,California Golden Bears,USC Trojans,fanduel,2026-11-11T01:59:40Z,spreads,California Golden Bears,7.5,-108,0.519231,0.49567
+2026-11-11T02:00:26Z,CBB,92cc2f2a169d4efd4f1a0ac9d25672bc,2026-11-12T04:00:00Z,California Golden Bears,USC Trojans,fanduel,2026-11-11T01:59:40Z,spreads,USC Trojans,-7.5,-112,0.528302,0.50433
+2026-11-11T02:00:26Z,CBB,92cc2f2a169d4efd4f1a0ac9d25672bc,2026-11-12T04:00:00Z,California Golden Bears,USC Trojans,fanduel,2026-11-11T01:59:40Z,totals,Over,160.5,-115,0.534884,0.510834
+2026-11-11T02:00:26Z,CBB,92cc2f2a169d4efd4f1a0ac9d25672bc,2026-11-12T04:00:00Z,California Golden Bears,USC Trojans,fanduel,2026-11-11T01:59:40Z,totals,Under,160.5,-105,0.512195,0.489166

@@ -1,88 +1,4 @@
 league,event_id,commence_utc,home_team,away_team,market,outcome,point,fair,source,n_books,fetched_ts
-NFL,74d39e19225caf211ad2c8eb4110179f,2026-11-13T01:15:00Z,New York Giants,Washington Commanders,h2h,New York Giants,,0.558271,pinnacle,1,2026-11-10T19:57:08Z
-NFL,74d39e19225caf211ad2c8eb4110179f,2026-11-13T01:15:00Z,New York Giants,Washington Commanders,h2h,Washington Commanders,,0.441729,pinnacle,1,2026-11-10T19:57:08Z
-NFL,74d39e19225caf211ad2c8eb4110179f,2026-11-13T01:15:00Z,New York Giants,Washington Commanders,spreads,New York Giants,-2.5,0.49771,pinnacle,1,2026-11-10T19:57:08Z
-NFL,74d39e19225caf211ad2c8eb4110179f,2026-11-13T01:15:00Z,New York Giants,Washington Commanders,spreads,Washington Commanders,2.5,0.50229,pinnacle,1,2026-11-10T19:57:08Z
-NFL,74d39e19225caf211ad2c8eb4110179f,2026-11-13T01:15:00Z,New York Giants,Washington Commanders,totals,Over,42.0,0.471458,pinnacle,1,2026-11-10T19:57:08Z
-NFL,74d39e19225caf211ad2c8eb4110179f,2026-11-13T01:15:00Z,New York Giants,Washington Commanders,totals,Under,42.0,0.528542,pinnacle,1,2026-11-10T19:57:08Z
-NFL,b8c10fdf1e0ac4e13deee7f7c0af0b0b,2026-11-15T14:30:00Z,Detroit Lions,New England Patriots,h2h,Detroit Lions,,0.588624,pinnacle,1,2026-11-10T19:57:08Z
-NFL,b8c10fdf1e0ac4e13deee7f7c0af0b0b,2026-11-15T14:30:00Z,Detroit Lions,New England Patriots,h2h,New England Patriots,,0.411376,pinnacle,1,2026-11-10T19:57:08Z
-NFL,b8c10fdf1e0ac4e13deee7f7c0af0b0b,2026-11-15T14:30:00Z,Detroit Lions,New England Patriots,spreads,Detroit Lions,-2.5,0.535484,pinnacle,1,2026-11-10T19:57:08Z
-NFL,b8c10fdf1e0ac4e13deee7f7c0af0b0b,2026-11-15T14:30:00Z,Detroit Lions,New England Patriots,spreads,New England Patriots,2.5,0.464516,pinnacle,1,2026-11-10T19:57:08Z
-NFL,b8c10fdf1e0ac4e13deee7f7c0af0b0b,2026-11-15T14:30:00Z,Detroit Lions,New England Patriots,totals,Over,51.0,0.49332,pinnacle,1,2026-11-10T19:57:08Z
-NFL,b8c10fdf1e0ac4e13deee7f7c0af0b0b,2026-11-15T14:30:00Z,Detroit Lions,New England Patriots,totals,Under,51.0,0.50668,pinnacle,1,2026-11-10T19:57:08Z
-NFL,3c71d515b726f1096aabb435badb83fd,2026-11-15T18:00:00Z,Atlanta Falcons,Kansas City Chiefs,h2h,Atlanta Falcons,,0.383142,pinnacle,1,2026-11-10T19:57:08Z
-NFL,3c71d515b726f1096aabb435badb83fd,2026-11-15T18:00:00Z,Atlanta Falcons,Kansas City Chiefs,h2h,Kansas City Chiefs,,0.616858,pinnacle,1,2026-11-10T19:57:08Z
-NFL,3c71d515b726f1096aabb435badb83fd,2026-11-15T18:00:00Z,Atlanta Falcons,Kansas City Chiefs,spreads,Atlanta Falcons,3.5,0.52816,pinnacle,1,2026-11-10T19:57:08Z
-NFL,3c71d515b726f1096aabb435badb83fd,2026-11-15T18:00:00Z,Atlanta Falcons,Kansas City Chiefs,spreads,Kansas City Chiefs,-3.5,0.47184,pinnacle,1,2026-11-10T19:57:08Z
-NFL,3c71d515b726f1096aabb435badb83fd,2026-11-15T18:00:00Z,Atlanta Falcons,Kansas City Chiefs,totals,Over,45.5,0.491091,pinnacle,1,2026-11-10T19:57:08Z
-NFL,3c71d515b726f1096aabb435badb83fd,2026-11-15T18:00:00Z,Atlanta Falcons,Kansas City Chiefs,totals,Under,45.5,0.508909,pinnacle,1,2026-11-10T19:57:08Z
-NFL,1057d50949844ddf483da9c8c20354be,2026-11-15T18:00:00Z,New York Jets,Buffalo Bills,h2h,Buffalo Bills,,0.781872,pinnacle,1,2026-11-10T19:57:08Z
-NFL,1057d50949844ddf483da9c8c20354be,2026-11-15T18:00:00Z,New York Jets,Buffalo Bills,h2h,New York Jets,,0.218128,pinnacle,1,2026-11-10T19:57:08Z
-NFL,1057d50949844ddf483da9c8c20354be,2026-11-15T18:00:00Z,New York Jets,Buffalo Bills,spreads,Buffalo Bills,-7.5,0.517083,pinnacle,1,2026-11-10T19:57:08Z
-NFL,1057d50949844ddf483da9c8c20354be,2026-11-15T18:00:00Z,New York Jets,Buffalo Bills,spreads,New York Jets,7.5,0.482917,pinnacle,1,2026-11-10T19:57:08Z
-NFL,1057d50949844ddf483da9c8c20354be,2026-11-15T18:00:00Z,New York Jets,Buffalo Bills,totals,Over,51.0,0.502226,pinnacle,1,2026-11-10T19:57:08Z
-NFL,1057d50949844ddf483da9c8c20354be,2026-11-15T18:00:00Z,New York Jets,Buffalo Bills,totals,Under,51.0,0.497774,pinnacle,1,2026-11-10T19:57:08Z
-NFL,e5aa20e1364dd639f042af1c2281bbe2,2026-11-15T18:00:00Z,New Orleans Saints,Carolina Panthers,spreads,Carolina Panthers,1.0,0.490834,pinnacle,1,2026-11-10T19:57:08Z
-NFL,e5aa20e1364dd639f042af1c2281bbe2,2026-11-15T18:00:00Z,New Orleans Saints,Carolina Panthers,spreads,New Orleans Saints,-1.0,0.509166,pinnacle,1,2026-11-10T19:57:08Z
-NFL,e5aa20e1364dd639f042af1c2281bbe2,2026-11-15T18:00:00Z,New Orleans Saints,Carolina Panthers,totals,Over,48.5,0.508909,pinnacle,1,2026-11-10T19:57:08Z
-NFL,e5aa20e1364dd639f042af1c2281bbe2,2026-11-15T18:00:00Z,New Orleans Saints,Carolina Panthers,totals,Under,48.5,0.491091,pinnacle,1,2026-11-10T19:57:08Z
-NFL,e5aa20e1364dd639f042af1c2281bbe2,2026-11-15T18:00:00Z,New Orleans Saints,Carolina Panthers,h2h,Carolina Panthers,,0.474016,pinnacle,1,2026-11-10T19:57:08Z
-NFL,e5aa20e1364dd639f042af1c2281bbe2,2026-11-15T18:00:00Z,New Orleans Saints,Carolina Panthers,h2h,New Orleans Saints,,0.525984,pinnacle,1,2026-11-10T19:57:08Z
-NFL,be0e03cc42fbc9b6962467b22c7bf9dd,2026-11-15T18:00:00Z,Cleveland Browns,Houston Texans,h2h,Cleveland Browns,,0.325733,pinnacle,1,2026-11-10T19:57:08Z
-NFL,be0e03cc42fbc9b6962467b22c7bf9dd,2026-11-15T18:00:00Z,Cleveland Browns,Houston Texans,h2h,Houston Texans,,0.674267,pinnacle,1,2026-11-10T19:57:08Z
-NFL,be0e03cc42fbc9b6962467b22c7bf9dd,2026-11-15T18:00:00Z,Cleveland Browns,Houston Texans,spreads,Cleveland Browns,5.0,0.50458,pinnacle,1,2026-11-10T19:57:08Z
-NFL,be0e03cc42fbc9b6962467b22c7bf9dd,2026-11-15T18:00:00Z,Cleveland Browns,Houston Texans,spreads,Houston Texans,-5.0,0.49542,pinnacle,1,2026-11-10T19:57:08Z
-NFL,be0e03cc42fbc9b6962467b22c7bf9dd,2026-11-15T18:00:00Z,Cleveland Browns,Houston Texans,totals,Over,39.5,0.516618,pinnacle,1,2026-11-10T19:57:08Z
-NFL,be0e03cc42fbc9b6962467b22c7bf9dd,2026-11-15T18:00:00Z,Cleveland Browns,Houston Texans,totals,Under,39.5,0.483382,pinnacle,1,2026-11-10T19:57:08Z
-NFL,5d8d85473b87f772a979ecf294acab94,2026-11-15T18:00:00Z,Green Bay Packers,Minnesota Vikings,h2h,Green Bay Packers,,0.631053,pinnacle,1,2026-11-10T19:57:08Z
-NFL,5d8d85473b87f772a979ecf294acab94,2026-11-15T18:00:00Z,Green Bay Packers,Minnesota Vikings,h2h,Minnesota Vikings,,0.368947,pinnacle,1,2026-11-10T19:57:08Z
-NFL,5d8d85473b87f772a979ecf294acab94,2026-11-15T18:00:00Z,Green Bay Packers,Minnesota Vikings,spreads,Green Bay Packers,-3.5,0.5,pinnacle,1,2026-11-10T19:57:08Z
-NFL,5d8d85473b87f772a979ecf294acab94,2026-11-15T18:00:00Z,Green Bay Packers,Minnesota Vikings,spreads,Minnesota Vikings,3.5,0.5,pinnacle,1,2026-11-10T19:57:08Z
-NFL,5d8d85473b87f772a979ecf294acab94,2026-11-15T18:00:00Z,Green Bay Packers,Minnesota Vikings,totals,Over,42.0,0.502226,pinnacle,1,2026-11-10T19:57:08Z
-NFL,5d8d85473b87f772a979ecf294acab94,2026-11-15T18:00:00Z,Green Bay Packers,Minnesota Vikings,totals,Under,42.0,0.497774,pinnacle,1,2026-11-10T19:57:08Z
-NFL,b5700b4d938fd94429f60d4622cc9c0a,2026-11-15T18:00:00Z,Indianapolis Colts,Miami Dolphins,h2h,Indianapolis Colts,,0.57259,pinnacle,1,2026-11-10T19:57:08Z
-NFL,b5700b4d938fd94429f60d4622cc9c0a,2026-11-15T18:00:00Z,Indianapolis Colts,Miami Dolphins,h2h,Miami Dolphins,,0.42741,pinnacle,1,2026-11-10T19:57:08Z
-NFL,b5700b4d938fd94429f60d4622cc9c0a,2026-11-15T18:00:00Z,Indianapolis Colts,Miami Dolphins,spreads,Indianapolis Colts,-2.5,0.509166,pinnacle,1,2026-11-10T19:57:08Z
-NFL,b5700b4d938fd94429f60d4622cc9c0a,2026-11-15T18:00:00Z,Indianapolis Colts,Miami Dolphins,spreads,Miami Dolphins,2.5,0.490834,pinnacle,1,2026-11-10T19:57:08Z
-NFL,b5700b4d938fd94429f60d4622cc9c0a,2026-11-15T18:00:00Z,Indianapolis Colts,Miami Dolphins,totals,Over,40.5,0.504452,pinnacle,1,2026-11-10T19:57:08Z
-NFL,b5700b4d938fd94429f60d4622cc9c0a,2026-11-15T18:00:00Z,Indianapolis Colts,Miami Dolphins,totals,Under,40.5,0.495548,pinnacle,1,2026-11-10T19:57:08Z
-NFL,28800df7e768ecec14f116454d560f9b,2026-11-15T18:00:00Z,Tennessee Titans,Jacksonville Jaguars,h2h,Jacksonville Jaguars,,0.817195,pinnacle,1,2026-11-10T19:57:08Z
-NFL,28800df7e768ecec14f116454d560f9b,2026-11-15T18:00:00Z,Tennessee Titans,Jacksonville Jaguars,h2h,Tennessee Titans,,0.182805,pinnacle,1,2026-11-10T19:57:08Z
-NFL,28800df7e768ecec14f116454d560f9b,2026-11-15T18:00:00Z,Tennessee Titans,Jacksonville Jaguars,spreads,Jacksonville Jaguars,-10.5,0.509166,pinnacle,1,2026-11-10T19:57:08Z
-NFL,28800df7e768ecec14f116454d560f9b,2026-11-15T18:00:00Z,Tennessee Titans,Jacksonville Jaguars,spreads,Tennessee Titans,10.5,0.490834,pinnacle,1,2026-11-10T19:57:08Z
-NFL,28800df7e768ecec14f116454d560f9b,2026-11-15T18:00:00Z,Tennessee Titans,Jacksonville Jaguars,totals,Over,46.5,0.487828,pinnacle,1,2026-11-10T19:57:08Z
-NFL,28800df7e768ecec14f116454d560f9b,2026-11-15T18:00:00Z,Tennessee Titans,Jacksonville Jaguars,totals,Under,46.5,0.512172,pinnacle,1,2026-11-10T19:57:08Z
-NFL,6c932a965110f3f89ec4a5f1a6ac256e,2026-11-15T21:05:00Z,Arizona Cardinals,Los Angeles Rams,h2h,Arizona Cardinals,,0.214732,pinnacle,1,2026-11-10T19:57:08Z
-NFL,6c932a965110f3f89ec4a5f1a6ac256e,2026-11-15T21:05:00Z,Arizona Cardinals,Los Angeles Rams,h2h,Los Angeles Rams,,0.785268,pinnacle,1,2026-11-10T19:57:08Z
-NFL,6c932a965110f3f89ec4a5f1a6ac256e,2026-11-15T21:05:00Z,Arizona Cardinals,Los Angeles Rams,spreads,Arizona Cardinals,9.5,0.506872,pinnacle,1,2026-11-10T19:57:08Z
-NFL,6c932a965110f3f89ec4a5f1a6ac256e,2026-11-15T21:05:00Z,Arizona Cardinals,Los Angeles Rams,spreads,Los Angeles Rams,-9.5,0.493128,pinnacle,1,2026-11-10T19:57:08Z
-NFL,6c932a965110f3f89ec4a5f1a6ac256e,2026-11-15T21:05:00Z,Arizona Cardinals,Los Angeles Rams,totals,Over,39.5,0.49332,pinnacle,1,2026-11-10T19:57:08Z
-NFL,6c932a965110f3f89ec4a5f1a6ac256e,2026-11-15T21:05:00Z,Arizona Cardinals,Los Angeles Rams,totals,Under,39.5,0.50668,pinnacle,1,2026-11-10T19:57:08Z
-NFL,6079a5cbabf99b265a17edfc92a1da60,2026-11-15T21:05:00Z,Las Vegas Raiders,Seattle Seahawks,h2h,Las Vegas Raiders,,0.29468,pinnacle,1,2026-11-10T19:57:08Z
-NFL,6079a5cbabf99b265a17edfc92a1da60,2026-11-15T21:05:00Z,Las Vegas Raiders,Seattle Seahawks,h2h,Seattle Seahawks,,0.70532,pinnacle,1,2026-11-10T19:57:08Z
-NFL,6079a5cbabf99b265a17edfc92a1da60,2026-11-15T21:05:00Z,Las Vegas Raiders,Seattle Seahawks,spreads,Las Vegas Raiders,6.5,0.511462,pinnacle,1,2026-11-10T19:57:08Z
-NFL,6079a5cbabf99b265a17edfc92a1da60,2026-11-15T21:05:00Z,Las Vegas Raiders,Seattle Seahawks,spreads,Seattle Seahawks,-6.5,0.488538,pinnacle,1,2026-11-10T19:57:08Z
-NFL,6079a5cbabf99b265a17edfc92a1da60,2026-11-15T21:05:00Z,Las Vegas Raiders,Seattle Seahawks,totals,Over,40.5,0.502226,pinnacle,1,2026-11-10T19:57:08Z
-NFL,6079a5cbabf99b265a17edfc92a1da60,2026-11-15T21:05:00Z,Las Vegas Raiders,Seattle Seahawks,totals,Under,40.5,0.497774,pinnacle,1,2026-11-10T19:57:08Z
-NFL,7627192fd89b05120ab6c712aa23fd81,2026-11-15T21:25:00Z,Dallas Cowboys,San Francisco 49ers,h2h,Dallas Cowboys,,0.347435,pinnacle,1,2026-11-10T19:57:08Z
-NFL,7627192fd89b05120ab6c712aa23fd81,2026-11-15T21:25:00Z,Dallas Cowboys,San Francisco 49ers,h2h,San Francisco 49ers,,0.652565,pinnacle,1,2026-11-10T19:57:08Z
-NFL,7627192fd89b05120ab6c712aa23fd81,2026-11-15T21:25:00Z,Dallas Cowboys,San Francisco 49ers,spreads,Dallas Cowboys,4.0,0.50229,pinnacle,1,2026-11-10T19:57:08Z
-NFL,7627192fd89b05120ab6c712aa23fd81,2026-11-15T21:25:00Z,Dallas Cowboys,San Francisco 49ers,spreads,San Francisco 49ers,-4.0,0.49771,pinnacle,1,2026-11-10T19:57:08Z
-NFL,7627192fd89b05120ab6c712aa23fd81,2026-11-15T21:25:00Z,Dallas Cowboys,San Francisco 49ers,totals,Over,56.0,0.478931,pinnacle,1,2026-11-10T19:57:08Z
-NFL,7627192fd89b05120ab6c712aa23fd81,2026-11-15T21:25:00Z,Dallas Cowboys,San Francisco 49ers,totals,Under,56.0,0.521069,pinnacle,1,2026-11-10T19:57:08Z
-NFL,48e497c230e6c9afcb3b600091d28e17,2026-11-16T01:20:00Z,Cincinnati Bengals,Pittsburgh Steelers,h2h,Cincinnati Bengals,,0.631489,pinnacle,1,2026-11-10T19:57:08Z
-NFL,48e497c230e6c9afcb3b600091d28e17,2026-11-16T01:20:00Z,Cincinnati Bengals,Pittsburgh Steelers,h2h,Pittsburgh Steelers,,0.368511,pinnacle,1,2026-11-10T19:57:08Z
-NFL,48e497c230e6c9afcb3b600091d28e17,2026-11-16T01:20:00Z,Cincinnati Bengals,Pittsburgh Steelers,spreads,Cincinnati Bengals,-3.5,0.49542,pinnacle,1,2026-11-10T19:57:08Z
-NFL,48e497c230e6c9afcb3b600091d28e17,2026-11-16T01:20:00Z,Cincinnati Bengals,Pittsburgh Steelers,spreads,Pittsburgh Steelers,3.5,0.50458,pinnacle,1,2026-11-10T19:57:08Z
-NFL,48e497c230e6c9afcb3b600091d28e17,2026-11-16T01:20:00Z,Cincinnati Bengals,Pittsburgh Steelers,totals,Over,48.5,0.518847,pinnacle,1,2026-11-10T19:57:08Z
-NFL,48e497c230e6c9afcb3b600091d28e17,2026-11-16T01:20:00Z,Cincinnati Bengals,Pittsburgh Steelers,totals,Under,48.5,0.481153,pinnacle,1,2026-11-10T19:57:08Z
-NFL,35e3bdff558b5d1506251e814986f164,2026-11-17T01:15:00Z,Baltimore Ravens,Los Angeles Chargers,h2h,Baltimore Ravens,,0.675005,pinnacle,1,2026-11-10T19:57:08Z
-NFL,35e3bdff558b5d1506251e814986f164,2026-11-17T01:15:00Z,Baltimore Ravens,Los Angeles Chargers,h2h,Los Angeles Chargers,,0.324995,pinnacle,1,2026-11-10T19:57:08Z
-NFL,35e3bdff558b5d1506251e814986f164,2026-11-17T01:15:00Z,Baltimore Ravens,Los Angeles Chargers,spreads,Baltimore Ravens,-5.0,0.5,pinnacle,1,2026-11-10T19:57:08Z
-NFL,35e3bdff558b5d1506251e814986f164,2026-11-17T01:15:00Z,Baltimore Ravens,Los Angeles Chargers,spreads,Los Angeles Chargers,5.0,0.5,pinnacle,1,2026-11-10T19:57:08Z
-NFL,35e3bdff558b5d1506251e814986f164,2026-11-17T01:15:00Z,Baltimore Ravens,Los Angeles Chargers,totals,Over,38.5,0.5,pinnacle,1,2026-11-10T19:57:08Z
-NFL,35e3bdff558b5d1506251e814986f164,2026-11-17T01:15:00Z,Baltimore Ravens,Los Angeles Chargers,totals,Under,38.5,0.5,pinnacle,1,2026-11-10T19:57:08Z
 CFB,5fc2c0b99e391f74694276d2eb95146c,2026-11-11T00:00:00Z,Akron Zips,Western Michigan Broncos,h2h,Akron Zips,,0.156008,pinnacle,1,2026-11-10T23:30:00Z
 CFB,5fc2c0b99e391f74694276d2eb95146c,2026-11-11T00:00:00Z,Akron Zips,Western Michigan Broncos,h2h,Western Michigan Broncos,,0.843992,pinnacle,1,2026-11-10T23:30:00Z
 CFB,5fc2c0b99e391f74694276d2eb95146c,2026-11-11T00:00:00Z,Akron Zips,Western Michigan Broncos,spreads,Akron Zips,15.5,0.513761,pinnacle,1,2026-11-10T23:30:00Z
@@ -601,123 +517,163 @@ CBB,1697ac30f74318b8094ae3f11442cdea,2026-11-11T02:00:00Z,Utah Utes,Weber State 
 CBB,1697ac30f74318b8094ae3f11442cdea,2026-11-11T02:00:00Z,Utah Utes,Weber State Wildcats,spreads,Weber State Wildcats,16.5,0.495548,pinnacle,1,2026-11-11T00:51:58Z
 CBB,1697ac30f74318b8094ae3f11442cdea,2026-11-11T02:00:00Z,Utah Utes,Weber State Wildcats,totals,Over,154.5,0.49567,pinnacle,1,2026-11-11T00:51:58Z
 CBB,1697ac30f74318b8094ae3f11442cdea,2026-11-11T02:00:00Z,Utah Utes,Weber State Wildcats,totals,Under,154.5,0.50433,pinnacle,1,2026-11-11T00:51:58Z
-CBB,ac091b3b15d1fcf0312f8c0500329879,2026-11-11T02:35:00Z,Kentucky Wildcats,Kansas Jayhawks,h2h,Kansas Jayhawks,,0.648454,pinnacle,1,2026-11-11T00:51:58Z
-CBB,ac091b3b15d1fcf0312f8c0500329879,2026-11-11T02:35:00Z,Kentucky Wildcats,Kansas Jayhawks,h2h,Kentucky Wildcats,,0.351546,pinnacle,1,2026-11-11T00:51:58Z
-CBB,ac091b3b15d1fcf0312f8c0500329879,2026-11-11T02:35:00Z,Kentucky Wildcats,Kansas Jayhawks,spreads,Kansas Jayhawks,-5.0,0.5,pinnacle,1,2026-11-11T00:51:58Z
-CBB,ac091b3b15d1fcf0312f8c0500329879,2026-11-11T02:35:00Z,Kentucky Wildcats,Kansas Jayhawks,spreads,Kentucky Wildcats,5.0,0.5,pinnacle,1,2026-11-11T00:51:58Z
-CBB,ac091b3b15d1fcf0312f8c0500329879,2026-11-11T02:35:00Z,Kentucky Wildcats,Kansas Jayhawks,totals,Over,159.0,0.49567,pinnacle,1,2026-11-11T00:51:58Z
-CBB,ac091b3b15d1fcf0312f8c0500329879,2026-11-11T02:35:00Z,Kentucky Wildcats,Kansas Jayhawks,totals,Under,159.0,0.50433,pinnacle,1,2026-11-11T00:51:58Z
-CBB,ec95fa37f8cd117d2b0e8da4db83b192,2026-11-11T03:00:00Z,San Francisco Dons,Montana Grizzlies,h2h,Montana Grizzlies,,0.151876,pinnacle,1,2026-11-11T00:51:58Z
-CBB,ec95fa37f8cd117d2b0e8da4db83b192,2026-11-11T03:00:00Z,San Francisco Dons,Montana Grizzlies,h2h,San Francisco Dons,,0.848124,pinnacle,1,2026-11-11T00:51:58Z
-CBB,ec95fa37f8cd117d2b0e8da4db83b192,2026-11-11T03:00:00Z,San Francisco Dons,Montana Grizzlies,spreads,Montana Grizzlies,11.5,0.50668,pinnacle,1,2026-11-11T00:51:58Z
-CBB,ec95fa37f8cd117d2b0e8da4db83b192,2026-11-11T03:00:00Z,San Francisco Dons,Montana Grizzlies,spreads,San Francisco Dons,-11.5,0.49332,pinnacle,1,2026-11-11T00:51:58Z
-CBB,ec95fa37f8cd117d2b0e8da4db83b192,2026-11-11T03:00:00Z,San Francisco Dons,Montana Grizzlies,totals,Over,147.5,0.491336,pinnacle,1,2026-11-11T00:51:58Z
-CBB,ec95fa37f8cd117d2b0e8da4db83b192,2026-11-11T03:00:00Z,San Francisco Dons,Montana Grizzlies,totals,Under,147.5,0.508664,pinnacle,1,2026-11-11T00:51:58Z
-CBB,b4a1814a6efc7eb096e5ac5e857915b5,2026-11-11T20:00:00Z,Air Force Falcons,Loyola (Chi) Ramblers,spreads,Air Force Falcons,8.5,0.5,consensus:2,2,2026-11-11T00:51:58Z
-CBB,b4a1814a6efc7eb096e5ac5e857915b5,2026-11-11T20:00:00Z,Air Force Falcons,Loyola (Chi) Ramblers,spreads,Loyola (Chi) Ramblers,-8.5,0.5,consensus:2,2,2026-11-11T00:51:58Z
-CBB,b4a1814a6efc7eb096e5ac5e857915b5,2026-11-11T20:00:00Z,Air Force Falcons,Loyola (Chi) Ramblers,totals,Over,155.0,0.5,consensus:2,2,2026-11-11T00:51:58Z
-CBB,b4a1814a6efc7eb096e5ac5e857915b5,2026-11-11T20:00:00Z,Air Force Falcons,Loyola (Chi) Ramblers,totals,Under,155.0,0.5,consensus:2,2,2026-11-11T00:51:58Z
-CBB,fb4e0baed91adfe2f7de6ca28ed533e8,2026-11-11T20:00:00Z,Saint Joseph's Hawks,South Florida Bulls,spreads,Saint Joseph's Hawks,8.0,0.506684,consensus:2,2,2026-11-11T00:51:58Z
-CBB,fb4e0baed91adfe2f7de6ca28ed533e8,2026-11-11T20:00:00Z,Saint Joseph's Hawks,South Florida Bulls,spreads,South Florida Bulls,-8.0,0.493316,consensus:2,2,2026-11-11T00:51:58Z
-CBB,fb4e0baed91adfe2f7de6ca28ed533e8,2026-11-11T20:00:00Z,Saint Joseph's Hawks,South Florida Bulls,totals,Over,151.0,0.5,consensus:2,2,2026-11-11T00:51:58Z
-CBB,fb4e0baed91adfe2f7de6ca28ed533e8,2026-11-11T20:00:00Z,Saint Joseph's Hawks,South Florida Bulls,totals,Under,151.0,0.5,consensus:2,2,2026-11-11T00:51:58Z
-CBB,83af3d625408a5c5f1b726fe740fc2ef,2026-11-11T21:00:00Z,East Carolina Pirates,North Carolina A&T Aggies,spreads,East Carolina Pirates,-10.5,0.5,consensus:2,2,2026-11-11T00:51:58Z
-CBB,83af3d625408a5c5f1b726fe740fc2ef,2026-11-11T21:00:00Z,East Carolina Pirates,North Carolina A&T Aggies,spreads,North Carolina A&T Aggies,10.5,0.5,consensus:2,2,2026-11-11T00:51:58Z
-CBB,83af3d625408a5c5f1b726fe740fc2ef,2026-11-11T21:00:00Z,East Carolina Pirates,North Carolina A&T Aggies,totals,Over,151.5,0.5,consensus:2,2,2026-11-11T00:51:58Z
-CBB,83af3d625408a5c5f1b726fe740fc2ef,2026-11-11T21:00:00Z,East Carolina Pirates,North Carolina A&T Aggies,totals,Under,151.5,0.5,consensus:2,2,2026-11-11T00:51:58Z
-CBB,c07a4ccdd6e2560b5829395b56863dc1,2026-11-11T23:30:00Z,Temple Owls,Charleston Cougars,spreads,Charleston Cougars,0.0,0.488852,consensus:2,2,2026-11-11T00:51:58Z
-CBB,c07a4ccdd6e2560b5829395b56863dc1,2026-11-11T23:30:00Z,Temple Owls,Charleston Cougars,spreads,Temple Owls,0.0,0.511148,consensus:2,2,2026-11-11T00:51:58Z
-CBB,c07a4ccdd6e2560b5829395b56863dc1,2026-11-11T23:30:00Z,Temple Owls,Charleston Cougars,totals,Over,153.5,0.510988,consensus:2,2,2026-11-11T00:51:58Z
-CBB,c07a4ccdd6e2560b5829395b56863dc1,2026-11-11T23:30:00Z,Temple Owls,Charleston Cougars,totals,Under,153.5,0.489012,consensus:2,2,2026-11-11T00:51:58Z
-CBB,460ff0fdd5edcbe00e3f8cb6e74d6fbb,2026-11-11T23:30:00Z,IUPUI Jaguars,Southern Indiana Screaming Eagles,spreads,IUPUI Jaguars,-5.0,0.5,consensus:2,2,2026-11-11T00:51:58Z
-CBB,460ff0fdd5edcbe00e3f8cb6e74d6fbb,2026-11-11T23:30:00Z,IUPUI Jaguars,Southern Indiana Screaming Eagles,spreads,Southern Indiana Screaming Eagles,5.0,0.5,consensus:2,2,2026-11-11T00:51:58Z
-CBB,460ff0fdd5edcbe00e3f8cb6e74d6fbb,2026-11-11T23:30:00Z,IUPUI Jaguars,Southern Indiana Screaming Eagles,totals,Over,160.0,0.510988,consensus:2,2,2026-11-11T00:51:58Z
-CBB,460ff0fdd5edcbe00e3f8cb6e74d6fbb,2026-11-11T23:30:00Z,IUPUI Jaguars,Southern Indiana Screaming Eagles,totals,Under,160.0,0.489012,consensus:2,2,2026-11-11T00:51:58Z
-CBB,3701dfd3294546a83cc0c666d61f49eb,2026-11-12T00:00:00Z,East Tennessee St Buccaneers,Campbell Fighting Camels,spreads,Campbell Fighting Camels,6.0,0.5,consensus:2,2,2026-11-11T00:51:58Z
-CBB,3701dfd3294546a83cc0c666d61f49eb,2026-11-12T00:00:00Z,East Tennessee St Buccaneers,Campbell Fighting Camels,spreads,East Tennessee St Buccaneers,-6.0,0.5,consensus:2,2,2026-11-11T00:51:58Z
-CBB,3701dfd3294546a83cc0c666d61f49eb,2026-11-12T00:00:00Z,East Tennessee St Buccaneers,Campbell Fighting Camels,totals,Over,148.5,0.5,consensus:2,2,2026-11-11T00:51:58Z
-CBB,3701dfd3294546a83cc0c666d61f49eb,2026-11-12T00:00:00Z,East Tennessee St Buccaneers,Campbell Fighting Camels,totals,Under,148.5,0.5,consensus:2,2,2026-11-11T00:51:58Z
-CBB,2ad8e525847167b94b3fe19623b9447a,2026-11-12T00:00:00Z,St. Bonaventure Bonnies,Cornell Big Red,spreads,Cornell Big Red,8.0,0.5,consensus:2,2,2026-11-11T00:51:58Z
-CBB,2ad8e525847167b94b3fe19623b9447a,2026-11-12T00:00:00Z,St. Bonaventure Bonnies,Cornell Big Red,spreads,St. Bonaventure Bonnies,-8.0,0.5,consensus:2,2,2026-11-11T00:51:58Z
-CBB,2ad8e525847167b94b3fe19623b9447a,2026-11-12T00:00:00Z,St. Bonaventure Bonnies,Cornell Big Red,totals,Over,154.5,0.510988,consensus:2,2,2026-11-11T00:51:58Z
-CBB,2ad8e525847167b94b3fe19623b9447a,2026-11-12T00:00:00Z,St. Bonaventure Bonnies,Cornell Big Red,totals,Under,154.5,0.489012,consensus:2,2,2026-11-11T00:51:58Z
-CBB,6f26440351de53a17fb83781075b7698,2026-11-12T00:00:00Z,Delaware Blue Hens,James Madison Dukes,spreads,Delaware Blue Hens,3.5,0.488852,consensus:2,2,2026-11-11T00:51:58Z
-CBB,6f26440351de53a17fb83781075b7698,2026-11-12T00:00:00Z,Delaware Blue Hens,James Madison Dukes,spreads,James Madison Dukes,-3.5,0.511148,consensus:2,2,2026-11-11T00:51:58Z
-CBB,6f26440351de53a17fb83781075b7698,2026-11-12T00:00:00Z,Delaware Blue Hens,James Madison Dukes,totals,Over,148.0,0.5,consensus:2,2,2026-11-11T00:51:58Z
-CBB,6f26440351de53a17fb83781075b7698,2026-11-12T00:00:00Z,Delaware Blue Hens,James Madison Dukes,totals,Under,148.0,0.5,consensus:2,2,2026-11-11T00:51:58Z
-CBB,a5647dffff37f54bd901019578095560,2026-11-12T00:00:00Z,Florida Atlantic Owls,William & Mary Tribe,spreads,Florida Atlantic Owls,-5.0,0.511148,consensus:2,2,2026-11-11T00:51:58Z
-CBB,a5647dffff37f54bd901019578095560,2026-11-12T00:00:00Z,Florida Atlantic Owls,William & Mary Tribe,spreads,William & Mary Tribe,5.0,0.488852,consensus:2,2,2026-11-11T00:51:58Z
-CBB,a5647dffff37f54bd901019578095560,2026-11-12T00:00:00Z,Florida Atlantic Owls,William & Mary Tribe,totals,Over,162.5,0.510988,consensus:2,2,2026-11-11T00:51:58Z
-CBB,a5647dffff37f54bd901019578095560,2026-11-12T00:00:00Z,Florida Atlantic Owls,William & Mary Tribe,totals,Under,162.5,0.489012,consensus:2,2,2026-11-11T00:51:58Z
-CBB,6712d238dc9bc8354686dde1ee6cd6f2,2026-11-12T00:00:00Z,Indiana St Sycamores,Milwaukee Panthers,spreads,Indiana St Sycamores,-5.0,0.5,consensus:2,2,2026-11-11T00:51:58Z
-CBB,6712d238dc9bc8354686dde1ee6cd6f2,2026-11-12T00:00:00Z,Indiana St Sycamores,Milwaukee Panthers,spreads,Milwaukee Panthers,5.0,0.5,consensus:2,2,2026-11-11T00:51:58Z
-CBB,6712d238dc9bc8354686dde1ee6cd6f2,2026-11-12T00:00:00Z,Indiana St Sycamores,Milwaukee Panthers,totals,Over,151.5,0.510988,consensus:2,2,2026-11-11T00:51:58Z
-CBB,6712d238dc9bc8354686dde1ee6cd6f2,2026-11-12T00:00:00Z,Indiana St Sycamores,Milwaukee Panthers,totals,Under,151.5,0.489012,consensus:2,2,2026-11-11T00:51:58Z
-CBB,015a3bad9e6d4b3ce108f6e7c663ed88,2026-11-12T00:00:00Z,UNC Wilmington Seahawks,Kent State Golden Flashes,spreads,Kent State Golden Flashes,5.5,0.5,consensus:2,2,2026-11-11T00:51:58Z
-CBB,015a3bad9e6d4b3ce108f6e7c663ed88,2026-11-12T00:00:00Z,UNC Wilmington Seahawks,Kent State Golden Flashes,spreads,UNC Wilmington Seahawks,-5.5,0.5,consensus:2,2,2026-11-11T00:51:58Z
-CBB,015a3bad9e6d4b3ce108f6e7c663ed88,2026-11-12T00:00:00Z,UNC Wilmington Seahawks,Kent State Golden Flashes,totals,Over,153.5,0.5,consensus:2,2,2026-11-11T00:51:58Z
-CBB,015a3bad9e6d4b3ce108f6e7c663ed88,2026-11-12T00:00:00Z,UNC Wilmington Seahawks,Kent State Golden Flashes,totals,Under,153.5,0.5,consensus:2,2,2026-11-11T00:51:58Z
-CBB,c5a909abd1412b4f70b5e5448a0b3b13,2026-11-12T00:00:00Z,Michigan Wolverines,Marquette Golden Eagles,spreads,Marquette Golden Eagles,4.0,0.5,consensus:2,2,2026-11-11T00:51:58Z
-CBB,c5a909abd1412b4f70b5e5448a0b3b13,2026-11-12T00:00:00Z,Michigan Wolverines,Marquette Golden Eagles,spreads,Michigan Wolverines,-4.0,0.5,consensus:2,2,2026-11-11T00:51:58Z
-CBB,c5a909abd1412b4f70b5e5448a0b3b13,2026-11-12T00:00:00Z,Michigan Wolverines,Marquette Golden Eagles,totals,Over,152.5,0.5,consensus:2,2,2026-11-11T00:51:58Z
-CBB,c5a909abd1412b4f70b5e5448a0b3b13,2026-11-12T00:00:00Z,Michigan Wolverines,Marquette Golden Eagles,totals,Under,152.5,0.5,consensus:2,2,2026-11-11T00:51:58Z
-CBB,4759cdf6363bef48c1455c003b0d4645,2026-11-12T00:00:00Z,Princeton Tigers,Stony Brook Seawolves,spreads,Princeton Tigers,-5.0,0.5,consensus:2,2,2026-11-11T00:51:58Z
-CBB,4759cdf6363bef48c1455c003b0d4645,2026-11-12T00:00:00Z,Princeton Tigers,Stony Brook Seawolves,spreads,Stony Brook Seawolves,5.0,0.5,consensus:2,2,2026-11-11T00:51:58Z
-CBB,4759cdf6363bef48c1455c003b0d4645,2026-11-12T00:00:00Z,Princeton Tigers,Stony Brook Seawolves,totals,Over,138.0,0.489012,consensus:2,2,2026-11-11T00:51:58Z
-CBB,4759cdf6363bef48c1455c003b0d4645,2026-11-12T00:00:00Z,Princeton Tigers,Stony Brook Seawolves,totals,Under,138.0,0.510988,consensus:2,2,2026-11-11T00:51:58Z
-CBB,ab097a031b98bea79556def8937e59c5,2026-11-12T00:00:00Z,South Carolina Gamecocks,Saint Peter's Peacocks,spreads,Saint Peter's Peacocks,21.5,0.488852,consensus:2,2,2026-11-11T00:51:58Z
-CBB,ab097a031b98bea79556def8937e59c5,2026-11-12T00:00:00Z,South Carolina Gamecocks,Saint Peter's Peacocks,spreads,South Carolina Gamecocks,-21.5,0.511148,consensus:2,2,2026-11-11T00:51:58Z
-CBB,ab097a031b98bea79556def8937e59c5,2026-11-12T00:00:00Z,South Carolina Gamecocks,Saint Peter's Peacocks,totals,Over,129.0,0.5,consensus:2,2,2026-11-11T00:51:58Z
-CBB,ab097a031b98bea79556def8937e59c5,2026-11-12T00:00:00Z,South Carolina Gamecocks,Saint Peter's Peacocks,totals,Under,129.0,0.5,consensus:2,2,2026-11-11T00:51:58Z
-CBB,cec8567863868eee57cefdef4d499a5a,2026-11-12T00:30:00Z,Sam Houston St Bearkats,Pepperdine Waves,spreads,Pepperdine Waves,0.0,0.488852,consensus:2,2,2026-11-11T00:51:58Z
-CBB,cec8567863868eee57cefdef4d499a5a,2026-11-12T00:30:00Z,Sam Houston St Bearkats,Pepperdine Waves,spreads,Sam Houston St Bearkats,0.0,0.511148,consensus:2,2,2026-11-11T00:51:58Z
-CBB,cec8567863868eee57cefdef4d499a5a,2026-11-12T00:30:00Z,Sam Houston St Bearkats,Pepperdine Waves,totals,Over,159.0,0.510988,consensus:2,2,2026-11-11T00:51:58Z
-CBB,cec8567863868eee57cefdef4d499a5a,2026-11-12T00:30:00Z,Sam Houston St Bearkats,Pepperdine Waves,totals,Under,159.0,0.489012,consensus:2,2,2026-11-11T00:51:58Z
-CBB,727c66ecc80b721c8a7b0252fe67f115,2026-11-12T01:00:00Z,Arkansas Razorbacks,Robert Morris Colonials,spreads,Arkansas Razorbacks,-29.5,0.5,consensus:2,2,2026-11-11T00:51:58Z
-CBB,727c66ecc80b721c8a7b0252fe67f115,2026-11-12T01:00:00Z,Arkansas Razorbacks,Robert Morris Colonials,spreads,Robert Morris Colonials,29.5,0.5,consensus:2,2,2026-11-11T00:51:58Z
-CBB,727c66ecc80b721c8a7b0252fe67f115,2026-11-12T01:00:00Z,Arkansas Razorbacks,Robert Morris Colonials,totals,Over,155.5,0.518106,consensus:2,2,2026-11-11T00:51:58Z
-CBB,727c66ecc80b721c8a7b0252fe67f115,2026-11-12T01:00:00Z,Arkansas Razorbacks,Robert Morris Colonials,totals,Under,155.5,0.481894,consensus:2,2,2026-11-11T00:51:58Z
-CBB,8be8e7e6cde374ce6f951b17a29a62c3,2026-11-12T01:00:00Z,Houston Cougars,Jacksonville St Gamecocks,spreads,Houston Cougars,-35.0,0.488852,consensus:2,2,2026-11-11T00:51:58Z
-CBB,8be8e7e6cde374ce6f951b17a29a62c3,2026-11-12T01:00:00Z,Houston Cougars,Jacksonville St Gamecocks,spreads,Jacksonville St Gamecocks,35.0,0.511148,consensus:2,2,2026-11-11T00:51:58Z
-CBB,8be8e7e6cde374ce6f951b17a29a62c3,2026-11-12T01:00:00Z,Houston Cougars,Jacksonville St Gamecocks,totals,Over,137.5,0.5,consensus:2,2,2026-11-11T00:51:58Z
-CBB,8be8e7e6cde374ce6f951b17a29a62c3,2026-11-12T01:00:00Z,Houston Cougars,Jacksonville St Gamecocks,totals,Under,137.5,0.5,consensus:2,2,2026-11-11T00:51:58Z
-CBB,797335cb74e596831cb223b996eda670,2026-11-12T01:00:00Z,North Texas Mean Green,Santa Clara Broncos,spreads,North Texas Mean Green,1.0,0.511148,consensus:2,2,2026-11-11T00:51:58Z
-CBB,797335cb74e596831cb223b996eda670,2026-11-12T01:00:00Z,North Texas Mean Green,Santa Clara Broncos,spreads,Santa Clara Broncos,-1.0,0.488852,consensus:2,2,2026-11-11T00:51:58Z
-CBB,797335cb74e596831cb223b996eda670,2026-11-12T01:00:00Z,North Texas Mean Green,Santa Clara Broncos,totals,Over,150.0,0.522505,consensus:2,2,2026-11-11T00:51:58Z
-CBB,797335cb74e596831cb223b996eda670,2026-11-12T01:00:00Z,North Texas Mean Green,Santa Clara Broncos,totals,Under,150.0,0.477496,consensus:2,2,2026-11-11T00:51:58Z
-CBB,b4c3775da0df075aa79f9f881d83ffde,2026-11-12T01:00:00Z,Tulsa Golden Hurricane,Oral Roberts Golden Eagles,spreads,Oral Roberts Golden Eagles,18.5,0.5,consensus:2,2,2026-11-11T00:51:58Z
-CBB,b4c3775da0df075aa79f9f881d83ffde,2026-11-12T01:00:00Z,Tulsa Golden Hurricane,Oral Roberts Golden Eagles,spreads,Tulsa Golden Hurricane,-18.5,0.5,consensus:2,2,2026-11-11T00:51:58Z
-CBB,b4c3775da0df075aa79f9f881d83ffde,2026-11-12T01:00:00Z,Tulsa Golden Hurricane,Oral Roberts Golden Eagles,totals,Over,153.5,0.510988,consensus:2,2,2026-11-11T00:51:58Z
-CBB,b4c3775da0df075aa79f9f881d83ffde,2026-11-12T01:00:00Z,Tulsa Golden Hurricane,Oral Roberts Golden Eagles,totals,Under,153.5,0.489012,consensus:2,2,2026-11-11T00:51:58Z
-CBB,7a535301a94288a573a2206f13a52cd9,2026-11-12T01:00:00Z,South Dakota St Jackrabbits,Valparaiso Beacons,spreads,South Dakota St Jackrabbits,2.0,0.5,consensus:2,2,2026-11-11T00:51:58Z
-CBB,7a535301a94288a573a2206f13a52cd9,2026-11-12T01:00:00Z,South Dakota St Jackrabbits,Valparaiso Beacons,spreads,Valparaiso Beacons,-2.0,0.5,consensus:2,2,2026-11-11T00:51:58Z
-CBB,7a535301a94288a573a2206f13a52cd9,2026-11-12T01:00:00Z,South Dakota St Jackrabbits,Valparaiso Beacons,totals,Over,142.5,0.5,consensus:2,2,2026-11-11T00:51:58Z
-CBB,7a535301a94288a573a2206f13a52cd9,2026-11-12T01:00:00Z,South Dakota St Jackrabbits,Valparaiso Beacons,totals,Under,142.5,0.5,consensus:2,2,2026-11-11T00:51:58Z
-CBB,aa7576381a4cbdf1b32445e296e34a24,2026-11-12T02:00:00Z,Grand Canyon Antelopes,Cal Poly Mustangs,spreads,Cal Poly Mustangs,18.5,0.5,consensus:2,2,2026-11-11T00:51:58Z
-CBB,aa7576381a4cbdf1b32445e296e34a24,2026-11-12T02:00:00Z,Grand Canyon Antelopes,Cal Poly Mustangs,spreads,Grand Canyon Antelopes,-18.5,0.5,consensus:2,2,2026-11-11T00:51:58Z
-CBB,aa7576381a4cbdf1b32445e296e34a24,2026-11-12T02:00:00Z,Grand Canyon Antelopes,Cal Poly Mustangs,totals,Over,178.0,0.518106,consensus:2,2,2026-11-11T00:51:58Z
-CBB,aa7576381a4cbdf1b32445e296e34a24,2026-11-12T02:00:00Z,Grand Canyon Antelopes,Cal Poly Mustangs,totals,Under,178.0,0.481894,consensus:2,2,2026-11-11T00:51:58Z
-CBB,afbca1bca5b21e68b1f1a233e9f127b9,2026-11-12T02:00:00Z,Colorado St Rams,Portland St Vikings,spreads,Colorado St Rams,-15.0,0.5,consensus:2,2,2026-11-11T00:51:58Z
-CBB,afbca1bca5b21e68b1f1a233e9f127b9,2026-11-12T02:00:00Z,Colorado St Rams,Portland St Vikings,spreads,Portland St Vikings,15.0,0.5,consensus:2,2,2026-11-11T00:51:58Z
-CBB,afbca1bca5b21e68b1f1a233e9f127b9,2026-11-12T02:00:00Z,Colorado St Rams,Portland St Vikings,totals,Over,147.5,0.510988,consensus:2,2,2026-11-11T00:51:58Z
-CBB,afbca1bca5b21e68b1f1a233e9f127b9,2026-11-12T02:00:00Z,Colorado St Rams,Portland St Vikings,totals,Under,147.5,0.489012,consensus:2,2,2026-11-11T00:51:58Z
-CBB,66797ed562dc7033f7796ca495f88219,2026-11-12T02:00:00Z,Nebraska Cornhuskers,Lindenwood Lions,spreads,Lindenwood Lions,35.0,0.5,consensus:2,2,2026-11-11T00:51:58Z
-CBB,66797ed562dc7033f7796ca495f88219,2026-11-12T02:00:00Z,Nebraska Cornhuskers,Lindenwood Lions,spreads,Nebraska Cornhuskers,-35.0,0.5,consensus:2,2,2026-11-11T00:51:58Z
-CBB,66797ed562dc7033f7796ca495f88219,2026-11-12T02:00:00Z,Nebraska Cornhuskers,Lindenwood Lions,totals,Over,151.0,0.510988,consensus:2,2,2026-11-11T00:51:58Z
-CBB,66797ed562dc7033f7796ca495f88219,2026-11-12T02:00:00Z,Nebraska Cornhuskers,Lindenwood Lions,totals,Under,151.0,0.489012,consensus:2,2,2026-11-11T00:51:58Z
-CBB,3cc19d97cf26e86153795e21abb5f55d,2026-11-12T02:00:00Z,UC Santa Barbara Gauchos,Nevada Wolf Pack,spreads,Nevada Wolf Pack,-1.5,0.5,consensus:2,2,2026-11-11T00:51:58Z
-CBB,3cc19d97cf26e86153795e21abb5f55d,2026-11-12T02:00:00Z,UC Santa Barbara Gauchos,Nevada Wolf Pack,spreads,UC Santa Barbara Gauchos,1.5,0.5,consensus:2,2,2026-11-11T00:51:58Z
-CBB,3cc19d97cf26e86153795e21abb5f55d,2026-11-12T02:00:00Z,UC Santa Barbara Gauchos,Nevada Wolf Pack,totals,Over,145.0,0.5,consensus:2,2,2026-11-11T00:51:58Z
-CBB,3cc19d97cf26e86153795e21abb5f55d,2026-11-12T02:00:00Z,UC Santa Barbara Gauchos,Nevada Wolf Pack,totals,Under,145.0,0.5,consensus:2,2,2026-11-11T00:51:58Z
-CBB,4a67ec53bead3f5556b92ef5ad63885c,2026-11-12T03:00:00Z,Long Beach St 49ers,Pacific Tigers,spreads,Long Beach St 49ers,6.0,0.5,consensus:2,2,2026-11-11T00:51:58Z
-CBB,4a67ec53bead3f5556b92ef5ad63885c,2026-11-12T03:00:00Z,Long Beach St 49ers,Pacific Tigers,spreads,Pacific Tigers,-6.0,0.5,consensus:2,2,2026-11-11T00:51:58Z
-CBB,4a67ec53bead3f5556b92ef5ad63885c,2026-11-12T03:00:00Z,Long Beach St 49ers,Pacific Tigers,totals,Over,138.0,0.5,consensus:2,2,2026-11-11T00:51:58Z
-CBB,4a67ec53bead3f5556b92ef5ad63885c,2026-11-12T03:00:00Z,Long Beach St 49ers,Pacific Tigers,totals,Under,138.0,0.5,consensus:2,2,2026-11-11T00:51:58Z
-CBB,7519c97618a3f43c4af47a05aeb69e78,2026-11-12T03:00:00Z,Seattle Redhawks,UTSA Roadrunners,spreads,Seattle Redhawks,-15.0,0.5,consensus:2,2,2026-11-11T00:51:58Z
-CBB,7519c97618a3f43c4af47a05aeb69e78,2026-11-12T03:00:00Z,Seattle Redhawks,UTSA Roadrunners,spreads,UTSA Roadrunners,15.0,0.5,consensus:2,2,2026-11-11T00:51:58Z
-CBB,7519c97618a3f43c4af47a05aeb69e78,2026-11-12T03:00:00Z,Seattle Redhawks,UTSA Roadrunners,totals,Over,150.0,0.510988,consensus:2,2,2026-11-11T00:51:58Z
-CBB,7519c97618a3f43c4af47a05aeb69e78,2026-11-12T03:00:00Z,Seattle Redhawks,UTSA Roadrunners,totals,Under,150.0,0.489012,consensus:2,2,2026-11-11T00:51:58Z
-CBB,92cc2f2a169d4efd4f1a0ac9d25672bc,2026-11-12T04:00:00Z,California Golden Bears,USC Trojans,spreads,California Golden Bears,7.0,0.488852,consensus:2,2,2026-11-11T00:51:58Z
-CBB,92cc2f2a169d4efd4f1a0ac9d25672bc,2026-11-12T04:00:00Z,California Golden Bears,USC Trojans,spreads,USC Trojans,-7.0,0.511148,consensus:2,2,2026-11-11T00:51:58Z
-CBB,92cc2f2a169d4efd4f1a0ac9d25672bc,2026-11-12T04:00:00Z,California Golden Bears,USC Trojans,totals,Over,160.0,0.510988,consensus:2,2,2026-11-11T00:51:58Z
-CBB,92cc2f2a169d4efd4f1a0ac9d25672bc,2026-11-12T04:00:00Z,California Golden Bears,USC Trojans,totals,Under,160.0,0.489012,consensus:2,2,2026-11-11T00:51:58Z
+CBB,ac091b3b15d1fcf0312f8c0500329879,2026-11-11T02:35:00Z,Kentucky Wildcats,Kansas Jayhawks,h2h,Kansas Jayhawks,,0.64909,pinnacle,1,2026-11-11T02:00:26Z
+CBB,ac091b3b15d1fcf0312f8c0500329879,2026-11-11T02:35:00Z,Kentucky Wildcats,Kansas Jayhawks,h2h,Kentucky Wildcats,,0.35091,pinnacle,1,2026-11-11T02:00:26Z
+CBB,ac091b3b15d1fcf0312f8c0500329879,2026-11-11T02:35:00Z,Kentucky Wildcats,Kansas Jayhawks,spreads,Kansas Jayhawks,-5.0,0.5,pinnacle,1,2026-11-11T02:00:26Z
+CBB,ac091b3b15d1fcf0312f8c0500329879,2026-11-11T02:35:00Z,Kentucky Wildcats,Kansas Jayhawks,spreads,Kentucky Wildcats,5.0,0.5,pinnacle,1,2026-11-11T02:00:26Z
+CBB,ac091b3b15d1fcf0312f8c0500329879,2026-11-11T02:35:00Z,Kentucky Wildcats,Kansas Jayhawks,totals,Over,159.0,0.49567,pinnacle,1,2026-11-11T02:00:26Z
+CBB,ac091b3b15d1fcf0312f8c0500329879,2026-11-11T02:35:00Z,Kentucky Wildcats,Kansas Jayhawks,totals,Under,159.0,0.50433,pinnacle,1,2026-11-11T02:00:26Z
+CBB,ec95fa37f8cd117d2b0e8da4db83b192,2026-11-11T03:00:00Z,San Francisco Dons,Montana Grizzlies,h2h,Montana Grizzlies,,0.151876,pinnacle,1,2026-11-11T02:00:26Z
+CBB,ec95fa37f8cd117d2b0e8da4db83b192,2026-11-11T03:00:00Z,San Francisco Dons,Montana Grizzlies,h2h,San Francisco Dons,,0.848124,pinnacle,1,2026-11-11T02:00:26Z
+CBB,ec95fa37f8cd117d2b0e8da4db83b192,2026-11-11T03:00:00Z,San Francisco Dons,Montana Grizzlies,spreads,Montana Grizzlies,11.5,0.50668,pinnacle,1,2026-11-11T02:00:26Z
+CBB,ec95fa37f8cd117d2b0e8da4db83b192,2026-11-11T03:00:00Z,San Francisco Dons,Montana Grizzlies,spreads,San Francisco Dons,-11.5,0.49332,pinnacle,1,2026-11-11T02:00:26Z
+CBB,ec95fa37f8cd117d2b0e8da4db83b192,2026-11-11T03:00:00Z,San Francisco Dons,Montana Grizzlies,totals,Over,147.5,0.491336,pinnacle,1,2026-11-11T02:00:26Z
+CBB,ec95fa37f8cd117d2b0e8da4db83b192,2026-11-11T03:00:00Z,San Francisco Dons,Montana Grizzlies,totals,Under,147.5,0.508664,pinnacle,1,2026-11-11T02:00:26Z
+CBB,759951fe63ce023850658a6be1c38e38,2026-11-11T16:30:00Z,East Texas A&M Lions,Fairleigh Dickinson Knights,spreads,East Texas A&M Lions,-12.0,0.511148,consensus:2,2,2026-11-11T02:00:26Z
+CBB,759951fe63ce023850658a6be1c38e38,2026-11-11T16:30:00Z,East Texas A&M Lions,Fairleigh Dickinson Knights,spreads,Fairleigh Dickinson Knights,12.0,0.488852,consensus:2,2,2026-11-11T02:00:26Z
+CBB,759951fe63ce023850658a6be1c38e38,2026-11-11T16:30:00Z,East Texas A&M Lions,Fairleigh Dickinson Knights,totals,Over,140.0,0.5,consensus:2,2,2026-11-11T02:00:26Z
+CBB,759951fe63ce023850658a6be1c38e38,2026-11-11T16:30:00Z,East Texas A&M Lions,Fairleigh Dickinson Knights,totals,Under,140.0,0.5,consensus:2,2,2026-11-11T02:00:26Z
+CBB,eb4ac6c20fe9cf690a2a2409335a3341,2026-11-11T17:00:00Z,Florida A&M Rattlers,UMKC Kangaroos,spreads,Florida A&M Rattlers,8.0,0.488852,consensus:2,2,2026-11-11T02:00:26Z
+CBB,eb4ac6c20fe9cf690a2a2409335a3341,2026-11-11T17:00:00Z,Florida A&M Rattlers,UMKC Kangaroos,spreads,UMKC Kangaroos,-8.0,0.511148,consensus:2,2,2026-11-11T02:00:26Z
+CBB,eb4ac6c20fe9cf690a2a2409335a3341,2026-11-11T17:00:00Z,Florida A&M Rattlers,UMKC Kangaroos,totals,Over,153.0,0.5,consensus:2,2,2026-11-11T02:00:26Z
+CBB,eb4ac6c20fe9cf690a2a2409335a3341,2026-11-11T17:00:00Z,Florida A&M Rattlers,UMKC Kangaroos,totals,Under,153.0,0.5,consensus:2,2,2026-11-11T02:00:26Z
+CBB,aa97877f068fe75687ae212a2c848bd9,2026-11-11T18:00:00Z,Albany Great Danes,Dartmouth Big Green,spreads,Albany Great Danes,1.5,0.5,consensus:2,2,2026-11-11T02:00:26Z
+CBB,aa97877f068fe75687ae212a2c848bd9,2026-11-11T18:00:00Z,Albany Great Danes,Dartmouth Big Green,spreads,Dartmouth Big Green,-1.5,0.5,consensus:2,2,2026-11-11T02:00:26Z
+CBB,aa97877f068fe75687ae212a2c848bd9,2026-11-11T18:00:00Z,Albany Great Danes,Dartmouth Big Green,totals,Over,144.0,0.5,consensus:2,2,2026-11-11T02:00:26Z
+CBB,aa97877f068fe75687ae212a2c848bd9,2026-11-11T18:00:00Z,Albany Great Danes,Dartmouth Big Green,totals,Under,144.0,0.5,consensus:2,2,2026-11-11T02:00:26Z
+CBB,8a85464bb774b0a913a1c829899c30c2,2026-11-11T19:11:00Z,UC Davis Aggies,Incarnate Word Cardinals,spreads,Incarnate Word Cardinals,10.0,0.5,consensus:2,2,2026-11-11T02:00:26Z
+CBB,8a85464bb774b0a913a1c829899c30c2,2026-11-11T19:11:00Z,UC Davis Aggies,Incarnate Word Cardinals,spreads,UC Davis Aggies,-10.0,0.5,consensus:2,2,2026-11-11T02:00:26Z
+CBB,8a85464bb774b0a913a1c829899c30c2,2026-11-11T19:11:00Z,UC Davis Aggies,Incarnate Word Cardinals,totals,Over,146.0,0.5,consensus:2,2,2026-11-11T02:00:26Z
+CBB,8a85464bb774b0a913a1c829899c30c2,2026-11-11T19:11:00Z,UC Davis Aggies,Incarnate Word Cardinals,totals,Under,146.0,0.5,consensus:2,2,2026-11-11T02:00:26Z
+CBB,b4a1814a6efc7eb096e5ac5e857915b5,2026-11-11T20:00:00Z,Air Force Falcons,Loyola (Chi) Ramblers,spreads,Air Force Falcons,8.5,0.5,consensus:2,2,2026-11-11T02:00:26Z
+CBB,b4a1814a6efc7eb096e5ac5e857915b5,2026-11-11T20:00:00Z,Air Force Falcons,Loyola (Chi) Ramblers,spreads,Loyola (Chi) Ramblers,-8.5,0.5,consensus:2,2,2026-11-11T02:00:26Z
+CBB,b4a1814a6efc7eb096e5ac5e857915b5,2026-11-11T20:00:00Z,Air Force Falcons,Loyola (Chi) Ramblers,totals,Over,155.0,0.5,consensus:2,2,2026-11-11T02:00:26Z
+CBB,b4a1814a6efc7eb096e5ac5e857915b5,2026-11-11T20:00:00Z,Air Force Falcons,Loyola (Chi) Ramblers,totals,Under,155.0,0.5,consensus:2,2,2026-11-11T02:00:26Z
+CBB,fb4e0baed91adfe2f7de6ca28ed533e8,2026-11-11T20:00:00Z,Saint Joseph's Hawks,South Florida Bulls,spreads,Saint Joseph's Hawks,8.0,0.5,consensus:2,2,2026-11-11T02:00:26Z
+CBB,fb4e0baed91adfe2f7de6ca28ed533e8,2026-11-11T20:00:00Z,Saint Joseph's Hawks,South Florida Bulls,spreads,South Florida Bulls,-8.0,0.5,consensus:2,2,2026-11-11T02:00:26Z
+CBB,fb4e0baed91adfe2f7de6ca28ed533e8,2026-11-11T20:00:00Z,Saint Joseph's Hawks,South Florida Bulls,totals,Over,151.0,0.5,consensus:2,2,2026-11-11T02:00:26Z
+CBB,fb4e0baed91adfe2f7de6ca28ed533e8,2026-11-11T20:00:00Z,Saint Joseph's Hawks,South Florida Bulls,totals,Under,151.0,0.5,consensus:2,2,2026-11-11T02:00:26Z
+CBB,83af3d625408a5c5f1b726fe740fc2ef,2026-11-11T21:00:00Z,East Carolina Pirates,North Carolina A&T Aggies,spreads,East Carolina Pirates,-10.5,0.5,consensus:2,2,2026-11-11T02:00:26Z
+CBB,83af3d625408a5c5f1b726fe740fc2ef,2026-11-11T21:00:00Z,East Carolina Pirates,North Carolina A&T Aggies,spreads,North Carolina A&T Aggies,10.5,0.5,consensus:2,2,2026-11-11T02:00:26Z
+CBB,83af3d625408a5c5f1b726fe740fc2ef,2026-11-11T21:00:00Z,East Carolina Pirates,North Carolina A&T Aggies,totals,Over,151.5,0.5,consensus:2,2,2026-11-11T02:00:26Z
+CBB,83af3d625408a5c5f1b726fe740fc2ef,2026-11-11T21:00:00Z,East Carolina Pirates,North Carolina A&T Aggies,totals,Under,151.5,0.5,consensus:2,2,2026-11-11T02:00:26Z
+CBB,0c0027ceb34cc2898a318f1453a25a68,2026-11-11T22:00:00Z,San Diego St Aztecs,Bethune-Cookman Wildcats,spreads,Bethune-Cookman Wildcats,18.0,0.5,consensus:2,2,2026-11-11T02:00:26Z
+CBB,0c0027ceb34cc2898a318f1453a25a68,2026-11-11T22:00:00Z,San Diego St Aztecs,Bethune-Cookman Wildcats,spreads,San Diego St Aztecs,-18.0,0.5,consensus:2,2,2026-11-11T02:00:26Z
+CBB,0c0027ceb34cc2898a318f1453a25a68,2026-11-11T22:00:00Z,San Diego St Aztecs,Bethune-Cookman Wildcats,totals,Over,152.0,0.5,consensus:2,2,2026-11-11T02:00:26Z
+CBB,0c0027ceb34cc2898a318f1453a25a68,2026-11-11T22:00:00Z,San Diego St Aztecs,Bethune-Cookman Wildcats,totals,Under,152.0,0.5,consensus:2,2,2026-11-11T02:00:26Z
+CBB,b153a909b36dcd998bab181db782802c,2026-11-11T22:30:00Z,Navy Midshipmen,Pennsylvania Quakers,spreads,Navy Midshipmen,9.5,0.5,consensus:2,2,2026-11-11T02:00:26Z
+CBB,b153a909b36dcd998bab181db782802c,2026-11-11T22:30:00Z,Navy Midshipmen,Pennsylvania Quakers,spreads,Pennsylvania Quakers,-9.5,0.5,consensus:2,2,2026-11-11T02:00:26Z
+CBB,b153a909b36dcd998bab181db782802c,2026-11-11T22:30:00Z,Navy Midshipmen,Pennsylvania Quakers,totals,Over,149.0,0.5,consensus:2,2,2026-11-11T02:00:26Z
+CBB,b153a909b36dcd998bab181db782802c,2026-11-11T22:30:00Z,Navy Midshipmen,Pennsylvania Quakers,totals,Under,149.0,0.5,consensus:2,2,2026-11-11T02:00:26Z
+CBB,5b6355f8a6a8f6fe34a477c2b8e3a7e7,2026-11-11T23:00:00Z,VMI Keydets,North Carolina Central Eagles,spreads,North Carolina Central Eagles,6.5,0.5,consensus:2,2,2026-11-11T02:00:26Z
+CBB,5b6355f8a6a8f6fe34a477c2b8e3a7e7,2026-11-11T23:00:00Z,VMI Keydets,North Carolina Central Eagles,spreads,VMI Keydets,-6.5,0.5,consensus:2,2,2026-11-11T02:00:26Z
+CBB,5b6355f8a6a8f6fe34a477c2b8e3a7e7,2026-11-11T23:00:00Z,VMI Keydets,North Carolina Central Eagles,totals,Over,150.0,0.5,consensus:2,2,2026-11-11T02:00:26Z
+CBB,5b6355f8a6a8f6fe34a477c2b8e3a7e7,2026-11-11T23:00:00Z,VMI Keydets,North Carolina Central Eagles,totals,Under,150.0,0.5,consensus:2,2,2026-11-11T02:00:26Z
+CBB,c07a4ccdd6e2560b5829395b56863dc1,2026-11-11T23:30:00Z,Temple Owls,Charleston Cougars,spreads,Charleston Cougars,0.0,0.488852,consensus:2,2,2026-11-11T02:00:26Z
+CBB,c07a4ccdd6e2560b5829395b56863dc1,2026-11-11T23:30:00Z,Temple Owls,Charleston Cougars,spreads,Temple Owls,0.0,0.511148,consensus:2,2,2026-11-11T02:00:26Z
+CBB,c07a4ccdd6e2560b5829395b56863dc1,2026-11-11T23:30:00Z,Temple Owls,Charleston Cougars,totals,Over,153.5,0.510988,consensus:2,2,2026-11-11T02:00:26Z
+CBB,c07a4ccdd6e2560b5829395b56863dc1,2026-11-11T23:30:00Z,Temple Owls,Charleston Cougars,totals,Under,153.5,0.489012,consensus:2,2,2026-11-11T02:00:26Z
+CBB,460ff0fdd5edcbe00e3f8cb6e74d6fbb,2026-11-11T23:30:00Z,IUPUI Jaguars,Southern Indiana Screaming Eagles,spreads,IUPUI Jaguars,-6.0,0.5,consensus:2,2,2026-11-11T02:00:26Z
+CBB,460ff0fdd5edcbe00e3f8cb6e74d6fbb,2026-11-11T23:30:00Z,IUPUI Jaguars,Southern Indiana Screaming Eagles,spreads,Southern Indiana Screaming Eagles,6.0,0.5,consensus:2,2,2026-11-11T02:00:26Z
+CBB,460ff0fdd5edcbe00e3f8cb6e74d6fbb,2026-11-11T23:30:00Z,IUPUI Jaguars,Southern Indiana Screaming Eagles,totals,Over,160.0,0.510988,consensus:2,2,2026-11-11T02:00:26Z
+CBB,460ff0fdd5edcbe00e3f8cb6e74d6fbb,2026-11-11T23:30:00Z,IUPUI Jaguars,Southern Indiana Screaming Eagles,totals,Under,160.0,0.489012,consensus:2,2,2026-11-11T02:00:26Z
+CBB,3701dfd3294546a83cc0c666d61f49eb,2026-11-12T00:00:00Z,East Tennessee St Buccaneers,Campbell Fighting Camels,spreads,Campbell Fighting Camels,6.0,0.5,consensus:2,2,2026-11-11T02:00:26Z
+CBB,3701dfd3294546a83cc0c666d61f49eb,2026-11-12T00:00:00Z,East Tennessee St Buccaneers,Campbell Fighting Camels,spreads,East Tennessee St Buccaneers,-6.0,0.5,consensus:2,2,2026-11-11T02:00:26Z
+CBB,3701dfd3294546a83cc0c666d61f49eb,2026-11-12T00:00:00Z,East Tennessee St Buccaneers,Campbell Fighting Camels,totals,Over,147.5,0.5,consensus:2,2,2026-11-11T02:00:26Z
+CBB,3701dfd3294546a83cc0c666d61f49eb,2026-11-12T00:00:00Z,East Tennessee St Buccaneers,Campbell Fighting Camels,totals,Under,147.5,0.5,consensus:2,2,2026-11-11T02:00:26Z
+CBB,2ad8e525847167b94b3fe19623b9447a,2026-11-12T00:00:00Z,St. Bonaventure Bonnies,Cornell Big Red,spreads,Cornell Big Red,7.5,0.488852,consensus:2,2,2026-11-11T02:00:26Z
+CBB,2ad8e525847167b94b3fe19623b9447a,2026-11-12T00:00:00Z,St. Bonaventure Bonnies,Cornell Big Red,spreads,St. Bonaventure Bonnies,-7.5,0.511148,consensus:2,2,2026-11-11T02:00:26Z
+CBB,2ad8e525847167b94b3fe19623b9447a,2026-11-12T00:00:00Z,St. Bonaventure Bonnies,Cornell Big Red,totals,Over,154.5,0.510988,consensus:2,2,2026-11-11T02:00:26Z
+CBB,2ad8e525847167b94b3fe19623b9447a,2026-11-12T00:00:00Z,St. Bonaventure Bonnies,Cornell Big Red,totals,Under,154.5,0.489012,consensus:2,2,2026-11-11T02:00:26Z
+CBB,6f26440351de53a17fb83781075b7698,2026-11-12T00:00:00Z,Delaware Blue Hens,James Madison Dukes,spreads,Delaware Blue Hens,3.5,0.488852,consensus:2,2,2026-11-11T02:00:26Z
+CBB,6f26440351de53a17fb83781075b7698,2026-11-12T00:00:00Z,Delaware Blue Hens,James Madison Dukes,spreads,James Madison Dukes,-3.5,0.511148,consensus:2,2,2026-11-11T02:00:26Z
+CBB,6f26440351de53a17fb83781075b7698,2026-11-12T00:00:00Z,Delaware Blue Hens,James Madison Dukes,totals,Over,148.0,0.5,consensus:2,2,2026-11-11T02:00:26Z
+CBB,6f26440351de53a17fb83781075b7698,2026-11-12T00:00:00Z,Delaware Blue Hens,James Madison Dukes,totals,Under,148.0,0.5,consensus:2,2,2026-11-11T02:00:26Z
+CBB,a5647dffff37f54bd901019578095560,2026-11-12T00:00:00Z,Florida Atlantic Owls,William & Mary Tribe,spreads,Florida Atlantic Owls,-5.0,0.511148,consensus:2,2,2026-11-11T02:00:26Z
+CBB,a5647dffff37f54bd901019578095560,2026-11-12T00:00:00Z,Florida Atlantic Owls,William & Mary Tribe,spreads,William & Mary Tribe,5.0,0.488852,consensus:2,2,2026-11-11T02:00:26Z
+CBB,a5647dffff37f54bd901019578095560,2026-11-12T00:00:00Z,Florida Atlantic Owls,William & Mary Tribe,totals,Over,162.5,0.510988,consensus:2,2,2026-11-11T02:00:26Z
+CBB,a5647dffff37f54bd901019578095560,2026-11-12T00:00:00Z,Florida Atlantic Owls,William & Mary Tribe,totals,Under,162.5,0.489012,consensus:2,2,2026-11-11T02:00:26Z
+CBB,9e33af22fe8e08e53ec595237d2c8ee9,2026-11-12T00:00:00Z,Holy Cross Crusaders,Furman Paladins,spreads,Furman Paladins,-13.5,0.488852,consensus:2,2,2026-11-11T02:00:26Z
+CBB,9e33af22fe8e08e53ec595237d2c8ee9,2026-11-12T00:00:00Z,Holy Cross Crusaders,Furman Paladins,spreads,Holy Cross Crusaders,13.5,0.511148,consensus:2,2,2026-11-11T02:00:26Z
+CBB,9e33af22fe8e08e53ec595237d2c8ee9,2026-11-12T00:00:00Z,Holy Cross Crusaders,Furman Paladins,totals,Over,149.5,0.5,consensus:2,2,2026-11-11T02:00:26Z
+CBB,9e33af22fe8e08e53ec595237d2c8ee9,2026-11-12T00:00:00Z,Holy Cross Crusaders,Furman Paladins,totals,Under,149.5,0.5,consensus:2,2,2026-11-11T02:00:26Z
+CBB,6712d238dc9bc8354686dde1ee6cd6f2,2026-11-12T00:00:00Z,Indiana St Sycamores,Milwaukee Panthers,spreads,Indiana St Sycamores,-5.0,0.5,consensus:2,2,2026-11-11T02:00:26Z
+CBB,6712d238dc9bc8354686dde1ee6cd6f2,2026-11-12T00:00:00Z,Indiana St Sycamores,Milwaukee Panthers,spreads,Milwaukee Panthers,5.0,0.5,consensus:2,2,2026-11-11T02:00:26Z
+CBB,6712d238dc9bc8354686dde1ee6cd6f2,2026-11-12T00:00:00Z,Indiana St Sycamores,Milwaukee Panthers,totals,Over,151.5,0.510988,consensus:2,2,2026-11-11T02:00:26Z
+CBB,6712d238dc9bc8354686dde1ee6cd6f2,2026-11-12T00:00:00Z,Indiana St Sycamores,Milwaukee Panthers,totals,Under,151.5,0.489012,consensus:2,2,2026-11-11T02:00:26Z
+CBB,015a3bad9e6d4b3ce108f6e7c663ed88,2026-11-12T00:00:00Z,UNC Wilmington Seahawks,Kent State Golden Flashes,spreads,Kent State Golden Flashes,5.5,0.5,consensus:2,2,2026-11-11T02:00:26Z
+CBB,015a3bad9e6d4b3ce108f6e7c663ed88,2026-11-12T00:00:00Z,UNC Wilmington Seahawks,Kent State Golden Flashes,spreads,UNC Wilmington Seahawks,-5.5,0.5,consensus:2,2,2026-11-11T02:00:26Z
+CBB,015a3bad9e6d4b3ce108f6e7c663ed88,2026-11-12T00:00:00Z,UNC Wilmington Seahawks,Kent State Golden Flashes,totals,Over,154.0,0.510988,consensus:2,2,2026-11-11T02:00:26Z
+CBB,015a3bad9e6d4b3ce108f6e7c663ed88,2026-11-12T00:00:00Z,UNC Wilmington Seahawks,Kent State Golden Flashes,totals,Under,154.0,0.489012,consensus:2,2,2026-11-11T02:00:26Z
+CBB,c5a909abd1412b4f70b5e5448a0b3b13,2026-11-12T00:00:00Z,Michigan Wolverines,Marquette Golden Eagles,spreads,Marquette Golden Eagles,4.0,0.5,consensus:2,2,2026-11-11T02:00:26Z
+CBB,c5a909abd1412b4f70b5e5448a0b3b13,2026-11-12T00:00:00Z,Michigan Wolverines,Marquette Golden Eagles,spreads,Michigan Wolverines,-4.0,0.5,consensus:2,2,2026-11-11T02:00:26Z
+CBB,c5a909abd1412b4f70b5e5448a0b3b13,2026-11-12T00:00:00Z,Michigan Wolverines,Marquette Golden Eagles,totals,Over,153.0,0.5,consensus:2,2,2026-11-11T02:00:26Z
+CBB,c5a909abd1412b4f70b5e5448a0b3b13,2026-11-12T00:00:00Z,Michigan Wolverines,Marquette Golden Eagles,totals,Under,153.0,0.5,consensus:2,2,2026-11-11T02:00:26Z
+CBB,9b4db17df2378cbaea3151c4ba09821d,2026-11-12T00:00:00Z,VCU Rams,NJIT Highlanders,spreads,NJIT Highlanders,30.0,0.511148,consensus:2,2,2026-11-11T02:00:26Z
+CBB,9b4db17df2378cbaea3151c4ba09821d,2026-11-12T00:00:00Z,VCU Rams,NJIT Highlanders,spreads,VCU Rams,-30.0,0.488852,consensus:2,2,2026-11-11T02:00:26Z
+CBB,9b4db17df2378cbaea3151c4ba09821d,2026-11-12T00:00:00Z,VCU Rams,NJIT Highlanders,totals,Over,147.5,0.5,consensus:2,2,2026-11-11T02:00:26Z
+CBB,9b4db17df2378cbaea3151c4ba09821d,2026-11-12T00:00:00Z,VCU Rams,NJIT Highlanders,totals,Under,147.5,0.5,consensus:2,2,2026-11-11T02:00:26Z
+CBB,f775ba08093ec59845cac67fe33e8803,2026-11-12T00:00:00Z,Notre Dame Fighting Irish,South Carolina St Bulldogs,spreads,Notre Dame Fighting Irish,-28.0,0.5,consensus:2,2,2026-11-11T02:00:26Z
+CBB,f775ba08093ec59845cac67fe33e8803,2026-11-12T00:00:00Z,Notre Dame Fighting Irish,South Carolina St Bulldogs,spreads,South Carolina St Bulldogs,28.0,0.5,consensus:2,2,2026-11-11T02:00:26Z
+CBB,f775ba08093ec59845cac67fe33e8803,2026-11-12T00:00:00Z,Notre Dame Fighting Irish,South Carolina St Bulldogs,totals,Over,148.0,0.5,consensus:2,2,2026-11-11T02:00:26Z
+CBB,f775ba08093ec59845cac67fe33e8803,2026-11-12T00:00:00Z,Notre Dame Fighting Irish,South Carolina St Bulldogs,totals,Under,148.0,0.5,consensus:2,2,2026-11-11T02:00:26Z
+CBB,4759cdf6363bef48c1455c003b0d4645,2026-11-12T00:00:00Z,Princeton Tigers,Stony Brook Seawolves,spreads,Princeton Tigers,-5.0,0.5,consensus:2,2,2026-11-11T02:00:26Z
+CBB,4759cdf6363bef48c1455c003b0d4645,2026-11-12T00:00:00Z,Princeton Tigers,Stony Brook Seawolves,spreads,Stony Brook Seawolves,5.0,0.5,consensus:2,2,2026-11-11T02:00:26Z
+CBB,4759cdf6363bef48c1455c003b0d4645,2026-11-12T00:00:00Z,Princeton Tigers,Stony Brook Seawolves,totals,Over,138.0,0.489012,consensus:2,2,2026-11-11T02:00:26Z
+CBB,4759cdf6363bef48c1455c003b0d4645,2026-11-12T00:00:00Z,Princeton Tigers,Stony Brook Seawolves,totals,Under,138.0,0.510988,consensus:2,2,2026-11-11T02:00:26Z
+CBB,ab097a031b98bea79556def8937e59c5,2026-11-12T00:00:00Z,South Carolina Gamecocks,Saint Peter's Peacocks,spreads,Saint Peter's Peacocks,21.5,0.488852,consensus:2,2,2026-11-11T02:00:26Z
+CBB,ab097a031b98bea79556def8937e59c5,2026-11-12T00:00:00Z,South Carolina Gamecocks,Saint Peter's Peacocks,spreads,South Carolina Gamecocks,-21.5,0.511148,consensus:2,2,2026-11-11T02:00:26Z
+CBB,ab097a031b98bea79556def8937e59c5,2026-11-12T00:00:00Z,South Carolina Gamecocks,Saint Peter's Peacocks,totals,Over,129.0,0.5,consensus:2,2,2026-11-11T02:00:26Z
+CBB,ab097a031b98bea79556def8937e59c5,2026-11-12T00:00:00Z,South Carolina Gamecocks,Saint Peter's Peacocks,totals,Under,129.0,0.5,consensus:2,2,2026-11-11T02:00:26Z
+CBB,cec8567863868eee57cefdef4d499a5a,2026-11-12T00:30:00Z,Sam Houston St Bearkats,Pepperdine Waves,spreads,Pepperdine Waves,0.0,0.488852,consensus:2,2,2026-11-11T02:00:26Z
+CBB,cec8567863868eee57cefdef4d499a5a,2026-11-12T00:30:00Z,Sam Houston St Bearkats,Pepperdine Waves,spreads,Sam Houston St Bearkats,0.0,0.511148,consensus:2,2,2026-11-11T02:00:26Z
+CBB,cec8567863868eee57cefdef4d499a5a,2026-11-12T00:30:00Z,Sam Houston St Bearkats,Pepperdine Waves,totals,Over,159.0,0.510988,consensus:2,2,2026-11-11T02:00:26Z
+CBB,cec8567863868eee57cefdef4d499a5a,2026-11-12T00:30:00Z,Sam Houston St Bearkats,Pepperdine Waves,totals,Under,159.0,0.489012,consensus:2,2,2026-11-11T02:00:26Z
+CBB,727c66ecc80b721c8a7b0252fe67f115,2026-11-12T01:00:00Z,Arkansas Razorbacks,Robert Morris Colonials,spreads,Arkansas Razorbacks,-29.5,0.5,consensus:2,2,2026-11-11T02:00:26Z
+CBB,727c66ecc80b721c8a7b0252fe67f115,2026-11-12T01:00:00Z,Arkansas Razorbacks,Robert Morris Colonials,spreads,Robert Morris Colonials,29.5,0.5,consensus:2,2,2026-11-11T02:00:26Z
+CBB,727c66ecc80b721c8a7b0252fe67f115,2026-11-12T01:00:00Z,Arkansas Razorbacks,Robert Morris Colonials,totals,Over,155.5,0.518106,consensus:2,2,2026-11-11T02:00:26Z
+CBB,727c66ecc80b721c8a7b0252fe67f115,2026-11-12T01:00:00Z,Arkansas Razorbacks,Robert Morris Colonials,totals,Under,155.5,0.481894,consensus:2,2,2026-11-11T02:00:26Z
+CBB,8be8e7e6cde374ce6f951b17a29a62c3,2026-11-12T01:00:00Z,Houston Cougars,Jacksonville St Gamecocks,spreads,Houston Cougars,-35.0,0.488852,consensus:2,2,2026-11-11T02:00:26Z
+CBB,8be8e7e6cde374ce6f951b17a29a62c3,2026-11-12T01:00:00Z,Houston Cougars,Jacksonville St Gamecocks,spreads,Jacksonville St Gamecocks,35.0,0.511148,consensus:2,2,2026-11-11T02:00:26Z
+CBB,8be8e7e6cde374ce6f951b17a29a62c3,2026-11-12T01:00:00Z,Houston Cougars,Jacksonville St Gamecocks,totals,Over,137.5,0.5,consensus:2,2,2026-11-11T02:00:26Z
+CBB,8be8e7e6cde374ce6f951b17a29a62c3,2026-11-12T01:00:00Z,Houston Cougars,Jacksonville St Gamecocks,totals,Under,137.5,0.5,consensus:2,2,2026-11-11T02:00:26Z
+CBB,797335cb74e596831cb223b996eda670,2026-11-12T01:00:00Z,North Texas Mean Green,Santa Clara Broncos,spreads,North Texas Mean Green,1.0,0.511148,consensus:2,2,2026-11-11T02:00:26Z
+CBB,797335cb74e596831cb223b996eda670,2026-11-12T01:00:00Z,North Texas Mean Green,Santa Clara Broncos,spreads,Santa Clara Broncos,-1.0,0.488852,consensus:2,2,2026-11-11T02:00:26Z
+CBB,797335cb74e596831cb223b996eda670,2026-11-12T01:00:00Z,North Texas Mean Green,Santa Clara Broncos,totals,Over,150.0,0.522505,consensus:2,2,2026-11-11T02:00:26Z
+CBB,797335cb74e596831cb223b996eda670,2026-11-12T01:00:00Z,North Texas Mean Green,Santa Clara Broncos,totals,Under,150.0,0.477496,consensus:2,2,2026-11-11T02:00:26Z
+CBB,b4c3775da0df075aa79f9f881d83ffde,2026-11-12T01:00:00Z,Tulsa Golden Hurricane,Oral Roberts Golden Eagles,spreads,Oral Roberts Golden Eagles,17.0,0.5,consensus:2,2,2026-11-11T02:00:26Z
+CBB,b4c3775da0df075aa79f9f881d83ffde,2026-11-12T01:00:00Z,Tulsa Golden Hurricane,Oral Roberts Golden Eagles,spreads,Tulsa Golden Hurricane,-17.0,0.5,consensus:2,2,2026-11-11T02:00:26Z
+CBB,b4c3775da0df075aa79f9f881d83ffde,2026-11-12T01:00:00Z,Tulsa Golden Hurricane,Oral Roberts Golden Eagles,totals,Over,153.5,0.510988,consensus:2,2,2026-11-11T02:00:26Z
+CBB,b4c3775da0df075aa79f9f881d83ffde,2026-11-12T01:00:00Z,Tulsa Golden Hurricane,Oral Roberts Golden Eagles,totals,Under,153.5,0.489012,consensus:2,2,2026-11-11T02:00:26Z
+CBB,7a535301a94288a573a2206f13a52cd9,2026-11-12T01:00:00Z,South Dakota St Jackrabbits,Valparaiso Beacons,spreads,South Dakota St Jackrabbits,2.0,0.5,consensus:2,2,2026-11-11T02:00:26Z
+CBB,7a535301a94288a573a2206f13a52cd9,2026-11-12T01:00:00Z,South Dakota St Jackrabbits,Valparaiso Beacons,spreads,Valparaiso Beacons,-2.0,0.5,consensus:2,2,2026-11-11T02:00:26Z
+CBB,7a535301a94288a573a2206f13a52cd9,2026-11-12T01:00:00Z,South Dakota St Jackrabbits,Valparaiso Beacons,totals,Over,142.5,0.5,consensus:2,2,2026-11-11T02:00:26Z
+CBB,7a535301a94288a573a2206f13a52cd9,2026-11-12T01:00:00Z,South Dakota St Jackrabbits,Valparaiso Beacons,totals,Under,142.5,0.5,consensus:2,2,2026-11-11T02:00:26Z
+CBB,aa7576381a4cbdf1b32445e296e34a24,2026-11-12T02:00:00Z,Grand Canyon Antelopes,Cal Poly Mustangs,spreads,Cal Poly Mustangs,18.5,0.5,consensus:2,2,2026-11-11T02:00:26Z
+CBB,aa7576381a4cbdf1b32445e296e34a24,2026-11-12T02:00:00Z,Grand Canyon Antelopes,Cal Poly Mustangs,spreads,Grand Canyon Antelopes,-18.5,0.5,consensus:2,2,2026-11-11T02:00:26Z
+CBB,aa7576381a4cbdf1b32445e296e34a24,2026-11-12T02:00:00Z,Grand Canyon Antelopes,Cal Poly Mustangs,totals,Over,178.0,0.518106,consensus:2,2,2026-11-11T02:00:26Z
+CBB,aa7576381a4cbdf1b32445e296e34a24,2026-11-12T02:00:00Z,Grand Canyon Antelopes,Cal Poly Mustangs,totals,Under,178.0,0.481894,consensus:2,2,2026-11-11T02:00:26Z
+CBB,afbca1bca5b21e68b1f1a233e9f127b9,2026-11-12T02:00:00Z,Colorado St Rams,Portland St Vikings,spreads,Colorado St Rams,-15.0,0.5,consensus:2,2,2026-11-11T02:00:26Z
+CBB,afbca1bca5b21e68b1f1a233e9f127b9,2026-11-12T02:00:00Z,Colorado St Rams,Portland St Vikings,spreads,Portland St Vikings,15.0,0.5,consensus:2,2,2026-11-11T02:00:26Z
+CBB,afbca1bca5b21e68b1f1a233e9f127b9,2026-11-12T02:00:00Z,Colorado St Rams,Portland St Vikings,totals,Over,147.5,0.510988,consensus:2,2,2026-11-11T02:00:26Z
+CBB,afbca1bca5b21e68b1f1a233e9f127b9,2026-11-12T02:00:00Z,Colorado St Rams,Portland St Vikings,totals,Under,147.5,0.489012,consensus:2,2,2026-11-11T02:00:26Z
+CBB,66797ed562dc7033f7796ca495f88219,2026-11-12T02:00:00Z,Nebraska Cornhuskers,Lindenwood Lions,spreads,Lindenwood Lions,35.0,0.5,consensus:2,2,2026-11-11T02:00:26Z
+CBB,66797ed562dc7033f7796ca495f88219,2026-11-12T02:00:00Z,Nebraska Cornhuskers,Lindenwood Lions,spreads,Nebraska Cornhuskers,-35.0,0.5,consensus:2,2,2026-11-11T02:00:26Z
+CBB,66797ed562dc7033f7796ca495f88219,2026-11-12T02:00:00Z,Nebraska Cornhuskers,Lindenwood Lions,totals,Over,151.0,0.510988,consensus:2,2,2026-11-11T02:00:26Z
+CBB,66797ed562dc7033f7796ca495f88219,2026-11-12T02:00:00Z,Nebraska Cornhuskers,Lindenwood Lions,totals,Under,151.0,0.489012,consensus:2,2,2026-11-11T02:00:26Z
+CBB,3cc19d97cf26e86153795e21abb5f55d,2026-11-12T02:00:00Z,UC Santa Barbara Gauchos,Nevada Wolf Pack,spreads,Nevada Wolf Pack,-1.5,0.5,consensus:2,2,2026-11-11T02:00:26Z
+CBB,3cc19d97cf26e86153795e21abb5f55d,2026-11-12T02:00:00Z,UC Santa Barbara Gauchos,Nevada Wolf Pack,spreads,UC Santa Barbara Gauchos,1.5,0.5,consensus:2,2,2026-11-11T02:00:26Z
+CBB,3cc19d97cf26e86153795e21abb5f55d,2026-11-12T02:00:00Z,UC Santa Barbara Gauchos,Nevada Wolf Pack,totals,Over,145.0,0.5,consensus:2,2,2026-11-11T02:00:26Z
+CBB,3cc19d97cf26e86153795e21abb5f55d,2026-11-12T02:00:00Z,UC Santa Barbara Gauchos,Nevada Wolf Pack,totals,Under,145.0,0.5,consensus:2,2,2026-11-11T02:00:26Z
+CBB,4a67ec53bead3f5556b92ef5ad63885c,2026-11-12T03:00:00Z,Long Beach St 49ers,Pacific Tigers,spreads,Long Beach St 49ers,6.0,0.5,consensus:2,2,2026-11-11T02:00:26Z
+CBB,4a67ec53bead3f5556b92ef5ad63885c,2026-11-12T03:00:00Z,Long Beach St 49ers,Pacific Tigers,spreads,Pacific Tigers,-6.0,0.5,consensus:2,2,2026-11-11T02:00:26Z
+CBB,4a67ec53bead3f5556b92ef5ad63885c,2026-11-12T03:00:00Z,Long Beach St 49ers,Pacific Tigers,totals,Over,138.0,0.5,consensus:2,2,2026-11-11T02:00:26Z
+CBB,4a67ec53bead3f5556b92ef5ad63885c,2026-11-12T03:00:00Z,Long Beach St 49ers,Pacific Tigers,totals,Under,138.0,0.5,consensus:2,2,2026-11-11T02:00:26Z
+CBB,7519c97618a3f43c4af47a05aeb69e78,2026-11-12T03:00:00Z,Seattle Redhawks,UTSA Roadrunners,spreads,Seattle Redhawks,-15.0,0.5,consensus:2,2,2026-11-11T02:00:26Z
+CBB,7519c97618a3f43c4af47a05aeb69e78,2026-11-12T03:00:00Z,Seattle Redhawks,UTSA Roadrunners,spreads,UTSA Roadrunners,15.0,0.5,consensus:2,2,2026-11-11T02:00:26Z
+CBB,7519c97618a3f43c4af47a05aeb69e78,2026-11-12T03:00:00Z,Seattle Redhawks,UTSA Roadrunners,totals,Over,150.0,0.510988,consensus:2,2,2026-11-11T02:00:26Z
+CBB,7519c97618a3f43c4af47a05aeb69e78,2026-11-12T03:00:00Z,Seattle Redhawks,UTSA Roadrunners,totals,Under,150.0,0.489012,consensus:2,2,2026-11-11T02:00:26Z
+CBB,92cc2f2a169d4efd4f1a0ac9d25672bc,2026-11-12T04:00:00Z,California Golden Bears,USC Trojans,spreads,California Golden Bears,7.0,0.488852,consensus:2,2,2026-11-11T02:00:26Z
+CBB,92cc2f2a169d4efd4f1a0ac9d25672bc,2026-11-12T04:00:00Z,California Golden Bears,USC Trojans,spreads,USC Trojans,-7.0,0.511148,consensus:2,2,2026-11-11T02:00:26Z
+CBB,92cc2f2a169d4efd4f1a0ac9d25672bc,2026-11-12T04:00:00Z,California Golden Bears,USC Trojans,totals,Over,160.0,0.510988,consensus:2,2,2026-11-11T02:00:26Z
+CBB,92cc2f2a169d4efd4f1a0ac9d25672bc,2026-11-12T04:00:00Z,California Golden Bears,USC Trojans,totals,Under,160.0,0.489012,consensus:2,2,2026-11-11T02:00:26Z

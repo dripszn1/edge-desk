@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-11-11T01:44:53Z",
-  "generated_ct": "Tue Nov 10, 7:44 PM CT",
+  "generated_utc": "2026-11-11T02:05:40Z",
+  "generated_ct": "Tue Nov 10, 8:05 PM CT",
   "paper_mode": true,
   "rules": {
     "min_bets": 30,
@@ -22,5 +22,28 @@
     "settled": 0,
     "verdict": "not enough data",
     "why": "no settled bets yet"
+  },
+  "sharp_tracked": {
+    "settled": 0,
+    "verdict": "not enough data",
+    "why": "no settled bets yet",
+    "by_reason": {
+      "far_rung": {
+        "settled": 0,
+        "verdict": "not enough data",
+        "why": "no settled bets yet"
+      },
+      "far_rung+stale_line": {
+        "settled": 0,
+        "verdict": "not enough data",
+        "why": "no settled bets yet"
+      },
+      "stale_line": {
+        "settled": 0,
+        "verdict": "not enough data",
+        "why": "no settled bets yet"
+      }
+    },
+    "propose_widen": []
   }
 }
