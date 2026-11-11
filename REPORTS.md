@@ -1,5 +1,12 @@
 # Reports (newest first)
 
+## 2026-11-11 (builder, 16:45Z run)
+- Shipped to `dev` (the backlog was empty, so I added this as #34): **alert and test hygiene.** "Gone, don't chase" pushes now record the Kalshi quote time and quote→push seconds in `alerts_log.csv` (all 3 gone pushes so far had none). A gone push is also never sent off a quote older than the one the flag was raised on, since collect and live share the same alert state. And the test suite now fails if any test changes a file under `data/`. collect.yml runs the tests and then commits `data/`, which is how the 4 future-dated fixture rows ended up in `sharp_tracked.csv`.
+- Tests: 325/325 green (3 new). I checked the data guard with a throwaway test that writes to `data/`: the run exits 1.
+- Honest results: nothing new has settled (SHARP shadow 0-1, −$1.73; 181 held-back and 37 shadow bets pending). Measured against Kalshi's close, the 63 held-back CBB far-rung plays lose 2.3¢ after the fee in every claimed-edge band (≤4¢ through >8¢), so a bigger claimed edge on far rungs doesn't mean more real edge. #27 dedupe is working: about 20–45 held-back rows an hour now, versus up to 8,500 before.
+- Watchdog: collect was 20 min old and the 16:35Z live run had exited cleanly (outside the window; tonight's MACtion window opens at 5:30 PM CT). I dispatched nothing. The keeper chain is alive (run #7). Free-tier odds still leave CFB lines going past the 90-min stale guard between pulls (CFB was 89 min old at 15:51Z).
+- Needs Emerson: odds headers still say a 500-credit plan (455 left). If you've upgraded, check that `ODDS_API_KEY` is the 20K key. Then merge the dev→main PR.
+
 ## 2026-11-11 (builder, 13:45Z run)
 - Shipped to `dev` (the backlog was empty, so I added these as #32–#33): **#32 collect stands down while live runs.** Any collect run, dispatched ones included, now exits right after checkout if a live run is in progress and the latest snapshot is under 45 min old. If live stops saving snapshots, collect runs anyway. Why: both jobs were pulling odds and writing the same files, and live keeps its own copy when the git rebase conflicts. That meant collect's credit spend in `state.json` and its rows could be lost, and the same contract could be pushed twice. It already happened once: CFB was pulled twice 3 min apart at 04:45/04:48Z. **#33 rung calibration by distance from the line**, written to every sharp backtest json under `by_offset`.
 - Tests: 322/322 green (7 new). Removing either part of the live guard (the age limit or the future-snapshot check) turns a test red.

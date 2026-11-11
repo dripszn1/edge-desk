@@ -274,3 +274,34 @@ def test_model_flags_never_pushed():
          "kickoff_utc": "2026-11-12T00:30:00Z", "event": "UMass vs Toledo: Spread", "leg1_desc": "Toledo wins by over 21.5 points"}
     out = alerts.decide([([f], False)], {}, {}, "2026-11-10T23:30:00Z")
     assert out == []
+
+
+# ---------- speed log for "gone" pushes (#34) ----------
+def test_gone_logs_quote_time(tmp_path):
+    import csv
+    import pandas as pd
+    st, lg = tmp_path / "s.json", tmp_path / "log.csv"
+    f = sharp_flag()
+    alerts.process([([f], False)], {}, NOW, post=Post(), state_path=st, log_path=lg, clock=lambda: NOW)
+    df = pd.DataFrame([{"ticker": f["ticker"], "yes_bid": 0.49, "yes_ask": 0.50,
+                        "snapshot_ts": "2026-11-14T16:00:40Z"}])
+    later = NOW + timedelta(minutes=1)
+    out = alerts.process([([f], False)], alerts.quotes_of(df), later, post=Post(), state_path=st,
+                         log_path=lg, clock=lambda: later)
+    assert [a["type"] for a in out] == ["gone"]
+    rows = list(csv.DictReader(lg.open()))
+    gone = [r for r in rows if r["type"] == "gone"][0]
+    assert gone["quote_utc"] == "2026-11-14T16:00:40Z" and float(gone["quote_to_send_s"]) == 20.0
+
+
+def test_gone_never_on_quote_older_than_the_alert(tmp_path):
+    """A quote from before the 'new' push can't say the price moved since: no gone."""
+    import pandas as pd
+    st, lg = tmp_path / "s.json", tmp_path / "log.csv"
+    f = sharp_flag()
+    alerts.process([([f], False)], {}, NOW, post=Post(), state_path=st, log_path=lg, clock=lambda: NOW)
+    df = pd.DataFrame([{"ticker": f["ticker"], "yes_bid": 0.49, "yes_ask": 0.50,
+                        "snapshot_ts": "2026-11-14T15:30:00Z"}])
+    out = alerts.process([([f], False)], alerts.quotes_of(df), NOW + timedelta(minutes=1), post=Post(),
+                         state_path=st, log_path=lg)
+    assert out == []

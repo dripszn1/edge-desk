@@ -233,7 +233,8 @@ def build_gone(alert: dict, now_price: float, now, row: dict | None = None) -> d
                     f"{(alert.get('max_price') or 0) * 100:.0f}¢ max. Skip it.\nsent {_sent_ct(now)}",
             # rebuild the link: old state rows hold the broken series-only URL
             "priority": 3, "click": kalshi_url(tick, alert.get("event_ticker")), "ticker": tick, "price": now_price,
-            "max_price": alert.get("max_price"), "edge": "", "stake": ""}
+            "max_price": alert.get("max_price"), "edge": "", "stake": "",
+            "quote_utc": _iso(row["snapshot_ts"]) if row.get("snapshot_ts") else None}
 
 
 def _gone_keys_logged(path: Path | None = None) -> set:
@@ -298,7 +299,7 @@ def decide(groups: list[tuple[list[dict], bool]], quotes: dict, state: dict, now
         alerts[k] = {**{x: a[x] for x in ("ticker", "kind", "side", "legs", "max_price", "click", "stake",
                                            "kickoff_utc")}, "key": k, "sent_utc": _iso(now), "gone": False,
                      "desc": f.get("leg1_desc") or "", "game": f.get("event") or "",
-                     "event_ticker": f.get("event_ticker")}
+                     "event_ticker": f.get("event_ticker"), "quote_utc": f.get("snapshot_ts")}
         out.append(a)
     already_gone = _gone_keys_logged()
     for k, a in alerts.items():
@@ -308,10 +309,14 @@ def decide(groups: list[tuple[list[dict], bool]], quotes: dict, state: dict, now
         ko = a.get("kickoff_utc")
         if ko and _utc(ko) <= _utc(now):
             continue                                        # game started: no more pushes
+        row = quotes.get(a.get("ticker")) or {}
+        qts, flag_ts = row.get("snapshot_ts"), a.get("quote_utc")
+        if qts and flag_ts and _utc(qts) < _utc(flag_ts):
+            continue                                        # quote older than the flag's: can't say it moved
         p = current_price(a, quotes)
         if p is not None and p > a["max_price"] + 1e-9:
             a["gone"] = True
-            out.append(build_gone(a, p, now, quotes.get(a.get("ticker"))))
+            out.append(build_gone(a, p, now, row))
     return out
 
 
@@ -401,7 +406,8 @@ def groups_from_latest(latest: dict, model_gate: bool = False, sharp_gate: bool 
 def quotes_of(df) -> dict:
     if df is None or len(df) == 0:
         return {}
-    cols = [c for c in ("ticker", "yes_bid", "yes_ask", "event_title", "yes_sub_title") if c in df.columns]
+    cols = [c for c in ("ticker", "yes_bid", "yes_ask", "event_title", "yes_sub_title", "snapshot_ts")
+            if c in df.columns]
     return {r["ticker"]: r for r in df[cols].to_dict("records")}
 
 
