@@ -3,7 +3,8 @@
 Source: The Odds API v4 (secret ODDS_API_KEY), NFL + CFB, markets h2h/spreads/totals.
 Runs inside GitHub Actions only. If the key is missing the step prints a note and exits 0.
 
-Budget (free tier = 500 credits/month): one /odds call costs len(markets) credits when all
+Budget (plan-aware since #30: the quota is read from the x-requests-remaining + x-requests-used
+headers, default 500 = free tier; see "plan-aware pacing" below for bigger plans): one /odds call costs len(markets) credits when all
 requested bookmakers fit in one "region" (<= 10 books), so a pull of one sport = 3 credits.
 `plan_pulls` decides which sports to pull this run:
   * never let the remaining credits drop below ODDS_RESERVE;
@@ -202,29 +203,107 @@ def _ct_day(now) -> str:
     return _ts(now).tz_convert("America/Chicago").strftime("%Y-%m-%d")
 
 
-def football_floor(now) -> int:
+# ---------- plan-aware pacing (#30) ----------
+# The real plan size comes from the API's own headers: quota = x-requests-remaining +
+# x-requests-used (stored in state.json as "quota" at every pull). Unknown -> MONTHLY_CREDITS (free).
+# Everything scales from it. Free tier (<= 500) is exactly the old behaviour. Bigger plans keep
+# RESERVE_SHARE of the quota untouched (so a worst-case month spends <= 90%) and give football a
+# FOOTBALL_SHARE floor of what is left. With >= HIGH_PLAN_CREDITS the cadence becomes:
+#   kickoff within HIGH_NEAR_H        -> every HIGH_NEAR_MIN (5) min
+#   in a live game window, kickoff <= GAMEDAY_HOT_H -> every HIGH_WINDOW_MIN (10) min
+#   kickoff within GAMEDAY_WINDOW_H   -> hourly
+#   otherwise                         -> every HIGH_IDLE_H
+# CBB uses the same cadence on a big plan (no per-day cap) but still only above the football floor.
+RESERVE_SHARE = 0.10
+FOOTBALL_SHARE = 0.60
+HIGH_PLAN_CREDITS = 20000
+HIGH_NEAR_H = 1.5
+HIGH_NEAR_MIN = 5
+HIGH_WINDOW_MIN = 10
+HIGH_GAMEDAY_H = 1.0
+HIGH_IDLE_H = 6
+
+
+def quota(state: dict) -> int:
+    """Monthly plan size as last reported by the API; MONTHLY_CREDITS when unknown."""
+    q = state.get("quota")
+    if q is None and state.get("remaining") is not None and state.get("used") is not None:
+        q = int(state["remaining"]) + int(state["used"])
+    try:
+        q = int(q)
+    except (TypeError, ValueError):
+        return MONTHLY_CREDITS
+    return q if q > 0 else MONTHLY_CREDITS
+
+
+def budget(state: dict) -> dict:
+    q = quota(state)
+    if q <= MONTHLY_CREDITS:
+        return dict(quota=q, reserve=ODDS_RESERVE, football_daily=FOOTBALL_DAILY_CREDITS, high=False)
+    reserve = max(ODDS_RESERVE, int(round(q * RESERVE_SHARE)))
+    return dict(quota=q, reserve=reserve, football_daily=int(round((q - reserve) * FOOTBALL_SHARE / 30)),
+                high=q >= HIGH_PLAN_CREDITS)
+
+
+def check_minutes(state: dict, default: float) -> float:
+    """How often the live loop should ask plan_pulls (5 min on a big plan)."""
+    return min(default, HIGH_NEAR_MIN) if budget(state)["high"] else default
+
+
+def _in_window(now) -> bool:
+    from . import live                              # lazy: live imports odds
+    return live.current_window(_ts(now).to_pydatetime()) is not None
+
+
+def high_interval_h(now, kickoff, in_window: bool) -> float:
+    secs = (_ts(kickoff) - _ts(now)).total_seconds()
+    if secs <= HIGH_NEAR_H * 3600:
+        return HIGH_NEAR_MIN / 60
+    if in_window and secs <= GAMEDAY_HOT_H * 3600:
+        return HIGH_WINDOW_MIN / 60
+    if secs <= GAMEDAY_WINDOW_H * 3600:
+        return HIGH_GAMEDAY_H
+    return HIGH_IDLE_H
+
+
+def football_floor(now, state: dict | None = None) -> int:
     """Credits CBB must leave untouched: the reserve plus football's need for the rest of the month."""
-    return ODDS_RESERVE + FOOTBALL_DAILY_CREDITS * days_left_in_month(now)
+    b = budget(state or {})
+    return b["reserve"] + b["football_daily"] * days_left_in_month(now)
 
 
-def cbb_ok(state: dict, now, kickoff, left_after_football: int) -> bool:
+def cbb_ok(state: dict, now, kickoff, left_after_football: int, in_window: bool | None = None) -> bool:
     now = _ts(now)
-    if kickoff is None or _ts(kickoff) <= now or (_ts(kickoff) - now).total_seconds() > CBB_PULL_LEAD_H * 3600:
+    if kickoff is None or _ts(kickoff) <= now:
+        return False
+    floor = football_floor(now, state)
+    if budget(state)["high"]:
+        if in_window is None:
+            in_window = _in_window(now)
+        last = state.get("last_pull", {}).get("CBB")
+        if last and (now - _ts(last)).total_seconds() < high_interval_h(now, kickoff, in_window) * 3600:
+            return False
+        spare = max(left_after_football - floor, 0)
+        cap = spare / days_left_in_month(now) * GAMEDAY_MULT
+        if spent_today(state, now, ("CBB",)) + COST_PER_PULL > cap:
+            return False
+        return left_after_football - COST_PER_PULL >= floor
+    if (_ts(kickoff) - now).total_seconds() > CBB_PULL_LEAD_H * 3600:
         return False
     if state.get("pulls", {}).get("CBB", {}).get(_ct_day(now), 0) >= CBB_PULLS_PER_DAY:
         return False
     last = state.get("last_pull", {}).get("CBB")
     if last and (now - _ts(last)).total_seconds() < CBB_MIN_GAP_H * 3600:
         return False
-    return left_after_football - COST_PER_PULL >= football_floor(now)
+    return left_after_football - COST_PER_PULL >= floor
 
 
 def remaining(state: dict, now) -> int:
-    """Credits left as last reported by the API; a new month resets to the free allowance."""
+    """Credits left as last reported by the API; a new month resets to the plan's quota."""
     now = _ts(now)
     seen = state.get("remaining_seen_utc")
     if state.get("remaining") is None or not seen or _ts(seen).strftime("%Y-%m") != now.strftime("%Y-%m"):
-        return MONTHLY_CREDITS
+        return quota(state)
     return int(state["remaining"])
 
 
@@ -248,13 +327,17 @@ def confirm_leagues(now, path: Path | None = None) -> set[str]:
 
 
 def plan_pulls(state: dict, now, next_kickoff: dict, near_h: float | None = None,
-               near_interval_h: float | None = None, confirm=()) -> list[str]:
+               near_interval_h: float | None = None, confirm=(), in_window: bool | None = None) -> list[str]:
     """Which leagues to pull now. `next_kickoff[league]` = soonest upcoming commence (or None).
     Live mode (#16) passes near_h/near_interval_h: a league whose kickoff is within near_h may be
-    pulled every near_interval_h instead of GAMEDAY_INTERVAL_H. The reserve and the daily
-    allowance still apply, so the monthly plan can't be overspent."""
+    pulled every near_interval_h instead of GAMEDAY_INTERVAL_H. On a big plan (#30) the cadence
+    comes from high_interval_h. The reserve and the daily allowance still apply, so the monthly
+    plan can't be overspent."""
     now = _ts(now)
-    left = remaining(state, now) - ODDS_RESERVE
+    b = budget(state)
+    if b["high"] and in_window is None:
+        in_window = _in_window(now)
+    left = remaining(state, now) - b["reserve"]
     base = max(left, 0) / days_left_in_month(now)
     spent = spent_today(state, now, FOOTBALL)
     plan = []
@@ -269,9 +352,12 @@ def plan_pulls(state: dict, now, next_kickoff: dict, near_h: float | None = None
         if k is None or _ts(k) <= now:
             continue                                       # nothing upcoming -> nothing to price
         gd = soon(lg)
-        interval = GAMEDAY_INTERVAL_H if gd else IDLE_INTERVAL_H
-        if near_h is not None and near_interval_h is not None and (_ts(k) - now).total_seconds() <= near_h * 3600:
-            interval = min(interval, near_interval_h)
+        if b["high"]:
+            interval = high_interval_h(now, k, bool(in_window))
+        else:
+            interval = GAMEDAY_INTERVAL_H if gd else IDLE_INTERVAL_H
+            if near_h is not None and near_interval_h is not None and (_ts(k) - now).total_seconds() <= near_h * 3600:
+                interval = min(interval, near_interval_h)
         if lg in confirm:
             interval = min(interval, CONFIRM_MIN_GAP_H)
         last = state.get("last_pull", {}).get(lg)
@@ -285,7 +371,7 @@ def plan_pulls(state: dict, now, next_kickoff: dict, near_h: float | None = None
         spent += COST_PER_PULL
         left -= COST_PER_PULL
     # CBB last, only from what football doesn't need (skipped first when credits run short)
-    if "CBB" in SPORTS and cbb_ok(state, now, next_kickoff.get("CBB"), left + ODDS_RESERVE):
+    if "CBB" in SPORTS and cbb_ok(state, now, next_kickoff.get("CBB"), left + b["reserve"], in_window):
         plan.append("CBB")
     return plan
 
@@ -316,6 +402,8 @@ def record_pull(state: dict, league: str, now, headers: dict) -> dict:
         s["remaining_seen_utc"] = _iso(now)
     if used is not None:
         s["used"] = int(float(used))
+    if rem is not None and used is not None:
+        s["quota"] = int(float(rem)) + int(float(used))
     return s
 
 
@@ -374,7 +462,9 @@ def run(now=None, near_h: float | None = None, near_interval_h: float | None = N
     state = load_state()
     confirm = confirm_leagues(now) if confirm is None else set(confirm)
     plan = plan_pulls(state, now, next_kickoffs(key, now), near_h, near_interval_h, confirm)
-    print(f"odds: credits left ~{remaining(state, now)}, spent today {spent_today(state, now)} (CBB {spent_today(state, now, ('CBB',))}), "
+    b = budget(state)
+    print(f"odds: plan {b['quota']} credits/month (reserve {b['reserve']}{', fast cadence' if b['high'] else ''}), "
+          f"credits left ~{remaining(state, now)}, spent today {spent_today(state, now)} (CBB {spent_today(state, now, ('CBB',))}), "
           f"confirm {sorted(confirm) or 'none'}, plan {plan or 'none'}")
     for lg in plan:
         try:

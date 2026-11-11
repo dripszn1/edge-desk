@@ -86,3 +86,21 @@ def test_recap_keeps_cbb_apart_from_football():
     fb = [l for l in md.splitlines() if l.startswith("- SHARP shadow football:")][0]
     cbb = [l for l in md.splitlines() if l.startswith("- SHARP shadow CBB:")][0]
     assert "running 1-0, $+5.00" in fb and "running 0-1, $-1.00" in cbb
+
+
+def test_clv_line_in_digest_after_fee():
+    import pandas as pd
+    from edge_desk import digest
+    c = pd.DataFrame([
+        {"source": "tracked", "league": "CBB", "leg1": "YES KXNCAAMBTOTAL-26NOV10KUUK-155",
+         "clv_c": -2.0, "clv_raw_c": -1.0, "beat_close": False, "close_status": "ok"},
+        {"source": "tracked", "league": "CBB", "leg1": "YES KXNCAAMBTOTAL-26NOV10KUUK-152",
+         "clv_c": 1.0, "clv_raw_c": 2.0, "beat_close": True, "close_status": "ok"},
+        {"source": "shadow", "league": "NFL", "leg1": "YES KXNFLSPREAD-26NOV15BUFNYJ-BUF7",
+         "clv_c": None, "clv_raw_c": None, "beat_close": None, "close_status": "pending"},
+    ])
+    md = digest.build({}, {}, {}, "2026-11-11T12:00:00Z", clv=c)
+    line = [l for l in md.splitlines() if "Kalshi close" in l]
+    assert line == ["  vs Kalshi close after fee: held back CBB -0.5c (50% of 2, 1 games)"]
+    assert len(md.splitlines()) <= digest.MAX_LINES
+    assert "Kalshi close" not in digest.build({}, {}, {}, "2026-11-11T12:00:00Z")
