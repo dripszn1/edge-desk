@@ -1,18 +1,17 @@
 {
-  "generated_ts": "2026-11-11T17:57:05Z",
-  "generated_ct": "Wed Nov 11, 11:57 AM CT",
+  "generated_ts": "2026-11-11T18:25:56Z",
+  "generated_ct": "Wed Nov 11, 12:25 PM CT",
   "today_ct": "2026-11-11",
   "snapshot": {
-    "ts": "2026-11-11T17:56:15Z",
-    "ct": "Wed Nov 11, 11:56 AM CT",
+    "ts": "2026-11-11T18:25:31Z",
+    "ct": "Wed Nov 11, 12:25 PM CT",
     "stale": false,
-    "markets_scanned": 7367,
+    "markets_scanned": 7371,
     "kickoff_source": "kalshi occurrence_datetime - 3h",
     "phases": {
       "CBB": {
-        "live": 64,
-        "pregame": 1611,
-        "unknown": 32
+        "live": 100,
+        "pregame": 1611
       },
       "CFB": {
         "pregame": 4986
