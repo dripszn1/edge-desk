@@ -6,73 +6,73 @@
     "brier_normal": 0.21344,
     "logloss_empirical": 0.61463,
     "logloss_normal": 0.61685,
-    "near_line_brier_empirical": 0.24165,
+    "near_line_brier_empirical": 0.24163,
     "near_line_brier_normal": 0.24224,
-    "max_calibration_gap": 0.0177,
+    "max_calibration_gap": 0.0156,
     "calibration": [
       {
         "bucket": "0.1-0.2",
-        "n": 1272,
+        "n": 1268,
         "pred": 0.1891,
-        "actual": 0.1714
+        "actual": 0.1735
       },
       {
         "bucket": "0.2-0.3",
-        "n": 9069,
+        "n": 9070,
         "pred": 0.2513,
-        "actual": 0.2415
+        "actual": 0.241
       },
       {
         "bucket": "0.3-0.4",
-        "n": 7001,
-        "pred": 0.351,
-        "actual": 0.3381
+        "n": 7002,
+        "pred": 0.3509,
+        "actual": 0.3383
       },
       {
         "bucket": "0.4-0.5",
         "n": 6809,
         "pred": 0.4467,
-        "actual": 0.4368
+        "actual": 0.4365
       },
       {
         "bucket": "0.5-0.6",
-        "n": 6630,
-        "pred": 0.5533,
-        "actual": 0.5508
+        "n": 6632,
+        "pred": 0.5532,
+        "actual": 0.5513
       },
       {
         "bucket": "0.6-0.7",
-        "n": 6718,
+        "n": 6725,
         "pred": 0.6481,
-        "actual": 0.6508
+        "actual": 0.6512
       },
       {
         "bucket": "0.7-0.8",
-        "n": 8535,
+        "n": 8528,
         "pred": 0.749,
-        "actual": 0.7474
+        "actual": 0.7468
       },
       {
         "bucket": "0.8-0.9",
         "n": 733,
         "pred": 0.8088,
-        "actual": 0.8035
+        "actual": 0.8049
       }
     ],
     "by_offset": [
       {
         "band": "0-3",
         "rungs": 14537,
-        "brier": 0.24459,
+        "brier": 0.24458,
         "brier_normal": 0.24506,
         "longshot_pred": 0.4382,
-        "longshot_actual": 0.4365,
-        "longshot_gap": -0.0016
+        "longshot_actual": 0.4364,
+        "longshot_gap": -0.0018
       },
       {
         "band": "3-6",
         "rungs": 13362,
-        "brier": 0.22166,
+        "brier": 0.22165,
         "brier_normal": 0.22295,
         "longshot_pred": 0.3441,
         "longshot_actual": 0.3361,
@@ -81,7 +81,7 @@
       {
         "band": "6-10.5",
         "rungs": 18868,
-        "brier": 0.18133,
+        "brier": 0.18135,
         "brier_normal": 0.18234,
         "longshot_pred": 0.2469,
         "longshot_actual": 0.2404,
