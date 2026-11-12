@@ -1,10 +1,10 @@
 {
-  "generated_ts": "2026-11-12T18:53:18Z",
-  "generated_ct": "Thu Nov 12, 12:53 PM CT",
+  "generated_ts": "2026-11-12T19:22:42Z",
+  "generated_ct": "Thu Nov 12, 1:22 PM CT",
   "today_ct": "2026-11-12",
   "snapshot": {
-    "ts": "2026-11-12T18:52:07Z",
-    "ct": "Thu Nov 12, 12:52 PM CT",
+    "ts": "2026-11-12T19:21:53Z",
+    "ct": "Thu Nov 12, 1:21 PM CT",
     "stale": false,
     "markets_scanned": 6568,
     "kickoff_source": "kalshi occurrence_datetime - 3h",
@@ -64,7 +64,7 @@
     "max_bet": 10.0
   },
   "signals": {
-    "weekly_ct": "Thu Nov 12, 12:52 PM CT",
+    "weekly_ct": "Thu Nov 12, 1:22 PM CT",
     "scorecards": [
       {
         "name": "SHARP shadow football",
@@ -156,7 +156,7 @@
           "events": 2,
           "t_by_event": 1.25,
           "stale": 0,
-          "pending": 48,
+          "pending": 49,
           "no_close": 0
         }
       },
@@ -465,6 +465,20 @@
         "kickoff_utc": "2026-11-14T23:00:00Z",
         "kickoff_ct": "Sat Nov 14, 5:00 PM CT",
         "kalshi_url": "https://kalshi.com/markets/kxncaafspread/event/kxncaafspread-26nov14orstbsu"
+      },
+      {
+        "ticker": "KXNCAAFTOTAL-26NOV14ORSTBSU-66",
+        "signal": "SHARP",
+        "side": "YES",
+        "game": "Oregon St. vs Boise St.: Total Points",
+        "contract": "Over 65.5 points",
+        "max_price": 0.45,
+        "stake": 4.48,
+        "gone": false,
+        "sent_ct": "Thu Nov 12, 1:21 PM CT",
+        "kickoff_utc": "2026-11-14T23:00:00Z",
+        "kickoff_ct": "Sat Nov 14, 5:00 PM CT",
+        "kalshi_url": "https://kalshi.com/markets/kxncaaftotal/event/kxncaaftotal-26nov14orstbsu"
       },
       {
         "ticker": "KXNCAAFSPREAD-26NOV14SJSUAFA-AFA8",
