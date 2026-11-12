@@ -46,7 +46,8 @@ and stands down if dev has a non-"Report" commit <15 min old.
 - Daily check-in: 11:30 AM CT in Emerson's main edge-desk chat (each one schedules the next).
 GitHub's own cron is unreliable here; keeper.yml dispatches collect/live.
 
-## Open decisions (as of 11-11)
+## Open decisions (as of 11-12)
+- Distance caps (NFL 10.5 / CFB 6 / CBB 3 pts from the sharp line): evidence-driven review is backlog item; the weekly report proposes widen/tighten, Emerson decides. Don't make him re-raise it.
 - Odds plan: free (500 credits). $30 START 20K trial decision pending; code auto-detects the plan.
   Trial rule: keep only if CLV by game t>=2 and paper P&L beats $30/mo; judge ~1 month in.
 - Which exit strategy wins (hold / sell at tip / Auto Sell / bracket): data decides after ~30 closed plays.
