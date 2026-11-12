@@ -1,10 +1,10 @@
 {
-  "generated_ts": "2026-11-12T17:22:06Z",
-  "generated_ct": "Thu Nov 12, 11:22 AM CT",
+  "generated_ts": "2026-11-12T17:53:19Z",
+  "generated_ct": "Thu Nov 12, 11:53 AM CT",
   "today_ct": "2026-11-12",
   "snapshot": {
-    "ts": "2026-11-12T17:21:15Z",
-    "ct": "Thu Nov 12, 11:21 AM CT",
+    "ts": "2026-11-12T17:52:25Z",
+    "ct": "Thu Nov 12, 11:52 AM CT",
     "stale": false,
     "markets_scanned": 6568,
     "kickoff_source": "kalshi occurrence_datetime - 3h",
@@ -64,7 +64,7 @@
     "max_bet": 10.0
   },
   "signals": {
-    "weekly_ct": "Thu Nov 12, 11:21 AM CT",
+    "weekly_ct": "Thu Nov 12, 11:52 AM CT",
     "scorecards": [
       {
         "name": "SHARP shadow football",
@@ -91,7 +91,7 @@
         "roi": 0.0147,
         "t_stat": -0.45,
         "verdict": "luck / no edge",
-        "why": "t=-0.45, coin-flip beat 71%",
+        "why": "t=-0.45, coin-flip beat 72%",
         "by_reason": {
           "far_rung": {
             "settled": 80,
@@ -149,7 +149,7 @@
           "events": 2,
           "t_by_event": 1.25,
           "stale": 0,
-          "pending": 47,
+          "pending": 48,
           "no_close": 0
         }
       },
@@ -163,7 +163,7 @@
           "events": 22,
           "t_by_event": -3.23,
           "stale": 0,
-          "pending": 0,
+          "pending": 1,
           "no_close": 0
         },
         "football": {
@@ -278,6 +278,20 @@
     },
     "open_alerts": [
       {
+        "ticker": "KXNCAAFSPREAD-26NOV12MEMUSF-MEM4",
+        "signal": "SHARP",
+        "side": "NO",
+        "game": "Memphis vs South Florida: Spread",
+        "contract": "Memphis wins by over 3.5 points",
+        "max_price": 0.48,
+        "stake": 2.99,
+        "gone": false,
+        "sent_ct": "Thu Nov 12, 11:52 AM CT",
+        "kickoff_utc": "2026-11-13T01:00:00Z",
+        "kickoff_ct": "Thu Nov 12, 7:00 PM CT",
+        "kalshi_url": "https://kalshi.com/markets/kxncaafspread/event/kxncaafspread-26nov12memusf"
+      },
+      {
         "ticker": "KXNFLTOTAL-26NOV12WASNYG-33",
         "signal": "SHARP",
         "side": "NO",
@@ -327,7 +341,7 @@
         "contract": "Over 43.5 points",
         "max_price": 0.34,
         "stake": 2.14,
-        "gone": false,
+        "gone": true,
         "sent_ct": "Thu Nov 12, 10:51 AM CT",
         "kickoff_utc": "2026-11-14T18:00:00Z",
         "kickoff_ct": "Sat Nov 14, 12:00 PM CT",
