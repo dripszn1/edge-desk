@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-11-12T01:32:50Z",
-  "generated_ct": "Wed Nov 11, 7:32 PM CT",
+  "generated_utc": "2026-11-12T01:48:12Z",
+  "generated_ct": "Wed Nov 11, 7:48 PM CT",
   "paper_mode": true,
   "rules": {
     "min_bets": 30,
@@ -184,7 +184,7 @@
         "events": 2,
         "t_by_event": 1.25,
         "stale": 0,
-        "pending": 40,
+        "pending": 41,
         "no_close": 0
       }
     },
@@ -210,7 +210,7 @@
         "events": 1,
         "t_by_event": null,
         "stale": 0,
-        "pending": 109,
+        "pending": 110,
         "no_close": 1
       }
     }
