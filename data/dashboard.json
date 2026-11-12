@@ -1,19 +1,19 @@
 {
-  "generated_ts": "2026-11-12T16:52:13Z",
-  "generated_ct": "Thu Nov 12, 10:52 AM CT",
+  "generated_ts": "2026-11-12T17:22:06Z",
+  "generated_ct": "Thu Nov 12, 11:22 AM CT",
   "today_ct": "2026-11-12",
   "snapshot": {
-    "ts": "2026-11-12T16:51:20Z",
-    "ct": "Thu Nov 12, 10:51 AM CT",
+    "ts": "2026-11-12T17:21:15Z",
+    "ct": "Thu Nov 12, 11:21 AM CT",
     "stale": false,
-    "markets_scanned": 6495,
+    "markets_scanned": 6568,
     "kickoff_source": "kalshi occurrence_datetime - 3h",
     "phases": {
       "CBB": {
-        "pregame": 989
+        "pregame": 1016
       },
       "CFB": {
-        "pregame": 4832
+        "pregame": 4878
       },
       "NFL": {
         "pregame": 674
@@ -64,7 +64,7 @@
     "max_bet": 10.0
   },
   "signals": {
-    "weekly_ct": "Thu Nov 12, 10:51 AM CT",
+    "weekly_ct": "Thu Nov 12, 11:21 AM CT",
     "scorecards": [
       {
         "name": "SHARP shadow football",
@@ -175,7 +175,7 @@
           "events": 1,
           "t_by_event": null,
           "stale": 0,
-          "pending": 134,
+          "pending": 138,
           "no_close": 1
         }
       }
@@ -453,7 +453,7 @@
         "contract": "Air Force wins by over 7.5 points",
         "max_price": 0.4,
         "stake": 2.51,
-        "gone": false,
+        "gone": true,
         "sent_ct": "Thu Nov 12, 7:46 AM CT",
         "kickoff_utc": "2026-11-15T00:00:00Z",
         "kickoff_ct": "Sat Nov 14, 6:00 PM CT",
