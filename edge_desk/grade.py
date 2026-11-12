@@ -241,8 +241,38 @@ def tracked_bets(tracked: pd.DataFrame, results: pd.DataFrame, now: datetime | N
     return out[cols]
 
 
+ODDS_LINES = ROOT / "data" / "odds" / "lines.csv"
+
+
+def recorded_pulls(path=ODDS_LINES) -> set | None:
+    """Every sharp pull time we actually recorded (fetched_ts in data/odds/lines.csv); None if
+    the file is missing, in which case nothing can be checked and nothing is filtered."""
+    try:
+        s = pd.read_csv(path, usecols=["fetched_ts"])["fetched_ts"].dropna().astype(str)
+    except (FileNotFoundError, ValueError):
+        return None
+    return set(s) if len(s) else None
+
+
+def drop_unrecorded(flags: pd.DataFrame, pulls: set | None) -> pd.DataFrame:
+    """#47 provenance: skip a SHARP play priced off a sharp pull that is not in our odds history
+    (test-fixture rows leaked into data/ before #34). Blank pulls (MODEL rows) and pulls older
+    than the first recorded one (history that may have been trimmed) are kept. Rows are only
+    skipped for grading; the log itself is never changed."""
+    if pulls is None or flags is None or flags.empty or "odds_fetched_ts" not in flags:
+        return flags
+    first = min(pulls)
+    v = flags["odds_fetched_ts"].fillna("").astype(str).str.strip()
+    bad = (v != "") & (v >= first) & ~v.isin(pulls)
+    if bad.any():
+        print(f"provenance: {int(bad.sum())} flag rows priced off an unrecorded sharp pull skipped "
+              f"({', '.join(sorted(set(flags.loc[bad, 'ticker'].astype(str))) if 'ticker' in flags else '')})")
+    return flags[~bad]
+
+
 def run() -> pd.DataFrame:
     flags = pd.read_csv(FLAGS) if FLAGS.exists() else pd.DataFrame()
+    pulls = recorded_pulls()
     results = pd.read_csv(RESULTS) if RESULTS.exists() else pd.DataFrame(
         columns=["fetched_ts", "ticker", "status", "result"])
     bets = paper_bets(flags, results)
@@ -250,11 +280,11 @@ def run() -> pd.DataFrame:
     mb = model_bets(shadow, results)
     mb.to_csv(MODEL_BETS_OUT, index=False)   # graded on its own; never touches the paper ledger
     sh = pd.read_csv(SHARP_SHADOW) if SHARP_SHADOW.exists() else pd.DataFrame()
-    sb = model_bets(sh, results, kind="SHARP")
+    sb = model_bets(drop_unrecorded(sh, pulls), results, kind="SHARP")
     sb.to_csv(SHARP_BETS_OUT, index=False)
     print(f"sharp shadow bets {len(sb)} | " + (str(sb["status"].value_counts().to_dict()) if len(sb) else "{}"))
     tr = pd.read_csv(TRACKED) if TRACKED.exists() else pd.DataFrame()
-    tb = tracked_bets(tr, results)
+    tb = tracked_bets(drop_unrecorded(tr, pulls), results)
     tb.to_csv(TRACKED_BETS_OUT, index=False)
     print(f"sharp tracked bets {len(tb)} | " + (str(tb["status"].value_counts().to_dict()) if len(tb) else "{}"))
     print(f"model shadow bets {len(mb)} | " + (str(mb["status"].value_counts().to_dict()) if len(mb) else "{}"))
