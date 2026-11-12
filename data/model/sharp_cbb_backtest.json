@@ -87,6 +87,152 @@
         "longshot_actual": 0.2213,
         "longshot_gap": -0.0011
       }
+    ],
+    "by_offset_season": [
+      {
+        "season": 2022,
+        "last_kickoff_utc": "2022-04-05T01:20:00Z",
+        "bands": [
+          {
+            "band": "0-3",
+            "rungs": 36070,
+            "pred_sum": 15917.0865,
+            "hit_sum": 15837.0
+          },
+          {
+            "band": "3-6",
+            "rungs": 32748,
+            "pred_sum": 10901.4366,
+            "hit_sum": 10746.0
+          },
+          {
+            "band": "6-10.5",
+            "rungs": 45800,
+            "pred_sum": 10334.0126,
+            "hit_sum": 9862.0
+          }
+        ]
+      },
+      {
+        "season": 2023,
+        "last_kickoff_utc": "2023-04-04T01:20:00Z",
+        "bands": [
+          {
+            "band": "0-3",
+            "rungs": 38259,
+            "pred_sum": 16769.8622,
+            "hit_sum": 16927.0
+          },
+          {
+            "band": "3-6",
+            "rungs": 34614,
+            "pred_sum": 11437.1203,
+            "hit_sum": 11529.0
+          },
+          {
+            "band": "6-10.5",
+            "rungs": 48276,
+            "pred_sum": 10668.7103,
+            "hit_sum": 10872.0
+          }
+        ]
+      },
+      {
+        "season": 2024,
+        "last_kickoff_utc": "2024-04-09T01:20:00Z",
+        "bands": [
+          {
+            "band": "0-3",
+            "rungs": 37156,
+            "pred_sum": 16196.5176,
+            "hit_sum": 16291.0
+          },
+          {
+            "band": "3-6",
+            "rungs": 31848,
+            "pred_sum": 10351.1964,
+            "hit_sum": 10340.0
+          },
+          {
+            "band": "6-10.5",
+            "rungs": 42464,
+            "pred_sum": 9336.2806,
+            "hit_sum": 9348.0
+          }
+        ]
+      },
+      {
+        "season": 2025,
+        "last_kickoff_utc": "2025-04-08T00:50:00Z",
+        "bands": [
+          {
+            "band": "0-3",
+            "rungs": 38045,
+            "pred_sum": 16610.8984,
+            "hit_sum": 16605.0
+          },
+          {
+            "band": "3-6",
+            "rungs": 32610,
+            "pred_sum": 10614.9677,
+            "hit_sum": 10438.0
+          },
+          {
+            "band": "6-10.5",
+            "rungs": 43480,
+            "pred_sum": 9594.3884,
+            "hit_sum": 9379.0
+          }
+        ]
+      },
+      {
+        "season": 2026,
+        "last_kickoff_utc": "2026-04-07T00:50:00Z",
+        "bands": [
+          {
+            "band": "0-3",
+            "rungs": 37309,
+            "pred_sum": 16432.9607,
+            "hit_sum": 16560.0
+          },
+          {
+            "band": "3-6",
+            "rungs": 34482,
+            "pred_sum": 11490.3832,
+            "hit_sum": 11638.0
+          },
+          {
+            "band": "6-10.5",
+            "rungs": 48896,
+            "pred_sum": 10922.5561,
+            "hit_sum": 11173.0
+          }
+        ]
+      },
+      {
+        "season": 2027,
+        "last_kickoff_utc": "2026-11-12T04:00:00Z",
+        "bands": [
+          {
+            "band": "0-3",
+            "rungs": 3039,
+            "pred_sum": 1347.5267,
+            "hit_sum": 1329.0
+          },
+          {
+            "band": "3-6",
+            "rungs": 2796,
+            "pred_sum": 951.7718,
+            "hit_sum": 942.0
+          },
+          {
+            "band": "6-10.5",
+            "rungs": 3951,
+            "pred_sum": 925.0738,
+            "hit_sum": 901.0
+          }
+        ]
+      }
     ]
   },
   "total": {
@@ -164,6 +310,152 @@
         "longshot_pred": 0.305,
         "longshot_actual": 0.2991,
         "longshot_gap": -0.0058
+      }
+    ],
+    "by_offset_season": [
+      {
+        "season": 2022,
+        "last_kickoff_utc": "2022-04-05T01:20:00Z",
+        "bands": [
+          {
+            "band": "0-3",
+            "rungs": 36737,
+            "pred_sum": 16902.0549,
+            "hit_sum": 16899.0
+          },
+          {
+            "band": "3-6",
+            "rungs": 32748,
+            "pred_sum": 12595.4236,
+            "hit_sum": 12460.0
+          },
+          {
+            "band": "6-10.5",
+            "rungs": 45133,
+            "pred_sum": 13798.706,
+            "hit_sum": 13466.0
+          }
+        ]
+      },
+      {
+        "season": 2023,
+        "last_kickoff_utc": "2023-04-04T01:20:00Z",
+        "bands": [
+          {
+            "band": "0-3",
+            "rungs": 38642,
+            "pred_sum": 17783.8892,
+            "hit_sum": 17868.0
+          },
+          {
+            "band": "3-6",
+            "rungs": 34614,
+            "pred_sum": 13324.5925,
+            "hit_sum": 13301.0
+          },
+          {
+            "band": "6-10.5",
+            "rungs": 47893,
+            "pred_sum": 14647.3175,
+            "hit_sum": 14489.0
+          }
+        ]
+      },
+      {
+        "season": 2024,
+        "last_kickoff_utc": "2024-04-09T01:20:00Z",
+        "bands": [
+          {
+            "band": "0-3",
+            "rungs": 37156,
+            "pred_sum": 17042.9551,
+            "hit_sum": 17030.0
+          },
+          {
+            "band": "3-6",
+            "rungs": 31848,
+            "pred_sum": 12134.984,
+            "hit_sum": 11940.0
+          },
+          {
+            "band": "6-10.5",
+            "rungs": 42464,
+            "pred_sum": 12890.5314,
+            "hit_sum": 12484.0
+          }
+        ]
+      },
+      {
+        "season": 2025,
+        "last_kickoff_utc": "2025-04-08T00:50:00Z",
+        "bands": [
+          {
+            "band": "0-3",
+            "rungs": 38045,
+            "pred_sum": 17449.893,
+            "hit_sum": 17414.0
+          },
+          {
+            "band": "3-6",
+            "rungs": 32610,
+            "pred_sum": 12423.3204,
+            "hit_sum": 12195.0
+          },
+          {
+            "band": "6-10.5",
+            "rungs": 43480,
+            "pred_sum": 13194.7929,
+            "hit_sum": 12662.0
+          }
+        ]
+      },
+      {
+        "season": 2026,
+        "last_kickoff_utc": "2026-04-07T00:50:00Z",
+        "bands": [
+          {
+            "band": "0-3",
+            "rungs": 37074,
+            "pred_sum": 17096.9674,
+            "hit_sum": 17106.0
+          },
+          {
+            "band": "3-6",
+            "rungs": 34482,
+            "pred_sum": 13343.7356,
+            "hit_sum": 13441.0
+          },
+          {
+            "band": "6-10.5",
+            "rungs": 49131,
+            "pred_sum": 15031.4601,
+            "hit_sum": 15128.0
+          }
+        ]
+      },
+      {
+        "season": 2027,
+        "last_kickoff_utc": "2026-11-12T04:00:00Z",
+        "bands": [
+          {
+            "band": "0-3",
+            "rungs": 3029,
+            "pred_sum": 1396.6792,
+            "hit_sum": 1394.0
+          },
+          {
+            "band": "3-6",
+            "rungs": 2796,
+            "pred_sum": 1081.9562,
+            "hit_sum": 1080.0
+          },
+          {
+            "band": "6-10.5",
+            "rungs": 3961,
+            "pred_sum": 1214.1485,
+            "hit_sum": 1191.0
+          }
+        ]
       }
     ]
   },
@@ -280,5 +572,5 @@
     }
   },
   "league": "CBB",
-  "inputs_hash": "773bf8f044149e16"
+  "inputs_hash": "eae66905add4afc5"
 }

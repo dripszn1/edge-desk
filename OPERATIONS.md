@@ -52,3 +52,8 @@ GitHub's own cron is unreliable here; keeper.yml dispatches collect/live.
   Trial rule: keep only if CLV by game t>=2 and paper P&L beats $30/mo; judge ~1 month in.
 - Which exit strategy wins (hold / sell at tip / Auto Sell / bracket): data decides after ~30 closed plays.
 - Unverified in Actions: Kalshi 1-min candlesticks endpoint (no key?) and GET /markets?tickers= (fast lane).
+
+## Artifacts (built 11-12 in chat)
+- Design System "Edge Desk": https://claude.ai/artifact/TP96QAFG92wghWRB9NapGg (slug d5a4f4a5-1e0b-41bd-afc3-1b85c1798f21). Anton headings/numbers, JetBrains Mono body, dark scoreboard palette.
+- Dashboard: https://claude.ai/artifact/1xHE6x7nWzTv57vH4DevAR (slug 07b7e82b-edfd-49ee-81e6-20e02063f27e). Data = 5 attached CSVs (records, held_by_reason, exits, clv, gates) built from weekly_report.json / dashboard.json / *_bets.csv / digest.md. Daily check-in: rebuild the CSVs, upload_asset, then db_write `update` each datasets/<id> source.url + updated.at.
+- Strategy whiteboard: https://claude.ai/artifact/EEBAKKaKTsggJWTGuRnuyB (slug 6b1dbbb9-1e19-4da5-90fb-27b36dfb28d2).

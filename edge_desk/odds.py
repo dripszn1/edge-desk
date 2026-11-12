@@ -422,6 +422,21 @@ def record_pull(state: dict, league: str, now, headers: dict) -> dict:
     return s
 
 
+def note_quota(state: dict, now, headers: dict) -> dict:
+    """Refresh quota/remaining/used from a free (0-credit) call's headers, before planning.
+    Spends nothing, so a plan upgrade takes effect on the very next run instead of after a paid pull."""
+    rem, used = (headers or {}).get("x-requests-remaining"), (headers or {}).get("x-requests-used")
+    if rem is None or used is None:
+        return state
+    try:
+        rem, used = int(float(rem)), int(float(used))
+    except (TypeError, ValueError):
+        return state
+    s = dict(state)
+    s.update(remaining=rem, used=used, quota=rem + used, remaining_seen_utc=_iso(_ts(now)))
+    return s
+
+
 def load_state(path: Path | None = None) -> dict:
     try:
         return json.loads((path or STATE).read_text())
@@ -452,16 +467,19 @@ def _get(url: str, params: dict):
     return r.json(), {k.lower(): v for k, v in r.headers.items()}
 
 
-def next_kickoffs(key: str, now) -> dict:
-    """Soonest upcoming commence per league via the free /events endpoint."""
+def next_kickoffs(key: str, now, headers_out: dict | None = None) -> dict:
+    """Soonest upcoming commence per league via the free /events endpoint.
+    The last response's quota headers go into headers_out (if given)."""
     out = {}
     for lg, sport in SPORTS.items():
         try:
-            evs, _ = _get(f"{API}/sports/{sport}/events", {"apiKey": key, "dateFormat": "iso"})
+            evs, h = _get(f"{API}/sports/{sport}/events", {"apiKey": key, "dateFormat": "iso"})
         except Exception as e:                       # noqa: BLE001 - never break the workflow
             print(f"odds: events {lg} failed: {type(e).__name__}")
             out[lg] = None
             continue
+        if headers_out is not None:
+            headers_out.update(h or {})
         ks = sorted(_ts(e["commence_time"]) for e in evs if e.get("commence_time") and _ts(e["commence_time"]) > _ts(now))
         out[lg] = _iso(ks[0]) if ks else None
     return out
@@ -476,7 +494,10 @@ def run(now=None, near_h: float | None = None, near_interval_h: float | None = N
     now = _ts(now or datetime.now(timezone.utc))
     state = load_state()
     confirm = confirm_leagues(now) if confirm is None else set(confirm)
-    plan = plan_pulls(state, now, next_kickoffs(key, now), near_h, near_interval_h, confirm)
+    hdr: dict = {}
+    kicks = next_kickoffs(key, now, hdr)
+    state = note_quota(state, now, hdr)              # free: plan upgrades apply right away
+    plan = plan_pulls(state, now, kicks, near_h, near_interval_h, confirm)
     b = budget(state)
     print(f"odds: plan {b['quota']} credits/month (reserve {b['reserve']}{', fast cadence' if b['high'] else ''}), "
           f"credits left ~{remaining(state, now)}, spent today {spent_today(state, now)} (CBB {spent_today(state, now, ('CBB',))}), "
