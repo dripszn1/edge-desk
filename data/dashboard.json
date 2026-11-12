@@ -1,16 +1,17 @@
 {
-  "generated_ts": "2026-11-12T22:32:42Z",
-  "generated_ct": "Thu Nov 12, 4:32 PM CT",
+  "generated_ts": "2026-11-12T23:02:55Z",
+  "generated_ct": "Thu Nov 12, 5:02 PM CT",
   "today_ct": "2026-11-12",
   "snapshot": {
-    "ts": "2026-11-12T22:31:36Z",
-    "ct": "Thu Nov 12, 4:31 PM CT",
+    "ts": "2026-11-12T23:02:02Z",
+    "ct": "Thu Nov 12, 5:02 PM CT",
     "stale": false,
     "markets_scanned": 6847,
     "kickoff_source": "kalshi occurrence_datetime - 3h",
     "phases": {
       "CBB": {
-        "pregame": 1205
+        "live": 63,
+        "pregame": 1142
       },
       "CFB": {
         "pregame": 4968
@@ -64,7 +65,7 @@
     "max_bet": 10.0
   },
   "signals": {
-    "weekly_ct": "Thu Nov 12, 4:32 PM CT",
+    "weekly_ct": "Thu Nov 12, 5:02 PM CT",
     "scorecards": [
       {
         "name": "SHARP shadow football",
@@ -105,13 +106,6 @@
             "pnl": -10.15,
             "roi": -0.1003,
             "t_stat": -0.88,
-            "verdict": "not enough data"
-          },
-          "sanity_cap": {
-            "settled": 0,
-            "pnl": null,
-            "roi": null,
-            "t_stat": null,
             "verdict": "not enough data"
           },
           "stale_line": {
@@ -162,15 +156,15 @@
       },
       "tracked": {
         "cbb": {
-          "n": 127,
-          "avg_clv_c": -2.27,
-          "avg_raw_c": -0.85,
-          "beat_close_pct": 11.8,
-          "t_stat": -9.76,
-          "events": 22,
-          "t_by_event": -3.23,
+          "n": 128,
+          "avg_clv_c": -2.34,
+          "avg_raw_c": -0.91,
+          "beat_close_pct": 11.7,
+          "t_stat": -9.71,
+          "events": 23,
+          "t_by_event": -3.21,
           "stale": 0,
-          "pending": 9,
+          "pending": 8,
           "no_close": 0
         },
         "football": {
@@ -292,7 +286,7 @@
         "contract": "Over 149.5 points",
         "max_price": 0.44,
         "stake": 3.94,
-        "gone": false,
+        "gone": true,
         "sent_ct": "Thu Nov 12, 4:31 PM CT",
         "kickoff_utc": "2026-11-12T23:30:00Z",
         "kickoff_ct": "Thu Nov 12, 5:30 PM CT",
