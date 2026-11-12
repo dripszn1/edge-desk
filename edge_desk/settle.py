@@ -2,8 +2,9 @@
 
 Runs inside GitHub Actions (read-only, no API key). The collector only pulls OPEN events,
 so settled markets drop out of snapshots; this asks for them by ticker instead.
-Output: appends to data/results/results.csv (fetched_ts, ticker, status, result), one row per
-ticker per fetch, until the ticker is final.
+Output: appends to data/results/results.csv (fetched_ts, ticker, status, result): a row only when
+a ticker's (status, result) differs from the last one logged for it (#45), until the ticker is final.
+The first final row is always written at the fetch that saw it, so grading is unchanged.
 """
 from __future__ import annotations
 
@@ -43,6 +44,23 @@ def final_tickers(results: pd.DataFrame) -> set[str]:
     return set(f["ticker"])
 
 
+def _key(v) -> str:
+    return "" if v is None or (isinstance(v, float) and pd.isna(v)) else str(v)
+
+
+def changed_only(new: pd.DataFrame, old: pd.DataFrame) -> pd.DataFrame:
+    """Drop fetched rows whose (status, result) equals the last row logged for that ticker."""
+    if new.empty or old is None or old.empty or "status" not in old:
+        return new
+    o = old.copy()
+    if "fetched_ts" in o:
+        o = o.sort_values("fetched_ts", kind="stable")
+    last = {t: (_key(s), _key(r)) for t, s, r in
+            zip(o["ticker"], o["status"], o["result"] if "result" in o else [None] * len(o))}
+    keep = [last.get(t) != (_key(s), _key(r)) for t, s, r in zip(new["ticker"], new["status"], new["result"])]
+    return new[keep].reset_index(drop=True)
+
+
 def run(now: datetime | None = None) -> pd.DataFrame:
     files = [f for f in (FLAGS, *MODEL_FLAGS) if f.exists()]
     if not files:
@@ -63,11 +81,17 @@ def run(now: datetime | None = None) -> pd.DataFrame:
         except Exception as e:
             print("  ERROR", e)
     new = pd.DataFrame(rows, columns=["fetched_ts", "ticker", "status", "result"])
+    seen = int(new["ticker"].nunique()) if len(new) else 0
+    missing = sorted(set(pending) - set(new["ticker"]))
+    new = changed_only(new, old)
     if len(new):
         RESULTS.parent.mkdir(parents=True, exist_ok=True)
         new.to_csv(RESULTS, mode="a", header=not RESULTS.exists(), index=False)
-    print(f"{ts}: {len(pending)} pending tickers, {len(new)} fetched, "
+    print(f"{ts}: {len(pending)} pending tickers, {seen} fetched, {len(new)} changed, "
           f"{len(final_tickers(new))} newly final")
+    if missing:
+        print(f"  {len(missing)} tickers not returned by Kalshi: " + ", ".join(missing[:10])
+              + (" ..." if len(missing) > 10 else ""))
     return new
 
 
