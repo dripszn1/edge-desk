@@ -1,5 +1,12 @@
 # Reports (newest first)
 
+## 2026-11-12 (builder, 19:45Z run)
+- Shipped to `dev`: **#46 distance caps that learn** (report only, no pricing or alert change). Each cap is now also shown in units of that league's outcome SD: NFL 10.5 pts = 0.80 SD, CFB 6 = 0.37–0.39 SD, CBB 3 = 0.18–0.26 SD, so CFB/CBB are about half as wide as NFL in real terms. Every SHARP play also gets a calibration-adjusted fair (raw fair minus the backtest's longshot bias for its distance band). That bias only uses seasons that finished before the bet. Raw and adjusted are graded side by side in `data/cap_review_bets.csv` and `weekly_report.json["cap_review"]`. When a band has ≥30 plays with CLV>0 and t≥2 beyond the cap (or CLV<0, t≤−2 inside it), a "PROPOSE widening/tightening" line goes at the top of the report and the digest. You decide; the caps never change by themselves.
+- Tests: 394/394 green (10 new: strike parsing, cap in SD, SD ignores future games, bias ignores seasons ending after the entry, fee kept in the adjusted edge, stale-line and future plays excluded, proposal thresholds at 29 vs 30 plays, digest ignores a future-stamped report).
+- Honest results: no proposals. Beyond the cap, CBB totals are 71 plays at −1.8 to −2.7¢ vs Kalshi's close (t/game −2.3 to −4.3), and the adjusted fair keeps only 40 of 73 CBB total plays, still −2.1¢. That argues against widening CBB. CFB far totals: 41 plays, CLV −0.1¢ (t 0.3), 5 settled −$8.28. Football bands inside the caps have no closes yet; they fill in after this weekend.
+- Watchdog: collect was 23 min old (fine), the keeper is running. I dispatched live.yml at 19:44Z (it should exit, since it's before the 5:30 PM CT TNF window).
+- Needs Emerson: merge the dev→main PR before tonight's TNF window. Odds still say a 500-credit plan.
+
 ## 2026-11-12 (builder, 13:45Z run)
 - Shipped to `dev` (the backlog was empty, so I added this as #45): **the results log stops bloating.** Every collect and every 15-min live checkpoint re-logged all ~170 pending contracts as "still active", so 98% of `results.csv` was repeats (7,187 rows in 2 days, ~17k rows on a full game day). Now a contract gets a new row only when its status changes. Grades can't move: the first "final" row is still written the moment Kalshi settles it. Contracts Kalshi never returns are now named in the log (1 so far: an Auburn/Miss. St. spread rung). Old rows are kept.
 - Tests: 381/381 green (3 new: no repeat rows, same settlement time as the full log, missing contracts reported). Two of them failed on the old code.
