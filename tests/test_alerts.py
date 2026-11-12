@@ -352,3 +352,11 @@ def test_auto_sell_hit_no_side_uses_one_minus_yes_ask(tmp_path):
     assert "sell" not in [a["type"] for a in alerts.process([], q, NOW, post=Post(), state_path=st, log_path=lg)]
     q[f["ticker"]].update(yes_ask=0.62, snapshot_ts="2026-11-14T17:00:03Z")                          # NO bid .38
     assert [a["type"] for a in alerts.process([], q, NOW, post=Post(), state_path=st, log_path=lg)] == ["sell"]
+
+
+def test_sport_tag_per_league():
+    from edge_desk import alerts
+    assert alerts.sport_tag({"ticker": "KXNCAAMBTOTAL-26NOV12MHUPSU-150"}) == "basketball"
+    assert alerts.sport_tag({"key": "SHARP|YES KXNCAAMBSPREAD-26NOV12AB-A3"}) == "basketball"
+    assert alerts.sport_tag({"ticker": "KXNFLTOTAL-26NOV12WASNYG-33"}) == "football"
+    assert alerts.sport_tag({"ticker": "KXNCAAFTOTAL-26NOV14UABTEM-44"}) == "football"

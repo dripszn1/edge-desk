@@ -156,7 +156,13 @@ def run(now: datetime | None = None) -> dict:
         rep["cap_review"] = caps.run(now)
     except Exception as e:                 # noqa: BLE001
         rep["cap_review"] = {"error": str(e)[:200], "proposals": []}
-    rep = {"proposals": list(rep["cap_review"].get("proposals") or []), **rep}   # top of the report
+    try:                                   # #48 picked-off check (report only, Emerson decides)
+        from . import pickoff
+        rep["pickoff"] = pickoff.run_if_due(now)
+    except Exception as e:                 # noqa: BLE001
+        rep["pickoff"] = {"error": str(e)[:200], "proposals": []}
+    rep = {"proposals": list(rep["cap_review"].get("proposals") or [])
+           + list(rep["pickoff"].get("proposals") or []), **rep}                 # top of the report
     try:                                   # #38 trade-out grading (hold vs sell variants)
         from . import candles, trades
         candles.refresh(now)               # #39 1-min candles; no-op without network/new bets
