@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-11-12T03:44:47Z",
-  "generated_ct": "Wed Nov 11, 9:44 PM CT",
+  "generated_utc": "2026-11-12T03:59:45Z",
+  "generated_ct": "Wed Nov 11, 9:59 PM CT",
   "paper_mode": true,
   "rules": {
     "min_bets": 30,
@@ -14,31 +14,31 @@
     "why": "no settled bets yet"
   },
   "model_shadow": {
-    "settled": 1,
-    "staked": 0.15,
-    "fees": 0.01,
-    "pnl": -0.15,
-    "roi": -1.0,
-    "t_stat": null,
+    "settled": 3,
+    "staked": 1.28,
+    "fees": 0.07,
+    "pnl": -0.28,
+    "roi": -0.2188,
+    "t_stat": -0.02,
     "coin_flip": {
       "sims": 10000,
-      "bets": 1,
-      "real_pnl": -0.15,
-      "sim_median_pnl": -0.15,
-      "beat_pct": 0.0
+      "bets": 3,
+      "real_pnl": -0.28,
+      "sim_median_pnl": -0.28,
+      "beat_pct": 0.649
     },
     "by_week": [
       {
         "week_of": "2026-11-09",
-        "bets": 1,
-        "pnl": -0.15,
-        "roi": -1.0,
-        "claimed_edge_c": 10.01,
-        "realised_edge_c": -15.0
+        "bets": 3,
+        "pnl": -0.28,
+        "roi": -0.2188,
+        "claimed_edge_c": 18.91,
+        "realised_edge_c": -5.6
       }
     ],
     "verdict": "not enough data",
-    "why": "1 settled bets (< 30)"
+    "why": "3 settled bets (< 30)"
   },
   "sharp_shadow": {
     "settled": 2,
@@ -138,7 +138,7 @@
       "bets": 130,
       "real_pnl": 12.73,
       "sim_median_pnl": -16.27,
-      "beat_pct": 0.7219
+      "beat_pct": 0.7189
     },
     "by_week": [
       {
@@ -165,7 +165,7 @@
           "bets": 79,
           "real_pnl": 14.55,
           "sim_median_pnl": -9.45,
-          "beat_pct": 0.7316
+          "beat_pct": 0.7308
         },
         "verdict": "luck / no edge",
         "why": "t=-0.39, coin-flip beat 73%"
