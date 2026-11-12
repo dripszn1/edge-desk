@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-11-12T04:59:44Z",
-  "generated_ct": "Wed Nov 11, 10:59 PM CT",
+  "generated_utc": "2026-11-12T05:14:46Z",
+  "generated_ct": "Wed Nov 11, 11:14 PM CT",
   "paper_mode": true,
   "rules": {
     "min_bets": 30,
@@ -138,7 +138,7 @@
       "bets": 131,
       "real_pnl": 11.31,
       "sim_median_pnl": -16.69,
-      "beat_pct": 0.7075
+      "beat_pct": 0.706
     },
     "by_week": [
       {
@@ -182,7 +182,7 @@
           "bets": 26,
           "real_pnl": -10.15,
           "sim_median_pnl": -3.15,
-          "beat_pct": 0.3624
+          "beat_pct": 0.3635
         },
         "verdict": "not enough data",
         "why": "26 settled bets (< 30)"
@@ -199,7 +199,7 @@
           "bets": 25,
           "real_pnl": 8.33,
           "sim_median_pnl": -4.67,
-          "beat_pct": 0.7022
+          "beat_pct": 0.7023
         },
         "verdict": "not enough data",
         "why": "25 settled bets (< 30)"
