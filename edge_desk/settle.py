@@ -19,7 +19,9 @@ FLAGS = ROOT / "data" / "flags" / "flags.csv"
 RESULTS = ROOT / "data" / "results" / "results.csv"
 # single-leg MODEL flags (live + shadow) get graded too, so the model's real-price record builds up
 MODEL_FLAGS = (ROOT / "data" / "flags" / "model_flags.csv", ROOT / "data" / "flags" / "model_shadow.csv",
-               ROOT / "data" / "flags" / "sharp_flags.csv", ROOT / "data" / "flags" / "sharp_shadow.csv")
+               ROOT / "data" / "flags" / "sharp_flags.csv", ROOT / "data" / "flags" / "sharp_shadow.csv",
+               # held-back SHARP plays (#21b/#24) are graded too; they carry ticker + side, not leg1
+               ROOT / "data" / "flags" / "sharp_tracked.csv")
 FINAL_STATUSES = {"finalized", "settled", "determined"}
 FINAL_RESULTS = {"yes", "no", "void"}   # void only counts once status is final
 
@@ -29,6 +31,8 @@ def flag_tickers(flags: pd.DataFrame) -> set[str]:
     for col in ("leg1", "leg2"):
         if col in flags:
             out |= {s.split(" ", 1)[1] for s in flags[col].dropna() if " " in s}
+    if "ticker" in flags:
+        out |= {t for t in flags["ticker"].dropna().astype(str) if t and t != "nan"}
     return out
 
 
