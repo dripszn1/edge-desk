@@ -50,6 +50,11 @@ MIN_N = 300
 PRIOR_N = 20
 SD = {"spread": 13.3, "total": 13.6}      # only for the prior and the normal benchmark
 KICKOFF_TOL = pd.Timedelta(hours=6)       # odds commence vs Kalshi kickoff
+# #41: Kalshi stamps some TBD-time night games at a placeholder (11-14: TTU/OKST Kalshi 20:00Z vs books
+# 02:30Z; TEX/LSU 20:00Z vs 00:30Z). When nothing matches inside KICKOFF_TOL, a unique name match up to
+# this far away is accepted (a team never plays twice in 12h). The earlier, Kalshi kickoff still drives
+# phase / stale guards, so the fallback can only make us stricter, never price an in-play market.
+KICKOFF_TOL_WIDE = pd.Timedelta(hours=12)
 MAX_RUNG_OFFSET = 10.5   # only price rungs inside the backtested range (OFFSETS = line +-10); the
 # CFB: NFL-validated cap doesn't transfer; stay near the main line until a CFB backtest says otherwise
 MAX_RUNG_OFFSET_BY_LEAGUE = {"NFL": 10.5, "CFB": 6.0, "CBB": 3.0}
@@ -312,11 +317,15 @@ def _odds_event(fair: pd.DataFrame, home_full: str, away_full: str, kickoff) -> 
     if fair.empty or kickoff is None or (isinstance(kickoff, float) and math.isnan(kickoff)):
         return fair.iloc[0:0]
     c = pd.to_datetime(fair["commence_utc"], utc=True)
-    near = (c - _ts(kickoff)).abs() <= KICKOFF_TOL
     teams = {home_full, away_full}
-    same = fair.apply(lambda r: {r["home_team"], r["away_team"]} == teams, axis=1) if len(fair) else near
-    m = fair[near & same]
-    return m if m["event_id"].nunique() == 1 else fair.iloc[0:0]
+    same = fair.apply(lambda r: {r["home_team"], r["away_team"]} == teams, axis=1)
+    for tol in (KICKOFF_TOL, KICKOFF_TOL_WIDE):      # #41: placeholder Kalshi times
+        m = fair[((c - _ts(kickoff)).abs() <= tol) & same]
+        if m["event_id"].nunique() == 1:
+            return m
+        if m["event_id"].nunique() > 1:
+            break                                    # ambiguous -> no match
+    return fair.iloc[0:0]
 
 
 SERIES = {"NFL": ("KXNFLSPREAD", "KXNFLTOTAL"), "CFB": ("KXNCAAFSPREAD", "KXNCAAFTOTAL"),
@@ -372,13 +381,16 @@ def match_event(league: str, row: dict, fair: pd.DataFrame) -> tuple[dict | None
     if len(names) != 2 or len(abbrs) != 2 or ko is None or fair.empty or (isinstance(ko, float) and math.isnan(ko)):
         return None, empty
     c = pd.to_datetime(fair["commence_utc"], utc=True)
-    cand = fair[(c - _ts(ko)).abs() <= KICKOFF_TOL].drop_duplicates("event_id")
-    scored = []
-    for r in cand.to_dict("records"):
-        for bk in ((r["home_team"], r["away_team"]), (r["away_team"], r["home_team"])):
-            s0, s1 = _prefix_score(names[0], bk[0]), _prefix_score(names[1], bk[1])
-            if s0 is not None and s1 is not None:
-                scored.append((s0 + s1, r["event_id"], {abbrs[0]: bk[0], abbrs[1]: bk[1]}))
+    for tol in (KICKOFF_TOL, KICKOFF_TOL_WIDE):      # #41: wide window only when the near one is empty
+        cand = fair[(c - _ts(ko)).abs() <= tol].drop_duplicates("event_id")
+        scored = []
+        for r in cand.to_dict("records"):
+            for bk in ((r["home_team"], r["away_team"]), (r["away_team"], r["home_team"])):
+                s0, s1 = _prefix_score(names[0], bk[0]), _prefix_score(names[1], bk[1])
+                if s0 is not None and s1 is not None:
+                    scored.append((s0 + s1, r["event_id"], {abbrs[0]: bk[0], abbrs[1]: bk[1]}))
+        if scored:
+            break
     if not scored:
         return None, empty
     scored.sort(key=lambda x: x[0])

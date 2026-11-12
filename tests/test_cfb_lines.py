@@ -184,3 +184,39 @@ def test_cbb_thin_size_untouched():
     flags, st = sharp.sharp_flags(pd.DataFrame([_cbb_row(size=10)]), _odds(home="Duke Blue Devils", away="Kansas Jayhawks", league="CBB"),
                                   None, SNAP, now=pd.Timestamp(SNAP), league="CBB")
     assert flags == []
+
+
+# ---------- #41 Kalshi placeholder kickoff times ----------
+def test_match_survives_kalshi_placeholder_kickoff():
+    """#41: Kalshi stamps TBD night games at a placeholder (TTU/OKST 11-14: Kalshi 20:00Z, books 02:30Z,
+    6.5h apart), so the 6h window found no book event. A unique name match within 12h is accepted."""
+    lines = _odds()
+    row = _row()
+    row["kickoff_utc"] = "2026-11-14T14:00:00Z"            # 6.5h before the book's commence (KO)
+    sides, fe = sharp.match_event("CFB", row, _fair(lines))
+    assert sides == {"AUB": "Auburn Tigers", "MSST": "Mississippi State Bulldogs"} and fe["event_id"].nunique() == 1
+    row["kickoff_utc"] = "2026-11-14T08:00:00Z"            # 12.5h: a different game, never matched
+    assert sharp.match_event("CFB", row, _fair(lines))[1].empty
+
+
+def test_wide_match_still_refuses_ambiguity_and_prefers_the_near_game():
+    lines = _odds(home="Miami Hurricanes", away="Ohio Bobcats",
+                  extra=[("e2", "Miami Flames", "Ohio Owls", -3.0)])
+    row = _row("Miami vs Ohio", "MIA vs OHIO (Nov 14)")
+    row["kickoff_utc"] = "2026-11-14T13:30:00Z"            # 7h off: wide window, still two equal candidates
+    sides, fe = sharp.match_event("CFB", row, _fair(lines))
+    assert sides is None and fe.empty
+
+
+def test_nfl_match_survives_placeholder_kickoff():
+    from edge_desk import odds as _o
+    pay = [{"id": "n1", "commence_time": "2026-11-16T01:20:00Z", "home_team": "Cincinnati Bengals",
+            "away_team": "Pittsburgh Steelers", "bookmakers": [{"key": "pinnacle", "markets": [
+                {"key": "spreads", "outcomes": [{"name": "Cincinnati Bengals", "price": -110, "point": 3.0},
+                                                {"name": "Pittsburgh Steelers", "price": -110, "point": -3.0}]}]}]}]
+    fair = _o.fair_lines(_o.parse(pay, "NFL", "2026-11-15T12:00:00Z"), "2026-11-15T13:00:00Z")
+    row = {"event_sub": "PIT vs CIN (Nov 15)", "kickoff_utc": "2026-11-15T18:00:00Z"}   # 7h20m early
+    sides, fe = sharp.match_event("NFL", row, fair)
+    assert fe["event_id"].nunique() == 1
+    row["kickoff_utc"] = "2026-11-15T12:00:00Z"            # >12h: no match
+    assert sharp.match_event("NFL", row, fair)[1].empty
