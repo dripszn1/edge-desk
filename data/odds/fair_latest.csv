@@ -1,18 +1,4 @@
 league,event_id,commence_utc,home_team,away_team,market,outcome,point,fair,source,n_books,fetched_ts
-CFB,a8f5a967982255fd6be0435c3b213b0f,2026-11-12T00:36:00Z,Ball State Cardinals,Buffalo Bulls,h2h,Ball State Cardinals,,0.495353,pinnacle,1,2026-11-12T00:31:26Z
-CFB,a8f5a967982255fd6be0435c3b213b0f,2026-11-12T00:36:00Z,Ball State Cardinals,Buffalo Bulls,h2h,Buffalo Bulls,,0.504647,pinnacle,1,2026-11-12T00:31:26Z
-CFB,a8f5a967982255fd6be0435c3b213b0f,2026-11-12T00:36:00Z,Ball State Cardinals,Buffalo Bulls,spreads,Ball State Cardinals,1.0,0.509166,pinnacle,1,2026-11-12T00:31:26Z
-CFB,a8f5a967982255fd6be0435c3b213b0f,2026-11-12T00:36:00Z,Ball State Cardinals,Buffalo Bulls,spreads,Buffalo Bulls,-1.0,0.490834,pinnacle,1,2026-11-12T00:31:26Z
-CFB,a8f5a967982255fd6be0435c3b213b0f,2026-11-12T00:36:00Z,Ball State Cardinals,Buffalo Bulls,totals,Over,53.0,0.509955,pinnacle,1,2026-11-12T00:31:26Z
-CFB,a8f5a967982255fd6be0435c3b213b0f,2026-11-12T00:36:00Z,Ball State Cardinals,Buffalo Bulls,totals,Under,53.0,0.490045,pinnacle,1,2026-11-12T00:31:26Z
-CFB,5129a94416920cd3c476cd56af387f47,2026-11-12T00:36:00Z,Toledo Rockets,UMass Minutemen,h2h,Toledo Rockets,,0.826956,pinnacle,1,2026-11-12T00:31:26Z
-CFB,5129a94416920cd3c476cd56af387f47,2026-11-12T00:36:00Z,Toledo Rockets,UMass Minutemen,h2h,UMass Minutemen,,0.173044,pinnacle,1,2026-11-12T00:31:26Z
-CFB,5129a94416920cd3c476cd56af387f47,2026-11-12T00:36:00Z,Toledo Rockets,UMass Minutemen,spreads,Toledo Rockets,-14.0,0.511462,pinnacle,1,2026-11-12T00:31:26Z
-CFB,5129a94416920cd3c476cd56af387f47,2026-11-12T00:36:00Z,Toledo Rockets,UMass Minutemen,spreads,UMass Minutemen,14.0,0.488538,pinnacle,1,2026-11-12T00:31:26Z
-CFB,5129a94416920cd3c476cd56af387f47,2026-11-12T00:36:00Z,Toledo Rockets,UMass Minutemen,totals,Over,52.0,0.495548,pinnacle,1,2026-11-12T00:31:26Z
-CFB,5129a94416920cd3c476cd56af387f47,2026-11-12T00:36:00Z,Toledo Rockets,UMass Minutemen,totals,Under,52.0,0.504452,pinnacle,1,2026-11-12T00:31:26Z
-CFB,d466840e3c50d2fdad6fd7e799fdf921,2026-11-15T00:00:00Z,Penn State Nittany Lions,Minnesota Golden Gophers,totals,Over,42.0,0.502226,pinnacle,1,2026-11-12T00:31:26Z
-CFB,d466840e3c50d2fdad6fd7e799fdf921,2026-11-15T00:00:00Z,Penn State Nittany Lions,Minnesota Golden Gophers,totals,Under,42.0,0.497774,pinnacle,1,2026-11-12T00:31:26Z
 NFL,74d39e19225caf211ad2c8eb4110179f,2026-11-13T01:15:00Z,New York Giants,Washington Commanders,h2h,New York Giants,,0.543728,pinnacle,1,2026-11-12T03:04:26Z
 NFL,74d39e19225caf211ad2c8eb4110179f,2026-11-13T01:15:00Z,New York Giants,Washington Commanders,h2h,Washington Commanders,,0.456272,pinnacle,1,2026-11-12T03:04:26Z
 NFL,74d39e19225caf211ad2c8eb4110179f,2026-11-13T01:15:00Z,New York Giants,Washington Commanders,spreads,New York Giants,-2.5,0.487478,pinnacle,1,2026-11-12T03:04:26Z
@@ -429,6 +415,8 @@ CFB,d466840e3c50d2fdad6fd7e799fdf921,2026-11-15T00:00:00Z,Penn State Nittany Lio
 CFB,d466840e3c50d2fdad6fd7e799fdf921,2026-11-15T00:00:00Z,Penn State Nittany Lions,Minnesota Golden Gophers,h2h,Penn State Nittany Lions,,0.748559,pinnacle,1,2026-11-12T03:44:26Z
 CFB,d466840e3c50d2fdad6fd7e799fdf921,2026-11-15T00:00:00Z,Penn State Nittany Lions,Minnesota Golden Gophers,spreads,Minnesota Golden Gophers,9.0,0.5,pinnacle,1,2026-11-12T03:44:26Z
 CFB,d466840e3c50d2fdad6fd7e799fdf921,2026-11-15T00:00:00Z,Penn State Nittany Lions,Minnesota Golden Gophers,spreads,Penn State Nittany Lions,-9.0,0.5,pinnacle,1,2026-11-12T03:44:26Z
+CFB,d466840e3c50d2fdad6fd7e799fdf921,2026-11-15T00:00:00Z,Penn State Nittany Lions,Minnesota Golden Gophers,totals,Over,42.0,0.5,consensus:2,2,2026-11-12T03:44:26Z
+CFB,d466840e3c50d2fdad6fd7e799fdf921,2026-11-15T00:00:00Z,Penn State Nittany Lions,Minnesota Golden Gophers,totals,Under,42.0,0.5,consensus:2,2,2026-11-12T03:44:26Z
 CFB,c83b81cc8d2110c8e4a39eefea4bdc72,2026-11-15T00:00:00Z,South Alabama Jaguars,Troy Trojans,h2h,South Alabama Jaguars,,0.581287,pinnacle,1,2026-11-12T03:44:26Z
 CFB,c83b81cc8d2110c8e4a39eefea4bdc72,2026-11-15T00:00:00Z,South Alabama Jaguars,Troy Trojans,h2h,Troy Trojans,,0.418713,pinnacle,1,2026-11-12T03:44:26Z
 CFB,c83b81cc8d2110c8e4a39eefea4bdc72,2026-11-15T00:00:00Z,South Alabama Jaguars,Troy Trojans,spreads,South Alabama Jaguars,-3.0,0.502258,pinnacle,1,2026-11-12T03:44:26Z
