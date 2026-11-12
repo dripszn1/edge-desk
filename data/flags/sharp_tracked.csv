@@ -25410,3 +25410,33 @@ snapshot_ts,league,event,ticker,side,price,fair,edge,sharp_line,odds_fetched_ts,
 2026-11-12T14:16:49Z,CFB,North Dakota St. vs Hawai'i: Total Points,KXNCAAFTOTAL-26NOV14NDSUHAW-21,NO,0.08,0.1335,0.0481,38.5,2026-11-12T13:46:25Z,rung far from sharp line (unvalidated range)
 2026-11-12T14:46:57Z,CFB,Boston College vs Notre Dame: Total Points,KXNCAAFTOTAL-26NOV14BCND-32,NO,0.06,0.0977,0.0334,52.5,2026-11-12T13:46:25Z,rung far from sharp line (unvalidated range)
 2026-11-12T14:46:57Z,CFB,Michigan vs Oregon: Total Points,KXNCAAFTOTAL-26NOV14MICHORE-28,NO,0.21,0.2587,0.037,38.0,2026-11-12T13:46:25Z,rung far from sharp line (unvalidated range)
+2026-11-12T15:20:47Z,NFL,Buffalo vs New York J: Spread,KXNFLSPREAD-26NOV15BUFNYJ-BUF3,NO,0.24,0.2974,0.044,8.5,2026-11-12T13:46:25Z,sharp line stale
+2026-11-12T15:20:47Z,NFL,Buffalo vs New York J: Spread,KXNFLSPREAD-26NOV15BUFNYJ-NYJ2,YES,0.2,0.242,0.0303,-8.5,2026-11-12T13:46:25Z,sharp line stale
+2026-11-12T15:20:47Z,NFL,Buffalo vs New York J: Spread,KXNFLSPREAD-26NOV15BUFNYJ-NYJ3,YES,0.18,0.226,0.0347,-8.5,2026-11-12T13:46:25Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-12T15:20:47Z,NFL,Jacksonville vs Tennessee: Spread,KXNFLSPREAD-26NOV15JACTEN-JAC15,NO,0.61,0.6587,0.0307,10.5,2026-11-12T13:46:25Z,sharp line stale
+2026-11-12T15:20:47Z,NFL,Jacksonville vs Tennessee: Spread,KXNFLSPREAD-26NOV15JACTEN-JAC7,NO,0.34,0.3918,0.0351,10.5,2026-11-12T13:46:25Z,sharp line stale
+2026-11-12T15:20:47Z,NFL,Seattle vs Las Vegas: Spread,KXNFLSPREAD-26NOV15SEALV-SEA21,YES,0.13,0.1711,0.0328,6.5,2026-11-12T13:46:25Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-12T15:20:47Z,NFL,Seattle vs Las Vegas: Spread,KXNFLSPREAD-26NOV15SEALV-SEA15,YES,0.23,0.2921,0.0494,6.5,2026-11-12T13:46:25Z,sharp line stale
+2026-11-12T15:20:47Z,NFL,Washington vs New York G: Total Points,KXNFLTOTAL-26NOV12WASNYG-33,NO,0.22,0.2729,0.0407,40.5,2026-11-12T13:46:25Z,sharp line stale
+2026-11-12T15:20:47Z,NFL,Los Angeles C vs Baltimore: Total Points,KXNFLTOTAL-26NOV16LACBAL-24,NO,0.08,0.1287,0.0435,38.5,2026-11-12T13:46:25Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-12T15:20:47Z,CFB,James Madison vs UConn: Spread,KXNCAAFSPREAD-26NOV14JMUCONN-JMU7,NO,0.54,0.5991,0.0405,3.5,2026-11-12T13:46:25Z,sharp line stale
+2026-11-12T15:20:47Z,CFB,James Madison vs UConn: Spread,KXNCAAFSPREAD-26NOV14JMUCONN-JMU4,NO,0.47,0.5303,0.0428,3.5,2026-11-12T13:46:25Z,sharp line stale
+2026-11-12T15:20:47Z,CFB,Georgia Southern vs Georgia St.: Spread,KXNCAAFSPREAD-26NOV14GASOGAST-GASO2,NO,0.35,0.399,0.0324,5.5,2026-11-12T13:46:25Z,sharp line stale
+2026-11-12T15:20:47Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE3,NO,0.24,0.2871,0.0343,10.5,2026-11-12T13:46:25Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-12T15:20:47Z,CFB,San Jose St. vs Air Force: Spread,KXNCAAFSPREAD-26NOV14SJSUAFA-AFA8,NO,0.4,0.4495,0.0312,11.5,2026-11-12T13:46:25Z,sharp line stale
+2026-11-12T15:20:47Z,CFB,Stanford vs Virginia Tech: Spread,KXNCAAFSPREAD-26NOV14STANVT-VT8,NO,0.31,0.3694,0.0444,14.5,2026-11-12T13:46:25Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-12T15:20:47Z,CFB,East Carolina vs Charlotte: Total Points,KXNCAAFTOTAL-26NOV14ECUCHAR-26,NO,0.07,0.1146,0.0398,45.0,2026-11-12T13:46:25Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-12T15:20:47Z,CFB,Michigan vs Oregon: Total Points,KXNCAAFTOTAL-26NOV14MICHORE-22,NO,0.09,0.1545,0.0585,38.0,2026-11-12T13:46:25Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-12T15:20:47Z,CFB,Michigan vs Oregon: Total Points,KXNCAAFTOTAL-26NOV14MICHORE-25,NO,0.15,0.2026,0.0433,38.0,2026-11-12T13:46:25Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-12T15:20:47Z,CFB,Michigan vs Oregon: Total Points,KXNCAAFTOTAL-26NOV14MICHORE-34,NO,0.33,0.3907,0.0445,38.0,2026-11-12T13:46:25Z,sharp line stale
+2026-11-12T15:20:47Z,CFB,Michigan vs Oregon: Total Points,KXNCAAFTOTAL-26NOV14MICHORE-37,NO,0.41,0.4632,0.0348,38.0,2026-11-12T13:46:25Z,sharp line stale
+2026-11-12T15:20:47Z,CFB,Minnesota vs Penn St.: Total Points,KXNCAAFTOTAL-26NOV14MINNPSU-24,NO,0.09,0.127,0.031,42.0,2026-11-12T13:46:25Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-12T15:20:47Z,CFB,Minnesota vs Penn St.: Total Points,KXNCAAFTOTAL-26NOV14MINNPSU-27,NO,0.11,0.1696,0.0526,42.0,2026-11-12T13:46:25Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-12T15:20:47Z,CFB,Minnesota vs Penn St.: Total Points,KXNCAAFTOTAL-26NOV14MINNPSU-30,NO,0.17,0.2204,0.0404,42.0,2026-11-12T13:46:25Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-12T15:20:47Z,CFB,Minnesota vs Penn St.: Total Points,KXNCAAFTOTAL-26NOV14MINNPSU-33,NO,0.23,0.279,0.0362,42.0,2026-11-12T13:46:25Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-12T15:20:47Z,CFB,Utah St. vs San Diego St.: Total Points,KXNCAAFTOTAL-26NOV14USUSDSU-28,NO,0.15,0.194,0.0348,41.5,2026-11-12T13:46:25Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-12T15:20:47Z,CFB,Utah St. vs San Diego St.: Total Points,KXNCAAFTOTAL-26NOV14USUSDSU-31,NO,0.2,0.2488,0.0376,41.5,2026-11-12T13:46:25Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-12T15:20:47Z,CFB,North Dakota St. vs Hawai'i: Total Points,KXNCAAFTOTAL-26NOV14NDSUHAW-21,NO,0.08,0.1335,0.0481,38.5,2026-11-12T13:46:25Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-12T15:20:47Z,CFB,North Dakota St. vs Hawai'i: Total Points,KXNCAAFTOTAL-26NOV14NDSUHAW-24,NO,0.13,0.1775,0.0395,38.5,2026-11-12T13:46:25Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-12T15:20:47Z,CFB,North Dakota St. vs Hawai'i: Total Points,KXNCAAFTOTAL-26NOV14NDSUHAW-27,NO,0.18,0.2297,0.0386,38.5,2026-11-12T13:46:25Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-12T15:20:47Z,CFB,North Dakota St. vs Hawai'i: Total Points,KXNCAAFTOTAL-26NOV14NDSUHAW-30,NO,0.24,0.2895,0.0366,38.5,2026-11-12T13:46:25Z,rung far from sharp line (unvalidated range); sharp line stale
