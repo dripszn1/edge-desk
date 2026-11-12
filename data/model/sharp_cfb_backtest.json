@@ -2,80 +2,80 @@
   "spread": {
     "rungs": 189294,
     "games": 9014,
-    "brier_empirical": 0.22583,
+    "brier_empirical": 0.22578,
     "brier_normal": 0.22603,
-    "logloss_empirical": 0.64334,
+    "logloss_empirical": 0.64323,
     "logloss_normal": 0.64381,
-    "near_line_brier_empirical": 0.24523,
+    "near_line_brier_empirical": 0.24519,
     "near_line_brier_normal": 0.24533,
-    "max_calibration_gap": 0.1202,
+    "max_calibration_gap": 0.1313,
     "calibration": [
       {
         "bucket": "0.1-0.2",
-        "n": 13,
-        "pred": 0.1971,
-        "actual": 0.0769
+        "n": 15,
+        "pred": 0.198,
+        "actual": 0.0667
       },
       {
         "bucket": "0.2-0.3",
-        "n": 25087,
+        "n": 24977,
         "pred": 0.2653,
-        "actual": 0.2699
+        "actual": 0.2692
       },
       {
         "bucket": "0.3-0.4",
-        "n": 38661,
-        "pred": 0.3493,
-        "actual": 0.3519
+        "n": 38786,
+        "pred": 0.3491,
+        "actual": 0.3521
       },
       {
         "bucket": "0.4-0.5",
-        "n": 33760,
-        "pred": 0.4483,
+        "n": 33753,
+        "pred": 0.4482,
         "actual": 0.455
       },
       {
         "bucket": "0.5-0.6",
-        "n": 34057,
-        "pred": 0.5517,
-        "actual": 0.5549
+        "n": 34023,
+        "pred": 0.5516,
+        "actual": 0.5543
       },
       {
         "bucket": "0.6-0.7",
-        "n": 37884,
+        "n": 37879,
         "pred": 0.651,
-        "actual": 0.6632
+        "actual": 0.663
       },
       {
         "bucket": "0.7-0.8",
-        "n": 19832,
-        "pred": 0.7304,
-        "actual": 0.7344
+        "n": 19861,
+        "pred": 0.7303,
+        "actual": 0.7358
       }
     ],
     "by_offset": [
       {
         "band": "0-3",
         "rungs": 59262,
-        "brier": 0.24709,
+        "brier": 0.24706,
         "brier_normal": 0.24713,
-        "longshot_pred": 0.4498,
-        "longshot_actual": 0.455,
-        "longshot_gap": 0.0052
+        "longshot_pred": 0.4499,
+        "longshot_actual": 0.4548,
+        "longshot_gap": 0.0049
       },
       {
         "band": "3-6",
         "rungs": 54084,
-        "brier": 0.23274,
+        "brier": 0.23267,
         "brier_normal": 0.23311,
         "longshot_pred": 0.3744,
         "longshot_actual": 0.3714,
-        "longshot_gap": -0.0031
+        "longshot_gap": -0.003
       },
       {
         "band": "6-10.5",
         "rungs": 75948,
-        "brier": 0.20433,
+        "brier": 0.20427,
         "brier_normal": 0.20452,
         "longshot_pred": 0.2926,
         "longshot_actual": 0.288,
@@ -183,5 +183,6 @@
     "spread": true,
     "total": false
   },
-  "league": "CFB"
+  "league": "CFB",
+  "inputs_hash": "fc3c7fca59c34610"
 }
