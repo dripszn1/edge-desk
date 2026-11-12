@@ -132,17 +132,30 @@ def test_no_gone_after_kickoff(tmp_path):
     assert out == []
 
 
-def test_daily_cap_across_pushes(tmp_path):
+def test_daily_cap_across_pushes_live_only(tmp_path, monkeypatch):
+    """LIVE pushes keep the real-money daily cap."""
+    monkeypatch.setattr(config, "PAPER_MODE", False)
     st = tmp_path / "s.json"
     fs = [sharp_flag(ticker=f"KXNFLSPREAD-26NOV15G{i}-X3", stake=9.0) for i in range(3)]
-    out = alerts.process([(fs, False)], {}, NOW, post=Post(), state_path=st, log_path=tmp_path / "l.csv")
-    assert len(out) == 2                                     # 3 x $9 > $20 cap
-    out = alerts.process([([sharp_flag(ticker="KXNFLSPREAD-26NOV15Z-X3", stake=9.0)], False)], {}, NOW,
+    out = alerts.process([(fs, True)], {}, NOW, post=Post(), state_path=st, log_path=tmp_path / "l.csv")
+    assert len(out) == 2 and all(a["title"].startswith("LIVE") for a in out)   # 3 x $9 > $20 cap
+    out = alerts.process([([sharp_flag(ticker="KXNFLSPREAD-26NOV15Z-X3", stake=9.0)], True)], {}, NOW,
                          post=Post(), state_path=st, log_path=tmp_path / "l.csv")
     assert out == []                                         # room used by earlier pushes today
-    out = alerts.process([([sharp_flag(stake=1.0, ticker="KXNFLSPREAD-26NOV15Y-X3")], False)], {}, NOW,
+    out = alerts.process([([sharp_flag(stake=1.0, ticker="KXNFLSPREAD-26NOV15Y-X3")], True)], {}, NOW,
                          lost_today=config.DAILY_LOSS_CAP, post=Post(), state_path=st, log_path=tmp_path / "l2.csv")
     assert out == []                                         # cap already lost
+
+
+def test_paper_pushes_ignore_cap_and_are_labelled(tmp_path):
+    """Emerson 11-11: every qualified PAPER play is pushed; over-cap ones are labelled, and they never
+    use up the real-money cap."""
+    st = tmp_path / "s.json"
+    fs = [sharp_flag(ticker=f"KXNFLSPREAD-26NOV15G{i}-X3", stake=9.0) for i in range(4)]
+    out = alerts.process([(fs, False)], {}, NOW, post=Post(), state_path=st, log_path=tmp_path / "l.csv")
+    assert len(out) == 4 and all(a["title"].startswith("PAPER") for a in out)
+    assert sum("real-money cap (paper only)" in a["body"] for a in out) == 2
+    assert alerts.pushed_stake_today(alerts.load_state(st), NOW) == 0
 
 
 # ---------- sending ----------
