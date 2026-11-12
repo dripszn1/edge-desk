@@ -29,6 +29,7 @@ from __future__ import annotations
 import json
 import math
 import re
+from functools import lru_cache
 from pathlib import Path
 
 import numpy as np
@@ -347,8 +348,13 @@ CFB_BOOK_ALIASES = {
 
 
 def _clean(name: str | None) -> str:
+    return _clean_cached(name or "")
+
+
+@lru_cache(maxsize=65536)
+def _clean_cached(name: str) -> str:
     import unicodedata
-    s = unicodedata.normalize("NFKD", name or "").encode("ascii", "ignore").decode().lower()
+    s = unicodedata.normalize("NFKD", name).encode("ascii", "ignore").decode().lower()
     s = s.replace("&", " and ")
     s = re.sub(r"[.'()’ʻ`]", "", s)
     s = re.sub(r"[^a-z0-9 ]", " ", s)
@@ -369,6 +375,32 @@ def _prefix_score(kalshi_name: str, book_name: str) -> int | None:
     return best
 
 
+_ID_CACHE: dict = {}
+
+
+def _per_frame(name: str, frame: pd.DataFrame, build):
+    """#44: memo of `build(frame)` for this exact frame object (kept alive, so its id can't be reused)."""
+    hit = _ID_CACHE.get(name)
+    if hit is not None and hit[0] is frame and hit[1] == len(frame):
+        return hit[2]
+    val = build(frame)
+    _ID_CACHE[name] = (frame, len(frame), val)
+    return val
+
+
+def _commence(fair: pd.DataFrame) -> pd.Series:
+    return _per_frame("commence", fair, lambda f: pd.to_datetime(f["commence_utc"], utc=True))
+
+
+def _event_lines(fe: pd.DataFrame) -> dict:
+    """{('spreads', team) | ('totals', 'Over'): (point, source)} from the FIRST matching row, as before."""
+    out = {}
+    for r in fe[fe["market"].isin(["spreads", "totals"])].to_dict("records"):
+        out.setdefault((r["market"], r["outcome"]), (r["point"], r["source"]))
+    out["_has_spreads"] = bool((fe["market"] == "spreads").any())
+    return out
+
+
 def match_event(league: str, row: dict, fair: pd.DataFrame) -> tuple[dict | None, pd.DataFrame]:
     """({kalshi abbr: sportsbook team name}, that event's fair rows) or (None, empty)."""
     empty = fair.iloc[0:0]
@@ -380,7 +412,7 @@ def match_event(league: str, row: dict, fair: pd.DataFrame) -> tuple[dict | None
     ko = row.get("kickoff_utc")
     if len(names) != 2 or len(abbrs) != 2 or ko is None or fair.empty or (isinstance(ko, float) and math.isnan(ko)):
         return None, empty
-    c = pd.to_datetime(fair["commence_utc"], utc=True)
+    c = _commence(fair)
     for tol in (KICKOFF_TOL, KICKOFF_TOL_WIDE):      # #41: wide window only when the near one is empty
         cand = fair[(c - _ts(ko)).abs() <= tol].drop_duplicates("event_id")
         scored = []
@@ -418,21 +450,21 @@ def nfl_sides(row: dict) -> dict | None:
 def rung_prob(dists: dict, fair_ev: pd.DataFrame, row: dict, sides: dict) -> tuple[float, float, str] | None:
     """(P(YES), sharp line used, source) for one Kalshi rung, or None if no sharp line."""
     strike = float(row["floor_strike"])
+    ev = _per_frame("event_lines", fair_ev, _event_lines)
     if row["series"].endswith("SPREAD"):
         team = sides.get(_abbr(row["ticker"]))
-        sp = fair_ev[fair_ev["market"] == "spreads"]
-        if team is None or sp.empty:
+        if team is None or not ev["_has_spreads"]:
             return None
-        r = sp[sp["outcome"] == team]
-        if r.empty or pd.isna(r.iloc[0]["point"]):
+        r = ev.get(("spreads", team))
+        if r is None or pd.isna(r[0]):
             return None
-        line = -float(r.iloc[0]["point"])            # team -3.5 -> expected margin +3.5
-        return dists["spread"].p_greater(line, strike), line, r.iloc[0]["source"]
-    tt = fair_ev[(fair_ev["market"] == "totals") & (fair_ev["outcome"] == "Over")]
-    if tt.empty or pd.isna(tt.iloc[0]["point"]):
+        line = -float(r[0])                          # team -3.5 -> expected margin +3.5
+        return dists["spread"].p_greater(line, strike), line, r[1]
+    tt = ev.get(("totals", "Over"))
+    if tt is None or pd.isna(tt[0]):
         return None
-    line = float(tt.iloc[0]["point"])
-    return dists["total"].p_greater(line, strike), line, tt.iloc[0]["source"]
+    line = float(tt[0])
+    return dists["total"].p_greater(line, strike), line, tt[1]
 
 
 def fair_entry(row: dict, fair: float, price, fe: pd.DataFrame, line, stale: bool) -> dict:

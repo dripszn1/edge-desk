@@ -142,9 +142,24 @@ def usable(lines: pd.DataFrame, as_of) -> pd.DataFrame:
     return lines[ok]
 
 
+_FAIR_CACHE: dict = {}
+
+
 def fair_lines(lines: pd.DataFrame, as_of) -> pd.DataFrame:
     """One row per event x market x outcome: fair prob + point + source, from the latest usable
-    pull of each sharp book. Pinnacle wins; else mean of sharp books at the modal point."""
+    pull of each sharp book. Pinnacle wins; else mean of sharp books at the modal point.
+    #44: one scan asks this 6 times (SHARP + ML x 3 leagues) with the same lines and as_of, ~2.5 s
+    each, so the last answer is kept for that exact frame object (and length) and as_of."""
+    c = _FAIR_CACHE
+    if c.get("lines") is lines and c.get("n") == len(lines) and c.get("as_of") == str(as_of):
+        return c["out"].copy()
+    out = _fair_lines(lines, as_of)
+    _FAIR_CACHE.clear()
+    _FAIR_CACHE.update(lines=lines, n=len(lines), as_of=str(as_of), out=out.copy())
+    return out
+
+
+def _fair_lines(lines: pd.DataFrame, as_of) -> pd.DataFrame:
     u = usable(lines, as_of)
     u = u[u["book"].isin(SHARP_BOOKS)]
     cols = ["league", "event_id", "commence_utc", "home_team", "away_team", "market", "outcome",

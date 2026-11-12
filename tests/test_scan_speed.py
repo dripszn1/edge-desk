@@ -178,3 +178,54 @@ def test_live_log_records_fast_lane_and_pass_times(tmp_path):
     got = pd.read_csv(path)
     assert list(got.columns) == live.LOG_COLS and got["minutes"].tolist()[0] == 10
     assert int(got["fast_ticks"].iloc[-1]) == len(calls)
+
+
+# ---- SHARP / ML pricing caches (#44): ~21 s -> ~6 s per pass, identical output ----
+def test_fair_lines_computed_once_per_frame_and_as_of(monkeypatch):
+    from edge_desk import odds
+    from tests.test_sharp import _lines, SNAP
+    lines = _lines()
+    calls = []
+    real = odds._fair_lines
+    monkeypatch.setattr(odds, "_fair_lines", lambda l, a: calls.append(a) or real(l, a))
+    a = odds.fair_lines(lines, SNAP)
+    a.loc[:, "fair"] = -1.0                                   # a caller scribbling on its copy...
+    b = odds.fair_lines(lines, SNAP)
+    assert len(calls) == 1 and (b["fair"] > 0).all()          # ...never reaches the next caller
+    odds.fair_lines(lines, "2026-11-12T17:30:00Z")            # other as_of: recomputed (look-ahead guard)
+    odds.fair_lines(lines.copy(), SNAP)                       # other frame (next pass's load): recomputed
+    assert len(calls) == 3
+
+
+def test_fair_lines_cache_never_serves_a_look_ahead_line():
+    from edge_desk import odds
+    from tests.test_sharp import _lines
+    lines = _lines(ts="2026-11-12T18:30:00Z")                 # fetched after the first as_of
+    assert odds.fair_lines(lines, "2026-11-12T18:35:00Z").shape[0] > 0
+    assert odds.fair_lines(lines, "2026-11-12T18:00:00Z").empty
+
+
+def test_cached_rung_prob_matches_direct_lookup():
+    from edge_desk import sharp
+    from tests.test_sharp import _flags, _kalshi, _lines, _hist, SNAP, NOW
+    f1, st1 = _flags()
+    sharp._ID_CACHE.clear()
+    f2, st2 = sharp.sharp_flags(_kalshi(), _lines(), _hist(), SNAP, now=NOW)
+    assert f1 == f2 and f1 and st1["events_priced"] == st2["events_priced"]
+    # the WAS rung must use the WAS point, the total rung the Over point
+    fe = pd.DataFrame([{"market": "spreads", "outcome": "New York Giants", "point": -3.0, "source": "pinnacle"},
+                       {"market": "spreads", "outcome": "Washington Commanders", "point": 3.0, "source": "pinnacle"},
+                       {"market": "totals", "outcome": "Over", "point": 44.5, "source": "pinnacle"},
+                       {"market": "totals", "outcome": "Over", "point": 47.5, "source": "late dup"}])
+
+    class D:
+        def p_greater(self, line, strike):
+            return (line, strike)
+
+    d = {"spread": D(), "total": D()}
+    sides = {"WAS": "Washington Commanders", "NYG": "New York Giants"}
+    sp = sharp.rung_prob(d, fe, {"floor_strike": 3.5, "series": "KXNFLSPREAD", "ticker": "X-WAS4"}, sides)
+    tt = sharp.rung_prob(d, fe, {"floor_strike": 44.5, "series": "KXNFLTOTAL", "ticker": "X-45"}, sides)
+    assert sp == ((-3.0, 3.5), -3.0, "pinnacle") and tt == ((44.5, 44.5), 44.5, "pinnacle")
+    fe2 = fe.iloc[:2]                                          # a different frame: no totals -> None
+    assert sharp.rung_prob(d, fe2, {"floor_strike": 44.5, "series": "KXNFLTOTAL", "ticker": "X-45"}, sides) is None
