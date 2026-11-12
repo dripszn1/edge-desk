@@ -245,26 +245,43 @@ def hot_pass(events: list[str], meta: dict, mults: dict, ts: str):
 
 
 # ---------- #39b fast lane ----------
+FAST_MAX_ALERT_AGE = timedelta(days=8)  # #40: an alert this old is never fast-laned
+
+
 def fast_tickers(state: dict, now: datetime, limit: int = config.LIVE_FAST_MAX_TICKERS) -> list[str]:
-    """Contracts alerted in the last 24h whose game isn't over (kickoff + 6h), newest first."""
-    out = []
-    items = sorted((state or {}).get("alerts", {}).values(), key=lambda a: a.get("sent_utc") or "", reverse=True)
-    for a in items:
+    """#40: alerted contracts whose game isn't over (kickoff + 6h), soonest kickoff first.
+
+    An alert from days before the game stays in until the game ends, since in-game spikes are what the
+    fast lane is for (Auto Sell grading). Alerts older than FAST_MAX_ALERT_AGE are dropped; with no
+    known kickoff an alert is kept for 24h only (the #39b rule) and ranked last.
+    """
+    now = _utc(now)
+    keep = {}
+    for a in ((state or {}).get("alerts") or {}).values():
         t, sent = a.get("ticker"), a.get("sent_utc")
         if not t or a.get("legs") or not sent:
             continue
-        if _utc(now) - _utc(datetime.strptime(sent, "%Y-%m-%dT%H:%M:%SZ")) > timedelta(hours=24):
+        try:
+            age = now - _utc(datetime.strptime(sent, "%Y-%m-%dT%H:%M:%SZ"))
+        except ValueError:
             continue
-        ko = a.get("kickoff_utc")
+        ko, ko_dt = a.get("kickoff_utc"), None
         if ko:
             try:
-                if _utc(now) > _utc(datetime.strptime(str(ko)[:19], "%Y-%m-%dT%H:%M:%S")) + timedelta(hours=6):
-                    continue
+                ko_dt = _utc(datetime.strptime(str(ko)[:19], "%Y-%m-%dT%H:%M:%S"))
             except ValueError:
-                pass
-        if t not in out:
-            out.append(t)
-    return out[:limit]
+                ko_dt = None
+        if ko_dt is None:
+            if age > timedelta(hours=24):
+                continue
+            key = (1, datetime.max.replace(tzinfo=timezone.utc), age.total_seconds())
+        else:
+            if now > ko_dt + timedelta(hours=6) or age > FAST_MAX_ALERT_AGE:
+                continue
+            key = (0, ko_dt, age.total_seconds())
+        if t not in keep or key < keep[t]:
+            keep[t] = key
+    return [t for t, _ in sorted(keep.items(), key=lambda kv: (kv[1], kv[0]))][:limit]
 
 
 def fast_pass(tickers: list[str], ts: str):

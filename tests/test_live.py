@@ -328,6 +328,27 @@ def test_fast_tickers_recent_alerts_only_and_capped():
     assert len(live.fast_tickers(many, now)) == live.config.LIVE_FAST_MAX_TICKERS
 
 
+def test_fast_tickers_keep_open_alerts_until_game_over_soonest_first():
+    """#40: an alert from days ago stays in the fast lane until kickoff + 6h; soonest kickoff wins the cap."""
+    from datetime import datetime, timezone
+    from edge_desk import live
+    now = datetime(2026, 11, 14, 20, 0, tzinfo=timezone.utc)
+    st = {"alerts": {
+        "wed": {"ticker": "SAT", "sent_utc": "2026-11-11T06:00:00Z", "kickoff_utc": "2026-11-14T20:30:00Z"},
+        "ingame": {"ticker": "LIVE", "sent_utc": "2026-11-10T22:00:00Z", "kickoff_utc": "2026-11-14T17:00:00Z"},
+        "sun": {"ticker": "SUN", "sent_utc": "2026-11-14T19:00:00Z", "kickoff_utc": "2026-11-15T18:00:00Z"},
+        "over": {"ticker": "OVER", "sent_utc": "2026-11-13T19:00:00Z", "kickoff_utc": "2026-11-14T13:00:00Z"},
+        "ancient": {"ticker": "OLD", "sent_utc": "2026-11-01T19:00:00Z", "kickoff_utc": "2026-11-15T18:00:00Z"},
+        "noko": {"ticker": "NOKO", "sent_utc": "2026-11-13T10:00:00Z"}}}
+    assert live.fast_tickers(st, now) == ["LIVE", "SAT", "SUN"]
+    # cap: in-game / near-tip contracts are kept, far-off ones dropped
+    many = {"alerts": {str(i): {"ticker": f"F{i}", "sent_utc": "2026-11-14T19:00:00Z",
+                                "kickoff_utc": "2026-11-16T01:00:00Z"} for i in range(60)}}
+    many["alerts"]["x"] = {"ticker": "NOW", "sent_utc": "2026-11-12T19:00:00Z", "kickoff_utc": "2026-11-14T19:00:00Z"}
+    got = live.fast_tickers(many, now)
+    assert len(got) == live.config.LIVE_FAST_MAX_TICKERS and got[0] == "NOW"
+
+
 def test_fast_lane_ticks_between_passes_and_backs_off(monkeypatch):
     from datetime import datetime, timedelta, timezone
     import pandas as pd
