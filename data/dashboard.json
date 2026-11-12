@@ -1,20 +1,20 @@
 {
-  "generated_ts": "2026-11-12T23:02:55Z",
-  "generated_ct": "Thu Nov 12, 5:02 PM CT",
+  "generated_ts": "2026-11-12T23:46:04Z",
+  "generated_ct": "Thu Nov 12, 5:46 PM CT",
   "today_ct": "2026-11-12",
   "snapshot": {
-    "ts": "2026-11-12T23:02:02Z",
-    "ct": "Thu Nov 12, 5:02 PM CT",
+    "ts": "2026-11-12T23:45:05Z",
+    "ct": "Thu Nov 12, 5:45 PM CT",
     "stale": false,
-    "markets_scanned": 6847,
+    "markets_scanned": 7662,
     "kickoff_source": "kalshi occurrence_datetime - 3h",
     "phases": {
       "CBB": {
-        "live": 63,
-        "pregame": 1142
+        "live": 123,
+        "pregame": 1669
       },
       "CFB": {
-        "pregame": 4968
+        "pregame": 5196
       },
       "NFL": {
         "pregame": 674
@@ -65,7 +65,7 @@
     "max_bet": 10.0
   },
   "signals": {
-    "weekly_ct": "Thu Nov 12, 5:02 PM CT",
+    "weekly_ct": "Thu Nov 12, 5:45 PM CT",
     "scorecards": [
       {
         "name": "SHARP shadow football",
@@ -130,15 +130,15 @@
     "clv": {
       "shadow": {
         "cbb": {
-          "n": 3,
-          "avg_clv_c": -3.29,
-          "avg_raw_c": -1.5,
+          "n": 4,
+          "avg_clv_c": -3.04,
+          "avg_raw_c": -1.25,
           "beat_close_pct": 0.0,
-          "t_stat": -1.58,
-          "events": 3,
-          "t_by_event": -1.58,
+          "t_stat": -2.03,
+          "events": 4,
+          "t_by_event": -2.03,
           "stale": 0,
-          "pending": 1,
+          "pending": 0,
           "no_close": 0
         },
         "football": {
@@ -150,21 +150,21 @@
           "events": 2,
           "t_by_event": 1.25,
           "stale": 0,
-          "pending": 49,
+          "pending": 50,
           "no_close": 0
         }
       },
       "tracked": {
         "cbb": {
-          "n": 128,
-          "avg_clv_c": -2.34,
-          "avg_raw_c": -0.91,
-          "beat_close_pct": 11.7,
-          "t_stat": -9.71,
-          "events": 23,
-          "t_by_event": -3.21,
+          "n": 134,
+          "avg_clv_c": -2.39,
+          "avg_raw_c": -0.96,
+          "beat_close_pct": 11.2,
+          "t_stat": -10.32,
+          "events": 24,
+          "t_by_event": -3.43,
           "stale": 0,
-          "pending": 8,
+          "pending": 2,
           "no_close": 0
         },
         "football": {
@@ -305,6 +305,20 @@
         "kickoff_utc": "2026-11-13T01:00:00Z",
         "kickoff_ct": "Thu Nov 12, 7:00 PM CT",
         "kalshi_url": "https://kalshi.com/markets/kxncaafspread/event/kxncaafspread-26nov12memusf"
+      },
+      {
+        "ticker": "KXNFLSPREAD-26NOV12WASNYG-NYG2",
+        "signal": "SHARP",
+        "side": "YES",
+        "game": "Washington vs New York G: Spread",
+        "contract": "New York G wins by over 1.5 points",
+        "max_price": 0.5,
+        "stake": 2.59,
+        "gone": true,
+        "sent_ct": "Thu Nov 12, 5:38 PM CT",
+        "kickoff_utc": "2026-11-13T01:15:00Z",
+        "kickoff_ct": "Thu Nov 12, 7:15 PM CT",
+        "kalshi_url": "https://kalshi.com/markets/kxnflspread/event/kxnflspread-26nov12wasnyg"
       },
       {
         "ticker": "KXNFLTOTAL-26NOV12WASNYG-33",
