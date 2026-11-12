@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-11-11T22:31:45Z",
-  "generated_ct": "Wed Nov 11, 4:31 PM CT",
+  "generated_utc": "2026-11-12T01:01:59Z",
+  "generated_ct": "Wed Nov 11, 7:01 PM CT",
   "paper_mode": true,
   "rules": {
     "min_bets": 30,
@@ -164,54 +164,54 @@
   "clv": {
     "shadow": {
       "cbb": {
-        "n": 1,
-        "avg_clv_c": -2.33,
-        "avg_raw_c": -0.5,
+        "n": 3,
+        "avg_clv_c": -3.29,
+        "avg_raw_c": -1.5,
         "beat_close_pct": 0.0,
-        "t_stat": null,
-        "events": 1,
-        "t_by_event": null,
+        "t_stat": -1.58,
+        "events": 3,
+        "t_by_event": -1.58,
         "stale": 0,
-        "pending": 2,
+        "pending": 0,
         "no_close": 0
       },
       "football": {
-        "n": 1,
-        "avg_clv_c": 0.89,
-        "avg_raw_c": 1.5,
+        "n": 2,
+        "avg_clv_c": 0.49,
+        "avg_raw_c": 1.0,
         "beat_close_pct": 100.0,
-        "t_stat": null,
-        "events": 1,
-        "t_by_event": null,
+        "t_stat": 1.25,
+        "events": 2,
+        "t_by_event": 1.25,
         "stale": 0,
-        "pending": 37,
+        "pending": 36,
         "no_close": 0
       }
     },
     "tracked": {
       "cbb": {
-        "n": 82,
-        "avg_clv_c": -1.88,
-        "avg_raw_c": -0.54,
-        "beat_close_pct": 7.3,
-        "t_stat": -8.04,
-        "events": 13,
-        "t_by_event": -2.39,
+        "n": 127,
+        "avg_clv_c": -2.27,
+        "avg_raw_c": -0.85,
+        "beat_close_pct": 11.8,
+        "t_stat": -9.76,
+        "events": 22,
+        "t_by_event": -3.23,
         "stale": 0,
-        "pending": 45,
+        "pending": 0,
         "no_close": 0
       },
       "football": {
-        "n": 0,
-        "avg_clv_c": null,
-        "avg_raw_c": null,
-        "beat_close_pct": null,
-        "t_stat": null,
-        "events": 0,
+        "n": 3,
+        "avg_clv_c": -0.47,
+        "avg_raw_c": 0.17,
+        "beat_close_pct": 33.3,
+        "t_stat": -1.27,
+        "events": 1,
         "t_by_event": null,
         "stale": 0,
         "pending": 106,
-        "no_close": 0
+        "no_close": 1
       }
     }
   }
