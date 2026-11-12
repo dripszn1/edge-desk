@@ -108,6 +108,8 @@ jobs:
       - name: Skill-or-luck report (data/weekly_report.json; paper + model shadow)
         if: steps.fresh.outputs.skip != 'true'
         run: python -m edge_desk.weekly
+        env:
+          CANDLES_BUDGET_S: "90"   # #43: collect can spend longer catching up 1-min candles than live (30 s)
         continue-on-error: true
       - name: Dashboard data (data/dashboard.json)
         if: steps.fresh.outputs.skip != 'true'
