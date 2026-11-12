@@ -1,10 +1,10 @@
 {
-  "generated_ts": "2026-11-12T15:21:45Z",
-  "generated_ct": "Thu Nov 12, 9:21 AM CT",
+  "generated_ts": "2026-11-12T15:51:45Z",
+  "generated_ct": "Thu Nov 12, 9:51 AM CT",
   "today_ct": "2026-11-12",
   "snapshot": {
-    "ts": "2026-11-12T15:20:47Z",
-    "ct": "Thu Nov 12, 9:20 AM CT",
+    "ts": "2026-11-12T15:50:50Z",
+    "ct": "Thu Nov 12, 9:50 AM CT",
     "stale": false,
     "markets_scanned": 6495,
     "kickoff_source": "kalshi occurrence_datetime - 3h",
@@ -64,7 +64,7 @@
     "max_bet": 10.0
   },
   "signals": {
-    "weekly_ct": "Thu Nov 12, 9:21 AM CT",
+    "weekly_ct": "Thu Nov 12, 9:51 AM CT",
     "scorecards": [
       {
         "name": "SHARP shadow football",
@@ -149,7 +149,7 @@
           "events": 2,
           "t_by_event": 1.25,
           "stale": 0,
-          "pending": 44,
+          "pending": 45,
           "no_close": 0
         }
       },
@@ -348,6 +348,20 @@
         "kalshi_url": "https://kalshi.com/markets/kxncaafspread"
       },
       {
+        "ticker": "KXNCAAFSPREAD-26NOV14GASOGAST-GASO2",
+        "signal": "SHARP",
+        "side": "NO",
+        "game": "Georgia Southern vs Georgia St.: Spread",
+        "contract": "Georgia Southern wins by over 1.5 points",
+        "max_price": 0.35,
+        "stake": 2.2,
+        "gone": false,
+        "sent_ct": "Thu Nov 12, 9:50 AM CT",
+        "kickoff_utc": "2026-11-14T20:30:00Z",
+        "kickoff_ct": "Sat Nov 14, 2:30 PM CT",
+        "kalshi_url": "https://kalshi.com/markets/kxncaafspread/event/kxncaafspread-26nov14gasogast"
+      },
+      {
         "ticker": "KXNCAAFSPREAD-26NOV14MICHORE-ORE2",
         "signal": "SHARP",
         "side": "NO",
@@ -397,7 +411,7 @@
         "contract": "Over 33.5 points",
         "max_price": 0.34,
         "stake": 2.77,
-        "gone": false,
+        "gone": true,
         "sent_ct": "Thu Nov 12, 7:46 AM CT",
         "kickoff_utc": "2026-11-14T20:30:00Z",
         "kickoff_ct": "Sat Nov 14, 2:30 PM CT",
