@@ -25358,3 +25358,12 @@ snapshot_ts,league,event,ticker,side,price,fair,edge,sharp_line,odds_fetched_ts,
 2026-11-12T03:44:27Z,CFB,North Dakota St. vs Hawai'i: Total Points,KXNCAAFTOTAL-26NOV14NDSUHAW-24,NO,0.13,0.1775,0.0395,38.5,2026-11-12T03:44:26Z,rung far from sharp line (unvalidated range)
 2026-11-12T03:54:27Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE4,NO,0.29,0.3372,0.0322,10.5,2026-11-12T03:44:26Z,rung far from sharp line (unvalidated range)
 2026-11-12T03:55:56Z,CFB,Michigan vs Oregon: Total Points,KXNCAAFTOTAL-26NOV14MICHORE-22,NO,0.09,0.1545,0.0585,38.0,2026-11-12T03:44:26Z,rung far from sharp line (unvalidated range)
+2026-11-12T04:34:27Z,NFL,Buffalo vs New York J: Spread,KXNFLSPREAD-26NOV15BUFNYJ-BUF3,NO,0.25,0.2974,0.034,8.5,2026-11-12T03:04:26Z,sharp line stale
+2026-11-12T04:34:27Z,NFL,Buffalo vs New York J: Spread,KXNFLSPREAD-26NOV15BUFNYJ-NYJ2,YES,0.2,0.242,0.0303,-8.5,2026-11-12T03:04:26Z,sharp line stale
+2026-11-12T04:34:27Z,NFL,Buffalo vs New York J: Spread,KXNFLSPREAD-26NOV15BUFNYJ-NYJ3,YES,0.18,0.226,0.0347,-8.5,2026-11-12T03:04:26Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-12T04:34:27Z,NFL,Seattle vs Las Vegas: Spread,KXNFLSPREAD-26NOV15SEALV-SEA21,YES,0.12,0.1711,0.0434,6.5,2026-11-12T03:04:26Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-12T04:34:27Z,NFL,Seattle vs Las Vegas: Spread,KXNFLSPREAD-26NOV15SEALV-SEA15,YES,0.24,0.2921,0.0384,6.5,2026-11-12T03:04:26Z,sharp line stale
+2026-11-12T04:34:27Z,NFL,Houston vs Cleveland: Total Points,KXNFLTOTAL-26NOV15HOUCLE-27,NO,0.1,0.1452,0.0388,40.5,2026-11-12T03:04:26Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-12T04:34:27Z,NFL,Kansas City vs Atlanta: Total Points,KXNFLTOTAL-26NOV15KCATL-35,NO,0.13,0.1726,0.0342,47.0,2026-11-12T03:04:26Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-12T04:34:27Z,NFL,Los Angeles C vs Baltimore: Total Points,KXNFLTOTAL-26NOV16LACBAL-24,NO,0.09,0.1287,0.0327,38.5,2026-11-12T03:04:26Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-12T04:44:27Z,NFL,Los Angeles R vs Arizona: Spread,KXNFLSPREAD-26NOV15LARARI-LAR7,NO,0.38,0.4289,0.0322,9.5,2026-11-12T03:04:26Z,sharp line stale
