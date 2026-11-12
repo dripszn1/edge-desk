@@ -29,6 +29,7 @@ from __future__ import annotations
 import json
 import math
 import re
+from functools import lru_cache
 from pathlib import Path
 
 import numpy as np
@@ -50,6 +51,11 @@ MIN_N = 300
 PRIOR_N = 20
 SD = {"spread": 13.3, "total": 13.6}      # only for the prior and the normal benchmark
 KICKOFF_TOL = pd.Timedelta(hours=6)       # odds commence vs Kalshi kickoff
+# #41: Kalshi stamps some TBD-time night games at a placeholder (11-14: TTU/OKST Kalshi 20:00Z vs books
+# 02:30Z; TEX/LSU 20:00Z vs 00:30Z). When nothing matches inside KICKOFF_TOL, a unique name match up to
+# this far away is accepted (a team never plays twice in 12h). The earlier, Kalshi kickoff still drives
+# phase / stale guards, so the fallback can only make us stricter, never price an in-play market.
+KICKOFF_TOL_WIDE = pd.Timedelta(hours=12)
 MAX_RUNG_OFFSET = 10.5   # only price rungs inside the backtested range (OFFSETS = line +-10); the
 # CFB: NFL-validated cap doesn't transfer; stay near the main line until a CFB backtest says otherwise
 MAX_RUNG_OFFSET_BY_LEAGUE = {"NFL": 10.5, "CFB": 6.0, "CBB": 3.0}
@@ -312,11 +318,15 @@ def _odds_event(fair: pd.DataFrame, home_full: str, away_full: str, kickoff) -> 
     if fair.empty or kickoff is None or (isinstance(kickoff, float) and math.isnan(kickoff)):
         return fair.iloc[0:0]
     c = pd.to_datetime(fair["commence_utc"], utc=True)
-    near = (c - _ts(kickoff)).abs() <= KICKOFF_TOL
     teams = {home_full, away_full}
-    same = fair.apply(lambda r: {r["home_team"], r["away_team"]} == teams, axis=1) if len(fair) else near
-    m = fair[near & same]
-    return m if m["event_id"].nunique() == 1 else fair.iloc[0:0]
+    same = fair.apply(lambda r: {r["home_team"], r["away_team"]} == teams, axis=1)
+    for tol in (KICKOFF_TOL, KICKOFF_TOL_WIDE):      # #41: placeholder Kalshi times
+        m = fair[((c - _ts(kickoff)).abs() <= tol) & same]
+        if m["event_id"].nunique() == 1:
+            return m
+        if m["event_id"].nunique() > 1:
+            break                                    # ambiguous -> no match
+    return fair.iloc[0:0]
 
 
 SERIES = {"NFL": ("KXNFLSPREAD", "KXNFLTOTAL"), "CFB": ("KXNCAAFSPREAD", "KXNCAAFTOTAL"),
@@ -338,8 +348,13 @@ CFB_BOOK_ALIASES = {
 
 
 def _clean(name: str | None) -> str:
+    return _clean_cached(name or "")
+
+
+@lru_cache(maxsize=65536)
+def _clean_cached(name: str) -> str:
     import unicodedata
-    s = unicodedata.normalize("NFKD", name or "").encode("ascii", "ignore").decode().lower()
+    s = unicodedata.normalize("NFKD", name).encode("ascii", "ignore").decode().lower()
     s = s.replace("&", " and ")
     s = re.sub(r"[.'()’ʻ`]", "", s)
     s = re.sub(r"[^a-z0-9 ]", " ", s)
@@ -360,6 +375,32 @@ def _prefix_score(kalshi_name: str, book_name: str) -> int | None:
     return best
 
 
+_ID_CACHE: dict = {}
+
+
+def _per_frame(name: str, frame: pd.DataFrame, build):
+    """#44: memo of `build(frame)` for this exact frame object (kept alive, so its id can't be reused)."""
+    hit = _ID_CACHE.get(name)
+    if hit is not None and hit[0] is frame and hit[1] == len(frame):
+        return hit[2]
+    val = build(frame)
+    _ID_CACHE[name] = (frame, len(frame), val)
+    return val
+
+
+def _commence(fair: pd.DataFrame) -> pd.Series:
+    return _per_frame("commence", fair, lambda f: pd.to_datetime(f["commence_utc"], utc=True))
+
+
+def _event_lines(fe: pd.DataFrame) -> dict:
+    """{('spreads', team) | ('totals', 'Over'): (point, source)} from the FIRST matching row, as before."""
+    out = {}
+    for r in fe[fe["market"].isin(["spreads", "totals"])].to_dict("records"):
+        out.setdefault((r["market"], r["outcome"]), (r["point"], r["source"]))
+    out["_has_spreads"] = bool((fe["market"] == "spreads").any())
+    return out
+
+
 def match_event(league: str, row: dict, fair: pd.DataFrame) -> tuple[dict | None, pd.DataFrame]:
     """({kalshi abbr: sportsbook team name}, that event's fair rows) or (None, empty)."""
     empty = fair.iloc[0:0]
@@ -371,14 +412,17 @@ def match_event(league: str, row: dict, fair: pd.DataFrame) -> tuple[dict | None
     ko = row.get("kickoff_utc")
     if len(names) != 2 or len(abbrs) != 2 or ko is None or fair.empty or (isinstance(ko, float) and math.isnan(ko)):
         return None, empty
-    c = pd.to_datetime(fair["commence_utc"], utc=True)
-    cand = fair[(c - _ts(ko)).abs() <= KICKOFF_TOL].drop_duplicates("event_id")
-    scored = []
-    for r in cand.to_dict("records"):
-        for bk in ((r["home_team"], r["away_team"]), (r["away_team"], r["home_team"])):
-            s0, s1 = _prefix_score(names[0], bk[0]), _prefix_score(names[1], bk[1])
-            if s0 is not None and s1 is not None:
-                scored.append((s0 + s1, r["event_id"], {abbrs[0]: bk[0], abbrs[1]: bk[1]}))
+    c = _commence(fair)
+    for tol in (KICKOFF_TOL, KICKOFF_TOL_WIDE):      # #41: wide window only when the near one is empty
+        cand = fair[(c - _ts(ko)).abs() <= tol].drop_duplicates("event_id")
+        scored = []
+        for r in cand.to_dict("records"):
+            for bk in ((r["home_team"], r["away_team"]), (r["away_team"], r["home_team"])):
+                s0, s1 = _prefix_score(names[0], bk[0]), _prefix_score(names[1], bk[1])
+                if s0 is not None and s1 is not None:
+                    scored.append((s0 + s1, r["event_id"], {abbrs[0]: bk[0], abbrs[1]: bk[1]}))
+        if scored:
+            break
     if not scored:
         return None, empty
     scored.sort(key=lambda x: x[0])
@@ -406,21 +450,21 @@ def nfl_sides(row: dict) -> dict | None:
 def rung_prob(dists: dict, fair_ev: pd.DataFrame, row: dict, sides: dict) -> tuple[float, float, str] | None:
     """(P(YES), sharp line used, source) for one Kalshi rung, or None if no sharp line."""
     strike = float(row["floor_strike"])
+    ev = _per_frame("event_lines", fair_ev, _event_lines)
     if row["series"].endswith("SPREAD"):
         team = sides.get(_abbr(row["ticker"]))
-        sp = fair_ev[fair_ev["market"] == "spreads"]
-        if team is None or sp.empty:
+        if team is None or not ev["_has_spreads"]:
             return None
-        r = sp[sp["outcome"] == team]
-        if r.empty or pd.isna(r.iloc[0]["point"]):
+        r = ev.get(("spreads", team))
+        if r is None or pd.isna(r[0]):
             return None
-        line = -float(r.iloc[0]["point"])            # team -3.5 -> expected margin +3.5
-        return dists["spread"].p_greater(line, strike), line, r.iloc[0]["source"]
-    tt = fair_ev[(fair_ev["market"] == "totals") & (fair_ev["outcome"] == "Over")]
-    if tt.empty or pd.isna(tt.iloc[0]["point"]):
+        line = -float(r[0])                          # team -3.5 -> expected margin +3.5
+        return dists["spread"].p_greater(line, strike), line, r[1]
+    tt = ev.get(("totals", "Over"))
+    if tt is None or pd.isna(tt[0]):
         return None
-    line = float(tt.iloc[0]["point"])
-    return dists["total"].p_greater(line, strike), line, tt.iloc[0]["source"]
+    line = float(tt[0])
+    return dists["total"].p_greater(line, strike), line, tt[1]
 
 
 def fair_entry(row: dict, fair: float, price, fe: pd.DataFrame, line, stale: bool) -> dict:

@@ -54,6 +54,8 @@ def _leg_cost(price: float, size: float, mult: float) -> float:
 def _flag(kind, r1, side1, p1, r2, side2, p2, size):
     if max(p1, p2) > config.MAX_FLAG_PRICE:   # audit rule: no contract priced above 90c
         return None
+    if size is None or size != size:          # #44: unknown size (NaN) = nothing to buy, never a crash
+        return None
     mult = float(r1.get("fee_multiplier") or 1.0)
     cost = _leg_cost(p1, size, mult) + _leg_cost(p2, size, mult)
     edge = round(1 - cost, 4)
@@ -82,20 +84,33 @@ def _quoted(df: pd.DataFrame, include_live: bool = False) -> pd.DataFrame:
     return q.dropna(subset=["yes_bid", "yes_ask"])
 
 
+def _isnan(x) -> bool:
+    return x is None or x != x
+
+
 def scan(df: pd.DataFrame, include_live: bool = False) -> list[dict]:
+    """Same flags as the original per-event pandas groupby, built from one to_dict pass (#44):
+    groupby + to_dict per event/rung cost ~18 s per live pass on a 6,500-market board."""
     flags = []
     if df.empty:
         return flags
     q = _quoted(df, include_live)
-    for ev_ticker, ev in q.groupby("event_ticker"):
-        series = ev["series"].iloc[0]
-        greater = ev[ev["strike_type"] == "greater"].dropna(subset=["floor_strike"])
+    events: dict = {}
+    for r in q.to_dict("records"):
+        events.setdefault(r["event_ticker"], []).append(r)
+    for ev_ticker in sorted(events, key=lambda k: (_isnan(k), k)):
+        ev = events[ev_ticker]
+        if _isnan(ev_ticker):
+            continue                                  # groupby drops NaN keys
+        series = ev[0]["series"]
+        greater = [r for r in ev if r["strike_type"] == "greater" and not _isnan(r["floor_strike"])]
 
         # 1. LADDER: same team_key (spreads) or whole event (totals)
-        keys = greater["team_key"].fillna("__total__")
-        for _, rung in greater.groupby(keys):
-            rung = rung.sort_values("floor_strike")
-            rows = rung.to_dict("records")
+        rungs: dict = {}
+        for r in greater:
+            rungs.setdefault("__total__" if _isnan(r["team_key"]) else r["team_key"], []).append(r)
+        for key in sorted(rungs):
+            rows = sorted(rungs[key], key=lambda r: r["floor_strike"])
             for lo, hi in combinations(rows, 2):
                 if hi["floor_strike"] <= lo["floor_strike"]:
                     continue
@@ -108,22 +123,26 @@ def scan(df: pd.DataFrame, include_live: bool = False) -> list[dict]:
 
         # 2. EXCLUSIVE: different teams' spread rungs, or game-winner pairs
         if "SPREAD" in series:
-            teams = list(greater.groupby("team_key"))
+            teams: dict = {}
+            for r in greater:
+                if not _isnan(r["team_key"]):
+                    teams.setdefault(r["team_key"], []).append(r)
             if len(teams) == 2:
-                for a in teams[0][1].to_dict("records"):
-                    for b in teams[1][1].to_dict("records"):
+                ta, tb = sorted(teams)
+                for a in teams[ta]:
+                    for b in teams[tb]:
                         size = min(a["yes_bid_size"] or 0, b["yes_bid_size"] or 0)
                         f = _flag("EXCLUSIVE", a, "NO", 1 - a["yes_bid"], b, "NO", 1 - b["yes_bid"], size)
                         if f:
                             flags.append(f)
         if series.endswith("GAME") and len(ev) == 2:
-            a, b = ev.to_dict("records")
+            a, b = ev
             size = min(a["yes_bid_size"] or 0, b["yes_bid_size"] or 0)
             f = _flag("EXCLUSIVE", a, "NO", 1 - a["yes_bid"], b, "NO", 1 - b["yes_bid"], size)
             if f:
                 flags.append(f)
             # 3. COVER: no ties possible -> exactly one side pays $1
-            if ev["league"].iloc[0] in NO_TIE_LEAGUES:
+            if ev[0]["league"] in NO_TIE_LEAGUES:
                 size = min(a["yes_ask_size"] or 0, b["yes_ask_size"] or 0)
                 f = _flag("COVER", a, "YES", a["yes_ask"], b, "YES", b["yes_ask"], size)
                 if f:

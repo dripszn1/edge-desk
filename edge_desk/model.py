@@ -27,6 +27,7 @@ import pandas as pd
 from . import config
 from .fees import fee_per_contract
 from difflib import SequenceMatcher
+from functools import lru_cache
 
 from .kickoffs import _split, norm, to_ct
 from .nfl_results import KALSHI_TO_NFLVERSE
@@ -191,7 +192,7 @@ def _rung_team(ticker: str) -> str | None:
 def match_game(games: pd.DataFrame, pair: tuple[str, str], kickoff_utc) -> dict | None:
     if not pair or kickoff_utc is None or games.empty:
         return None
-    ko = pd.to_datetime(games["kickoff_utc"], utc=True)
+    ko = _kickoffs(games)
     same = ((games["home_team"] == pair[0]) & (games["away_team"] == pair[1])) | \
            ((games["home_team"] == pair[1]) & (games["away_team"] == pair[0]))
     near = (ko - _ts(kickoff_utc)).abs() <= KALSHI_KICKOFF_TOLERANCE
@@ -213,9 +214,26 @@ def _cfb_norm(name: str) -> str:
     return CFB_ALIASES.get(n, n)
 
 
-def _sim(a: str, b: str) -> float:
+@lru_cache(maxsize=65536)
+def _sim_cached(a: str, b: str) -> float:
     a, b = _cfb_norm(a), _cfb_norm(b)
     return 1.0 if a == b else SequenceMatcher(None, a, b).ratio()
+
+
+def _sim(a: str, b: str) -> float:
+    """Name similarity (pure, so cached across live passes: #44)."""
+    return _sim_cached(str(a), str(b))
+
+
+def with_kickoffs(games: pd.DataFrame) -> pd.DataFrame:
+    """Parse the schedule's kickoffs once, so per-event matching doesn't re-parse them (#44)."""
+    if games is None or games.empty or "_ko" in games:
+        return games
+    return games.assign(_ko=pd.to_datetime(games["kickoff_utc"], utc=True))
+
+
+def _kickoffs(games: pd.DataFrame) -> pd.Series:
+    return games["_ko"] if "_ko" in games else pd.to_datetime(games["kickoff_utc"], utc=True)
 
 
 def match_cfb(games: pd.DataFrame, names: list[str], abbrs: list[str], kickoff_utc) -> tuple[dict, dict] | None:
@@ -223,7 +241,7 @@ def match_cfb(games: pd.DataFrame, names: list[str], abbrs: list[str], kickoff_u
     Returns (game, {kalshi_abbr: schedule team name}). Ambiguous or weak matches -> None."""
     if len(names) != 2 or kickoff_utc is None or games.empty:
         return None
-    ko = pd.to_datetime(games["kickoff_utc"], utc=True)
+    ko = _kickoffs(games)
     cand = games[((ko - _ts(kickoff_utc)).abs() <= KALSHI_KICKOFF_TOLERANCE)
                  & (games["home_division"] == "fbs") & (games["away_division"] == "fbs")]
     scored = []
@@ -303,6 +321,7 @@ def model_flags(df: pd.DataFrame, games: pd.DataFrame, snapshot_ts: str | None,
            & (df["strike_type"] == "greater")].dropna(subset=["floor_strike", "yes_bid", "yes_ask"])
     best: dict[str, dict] = {}
     proj_cache: dict[str, tuple] = {}
+    games = with_kickoffs(games)
     for row in q.to_dict("records"):
         ev = row["event_ticker"]
         if ev not in proj_cache:

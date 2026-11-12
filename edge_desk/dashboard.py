@@ -20,6 +20,8 @@ LATEST = ROOT / "data" / "flags" / "latest.json"
 BETS = ROOT / "data" / "paper_bets.csv"
 LEDGER = ROOT / "data" / "paper_ledger.csv"
 OUT = ROOT / "data" / "dashboard.json"
+WEEKLY = ROOT / "data" / "weekly_report.json"
+ALERT_STATE = ROOT / "data" / "alerts" / "state.json"
 CT = ZoneInfo(config.TIMEZONE)
 
 
@@ -65,7 +67,8 @@ def risk(bets: pd.DataFrame, today: str) -> dict:
             "paper_mode": config.PAPER_MODE, "max_bet": config.MAX_BET}
 
 
-def build(latest: dict, bets: pd.DataFrame, led: pd.DataFrame, now: datetime | None = None) -> dict:
+def build(latest: dict, bets: pd.DataFrame, led: pd.DataFrame, now: datetime | None = None,
+          weekly: dict | None = None, alert_state: dict | None = None) -> dict:
     now = now or datetime.now(timezone.utc)
     now_ts = pd.Timestamp(now)
     today = now_ts.tz_convert(CT).date().isoformat()
@@ -98,7 +101,67 @@ def build(latest: dict, bets: pd.DataFrame, led: pd.DataFrame, now: datetime | N
         "by_signal": _split(bets, "kind"),
         "ledger": led.tail(14).to_dict("records") if len(led) else [],
         "risk": risk(bets, today),
+        "signals": signals(weekly, alert_state, latest, now),
     }
+
+
+SCORECARDS = (("sharp_shadow", "SHARP shadow football"), ("sharp_shadow_cbb", "SHARP shadow CBB"),
+              ("sharp_tracked", "SHARP held back"), ("model_shadow", "MODEL shadow"))
+
+
+def _parse(ts) -> pd.Timestamp | None:
+    try:
+        t = pd.Timestamp(str(ts))
+        return t.tz_localize("UTC") if t.tzinfo is None else t.tz_convert("UTC")
+    except (ValueError, TypeError):
+        return None
+
+
+def signals(weekly: dict | None, alert_state: dict | None, latest: dict | None, now: datetime) -> dict:
+    """#42: SHARP/MODEL scorecards, closing-price value, exit variants (MANUAL-OK only), open alerts, gates.
+    A weekly report stamped after `now` is ignored (no look-ahead), as is an alert sent after `now`."""
+    now_ts = pd.Timestamp(now)
+    w = weekly or {}
+    gen = _parse(w.get("generated_utc"))
+    if gen is None or gen > now_ts:
+        w = {}
+    cards = []
+    for key, name in SCORECARDS:
+        c = w.get(key)
+        if isinstance(c, dict):
+            row = {"name": name, **{k: c.get(k) for k in ("settled", "pnl", "roi", "t_stat", "verdict", "why")}}
+            if key == "sharp_tracked":
+                row["by_reason"] = {r: {k: v.get(k) for k in ("settled", "pnl", "roi", "t_stat", "verdict")}
+                                    for r, v in (c.get("by_reason") or {}).items() if isinstance(v, dict)}
+            cards.append(row)
+    exits = {}
+    for grp, t in (w.get("trades") or {}).items():
+        if not isinstance(t, dict) or "variants" not in t:
+            continue
+        exits[grp] = {"best_manual": t.get("best_manual"),
+                      "variants": {k: {f: v.get(f) for f in ("closed", "pnl_usd", "t_by_game", "gate_open")}
+                                   for k, v in t["variants"].items() if v.get("label") == "MANUAL-OK"}}
+    rows = []
+    for a in ((alert_state or {}).get("alerts") or {}).values():
+        sent, ko = _parse(a.get("sent_utc")), _parse(a.get("kickoff_utc"))
+        if sent is None or sent > now_ts or (ko is not None and now_ts > ko + pd.Timedelta(hours=6)):
+            continue
+        if ko is None and now_ts - sent > pd.Timedelta(hours=24):
+            continue
+        rows.append({"ticker": a.get("ticker"), "signal": a.get("kind"), "side": a.get("side"),
+                     "game": a.get("game"), "contract": a.get("desc"), "max_price": a.get("max_price"),
+                     "stake": a.get("stake"), "gone": bool(a.get("gone")),
+                     "sent_ct": to_ct(a.get("sent_utc")), "kickoff_utc": a.get("kickoff_utc"),
+                     "kickoff_ct": to_ct(a.get("kickoff_utc")) if a.get("kickoff_utc") else None,
+                     "kalshi_url": a.get("click") or kalshi_url(str(a.get("ticker") or ""), a.get("event_ticker"))})
+    rows.sort(key=lambda r: (r["kickoff_utc"] or "9999", r["ticker"] or ""))
+    gates = {}
+    for k, label in (("model", "MODEL"), ("sharp", "SHARP")):
+        for lg, st in ((latest or {}).get(k) or {}).items():
+            if isinstance(st, dict):
+                gates[f"{label} {lg}"] = "open" if str(st.get("gate", "")).startswith("open") else "closed"
+    return {"weekly_ct": to_ct(w.get("generated_utc")) if w else None, "scorecards": cards,
+            "clv": w.get("clv") or {}, "exits": exits, "open_alerts": rows, "gates": dict(sorted(gates.items()))}
 
 
 def _empty() -> dict:
@@ -106,11 +169,18 @@ def _empty() -> dict:
             "staked": 0.0, "fees": 0.0, "pnl": 0.0, "roi": None}
 
 
+def _read_json(p: Path) -> dict:
+    try:
+        return json.loads(p.read_text())
+    except Exception:  # noqa: BLE001 - missing or half-written file: show nothing rather than fail
+        return {}
+
+
 def run() -> dict:
     latest = json.loads(LATEST.read_text()) if LATEST.exists() else {}
     bets = pd.read_csv(BETS) if BETS.exists() and BETS.stat().st_size > 1 else pd.DataFrame()
     led = pd.read_csv(LEDGER) if LEDGER.exists() and LEDGER.stat().st_size > 1 else pd.DataFrame()
-    d = build(latest, bets, led)
+    d = build(latest, bets, led, weekly=_read_json(WEEKLY), alert_state=_read_json(ALERT_STATE))
     OUT.write_text(json.dumps(d, indent=2, default=str))
     r = d["record"]
     print(f"dashboard: {len(d['flags_now'])} flags now | record {r['wins']}-{r['losses']}-{r['pushes']} "

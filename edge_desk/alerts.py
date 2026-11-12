@@ -291,8 +291,9 @@ def save_state(state: dict, now, path: Path | None = None) -> None:
 
 def pushed_stake_today(state: dict, now) -> float:
     day = _utc(now).astimezone(CT).date()
+    # Emerson 11-11: PAPER pushes are not capped and don't use up the cap; only LIVE (real-money) ones count
     return sum(float(v.get("stake") or 0) for v in state.get("alerts", {}).values()
-               if v.get("sent_utc") and _utc(v["sent_utc"]).astimezone(CT).date() == day)
+               if v.get("sent_utc") and not v.get("paper") and _utc(v["sent_utc"]).astimezone(CT).date() == day)
 
 
 # ---------- decide ----------
@@ -362,6 +363,7 @@ def decide(groups: list[tuple[list[dict], bool]], quotes: dict, state: dict, now
     out = []
     alerts = state.setdefault("alerts", {})
     room = config.DAILY_LOSS_CAP - lost_today - pushed_stake_today(state, now)
+    paper_room = room                                    # only for labelling paper pushes over the cap
     cands = [(f, g) for flags, g in groups for f in flags]
     # open gates first, then structural/SHARP before MODEL (whose backtest is negative), then edge,
     # so the daily cap is spent on the most credible flags
@@ -377,16 +379,24 @@ def decide(groups: list[tuple[list[dict], bool]], quotes: dict, state: dict, now
         a = build_new(f, g, now, template)
         if f.get("kind") not in STRUCTURAL and a["max_price"] is None:
             continue
-        if a["stake"] > room + 1e-9:
-            continue                                        # daily cap: skip, don't shrink silently
-        room -= a["stake"]
+        paper = str(a.get("title", "")).startswith("PAPER")
+        if paper:
+            # Emerson 11-11 ("load as much fake money as you need so it can test"): every qualified PAPER
+            # play is pushed; one over the real-money daily cap is labelled, never skipped. LIVE keeps the cap.
+            if a["stake"] > paper_room + 1e-9:
+                a["body"] = a["body"].replace("\nsent ", f"\nOver the ${config.DAILY_LOSS_CAP:.0f}/day real-money cap (paper only)\nsent ", 1)
+            paper_room -= a["stake"]
+        else:
+            if a["stake"] > room + 1e-9:
+                continue                                    # daily cap: skip, don't shrink silently
+            room -= a["stake"]
         alerts[k] = {**{x: a[x] for x in ("ticker", "kind", "side", "legs", "max_price", "click", "stake",
                                            "kickoff_utc")}, "key": k, "sent_utc": _iso(now), "gone": False,
                      "desc": f.get("leg1_desc") or "", "game": f.get("event") or "",
                      "event_ticker": f.get("event_ticker"), "quote_utc": f.get("snapshot_ts"),
                      "price": a["price"], "fair": f.get("fair"), "contracts": f.get("contracts"),
                      "fee_multiplier": f.get("fee_multiplier"), "odds_fetched_ts": f.get("odds_fetched_ts"),
-                     "sharp_line": f.get("sharp_line"),
+                     "sharp_line": f.get("sharp_line"), "paper": paper,
                      "autosell": autosell_target(f.get("fair"), a["price"]) if f.get("kind") not in STRUCTURAL else None}
         out.append(a)
     already_gone = _gone_keys_logged()
