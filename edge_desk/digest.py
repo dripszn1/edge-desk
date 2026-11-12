@@ -149,6 +149,25 @@ def clv_line(c: pd.DataFrame | None) -> list[str]:
     return ["  vs Kalshi close after fee: " + " · ".join(parts)] if parts else []
 
 
+def trades_line(t: pd.DataFrame | None) -> list[str]:
+    """One line: hold vs sell-at-tip vs Auto Sell at fair vs +10c, same finished bets (#38)."""
+    from . import trades
+    if t is None or t.empty or "variant" not in t:
+        return []
+    s = trades.summary(t)
+    parts = []
+    for grp in ("football", "cbb"):
+        v = (s.get(grp) or {}).get("variants") or {}
+        h = v.get("HOLD") or {}
+        if not h.get("closed"):
+            continue
+        cells = [f"{name} ${v[k]['pnl_usd']:+.2f}" for k, name in
+                 (("HOLD", "hold"), ("EXIT_AT_TIP", "sell at tip"), ("RESTING_FAIR", "auto-sell at fair"),
+                  ("RESTING_10", "auto-sell +10c")) if k in v]
+        parts.append(f"{'CBB' if grp == 'cbb' else 'football'} ({h['closed']} done): " + ", ".join(cells))
+    return ["  exits compared: " + " · ".join(parts)] if parts else []
+
+
 def status_line(latest: dict, odds_state: dict, now) -> str:
     snap = _age_min((latest or {}).get("snapshot_ts"), now)
     pulls = (odds_state or {}).get("last_pull") or {}
@@ -165,7 +184,8 @@ def status_line(latest: dict, odds_state: dict, now) -> str:
             f"odds credits left {f'{credits} of {odds.quota(odds_state)}' if credits is not None else 'unknown'}; gates: {', '.join(gates) or 'unknown'}")
 
 
-def build(latest: dict, bets: dict, odds_state: dict, now, clv: pd.DataFrame | None = None) -> str:
+def build(latest: dict, bets: dict, odds_state: dict, now, clv: pd.DataFrame | None = None,
+          trades_df: pd.DataFrame | None = None) -> str:
     now = _ts(now)
     p = plays(latest, now)
     head = [f"# edge-desk digest, {to_ct(now.strftime('%Y-%m-%dT%H:%M:%SZ'))}", "",
@@ -180,7 +200,7 @@ def build(latest: dict, bets: dict, odds_state: dict, now, clv: pd.DataFrame | N
             body.append(f"- +{len(p) - MAX_PLAYS} more in data/flags/latest.json")
     rc = (["", f"Settled in the last {RECAP_H}h:"] + recap(bets, now)
           + held_back_by_reason(bets.get("SHARP tracked (held back)"), now)
-          + clv_line(clv))
+          + clv_line(clv) + trades_line(trades_df))
     tail = ["", status_line(latest, odds_state, now)]
     lines = head + body + rc + tail
     if len(lines) > MAX_LINES:                       # trim plays first, keep recap + status
@@ -196,7 +216,7 @@ def run(now=None) -> str:
     except Exception:
         latest = {}
     md = build(latest, {k: _load(v) for k, v in BET_FILES.items()}, odds.load_state(), now,
-               clv=_load(DATA / "clv_bets.csv"))
+               clv=_load(DATA / "clv_bets.csv"), trades_df=_load(DATA / "sharp_trades.csv"))
     OUT.write_text(md)
     ARCHIVE.mkdir(parents=True, exist_ok=True)
     (ARCHIVE / f"{now.tz_convert(CT).date().isoformat()}.md").write_text(md)
