@@ -55,7 +55,9 @@ WINDOWS = {
     6: ((11, 0), (22, 30)),
 }
 LOG_COLS = ["run_id", "started_utc", "ended_utc", "minutes", "full_passes", "hot_passes",
-            "snapshots_saved", "commits", "odds_checks", "flags_logged", "alerts", "errors", "exit_reason"]
+            "snapshots_saved", "commits", "odds_checks", "flags_logged", "alerts", "errors", "exit_reason",
+            # #44 telemetry: is the fast lane really ticking, and how long does a pass / a whole loop take?
+            "fast_ticks", "fast_throttled", "fetch_s_median", "loop_s_median", "loop_s_p90"]
 
 
 # ---------- windows ----------
@@ -344,9 +346,7 @@ def default_fast(now_fn, stats: dict) -> None:
         return
     ts = _utc(now_fn()).strftime("%Y-%m-%dT%H:%M:%SZ")
     df, thr = fast_pass(tick, ts)
-    stats["fast_ticks"] = stats.get("fast_ticks", 0) + 1
     if thr:
-        stats["fast_throttled"] = stats.get("fast_throttled", 0) + 1
         raise Throttled("fast")
     log_fast(df)
     if len(df):
@@ -485,7 +485,10 @@ def checkpoint_row(sess, now: datetime, reason: str = "running (checkpoint)") ->
     return {"run_id": os.environ.get("GITHUB_RUN_ID", "local"),
             "started_utc": sess.started.strftime("%Y-%m-%dT%H:%M:%SZ"),
             "ended_utc": _utc(now).strftime("%Y-%m-%dT%H:%M:%SZ"), "minutes": billed_minutes(sess.started, now),
-            **sess.stats, "errors": " ; ".join(sess.errors[:20]), "exit_reason": reason}
+            **sess.stats, "errors": " ; ".join(sess.errors[:20]), "exit_reason": reason,
+            "fetch_s_median": _quantile(getattr(sess, "fetch_s", []), 0.5),
+            "loop_s_median": _quantile(getattr(sess, "loop_s", []), 0.5),
+            "loop_s_p90": _quantile(getattr(sess, "loop_s", []), 0.9)}
 
 
 def billed_minutes(start: datetime, end: datetime, setup_min: float = 2) -> int:
@@ -500,8 +503,17 @@ class Session:
     window_end: datetime
     stats: dict = field(default_factory=lambda: {k: 0 for k in
                         ("full_passes", "hot_passes", "snapshots_saved", "commits", "odds_checks", "flags_logged",
-                         "alerts")})
+                         "alerts", "fast_ticks", "fast_throttled")})
     errors: list = field(default_factory=list)
+    fetch_s: list = field(default_factory=list)      # #44: Kalshi fetch seconds per pass
+    loop_s: list = field(default_factory=list)       # #44: fetch + scan + alerts seconds per pass
+
+
+def _quantile(xs: list, q: float):
+    if not xs:
+        return ""
+    ys = sorted(xs)
+    return round(ys[min(int(q * len(ys)), len(ys) - 1)], 1)
 
 
 def run_loop(now_fn=lambda: datetime.now(UTC), clock=time.monotonic, sleep=time.sleep,
@@ -554,6 +566,7 @@ def run_loop(now_fn=lambda: datetime.now(UTC), clock=time.monotonic, sleep=time.
             df, errs, thr = fetch_hot(hot, meta, mults, ts)
         t1 = clock()
         pacer.done(kind, t0, t1, thr)
+        sess.fetch_s.append(t1 - t0)
         sess.stats[f"{kind}_passes"] += 1
         sess.errors += errs[:3]
         # 3) scan this pass only: rows stamped with this pass's ts, and only if that ts is fresh
@@ -578,6 +591,7 @@ def run_loop(now_fn=lambda: datetime.now(UTC), clock=time.monotonic, sleep=time.
                 if persist_fn(df, ts, errs):
                     sess.stats["snapshots_saved"] += 1
                     last_persist = now
+        sess.loop_s.append(clock() - t0)
         # 5) grade + commit every LIVE_COMMIT_MINUTES
         if last_commit is None:
             last_commit = now
@@ -598,9 +612,11 @@ def run_loop(now_fn=lambda: datetime.now(UTC), clock=time.monotonic, sleep=time.
             # #39b: between passes, re-quote alerted contracts every LIVE_FAST_SECONDS
             if fast_fn is not None and wait > config.LIVE_FAST_SECONDS and not fast_paused:
                 ft0 = clock()
+                sess.stats["fast_ticks"] = sess.stats.get("fast_ticks", 0) + 1
                 try:
                     fast_fn(now_fn, sess.stats)
                 except Throttled:
+                    sess.stats["fast_throttled"] = sess.stats.get("fast_throttled", 0) + 1
                     fast_paused = True                 # back off: no more fast ticks this pass
                 except Exception as e:  # noqa: BLE001
                     sess.errors.append(f"fast: {type(e).__name__}")
