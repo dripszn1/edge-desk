@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-11-12T03:59:45Z",
-  "generated_ct": "Wed Nov 11, 9:59 PM CT",
+  "generated_utc": "2026-11-12T04:14:46Z",
+  "generated_ct": "Wed Nov 11, 10:14 PM CT",
   "paper_mode": true,
   "rules": {
     "min_bets": 30,
@@ -127,48 +127,48 @@
     }
   },
   "sharp_tracked": {
-    "settled": 130,
-    "staked": 766.27,
-    "fees": 17.23,
-    "pnl": 12.73,
-    "roi": 0.0166,
-    "t_stat": -0.35,
+    "settled": 131,
+    "staked": 767.69,
+    "fees": 17.32,
+    "pnl": 11.31,
+    "roi": 0.0147,
+    "t_stat": -0.45,
     "coin_flip": {
       "sims": 10000,
-      "bets": 130,
-      "real_pnl": 12.73,
-      "sim_median_pnl": -16.27,
-      "beat_pct": 0.7189
+      "bets": 131,
+      "real_pnl": 11.31,
+      "sim_median_pnl": -16.69,
+      "beat_pct": 0.7142
     },
     "by_week": [
       {
         "week_of": "2026-11-09",
-        "bets": 130,
-        "pnl": 12.73,
-        "roi": 0.0166,
-        "claimed_edge_c": 5.02,
-        "realised_edge_c": 1.0
+        "bets": 131,
+        "pnl": 11.31,
+        "roi": 0.0147,
+        "claimed_edge_c": 4.99,
+        "realised_edge_c": 0.88
       }
     ],
     "verdict": "luck / no edge",
-    "why": "t=-0.35, coin-flip beat 72%",
+    "why": "t=-0.45, coin-flip beat 71%",
     "by_reason": {
       "far_rung": {
-        "settled": 79,
-        "staked": 559.45,
-        "fees": 10.12,
-        "pnl": 14.55,
-        "roi": 0.026,
-        "t_stat": -0.39,
+        "settled": 80,
+        "staked": 560.87,
+        "fees": 10.21,
+        "pnl": 13.13,
+        "roi": 0.0234,
+        "t_stat": -0.53,
         "coin_flip": {
           "sims": 10000,
-          "bets": 79,
-          "real_pnl": 14.55,
-          "sim_median_pnl": -9.45,
-          "beat_pct": 0.7308
+          "bets": 80,
+          "real_pnl": 13.13,
+          "sim_median_pnl": -9.87,
+          "beat_pct": 0.709
         },
         "verdict": "luck / no edge",
-        "why": "t=-0.39, coin-flip beat 73%"
+        "why": "t=-0.53, coin-flip beat 71%"
       },
       "far_rung+stale_line": {
         "settled": 26,
@@ -516,7 +516,7 @@
           "label": "MANUAL-OK",
           "closed": 5,
           "pending": 165,
-          "closed_early_not_counted": 0,
+          "closed_early_not_counted": 1,
           "pnl_usd": -8.46,
           "avg_c": -9.58,
           "win_pct": 0.0,
