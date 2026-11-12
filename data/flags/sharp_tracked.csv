@@ -25311,3 +25311,15 @@ snapshot_ts,league,event,ticker,side,price,fair,edge,sharp_line,odds_fetched_ts,
 2026-11-12T02:07:21Z,CFB,North Dakota St. vs Hawai'i: Total Points,KXNCAAFTOTAL-26NOV14NDSUHAW-24,NO,0.13,0.1775,0.0395,38.5,2026-11-12T02:07:19Z,rung far from sharp line (unvalidated range)
 2026-11-12T02:08:49Z,NFL,Buffalo vs New York J: Spread,KXNFLSPREAD-26NOV15BUFNYJ-NYJ3,YES,0.18,0.226,0.0347,-8.5,2026-11-12T01:33:25Z,rung far from sharp line (unvalidated range)
 2026-11-12T02:18:56Z,CFB,Boston College vs Notre Dame: Total Points,KXNCAAFTOTAL-26NOV14BCND-32,NO,0.06,0.0977,0.0334,52.5,2026-11-12T02:07:19Z,rung far from sharp line (unvalidated range)
+2026-11-12T03:03:26Z,NFL,Buffalo vs New York J: Spread,KXNFLSPREAD-26NOV15BUFNYJ-BUF3,NO,0.25,0.2974,0.034,8.5,2026-11-12T01:33:25Z,sharp line stale
+2026-11-12T03:03:26Z,NFL,Buffalo vs New York J: Spread,KXNFLSPREAD-26NOV15BUFNYJ-NYJ2,YES,0.2,0.242,0.0303,-8.5,2026-11-12T01:33:25Z,sharp line stale
+2026-11-12T03:03:26Z,NFL,Buffalo vs New York J: Spread,KXNFLSPREAD-26NOV15BUFNYJ-NYJ3,YES,0.18,0.226,0.0347,-8.5,2026-11-12T01:33:25Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-12T03:03:26Z,NFL,Seattle vs Las Vegas: Spread,KXNFLSPREAD-26NOV15SEALV-SEA21,YES,0.12,0.1711,0.0434,6.5,2026-11-12T01:33:25Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-12T03:03:26Z,NFL,Seattle vs Las Vegas: Spread,KXNFLSPREAD-26NOV15SEALV-SEA15,YES,0.24,0.2921,0.0384,6.5,2026-11-12T01:33:25Z,sharp line stale
+2026-11-12T03:03:26Z,NFL,Houston vs Cleveland: Total Points,KXNFLTOTAL-26NOV15HOUCLE-27,NO,0.1,0.1452,0.0388,40.5,2026-11-12T01:33:25Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-12T03:03:26Z,NFL,Los Angeles C vs Baltimore: Total Points,KXNFLTOTAL-26NOV16LACBAL-24,NO,0.09,0.1287,0.0327,38.5,2026-11-12T01:33:25Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-12T03:04:27Z,NFL,Buffalo vs New York J: Spread,KXNFLSPREAD-26NOV15BUFNYJ-NYJ3,YES,0.18,0.226,0.0347,-8.5,2026-11-12T03:04:26Z,rung far from sharp line (unvalidated range)
+2026-11-12T03:04:27Z,NFL,Seattle vs Las Vegas: Spread,KXNFLSPREAD-26NOV15SEALV-SEA21,YES,0.12,0.1711,0.0434,6.5,2026-11-12T03:04:26Z,rung far from sharp line (unvalidated range)
+2026-11-12T03:04:27Z,NFL,Houston vs Cleveland: Total Points,KXNFLTOTAL-26NOV15HOUCLE-27,NO,0.1,0.1452,0.0388,40.5,2026-11-12T03:04:26Z,rung far from sharp line (unvalidated range)
+2026-11-12T03:04:27Z,NFL,Los Angeles C vs Baltimore: Total Points,KXNFLTOTAL-26NOV16LACBAL-24,NO,0.09,0.1287,0.0327,38.5,2026-11-12T03:04:26Z,rung far from sharp line (unvalidated range)
+2026-11-12T03:08:26Z,NFL,Kansas City vs Atlanta: Total Points,KXNFLTOTAL-26NOV15KCATL-35,NO,0.13,0.1726,0.0342,47.0,2026-11-12T03:04:26Z,rung far from sharp line (unvalidated range)
