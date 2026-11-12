@@ -1,10 +1,10 @@
 {
-  "generated_ts": "2026-11-12T14:18:41Z",
-  "generated_ct": "Thu Nov 12, 8:18 AM CT",
+  "generated_ts": "2026-11-12T14:47:51Z",
+  "generated_ct": "Thu Nov 12, 8:47 AM CT",
   "today_ct": "2026-11-12",
   "snapshot": {
-    "ts": "2026-11-12T14:16:49Z",
-    "ct": "Thu Nov 12, 8:16 AM CT",
+    "ts": "2026-11-12T14:46:57Z",
+    "ct": "Thu Nov 12, 8:46 AM CT",
     "stale": false,
     "markets_scanned": 6495,
     "kickoff_source": "kalshi occurrence_datetime - 3h",
@@ -64,7 +64,7 @@
     "max_bet": 10.0
   },
   "signals": {
-    "weekly_ct": "Thu Nov 12, 8:17 AM CT",
+    "weekly_ct": "Thu Nov 12, 8:47 AM CT",
     "scorecards": [
       {
         "name": "SHARP shadow football",
@@ -149,7 +149,7 @@
           "events": 2,
           "t_by_event": 1.25,
           "stale": 0,
-          "pending": 43,
+          "pending": 44,
           "no_close": 0
         }
       },
@@ -277,6 +277,20 @@
       }
     },
     "open_alerts": [
+      {
+        "ticker": "KXNFLTOTAL-26NOV12WASNYG-33",
+        "signal": "SHARP",
+        "side": "NO",
+        "game": "Washington vs New York G: Total Points",
+        "contract": "Over 32.5 points",
+        "max_price": 0.22,
+        "stake": 2.09,
+        "gone": false,
+        "sent_ct": "Thu Nov 12, 8:47 AM CT",
+        "kickoff_utc": "2026-11-13T01:15:00Z",
+        "kickoff_ct": "Thu Nov 12, 7:15 PM CT",
+        "kalshi_url": "https://kalshi.com/markets/kxnfltotal/event/kxnfltotal-26nov12wasnyg"
+      },
       {
         "ticker": "KXNCAAFSPREAD-26NOV14JMUCONN-JMU4",
         "signal": "SHARP",
