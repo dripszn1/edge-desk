@@ -462,11 +462,17 @@ def _post(url, **kw):
     return requests.post(url, timeout=15, **kw)
 
 
+def sport_tag(alert: dict) -> str:
+    """#49: ntfy emoji per sport. CBB tickers are KXNCAAMB*; everything else here is football."""
+    t = str(alert.get("ticker") or alert.get("key") or "")
+    return "basketball" if "KXNCAAMB" in t or alert.get("league") == "CBB" else "football"
+
+
 def send(alert: dict, post=_post) -> list[str]:
     sent = []
     topic = os.environ.get("NTFY_TOPIC", "").strip()
     if topic:
-        h = {"Title": alert["title"].encode("utf-8"), "Priority": str(alert["priority"]), "Tags": "football"}
+        h = {"Title": alert["title"].encode("utf-8"), "Priority": str(alert["priority"]), "Tags": sport_tag(alert)}
         if alert.get("click"):
             h["Click"] = alert["click"]
             h["Actions"] = f"view, Open Kalshi, {alert['click']}"
