@@ -184,12 +184,27 @@ def status_line(latest: dict, odds_state: dict, now) -> str:
             f"odds credits left {f'{credits} of {odds.quota(odds_state)}' if credits is not None else 'unknown'}; gates: {', '.join(gates) or 'unknown'}")
 
 
+def proposals(weekly: dict | None, now) -> list[str]:
+    """#46: cap-review proposals from weekly_report.json, at the top of the digest. A report
+    stamped after `now` is ignored (never look-ahead)."""
+    if not weekly:
+        return []
+    g = weekly.get("generated_utc")
+    try:
+        if g is None or _ts(g) > now:
+            return []
+    except (ValueError, TypeError):
+        return []
+    return [f"**{p}** (Emerson decides; caps unchanged)" for p in (weekly.get("proposals") or [])[:3]]
+
+
 def build(latest: dict, bets: dict, odds_state: dict, now, clv: pd.DataFrame | None = None,
-          trades_df: pd.DataFrame | None = None) -> str:
+          trades_df: pd.DataFrame | None = None, weekly: dict | None = None) -> str:
     now = _ts(now)
     p = plays(latest, now)
-    head = [f"# edge-desk digest, {to_ct(now.strftime('%Y-%m-%dT%H:%M:%SZ'))}", "",
-            f"Paper only, nothing is placed. Plays kicking off in the next {WINDOW_H}h:"]
+    prop = proposals(weekly, now)
+    head = [f"# edge-desk digest, {to_ct(now.strftime('%Y-%m-%dT%H:%M:%SZ'))}", ""] + prop + (
+        [""] if prop else []) + [f"Paper only, nothing is placed. Plays kicking off in the next {WINDOW_H}h:"]
     if latest and (latest.get("stale") or (_age_min(latest.get("snapshot_ts"), now) or 1e9) > config.STALE_MINUTES):
         body = ["- no plays shown: Kalshi data is stale"]
     elif not p:
@@ -215,8 +230,12 @@ def run(now=None) -> str:
         latest = json.loads((DATA / "flags" / "latest.json").read_text())
     except Exception:
         latest = {}
+    try:
+        weekly = json.loads((DATA / "weekly_report.json").read_text())
+    except Exception:
+        weekly = {}
     md = build(latest, {k: _load(v) for k, v in BET_FILES.items()}, odds.load_state(), now,
-               clv=_load(DATA / "clv_bets.csv"), trades_df=_load(DATA / "sharp_trades.csv"))
+               clv=_load(DATA / "clv_bets.csv"), trades_df=_load(DATA / "sharp_trades.csv"), weekly=weekly)
     OUT.write_text(md)
     ARCHIVE.mkdir(parents=True, exist_ok=True)
     (ARCHIVE / f"{now.tz_convert(CT).date().isoformat()}.md").write_text(md)

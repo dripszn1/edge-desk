@@ -55,3 +55,9 @@ def pytest_sessionfinish(session, exitstatus):
     if changed:
         print(f"\nTESTS WROTE TO data/ (fix the test, don't commit these): {changed[:10]}")
         session.exitstatus = 1
+
+
+@pytest.fixture(autouse=True)
+def _cap_review_to_tmp(tmp_path, monkeypatch):
+    from edge_desk import caps
+    monkeypatch.setattr(caps, "OUT", tmp_path / "cap_review_bets.csv")

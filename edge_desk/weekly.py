@@ -151,6 +151,12 @@ def run(now: datetime | None = None) -> dict:
         rep["clv"] = clv.run(now)
     except Exception as e:                 # noqa: BLE001
         rep["clv"] = {"error": str(e)[:200]}
+    try:                                   # #46 distance-cap review (report only, Emerson decides)
+        from . import caps
+        rep["cap_review"] = caps.run(now)
+    except Exception as e:                 # noqa: BLE001
+        rep["cap_review"] = {"error": str(e)[:200], "proposals": []}
+    rep = {"proposals": list(rep["cap_review"].get("proposals") or []), **rep}   # top of the report
     try:                                   # #38 trade-out grading (hold vs sell variants)
         from . import candles, trades
         candles.refresh(now)               # #39 1-min candles; no-op without network/new bets

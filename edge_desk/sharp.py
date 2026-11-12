@@ -259,6 +259,23 @@ def offset_bands(P_e, P_n, Y, OFF) -> list[dict]:
     return out
 
 
+def offset_band_sums(P_e, Y, OFF) -> list[dict]:
+    """(#46) offset_bands' longshot fold as raw sums, so a caller can pool only the seasons that
+    ended before a bet (no look-ahead) and get gap = (hit_sum - pred_sum) / rungs."""
+    P_e, Y, A = map(np.asarray, (P_e, Y, np.abs(np.asarray(OFF))))
+    out = []
+    for i, (lo, hi) in enumerate(OFFSET_BANDS):
+        m = ((A > lo) if i else (A >= lo)) & (A <= hi)
+        if not m.any():
+            continue
+        p, y = P_e[m], Y[m]
+        flip = p > 0.5
+        out.append({"band": f"{lo:g}-{hi:g}", "rungs": int(m.sum()),
+                    "pred_sum": round(float(np.where(flip, 1 - p, p).sum()), 4),
+                    "hit_sum": round(float(np.where(flip, 1 - y, y).sum()), 4)})
+    return out
+
+
 def backtest(games: pd.DataFrame, seasons=range(2018, 2026)) -> dict:
     g = games.dropna(subset=["home_score", "away_score", "spread_line", "total_line"]).copy()
     g["margin"] = g["home_score"] - g["away_score"]
@@ -266,10 +283,12 @@ def backtest(games: pd.DataFrame, seasons=range(2018, 2026)) -> dict:
     res = {}
     for kind, line_col, out_col in (("spread", "spread_line", "margin"), ("total", "total_line", "total")):
         P_e, P_n, Y, OFF = [], [], [], []
+        per_season = []
         for s in seasons:
             test = g[g["season"] == s]
             if test.empty:
                 continue
+            n0 = len(Y)
             first = pd.to_datetime(test["kickoff_utc"], utc=True).min()
             d = build_dists(games, first)[kind]
             sd_n = d.sd
@@ -280,6 +299,9 @@ def backtest(games: pd.DataFrame, seasons=range(2018, 2026)) -> dict:
                     P_n.append(_normal_p(L, k, sd_n))
                     Y.append(float(y > k))
                     OFF.append(k - L)
+            last = pd.to_datetime(test["kickoff_utc"], utc=True).max()
+            per_season.append({"season": int(s), "last_kickoff_utc": last.strftime("%Y-%m-%dT%H:%M:%SZ"),
+                               "bands": offset_band_sums(P_e[n0:], Y[n0:], OFF[n0:])})
         P_e, P_n, Y, OFF = map(np.asarray, (P_e, P_n, Y, OFF))
         eps = 1e-6
         ll = lambda p: float(-np.mean(Y * np.log(np.clip(p, eps, 1)) + (1 - Y) * np.log(np.clip(1 - p, eps, 1))))
@@ -301,6 +323,7 @@ def backtest(games: pd.DataFrame, seasons=range(2018, 2026)) -> dict:
             "max_calibration_gap": round(max(abs(c["pred"] - c["actual"]) for c in cal), 4),
             "calibration": cal,
             "by_offset": by_off,
+            "by_offset_season": per_season,
         }
     d = build_dists(games, pd.Timestamp("2100-01-01", tz="UTC"))["spread"]
     res["key_numbers_at_minus3"] = {
