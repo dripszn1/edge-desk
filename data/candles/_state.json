@@ -1,55 +1,882 @@
 {
  "tickers": {
+  "KXNCAAFSPREAD-26NOV14ALAVAN-ALA25": {
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T13:46:43Z",
+   "last_end": "2026-11-12T13:16:00Z"
+  },
   "KXNCAAFSPREAD-26NOV14ALAVAN-ALA31": {
-   "last_end": "2026-11-11T07:50:00Z"
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T13:46:43Z",
+   "last_end": "2026-11-12T13:17:00Z"
+  },
+  "KXNCAAFSPREAD-26NOV14MICHORE-ORE2": {
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T13:46:43Z",
+   "last_end": "2026-11-12T13:45:00Z"
   },
   "KXNCAAFTOTAL-26NOV10KENTBGSU-26": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-11T03:55:27Z",
    "last_end": "2026-11-11T03:46:00Z"
   },
+  "KXNCAAFTOTAL-26NOV11BUFFBALL-33": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T04:14:45Z",
+   "last_end": "2026-11-12T04:06:00Z"
+  },
   "KXNCAAFTOTAL-26NOV11SACCMU-24": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T03:44:46Z",
+   "last_end": "2026-11-12T03:36:00Z"
+  },
+  "KXNCAAFTOTAL-26NOV11SACCMU-27": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T03:44:46Z",
+   "last_end": "2026-11-12T03:36:00Z"
+  },
+  "KXNCAAFTOTAL-26NOV11SACCMU-30": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T03:44:46Z",
    "last_end": "2026-11-12T03:36:00Z"
   },
   "KXNCAAFTOTAL-26NOV14ECUCHAR-26": {
-   "last_end": "2026-11-12T10:56:00Z"
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T13:46:43Z",
+   "last_end": "2026-11-12T13:38:00Z"
   },
   "KXNCAAFTOTAL-26NOV14KSUTCU-26": {
-   "last_end": "2026-11-12T10:39:00Z"
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T13:46:43Z",
+   "last_end": "2026-11-12T13:38:00Z"
   },
   "KXNCAAFTOTAL-26NOV14MICHORE-22": {
-   "last_end": "2026-11-12T10:04:00Z"
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T13:46:43Z",
+   "last_end": "2026-11-12T13:36:00Z"
   },
   "KXNCAAFTOTAL-26NOV14NDSUHAW-24": {
-   "last_end": "2026-11-12T10:12:00Z"
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T13:46:43Z",
+   "last_end": "2026-11-12T13:36:00Z"
   },
   "KXNCAAFTOTAL-26NOV14TEXLSU-27": {
-   "last_end": "2026-11-12T10:59:00Z"
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T13:46:43Z",
+   "last_end": "2026-11-12T13:36:00Z"
   },
   "KXNCAAFTOTAL-26NOV14USUSDSU-31": {
-   "last_end": "2026-11-12T10:47:00Z"
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T13:46:43Z",
+   "last_end": "2026-11-12T13:46:00Z"
   },
   "KXNCAAFTOTAL-26NOV14WASHMSU-27": {
-   "last_end": "2026-11-12T10:12:00Z"
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T13:46:43Z",
+   "last_end": "2026-11-12T13:36:00Z"
+  },
+  "KXNCAAFTOTAL-26NOV14WISMD-24": {
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T13:46:43Z",
+   "last_end": "2026-11-12T13:27:00Z"
+  },
+  "KXNCAAMBSPREAD-26NOV10BUCKUVA-UVA49": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T02:29:45Z",
+   "last_end": "2026-11-11T04:09:00Z"
+  },
+  "KXNCAAMBSPREAD-26NOV10NAUARIZ-ARIZ25": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T02:29:45Z",
+   "last_end": "2026-11-11T03:57:00Z"
+  },
+  "KXNCAAMBSPREAD-26NOV10QUCBYU-BYU19": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T02:29:45Z",
+   "last_end": "2026-11-11T04:02:00Z"
+  },
+  "KXNCAAMBSPREAD-26NOV10ULMTCU-TCU46": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T02:29:45Z",
+   "last_end": "2026-11-11T04:49:00Z"
+  },
+  "KXNCAAMBSPREAD-26NOV11DARTALBY-ALBY2": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-11T21:00:27Z",
+   "last_end": "2026-11-11T20:07:00Z"
+  },
+  "KXNCAAMBSPREAD-26NOV11DARTALBY-ALBY4": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T02:29:45Z",
+   "last_end": "2026-11-11T20:07:00Z"
+  },
+  "KXNCAAMBSPREAD-26NOV11JVSTHOU-HOU29": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T03:14:45Z",
+   "last_end": "2026-11-12T03:13:00Z"
+  },
+  "KXNCAAMBSPREAD-26NOV11KENTUNCW-UNCW13": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T02:29:45Z",
+   "last_end": "2026-11-12T02:21:00Z"
+  },
+  "KXNCAAMBSPREAD-26NOV11KENTUNCW-UNCW9": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T02:29:45Z",
+   "last_end": "2026-11-12T02:21:00Z"
+  },
+  "KXNCAAMBSPREAD-26NOV11MARQMICH-MARQ2": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T02:29:45Z",
+   "last_end": "2026-11-12T02:09:00Z"
+  },
+  "KXNCAAMBSPREAD-26NOV11NCATECU-ECU11": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T02:29:45Z",
+   "last_end": "2026-11-11T23:27:00Z"
+  },
+  "KXNCAAMBSPREAD-26NOV11PEPPSHSU-PEPP2": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T02:59:45Z",
+   "last_end": "2026-11-12T02:53:00Z"
+  },
+  "KXNCAAMBSPREAD-26NOV11SCUUNT-SCU5": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T03:29:45Z",
+   "last_end": "2026-11-12T03:17:00Z"
+  },
+  "KXNCAAMBSPREAD-26NOV11SCUUNT-UNT2": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T03:29:45Z",
+   "last_end": "2026-11-12T03:17:00Z"
+  },
+  "KXNCAAMBSPREAD-26NOV11USFJOES-JOES2": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T02:29:45Z",
+   "last_end": "2026-11-11T22:25:00Z"
+  },
+  "KXNCAAMBSPREAD-26NOV11USFJOES-USF11": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T02:29:45Z",
+   "last_end": "2026-11-11T22:25:00Z"
+  },
+  "KXNCAAMBSPREAD-26NOV11USFJOES-USF14": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T02:29:45Z",
+   "last_end": "2026-11-11T22:25:00Z"
+  },
+  "KXNCAAMBSPREAD-26NOV11USFJOES-USF18": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T02:29:45Z",
+   "last_end": "2026-11-11T22:25:00Z"
+  },
+  "KXNCAAMBSPREAD-26NOV11USFJOES-USF8": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T02:29:45Z",
+   "last_end": "2026-11-11T22:25:00Z"
+  },
+  "KXNCAAMBTOTAL-26NOV10BUCKUVA-141": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T02:29:45Z",
+   "last_end": "2026-11-11T04:09:00Z"
+  },
+  "KXNCAAMBTOTAL-26NOV10BUCKUVA-161": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T02:29:45Z",
+   "last_end": "2026-11-11T04:09:00Z"
+  },
+  "KXNCAAMBTOTAL-26NOV10CREIKSU-144": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T02:29:45Z",
+   "last_end": "2026-11-11T04:27:00Z"
+  },
+  "KXNCAAMBTOTAL-26NOV10CREIKSU-147": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T02:29:45Z",
+   "last_end": "2026-11-11T04:27:00Z"
+  },
+  "KXNCAAMBTOTAL-26NOV10CREIKSU-150": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T02:29:45Z",
+   "last_end": "2026-11-11T04:27:00Z"
+  },
+  "KXNCAAMBTOTAL-26NOV10CREIKSU-153": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T02:29:45Z",
+   "last_end": "2026-11-11T04:27:00Z"
+  },
+  "KXNCAAMBTOTAL-26NOV10CREIKSU-155": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T02:29:45Z",
+   "last_end": "2026-11-11T04:27:00Z"
+  },
+  "KXNCAAMBTOTAL-26NOV10CREIKSU-167": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T02:29:45Z",
+   "last_end": "2026-11-11T04:27:00Z"
+  },
+  "KXNCAAMBTOTAL-26NOV10CREIKSU-170": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T02:29:45Z",
+   "last_end": "2026-11-11T04:27:00Z"
+  },
+  "KXNCAAMBTOTAL-26NOV10CREIKSU-174": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T02:29:45Z",
+   "last_end": "2026-11-11T04:27:00Z"
+  },
+  "KXNCAAMBTOTAL-26NOV10CREIKSU-178": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T02:29:45Z",
+   "last_end": "2026-11-11T04:27:00Z"
+  },
+  "KXNCAAMBTOTAL-26NOV10FAIRWIS-141": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T02:29:45Z",
+   "last_end": "2026-11-11T03:33:00Z"
+  },
+  "KXNCAAMBTOTAL-26NOV10FAIRWIS-157": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T02:29:45Z",
+   "last_end": "2026-11-11T03:33:00Z"
+  },
+  "KXNCAAMBTOTAL-26NOV10FAIRWIS-161": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T02:29:45Z",
+   "last_end": "2026-11-11T03:33:00Z"
+  },
+  "KXNCAAMBTOTAL-26NOV10FAIRWIS-165": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T02:29:45Z",
+   "last_end": "2026-11-11T03:33:00Z"
+  },
+  "KXNCAAMBTOTAL-26NOV10FAIRWIS-170": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T02:29:45Z",
+   "last_end": "2026-11-11T03:33:00Z"
+  },
+  "KXNCAAMBTOTAL-26NOV10GASTFRES-128": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T02:29:45Z",
+   "last_end": "2026-11-11T04:27:00Z"
+  },
+  "KXNCAAMBTOTAL-26NOV10GASTFRES-133": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T02:29:45Z",
+   "last_end": "2026-11-11T04:27:00Z"
+  },
+  "KXNCAAMBTOTAL-26NOV10GASTFRES-137": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T02:29:45Z",
+   "last_end": "2026-11-11T04:27:00Z"
+  },
+  "KXNCAAMBTOTAL-26NOV10GASTFRES-151": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T02:29:45Z",
+   "last_end": "2026-11-11T04:27:00Z"
+  },
+  "KXNCAAMBTOTAL-26NOV10GASTFRES-154": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T02:29:45Z",
+   "last_end": "2026-11-11T04:27:00Z"
+  },
+  "KXNCAAMBTOTAL-26NOV10GASTFRES-157": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T02:29:45Z",
+   "last_end": "2026-11-11T04:27:00Z"
+  },
+  "KXNCAAMBTOTAL-26NOV10GASTFRES-161": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T02:29:45Z",
+   "last_end": "2026-11-11T04:27:00Z"
+  },
+  "KXNCAAMBTOTAL-26NOV10GASTFRES-165": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T02:29:45Z",
+   "last_end": "2026-11-11T04:27:00Z"
+  },
+  "KXNCAAMBTOTAL-26NOV10HOFASU-140": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T02:29:45Z",
+   "last_end": "2026-11-11T04:02:00Z"
+  },
+  "KXNCAAMBTOTAL-26NOV10HOFASU-143": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T02:29:45Z",
+   "last_end": "2026-11-11T04:02:00Z"
+  },
+  "KXNCAAMBTOTAL-26NOV10HOFASU-147": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T02:29:45Z",
+   "last_end": "2026-11-11T04:02:00Z"
+  },
+  "KXNCAAMBTOTAL-26NOV10HOFASU-151": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T02:29:45Z",
+   "last_end": "2026-11-11T04:02:00Z"
+  },
+  "KXNCAAMBTOTAL-26NOV10KUUK-139": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T02:29:45Z",
+   "last_end": "2026-11-11T05:05:00Z"
+  },
+  "KXNCAAMBTOTAL-26NOV10KUUK-143": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T02:29:45Z",
+   "last_end": "2026-11-11T05:05:00Z"
+  },
+  "KXNCAAMBTOTAL-26NOV10KUUK-146": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T02:29:45Z",
+   "last_end": "2026-11-11T05:05:00Z"
+  },
+  "KXNCAAMBTOTAL-26NOV10KUUK-149": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T02:29:45Z",
+   "last_end": "2026-11-11T05:05:00Z"
+  },
+  "KXNCAAMBTOTAL-26NOV10KUUK-152": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T02:29:45Z",
+   "last_end": "2026-11-11T05:05:00Z"
+  },
+  "KXNCAAMBTOTAL-26NOV10KUUK-154": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T02:29:45Z",
+   "last_end": "2026-11-11T05:05:00Z"
+  },
+  "KXNCAAMBTOTAL-26NOV10KUUK-155": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T02:29:45Z",
+   "last_end": "2026-11-11T05:05:00Z"
+  },
+  "KXNCAAMBTOTAL-26NOV10KUUK-166": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T02:29:45Z",
+   "last_end": "2026-11-11T05:05:00Z"
+  },
+  "KXNCAAMBTOTAL-26NOV10KUUK-169": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T02:29:45Z",
+   "last_end": "2026-11-11T05:05:00Z"
+  },
+  "KXNCAAMBTOTAL-26NOV10KUUK-173": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T02:29:45Z",
+   "last_end": "2026-11-11T05:05:00Z"
+  },
+  "KXNCAAMBTOTAL-26NOV10KUUK-177": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T02:29:45Z",
+   "last_end": "2026-11-11T05:05:00Z"
+  },
+  "KXNCAAMBTOTAL-26NOV10KUUK-181": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T02:29:45Z",
+   "last_end": "2026-11-11T05:05:00Z"
+  },
+  "KXNCAAMBTOTAL-26NOV10KUUK-182": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T02:29:45Z",
+   "last_end": "2026-11-11T05:05:00Z"
+  },
+  "KXNCAAMBTOTAL-26NOV10NAUARIZ-144": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T02:29:45Z",
+   "last_end": "2026-11-11T03:57:00Z"
+  },
+  "KXNCAAMBTOTAL-26NOV10NAUARIZ-148": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T02:29:45Z",
+   "last_end": "2026-11-11T03:57:00Z"
+  },
+  "KXNCAAMBTOTAL-26NOV10NAUARIZ-164": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T02:29:45Z",
+   "last_end": "2026-11-11T03:57:00Z"
+  },
+  "KXNCAAMBTOTAL-26NOV10NAUARIZ-168": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T02:29:45Z",
+   "last_end": "2026-11-11T03:57:00Z"
+  },
+  "KXNCAAMBTOTAL-26NOV10QUCBYU-162": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T02:29:45Z",
+   "last_end": "2026-11-11T04:02:00Z"
+  },
+  "KXNCAAMBTOTAL-26NOV10QUCBYU-166": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T02:29:45Z",
+   "last_end": "2026-11-11T04:02:00Z"
+  },
+  "KXNCAAMBTOTAL-26NOV10QUCBYU-171": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T02:29:45Z",
+   "last_end": "2026-11-11T04:02:00Z"
+  },
+  "KXNCAAMBTOTAL-26NOV10QUCBYU-174": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T02:29:45Z",
+   "last_end": "2026-11-11T04:02:00Z"
+  },
+  "KXNCAAMBTOTAL-26NOV10QUCBYU-177": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T02:29:45Z",
+   "last_end": "2026-11-11T04:02:00Z"
+  },
+  "KXNCAAMBTOTAL-26NOV10QUCBYU-190": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T02:29:45Z",
+   "last_end": "2026-11-11T04:02:00Z"
+  },
+  "KXNCAAMBTOTAL-26NOV10QUCBYU-194": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T02:29:45Z",
+   "last_end": "2026-11-11T04:02:00Z"
+  },
+  "KXNCAAMBTOTAL-26NOV10QUCBYU-198": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T02:29:45Z",
+   "last_end": "2026-11-11T04:02:00Z"
+  },
+  "KXNCAAMBTOTAL-26NOV10QUCBYU-203": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T02:29:45Z",
+   "last_end": "2026-11-11T04:02:00Z"
+  },
+  "KXNCAAMBTOTAL-26NOV10USDCOLO-136": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T02:29:45Z",
+   "last_end": "2026-11-11T04:07:00Z"
+  },
+  "KXNCAAMBTOTAL-26NOV10USDCOLO-140": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T02:29:45Z",
+   "last_end": "2026-11-11T04:07:00Z"
+  },
+  "KXNCAAMBTOTAL-26NOV10USDCOLO-144": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T02:29:45Z",
+   "last_end": "2026-11-11T04:07:00Z"
+  },
+  "KXNCAAMBTOTAL-26NOV10USDCOLO-147": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T02:29:45Z",
+   "last_end": "2026-11-11T04:07:00Z"
+  },
+  "KXNCAAMBTOTAL-26NOV10USDCOLO-164": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T02:29:45Z",
+   "last_end": "2026-11-11T04:07:00Z"
+  },
+  "KXNCAAMBTOTAL-26NOV11CAMPETSU-139": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T02:29:45Z",
+   "last_end": "2026-11-12T02:17:00Z"
+  },
+  "KXNCAAMBTOTAL-26NOV11CAMPETSU-142": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T02:29:45Z",
+   "last_end": "2026-11-12T02:17:00Z"
+  },
+  "KXNCAAMBTOTAL-26NOV11CAMPETSU-145": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T02:29:45Z",
+   "last_end": "2026-11-12T02:17:00Z"
+  },
+  "KXNCAAMBTOTAL-26NOV11CAMPETSU-147": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T02:29:45Z",
+   "last_end": "2026-11-12T02:17:00Z"
+  },
+  "KXNCAAMBTOTAL-26NOV11CAMPETSU-149": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T02:29:45Z",
+   "last_end": "2026-11-12T02:17:00Z"
+  },
+  "KXNCAAMBTOTAL-26NOV11CAMPETSU-152": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T02:29:45Z",
+   "last_end": "2026-11-12T02:17:00Z"
+  },
+  "KXNCAAMBTOTAL-26NOV11CAMPETSU-155": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T02:29:45Z",
+   "last_end": "2026-11-12T02:17:00Z"
+  },
+  "KXNCAAMBTOTAL-26NOV11CAMPETSU-159": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T02:29:45Z",
+   "last_end": "2026-11-12T02:17:00Z"
+  },
+  "KXNCAAMBTOTAL-26NOV11COFCTEM-146": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T02:29:45Z",
+   "last_end": "2026-11-12T01:42:00Z"
+  },
+  "KXNCAAMBTOTAL-26NOV11COFCTEM-156": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T02:29:45Z",
+   "last_end": "2026-11-12T01:42:00Z"
+  },
+  "KXNCAAMBTOTAL-26NOV11KENTUNCW-147": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T02:29:45Z",
+   "last_end": "2026-11-12T02:21:00Z"
+  },
+  "KXNCAAMBTOTAL-26NOV11KENTUNCW-150": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T02:29:45Z",
+   "last_end": "2026-11-12T02:21:00Z"
+  },
+  "KXNCAAMBTOTAL-26NOV11KENTUNCW-153": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T02:29:45Z",
+   "last_end": "2026-11-12T02:21:00Z"
+  },
+  "KXNCAAMBTOTAL-26NOV11KENTUNCW-155": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T02:29:45Z",
+   "last_end": "2026-11-12T02:21:00Z"
+  },
+  "KXNCAAMBTOTAL-26NOV11KENTUNCW-160": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T02:29:45Z",
+   "last_end": "2026-11-12T02:21:00Z"
+  },
+  "KXNCAAMBTOTAL-26NOV11MASSLMASS-129": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T02:29:45Z",
+   "last_end": "2026-11-12T02:07:00Z"
+  },
+  "KXNCAAMBTOTAL-26NOV11MASSLMASS-134": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T02:29:45Z",
+   "last_end": "2026-11-12T02:07:00Z"
+  },
+  "KXNCAAMBTOTAL-26NOV11MASSLMASS-138": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T02:29:45Z",
+   "last_end": "2026-11-12T02:07:00Z"
+  },
+  "KXNCAAMBTOTAL-26NOV11MASSLMASS-142": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T02:29:45Z",
+   "last_end": "2026-11-12T02:07:00Z"
+  },
+  "KXNCAAMBTOTAL-26NOV11MASSLMASS-145": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T02:29:45Z",
+   "last_end": "2026-11-12T02:07:00Z"
+  },
+  "KXNCAAMBTOTAL-26NOV11MASSLMASS-148": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T02:12:44Z",
+   "last_end": "2026-11-12T02:07:00Z"
+  },
+  "KXNCAAMBTOTAL-26NOV11MASSLMASS-150": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T02:29:45Z",
+   "last_end": "2026-11-12T02:07:00Z"
+  },
+  "KXNCAAMBTOTAL-26NOV11MASSLMASS-152": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T02:29:45Z",
+   "last_end": "2026-11-12T02:07:00Z"
+  },
+  "KXNCAAMBTOTAL-26NOV11MASSLMASS-155": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T02:29:45Z",
+   "last_end": "2026-11-12T02:07:00Z"
+  },
+  "KXNCAAMBTOTAL-26NOV11MASSLMASS-158": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T02:29:45Z",
+   "last_end": "2026-11-12T02:07:00Z"
+  },
+  "KXNCAAMBTOTAL-26NOV11MASSLMASS-162": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T02:29:45Z",
+   "last_end": "2026-11-12T02:07:00Z"
+  },
+  "KXNCAAMBTOTAL-26NOV11ODUNORF-134": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T02:29:45Z",
+   "last_end": "2026-11-12T02:19:00Z"
+  },
+  "KXNCAAMBTOTAL-26NOV11ODUNORF-138": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T02:29:45Z",
+   "last_end": "2026-11-12T02:19:00Z"
+  },
+  "KXNCAAMBTOTAL-26NOV11ODUNORF-142": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T02:29:45Z",
+   "last_end": "2026-11-12T02:19:00Z"
+  },
+  "KXNCAAMBTOTAL-26NOV11ODUNORF-148": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T02:29:45Z",
+   "last_end": "2026-11-12T02:19:00Z"
+  },
+  "KXNCAAMBTOTAL-26NOV11SCUUNT-135": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T03:29:45Z",
+   "last_end": "2026-11-12T03:17:00Z"
+  },
+  "KXNCAAMBTOTAL-26NOV11SCUUNT-146": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T03:29:45Z",
+   "last_end": "2026-11-12T03:17:00Z"
+  },
+  "KXNCAAMBTOTAL-26NOV11SCUUNT-149": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T03:29:45Z",
+   "last_end": "2026-11-12T03:17:00Z"
+  },
+  "KXNCAAMBTOTAL-26NOV11SCUUNT-151": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T03:29:45Z",
+   "last_end": "2026-11-12T03:17:00Z"
+  },
+  "KXNCAAMBTOTAL-26NOV11SCUUNT-153": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T03:29:45Z",
+   "last_end": "2026-11-12T03:17:00Z"
+  },
+  "KXNCAAMBTOTAL-26NOV11SCUUNT-156": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T03:29:45Z",
+   "last_end": "2026-11-12T03:17:00Z"
+  },
+  "KXNCAAMBTOTAL-26NOV11SCUUNT-159": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T03:29:45Z",
+   "last_end": "2026-11-12T03:17:00Z"
+  },
+  "KXNCAAMBTOTAL-26NOV11SCUUNT-163": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T03:29:45Z",
+   "last_end": "2026-11-12T03:17:00Z"
+  },
+  "KXNCAAMBTOTAL-26NOV11USFJOES-145": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T02:29:45Z",
+   "last_end": "2026-11-11T22:25:00Z"
+  },
+  "KXNCAAMBTOTAL-26NOV11USFJOES-148": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T02:29:45Z",
+   "last_end": "2026-11-11T22:25:00Z"
+  },
+  "KXNCAAMBTOTAL-26NOV11USFJOES-150": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T02:29:45Z",
+   "last_end": "2026-11-11T22:25:00Z"
+  },
+  "KXNCAAMBTOTAL-26NOV11USFJOES-152": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T02:29:45Z",
+   "last_end": "2026-11-11T22:25:00Z"
+  },
+  "KXNCAAMBTOTAL-26NOV11USFJOES-155": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T02:29:45Z",
+   "last_end": "2026-11-11T22:25:00Z"
+  },
+  "KXNCAAMBTOTAL-26NOV11USFJOES-158": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T02:29:45Z",
+   "last_end": "2026-11-11T22:25:00Z"
+  },
+  "KXNCAAMBTOTAL-26NOV11USFJOES-162": {
+   "done": true,
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T02:29:45Z",
+   "last_end": "2026-11-11T22:25:00Z"
+  },
+  "KXNFLSPREAD-26NOV15BUFNYJ-BUF3": {
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T13:46:43Z",
+   "last_end": "2026-11-12T13:43:00Z"
+  },
+  "KXNFLSPREAD-26NOV15CARNO-CAR4": {
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T13:46:43Z",
+   "last_end": "2026-11-12T13:17:00Z"
   },
   "KXNFLSPREAD-26NOV15LARARI-LAR7": {
-   "last_end": "2026-11-12T10:02:00Z"
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T13:46:43Z",
+   "last_end": "2026-11-12T13:36:00Z"
+  },
+  "KXNFLSPREAD-26NOV15MIAIND-MIA2": {
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T13:46:43Z",
+   "last_end": "2026-11-12T13:38:00Z"
   },
   "KXNFLSPREAD-26NOV15PITCIN-PIT14": {
-   "last_end": "2026-11-12T10:32:00Z"
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T13:46:43Z",
+   "last_end": "2026-11-12T13:27:00Z"
   },
   "KXNFLSPREAD-26NOV15SEALV-SEA15": {
-   "last_end": "2026-11-12T10:07:00Z"
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T13:46:43Z",
+   "last_end": "2026-11-12T13:36:00Z"
   },
   "KXNFLSPREAD-26NOV15SFDAL-DAL11": {
-   "last_end": "2026-11-12T10:50:00Z"
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T13:46:43Z",
+   "last_end": "2026-11-12T12:36:00Z"
   },
   "KXNFLTOTAL-26NOV15HOUCLE-27": {
-   "last_end": "2026-11-12T10:46:00Z"
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T13:46:43Z",
+   "last_end": "2026-11-12T13:30:00Z"
+  },
+  "KXNFLTOTAL-26NOV15MIAIND-44": {
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T13:46:43Z",
+   "last_end": "2026-11-12T13:22:00Z"
   },
   "KXNFLTOTAL-26NOV15SEALV-26": {
-   "last_end": "2026-11-12T10:16:00Z"
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T13:46:43Z",
+   "last_end": "2026-11-12T13:36:00Z"
   },
   "KXNFLTOTAL-26NOV16LACBAL-24": {
-   "last_end": "2026-11-12T10:04:00Z"
+   "fetched_at": "2026-11-12T13:46:43Z",
+   "fetched_to": "2026-11-12T13:46:43Z",
+   "last_end": "2026-11-12T13:36:00Z"
   }
  }
 }
