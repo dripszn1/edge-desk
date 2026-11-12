@@ -244,6 +244,98 @@ def hot_pass(events: list[str], meta: dict, mults: dict, ts: str):
     return pd.DataFrame(rows), errors, throttled
 
 
+# ---------- #39b fast lane ----------
+def fast_tickers(state: dict, now: datetime, limit: int = config.LIVE_FAST_MAX_TICKERS) -> list[str]:
+    """Contracts alerted in the last 24h whose game isn't over (kickoff + 6h), newest first."""
+    out = []
+    items = sorted((state or {}).get("alerts", {}).values(), key=lambda a: a.get("sent_utc") or "", reverse=True)
+    for a in items:
+        t, sent = a.get("ticker"), a.get("sent_utc")
+        if not t or a.get("legs") or not sent:
+            continue
+        if _utc(now) - _utc(datetime.strptime(sent, "%Y-%m-%dT%H:%M:%SZ")) > timedelta(hours=24):
+            continue
+        ko = a.get("kickoff_utc")
+        if ko:
+            try:
+                if _utc(now) > _utc(datetime.strptime(str(ko)[:19], "%Y-%m-%dT%H:%M:%S")) + timedelta(hours=6):
+                    continue
+            except ValueError:
+                pass
+        if t not in out:
+            out.append(t)
+    return out[:limit]
+
+
+def fast_pass(tickers: list[str], ts: str):
+    """GET /markets?tickers=... in chunks. Returns (frame[snapshot_ts,ticker,yes_bid,yes_ask,no_bid,no_ask], throttled)."""
+    import pandas as pd
+    from . import collect
+    rows, throttled = [], False
+    n = config.LIVE_FAST_PER_REQUEST
+    for i in range(0, len(tickers), n):
+        try:
+            j = _get("/markets", {"tickers": ",".join(tickers[i:i + n]), "limit": 100})
+        except Throttled:
+            throttled = True
+            break
+        except Exception:  # noqa: BLE001 - a missed tick is fine
+            continue
+        for m in j.get("markets", []):
+            rows.append({"snapshot_ts": ts, "ticker": m.get("ticker"),
+                         "yes_bid": collect._f(m.get("yes_bid_dollars")), "yes_ask": collect._f(m.get("yes_ask_dollars")),
+                         "no_bid": collect._f(m.get("no_bid_dollars")), "no_ask": collect._f(m.get("no_ask_dollars"))})
+    return pd.DataFrame(rows), throttled
+
+
+FAST_DIR = DATA / "fastlane"
+_fast_last: dict = {}
+
+
+def log_fast(df, directory: Path | None = None) -> int:
+    """Append quotes that changed since the last logged one (keeps the file small)."""
+    if df is None or df.empty:
+        return 0
+    directory = directory or FAST_DIR
+    rows = []
+    for r in df.to_dict("records"):
+        key = (r.get("yes_bid"), r.get("yes_ask"))
+        if _fast_last.get(r["ticker"]) == key:
+            continue
+        _fast_last[r["ticker"]] = key
+        rows.append(r)
+    if not rows:
+        return 0
+    day = rows[0]["snapshot_ts"][:10]
+    directory.mkdir(parents=True, exist_ok=True)
+    f = directory / f"{day}.csv"
+    new = not f.exists()
+    with f.open("a") as fh:
+        if new:
+            fh.write("snapshot_ts,ticker,yes_bid,yes_ask\n")
+        for r in rows:
+            fh.write(f"{r['snapshot_ts']},{r['ticker']},{'' if r.get('yes_bid') is None else r['yes_bid']},"
+                     f"{'' if r.get('yes_ask') is None else r['yes_ask']}\n")
+    return len(rows)
+
+
+def default_fast(now_fn, stats: dict) -> None:
+    """One fast-lane tick: re-quote alerted contracts, log changes, run gone / auto-sell-hit checks."""
+    from . import alerts
+    tick = fast_tickers(alerts.load_state(), _utc(now_fn()))
+    if not tick:
+        return
+    ts = _utc(now_fn()).strftime("%Y-%m-%dT%H:%M:%SZ")
+    df, thr = fast_pass(tick, ts)
+    stats["fast_ticks"] = stats.get("fast_ticks", 0) + 1
+    if thr:
+        stats["fast_throttled"] = stats.get("fast_throttled", 0) + 1
+        raise Throttled("fast")
+    log_fast(df)
+    if len(df):
+        stats["alerts"] = stats.get("alerts", 0) + len(alerts.process([], alerts.quotes_of(df)) or [])
+
+
 def persist(df, ts: str, errors: list[str]) -> Path | None:
     """Same file layout and log as collect.py, so fresh/grade/lag/digest see live snapshots."""
     if df is None or df.empty:
@@ -398,13 +490,16 @@ class Session:
 def run_loop(now_fn=lambda: datetime.now(UTC), clock=time.monotonic, sleep=time.sleep,
              fetch_full=full_pass, fetch_hot=hot_pass, odds_fn=None, scan_fn=None,
              persist_fn=persist, post_fn=post_steps, commit_fn=git_commit, used_min: float | None = None,
-             seen: set | None = None, alert_fn=None, log_fn=None) -> Session:
+             seen: set | None = None, alert_fn=None, log_fn=None, fast_fn="default") -> Session:
     """Run until the deadline. All I/O is injectable so the ordering guarantees are testable."""
     from . import kickoffs, odds, scan
     odds_fn = odds_fn or (lambda: odds.run(near_h=config.LIVE_ODDS_NEAR_HOURS,
                                            near_interval_h=odds_interval_hours(odds.quota(odds.load_state()))))
     scan_fn = scan_fn or (lambda df, ts, seen, partial: scan.run(df, ts, seen=seen, partial=partial))
     alert_fn = alert_fn or default_alerts
+    if fast_fn == "default":                           # real loop only; injected test loops never hit the network
+        fast_fn = default_fast if fetch_full is full_pass else None
+    fast_paused = False
     log_fn = log_fn or upsert_log
     start = _utc(now_fn())
     w = current_window(start, config.LIVE_EARLY_START_MINUTES)
@@ -481,8 +576,25 @@ def run_loop(now_fn=lambda: datetime.now(UTC), clock=time.monotonic, sleep=time.
         # 6) wait for the next tick (never past the deadline)
         left = (sess.stop_at - _utc(now_fn())).total_seconds()
         wait = min(max(pacer.interval - (clock() - t0), 0), max(left, 0))
-        if wait > 0:
-            sleep(wait)
+        end_wait = clock() + wait
+        while wait > 0:
+            # #39b: between passes, re-quote alerted contracts every LIVE_FAST_SECONDS
+            if fast_fn is not None and wait > config.LIVE_FAST_SECONDS and not fast_paused:
+                ft0 = clock()
+                try:
+                    fast_fn(now_fn, sess.stats)
+                except Throttled:
+                    fast_paused = True                 # back off: no more fast ticks this pass
+                except Exception as e:  # noqa: BLE001
+                    sess.errors.append(f"fast: {type(e).__name__}")
+                    fast_paused = True
+                step = max(config.LIVE_FAST_SECONDS - (clock() - ft0), 0)
+            else:
+                step = wait
+            if step > 0:
+                sleep(min(step, wait))
+            wait = end_wait - clock()
+        fast_paused = False
     sess.errors += post_fn()
     if commit_fn(f"data: live {_utc(now_fn()).strftime('%Y-%m-%dT%H:%MZ')} (end)"):
         sess.stats["commits"] += 1

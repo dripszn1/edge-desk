@@ -39,6 +39,9 @@ LIVE_COMMIT_MINUTES = 15          # grade/digest + git commit this often
 LIVE_ODDS_CHECK_MINUTES = 10      # ask odds.plan_pulls this often (budgeted; most checks pull nothing)
 LIVE_ODDS_NEAR_HOURS = 1.5        # "near kickoff" for the faster odds interval
 LIVE_MAX_RUN_MINUTES = 330        # exit before GitHub's 6 h job limit, then re-dispatch
+LIVE_FAST_SECONDS = 3            # #39b fast lane: re-quote alerted contracts this often between passes
+LIVE_FAST_MAX_TICKERS = 50       # never more than this many contracts in the fast lane
+LIVE_FAST_PER_REQUEST = 25       # tickers per GET /markets call (<= 2 calls per tick)
 LIVE_EARLY_START_MINUTES = 15     # a run fired this close before a window waits for it
 LIVE_MINUTES_BUDGET_MONTH = 15000 # Actions minutes for live.yml per month (windows ~ 14,000 min)
 

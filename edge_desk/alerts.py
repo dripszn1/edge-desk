@@ -20,9 +20,10 @@ from __future__ import annotations
 
 import csv
 import json
+import math
 import os
 import sys
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
@@ -137,6 +138,24 @@ def max_price(fair: float, contracts: int, mult: float = 1.0, min_edge: float = 
     return None
 
 
+def autosell_target(fair, price) -> float | None:
+    """#38: Kalshi Auto Sell suggestion = the sharp fair price (rounded down to a cent), if above entry."""
+    try:
+        fair, price = float(fair), float(price)
+    except (TypeError, ValueError):
+        return None
+    t = math.floor(fair * 100 + 1e-9) / 100
+    return t if t >= price + 0.01 and t < 1 else None
+
+
+def side_bid(row: dict, side: str) -> float | None:
+    """What we could SELL `side` at right now: YES -> yes bid, NO -> 1 - yes ask."""
+    try:
+        return float(row["yes_bid"]) if side == "YES" else round(1 - float(row["yes_ask"]), 4)
+    except (TypeError, ValueError, KeyError):
+        return None
+
+
 def structural_max_cost(f: dict) -> float:
     """Highest combined leg price per set that still clears MIN_EDGE after fees on both legs."""
     from .scan import _leg_cost
@@ -196,6 +215,9 @@ def build_new(f: dict, gate_open: bool, now, template: str | None = None) -> dic
                 f"Buy {_side_word(f.get('side'))} at {price * 100:.0f}¢{cap}\n"
                 f"Fair {float(f['fair']) * 100:.0f}¢ · edge +{edge * 100:.1f}¢ after fees\n"
                 f"${stake:.2f} = {n} contracts · kickoff {ko}")
+        tgt = autosell_target(f.get("fair"), price)
+        if tgt is not None:
+            body += f"\nThen set Auto Sell at {tgt * 100:.0f}¢ (sharp fair), or hold"
     body += f"\nsent {_sent_ct(now)}"
     title = f"{'LIVE' if live else 'PAPER'} {f.get('kind')} {f.get('league', '')}".strip()
     if f.get("market") == "ML":
@@ -364,7 +386,8 @@ def decide(groups: list[tuple[list[dict], bool]], quotes: dict, state: dict, now
                      "event_ticker": f.get("event_ticker"), "quote_utc": f.get("snapshot_ts"),
                      "price": a["price"], "fair": f.get("fair"), "contracts": f.get("contracts"),
                      "fee_multiplier": f.get("fee_multiplier"), "odds_fetched_ts": f.get("odds_fetched_ts"),
-                     "sharp_line": f.get("sharp_line")}
+                     "sharp_line": f.get("sharp_line"),
+                     "autosell": autosell_target(f.get("fair"), a["price"]) if f.get("kind") not in STRUCTURAL else None}
         out.append(a)
     already_gone = _gone_keys_logged()
     for k, a in alerts.items():
@@ -388,7 +411,39 @@ def decide(groups: list[tuple[list[dict], bool]], quotes: dict, state: dict, now
         if new_fair is not None:
             a["gone"] = True
             out.append(build_line_gone(a, new_fair, p if p is not None else fe.get("price"), now, fe, row))
+    # #38: Auto Sell target reached (pregame or in-game), one push per contract
+    for k, a in alerts.items():
+        tgt = a.get("autosell")
+        if tgt is None or a.get("sell_hit") or a.get("legs"):
+            continue
+        ko = a.get("kickoff_utc")
+        if ko and _utc(now) > _utc(ko) + timedelta(hours=6):
+            continue                                        # game long over
+        row = quotes.get(a.get("ticker")) or {}
+        qts, flag_ts = row.get("snapshot_ts"), a.get("quote_utc")
+        if not row or not qts or (flag_ts and _utc(qts) <= _utc(flag_ts)):
+            continue                                        # only a quote newer than the alert's
+        b = side_bid(row, a.get("side"))
+        if b is not None and b >= tgt - 1e-9:
+            a["sell_hit"] = True
+            out.append(build_sell_hit(a, b, now, row))
     return out
+
+
+def build_sell_hit(alert: dict, bid: float, now, row: dict | None = None) -> dict:
+    row = row or {}
+    tick = alert.get("ticker") or ""
+    game = alert.get("game") or row.get("event_title")
+    desc = alert.get("desc") or row.get("yes_sub_title")
+    side = _side_word(alert.get("side"))
+    return {"type": "sell", "key": alert["key"], "kind": alert.get("kind"),
+            "title": f"AUTO SELL HIT {alert.get('kind')}",
+            "body": f"{order_lines(game, desc, tick)}\n{side} bid is {bid * 100:.0f}¢, your Auto Sell at "
+                    f"{alert['autosell'] * 100:.0f}¢ should have filled (bought ~{(alert.get('price') or 0) * 100:.0f}¢)."
+                    f"\nsent {_sent_ct(now)}",
+            "priority": 3, "click": kalshi_url(tick, alert.get("event_ticker")), "ticker": tick, "price": bid,
+            "max_price": alert.get("max_price"), "edge": "", "stake": "",
+            "quote_utc": _iso(row["snapshot_ts"]) if row.get("snapshot_ts") else None}
 
 
 # ---------- send ----------
