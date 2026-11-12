@@ -1,10 +1,10 @@
 {
-  "generated_ts": "2026-11-12T16:21:42Z",
-  "generated_ct": "Thu Nov 12, 10:21 AM CT",
+  "generated_ts": "2026-11-12T16:52:13Z",
+  "generated_ct": "Thu Nov 12, 10:52 AM CT",
   "today_ct": "2026-11-12",
   "snapshot": {
-    "ts": "2026-11-12T16:20:54Z",
-    "ct": "Thu Nov 12, 10:20 AM CT",
+    "ts": "2026-11-12T16:51:20Z",
+    "ct": "Thu Nov 12, 10:51 AM CT",
     "stale": false,
     "markets_scanned": 6495,
     "kickoff_source": "kalshi occurrence_datetime - 3h",
@@ -64,7 +64,7 @@
     "max_bet": 10.0
   },
   "signals": {
-    "weekly_ct": "Thu Nov 12, 10:21 AM CT",
+    "weekly_ct": "Thu Nov 12, 10:51 AM CT",
     "scorecards": [
       {
         "name": "SHARP shadow football",
@@ -149,7 +149,7 @@
           "events": 2,
           "t_by_event": 1.25,
           "stale": 0,
-          "pending": 46,
+          "pending": 47,
           "no_close": 0
         }
       },
@@ -285,7 +285,7 @@
         "contract": "Over 32.5 points",
         "max_price": 0.22,
         "stake": 2.09,
-        "gone": false,
+        "gone": true,
         "sent_ct": "Thu Nov 12, 8:47 AM CT",
         "kickoff_utc": "2026-11-13T01:15:00Z",
         "kickoff_ct": "Thu Nov 12, 7:15 PM CT",
@@ -318,6 +318,20 @@
         "kickoff_utc": "2026-11-14T17:45:00Z",
         "kickoff_ct": "Sat Nov 14, 11:45 AM CT",
         "kalshi_url": "https://kalshi.com/markets/kxncaafspread"
+      },
+      {
+        "ticker": "KXNCAAFTOTAL-26NOV14UABTEM-44",
+        "signal": "SHARP",
+        "side": "NO",
+        "game": "UAB vs Temple: Total Points",
+        "contract": "Over 43.5 points",
+        "max_price": 0.34,
+        "stake": 2.14,
+        "gone": false,
+        "sent_ct": "Thu Nov 12, 10:51 AM CT",
+        "kickoff_utc": "2026-11-14T18:00:00Z",
+        "kickoff_ct": "Sat Nov 14, 12:00 PM CT",
+        "kalshi_url": "https://kalshi.com/markets/kxncaaftotal/event/kxncaaftotal-26nov14uabtem"
       },
       {
         "ticker": "KXNCAAFSPREAD-26NOV14TEXLSU-LSU4",
@@ -514,6 +528,20 @@
         "kickoff_utc": "2026-11-15T18:00:00Z",
         "kickoff_ct": "Sun Nov 15, 12:00 PM CT",
         "kalshi_url": "https://kalshi.com/markets/kxnfltotal"
+      },
+      {
+        "ticker": "KXNFLSPREAD-26NOV15LARARI-LAR7",
+        "signal": "SHARP",
+        "side": "NO",
+        "game": "Los Angeles R vs Arizona: Spread",
+        "contract": "Los Angeles R wins by over 6.5 points",
+        "max_price": 0.38,
+        "stake": 2.38,
+        "gone": false,
+        "sent_ct": "Thu Nov 12, 10:51 AM CT",
+        "kickoff_utc": "2026-11-15T21:05:00Z",
+        "kickoff_ct": "Sun Nov 15, 3:05 PM CT",
+        "kalshi_url": "https://kalshi.com/markets/kxnflspread/event/kxnflspread-26nov15larari"
       },
       {
         "ticker": "KXNFLSPREAD-26NOV15SEALV-SEA15",
