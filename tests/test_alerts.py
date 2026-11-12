@@ -305,3 +305,37 @@ def test_gone_never_on_quote_older_than_the_alert(tmp_path):
     out = alerts.process([([f], False)], alerts.quotes_of(df), NOW + timedelta(minutes=1), post=Post(),
                          state_path=st, log_path=lg)
     assert out == []
+
+
+# ---------- #38 Auto Sell suggestion + one "AUTO SELL HIT" push ----------
+def test_new_alert_suggests_auto_sell_at_fair(tmp_path):
+    f = sharp_flag(price=0.45, fair=0.523)
+    out = alerts.process([([f], False)], {}, NOW, post=Post(), state_path=tmp_path / "s.json",
+                         log_path=tmp_path / "l.csv")
+    assert "Then set Auto Sell at 52¢ (sharp fair), or hold" in out[0]["body"]
+    assert alerts.autosell_target(0.455, 0.45) is None           # no room above entry: no suggestion
+
+
+def test_auto_sell_hit_once_in_game_and_never_on_older_quote(tmp_path):
+    st, lg = tmp_path / "s.json", tmp_path / "l.csv"
+    f = sharp_flag(price=0.45, fair=0.52)
+    alerts.process([([f], False)], {}, NOW, post=Post(), state_path=st, log_path=lg)
+    tk = f["ticker"]
+    # an older quote (before the flag) showing a high bid never counts
+    old = {tk: {"yes_bid": 0.60, "yes_ask": 0.61, "snapshot_ts": "2026-11-14T15:00:00Z"}}
+    assert alerts.process([], old, NOW, post=Post(), state_path=st, log_path=lg) == []
+    ingame = datetime(2026, 11, 15, 22, 0, tzinfo=UTC)                 # after kickoff: still allowed
+    q = {tk: {"yes_bid": 0.53, "yes_ask": 0.55, "snapshot_ts": "2026-11-15T21:59:57Z"}}
+    out = alerts.process([], q, ingame, post=Post(), state_path=st, log_path=lg)
+    assert [a["type"] for a in out] == ["sell"] and "Auto Sell at 52¢" in out[0]["body"]
+    assert alerts.process([], q, ingame, post=Post(), state_path=st, log_path=lg) == []   # once only
+
+
+def test_auto_sell_hit_no_side_uses_one_minus_yes_ask(tmp_path):
+    st, lg = tmp_path / "s.json", tmp_path / "l.csv"
+    f = sharp_flag(side="NO", price=0.33, fair=0.38)
+    alerts.process([([f], False)], {}, NOW, post=Post(), state_path=st, log_path=lg)
+    q = {f["ticker"]: {"yes_bid": 0.60, "yes_ask": 0.63, "snapshot_ts": "2026-11-14T17:00:00Z"}}   # NO bid .37
+    assert "sell" not in [a["type"] for a in alerts.process([], q, NOW, post=Post(), state_path=st, log_path=lg)]
+    q[f["ticker"]].update(yes_ask=0.62, snapshot_ts="2026-11-14T17:00:03Z")                          # NO bid .38
+    assert [a["type"] for a in alerts.process([], q, NOW, post=Post(), state_path=st, log_path=lg)] == ["sell"]

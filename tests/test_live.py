@@ -311,3 +311,67 @@ def test_loop_odds_check_follows_plan_size(monkeypatch, tmp_path):
     big = []
     _run(monkeypatch, tmp_path / "b", start, 30, _pass_frame, big)
     assert len(free) <= 3 + 1 and len(big) >= 6
+
+
+# ---------- #39b fast lane ----------
+def test_fast_tickers_recent_alerts_only_and_capped():
+    from datetime import datetime, timezone
+    from edge_desk import live
+    now = datetime(2026, 11, 14, 20, 0, tzinfo=timezone.utc)
+    st = {"alerts": {
+        "a": {"ticker": "T1", "sent_utc": "2026-11-14T19:00:00Z", "kickoff_utc": "2026-11-14T21:00:00Z"},
+        "b": {"ticker": "T2", "sent_utc": "2026-11-13T10:00:00Z"},                                  # >24h
+        "c": {"ticker": "T3", "sent_utc": "2026-11-14T10:00:00Z", "kickoff_utc": "2026-11-14T12:00:00Z"},  # game over
+        "d": {"ticker": None, "legs": ["YES X", "NO Y"], "sent_utc": "2026-11-14T19:00:00Z"}}}
+    assert live.fast_tickers(st, now) == ["T1"]
+    many = {"alerts": {str(i): {"ticker": f"T{i}", "sent_utc": "2026-11-14T19:00:00Z"} for i in range(80)}}
+    assert len(live.fast_tickers(many, now)) == live.config.LIVE_FAST_MAX_TICKERS
+
+
+def test_fast_lane_ticks_between_passes_and_backs_off(monkeypatch):
+    from datetime import datetime, timedelta, timezone
+    import pandas as pd
+    from edge_desk import live
+    t = {"now": datetime(2026, 11, 14, 19, 0, tzinfo=timezone.utc), "mono": 0.0}
+
+    def now_fn():
+        return t["now"]
+
+    def clock():
+        return t["mono"]
+
+    def sleep(s):
+        t["mono"] += s
+        t["now"] += timedelta(seconds=s)
+
+    calls = []
+
+    def fast(nf, stats):
+        calls.append(t["mono"])
+        if len(calls) == 3:
+            raise live.Throttled("x")
+
+    def full(m, ts):
+        t["mono"] += 1
+        return pd.DataFrame(), [], False
+
+    s = live.run_loop(now_fn=now_fn, clock=clock, sleep=sleep, fetch_full=full, fetch_hot=full,
+                      odds_fn=lambda: None, scan_fn=lambda *a: None, persist_fn=lambda *a: None,
+                      post_fn=lambda: [], commit_fn=lambda m: False, used_min=0, seen=set(),
+                      alert_fn=lambda df, ts: [], log_fn=lambda r: None, fast_fn=fast)
+    # ticks are >= LIVE_FAST_SECONDS apart, and a 429 stops the fast lane for the rest of that wait
+    gaps = [b - a for a, b in zip(calls, calls[1:])]
+    assert calls and all(g >= live.config.LIVE_FAST_SECONDS - 1e-9 for g in gaps)
+    assert len(calls) > 3 and any(g > 2 * live.config.LIVE_FAST_SECONDS for g in gaps)
+
+
+def test_log_fast_only_changes(tmp_path):
+    import pandas as pd
+    from edge_desk import live
+    live._fast_last.clear()
+    df = pd.DataFrame([{"snapshot_ts": "2026-11-14T19:00:00Z", "ticker": "T1", "yes_bid": 0.4, "yes_ask": 0.45}])
+    assert live.log_fast(df, tmp_path) == 1
+    assert live.log_fast(df, tmp_path) == 0
+    df2 = df.assign(snapshot_ts="2026-11-14T19:00:03Z", yes_bid=0.41)
+    assert live.log_fast(df2, tmp_path) == 1
+    assert len(pd.read_csv(tmp_path / "2026-11-14.csv")) == 2

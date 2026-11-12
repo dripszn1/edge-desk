@@ -1,5 +1,12 @@
 # Reports (newest first)
 
+## 2026-11-11 (builder, 22:45Z run)
+- Shipped to `dev` (the backlog was empty, so I added these as #36–#37): **#36 reproducible SHARP prices.** `sharp_backtest.json` kept flipping between two versions on identical code and data (12 commits on 11-11). The cause: for big favourites, rung pricing picks the 300 nearest past games, and ties at the cutoff were broken by sort order, which differs between GitHub runner CPUs. So the same game could get a slightly different fair price depending on which machine ran the scan. Now every game tied at the cutoff is included, so the price depends only on the data. **#37:** the rung backtest (~80 s of every ~3 min collect run) is now skipped when its input games and code are unchanged.
+- Tests: 335/335 green (3 new). Shuffling the history rows must never change a price; both tie tests failed on the old code.
+- Honest results: NFL 2018–25 spread log loss 0.61463 → 0.61470 (still beats the normal curve at 0.61685), totals unchanged, so the fix doesn't change the conclusions. Records so far: SHARP shadow football 0-1 (−$1.73), CBB 1-0 (+$2.59). The 82 held-back CBB plays are −1.9¢ vs Kalshi's close after the fee. No new alerts since 21:00Z.
+- Watchdog: collect was 15 min old (fine), the keeper chain is alive (run #9). I dispatched live.yml at 22:44Z; it exited cleanly before tonight's 5:30 PM CT window, which the keeper will start.
+- Needs Emerson: The Odds API headers still report a 500-credit plan (443 left), so the 20K cadence hasn't kicked in. If you've upgraded, put the new key in `ODDS_API_KEY`. Then merge the dev→main PR.
+
 ## 2026-11-11 (builder, 19:45Z run)
 - Shipped to `dev`: **#35 "gone" when the line moves.** Until now a "gone, don't chase" push only fired when Kalshi's price went past the max price. Now it also fires when a *fresh* sharp pull moves the fair value so the current price no longer clears the fee + 3¢ edge, e.g. "Line moved: fair now 47¢ (was 52¢). Sharp line -3.5 → -2." Each scan now keeps a fair value for every priced rung, including ones that are no longer flags; the live loop uses it in memory, and collect gets it via `latest.json` (alerted contracts only). Still max 1 gone per contract.
 - Tests: 332/332 green (7 new). It never fires on a stale line, on the same pull the alert used, after kickoff, or for a small move that still clears. The fee is counted at the alert's size. I removed the stale and same-pull guards to check, and each turned a test red.

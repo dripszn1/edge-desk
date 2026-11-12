@@ -167,8 +167,8 @@ class LineDist:
         self.normal = kind == "total"
         if len(lines) >= 100:                       # prior / normal SD fitted on the training games
             self.sd = float(np.std(outcomes - lines, ddof=1))
-        o = np.argsort(lines)
-        self.lines, self.out = lines[o], outcomes[o]
+        o = np.lexsort((outcomes, lines))           # (#36) canonical order: ties by value, never by
+        self.lines, self.out = lines[o], outcomes[o]  # input position or the CPU's sort algorithm
         self.n = len(self.lines)
 
     def p_greater(self, line: float, strike: float) -> float:
@@ -183,8 +183,10 @@ class LineDist:
             hit = (self.out[near] > strike).astype(float)
         else:
             k = min(MIN_N, self.n)
-            idx = np.argsort(np.abs(d))[:k]
-            w = np.ones(k)
+            a = np.abs(d)
+            cut = np.partition(a, k - 1)[k - 1]           # (#36) the k-th nearest gap; every game tied
+            idx = np.flatnonzero(a <= cut + 1e-9)        # with it is in, so no tie is broken by order
+            w = np.ones(len(idx))
             hit = (self.out[idx] - d[idx] > strike).astype(float)   # shift by the line gap
         return float((w @ hit + PRIOR_N * prior) / (w.sum() + PRIOR_N))
 
@@ -592,13 +594,33 @@ def history(league: str) -> pd.DataFrame:
     return nfl_results.load() if league == "NFL" else cfb_results.load()
 
 
-def run_backtest() -> dict:
+def inputs_hash(g: pd.DataFrame) -> str:
+    """(#37) Fingerprint of a backtest's inputs: the history rows plus the pricing code. Same
+    fingerprint -> same result (#36 made it deterministic), so collect can skip the ~80 s re-run."""
+    import hashlib
+    h = hashlib.sha256()
+    h.update(pd.util.hash_pandas_object(g.reset_index(drop=True), index=True).to_numpy().tobytes())
+    for f in ("sharp.py", "cbb_lines.py"):
+        p = Path(__file__).with_name(f)
+        h.update(p.read_bytes() if p.exists() else b"")
+    return h.hexdigest()[:16]
+
+
+def run_backtest(force: bool = False) -> dict:
     reps = {}
     for lg, out in (("NFL", BACKTEST_OUT), ("CFB", CFB_BACKTEST_OUT), ("CBB", CBB_BACKTEST_OUT)):
         g = history(lg)
         if g.empty or g["spread_line"].notna().sum() < 500:
             print(f"sharp backtest {lg}: no closing lines yet, skip")
             continue
+        ih = inputs_hash(g)
+        if not force and out.exists():
+            try:
+                if json.loads(out.read_text()).get("inputs_hash") == ih:
+                    print(f"sharp backtest {lg}: inputs unchanged ({ih}), kept")
+                    continue
+            except (ValueError, OSError):
+                pass
         if lg == "CBB":
             ss = sorted(int(x) for x in g["season"].dropna().unique())[1:]
             rep = backtest(g, seasons=ss)
@@ -607,6 +629,7 @@ def run_backtest() -> dict:
         else:
             rep = backtest(g)
         rep["league"] = lg
+        rep["inputs_hash"] = ih
         out.parent.mkdir(parents=True, exist_ok=True)
         out.write_text(json.dumps(rep, indent=2))
         reps[lg] = rep
@@ -618,4 +641,5 @@ def run_backtest() -> dict:
 
 
 if __name__ == "__main__":
-    run_backtest()
+    import sys
+    run_backtest(force="--force" in sys.argv)
