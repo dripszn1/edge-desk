@@ -1,6 +1,7 @@
 {
-  "generated_utc": "2026-11-12T19:52:20Z",
-  "generated_ct": "Thu Nov 12, 1:52 PM CT",
+  "proposals": [],
+  "generated_utc": "2026-11-12T20:06:24Z",
+  "generated_ct": "Thu Nov 12, 2:06 PM CT",
   "paper_mode": true,
   "rules": {
     "min_bets": 30,
@@ -264,6 +265,1096 @@
         "pending": 145,
         "no_close": 1
       }
+    }
+  },
+  "cap_review": {
+    "caps": {
+      "NFL": {
+        "SPREAD": {
+          "cap_pts": 10.5,
+          "sd": 13.09,
+          "games": 4766,
+          "cap_sd": 0.802
+        },
+        "TOTAL": {
+          "cap_pts": 10.5,
+          "sd": 13.24,
+          "games": 4766,
+          "cap_sd": 0.793
+        }
+      },
+      "CFB": {
+        "SPREAD": {
+          "cap_pts": 6.0,
+          "sd": 15.54,
+          "games": 13001,
+          "cap_sd": 0.386
+        },
+        "TOTAL": {
+          "cap_pts": 6.0,
+          "sd": 16.22,
+          "games": 12608,
+          "cap_sd": 0.37
+        }
+      },
+      "CBB": {
+        "SPREAD": {
+          "cap_pts": 3.0,
+          "sd": 11.35,
+          "games": 32119,
+          "cap_sd": 0.264
+        },
+        "TOTAL": {
+          "cap_pts": 3.0,
+          "sd": 16.52,
+          "games": 32184,
+          "cap_sd": 0.182
+        }
+      }
+    },
+    "cells": {
+      "CBB SPREAD": {
+        "0-3": {
+          "plays": 1,
+          "games": 1,
+          "clv_n": 1,
+          "clv_games": 1,
+          "avg_clv_c": -2.33,
+          "clv_t_by_game": null,
+          "settled": 1,
+          "pnl": 2.59,
+          "pnl_t_by_game": null,
+          "sd_range": "0.00-0.26",
+          "inside_cap": true,
+          "adjusted": {
+            "plays": 1,
+            "games": 1,
+            "clv_n": 1,
+            "clv_games": 1,
+            "avg_clv_c": -2.33,
+            "clv_t_by_game": null,
+            "settled": 1,
+            "pnl": 2.59,
+            "pnl_t_by_game": null,
+            "dropped": 0,
+            "no_bias": 0
+          }
+        },
+        "3-6": {
+          "plays": 1,
+          "games": 1,
+          "clv_n": 1,
+          "clv_games": 1,
+          "avg_clv_c": -1.17,
+          "clv_t_by_game": null,
+          "settled": 1,
+          "pnl": 2.18,
+          "pnl_t_by_game": null,
+          "sd_range": "0.26-0.53",
+          "inside_cap": false,
+          "adjusted": {
+            "plays": 1,
+            "games": 1,
+            "clv_n": 1,
+            "clv_games": 1,
+            "avg_clv_c": -1.17,
+            "clv_t_by_game": null,
+            "settled": 1,
+            "pnl": 2.18,
+            "pnl_t_by_game": null,
+            "dropped": 0,
+            "no_bias": 0
+          }
+        },
+        "6-10.5": {
+          "plays": 2,
+          "games": 2,
+          "clv_n": 2,
+          "clv_games": 2,
+          "avg_clv_c": -1.49,
+          "clv_t_by_game": -6.29,
+          "settled": 2,
+          "pnl": -4.52,
+          "pnl_t_by_game": -0.46,
+          "sd_range": "0.53-0.92",
+          "inside_cap": false,
+          "adjusted": {
+            "plays": 2,
+            "games": 2,
+            "clv_n": 2,
+            "clv_games": 2,
+            "avg_clv_c": -1.49,
+            "clv_t_by_game": -6.29,
+            "settled": 2,
+            "pnl": -4.52,
+            "pnl_t_by_game": -0.46,
+            "dropped": 0,
+            "no_bias": 0
+          }
+        },
+        "10.5+": {
+          "plays": 2,
+          "games": 2,
+          "clv_n": 2,
+          "clv_games": 2,
+          "avg_clv_c": -1.91,
+          "clv_t_by_game": -9.0,
+          "settled": 2,
+          "pnl": 3.23,
+          "pnl_t_by_game": 6.09,
+          "sd_range": "0.92-inf",
+          "inside_cap": false,
+          "adjusted": {
+            "plays": 0,
+            "games": 0,
+            "clv_n": 0,
+            "clv_games": 0,
+            "avg_clv_c": null,
+            "clv_t_by_game": null,
+            "settled": 0,
+            "pnl": 0.0,
+            "pnl_t_by_game": null,
+            "dropped": 0,
+            "no_bias": 2
+          }
+        },
+        "_all": {
+          "raw": {
+            "plays": 6,
+            "games": 5,
+            "clv_n": 6,
+            "clv_games": 5,
+            "avg_clv_c": -1.72,
+            "clv_t_by_game": -12.31,
+            "settled": 6,
+            "pnl": 3.48,
+            "pnl_t_by_game": 0.34
+          },
+          "adjusted": {
+            "plays": 4,
+            "games": 3,
+            "clv_n": 4,
+            "clv_games": 3,
+            "avg_clv_c": -1.62,
+            "clv_t_by_game": -9.7,
+            "settled": 4,
+            "pnl": 0.25,
+            "pnl_t_by_game": 0.02
+          }
+        }
+      },
+      "CBB TOTAL": {
+        "0-3": {
+          "plays": 2,
+          "games": 2,
+          "clv_n": 2,
+          "clv_games": 2,
+          "avg_clv_c": -3.77,
+          "clv_t_by_game": -1.07,
+          "settled": 2,
+          "pnl": -0.77,
+          "pnl_t_by_game": -0.07,
+          "sd_range": "0.00-0.18",
+          "inside_cap": true,
+          "adjusted": {
+            "plays": 2,
+            "games": 2,
+            "clv_n": 2,
+            "clv_games": 2,
+            "avg_clv_c": -3.77,
+            "clv_t_by_game": -1.07,
+            "settled": 2,
+            "pnl": -0.77,
+            "pnl_t_by_game": -0.07,
+            "dropped": 0,
+            "no_bias": 0
+          }
+        },
+        "3-6": {
+          "plays": 12,
+          "games": 9,
+          "clv_n": 12,
+          "clv_games": 9,
+          "avg_clv_c": -2.3,
+          "clv_t_by_game": -2.34,
+          "settled": 12,
+          "pnl": 4.15,
+          "pnl_t_by_game": 0.23,
+          "sd_range": "0.18-0.36",
+          "inside_cap": false,
+          "adjusted": {
+            "plays": 12,
+            "games": 9,
+            "clv_n": 12,
+            "clv_games": 9,
+            "avg_clv_c": -2.3,
+            "clv_t_by_game": -2.34,
+            "settled": 12,
+            "pnl": 4.15,
+            "pnl_t_by_game": 0.23,
+            "dropped": 0,
+            "no_bias": 0
+          }
+        },
+        "6-10.5": {
+          "plays": 26,
+          "games": 12,
+          "clv_n": 26,
+          "clv_games": 12,
+          "avg_clv_c": -1.8,
+          "clv_t_by_game": -3.59,
+          "settled": 26,
+          "pnl": 13.75,
+          "pnl_t_by_game": 0.57,
+          "sd_range": "0.36-0.64",
+          "inside_cap": false,
+          "adjusted": {
+            "plays": 26,
+            "games": 12,
+            "clv_n": 26,
+            "clv_games": 12,
+            "avg_clv_c": -1.8,
+            "clv_t_by_game": -3.59,
+            "settled": 26,
+            "pnl": 13.75,
+            "pnl_t_by_game": 0.57,
+            "dropped": 0,
+            "no_bias": 0
+          }
+        },
+        "10.5+": {
+          "plays": 33,
+          "games": 10,
+          "clv_n": 33,
+          "clv_games": 10,
+          "avg_clv_c": -2.67,
+          "clv_t_by_game": -4.29,
+          "settled": 33,
+          "pnl": 0.89,
+          "pnl_t_by_game": 0.03,
+          "sd_range": "0.64-inf",
+          "inside_cap": false,
+          "adjusted": {
+            "plays": 0,
+            "games": 0,
+            "clv_n": 0,
+            "clv_games": 0,
+            "avg_clv_c": null,
+            "clv_t_by_game": null,
+            "settled": 0,
+            "pnl": 0.0,
+            "pnl_t_by_game": null,
+            "dropped": 0,
+            "no_bias": 33
+          }
+        },
+        "_all": {
+          "raw": {
+            "plays": 73,
+            "games": 13,
+            "clv_n": 73,
+            "clv_games": 13,
+            "avg_clv_c": -2.33,
+            "clv_t_by_game": -2.9,
+            "settled": 73,
+            "pnl": 18.02,
+            "pnl_t_by_game": 0.28
+          },
+          "adjusted": {
+            "plays": 40,
+            "games": 12,
+            "clv_n": 40,
+            "clv_games": 12,
+            "avg_clv_c": -2.05,
+            "clv_t_by_game": -3.29,
+            "settled": 40,
+            "pnl": 17.13,
+            "pnl_t_by_game": 0.39
+          }
+        }
+      },
+      "CFB SPREAD": {
+        "0-3": {
+          "plays": 6,
+          "games": 6,
+          "clv_n": 0,
+          "clv_games": 0,
+          "avg_clv_c": null,
+          "clv_t_by_game": null,
+          "settled": 0,
+          "pnl": 0.0,
+          "pnl_t_by_game": null,
+          "sd_range": "0.00-0.19",
+          "inside_cap": true,
+          "adjusted": {
+            "plays": 2,
+            "games": 2,
+            "clv_n": 0,
+            "clv_games": 0,
+            "avg_clv_c": null,
+            "clv_t_by_game": null,
+            "settled": 0,
+            "pnl": 0.0,
+            "pnl_t_by_game": null,
+            "dropped": 4,
+            "no_bias": 0
+          }
+        },
+        "3-6": {
+          "plays": 7,
+          "games": 5,
+          "clv_n": 0,
+          "clv_games": 0,
+          "avg_clv_c": null,
+          "clv_t_by_game": null,
+          "settled": 0,
+          "pnl": 0.0,
+          "pnl_t_by_game": null,
+          "sd_range": "0.19-0.39",
+          "inside_cap": true,
+          "adjusted": {
+            "plays": 4,
+            "games": 3,
+            "clv_n": 0,
+            "clv_games": 0,
+            "avg_clv_c": null,
+            "clv_t_by_game": null,
+            "settled": 0,
+            "pnl": 0.0,
+            "pnl_t_by_game": null,
+            "dropped": 3,
+            "no_bias": 0
+          }
+        },
+        "6-10.5": {
+          "plays": 10,
+          "games": 6,
+          "clv_n": 0,
+          "clv_games": 0,
+          "avg_clv_c": null,
+          "clv_t_by_game": null,
+          "settled": 0,
+          "pnl": 0.0,
+          "pnl_t_by_game": null,
+          "sd_range": "0.39-0.68",
+          "inside_cap": false,
+          "adjusted": {
+            "plays": 1,
+            "games": 1,
+            "clv_n": 0,
+            "clv_games": 0,
+            "avg_clv_c": null,
+            "clv_t_by_game": null,
+            "settled": 0,
+            "pnl": 0.0,
+            "pnl_t_by_game": null,
+            "dropped": 9,
+            "no_bias": 0
+          }
+        },
+        "10.5+": {
+          "plays": 2,
+          "games": 1,
+          "clv_n": 0,
+          "clv_games": 0,
+          "avg_clv_c": null,
+          "clv_t_by_game": null,
+          "settled": 0,
+          "pnl": 0.0,
+          "pnl_t_by_game": null,
+          "sd_range": "0.68-inf",
+          "inside_cap": false,
+          "adjusted": {
+            "plays": 0,
+            "games": 0,
+            "clv_n": 0,
+            "clv_games": 0,
+            "avg_clv_c": null,
+            "clv_t_by_game": null,
+            "settled": 0,
+            "pnl": 0.0,
+            "pnl_t_by_game": null,
+            "dropped": 0,
+            "no_bias": 2
+          }
+        },
+        "_all": {
+          "raw": {
+            "plays": 25,
+            "games": 12,
+            "clv_n": 0,
+            "clv_games": 0,
+            "avg_clv_c": null,
+            "clv_t_by_game": null,
+            "settled": 0,
+            "pnl": 0.0,
+            "pnl_t_by_game": null
+          },
+          "adjusted": {
+            "plays": 7,
+            "games": 3,
+            "clv_n": 0,
+            "clv_games": 0,
+            "avg_clv_c": null,
+            "clv_t_by_game": null,
+            "settled": 0,
+            "pnl": 0.0,
+            "pnl_t_by_game": null
+          }
+        }
+      },
+      "CFB TOTAL": {
+        "0-3": {
+          "plays": 3,
+          "games": 2,
+          "clv_n": 0,
+          "clv_games": 0,
+          "avg_clv_c": null,
+          "clv_t_by_game": null,
+          "settled": 0,
+          "pnl": 0.0,
+          "pnl_t_by_game": null,
+          "sd_range": "0.00-0.18",
+          "inside_cap": true,
+          "adjusted": {
+            "plays": 3,
+            "games": 2,
+            "clv_n": 0,
+            "clv_games": 0,
+            "avg_clv_c": null,
+            "clv_t_by_game": null,
+            "settled": 0,
+            "pnl": 0.0,
+            "pnl_t_by_game": null,
+            "dropped": 0,
+            "no_bias": 0
+          }
+        },
+        "3-6": {
+          "plays": 5,
+          "games": 5,
+          "clv_n": 0,
+          "clv_games": 0,
+          "avg_clv_c": null,
+          "clv_t_by_game": null,
+          "settled": 0,
+          "pnl": 0.0,
+          "pnl_t_by_game": null,
+          "sd_range": "0.18-0.37",
+          "inside_cap": true,
+          "adjusted": {
+            "plays": 1,
+            "games": 1,
+            "clv_n": 0,
+            "clv_games": 0,
+            "avg_clv_c": null,
+            "clv_t_by_game": null,
+            "settled": 0,
+            "pnl": 0.0,
+            "pnl_t_by_game": null,
+            "dropped": 4,
+            "no_bias": 0
+          }
+        },
+        "6-10.5": {
+          "plays": 4,
+          "games": 3,
+          "clv_n": 0,
+          "clv_games": 0,
+          "avg_clv_c": null,
+          "clv_t_by_game": null,
+          "settled": 0,
+          "pnl": 0.0,
+          "pnl_t_by_game": null,
+          "sd_range": "0.37-0.65",
+          "inside_cap": false,
+          "adjusted": {
+            "plays": 0,
+            "games": 0,
+            "clv_n": 0,
+            "clv_games": 0,
+            "avg_clv_c": null,
+            "clv_t_by_game": null,
+            "settled": 0,
+            "pnl": 0.0,
+            "pnl_t_by_game": null,
+            "dropped": 4,
+            "no_bias": 0
+          }
+        },
+        "10.5+": {
+          "plays": 41,
+          "games": 23,
+          "clv_n": 4,
+          "clv_games": 2,
+          "avg_clv_c": -0.13,
+          "clv_t_by_game": 0.31,
+          "settled": 5,
+          "pnl": -8.28,
+          "pnl_t_by_game": -2.32,
+          "sd_range": "0.65-inf",
+          "inside_cap": false,
+          "adjusted": {
+            "plays": 0,
+            "games": 0,
+            "clv_n": 0,
+            "clv_games": 0,
+            "avg_clv_c": null,
+            "clv_t_by_game": null,
+            "settled": 0,
+            "pnl": 0.0,
+            "pnl_t_by_game": null,
+            "dropped": 0,
+            "no_bias": 41
+          }
+        },
+        "_all": {
+          "raw": {
+            "plays": 53,
+            "games": 25,
+            "clv_n": 4,
+            "clv_games": 2,
+            "avg_clv_c": -0.13,
+            "clv_t_by_game": 0.31,
+            "settled": 5,
+            "pnl": -8.28,
+            "pnl_t_by_game": -2.32
+          },
+          "adjusted": {
+            "plays": 4,
+            "games": 3,
+            "clv_n": 0,
+            "clv_games": 0,
+            "avg_clv_c": null,
+            "clv_t_by_game": null,
+            "settled": 0,
+            "pnl": 0.0,
+            "pnl_t_by_game": null
+          }
+        }
+      },
+      "NFL SPREAD": {
+        "0-3": {
+          "plays": 1,
+          "games": 1,
+          "clv_n": 0,
+          "clv_games": 0,
+          "avg_clv_c": null,
+          "clv_t_by_game": null,
+          "settled": 0,
+          "pnl": 0.0,
+          "pnl_t_by_game": null,
+          "sd_range": "0.00-0.23",
+          "inside_cap": true,
+          "adjusted": {
+            "plays": 1,
+            "games": 1,
+            "clv_n": 0,
+            "clv_games": 0,
+            "avg_clv_c": null,
+            "clv_t_by_game": null,
+            "settled": 0,
+            "pnl": 0.0,
+            "pnl_t_by_game": null,
+            "dropped": 0,
+            "no_bias": 0
+          }
+        },
+        "3-6": {
+          "plays": 4,
+          "games": 4,
+          "clv_n": 0,
+          "clv_games": 0,
+          "avg_clv_c": null,
+          "clv_t_by_game": null,
+          "settled": 0,
+          "pnl": 0.0,
+          "pnl_t_by_game": null,
+          "sd_range": "0.23-0.46",
+          "inside_cap": true,
+          "adjusted": {
+            "plays": 3,
+            "games": 3,
+            "clv_n": 0,
+            "clv_games": 0,
+            "avg_clv_c": null,
+            "clv_t_by_game": null,
+            "settled": 0,
+            "pnl": 0.0,
+            "pnl_t_by_game": null,
+            "dropped": 1,
+            "no_bias": 0
+          }
+        },
+        "6-10.5": {
+          "plays": 2,
+          "games": 2,
+          "clv_n": 0,
+          "clv_games": 0,
+          "avg_clv_c": null,
+          "clv_t_by_game": null,
+          "settled": 0,
+          "pnl": 0.0,
+          "pnl_t_by_game": null,
+          "sd_range": "0.46-0.80",
+          "inside_cap": true,
+          "adjusted": {
+            "plays": 2,
+            "games": 2,
+            "clv_n": 0,
+            "clv_games": 0,
+            "avg_clv_c": null,
+            "clv_t_by_game": null,
+            "settled": 0,
+            "pnl": 0.0,
+            "pnl_t_by_game": null,
+            "dropped": 0,
+            "no_bias": 0
+          }
+        },
+        "10.5+": {
+          "plays": 4,
+          "games": 4,
+          "clv_n": 0,
+          "clv_games": 0,
+          "avg_clv_c": null,
+          "clv_t_by_game": null,
+          "settled": 0,
+          "pnl": 0.0,
+          "pnl_t_by_game": null,
+          "sd_range": "0.80-inf",
+          "inside_cap": false,
+          "adjusted": {
+            "plays": 0,
+            "games": 0,
+            "clv_n": 0,
+            "clv_games": 0,
+            "avg_clv_c": null,
+            "clv_t_by_game": null,
+            "settled": 0,
+            "pnl": 0.0,
+            "pnl_t_by_game": null,
+            "dropped": 0,
+            "no_bias": 4
+          }
+        },
+        "_all": {
+          "raw": {
+            "plays": 11,
+            "games": 9,
+            "clv_n": 0,
+            "clv_games": 0,
+            "avg_clv_c": null,
+            "clv_t_by_game": null,
+            "settled": 0,
+            "pnl": 0.0,
+            "pnl_t_by_game": null
+          },
+          "adjusted": {
+            "plays": 6,
+            "games": 6,
+            "clv_n": 0,
+            "clv_games": 0,
+            "avg_clv_c": null,
+            "clv_t_by_game": null,
+            "settled": 0,
+            "pnl": 0.0,
+            "pnl_t_by_game": null
+          }
+        }
+      },
+      "NFL TOTAL": {
+        "0-3": {
+          "plays": 2,
+          "games": 1,
+          "clv_n": 0,
+          "clv_games": 0,
+          "avg_clv_c": null,
+          "clv_t_by_game": null,
+          "settled": 0,
+          "pnl": 0.0,
+          "pnl_t_by_game": null,
+          "sd_range": "0.00-0.23",
+          "inside_cap": true,
+          "adjusted": {
+            "plays": 2,
+            "games": 1,
+            "clv_n": 0,
+            "clv_games": 0,
+            "avg_clv_c": null,
+            "clv_t_by_game": null,
+            "settled": 0,
+            "pnl": 0.0,
+            "pnl_t_by_game": null,
+            "dropped": 0,
+            "no_bias": 0
+          }
+        },
+        "3-6": {
+          "plays": 1,
+          "games": 1,
+          "clv_n": 0,
+          "clv_games": 0,
+          "avg_clv_c": null,
+          "clv_t_by_game": null,
+          "settled": 0,
+          "pnl": 0.0,
+          "pnl_t_by_game": null,
+          "sd_range": "0.23-0.45",
+          "inside_cap": true,
+          "adjusted": {
+            "plays": 1,
+            "games": 1,
+            "clv_n": 0,
+            "clv_games": 0,
+            "avg_clv_c": null,
+            "clv_t_by_game": null,
+            "settled": 0,
+            "pnl": 0.0,
+            "pnl_t_by_game": null,
+            "dropped": 0,
+            "no_bias": 0
+          }
+        },
+        "6-10.5": {
+          "plays": 1,
+          "games": 1,
+          "clv_n": 0,
+          "clv_games": 0,
+          "avg_clv_c": null,
+          "clv_t_by_game": null,
+          "settled": 0,
+          "pnl": 0.0,
+          "pnl_t_by_game": null,
+          "sd_range": "0.45-0.79",
+          "inside_cap": true,
+          "adjusted": {
+            "plays": 1,
+            "games": 1,
+            "clv_n": 0,
+            "clv_games": 0,
+            "avg_clv_c": null,
+            "clv_t_by_game": null,
+            "settled": 0,
+            "pnl": 0.0,
+            "pnl_t_by_game": null,
+            "dropped": 0,
+            "no_bias": 0
+          }
+        },
+        "10.5+": {
+          "plays": 5,
+          "games": 5,
+          "clv_n": 0,
+          "clv_games": 0,
+          "avg_clv_c": null,
+          "clv_t_by_game": null,
+          "settled": 0,
+          "pnl": 0.0,
+          "pnl_t_by_game": null,
+          "sd_range": "0.79-inf",
+          "inside_cap": false,
+          "adjusted": {
+            "plays": 0,
+            "games": 0,
+            "clv_n": 0,
+            "clv_games": 0,
+            "avg_clv_c": null,
+            "clv_t_by_game": null,
+            "settled": 0,
+            "pnl": 0.0,
+            "pnl_t_by_game": null,
+            "dropped": 0,
+            "no_bias": 5
+          }
+        },
+        "_all": {
+          "raw": {
+            "plays": 9,
+            "games": 6,
+            "clv_n": 0,
+            "clv_games": 0,
+            "avg_clv_c": null,
+            "clv_t_by_game": null,
+            "settled": 0,
+            "pnl": 0.0,
+            "pnl_t_by_game": null
+          },
+          "adjusted": {
+            "plays": 4,
+            "games": 3,
+            "clv_n": 0,
+            "clv_games": 0,
+            "avg_clv_c": null,
+            "clv_t_by_game": null,
+            "settled": 0,
+            "pnl": 0.0,
+            "pnl_t_by_game": null
+          }
+        }
+      }
+    },
+    "by_sd": {
+      "CBB SPREAD": {
+        "0.25-0.5": {
+          "plays": 2,
+          "games": 1,
+          "clv_n": 2,
+          "clv_games": 1,
+          "avg_clv_c": -1.75,
+          "clv_t_by_game": null,
+          "settled": 2,
+          "pnl": 4.77,
+          "pnl_t_by_game": null
+        },
+        "0.75+": {
+          "plays": 4,
+          "games": 4,
+          "clv_n": 4,
+          "clv_games": 4,
+          "avg_clv_c": -1.7,
+          "clv_t_by_game": -9.5,
+          "settled": 4,
+          "pnl": -1.29,
+          "pnl_t_by_game": -0.14
+        }
+      },
+      "CBB TOTAL": {
+        "0-0.25": {
+          "plays": 4,
+          "games": 3,
+          "clv_n": 4,
+          "clv_games": 3,
+          "avg_clv_c": -1.6,
+          "clv_t_by_game": -0.61,
+          "settled": 4,
+          "pnl": -7.28,
+          "pnl_t_by_game": -0.57
+        },
+        "0.25-0.5": {
+          "plays": 21,
+          "games": 11,
+          "clv_n": 21,
+          "clv_games": 11,
+          "avg_clv_c": -2.19,
+          "clv_t_by_game": -3.1,
+          "settled": 21,
+          "pnl": 14.82,
+          "pnl_t_by_game": 0.61
+        },
+        "0.5-0.75": {
+          "plays": 21,
+          "games": 12,
+          "clv_n": 21,
+          "clv_games": 12,
+          "avg_clv_c": -1.81,
+          "clv_t_by_game": -2.39,
+          "settled": 21,
+          "pnl": 9.16,
+          "pnl_t_by_game": 0.41
+        },
+        "0.75+": {
+          "plays": 27,
+          "games": 9,
+          "clv_n": 27,
+          "clv_games": 9,
+          "avg_clv_c": -2.94,
+          "clv_t_by_game": -12.97,
+          "settled": 27,
+          "pnl": 1.32,
+          "pnl_t_by_game": 0.05
+        }
+      },
+      "CFB SPREAD": {
+        "0-0.25": {
+          "plays": 6,
+          "games": 6,
+          "clv_n": 0,
+          "clv_games": 0,
+          "avg_clv_c": null,
+          "clv_t_by_game": null,
+          "settled": 0,
+          "pnl": 0.0,
+          "pnl_t_by_game": null
+        },
+        "0.25-0.5": {
+          "plays": 10,
+          "games": 7,
+          "clv_n": 0,
+          "clv_games": 0,
+          "avg_clv_c": null,
+          "clv_t_by_game": null,
+          "settled": 0,
+          "pnl": 0.0,
+          "pnl_t_by_game": null
+        },
+        "0.5-0.75": {
+          "plays": 8,
+          "games": 5,
+          "clv_n": 0,
+          "clv_games": 0,
+          "avg_clv_c": null,
+          "clv_t_by_game": null,
+          "settled": 0,
+          "pnl": 0.0,
+          "pnl_t_by_game": null
+        },
+        "0.75+": {
+          "plays": 1,
+          "games": 1,
+          "clv_n": 0,
+          "clv_games": 0,
+          "avg_clv_c": null,
+          "clv_t_by_game": null,
+          "settled": 0,
+          "pnl": 0.0,
+          "pnl_t_by_game": null
+        }
+      },
+      "CFB TOTAL": {
+        "0-0.25": {
+          "plays": 3,
+          "games": 2,
+          "clv_n": 0,
+          "clv_games": 0,
+          "avg_clv_c": null,
+          "clv_t_by_game": null,
+          "settled": 0,
+          "pnl": 0.0,
+          "pnl_t_by_game": null
+        },
+        "0.25-0.5": {
+          "plays": 6,
+          "games": 5,
+          "clv_n": 0,
+          "clv_games": 0,
+          "avg_clv_c": null,
+          "clv_t_by_game": null,
+          "settled": 0,
+          "pnl": 0.0,
+          "pnl_t_by_game": null
+        },
+        "0.5-0.75": {
+          "plays": 6,
+          "games": 5,
+          "clv_n": 0,
+          "clv_games": 0,
+          "avg_clv_c": null,
+          "clv_t_by_game": null,
+          "settled": 0,
+          "pnl": 0.0,
+          "pnl_t_by_game": null
+        },
+        "0.75+": {
+          "plays": 38,
+          "games": 23,
+          "clv_n": 4,
+          "clv_games": 2,
+          "avg_clv_c": -0.13,
+          "clv_t_by_game": 0.31,
+          "settled": 5,
+          "pnl": -8.28,
+          "pnl_t_by_game": -2.32
+        }
+      },
+      "NFL SPREAD": {
+        "0-0.25": {
+          "plays": 1,
+          "games": 1,
+          "clv_n": 0,
+          "clv_games": 0,
+          "avg_clv_c": null,
+          "clv_t_by_game": null,
+          "settled": 0,
+          "pnl": 0.0,
+          "pnl_t_by_game": null
+        },
+        "0.25-0.5": {
+          "plays": 4,
+          "games": 4,
+          "clv_n": 0,
+          "clv_games": 0,
+          "avg_clv_c": null,
+          "clv_t_by_game": null,
+          "settled": 0,
+          "pnl": 0.0,
+          "pnl_t_by_game": null
+        },
+        "0.5-0.75": {
+          "plays": 2,
+          "games": 2,
+          "clv_n": 0,
+          "clv_games": 0,
+          "avg_clv_c": null,
+          "clv_t_by_game": null,
+          "settled": 0,
+          "pnl": 0.0,
+          "pnl_t_by_game": null
+        },
+        "0.75+": {
+          "plays": 4,
+          "games": 4,
+          "clv_n": 0,
+          "clv_games": 0,
+          "avg_clv_c": null,
+          "clv_t_by_game": null,
+          "settled": 0,
+          "pnl": 0.0,
+          "pnl_t_by_game": null
+        }
+      },
+      "NFL TOTAL": {
+        "0-0.25": {
+          "plays": 2,
+          "games": 1,
+          "clv_n": 0,
+          "clv_games": 0,
+          "avg_clv_c": null,
+          "clv_t_by_game": null,
+          "settled": 0,
+          "pnl": 0.0,
+          "pnl_t_by_game": null
+        },
+        "0.25-0.5": {
+          "plays": 1,
+          "games": 1,
+          "clv_n": 0,
+          "clv_games": 0,
+          "avg_clv_c": null,
+          "clv_t_by_game": null,
+          "settled": 0,
+          "pnl": 0.0,
+          "pnl_t_by_game": null
+        },
+        "0.5-0.75": {
+          "plays": 1,
+          "games": 1,
+          "clv_n": 0,
+          "clv_games": 0,
+          "avg_clv_c": null,
+          "clv_t_by_game": null,
+          "settled": 0,
+          "pnl": 0.0,
+          "pnl_t_by_game": null
+        },
+        "0.75+": {
+          "plays": 5,
+          "games": 5,
+          "clv_n": 0,
+          "clv_games": 0,
+          "avg_clv_c": null,
+          "clv_t_by_game": null,
+          "settled": 0,
+          "pnl": 0.0,
+          "pnl_t_by_game": null
+        }
+      }
+    },
+    "proposals": [],
+    "rules": {
+      "min_plays": 30,
+      "t": 2.0,
+      "plays": "SHARP shadow + held back for distance only"
     }
   },
   "trades": {
