@@ -25243,3 +25243,11 @@ snapshot_ts,league,event,ticker,side,price,fair,edge,sharp_line,odds_fetched_ts,
 2026-11-12T01:09:54Z,CFB,Northwestern vs Ohio St.: Total Points,KXNCAAFTOTAL-26NOV14NWOSU-55,YES,0.25,0.3001,0.0358,46.0,2026-11-12T00:31:26Z,rung far from sharp line (unvalidated range)
 2026-11-12T01:15:06Z,CFB,Wisconsin vs Maryland: Total Points,KXNCAAFTOTAL-26NOV14WISMD-24,NO,0.07,0.1146,0.0398,43.0,2026-11-12T00:31:26Z,rung far from sharp line (unvalidated range)
 2026-11-12T01:16:39Z,CFB,Northwestern vs Ohio St.: Spread,KXNCAAFSPREAD-26NOV14NWOSU-OSU5,NO,0.28,0.3265,0.0315,12.5,2026-11-12T00:31:26Z,rung far from sharp line (unvalidated range)
+2026-11-12T01:20:32Z,CFB,Northwestern vs Ohio St.: Spread,KXNCAAFSPREAD-26NOV14NWOSU-OSU4,NO,0.25,0.3079,0.0446,12.5,2026-11-12T00:31:26Z,rung far from sharp line (unvalidated range)
+2026-11-12T01:29:30Z,CFB,Northwestern vs Ohio St.: Spread,KXNCAAFSPREAD-26NOV14NWOSU-OSU5,NO,0.27,0.3265,0.0415,12.5,2026-11-12T00:31:26Z,rung far from sharp line (unvalidated range)
+2026-11-12T01:31:07Z,NFL,Buffalo vs New York J: Spread,KXNFLSPREAD-26NOV15BUFNYJ-BUF3,NO,0.25,0.2974,0.034,8.5,2026-11-12T00:00:51Z,sharp line stale
+2026-11-12T01:31:07Z,NFL,Buffalo vs New York J: Spread,KXNFLSPREAD-26NOV15BUFNYJ-NYJ2,YES,0.2,0.242,0.0303,-8.5,2026-11-12T00:00:51Z,sharp line stale
+2026-11-12T01:31:07Z,NFL,Seattle vs Las Vegas: Spread,KXNFLSPREAD-26NOV15SEALV-SEA21,YES,0.12,0.1711,0.0434,6.5,2026-11-12T00:00:51Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-12T01:31:07Z,NFL,Seattle vs Las Vegas: Spread,KXNFLSPREAD-26NOV15SEALV-SEA15,YES,0.24,0.2921,0.0384,6.5,2026-11-12T00:00:51Z,sharp line stale
+2026-11-12T01:31:07Z,NFL,Houston vs Cleveland: Total Points,KXNFLTOTAL-26NOV15HOUCLE-27,NO,0.1,0.1452,0.0388,40.5,2026-11-12T00:00:51Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-12T01:31:07Z,NFL,Los Angeles C vs Baltimore: Total Points,KXNFLTOTAL-26NOV16LACBAL-24,NO,0.09,0.1287,0.0327,38.5,2026-11-12T00:00:51Z,rung far from sharp line (unvalidated range); sharp line stale
