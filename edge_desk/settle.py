@@ -23,6 +23,7 @@ MODEL_FLAGS = (ROOT / "data" / "flags" / "model_flags.csv", ROOT / "data" / "fla
                ROOT / "data" / "flags" / "sharp_flags.csv", ROOT / "data" / "flags" / "sharp_shadow.csv",
                # held-back SHARP plays (#21b/#24) are graded too; they carry ticker + side, not leg1
                ROOT / "data" / "flags" / "sharp_tracked.csv")
+ODDS_LINES = ROOT / "data" / "odds" / "lines.csv"
 FINAL_STATUSES = {"finalized", "settled", "determined"}
 FINAL_RESULTS = {"yes", "no", "void"}   # void only counts once status is final
 
@@ -66,7 +67,10 @@ def run(now: datetime | None = None) -> pd.DataFrame:
     if not files:
         print("no flags yet; nothing to settle")
         return pd.DataFrame()
-    flags = pd.concat([pd.read_csv(f) for f in files], ignore_index=True)
+    from .grade import drop_unrecorded, recorded_pulls   # lazy: grade imports this module
+    pulls = recorded_pulls(ODDS_LINES)
+    # #56: rows the grader never counts (unrecorded sharp pull, #47) aren't fetched either
+    flags = pd.concat([drop_unrecorded(pd.read_csv(f), pulls) for f in files], ignore_index=True)
     old = pd.read_csv(RESULTS) if RESULTS.exists() else pd.DataFrame(columns=["ticker"])
     pending = sorted(flag_tickers(flags) - final_tickers(old))
     ts = (now or datetime.now(timezone.utc)).strftime("%Y-%m-%dT%H:%M:%SZ")
