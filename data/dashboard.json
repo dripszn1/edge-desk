@@ -1,16 +1,16 @@
 {
-  "generated_ts": "2026-11-13T07:47:45Z",
-  "generated_ct": "Fri Nov 13, 1:47 AM CT",
+  "generated_ts": "2026-11-13T09:54:06Z",
+  "generated_ct": "Fri Nov 13, 3:54 AM CT",
   "today_ct": "2026-11-13",
   "snapshot": {
-    "ts": "2026-11-13T07:45:59Z",
-    "ct": "Fri Nov 13, 1:45 AM CT",
+    "ts": "2026-11-13T09:52:13Z",
+    "ct": "Fri Nov 13, 3:52 AM CT",
     "stale": false,
-    "markets_scanned": 7681,
+    "markets_scanned": 7702,
     "kickoff_source": "kalshi occurrence_datetime - 3h",
     "phases": {
       "CBB": {
-        "pregame": 1913
+        "pregame": 1934
       },
       "CFB": {
         "pregame": 5094
@@ -64,7 +64,7 @@
     "max_bet": 10.0
   },
   "signals": {
-    "weekly_ct": "Fri Nov 13, 1:46 AM CT",
+    "weekly_ct": "Fri Nov 13, 3:52 AM CT",
     "scorecards": [
       {
         "name": "SHARP shadow football",
@@ -292,7 +292,7 @@
         "contract": "Duke wins by over 47.5 points",
         "max_price": 0.36,
         "stake": 2.26,
-        "gone": false,
+        "gone": true,
         "sent_ct": "Thu Nov 12, 10:09 PM CT",
         "kickoff_utc": "2026-11-14T01:00:00Z",
         "kickoff_ct": "Fri Nov 13, 7:00 PM CT",

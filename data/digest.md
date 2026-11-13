@@ -1,7 +1,11 @@
-# edge-desk digest, Fri Nov 13, 1:47 AM CT
+# edge-desk digest, Fri Nov 13, 3:54 AM CT
 
 Paper only, nothing is placed. Plays kicking off in the next 36h:
 - SHARP shadow: James Madison vs UConn | NO James Madison wins by over 3.5 points @ 47¢, fair 53¢, edge 4.3¢ after fees | $3.90 paper | Sat Nov 14, 11:00 AM CT | [Kalshi](https://kalshi.com/markets/kxncaafspread/event/kxncaafspread-26nov14jmuconn)
+- SHARP shadow: Texas vs LSU | NO LSU wins by over 3.5 points @ 48¢, fair 53¢, edge 3.2¢ after fees | $2.99 paper | Sat Nov 14, 2:00 PM CT | [Kalshi](https://kalshi.com/markets/kxncaafspread/event/kxncaafspread-26nov14texlsu)
+- SHARP shadow: Missouri vs Georgia | NO Over 42.5 points @ 34¢, fair 39¢, edge 3.4¢ after fees | $2.14 paper | Sat Nov 14, 2:30 PM CT | [Kalshi](https://kalshi.com/markets/kxncaaftotal/event/kxncaaftotal-26nov14mizzuga)
+- SHARP shadow: Georgia Southern vs Georgia St. | NO Over 53.5 points @ 40¢, fair 45¢, edge 3.3¢ after fees | $2.51 paper | Sat Nov 14, 2:30 PM CT | [Kalshi](https://kalshi.com/markets/kxncaaftotal/event/kxncaaftotal-26nov14gasogast)
+- SHARP shadow: Georgia Southern vs Georgia St. | NO Georgia Southern wins by over 1.5 points @ 35¢, fair 40¢, edge 3.2¢ after fees | $2.20 paper | Sat Nov 14, 2:30 PM CT | [Kalshi](https://kalshi.com/markets/kxncaafspread/event/kxncaafspread-26nov14gasogast)
 
 Settled in the last 24h:
 - MODEL shadow: 1-4, $-0.67 after fees (running 2-6, $-0.95)
@@ -13,4 +17,4 @@ Settled in the last 24h:
   vs Kalshi close after fee: shadow CBB -3.0c (0% of 4, 4 games) · shadow football -0.9c (60% of 5, 4 games) · held back CBB -2.4c (11% of 137, 26 games) · held back football -1.6c (29% of 7, 4 games)
   exits compared: football (13 done): hold $-26.58, sell at tip $-3.17, auto-sell at fair $+3.23, auto-sell +10c $+9.02 · CBB (141 done): hold $-7.53, sell at tip $-63.85, auto-sell at fair $-100.95, auto-sell +10c $-76.09
 
-Status: Kalshi data 2m old (ok); sharp odds 2m old; odds credits left 19661 of 20000; gates: MODEL NFL closed, MODEL CFB closed, SHARP NFL closed, SHARP CFB closed, SHARP CBB closed, SHARP NFL ML closed, SHARP CFB ML closed, SHARP CBB ML closed
+Status: Kalshi data 2m old (ok); sharp odds 2m old; odds credits left 19655 of 20000; gates: MODEL NFL closed, MODEL CFB closed, SHARP NFL closed, SHARP CFB closed, SHARP CBB closed, SHARP NFL ML closed, SHARP CFB ML closed, SHARP CBB ML closed
