@@ -56,7 +56,6 @@ jobs:
         env:
           CFBD_API_KEY: ${{ secrets.CFBD_API_KEY }}
         continue-on-error: true
-        continue-on-error: true
       - name: Model walk-forward backtests (weekly per league; sets each league's gate)
         if: steps.fresh.outputs.skip != 'true'
         run: python -m edge_desk.backtest --if-stale NFL CFB
