@@ -32242,348 +32242,372 @@ game_id,season,kickoff_utc,home_team,away_team,home_score,away_score,spread_line
 374515,2027,2026-11-03T03:00:00Z,Oregon,Montana,87.0,69.0,19.25,151.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
 377911,2027,2026-11-03T03:30:00Z,USC,Milwaukee,95.0,63.0,26.5,159.0,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
 374554,2027,2026-11-03T04:59:00Z,Hawai'i,Seattle U,74.0,73.0,1.5,142.5,Draft Kings,median:1,2026-11-12T17:51:30Z
-372673,2027,2026-11-03T23:00:00Z,Tennessee,Wofford,90.0,59.0,25.25,155.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374601,2027,2026-11-04T00:00:00Z,Kentucky,Manhattan,85.0,57.0,33.25,158.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374596,2027,2026-11-04T00:00:00Z,Duquesne,Purdue Fort Wayne,78.0,71.0,9.5,153.5,Draft Kings,median:1,2026-11-12T17:51:30Z
-374599,2027,2026-11-04T00:00:00Z,South Carolina,Stetson,81.0,55.0,19.0,149.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374610,2027,2026-11-04T00:00:00Z,Virginia Tech,Coppin State,88.0,54.0,31.5,150.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374606,2027,2026-11-04T00:00:00Z,Georgia Tech,Hampton,75.0,55.0,13.75,148.25,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374611,2027,2026-11-04T00:00:00Z,Rhode Island,Holy Cross,103.0,59.0,19.5,147.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-372672,2027,2026-11-04T00:00:00Z,Boston College,Wagner,76.0,50.0,20.5,143.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374605,2027,2026-11-04T00:30:00Z,Virginia,Drexel,89.0,60.0,31.75,142.75,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-372674,2027,2026-11-04T00:30:00Z,Alabama,Sam Houston,96.0,74.0,27.25,172.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-377937,2027,2026-11-04T01:00:00Z,Arkansas,Arkansas-Pine Bluff,106.0,61.0,41.75,167.0,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374603,2027,2026-11-04T01:00:00Z,Texas A&M,Alabama State,97.0,66.0,32.5,163.25,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-372671,2027,2026-11-04T01:00:00Z,Kansas State,South Dakota State,66.0,68.0,10.75,159.25,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374600,2027,2026-11-04T01:00:00Z,LSU,New Orleans,100.0,57.0,27.5,160.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374602,2027,2026-11-04T01:00:00Z,Missouri,Cleveland State,111.0,50.0,26.5,160.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374604,2027,2026-11-04T01:00:00Z,Iowa,Lipscomb,76.0,54.0,23.25,149.25,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374607,2027,2026-11-04T03:00:00Z,San Diego State,Cal State Fullerton,102.0,78.0,13.5,154.5,Draft Kings,median:1,2026-11-12T17:51:30Z
-374598,2027,2026-11-04T03:00:00Z,UNLV,Northern Arizona,89.0,77.0,20.75,153.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374615,2027,2026-11-04T03:00:00Z,California Baptist,North Florida,63.0,71.0,10.75,155.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374627,2027,2026-11-05T00:00:00Z,High Point,Maryland Eastern Shore,63.0,49.0,34.5,146.5,Draft Kings,median:1,2026-11-12T17:51:30Z
-374628,2027,2026-11-05T00:00:00Z,Saint Joseph's,Longwood,82.0,73.0,11.5,152.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-372675,2027,2026-11-05T00:00:00Z,Butler,Fairleigh Dickinson,99.0,65.0,28.75,156.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374633,2027,2026-11-05T00:30:00Z,Wichita State,Cal State Northridge,79.0,67.0,15.5,162.25,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374619,2027,2026-11-05T01:00:00Z,Auburn,SE Louisiana,92.0,59.0,29.5,149.25,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-377944,2027,2026-11-05T01:00:00Z,South Dakota,Northern Kentucky,94.0,102.0,-2.25,163.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374620,2027,2026-11-05T02:00:00Z,California,Radford,84.0,70.0,16.25,157.25,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374634,2027,2026-11-05T03:00:00Z,Loyola Marymount,Queens University,95.0,96.0,6.5,162.5,Draft Kings,median:1,2026-11-12T17:51:30Z
-374621,2027,2026-11-05T03:00:00Z,Santa Clara,Milwaukee,95.0,72.0,16.5,162.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374622,2027,2026-11-05T03:00:00Z,Saint Mary's,North Dakota State,105.0,64.0,12.5,148.5,Draft Kings,median:1,2026-11-12T17:51:30Z
-374639,2027,2026-11-05T22:00:00Z,North Texas,McNeese,77.0,67.0,-1.75,138.75,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-372683,2027,2026-11-05T23:00:00Z,Vanderbilt,Wake Forest,74.0,51.0,17.75,155.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374655,2027,2026-11-05T23:00:00Z,Penn State,Chattanooga,97.0,93.0,12.5,159.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-372676,2027,2026-11-05T23:00:00Z,Indiana,Bellarmine,92.0,69.0,30.25,153.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374651,2027,2026-11-05T23:30:00Z,Seton Hall,Long Island University,67.0,60.0,17.5,135.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374643,2027,2026-11-06T00:00:00Z,Quinnipiac,Bryant,66.0,56.0,6.5,148.75,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374658,2027,2026-11-06T00:00:00Z,Princeton,Hofstra,60.0,58.0,2.75,137.75,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374638,2027,2026-11-06T00:00:00Z,Alcorn State,Howard,83.0,94.0,-9.5,149.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374636,2027,2026-11-06T00:00:00Z,Charlotte,Georgia State,77.0,67.0,11.5,143.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374661,2027,2026-11-06T00:00:00Z,Sacred Heart,Maine,72.0,74.0,5.75,142.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374666,2027,2026-11-06T00:00:00Z,Fairfield,Vermont,67.0,79.0,-1.5,139.25,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374649,2027,2026-11-06T00:00:00Z,Virginia Tech,Mercer,96.0,67.0,20.5,154.25,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374652,2027,2026-11-06T00:00:00Z,Incarnate Word,Chicago State,54.0,66.0,8.5,143.0,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-372679,2027,2026-11-06T00:00:00Z,Saint Peter's,Binghamton,55.0,58.0,7.5,136.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-372684,2027,2026-11-06T00:00:00Z,Syracuse,Central Connecticut,102.0,49.0,23.25,135.25,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-372685,2027,2026-11-06T00:00:00Z,Pittsburgh,Buffalo,80.0,61.0,17.5,150.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374665,2027,2026-11-06T00:00:00Z,Iona,NJIT,72.0,49.0,9.75,146.25,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374645,2027,2026-11-06T00:00:00Z,Manhattan,UAlbany,68.0,72.0,3.5,147.5,Draft Kings,median:1,2026-11-12T17:51:30Z
-374664,2027,2026-11-06T00:00:00Z,Marist,UMBC,88.0,80.0,4.5,136.5,Draft Kings,median:1,2026-11-12T17:51:30Z
-374650,2027,2026-11-06T00:00:00Z,Notre Dame,Mercyhurst,83.0,56.0,21.5,137.25,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374641,2027,2026-11-06T00:00:00Z,Cincinnati,Green Bay,81.0,64.0,24.0,152.75,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374659,2027,2026-11-06T00:00:00Z,Lehigh,Cornell,71.0,64.0,-0.25,159.75,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374662,2027,2026-11-06T00:00:00Z,Rider,New Hampshire,55.0,66.0,-1.5,141.25,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374644,2027,2026-11-06T00:00:00Z,Merrimack,UMass Lowell,61.0,71.0,9.5,140.0,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374663,2027,2026-11-06T00:00:00Z,Navy,Delaware State,66.0,60.0,9.5,136.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374653,2027,2026-11-06T00:30:00Z,Tulane,Jackson State,85.0,87.0,12.25,152.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-372681,2027,2026-11-06T00:30:00Z,Fordham,Stonehill,83.0,63.0,20.25,141.25,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-372690,2027,2026-11-06T00:30:00Z,Mississippi State,Northwestern State,82.0,44.0,21.5,151.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374654,2027,2026-11-06T01:00:00Z,SMU,VMI,95.0,70.0,24.75,160.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-377899,2027,2026-11-06T01:00:00Z,South Alabama,Jacksonville State,83.0,80.0,4.75,140.0,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374668,2027,2026-11-06T01:00:00Z,Rice,East Texas A&M,71.0,72.0,3.5,145.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374648,2027,2026-11-06T01:00:00Z,Tulsa,Northern Illinois,94.0,75.0,14.25,154.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-372680,2027,2026-11-06T01:00:00Z,Loyola Chicago,West Georgia,76.0,53.0,17.5,145.25,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-372688,2027,2026-11-06T01:00:00Z,Creighton,Le Moyne,83.0,55.0,29.25,156.25,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-372691,2027,2026-11-06T01:00:00Z,Florida,Jacksonville,88.0,57.0,37.0,156.0,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-372686,2027,2026-11-06T01:00:00Z,Duke,Coastal Carolina,113.0,52.0,40.75,149.75,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374637,2027,2026-11-06T01:00:00Z,Michigan State,Toledo,91.0,61.0,26.25,155.0,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-372689,2027,2026-11-06T01:00:00Z,Texas,Gardner-Webb,98.0,50.0,41.25,154.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-372687,2027,2026-11-06T01:30:00Z,DePaul,South Florida,82.0,80.0,6.5,149.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-372677,2027,2026-11-06T01:30:00Z,Illinois,Pennsylvania,112.0,70.0,29.75,172.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374642,2027,2026-11-06T02:00:00Z,Utah,Towson,67.0,57.0,8.5,137.25,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374646,2027,2026-11-06T02:00:00Z,Texas Tech,Bethune-Cookman,76.0,58.0,29.75,149.75,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-372682,2027,2026-11-06T03:30:00Z,Arizona,Cal Poly,104.0,84.0,30.75,174.25,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-372706,2027,2026-11-06T21:00:00Z,Boston College,Massachusetts,71.0,55.0,5.25,143.75,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374675,2027,2026-11-06T22:00:00Z,Florida International,West Florida,85.0,75.0,16.25,163.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-372712,2027,2026-11-06T22:00:00Z,Baylor,Arkansas-Pine Bluff,109.0,53.0,38.25,163.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374697,2027,2026-11-06T22:00:00Z,Virginia,Northeastern,97.0,72.0,33.75,159.75,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374695,2027,2026-11-06T23:00:00Z,Oregon,Eastern Washington,98.0,71.0,16.25,149.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374709,2027,2026-11-06T23:30:00Z,South Carolina Upstate,South Carolina State,70.0,78.0,3.5,148.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374673,2027,2026-11-06T23:30:00Z,Purdue,Valparaiso,80.0,83.0,19.5,144.25,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-372695,2027,2026-11-06T23:30:00Z,Ohio State,Youngstown State,89.0,65.0,25.5,154.0,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374699,2027,2026-11-07T00:00:00Z,Georgia Tech,Georgia Southern,95.0,83.0,16.75,160.25,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374712,2027,2026-11-07T00:00:00Z,Mount St. Mary's,Loyola Maryland,68.0,57.0,6.25,148.25,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374705,2027,2026-11-07T00:00:00Z,Kennesaw State,Austin Peay,71.0,69.0,5.75,161.25,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-372697,2027,2026-11-07T00:00:00Z,North Carolina,Wofford,109.0,70.0,20.5,155.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-372698,2027,2026-11-07T00:00:00Z,Clemson,American University,82.0,73.0,15.75,141.75,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-372713,2027,2026-11-07T00:00:00Z,Brown,Boston University,67.0,72.0,1.75,144.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-372699,2027,2026-11-07T00:00:00Z,Saint Louis,Missouri,90.0,84.0,-2.5,161.75,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374682,2027,2026-11-07T00:00:00Z,UCF,Yale,87.0,75.0,9.5,152.5,Draft Kings,median:1,2026-11-12T17:51:30Z
-374687,2027,2026-11-07T00:00:00Z,Villanova,Holy Cross,95.0,66.0,34.5,151.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374688,2027,2026-11-07T00:00:00Z,Elon,UNC Greensboro,74.0,65.0,8.75,150.75,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374672,2027,2026-11-07T00:00:00Z,Rutgers,New Haven,81.0,54.0,24.5,137.75,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374681,2027,2026-11-07T00:00:00Z,West Virginia,Stetson,91.0,53.0,27.25,140.0,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374700,2027,2026-11-07T00:00:00Z,George Mason,Coppin State,68.0,51.0,28.5,140.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374704,2027,2026-11-07T00:00:00Z,NC State,East Tennessee State,77.0,63.0,17.5,152.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-372701,2027,2026-11-07T00:00:00Z,Ball State,Indiana State,66.0,69.0,1.75,146.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-372707,2027,2026-11-07T00:00:00Z,Xavier,Eastern Michigan,76.0,53.0,23.5,151.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-372710,2027,2026-11-07T00:00:00Z,Georgia,Presbyterian,91.0,77.0,24.25,157.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374680,2027,2026-11-07T00:00:00Z,Kentucky,James Madison,89.0,80.0,23.75,156.25,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-372705,2027,2026-11-07T00:00:00Z,Florida State,Troy,91.0,68.0,22.5,158.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374708,2027,2026-11-07T00:30:00Z,Wright State,Florida Atlantic,97.0,71.0,4.25,156.25,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374691,2027,2026-11-07T00:30:00Z,Wisconsin,Delaware,73.0,64.0,25.75,155.75,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-372711,2027,2026-11-07T00:30:00Z,Alabama,Arkansas State,101.0,86.0,25.75,178.25,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374703,2027,2026-11-07T00:30:00Z,UAB,Nicholls,70.0,63.0,15.25,158.25,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-377963,2027,2026-11-07T01:00:00Z,UIC,Robert Morris,79.0,56.0,10.5,142.75,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374679,2027,2026-11-07T01:00:00Z,LSU,Texas Southern,92.0,51.0,36.0,161.25,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-372696,2027,2026-11-07T01:00:00Z,Minnesota,St. Thomas-Minnesota,76.0,62.0,14.5,149.5,Draft Kings,median:1,2026-11-12T17:51:30Z
-374714,2027,2026-11-07T01:00:00Z,Louisiana,Texas A&M-Corpus Christi,60.0,67.0,3.5,130.5,Draft Kings,median:1,2026-11-12T17:51:30Z
-374692,2027,2026-11-07T01:00:00Z,Texas A&M,Northern Kentucky,104.0,67.0,27.25,171.0,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-372704,2027,2026-11-07T01:00:00Z,Iowa State,Southern Miss,83.0,57.0,31.25,145.75,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374693,2027,2026-11-07T01:00:00Z,Northwestern,Stony Brook,78.0,65.0,12.0,144.25,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374701,2027,2026-11-07T01:00:00Z,TCU,Southern,106.0,54.0,26.5,152.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-372708,2027,2026-11-07T01:00:00Z,Marquette,Detroit Mercy,93.0,32.0,32.25,154.75,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-372709,2027,2026-11-07T01:00:00Z,Oklahoma,Mississippi Valley State,84.0,57.0,40.5,152.25,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374696,2027,2026-11-07T01:00:00Z,UConn,Michigan,85.0,77.0,7.5,143.25,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374694,2027,2026-11-07T01:30:00Z,Iowa,Eastern Illinois,91.0,47.0,34.75,134.75,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374678,2027,2026-11-07T01:30:00Z,Wyoming,Idaho State,93.0,62.0,18.5,146.25,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374706,2027,2026-11-07T01:30:00Z,Ole Miss,Central Arkansas,92.0,60.0,17.25,154.25,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374674,2027,2026-11-07T02:00:00Z,Colorado State,Idaho,78.0,67.0,16.0,151.25,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374684,2027,2026-11-07T02:00:00Z,Arizona State,Northern Colorado,90.0,63.0,19.5,143.75,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374683,2027,2026-11-07T02:00:00Z,BYU,Omaha,108.0,67.0,33.25,161.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374686,2027,2026-11-07T02:00:00Z,Miami,Wagner,83.0,57.0,38.5,145.0,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-372703,2027,2026-11-07T02:00:00Z,Kansas,Middle Tennessee,89.0,45.0,28.5,157.25,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374702,2027,2026-11-07T02:00:00Z,Oklahoma State,Queens University,118.0,68.0,17.5,178.5,Draft Kings,median:1,2026-11-12T17:51:30Z
-372702,2027,2026-11-07T02:00:00Z,Kansas State,Cal State Northridge,95.0,78.0,11.25,164.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374690,2027,2026-11-07T02:15:00Z,Kansas City,Southern Illinois,100.0,93.0,-1.5,143.5,Draft Kings,median:1,2026-11-12T17:51:30Z
-377966,2027,2026-11-07T02:30:00Z,UT Arlington,Portland,89.0,85.0,-2.25,150.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374698,2027,2026-11-07T02:30:00Z,Oregon State,California Baptist,96.0,68.0,20.5,157.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374707,2027,2026-11-07T02:30:00Z,San Diego,Tarleton State,96.0,90.0,7.5,148.0,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374685,2027,2026-11-07T03:00:00Z,Stanford,Oakland,81.0,63.0,14.25,146.75,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374689,2027,2026-11-07T03:00:00Z,San Francisco,North Dakota State,79.0,70.0,8.5,146.0,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374676,2027,2026-11-07T03:30:00Z,UCLA,North Florida,114.0,63.0,32.5,156.25,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374734,2027,2026-11-07T17:00:00Z,Louisville,Morehead State,107.0,57.0,37.5,151.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374739,2027,2026-11-07T17:00:00Z,Winthrop,North Dakota,90.0,93.0,9.5,159.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374726,2027,2026-11-07T18:00:00Z,Ohio,North Carolina A&T,80.0,70.0,13.5,161.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374735,2027,2026-11-07T19:00:00Z,Abilene Christian,Lamar,83.0,81.0,0.5,165.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374745,2027,2026-11-07T19:00:00Z,South Dakota,Cal State Fullerton,85.0,87.0,1.5,175.5,Draft Kings,median:1,2026-11-12T17:51:30Z
-374740,2027,2026-11-07T19:00:00Z,East Carolina,UNC Wilmington,75.0,78.0,-4.5,150.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374727,2027,2026-11-07T19:00:00Z,Marshall,Toledo,76.0,81.0,2.0,158.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374729,2027,2026-11-07T19:00:00Z,Drexel,Colgate,77.0,74.0,-0.0,143.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374733,2027,2026-11-07T20:00:00Z,Memphis,VCU,89.0,88.0,-2.5,159.0,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374743,2027,2026-11-07T20:00:00Z,Longwood,North Carolina Central,80.0,75.0,12.0,149.0,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374742,2027,2026-11-07T20:00:00Z,Montana State,Long Beach State,83.0,70.0,10.5,147.0,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374731,2027,2026-11-07T20:30:00Z,La Salle,Long Island University,88.0,80.0,4.5,148.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-372718,2027,2026-11-07T20:30:00Z,San Diego State,Colorado,77.0,66.0,3.0,153.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374730,2027,2026-11-07T21:00:00Z,Rhode Island,Monmouth,84.0,66.0,6.5,145.0,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374724,2027,2026-11-07T21:00:00Z,UNLV,Samford,88.0,79.0,11.0,157.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374744,2027,2026-11-07T21:00:00Z,Saint Joseph's,Lafayette,67.0,57.0,17.0,147.0,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-377971,2027,2026-11-07T21:00:00Z,Utah State,Omaha,90.0,56.0,28.0,153.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-377972,2027,2026-11-07T21:00:00Z,UC Santa Barbara,Oakland,90.0,67.0,13.0,150.0,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-377968,2027,2026-11-07T22:00:00Z,Gonzaga,New Mexico State,109.0,68.0,29.0,151.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374748,2027,2026-11-07T22:00:00Z,IU Indianapolis,UT Martin,75.0,74.0,-2.0,166.0,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374716,2027,2026-11-07T22:00:00Z,UTSA,VMI,70.0,68.0,5.0,164.0,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374717,2027,2026-11-07T22:00:00Z,Furman,Northern Iowa,98.0,83.0,5.0,149.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374723,2027,2026-11-07T22:00:00Z,Bucknell,Old Dominion,62.0,82.0,-5.0,142.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374749,2027,2026-11-07T22:00:00Z,Lipscomb,SIU Edwardsville,78.0,77.0,7.0,144.0,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374750,2027,2026-11-07T22:00:00Z,High Point,Washington State,83.0,71.0,12.5,155.0,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-372717,2027,2026-11-07T22:00:00Z,Miami (OH),Bellarmine,80.0,73.0,19.5,159.0,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374752,2027,2026-11-07T22:30:00Z,UNC Asheville,Western Carolina,75.0,83.0,-3.0,151.0,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374751,2027,2026-11-07T22:30:00Z,UT Rio Grande Valley,Prairie View A&M,68.0,63.0,8.5,149.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-377974,2027,2026-11-07T23:00:00Z,George Washington,Hampton,75.0,61.0,20.0,147.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374725,2027,2026-11-07T23:00:00Z,New Mexico,Northern Arizona,94.0,65.0,27.5,156.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374753,2027,2026-11-07T23:30:00Z,Niagara,Morgan State,67.0,73.0,3.5,149.0,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374722,2027,2026-11-08T00:00:00Z,Houston Christian,Western Illinois,74.0,67.0,9.5,138.0,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374754,2027,2026-11-08T00:00:00Z,Davidson,Mercer,88.0,76.0,11.5,148.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-372715,2027,2026-11-08T00:00:00Z,Canisius,St. Bonaventure,49.0,88.0,-9.0,148.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-372716,2027,2026-11-08T00:00:00Z,Dayton,Northern Illinois,76.0,81.0,19.5,147.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-372719,2027,2026-11-08T00:00:00Z,Providence,Nebraska,58.0,67.0,-2.5,158.0,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374756,2027,2026-11-08T00:30:00Z,UC Riverside,Denver,64.0,60.0,1.5,155.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-372720,2027,2026-11-08T00:30:00Z,Georgetown,Maryland,86.0,74.0,-3.5,146.5,Draft Kings,median:1,2026-11-12T17:51:30Z
-374720,2027,2026-11-08T01:00:00Z,Murray State,Northwestern State,93.0,71.0,23.0,154.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374755,2027,2026-11-08T01:00:00Z,Evansville,Southern Indiana,78.0,76.0,7.5,143.5,Draft Kings,median:1,2026-11-12T17:51:30Z
-374728,2027,2026-11-08T01:00:00Z,Little Rock,SE Louisiana,79.0,83.0,8.0,146.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374737,2027,2026-11-08T01:00:00Z,Bradley,Pacific,52.0,63.0,1.5,141.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-372721,2027,2026-11-08T01:00:00Z,Grand Canyon,Bethune-Cookman,99.0,81.0,22.0,154.0,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374757,2027,2026-11-08T02:00:00Z,Weber State,Utah Valley,93.0,101.0,-7.0,156.0,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374738,2027,2026-11-08T03:00:00Z,Seattle U,Portland State,79.0,60.0,10.5,144.0,Draft Kings,median:1,2026-11-12T17:51:30Z
-374736,2027,2026-11-08T03:00:00Z,Santa Clara,Sacramento State,83.0,77.0,20.0,169.0,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374758,2027,2026-11-08T03:00:00Z,UC San Diego,Fresno State,81.0,65.0,10.5,151.5,Draft Kings,median:1,2026-11-12T17:51:30Z
-372714,2027,2026-11-08T03:00:00Z,UC Irvine,San José State,91.0,79.0,8.5,146.5,Draft Kings,median:1,2026-11-12T17:51:30Z
-374760,2027,2026-11-08T17:00:00Z,St. John's,Iona,104.0,65.0,27.5,150.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374762,2027,2026-11-08T18:00:00Z,South Carolina,Southeast Missouri State,78.0,68.0,17.5,144.5,Draft Kings,median:1,2026-11-12T17:51:30Z
-374771,2027,2026-11-08T18:00:00Z,UMass Lowell,Marist,63.0,61.0,1.5,141.5,Draft Kings,median:1,2026-11-12T17:51:30Z
-374764,2027,2026-11-08T18:00:00Z,New Hampshire,Sacred Heart,76.0,81.0,1.5,145.5,Draft Kings,median:1,2026-11-12T17:51:30Z
-374770,2027,2026-11-08T18:00:00Z,Siena,Princeton,82.0,68.0,-0.75,154.75,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374773,2027,2026-11-08T18:00:00Z,Virginia,Arkansas,91.0,72.0,3.75,162.25,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374777,2027,2026-11-08T18:00:00Z,Maine,Manhattan,62.0,68.0,2.5,136.5,Draft Kings,median:1,2026-11-12T17:51:30Z
-374765,2027,2026-11-08T18:00:00Z,Bryant,Fairfield,59.0,68.0,-1.5,145.5,Draft Kings,median:1,2026-11-12T17:51:30Z
-372723,2027,2026-11-08T19:00:00Z,Lehigh,Brown,55.0,65.0,5.5,138.5,Draft Kings,median:1,2026-11-12T17:51:30Z
-374767,2027,2026-11-08T19:00:00Z,Western Michigan,Campbell,87.0,71.0,4.5,150.25,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374780,2027,2026-11-08T19:00:00Z,Dartmouth,Central Connecticut,71.0,78.0,8.5,140.5,Draft Kings,median:1,2026-11-12T17:51:30Z
-372726,2027,2026-11-08T19:00:00Z,Boise State,Butler,100.0,81.0,2.5,158.25,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374763,2027,2026-11-08T19:00:00Z,UAlbany,Merrimack,60.0,73.0,-2.5,135.5,Draft Kings,median:1,2026-11-12T17:51:30Z
-374778,2027,2026-11-08T19:00:00Z,St. Thomas-Minnesota,Green Bay,67.0,76.0,7.5,149.5,Draft Kings,median:1,2026-11-12T17:51:30Z
-374779,2027,2026-11-08T19:00:00Z,Vermont,Quinnipiac,76.0,79.0,8.5,138.5,Draft Kings,median:1,2026-11-12T17:51:30Z
-377977,2027,2026-11-08T20:00:00Z,Drake,Southern,75.0,68.0,14.5,151.5,Draft Kings,median:1,2026-11-12T17:51:30Z
-374781,2027,2026-11-08T20:00:00Z,Tennessee Tech,Western Kentucky,97.0,94.0,-3.5,163.0,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-372727,2027,2026-11-08T20:00:00Z,Air Force,Idaho State,89.0,82.0,5.75,161.0,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374766,2027,2026-11-08T21:00:00Z,NJIT,Saint Peter's,54.0,52.0,-1.5,133.5,Draft Kings,median:1,2026-11-12T17:51:30Z
-372728,2027,2026-11-08T21:00:00Z,Binghamton,Rider,75.0,63.0,7.5,137.5,Draft Kings,median:1,2026-11-12T17:51:30Z
-372722,2027,2026-11-08T21:30:00Z,Nevada,Saint Mary's,96.0,95.0,1.5,146.5,Draft Kings,median:1,2026-11-12T17:51:30Z
-372724,2027,2026-11-08T22:00:00Z,Temple,Richmond,53.0,79.0,-1.75,151.25,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374782,2027,2026-11-08T23:00:00Z,Cal State Bakersfield,North Dakota State,91.0,80.0,-2.5,152.5,Draft Kings,median:1,2026-11-12T17:51:30Z
-374759,2027,2026-11-08T23:00:00Z,William & Mary,Norfolk State,104.0,73.0,10.5,158.5,Draft Kings,median:1,2026-11-12T17:51:30Z
-377979,2027,2026-11-09T00:00:00Z,UTEP,Incarnate Word,79.0,60.0,12.5,142.5,Draft Kings,median:1,2026-11-12T17:51:30Z
-372725,2027,2026-11-09T01:00:00Z,Pittsburgh,Penn State,82.0,76.0,2.25,154.0,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374769,2027,2026-11-09T01:30:00Z,California,Houston,68.0,86.0,-19.5,144.0,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-377981,2027,2026-11-09T03:00:00Z,Hawai'i,UT Arlington,71.0,62.0,9.5,148.25,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374768,2027,2026-11-09T04:00:00Z,Wichita State,USC,86.0,93.0,-6.25,156.0,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-372729,2027,2026-11-09T23:00:00Z,Ohio State,Marshall,84.0,74.0,25.75,162.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-372734,2027,2026-11-09T23:30:00Z,Indiana,Syracuse,83.0,80.0,5.5,147.0,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374809,2027,2026-11-09T23:30:00Z,Pennsylvania,Howard,78.0,65.0,5.5,156.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374798,2027,2026-11-10T00:00:00Z,UConn,Wagner,83.0,41.0,38.5,140.0,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374787,2027,2026-11-10T00:00:00Z,Coastal Carolina,South Carolina Upstate,65.0,56.0,10.0,149.0,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-372731,2027,2026-11-10T00:00:00Z,Bowling Green,Cleveland State,95.0,79.0,13.25,155.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-372736,2027,2026-11-10T00:00:00Z,Texas,Grambling,93.0,62.0,36.5,154.0,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374783,2027,2026-11-10T00:00:00Z,UIC,UNC Greensboro,82.0,72.0,19.75,149.25,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374786,2027,2026-11-10T00:00:00Z,Notre Dame,Eastern Illinois,94.0,70.0,28.25,140.75,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-372737,2027,2026-11-10T00:00:00Z,Tennessee,Radford,70.0,47.0,29.0,153.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374790,2027,2026-11-10T00:00:00Z,Miami,North Florida,89.0,51.0,35.0,164.0,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374794,2027,2026-11-10T00:00:00Z,Jacksonville,Kansas City,79.0,61.0,3.5,146.5,Draft Kings,median:1,2026-11-12T17:51:30Z
-374799,2027,2026-11-10T00:00:00Z,Columbia,Stonehill,75.0,55.0,12.0,144.0,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374800,2027,2026-11-10T00:00:00Z,Towson,Long Island University,66.0,46.0,6.5,140.0,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374801,2027,2026-11-10T00:00:00Z,Chicago State,South Carolina State,67.0,82.0,3.0,146.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374804,2027,2026-11-10T00:00:00Z,Clemson,North Dakota,92.0,77.0,22.75,153.75,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-372730,2027,2026-11-10T00:00:00Z,Cincinnati,Minnesota,61.0,63.0,7.25,144.25,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-372740,2027,2026-11-10T00:00:00Z,Georgia,Florida Gulf Coast,80.0,72.0,23.0,163.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374802,2027,2026-11-10T00:30:00Z,UAB,Florida A&M,92.0,64.0,17.5,154.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-372741,2027,2026-11-10T00:30:00Z,Alabama,Oakland,109.0,68.0,32.5,171.0,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-372739,2027,2026-11-10T00:30:00Z,Mississippi State,Jackson State,98.0,57.0,24.0,156.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-372738,2027,2026-11-10T01:00:00Z,Oklahoma,North Alabama,81.0,72.0,28.0,147.25,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374788,2027,2026-11-10T01:00:00Z,Missouri,SIU Edwardsville,96.0,58.0,29.5,149.25,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374789,2027,2026-11-10T01:00:00Z,LSU,Louisiana Tech,90.0,50.0,30.0,150.0,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374796,2027,2026-11-10T01:00:00Z,Northwestern,Boston University,72.0,55.0,15.0,144.0,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374805,2027,2026-11-10T01:00:00Z,Texas A&M,UL Monroe,108.0,67.0,36.5,168.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374784,2027,2026-11-10T01:30:00Z,Purdue,Illinois State,76.0,59.0,15.5,144.0,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374795,2027,2026-11-10T02:00:00Z,Auburn,App State,75.0,53.0,23.5,144.75,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-372735,2027,2026-11-10T02:00:00Z,DePaul,Alabama A&M,84.0,47.0,23.0,139.0,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374793,2027,2026-11-10T02:00:00Z,Seton Hall,Charlotte,68.0,62.0,4.75,131.25,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374797,2027,2026-11-10T02:30:00Z,Oregon State,Eastern Washington,94.0,84.0,17.25,162.0,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374785,2027,2026-11-10T03:00:00Z,Washington,Mississippi Valley State,77.0,64.0,33.0,152.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374792,2027,2026-11-10T03:00:00Z,Stanford,Rice,91.0,73.0,17.75,145.75,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-377986,2027,2026-11-10T04:59:00Z,Hawai'i,Portland,66.0,73.0,7.75,156.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-372762,2027,2026-11-10T23:00:00Z,Florida State,Florida,72.0,81.0,-9.0,165.25,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374832,2027,2026-11-10T23:30:00Z,Rutgers,NJIT,101.0,64.0,25.0,143.0,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-372760,2027,2026-11-10T23:30:00Z,Georgetown,Delaware State,83.0,78.0,29.0,143.0,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374826,2027,2026-11-11T00:00:00Z,UCF,South Alabama,76.0,69.0,13.5,150.5,Draft Kings,median:1,2026-11-12T17:51:30Z
-374825,2027,2026-11-11T00:00:00Z,Villanova,La Salle,80.0,59.0,21.75,158.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-372756,2027,2026-11-11T00:00:00Z,Duke,Michigan State,73.0,79.0,7.0,148.0,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-377993,2027,2026-11-11T00:00:00Z,Toledo,Wright State,68.0,76.0,-1.75,158.0,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374819,2027,2026-11-11T00:00:00Z,Duquesne,Washington State,72.0,71.0,4.25,147.0,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374845,2027,2026-11-11T00:00:00Z,Davidson,Bradley,62.0,45.0,10.25,138.75,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374820,2027,2026-11-11T00:00:00Z,Kennesaw State,Winthrop,88.0,79.0,10.0,168.0,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374847,2027,2026-11-11T00:00:00Z,Georgia Southern,Mercer,91.0,97.0,1.25,164.75,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374835,2027,2026-11-11T00:00:00Z,Iowa,Virginia Tech,88.0,93.0,4.25,141.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374836,2027,2026-11-11T00:00:00Z,Northeastern,Harvard,74.0,70.0,-2.75,145.0,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374837,2027,2026-11-11T00:00:00Z,Georgia Tech,Eastern Kentucky,85.0,71.0,16.0,165.0,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374848,2027,2026-11-11T00:00:00Z,Rhode Island,Maine,71.0,65.0,20.5,140.0,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374841,2027,2026-11-11T00:00:00Z,NC State,Presbyterian,94.0,60.0,19.0,149.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374844,2027,2026-11-11T00:00:00Z,Troy,Loyola Marymount,74.0,69.0,-1.25,146.0,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-372743,2027,2026-11-11T00:00:00Z,North Carolina,Wyoming,76.0,63.0,13.25,155.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-372744,2027,2026-11-11T00:00:00Z,New Haven,Army,63.0,55.0,-1.5,133.0,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-372746,2027,2026-11-11T00:00:00Z,George Washington,Elon,69.0,50.0,14.0,148.25,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-372747,2027,2026-11-11T00:00:00Z,Fordham,Iona,78.0,72.0,11.5,140.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-372748,2027,2026-11-11T00:00:00Z,Dayton,Siena,89.0,99.0,13.5,158.75,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-372749,2027,2026-11-11T00:00:00Z,Central Michigan,Youngstown State,91.0,78.0,3.5,152.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-372755,2027,2026-11-11T00:00:00Z,Wake Forest,Charleston Southern,82.0,64.0,18.5,156.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-372757,2027,2026-11-11T00:00:00Z,Boston College,Maryland Eastern Shore,82.0,54.0,26.5,128.5,Draft Kings,median:1,2026-11-12T17:51:30Z
-372758,2027,2026-11-11T00:00:00Z,Xavier,Detroit Mercy,100.0,55.0,33.75,157.0,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-372759,2027,2026-11-11T00:00:00Z,Providence,Bryant,78.0,55.0,29.5,148.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374839,2027,2026-11-11T00:15:00Z,Vanderbilt,Memphis,105.0,81.0,14.75,160.75,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-377990,2027,2026-11-11T00:30:00Z,Middle Tennessee,Evansville,73.0,68.0,8.5,144.0,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374849,2027,2026-11-11T00:30:00Z,UT Rio Grande Valley,Texas State,65.0,72.0,-6.0,141.0,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374838,2027,2026-11-11T00:30:00Z,Tulane,Nicholls,77.0,63.0,8.5,152.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374853,2027,2026-11-11T01:00:00Z,Lipscomb,Belmont,88.0,75.0,-3.5,156.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374822,2027,2026-11-11T01:00:00Z,South Dakota,Houston Christian,76.0,87.0,3.5,156.0,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374821,2027,2026-11-11T01:00:00Z,Murray State,Alcorn State,94.0,57.0,29.0,165.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-372742,2027,2026-11-11T01:00:00Z,Texas Tech,Illinois,84.0,78.0,-2.5,167.0,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374840,2027,2026-11-11T01:00:00Z,SMU,Prairie View A&M,98.0,63.0,26.0,161.0,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-372745,2027,2026-11-11T01:00:00Z,Saint Louis,Northern Kentucky,125.0,63.0,23.25,168.75,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-372751,2027,2026-11-11T01:00:00Z,Iowa State,Southern,84.0,47.0,35.5,147.0,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-372753,2027,2026-11-11T01:00:00Z,Baylor,Yale,90.0,61.0,20.5,157.75,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-377989,2027,2026-11-11T01:00:00Z,Northern Iowa,Green Bay,89.0,76.0,3.5,150.75,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-377992,2027,2026-11-11T01:00:00Z,Arkansas State,UT Martin,65.0,82.0,6.0,154.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374831,2027,2026-11-11T01:30:00Z,Wisconsin,Fairfield,89.0,42.0,24.5,150.25,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374833,2027,2026-11-11T01:30:00Z,Ole Miss,SE Louisiana,91.0,51.0,26.0,147.0,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374829,2027,2026-11-11T02:00:00Z,Utah,Weber State,85.0,64.0,17.5,154.75,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-377988,2027,2026-11-11T02:00:00Z,Fresno State,Georgia State,95.0,92.0,6.25,147.0,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374817,2027,2026-11-11T02:00:00Z,Utah State,Utah Tech,118.0,86.0,25.5,155.75,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374824,2027,2026-11-11T02:00:00Z,New Mexico,Little Rock,94.0,69.0,23.0,157.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374828,2027,2026-11-11T02:00:00Z,Arizona State,Hofstra,85.0,63.0,17.5,134.0,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374842,2027,2026-11-11T02:00:00Z,TCU,UL Monroe,100.0,92.0,34.25,160.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-372752,2027,2026-11-11T02:00:00Z,Colorado,San Diego,83.0,75.0,12.75,151.75,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-372761,2027,2026-11-11T02:00:00Z,Kansas State,Creighton,89.0,82.0,-3.25,158.75,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374834,2027,2026-11-11T02:00:00Z,Virginia,Bucknell,95.0,61.0,38.0,150.0,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-372754,2027,2026-11-11T02:00:00Z,Arizona,Northern Arizona,90.0,59.0,36.0,156.75,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374827,2027,2026-11-11T02:00:00Z,BYU,Queens University,98.0,82.0,28.5,181.5,Draft Kings,median:1,2026-11-12T17:51:30Z
-372750,2027,2026-11-11T02:58:00Z,Kansas,Kentucky,89.0,69.0,4.25,157.0,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374830,2027,2026-11-11T03:00:00Z,San Francisco,Montana,63.0,58.0,11.5,148.0,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374876,2027,2026-11-11T16:30:00Z,East Texas A&M,Fairleigh Dickinson,76.0,80.0,11.0,138.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374870,2027,2026-11-11T17:00:00Z,Kansas City,Florida A&M,87.0,65.0,8.5,144.5,Draft Kings,median:1,2026-11-12T17:51:30Z
-374875,2027,2026-11-11T18:00:00Z,UAlbany,Dartmouth,76.0,85.0,1.5,139.5,Draft Kings,median:1,2026-11-12T17:51:30Z
-372764,2027,2026-11-11T19:00:00Z,UC Davis,Incarnate Word,81.0,69.0,11.5,145.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374882,2027,2026-11-11T20:00:00Z,South Florida,Saint Joseph's,80.0,83.0,7.0,152.0,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-372771,2027,2026-11-11T20:00:00Z,Air Force,Loyola Chicago,107.0,93.0,-10.5,160.25,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374883,2027,2026-11-11T21:00:00Z,East Carolina,North Carolina A&T,72.0,67.0,11.0,152.0,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374861,2027,2026-11-11T22:00:00Z,San Diego State,Bethune-Cookman,88.0,75.0,19.0,153.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374884,2027,2026-11-11T22:58:00Z,Navy,Pennsylvania,81.0,76.0,-8.5,146.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374886,2027,2026-11-11T23:00:00Z,VMI,North Carolina Central,65.0,51.0,7.5,148.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374859,2027,2026-11-11T23:30:00Z,Temple,Charleston,81.0,91.0,-1.5,157.5,Draft Kings,median:1,2026-11-12T17:51:30Z
-374888,2027,2026-11-11T23:30:00Z,IU Indianapolis,Southern Indiana,74.0,70.0,8.0,164.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-378001,2027,2026-11-12T00:00:00Z,Indiana State,Milwaukee,73.0,82.0,4.25,153.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374874,2027,2026-11-12T00:00:00Z,St. John's,Colgate,90.0,59.0,29.0,158.0,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-372770,2027,2026-11-12T00:00:00Z,Michigan,Marquette,84.0,70.0,3.0,157.0,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-378002,2027,2026-11-12T00:00:00Z,UNC Wilmington,Kent State,91.0,73.0,7.25,156.0,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374890,2027,2026-11-12T00:00:00Z,Norfolk State,Old Dominion,60.0,71.0,-5.5,138.0,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374863,2027,2026-11-12T00:00:00Z,Notre Dame,South Carolina State,99.0,59.0,26.5,149.0,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374893,2027,2026-11-12T00:00:00Z,Princeton,Stony Brook,69.0,59.0,4.75,139.25,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374866,2027,2026-11-12T00:00:00Z,South Carolina,Saint Peter's,77.0,41.0,22.0,126.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374867,2027,2026-11-12T00:00:00Z,Holy Cross,Furman,67.0,80.0,-13.0,150.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374894,2027,2026-11-12T00:00:00Z,Delaware,James Madison,61.0,71.0,-3.75,150.0,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374873,2027,2026-11-12T00:00:00Z,East Tennessee State,Campbell,68.0,53.0,4.5,146.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374895,2027,2026-11-12T00:00:00Z,VCU,NJIT,87.0,49.0,32.0,149.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374896,2027,2026-11-12T00:00:00Z,Florida Atlantic,William & Mary,95.0,90.0,5.25,165.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374897,2027,2026-11-12T00:00:00Z,West Georgia,UNC Asheville,70.0,73.0,1.5,148.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-372763,2027,2026-11-12T00:00:00Z,Drexel,American University,64.0,66.0,1.5,139.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-372768,2027,2026-11-12T00:00:00Z,St. Bonaventure,Cornell,88.0,64.0,8.0,156.75,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-372769,2027,2026-11-12T00:00:00Z,Massachusetts,UMass Lowell,72.0,62.0,9.5,150.0,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-378003,2027,2026-11-12T00:30:00Z,Sam Houston,Pepperdine,85.0,77.0,-3.0,160.0,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374862,2027,2026-11-12T01:00:00Z,Houston,Jacksonville State,92.0,46.0,35.0,136.0,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-377997,2027,2026-11-12T01:00:00Z,Arkansas,Robert Morris,76.0,53.0,30.5,157.0,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-378004,2027,2026-11-12T01:00:00Z,South Dakota State,Valparaiso,81.0,69.0,-2.0,142.0,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374858,2027,2026-11-12T01:00:00Z,Tulsa,Oral Roberts,80.0,71.0,18.25,154.75,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374869,2027,2026-11-12T01:00:00Z,Southern Miss,Jackson State,84.0,80.0,8.5,152.0,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374879,2027,2026-11-12T01:00:00Z,Abilene Christian,Stephen F. Austin,71.0,76.0,-5.5,142.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374880,2027,2026-11-12T01:00:00Z,North Texas,Santa Clara,71.0,76.0,-2.25,152.75,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-372772,2027,2026-11-12T02:00:00Z,Grand Canyon,Cal Poly,99.0,71.0,18.5,180.75,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-377998,2027,2026-11-12T02:00:00Z,UCLA,Arkansas-Pine Bluff,106.0,37.0,44.5,156.5,Draft Kings,median:1,2026-11-12T17:51:30Z
-377999,2027,2026-11-12T02:00:00Z,Boise State,Oakland,111.0,79.0,16.5,161.25,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374857,2027,2026-11-12T02:00:00Z,Colorado State,Portland State,87.0,71.0,15.75,150.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374856,2027,2026-11-12T02:00:00Z,Nebraska,Lindenwood,94.0,60.0,34.5,152.0,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374881,2027,2026-11-12T03:00:00Z,Seattle U,UTSA,59.0,86.0,16.5,148.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374860,2027,2026-11-12T03:00:00Z,Oregon,Mississippi Valley State,100.0,66.0,35.5,148.5,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374900,2027,2026-11-12T03:00:00Z,California Baptist,Chicago State,62.0,81.0,11.0,140.0,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374901,2027,2026-11-12T03:00:00Z,Long Beach State,Pacific,62.0,59.0,-5.75,138.0,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
-374878,2027,2026-11-12T04:00:00Z,California,USC,65.0,77.0,-8.5,161.0,"Bovada,Draft Kings",median:2,2026-11-12T17:51:30Z
+372673,2027,2026-11-03T23:00:00Z,Tennessee,Wofford,90.0,59.0,25.25,155.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374601,2027,2026-11-04T00:00:00Z,Kentucky,Manhattan,85.0,57.0,33.25,158.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374596,2027,2026-11-04T00:00:00Z,Duquesne,Purdue Fort Wayne,78.0,71.0,9.5,153.5,Draft Kings,median:1,2026-11-13T07:45:09Z
+374599,2027,2026-11-04T00:00:00Z,South Carolina,Stetson,81.0,55.0,19.0,149.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374610,2027,2026-11-04T00:00:00Z,Virginia Tech,Coppin State,88.0,54.0,31.5,150.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374606,2027,2026-11-04T00:00:00Z,Georgia Tech,Hampton,75.0,55.0,13.75,148.25,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374611,2027,2026-11-04T00:00:00Z,Rhode Island,Holy Cross,103.0,59.0,19.5,147.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+372672,2027,2026-11-04T00:00:00Z,Boston College,Wagner,76.0,50.0,20.5,143.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374605,2027,2026-11-04T00:30:00Z,Virginia,Drexel,89.0,60.0,31.75,142.75,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+372674,2027,2026-11-04T00:30:00Z,Alabama,Sam Houston,96.0,74.0,27.25,172.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+377937,2027,2026-11-04T01:00:00Z,Arkansas,Arkansas-Pine Bluff,106.0,61.0,41.75,167.0,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374603,2027,2026-11-04T01:00:00Z,Texas A&M,Alabama State,97.0,66.0,32.5,163.25,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+372671,2027,2026-11-04T01:00:00Z,Kansas State,South Dakota State,66.0,68.0,10.75,159.25,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374600,2027,2026-11-04T01:00:00Z,LSU,New Orleans,100.0,57.0,27.5,160.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374602,2027,2026-11-04T01:00:00Z,Missouri,Cleveland State,111.0,50.0,26.5,160.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374604,2027,2026-11-04T01:00:00Z,Iowa,Lipscomb,76.0,54.0,23.25,149.25,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374607,2027,2026-11-04T03:00:00Z,San Diego State,Cal State Fullerton,102.0,78.0,13.5,154.5,Draft Kings,median:1,2026-11-13T07:45:09Z
+374598,2027,2026-11-04T03:00:00Z,UNLV,Northern Arizona,89.0,77.0,20.75,153.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374615,2027,2026-11-04T03:00:00Z,California Baptist,North Florida,63.0,71.0,10.75,155.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374627,2027,2026-11-05T00:00:00Z,High Point,Maryland Eastern Shore,63.0,49.0,34.5,146.5,Draft Kings,median:1,2026-11-13T07:45:09Z
+374628,2027,2026-11-05T00:00:00Z,Saint Joseph's,Longwood,82.0,73.0,11.5,152.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+372675,2027,2026-11-05T00:00:00Z,Butler,Fairleigh Dickinson,99.0,65.0,28.75,156.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374633,2027,2026-11-05T00:30:00Z,Wichita State,Cal State Northridge,79.0,67.0,15.5,162.25,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374619,2027,2026-11-05T01:00:00Z,Auburn,SE Louisiana,92.0,59.0,29.5,149.25,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+377944,2027,2026-11-05T01:00:00Z,South Dakota,Northern Kentucky,94.0,102.0,-2.25,163.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374620,2027,2026-11-05T02:00:00Z,California,Radford,84.0,70.0,16.25,157.25,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374634,2027,2026-11-05T03:00:00Z,Loyola Marymount,Queens University,95.0,96.0,6.5,162.5,Draft Kings,median:1,2026-11-13T07:45:09Z
+374621,2027,2026-11-05T03:00:00Z,Santa Clara,Milwaukee,95.0,72.0,16.5,162.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374622,2027,2026-11-05T03:00:00Z,Saint Mary's,North Dakota State,105.0,64.0,12.5,148.5,Draft Kings,median:1,2026-11-13T07:45:09Z
+374639,2027,2026-11-05T22:00:00Z,North Texas,McNeese,77.0,67.0,-1.75,138.75,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+372683,2027,2026-11-05T23:00:00Z,Vanderbilt,Wake Forest,74.0,51.0,17.75,155.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374655,2027,2026-11-05T23:00:00Z,Penn State,Chattanooga,97.0,93.0,12.5,159.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+372676,2027,2026-11-05T23:00:00Z,Indiana,Bellarmine,92.0,69.0,30.25,153.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374651,2027,2026-11-05T23:30:00Z,Seton Hall,Long Island University,67.0,60.0,17.5,135.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374643,2027,2026-11-06T00:00:00Z,Quinnipiac,Bryant,66.0,56.0,6.5,148.75,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374658,2027,2026-11-06T00:00:00Z,Princeton,Hofstra,60.0,58.0,2.75,137.75,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374638,2027,2026-11-06T00:00:00Z,Alcorn State,Howard,83.0,94.0,-9.5,149.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374636,2027,2026-11-06T00:00:00Z,Charlotte,Georgia State,77.0,67.0,11.5,143.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374661,2027,2026-11-06T00:00:00Z,Sacred Heart,Maine,72.0,74.0,5.75,142.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374666,2027,2026-11-06T00:00:00Z,Fairfield,Vermont,67.0,79.0,-1.5,139.25,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374649,2027,2026-11-06T00:00:00Z,Virginia Tech,Mercer,96.0,67.0,20.5,154.25,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374652,2027,2026-11-06T00:00:00Z,Incarnate Word,Chicago State,54.0,66.0,8.5,143.0,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+372679,2027,2026-11-06T00:00:00Z,Saint Peter's,Binghamton,55.0,58.0,7.5,136.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+372684,2027,2026-11-06T00:00:00Z,Syracuse,Central Connecticut,102.0,49.0,23.25,135.25,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+372685,2027,2026-11-06T00:00:00Z,Pittsburgh,Buffalo,80.0,61.0,17.5,150.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374665,2027,2026-11-06T00:00:00Z,Iona,NJIT,72.0,49.0,9.75,146.25,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374645,2027,2026-11-06T00:00:00Z,Manhattan,UAlbany,68.0,72.0,3.5,147.5,Draft Kings,median:1,2026-11-13T07:45:09Z
+374664,2027,2026-11-06T00:00:00Z,Marist,UMBC,88.0,80.0,4.5,136.5,Draft Kings,median:1,2026-11-13T07:45:09Z
+374650,2027,2026-11-06T00:00:00Z,Notre Dame,Mercyhurst,83.0,56.0,21.5,137.25,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374641,2027,2026-11-06T00:00:00Z,Cincinnati,Green Bay,81.0,64.0,24.0,152.75,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374659,2027,2026-11-06T00:00:00Z,Lehigh,Cornell,71.0,64.0,-0.25,159.75,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374662,2027,2026-11-06T00:00:00Z,Rider,New Hampshire,55.0,66.0,-1.5,141.25,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374644,2027,2026-11-06T00:00:00Z,Merrimack,UMass Lowell,61.0,71.0,9.5,140.0,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374663,2027,2026-11-06T00:00:00Z,Navy,Delaware State,66.0,60.0,9.5,136.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374653,2027,2026-11-06T00:30:00Z,Tulane,Jackson State,85.0,87.0,12.25,152.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+372681,2027,2026-11-06T00:30:00Z,Fordham,Stonehill,83.0,63.0,20.25,141.25,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+372690,2027,2026-11-06T00:30:00Z,Mississippi State,Northwestern State,82.0,44.0,21.5,151.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374654,2027,2026-11-06T01:00:00Z,SMU,VMI,95.0,70.0,24.75,160.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+377899,2027,2026-11-06T01:00:00Z,South Alabama,Jacksonville State,83.0,80.0,4.75,140.0,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374668,2027,2026-11-06T01:00:00Z,Rice,East Texas A&M,71.0,72.0,3.5,145.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374648,2027,2026-11-06T01:00:00Z,Tulsa,Northern Illinois,94.0,75.0,14.25,154.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+372680,2027,2026-11-06T01:00:00Z,Loyola Chicago,West Georgia,76.0,53.0,17.5,145.25,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+372688,2027,2026-11-06T01:00:00Z,Creighton,Le Moyne,83.0,55.0,29.25,156.25,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+372691,2027,2026-11-06T01:00:00Z,Florida,Jacksonville,88.0,57.0,37.0,156.0,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+372686,2027,2026-11-06T01:00:00Z,Duke,Coastal Carolina,113.0,52.0,40.75,149.75,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374637,2027,2026-11-06T01:00:00Z,Michigan State,Toledo,91.0,61.0,26.25,155.0,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+372689,2027,2026-11-06T01:00:00Z,Texas,Gardner-Webb,98.0,50.0,41.25,154.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+372687,2027,2026-11-06T01:30:00Z,DePaul,South Florida,82.0,80.0,6.5,149.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+372677,2027,2026-11-06T01:30:00Z,Illinois,Pennsylvania,112.0,70.0,29.75,172.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374642,2027,2026-11-06T02:00:00Z,Utah,Towson,67.0,57.0,8.5,137.25,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374646,2027,2026-11-06T02:00:00Z,Texas Tech,Bethune-Cookman,76.0,58.0,29.75,149.75,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+372682,2027,2026-11-06T03:30:00Z,Arizona,Cal Poly,104.0,84.0,30.75,174.25,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+372706,2027,2026-11-06T21:00:00Z,Boston College,Massachusetts,71.0,55.0,5.25,143.75,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374675,2027,2026-11-06T22:00:00Z,Florida International,West Florida,85.0,75.0,16.25,163.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+372712,2027,2026-11-06T22:00:00Z,Baylor,Arkansas-Pine Bluff,109.0,53.0,38.25,163.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374697,2027,2026-11-06T22:00:00Z,Virginia,Northeastern,97.0,72.0,33.75,159.75,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374695,2027,2026-11-06T23:00:00Z,Oregon,Eastern Washington,98.0,71.0,16.25,149.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374709,2027,2026-11-06T23:30:00Z,South Carolina Upstate,South Carolina State,70.0,78.0,3.5,148.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374673,2027,2026-11-06T23:30:00Z,Purdue,Valparaiso,80.0,83.0,19.5,144.25,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+372695,2027,2026-11-06T23:30:00Z,Ohio State,Youngstown State,89.0,65.0,25.5,154.0,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374699,2027,2026-11-07T00:00:00Z,Georgia Tech,Georgia Southern,95.0,83.0,16.75,160.25,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374712,2027,2026-11-07T00:00:00Z,Mount St. Mary's,Loyola Maryland,68.0,57.0,6.25,148.25,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374705,2027,2026-11-07T00:00:00Z,Kennesaw State,Austin Peay,71.0,69.0,5.75,161.25,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+372697,2027,2026-11-07T00:00:00Z,North Carolina,Wofford,109.0,70.0,20.5,155.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+372698,2027,2026-11-07T00:00:00Z,Clemson,American University,82.0,73.0,15.75,141.75,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+372713,2027,2026-11-07T00:00:00Z,Brown,Boston University,67.0,72.0,1.75,144.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+372699,2027,2026-11-07T00:00:00Z,Saint Louis,Missouri,90.0,84.0,-2.5,161.75,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374682,2027,2026-11-07T00:00:00Z,UCF,Yale,87.0,75.0,9.5,152.5,Draft Kings,median:1,2026-11-13T07:45:09Z
+374687,2027,2026-11-07T00:00:00Z,Villanova,Holy Cross,95.0,66.0,34.5,151.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374688,2027,2026-11-07T00:00:00Z,Elon,UNC Greensboro,74.0,65.0,8.75,150.75,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374672,2027,2026-11-07T00:00:00Z,Rutgers,New Haven,81.0,54.0,24.5,137.75,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374681,2027,2026-11-07T00:00:00Z,West Virginia,Stetson,91.0,53.0,27.25,140.0,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374700,2027,2026-11-07T00:00:00Z,George Mason,Coppin State,68.0,51.0,28.5,140.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374704,2027,2026-11-07T00:00:00Z,NC State,East Tennessee State,77.0,63.0,17.5,152.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+372701,2027,2026-11-07T00:00:00Z,Ball State,Indiana State,66.0,69.0,1.75,146.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+372707,2027,2026-11-07T00:00:00Z,Xavier,Eastern Michigan,76.0,53.0,23.5,151.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+372710,2027,2026-11-07T00:00:00Z,Georgia,Presbyterian,91.0,77.0,24.25,157.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374680,2027,2026-11-07T00:00:00Z,Kentucky,James Madison,89.0,80.0,23.75,156.25,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+372705,2027,2026-11-07T00:00:00Z,Florida State,Troy,91.0,68.0,22.5,158.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374708,2027,2026-11-07T00:30:00Z,Wright State,Florida Atlantic,97.0,71.0,4.25,156.25,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374691,2027,2026-11-07T00:30:00Z,Wisconsin,Delaware,73.0,64.0,25.75,155.75,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+372711,2027,2026-11-07T00:30:00Z,Alabama,Arkansas State,101.0,86.0,25.75,178.25,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374703,2027,2026-11-07T00:30:00Z,UAB,Nicholls,70.0,63.0,15.25,158.25,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+377963,2027,2026-11-07T01:00:00Z,UIC,Robert Morris,79.0,56.0,10.5,142.75,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374679,2027,2026-11-07T01:00:00Z,LSU,Texas Southern,92.0,51.0,36.0,161.25,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+372696,2027,2026-11-07T01:00:00Z,Minnesota,St. Thomas-Minnesota,76.0,62.0,14.5,149.5,Draft Kings,median:1,2026-11-13T07:45:09Z
+374714,2027,2026-11-07T01:00:00Z,Louisiana,Texas A&M-Corpus Christi,60.0,67.0,3.5,130.5,Draft Kings,median:1,2026-11-13T07:45:09Z
+374692,2027,2026-11-07T01:00:00Z,Texas A&M,Northern Kentucky,104.0,67.0,27.25,171.0,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+372704,2027,2026-11-07T01:00:00Z,Iowa State,Southern Miss,83.0,57.0,31.25,145.75,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374693,2027,2026-11-07T01:00:00Z,Northwestern,Stony Brook,78.0,65.0,12.0,144.25,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374701,2027,2026-11-07T01:00:00Z,TCU,Southern,106.0,54.0,26.5,152.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+372708,2027,2026-11-07T01:00:00Z,Marquette,Detroit Mercy,93.0,32.0,32.25,154.75,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+372709,2027,2026-11-07T01:00:00Z,Oklahoma,Mississippi Valley State,84.0,57.0,40.5,152.25,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374696,2027,2026-11-07T01:00:00Z,UConn,Michigan,85.0,77.0,7.5,143.25,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374694,2027,2026-11-07T01:30:00Z,Iowa,Eastern Illinois,91.0,47.0,34.75,134.75,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374678,2027,2026-11-07T01:30:00Z,Wyoming,Idaho State,93.0,62.0,18.5,146.25,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374706,2027,2026-11-07T01:30:00Z,Ole Miss,Central Arkansas,92.0,60.0,17.25,154.25,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374674,2027,2026-11-07T02:00:00Z,Colorado State,Idaho,78.0,67.0,16.0,151.25,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374684,2027,2026-11-07T02:00:00Z,Arizona State,Northern Colorado,90.0,63.0,19.5,143.75,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374683,2027,2026-11-07T02:00:00Z,BYU,Omaha,108.0,67.0,33.25,161.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374686,2027,2026-11-07T02:00:00Z,Miami,Wagner,83.0,57.0,38.5,145.0,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+372703,2027,2026-11-07T02:00:00Z,Kansas,Middle Tennessee,89.0,45.0,28.5,157.25,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374702,2027,2026-11-07T02:00:00Z,Oklahoma State,Queens University,118.0,68.0,17.5,178.5,Draft Kings,median:1,2026-11-13T07:45:09Z
+372702,2027,2026-11-07T02:00:00Z,Kansas State,Cal State Northridge,95.0,78.0,11.25,164.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374690,2027,2026-11-07T02:15:00Z,Kansas City,Southern Illinois,100.0,93.0,-1.5,143.5,Draft Kings,median:1,2026-11-13T07:45:09Z
+377966,2027,2026-11-07T02:30:00Z,UT Arlington,Portland,89.0,85.0,-2.25,150.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374698,2027,2026-11-07T02:30:00Z,Oregon State,California Baptist,96.0,68.0,20.5,157.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374707,2027,2026-11-07T02:30:00Z,San Diego,Tarleton State,96.0,90.0,7.5,148.0,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374685,2027,2026-11-07T03:00:00Z,Stanford,Oakland,81.0,63.0,14.25,146.75,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374689,2027,2026-11-07T03:00:00Z,San Francisco,North Dakota State,79.0,70.0,8.5,146.0,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374676,2027,2026-11-07T03:30:00Z,UCLA,North Florida,114.0,63.0,32.5,156.25,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374734,2027,2026-11-07T17:00:00Z,Louisville,Morehead State,107.0,57.0,37.5,151.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374739,2027,2026-11-07T17:00:00Z,Winthrop,North Dakota,90.0,93.0,9.5,159.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374726,2027,2026-11-07T18:00:00Z,Ohio,North Carolina A&T,80.0,70.0,13.5,161.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374735,2027,2026-11-07T19:00:00Z,Abilene Christian,Lamar,83.0,81.0,0.5,165.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374745,2027,2026-11-07T19:00:00Z,South Dakota,Cal State Fullerton,85.0,87.0,1.5,175.5,Draft Kings,median:1,2026-11-13T07:45:09Z
+374740,2027,2026-11-07T19:00:00Z,East Carolina,UNC Wilmington,75.0,78.0,-4.5,150.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374727,2027,2026-11-07T19:00:00Z,Marshall,Toledo,76.0,81.0,2.0,158.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374729,2027,2026-11-07T19:00:00Z,Drexel,Colgate,77.0,74.0,-0.0,143.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374733,2027,2026-11-07T20:00:00Z,Memphis,VCU,89.0,88.0,-2.5,159.0,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374743,2027,2026-11-07T20:00:00Z,Longwood,North Carolina Central,80.0,75.0,12.0,149.0,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374742,2027,2026-11-07T20:00:00Z,Montana State,Long Beach State,83.0,70.0,10.5,147.0,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374731,2027,2026-11-07T20:30:00Z,La Salle,Long Island University,88.0,80.0,4.5,148.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+372718,2027,2026-11-07T20:30:00Z,San Diego State,Colorado,77.0,66.0,3.0,153.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374730,2027,2026-11-07T21:00:00Z,Rhode Island,Monmouth,84.0,66.0,6.5,145.0,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374724,2027,2026-11-07T21:00:00Z,UNLV,Samford,88.0,79.0,11.0,157.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374744,2027,2026-11-07T21:00:00Z,Saint Joseph's,Lafayette,67.0,57.0,17.0,147.0,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+377971,2027,2026-11-07T21:00:00Z,Utah State,Omaha,90.0,56.0,28.0,153.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+377972,2027,2026-11-07T21:00:00Z,UC Santa Barbara,Oakland,90.0,67.0,13.0,150.0,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+377968,2027,2026-11-07T22:00:00Z,Gonzaga,New Mexico State,109.0,68.0,29.0,151.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374748,2027,2026-11-07T22:00:00Z,IU Indianapolis,UT Martin,75.0,74.0,-2.0,166.0,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374716,2027,2026-11-07T22:00:00Z,UTSA,VMI,70.0,68.0,5.0,164.0,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374717,2027,2026-11-07T22:00:00Z,Furman,Northern Iowa,98.0,83.0,5.0,149.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374723,2027,2026-11-07T22:00:00Z,Bucknell,Old Dominion,62.0,82.0,-5.0,142.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374749,2027,2026-11-07T22:00:00Z,Lipscomb,SIU Edwardsville,78.0,77.0,7.0,144.0,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374750,2027,2026-11-07T22:00:00Z,High Point,Washington State,83.0,71.0,12.5,155.0,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+372717,2027,2026-11-07T22:00:00Z,Miami (OH),Bellarmine,80.0,73.0,19.5,159.0,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374752,2027,2026-11-07T22:30:00Z,UNC Asheville,Western Carolina,75.0,83.0,-3.0,151.0,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374751,2027,2026-11-07T22:30:00Z,UT Rio Grande Valley,Prairie View A&M,68.0,63.0,8.5,149.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+377974,2027,2026-11-07T23:00:00Z,George Washington,Hampton,75.0,61.0,20.0,147.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374725,2027,2026-11-07T23:00:00Z,New Mexico,Northern Arizona,94.0,65.0,27.5,156.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374753,2027,2026-11-07T23:30:00Z,Niagara,Morgan State,67.0,73.0,3.5,149.0,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374722,2027,2026-11-08T00:00:00Z,Houston Christian,Western Illinois,74.0,67.0,9.5,138.0,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374754,2027,2026-11-08T00:00:00Z,Davidson,Mercer,88.0,76.0,11.5,148.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+372715,2027,2026-11-08T00:00:00Z,Canisius,St. Bonaventure,49.0,88.0,-9.0,148.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+372716,2027,2026-11-08T00:00:00Z,Dayton,Northern Illinois,76.0,81.0,19.5,147.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+372719,2027,2026-11-08T00:00:00Z,Providence,Nebraska,58.0,67.0,-2.5,158.0,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374756,2027,2026-11-08T00:30:00Z,UC Riverside,Denver,64.0,60.0,1.5,155.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+372720,2027,2026-11-08T00:30:00Z,Georgetown,Maryland,86.0,74.0,-3.5,146.5,Draft Kings,median:1,2026-11-13T07:45:09Z
+374720,2027,2026-11-08T01:00:00Z,Murray State,Northwestern State,93.0,71.0,23.0,154.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374755,2027,2026-11-08T01:00:00Z,Evansville,Southern Indiana,78.0,76.0,7.5,143.5,Draft Kings,median:1,2026-11-13T07:45:09Z
+374728,2027,2026-11-08T01:00:00Z,Little Rock,SE Louisiana,79.0,83.0,8.0,146.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374737,2027,2026-11-08T01:00:00Z,Bradley,Pacific,52.0,63.0,1.5,141.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+372721,2027,2026-11-08T01:00:00Z,Grand Canyon,Bethune-Cookman,99.0,81.0,22.0,154.0,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374757,2027,2026-11-08T02:00:00Z,Weber State,Utah Valley,93.0,101.0,-7.0,156.0,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374738,2027,2026-11-08T03:00:00Z,Seattle U,Portland State,79.0,60.0,10.5,144.0,Draft Kings,median:1,2026-11-13T07:45:09Z
+374736,2027,2026-11-08T03:00:00Z,Santa Clara,Sacramento State,83.0,77.0,20.0,169.0,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374758,2027,2026-11-08T03:00:00Z,UC San Diego,Fresno State,81.0,65.0,10.5,151.5,Draft Kings,median:1,2026-11-13T07:45:09Z
+372714,2027,2026-11-08T03:00:00Z,UC Irvine,San José State,91.0,79.0,8.5,146.5,Draft Kings,median:1,2026-11-13T07:45:09Z
+374760,2027,2026-11-08T17:00:00Z,St. John's,Iona,104.0,65.0,27.5,150.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374762,2027,2026-11-08T18:00:00Z,South Carolina,Southeast Missouri State,78.0,68.0,17.5,144.5,Draft Kings,median:1,2026-11-13T07:45:09Z
+374771,2027,2026-11-08T18:00:00Z,UMass Lowell,Marist,63.0,61.0,1.5,141.5,Draft Kings,median:1,2026-11-13T07:45:09Z
+374764,2027,2026-11-08T18:00:00Z,New Hampshire,Sacred Heart,76.0,81.0,1.5,145.5,Draft Kings,median:1,2026-11-13T07:45:09Z
+374770,2027,2026-11-08T18:00:00Z,Siena,Princeton,82.0,68.0,-0.75,154.75,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374773,2027,2026-11-08T18:00:00Z,Virginia,Arkansas,91.0,72.0,3.75,162.25,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374777,2027,2026-11-08T18:00:00Z,Maine,Manhattan,62.0,68.0,2.5,136.5,Draft Kings,median:1,2026-11-13T07:45:09Z
+374765,2027,2026-11-08T18:00:00Z,Bryant,Fairfield,59.0,68.0,-1.5,145.5,Draft Kings,median:1,2026-11-13T07:45:09Z
+372723,2027,2026-11-08T19:00:00Z,Lehigh,Brown,55.0,65.0,5.5,138.5,Draft Kings,median:1,2026-11-13T07:45:09Z
+374767,2027,2026-11-08T19:00:00Z,Western Michigan,Campbell,87.0,71.0,4.5,150.25,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374780,2027,2026-11-08T19:00:00Z,Dartmouth,Central Connecticut,71.0,78.0,8.5,140.5,Draft Kings,median:1,2026-11-13T07:45:09Z
+372726,2027,2026-11-08T19:00:00Z,Boise State,Butler,100.0,81.0,2.5,158.25,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374763,2027,2026-11-08T19:00:00Z,UAlbany,Merrimack,60.0,73.0,-2.5,135.5,Draft Kings,median:1,2026-11-13T07:45:09Z
+374778,2027,2026-11-08T19:00:00Z,St. Thomas-Minnesota,Green Bay,67.0,76.0,7.5,149.5,Draft Kings,median:1,2026-11-13T07:45:09Z
+374779,2027,2026-11-08T19:00:00Z,Vermont,Quinnipiac,76.0,79.0,8.5,138.5,Draft Kings,median:1,2026-11-13T07:45:09Z
+377977,2027,2026-11-08T20:00:00Z,Drake,Southern,75.0,68.0,14.5,151.5,Draft Kings,median:1,2026-11-13T07:45:09Z
+374781,2027,2026-11-08T20:00:00Z,Tennessee Tech,Western Kentucky,97.0,94.0,-3.5,163.0,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+372727,2027,2026-11-08T20:00:00Z,Air Force,Idaho State,89.0,82.0,5.75,161.0,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374766,2027,2026-11-08T21:00:00Z,NJIT,Saint Peter's,54.0,52.0,-1.5,133.5,Draft Kings,median:1,2026-11-13T07:45:09Z
+372728,2027,2026-11-08T21:00:00Z,Binghamton,Rider,75.0,63.0,7.5,137.5,Draft Kings,median:1,2026-11-13T07:45:09Z
+372722,2027,2026-11-08T21:30:00Z,Nevada,Saint Mary's,96.0,95.0,1.5,146.5,Draft Kings,median:1,2026-11-13T07:45:09Z
+372724,2027,2026-11-08T22:00:00Z,Temple,Richmond,53.0,79.0,-1.75,151.25,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374782,2027,2026-11-08T23:00:00Z,Cal State Bakersfield,North Dakota State,91.0,80.0,-2.5,152.5,Draft Kings,median:1,2026-11-13T07:45:09Z
+374759,2027,2026-11-08T23:00:00Z,William & Mary,Norfolk State,104.0,73.0,10.5,158.5,Draft Kings,median:1,2026-11-13T07:45:09Z
+377979,2027,2026-11-09T00:00:00Z,UTEP,Incarnate Word,79.0,60.0,12.5,142.5,Draft Kings,median:1,2026-11-13T07:45:09Z
+372725,2027,2026-11-09T01:00:00Z,Pittsburgh,Penn State,82.0,76.0,2.25,154.0,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374769,2027,2026-11-09T01:30:00Z,California,Houston,68.0,86.0,-19.5,144.0,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+377981,2027,2026-11-09T03:00:00Z,Hawai'i,UT Arlington,71.0,62.0,9.5,148.25,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374768,2027,2026-11-09T04:00:00Z,Wichita State,USC,86.0,93.0,-6.25,156.0,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+372729,2027,2026-11-09T23:00:00Z,Ohio State,Marshall,84.0,74.0,25.75,162.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+372734,2027,2026-11-09T23:30:00Z,Indiana,Syracuse,83.0,80.0,5.5,147.0,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374809,2027,2026-11-09T23:30:00Z,Pennsylvania,Howard,78.0,65.0,5.5,156.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374798,2027,2026-11-10T00:00:00Z,UConn,Wagner,83.0,41.0,38.5,140.0,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374787,2027,2026-11-10T00:00:00Z,Coastal Carolina,South Carolina Upstate,65.0,56.0,10.0,149.0,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+372731,2027,2026-11-10T00:00:00Z,Bowling Green,Cleveland State,95.0,79.0,13.25,155.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+372736,2027,2026-11-10T00:00:00Z,Texas,Grambling,93.0,62.0,36.5,154.0,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374783,2027,2026-11-10T00:00:00Z,UIC,UNC Greensboro,82.0,72.0,19.75,149.25,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374786,2027,2026-11-10T00:00:00Z,Notre Dame,Eastern Illinois,94.0,70.0,28.25,140.75,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+372737,2027,2026-11-10T00:00:00Z,Tennessee,Radford,70.0,47.0,29.0,153.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374790,2027,2026-11-10T00:00:00Z,Miami,North Florida,89.0,51.0,35.0,164.0,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374794,2027,2026-11-10T00:00:00Z,Jacksonville,Kansas City,79.0,61.0,3.5,146.5,Draft Kings,median:1,2026-11-13T07:45:09Z
+374799,2027,2026-11-10T00:00:00Z,Columbia,Stonehill,75.0,55.0,12.0,144.0,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374800,2027,2026-11-10T00:00:00Z,Towson,Long Island University,66.0,46.0,6.5,140.0,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374801,2027,2026-11-10T00:00:00Z,Chicago State,South Carolina State,67.0,82.0,3.0,146.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374804,2027,2026-11-10T00:00:00Z,Clemson,North Dakota,92.0,77.0,22.75,153.75,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+372730,2027,2026-11-10T00:00:00Z,Cincinnati,Minnesota,61.0,63.0,7.25,144.25,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+372740,2027,2026-11-10T00:00:00Z,Georgia,Florida Gulf Coast,80.0,72.0,23.0,163.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374802,2027,2026-11-10T00:30:00Z,UAB,Florida A&M,92.0,64.0,17.5,154.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+372741,2027,2026-11-10T00:30:00Z,Alabama,Oakland,109.0,68.0,32.5,171.0,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+372739,2027,2026-11-10T00:30:00Z,Mississippi State,Jackson State,98.0,57.0,24.0,156.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+372738,2027,2026-11-10T01:00:00Z,Oklahoma,North Alabama,81.0,72.0,28.0,147.25,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374788,2027,2026-11-10T01:00:00Z,Missouri,SIU Edwardsville,96.0,58.0,29.5,149.25,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374789,2027,2026-11-10T01:00:00Z,LSU,Louisiana Tech,90.0,50.0,30.0,150.0,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374796,2027,2026-11-10T01:00:00Z,Northwestern,Boston University,72.0,55.0,15.0,144.0,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374805,2027,2026-11-10T01:00:00Z,Texas A&M,UL Monroe,108.0,67.0,36.5,168.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374784,2027,2026-11-10T01:30:00Z,Purdue,Illinois State,76.0,59.0,15.5,144.0,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374795,2027,2026-11-10T02:00:00Z,Auburn,App State,75.0,53.0,23.5,144.75,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+372735,2027,2026-11-10T02:00:00Z,DePaul,Alabama A&M,84.0,47.0,23.0,139.0,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374793,2027,2026-11-10T02:00:00Z,Seton Hall,Charlotte,68.0,62.0,4.75,131.25,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374797,2027,2026-11-10T02:30:00Z,Oregon State,Eastern Washington,94.0,84.0,17.25,162.0,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374785,2027,2026-11-10T03:00:00Z,Washington,Mississippi Valley State,77.0,64.0,33.0,152.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374792,2027,2026-11-10T03:00:00Z,Stanford,Rice,91.0,73.0,17.75,145.75,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+377986,2027,2026-11-10T04:59:00Z,Hawai'i,Portland,66.0,73.0,7.75,156.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+372762,2027,2026-11-10T23:00:00Z,Florida State,Florida,72.0,81.0,-9.0,165.25,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374832,2027,2026-11-10T23:30:00Z,Rutgers,NJIT,101.0,64.0,25.0,143.0,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+372760,2027,2026-11-10T23:30:00Z,Georgetown,Delaware State,83.0,78.0,29.0,143.0,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374826,2027,2026-11-11T00:00:00Z,UCF,South Alabama,76.0,69.0,13.5,150.5,Draft Kings,median:1,2026-11-13T07:45:09Z
+374825,2027,2026-11-11T00:00:00Z,Villanova,La Salle,80.0,59.0,21.75,158.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+372756,2027,2026-11-11T00:00:00Z,Duke,Michigan State,73.0,79.0,7.0,148.0,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+377993,2027,2026-11-11T00:00:00Z,Toledo,Wright State,68.0,76.0,-1.75,158.0,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374819,2027,2026-11-11T00:00:00Z,Duquesne,Washington State,72.0,71.0,4.25,147.0,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374845,2027,2026-11-11T00:00:00Z,Davidson,Bradley,62.0,45.0,10.25,138.75,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374820,2027,2026-11-11T00:00:00Z,Kennesaw State,Winthrop,88.0,79.0,10.0,168.0,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374847,2027,2026-11-11T00:00:00Z,Georgia Southern,Mercer,91.0,97.0,1.25,164.75,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374835,2027,2026-11-11T00:00:00Z,Iowa,Virginia Tech,88.0,93.0,4.25,141.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374836,2027,2026-11-11T00:00:00Z,Northeastern,Harvard,74.0,70.0,-2.75,145.0,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374837,2027,2026-11-11T00:00:00Z,Georgia Tech,Eastern Kentucky,85.0,71.0,16.0,165.0,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374848,2027,2026-11-11T00:00:00Z,Rhode Island,Maine,71.0,65.0,20.5,140.0,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374841,2027,2026-11-11T00:00:00Z,NC State,Presbyterian,94.0,60.0,19.0,149.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374844,2027,2026-11-11T00:00:00Z,Troy,Loyola Marymount,74.0,69.0,-1.25,146.0,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+372743,2027,2026-11-11T00:00:00Z,North Carolina,Wyoming,76.0,63.0,13.25,155.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+372744,2027,2026-11-11T00:00:00Z,New Haven,Army,63.0,55.0,-1.5,133.0,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+372746,2027,2026-11-11T00:00:00Z,George Washington,Elon,69.0,50.0,14.0,148.25,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+372747,2027,2026-11-11T00:00:00Z,Fordham,Iona,78.0,72.0,11.5,140.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+372748,2027,2026-11-11T00:00:00Z,Dayton,Siena,89.0,99.0,13.5,158.75,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+372749,2027,2026-11-11T00:00:00Z,Central Michigan,Youngstown State,91.0,78.0,3.5,152.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+372755,2027,2026-11-11T00:00:00Z,Wake Forest,Charleston Southern,82.0,64.0,18.5,156.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+372757,2027,2026-11-11T00:00:00Z,Boston College,Maryland Eastern Shore,82.0,54.0,26.5,128.5,Draft Kings,median:1,2026-11-13T07:45:09Z
+372758,2027,2026-11-11T00:00:00Z,Xavier,Detroit Mercy,100.0,55.0,33.75,157.0,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+372759,2027,2026-11-11T00:00:00Z,Providence,Bryant,78.0,55.0,29.5,148.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374839,2027,2026-11-11T00:15:00Z,Vanderbilt,Memphis,105.0,81.0,14.75,160.75,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+377990,2027,2026-11-11T00:30:00Z,Middle Tennessee,Evansville,73.0,68.0,8.5,144.0,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374849,2027,2026-11-11T00:30:00Z,UT Rio Grande Valley,Texas State,65.0,72.0,-6.0,141.0,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374838,2027,2026-11-11T00:30:00Z,Tulane,Nicholls,77.0,63.0,8.5,152.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374853,2027,2026-11-11T01:00:00Z,Lipscomb,Belmont,88.0,75.0,-3.5,156.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374822,2027,2026-11-11T01:00:00Z,South Dakota,Houston Christian,76.0,87.0,3.5,156.0,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374821,2027,2026-11-11T01:00:00Z,Murray State,Alcorn State,94.0,57.0,29.0,165.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+372742,2027,2026-11-11T01:00:00Z,Texas Tech,Illinois,84.0,78.0,-2.5,167.0,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374840,2027,2026-11-11T01:00:00Z,SMU,Prairie View A&M,98.0,63.0,26.0,161.0,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+372745,2027,2026-11-11T01:00:00Z,Saint Louis,Northern Kentucky,125.0,63.0,23.25,168.75,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+372751,2027,2026-11-11T01:00:00Z,Iowa State,Southern,84.0,47.0,35.5,147.0,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+372753,2027,2026-11-11T01:00:00Z,Baylor,Yale,90.0,61.0,20.5,157.75,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+377989,2027,2026-11-11T01:00:00Z,Northern Iowa,Green Bay,89.0,76.0,3.5,150.75,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+377992,2027,2026-11-11T01:00:00Z,Arkansas State,UT Martin,65.0,82.0,6.0,154.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374831,2027,2026-11-11T01:30:00Z,Wisconsin,Fairfield,89.0,42.0,24.5,150.25,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374833,2027,2026-11-11T01:30:00Z,Ole Miss,SE Louisiana,91.0,51.0,26.0,147.0,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374829,2027,2026-11-11T02:00:00Z,Utah,Weber State,85.0,64.0,17.5,154.75,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+377988,2027,2026-11-11T02:00:00Z,Fresno State,Georgia State,95.0,92.0,6.25,147.0,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374817,2027,2026-11-11T02:00:00Z,Utah State,Utah Tech,118.0,86.0,25.5,155.75,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374824,2027,2026-11-11T02:00:00Z,New Mexico,Little Rock,94.0,69.0,23.0,157.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374828,2027,2026-11-11T02:00:00Z,Arizona State,Hofstra,85.0,63.0,17.5,134.0,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374842,2027,2026-11-11T02:00:00Z,TCU,UL Monroe,100.0,92.0,34.25,160.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+372752,2027,2026-11-11T02:00:00Z,Colorado,San Diego,83.0,75.0,12.75,151.75,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+372761,2027,2026-11-11T02:00:00Z,Kansas State,Creighton,89.0,82.0,-3.25,158.75,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374834,2027,2026-11-11T02:00:00Z,Virginia,Bucknell,95.0,61.0,38.0,150.0,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+372754,2027,2026-11-11T02:00:00Z,Arizona,Northern Arizona,90.0,59.0,36.0,156.75,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374827,2027,2026-11-11T02:00:00Z,BYU,Queens University,98.0,82.0,28.5,181.5,Draft Kings,median:1,2026-11-13T07:45:09Z
+372750,2027,2026-11-11T02:58:00Z,Kansas,Kentucky,89.0,69.0,4.25,157.0,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374830,2027,2026-11-11T03:00:00Z,San Francisco,Montana,63.0,58.0,11.5,148.0,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374876,2027,2026-11-11T16:30:00Z,East Texas A&M,Fairleigh Dickinson,76.0,80.0,11.0,138.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374870,2027,2026-11-11T17:00:00Z,Kansas City,Florida A&M,87.0,65.0,8.5,144.5,Draft Kings,median:1,2026-11-13T07:45:09Z
+374875,2027,2026-11-11T18:00:00Z,UAlbany,Dartmouth,76.0,85.0,1.5,139.5,Draft Kings,median:1,2026-11-13T07:45:09Z
+372764,2027,2026-11-11T19:00:00Z,UC Davis,Incarnate Word,81.0,69.0,11.5,145.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374882,2027,2026-11-11T20:00:00Z,South Florida,Saint Joseph's,80.0,83.0,7.0,152.0,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+372771,2027,2026-11-11T20:00:00Z,Air Force,Loyola Chicago,107.0,93.0,-10.5,160.25,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374883,2027,2026-11-11T21:00:00Z,East Carolina,North Carolina A&T,72.0,67.0,11.0,152.0,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374861,2027,2026-11-11T22:00:00Z,San Diego State,Bethune-Cookman,88.0,75.0,19.0,153.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374884,2027,2026-11-11T22:58:00Z,Navy,Pennsylvania,81.0,76.0,-8.5,146.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374886,2027,2026-11-11T23:00:00Z,VMI,North Carolina Central,65.0,51.0,7.5,148.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374859,2027,2026-11-11T23:30:00Z,Temple,Charleston,81.0,91.0,-1.5,157.5,Draft Kings,median:1,2026-11-13T07:45:09Z
+374888,2027,2026-11-11T23:30:00Z,IU Indianapolis,Southern Indiana,74.0,70.0,8.0,164.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+378001,2027,2026-11-12T00:00:00Z,Indiana State,Milwaukee,73.0,82.0,4.25,153.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374874,2027,2026-11-12T00:00:00Z,St. John's,Colgate,90.0,59.0,29.0,158.0,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+372770,2027,2026-11-12T00:00:00Z,Michigan,Marquette,84.0,70.0,3.0,157.0,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+378002,2027,2026-11-12T00:00:00Z,UNC Wilmington,Kent State,91.0,73.0,7.25,156.0,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374890,2027,2026-11-12T00:00:00Z,Norfolk State,Old Dominion,60.0,71.0,-5.5,138.0,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374863,2027,2026-11-12T00:00:00Z,Notre Dame,South Carolina State,99.0,59.0,26.5,149.0,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374893,2027,2026-11-12T00:00:00Z,Princeton,Stony Brook,69.0,59.0,4.75,139.25,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374866,2027,2026-11-12T00:00:00Z,South Carolina,Saint Peter's,77.0,41.0,22.0,126.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374867,2027,2026-11-12T00:00:00Z,Holy Cross,Furman,67.0,80.0,-13.0,150.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374894,2027,2026-11-12T00:00:00Z,Delaware,James Madison,61.0,71.0,-3.75,150.0,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374873,2027,2026-11-12T00:00:00Z,East Tennessee State,Campbell,68.0,53.0,4.5,146.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374895,2027,2026-11-12T00:00:00Z,VCU,NJIT,87.0,49.0,32.0,149.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374896,2027,2026-11-12T00:00:00Z,Florida Atlantic,William & Mary,95.0,90.0,5.25,165.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374897,2027,2026-11-12T00:00:00Z,West Georgia,UNC Asheville,70.0,73.0,1.5,148.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+372763,2027,2026-11-12T00:00:00Z,Drexel,American University,64.0,66.0,1.5,139.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+372768,2027,2026-11-12T00:00:00Z,St. Bonaventure,Cornell,88.0,64.0,8.0,156.75,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+372769,2027,2026-11-12T00:00:00Z,Massachusetts,UMass Lowell,72.0,62.0,9.5,150.0,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+378003,2027,2026-11-12T00:30:00Z,Sam Houston,Pepperdine,85.0,77.0,-3.0,160.0,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374862,2027,2026-11-12T01:00:00Z,Houston,Jacksonville State,92.0,46.0,35.0,136.0,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+377997,2027,2026-11-12T01:00:00Z,Arkansas,Robert Morris,76.0,53.0,30.5,157.0,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+378004,2027,2026-11-12T01:00:00Z,South Dakota State,Valparaiso,81.0,69.0,-2.0,142.0,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374858,2027,2026-11-12T01:00:00Z,Tulsa,Oral Roberts,80.0,71.0,18.25,154.75,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374869,2027,2026-11-12T01:00:00Z,Southern Miss,Jackson State,84.0,80.0,8.5,152.0,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374879,2027,2026-11-12T01:00:00Z,Abilene Christian,Stephen F. Austin,71.0,76.0,-5.5,142.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374880,2027,2026-11-12T01:00:00Z,North Texas,Santa Clara,71.0,76.0,-2.25,152.75,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+372772,2027,2026-11-12T02:00:00Z,Grand Canyon,Cal Poly,99.0,71.0,18.5,180.75,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+377998,2027,2026-11-12T02:00:00Z,UCLA,Arkansas-Pine Bluff,106.0,37.0,44.5,156.5,Draft Kings,median:1,2026-11-13T07:45:09Z
+377999,2027,2026-11-12T02:00:00Z,Boise State,Oakland,111.0,79.0,16.5,161.25,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374857,2027,2026-11-12T02:00:00Z,Colorado State,Portland State,87.0,71.0,15.75,150.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374856,2027,2026-11-12T02:00:00Z,Nebraska,Lindenwood,94.0,60.0,34.5,152.0,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374881,2027,2026-11-12T03:00:00Z,Seattle U,UTSA,59.0,86.0,16.5,148.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374860,2027,2026-11-12T03:00:00Z,Oregon,Mississippi Valley State,100.0,66.0,35.5,148.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374900,2027,2026-11-12T03:00:00Z,California Baptist,Chicago State,62.0,81.0,11.0,140.0,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374901,2027,2026-11-12T03:00:00Z,Long Beach State,Pacific,62.0,59.0,-5.75,138.0,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374878,2027,2026-11-12T04:00:00Z,California,USC,65.0,77.0,-8.5,161.0,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374907,2027,2026-11-12T20:00:00Z,George Mason,Kansas City,76.0,68.0,15.5,141.5,Draft Kings,median:1,2026-11-13T07:45:09Z
+374911,2027,2026-11-12T23:00:00Z,Coppin State,Bradley,54.0,56.0,-12.0,133.0,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374912,2027,2026-11-12T23:00:00Z,UMBC,Morgan State,85.0,70.0,8.5,159.5,Draft Kings,median:1,2026-11-13T07:45:09Z
+372774,2027,2026-11-12T23:30:00Z,Indiana,Tennessee Tech,90.0,66.0,24.75,168.75,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374910,2027,2026-11-12T23:30:00Z,Penn State,Mercyhurst,72.0,57.0,20.5,146.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+372777,2027,2026-11-13T00:00:00Z,Bowling Green,Niagara,88.0,76.0,14.75,145.0,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374915,2027,2026-11-13T00:00:00Z,Quinnipiac,Monmouth,70.0,74.0,1.25,144.0,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374916,2027,2026-11-13T00:00:00Z,Towson,Loyola Maryland,90.0,60.0,13.5,134.0,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374917,2027,2026-11-13T00:00:00Z,High Point,Southern Utah,88.0,59.0,22.5,156.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374913,2027,2026-11-13T00:00:00Z,Western Illinois,Cal State Bakersfield,83.0,91.0,-8.5,147.5,Draft Kings,median:1,2026-11-13T07:45:09Z
+374914,2027,2026-11-13T00:00:00Z,Sacred Heart,Central Connecticut,75.0,79.0,5.5,146.0,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374905,2027,2026-11-13T00:00:00Z,West Virginia,Mercer,75.0,61.0,25.5,151.25,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+372778,2027,2026-11-13T00:00:00Z,Brown,Canisius,81.0,86.0,12.75,137.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+378007,2027,2026-11-13T00:00:00Z,Purdue Fort Wayne,Western Michigan,59.0,81.0,-1.5,152.5,Draft Kings,median:1,2026-11-13T07:45:09Z
+374918,2027,2026-11-13T00:00:00Z,Rhode Island,Maryland Eastern Shore,67.0,47.0,23.5,136.5,Draft Kings,median:1,2026-11-13T07:45:09Z
+374904,2027,2026-11-13T00:00:00Z,Howard,Stetson,75.0,62.0,9.5,150.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+372773,2027,2026-11-13T01:00:00Z,Minnesota,Southern,91.0,61.0,26.0,141.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374903,2027,2026-11-13T01:00:00Z,Alabama A&M,West Florida,85.0,83.0,6.0,147.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374908,2027,2026-11-13T01:00:00Z,Texas A&M,Oklahoma State,88.0,69.0,8.0,178.75,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374909,2027,2026-11-13T01:00:00Z,South Alabama,Loyola Marymount,79.0,72.0,-0.25,141.75,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+372776,2027,2026-11-13T01:00:00Z,Southern Illinois,Richmond,80.0,70.0,-3.0,153.0,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+372775,2027,2026-11-13T02:00:00Z,UTEP,New Mexico State,60.0,58.0,4.5,144.0,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+374906,2027,2026-11-13T02:00:00Z,BYU,Montana State,86.0,71.0,22.5,163.5,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z
+372779,2027,2026-11-13T03:00:00Z,San José State,UC Riverside,75.0,80.0,8.25,153.25,"Bovada,Draft Kings",median:2,2026-11-13T07:45:09Z

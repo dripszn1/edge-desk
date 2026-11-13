@@ -1,19 +1,18 @@
 {
-  "generated_ts": "2026-11-13T05:32:48Z",
-  "generated_ct": "Thu Nov 12, 11:32 PM CT",
-  "today_ct": "2026-11-12",
+  "generated_ts": "2026-11-13T07:47:45Z",
+  "generated_ct": "Fri Nov 13, 1:47 AM CT",
+  "today_ct": "2026-11-13",
   "snapshot": {
-    "ts": "2026-11-13T05:31:51Z",
-    "ct": "Thu Nov 12, 11:31 PM CT",
+    "ts": "2026-11-13T07:45:59Z",
+    "ct": "Fri Nov 13, 1:45 AM CT",
     "stale": false,
-    "markets_scanned": 7733,
+    "markets_scanned": 7681,
     "kickoff_source": "kalshi occurrence_datetime - 3h",
     "phases": {
       "CBB": {
         "pregame": 1913
       },
       "CFB": {
-        "live": 52,
         "pregame": 5094
       },
       "NFL": {
@@ -65,7 +64,7 @@
     "max_bet": 10.0
   },
   "signals": {
-    "weekly_ct": "Thu Nov 12, 11:32 PM CT",
+    "weekly_ct": "Fri Nov 13, 1:46 AM CT",
     "scorecards": [
       {
         "name": "SHARP shadow football",
@@ -87,18 +86,18 @@
       },
       {
         "name": "SHARP held back",
-        "settled": 144,
-        "pnl": -19.55,
-        "roi": -0.0243,
-        "t_stat": -1.44,
+        "settled": 145,
+        "pnl": -20.99,
+        "roi": -0.026,
+        "t_stat": -1.53,
         "verdict": "luck / no edge",
-        "why": "t=-1.44, coin-flip beat 49%",
+        "why": "t=-1.53, coin-flip beat 48%",
         "by_reason": {
           "far_rung": {
-            "settled": 87,
-            "pnl": -7.78,
-            "roi": -0.0134,
-            "t_stat": -1.48,
+            "settled": 88,
+            "pnl": -9.22,
+            "roi": -0.0158,
+            "t_stat": -1.6,
             "verdict": "luck / no edge"
           },
           "far_rung+stale_line": {
@@ -157,7 +156,7 @@
           "events": 4,
           "t_by_event": -0.83,
           "stale": 0,
-          "pending": 48,
+          "pending": 49,
           "no_close": 0
         }
       },
@@ -240,93 +239,51 @@
         "best_manual": "RESTING_10",
         "variants": {
           "EXIT_AT_TIP": {
-            "closed": 12,
-            "pnl_usd": -2.85,
-            "t_by_game": -2.85,
+            "closed": 13,
+            "pnl_usd": -3.17,
+            "t_by_game": -3.14,
             "gate_open": false
           },
           "HOLD": {
-            "closed": 12,
-            "pnl_usd": -25.14,
-            "t_by_game": -3.48,
+            "closed": 13,
+            "pnl_usd": -26.58,
+            "t_by_game": -3.35,
             "gate_open": false
           },
           "RESTING_10": {
-            "closed": 12,
-            "pnl_usd": 10.46,
-            "t_by_game": 1.46,
+            "closed": 13,
+            "pnl_usd": 9.02,
+            "t_by_game": 1.15,
             "gate_open": false
           },
           "RESTING_15": {
-            "closed": 12,
-            "pnl_usd": 6.98,
-            "t_by_game": 1.59,
+            "closed": 13,
+            "pnl_usd": 5.54,
+            "t_by_game": 1.07,
             "gate_open": false
           },
           "RESTING_5": {
-            "closed": 12,
-            "pnl_usd": 3.61,
-            "t_by_game": 0.9,
+            "closed": 13,
+            "pnl_usd": 2.17,
+            "t_by_game": 0.49,
             "gate_open": false
           },
           "RESTING_FAIR": {
-            "closed": 12,
-            "pnl_usd": 4.67,
-            "t_by_game": 2.3,
+            "closed": 13,
+            "pnl_usd": 3.23,
+            "t_by_game": 1.04,
             "gate_open": false
           },
           "TRADE": {
-            "closed": 12,
-            "pnl_usd": -2.85,
-            "t_by_game": -2.85,
+            "closed": 13,
+            "pnl_usd": -3.17,
+            "t_by_game": -3.14,
             "gate_open": false
           }
         }
       }
     },
     "open_alerts": [
-      {
-        "ticker": "KXNCAAFSPREAD-26NOV12MEMUSF-MEM4",
-        "signal": "SHARP",
-        "side": "NO",
-        "game": "Memphis vs South Florida: Spread",
-        "contract": "Memphis wins by over 3.5 points",
-        "max_price": 0.48,
-        "stake": 2.99,
-        "gone": true,
-        "sent_ct": "Thu Nov 12, 11:52 AM CT",
-        "kickoff_utc": "2026-11-13T01:00:00Z",
-        "kickoff_ct": "Thu Nov 12, 7:00 PM CT",
-        "kalshi_url": "https://kalshi.com/markets/kxncaafspread/event/kxncaafspread-26nov12memusf"
-      },
-      {
-        "ticker": "KXNFLSPREAD-26NOV12WASNYG-NYG2",
-        "signal": "SHARP",
-        "side": "YES",
-        "game": "Washington vs New York G: Spread",
-        "contract": "New York G wins by over 1.5 points",
-        "max_price": 0.5,
-        "stake": 2.59,
-        "gone": true,
-        "sent_ct": "Thu Nov 12, 5:38 PM CT",
-        "kickoff_utc": "2026-11-13T01:15:00Z",
-        "kickoff_ct": "Thu Nov 12, 7:15 PM CT",
-        "kalshi_url": "https://kalshi.com/markets/kxnflspread/event/kxnflspread-26nov12wasnyg"
-      },
-      {
-        "ticker": "KXNFLTOTAL-26NOV12WASNYG-33",
-        "signal": "SHARP",
-        "side": "NO",
-        "game": "Washington vs New York G: Total Points",
-        "contract": "Over 32.5 points",
-        "max_price": 0.22,
-        "stake": 2.09,
-        "gone": true,
-        "sent_ct": "Thu Nov 12, 8:47 AM CT",
-        "kickoff_utc": "2026-11-13T01:15:00Z",
-        "kickoff_ct": "Thu Nov 12, 7:15 PM CT",
-        "kalshi_url": "https://kalshi.com/markets/kxnfltotal/event/kxnfltotal-26nov12wasnyg"
-      },
       {
         "ticker": "KXNCAAMBSPREAD-26NOV13SIUEDUKE-DUKE48",
         "signal": "SHARP",
@@ -466,6 +423,20 @@
         "kickoff_utc": "2026-11-14T20:30:00Z",
         "kickoff_ct": "Sat Nov 14, 2:30 PM CT",
         "kalshi_url": "https://kalshi.com/markets/kxncaafspread/event/kxncaafspread-26nov14michore"
+      },
+      {
+        "ticker": "KXNCAAFTOTAL-26NOV14GASOGAST-54",
+        "signal": "SHARP",
+        "side": "NO",
+        "game": "Georgia Southern vs Georgia St.: Total Points",
+        "contract": "Over 53.5 points",
+        "max_price": 0.4,
+        "stake": 2.51,
+        "gone": false,
+        "sent_ct": "Fri Nov 13, 1:46 AM CT",
+        "kickoff_utc": "2026-11-14T20:30:00Z",
+        "kickoff_ct": "Sat Nov 14, 2:30 PM CT",
+        "kalshi_url": "https://kalshi.com/markets/kxncaaftotal/event/kxncaaftotal-26nov14gasogast"
       },
       {
         "ticker": "KXNCAAFTOTAL-26NOV14MICHORE-34",
