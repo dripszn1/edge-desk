@@ -1,7 +1,7 @@
 {
   "proposals": [],
-  "generated_utc": "2026-11-13T07:46:28Z",
-  "generated_ct": "Fri Nov 13, 1:46 AM CT",
+  "generated_utc": "2026-11-13T09:52:45Z",
+  "generated_ct": "Fri Nov 13, 3:52 AM CT",
   "paper_mode": true,
   "rules": {
     "min_bets": 30,
@@ -138,8 +138,8 @@
       "sims": 10000,
       "bets": 145,
       "real_pnl": -20.99,
-      "sim_median_pnl": -17.99,
-      "beat_pct": 0.4775
+      "sim_median_pnl": -18.99,
+      "beat_pct": 0.4787
     },
     "by_week": [
       {
@@ -166,7 +166,7 @@
           "bets": 88,
           "real_pnl": -9.22,
           "sim_median_pnl": -10.22,
-          "beat_pct": 0.5077
+          "beat_pct": 0.5117
         },
         "verdict": "luck / no edge",
         "why": "t=-1.6, coin-flip beat 51%"
@@ -183,7 +183,7 @@
           "bets": 26,
           "real_pnl": -10.15,
           "sim_median_pnl": -3.15,
-          "beat_pct": 0.3524
+          "beat_pct": 0.3501
         },
         "verdict": "not enough data",
         "why": "26 settled bets (< 30)"
@@ -204,8 +204,8 @@
           "sims": 10000,
           "bets": 31,
           "real_pnl": -1.62,
-          "sim_median_pnl": -5.62,
-          "beat_pct": 0.5584
+          "sim_median_pnl": -4.62,
+          "beat_pct": 0.5588
         },
         "verdict": "luck / no edge",
         "why": "t=-0.05, coin-flip beat 56%"
@@ -1386,8 +1386,8 @@
   "alert_room": {
     "0c": {
       "alerts": 17,
-      "gone_pct": 64.7,
-      "median_min_to_gone": 146.7,
+      "gone_pct": 70.6,
+      "median_min_to_gone": 172.7,
       "with_close": 3,
       "avg_clv_c": -1.79
     },
