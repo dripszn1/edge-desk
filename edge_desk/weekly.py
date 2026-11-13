@@ -146,6 +146,13 @@ def run(now: datetime | None = None) -> dict:
            "rules": {"min_bets": MIN_BETS, "skill_t": SKILL_T, "skill_beat_pct": SKILL_PCTL, "sims": N_SIMS},
            "paper": assess(_load(PAPER)), "model_shadow": assess(_load(SHADOW)),
            **sharp_split(_load(SHARP_SHADOW)), "sharp_tracked": tracked_report(_load(SHARP_TRACKED))}
+    try:                                   # #55 settlement watch: nothing stays pending forever
+        from . import grade as _grade
+        rep["settlement"] = _grade.settlement_watch(
+            {"shadow": _load(SHARP_SHADOW), "tracked": _load(SHARP_TRACKED), "model": _load(SHADOW)},
+            _grade.event_kickoffs(), now)
+    except Exception as e:                 # noqa: BLE001
+        rep["settlement"] = {"error": str(e)[:200]}
     try:                                   # #31 closing-price value; never blocks the report
         from . import clv
         rep["clv"] = clv.run(now)

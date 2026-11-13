@@ -155,7 +155,7 @@ MODEL_BET_COLS = ["bet_id", "snapshot_ts", "date_ct", "league", "kind", "market"
 
 
 def model_bets(flags: pd.DataFrame, results: pd.DataFrame, now: datetime | None = None,
-               source: str = "shadow", kind: str = "MODEL") -> pd.DataFrame:
+               source: str = "shadow", kind: str = "MODEL", kickoffs: dict | None = None) -> pd.DataFrame:
     """Grade single-leg MODEL flags: first sighting of each (ticker, side) is the entry, fee
     recomputed at the paper size, settled only from a final result fetched after the entry."""
     now = pd.Timestamp(now or datetime.now(timezone.utc))
@@ -184,8 +184,66 @@ def model_bets(flags: pd.DataFrame, results: pd.DataFrame, now: datetime | None 
                      "payout": leg["payout"], "pnl": round(leg["payout"] - leg["cost"], 2) if done else None,
                      "status": status,
                      "settled_ts": settled.strftime("%Y-%m-%dT%H:%M:%SZ") if done else None,
-                     "kickoff_ct": r.get("kickoff_ct"), "source": source})
+                     "kickoff_ct": _kickoff_ct(r, kickoffs), "source": source})
     return pd.DataFrame(rows, columns=MODEL_BET_COLS)
+
+
+KICKOFF_MAP = ROOT / "data" / "kickoffs" / "event_map.csv"
+OVERDUE_HOURS = 12          # a game is long over and Kalshi has settled it well before this
+
+
+def event_of(leg_or_ticker: str) -> str:
+    """'NO KXNFLSPREAD-26NOV15BUFNYJ-BUF7' or the bare ticker -> 'KXNFLSPREAD-26NOV15BUFNYJ'."""
+    t = str(leg_or_ticker).split(" ", 1)[-1]
+    return t.rsplit("-", 1)[0]
+
+
+def event_kickoffs(path=KICKOFF_MAP) -> dict:
+    """Kalshi event -> kickoff (UTC Timestamp) from the persistent event map (scan.write_event_map)."""
+    try:
+        m = pd.read_csv(path, dtype=str, usecols=["event_ticker", "kickoff_utc"])
+    except (FileNotFoundError, ValueError):
+        return {}
+    ko = pd.to_datetime(m["kickoff_utc"], utc=True, errors="coerce")
+    return {e: k for e, k in zip(m["event_ticker"], ko) if pd.notna(k)}
+
+
+def _kickoff_ct(r: dict, kickoffs: dict | None):
+    """The flag's own kickoff_ct, else (#55) the event map's kickoff, else blank (never guessed)."""
+    v = r.get("kickoff_ct")
+    if v is not None and not (isinstance(v, float) and pd.isna(v)) and str(v).strip():
+        return v
+    k = (kickoffs or {}).get(event_of(r.get("leg1", "")))
+    if k is None:
+        return None
+    from .kickoffs import to_ct
+    return to_ct(k.strftime("%Y-%m-%dT%H:%M:%SZ"))
+
+
+def settlement_watch(frames: dict, kickoffs: dict, now=None, hours: float = OVERDUE_HOURS) -> dict:
+    """#55: every shadow AND tracked play must eventually settle. Counts plays still pending
+    (or 'stale') and names those whose game kicked off more than `hours` ago. Rows stamped
+    after `now` are ignored."""
+    now = pd.Timestamp(now or datetime.now(timezone.utc))
+    if now.tzinfo is None:
+        now = now.tz_localize("UTC")
+    pend, over, nok = 0, [], 0
+    for src, b in (frames or {}).items():
+        if b is None or b.empty or "status" not in b:
+            continue
+        b = b[b["status"].isin(["pending", "stale"])]
+        ts = pd.to_datetime(b.get("snapshot_ts"), utc=True, errors="coerce")
+        b = b[ts.notna() & (ts <= now)]
+        for leg in b["leg1"].astype(str):
+            pend += 1
+            k = kickoffs.get(event_of(leg))
+            if k is None:
+                nok += 1
+            elif (now - k).total_seconds() > hours * 3600:
+                over.append({"source": src, "leg1": leg, "kickoff_utc": k.strftime("%Y-%m-%dT%H:%M:%SZ"),
+                             "hours_past": round((now - k).total_seconds() / 3600, 1)})
+    over.sort(key=lambda o: -o["hours_past"])
+    return {"pending": pend, "overdue": len(over), "no_kickoff": nok, "grace_hours": hours, "oldest": over[:5]}
 
 
 MODEL_SHADOW = ROOT / "data" / "flags" / "model_shadow.csv"
@@ -207,7 +265,8 @@ def reason_bucket(reason) -> str:
     return "+".join(b) or "other"
 
 
-def tracked_bets(tracked: pd.DataFrame, results: pd.DataFrame, now: datetime | None = None) -> pd.DataFrame:
+def tracked_bets(tracked: pd.DataFrame, results: pd.DataFrame, now: datetime | None = None,
+                 kickoffs: dict | None = None) -> pd.DataFrame:
     """Grade the low-confidence SHARP plays (far rungs, stale lines, >cap edges) exactly like
     SHARP shadow bets: first sighting of each (side, ticker) is the entry, sized by the same
     quarter-Kelly/$10 rules (at least 1 contract so every play is graded), fees at that size,
@@ -235,7 +294,7 @@ def tracked_bets(tracked: pd.DataFrame, results: pd.DataFrame, now: datetime | N
         n.append(max(1, int(stake // (price + fee1)) if price + fee1 > 0 else 1))
     t["contracts"] = n
     t["market"] = t["ticker"].astype(str).str.split("-").str[0].str.replace(r"^KX(NFL|NCAAF|NCAAMB)", "", regex=True)
-    out = model_bets(t.drop(columns=["_ts"]), results, now, source="tracked", kind="SHARP")
+    out = model_bets(t.drop(columns=["_ts"]), results, now, source="tracked", kind="SHARP", kickoffs=kickoffs)
     rmap = dict(zip(t["leg1"], t["reason"]))
     out["reason"] = out["leg1"].map(rmap)
     out["reason_bucket"] = out["reason"].map(reason_bucket)
@@ -285,7 +344,7 @@ def run() -> pd.DataFrame:
     sb.to_csv(SHARP_BETS_OUT, index=False)
     print(f"sharp shadow bets {len(sb)} | " + (str(sb["status"].value_counts().to_dict()) if len(sb) else "{}"))
     tr = pd.read_csv(TRACKED) if TRACKED.exists() else pd.DataFrame()
-    tb = tracked_bets(drop_unrecorded(tr, pulls), results)
+    tb = tracked_bets(drop_unrecorded(tr, pulls), results, kickoffs=event_kickoffs())
     tb.to_csv(TRACKED_BETS_OUT, index=False)
     print(f"sharp tracked bets {len(tb)} | " + (str(tb["status"].value_counts().to_dict()) if len(tb) else "{}"))
     print(f"model shadow bets {len(mb)} | " + (str(mb["status"].value_counts().to_dict()) if len(mb) else "{}"))
