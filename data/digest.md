@@ -1,4 +1,4 @@
-# edge-desk digest, Fri Nov 13, 10:50 AM CT
+# edge-desk digest, Fri Nov 13, 11:25 AM CT
 
 Paper only, nothing is placed. Plays kicking off in the next 36h:
 - SHARP shadow: Kansas St. vs TCU | NO TCU wins by over 7.5 points @ 40¢, fair 45¢, edge 3.1¢ after fees | $2.51 paper | Sat Nov 14, 1:00 PM CT | [Kalshi](https://kalshi.com/markets/kxncaafspread/event/kxncaafspread-26nov14ksutcu)
@@ -18,4 +18,4 @@ Settled in the last 24h:
   exits compared: football (13 done): hold $-26.58, sell at tip $-3.17, auto-sell at fair $+3.23, auto-sell +10c $+9.02 · CBB (141 done): hold $-7.53, sell at tip $-63.85, auto-sell at fair $-100.95, auto-sell +10c $-76.09
   picks vs random entries, $/play: football (12 plays): hold $-2.10 vs $-1.11 (beats 8%), auto-sell +10c $-0.30 vs $-0.70 (beats 86%) · CBB (141 plays): hold $-0.05 vs $-0.08 (beats 54%), auto-sell +10c $-1.03 vs $-0.83 (beats 16%)
 
-Status: Kalshi data 2m old (ok); sharp odds 2m old; odds credits left 19634 of 20000; gates: MODEL NFL closed, MODEL CFB closed, SHARP NFL closed, SHARP CFB closed, SHARP NFL ML closed, SHARP CFB ML closed
+Status: Kalshi data 2m old (ok); sharp odds 2m old; odds credits left 19631 of 20000; gates: MODEL NFL closed, MODEL CFB closed, SHARP NFL closed, SHARP CFB closed, SHARP NFL ML closed, SHARP CFB ML closed
