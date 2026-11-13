@@ -1,5 +1,12 @@
 # Reports (newest first)
 
+## 2026-11-13 (builder, 19:45Z run)
+- Nothing to build: backlog #1–#60 all done, and the latest runs show nothing broken (collect run 79 all steps green, settle 221/221 tickers fetched, settlement 273 pending / 0 overdue, candles 144 of 322 tickers finished with 0 errors, automerge #9 for #60 green). Nothing shipped, so nothing to merge.
+- Tests: 446/446 green on dev rebased onto main.
+- Honest results (football only; unique contracts after #60): 10 closed plays from 4 games. Picks vs Kalshi's close after fee: shadow −0.9¢ (5 plays), held back −1.6¢ (7). Exits on the same 10: hold −$19.90, sell at tip −$2.43, Auto Sell at fair +$1.91, Auto Sell +10¢ +$5.47; bracket not in the summary yet. Picks vs random entries (9 plays): hold beats 7% of random portfolios, Auto Sell +10¢ beats 78%. No Verdict rule threshold met (needs ≥30 closed across ≥10 games; ~180 football plays settle Sat/Sun). 5 CFB SHARP shadow plays queued for Saturday. Odds credits 19,622 of 20,000.
+- Watchdog: collect was 18 min old (run 79, 19:26Z) and the keeper is running, so no collect dispatch; dispatched live.yml on main (13:45 CT, outside the Fri 5:30 PM window, so its guard exits).
+- Needs Emerson: nothing.
+
 ## 2026-11-13 (builder, 16:45Z run)
 - Shipped **#59**, auto-merged to main (automerge run #6 green). Cause of the stuck merge: automerge.yml installed main's requirements *before* merging dev, and dev had just added `pyyaml` for the new workflow-YAML test, so the merged tree failed with `No module named yaml` (runs #4 and #5) and the collect.yml duplicate-key fix never reached main. Now it reinstalls the merged tree's requirements before testing; a test guards it. Collect was down ~2h (14:46Z → 16:47Z).
 - Tests: 443/443 green (1 new).
