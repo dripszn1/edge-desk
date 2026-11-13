@@ -7,7 +7,7 @@ Read SPEC.md first. It is the contract; this file is how to work.
 ## Never
 - Place, simulate-submit, or prepare live orders on Kalshi or anywhere else. Read-only data only.
 - Loosen a risk limit in `edge_desk/config.py` (bankroll, MAX_BET, DAILY_LOSS_CAP, DRAWDOWN_STOP, PAPER_MODE) without Emerson's written OK in chat.
-- Push to `main`. Overnight work goes to the `dev` branch; Emerson merges.
+- Push to `main`. All work goes to the `dev` branch; `.github/workflows/automerge.yml` merges dev → main by itself when the full test suite passes on the merged tree (Emerson OK'd 11-13). Red tests or code conflicts → nothing merges. Risk limits, PAPER_MODE and the Verdict rules in OPERATIONS.md still change only with Emerson's written OK in chat.
 - Delete data in `data/`.
 
 ## Always

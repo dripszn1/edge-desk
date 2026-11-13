@@ -1,0 +1,51 @@
+# Auto-merge dev -> main when the tests pass (Emerson OK'd 11-13 07:53 CT: "yes" to removing the manual merge).
+# Code conflicts or red tests -> nothing is merged; the run fails and the builder / daily check-in see it.
+# data/ conflicts (live commits to main every 15 min) keep main's copy: dev never owns data.
+name: automerge-dev
+on:
+  push:
+    branches: [dev]
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: automerge
+  cancel-in-progress: false
+jobs:
+  merge:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Merge dev into main, test, push (retries if live pushed in between)
+        run: |
+          git config user.name "edge-desk-bot"
+          git config user.email "edge-desk-bot@users.noreply.github.com"
+          for attempt in 1 2 3 4 5; do
+            git fetch -q origin main dev
+            git checkout -q -B main origin/main
+            if git merge-base --is-ancestor origin/dev origin/main; then
+              echo "main already has dev; nothing to merge"; exit 0
+            fi
+            if ! git merge --no-ff --no-edit -m "Auto-merge dev into main (tests green)" origin/dev; then
+              bad=$(git diff --name-only --diff-filter=U | grep -v '^data/' || true)
+              if [ -n "$bad" ]; then
+                echo "::error::code conflicts, not merging: $bad"; git merge --abort; exit 1
+              fi
+              git diff --name-only --diff-filter=U | xargs -r git checkout --ours --
+              git add -A data
+              git commit -q --no-edit
+            fi
+            python -m pytest -q || { echo "::error::tests failed on the merged tree; not merging"; exit 1; }
+            if git push -q origin HEAD:main; then echo "merged dev into main"; exit 0; fi
+            echo "push raced with live, retrying ($attempt)"; sleep 20
+          done
+          echo "::error::could not push after 5 attempts"; exit 1

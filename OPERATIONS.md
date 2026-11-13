@@ -18,7 +18,7 @@ then the top of REPORTS.md (latest builder runs). Nothing important lives only i
 
 ## How Emerson wants it run
 - Plain language, phone-short. He reads on his phone.
-- Edge-desk operations (merge PRs, start/restart workflows): say what you're about to do, then do it. Don't ask.
+- Edge-desk operations (start/restart workflows): say what you're about to do, then do it. Don't ask. Merges are automatic (automerge.yml); no PR links.
 - Approvals that truly need him: open them in the built-in browser pane, ready to click.
 - Never place or prepare Kalshi orders. Kalshi API/trading is parked (see CLAUDE.md).
 - Everything is PAPER until a strategy passes its gate (>=30 closed, P&L>0, t>=2 by game).
@@ -27,7 +27,9 @@ then the top of REPORTS.md (latest builder runs). Nothing important lives only i
   in-game, and he can't react fast enough). Every play is graded hold vs sell-at-tip vs Auto Sell vs bracket.
 
 ## Routine procedures
-**Merge dev -> main.** `git fetch origin main +refs/heads/dev:refs/remotes/origin/dev`, test-merge locally.
+**Merge dev -> main: automatic since 11-13.** `automerge.yml` runs on every push to dev: merges dev into main,
+keeps main's copy of conflicting data/ files, runs the full test suite on the merged tree, pushes main (retries
+if live pushed in between). Red tests or a code conflict → no merge; fix on dev. Manual fallback (old way): `git fetch origin main +refs/heads/dev:refs/remotes/origin/dev`, test-merge locally.
 Data files conflict often because live keeps committing to main: union append-only logs (odds lines, results,
 sharp_tracked, collector_log), keep main's copy of state files (latest.json, event_map, fair_latest, digest).
 Run `python -m pytest -q`, push the merge to `dev` (pushing straight to main is blocked), then merge the open
