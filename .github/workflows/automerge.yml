@@ -44,6 +44,7 @@ jobs:
               git add -A data
               git commit -q --no-edit
             fi
+            pip install -q -r requirements.txt  # the merged tree may add a dependency (11-13: pyyaml)
             python -m pytest -q || { echo "::error::tests failed on the merged tree; not merging"; exit 1; }
             if git push -q origin HEAD:main; then echo "merged dev into main"; exit 0; fi
             echo "push raced with live, retrying ($attempt)"; sleep 20
