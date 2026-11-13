@@ -2,8 +2,8 @@
   "proposals": [
     "PROPOSE cbb: plays entered after Kalshi already moved toward us lose -2.99c to Kalshi's close (t -2.34 by game, 53 plays): skip a play when Kalshi's price already fell 1c+ toward ours in the 30 min before"
   ],
-  "generated_utc": "2026-11-13T03:49:52Z",
-  "generated_ct": "Thu Nov 12, 9:49 PM CT",
+  "generated_utc": "2026-11-13T04:05:07Z",
+  "generated_ct": "Thu Nov 12, 10:05 PM CT",
   "paper_mode": true,
   "rules": {
     "min_bets": 30,
@@ -140,8 +140,8 @@
       "sims": 10000,
       "bets": 141,
       "real_pnl": -12.53,
-      "sim_median_pnl": -17.53,
-      "beat_pct": 0.5403
+      "sim_median_pnl": -18.53,
+      "beat_pct": 0.5475
     },
     "by_week": [
       {
@@ -154,7 +154,7 @@
       }
     ],
     "verdict": "luck / no edge",
-    "why": "t=-1.17, coin-flip beat 54%",
+    "why": "t=-1.17, coin-flip beat 55%",
     "by_reason": {
       "far_rung": {
         "settled": 86,
@@ -168,7 +168,7 @@
           "bets": 86,
           "real_pnl": -6.26,
           "sim_median_pnl": -10.26,
-          "beat_pct": 0.5363
+          "beat_pct": 0.5358
         },
         "verdict": "luck / no edge",
         "why": "t=-1.35, coin-flip beat 54%"
@@ -185,7 +185,7 @@
           "bets": 26,
           "real_pnl": -10.15,
           "sim_median_pnl": -3.15,
-          "beat_pct": 0.3472
+          "beat_pct": 0.3488
         },
         "verdict": "not enough data",
         "why": "26 settled bets (< 30)"
@@ -202,7 +202,7 @@
           "bets": 29,
           "real_pnl": 3.88,
           "sim_median_pnl": -5.12,
-          "beat_pct": 0.6419
+          "beat_pct": 0.6406
         },
         "verdict": "not enough data",
         "why": "29 settled bets (< 30)"
@@ -1370,14 +1370,14 @@
       "PROPOSE cbb: plays entered after Kalshi already moved toward us lose -2.99c to Kalshi's close (t -2.34 by game, 53 plays): skip a play when Kalshi's price already fell 1c+ toward ours in the 30 min before"
     ],
     "cbb": {
-      "plays": 141,
+      "plays": 142,
       "line_checked": 93,
       "adverse_pct": 15.1,
       "avg_line_move_fav": -0.49,
       "median_pull_age_min": 31.4,
       "kalshi_first": {
         "False": {
-          "plays": 22,
+          "plays": 23,
           "with_close": 22,
           "avg_clv_c": -1.92,
           "games": 9,
@@ -1400,7 +1400,7 @@
           "t_by_game": -4.75
         },
         "10-30 min": {
-          "plays": 3,
+          "plays": 4,
           "with_close": 3,
           "avg_clv_c": -2.12,
           "games": 3,
@@ -1423,14 +1423,14 @@
       }
     },
     "football": {
-      "plays": 207,
+      "plays": 208,
       "line_checked": 13,
       "adverse_pct": 30.8,
       "avg_line_move_fav": 0.12,
       "median_pull_age_min": 85.9,
       "kalshi_first": {
         "False": {
-          "plays": 129,
+          "plays": 130,
           "with_close": 7,
           "avg_clv_c": -1.03,
           "games": 4,
@@ -1460,7 +1460,7 @@
           "t_by_game": null
         },
         "30-90 min": {
-          "plays": 40,
+          "plays": 41,
           "with_close": 1,
           "avg_clv_c": 0.28,
           "games": 1,
@@ -1743,7 +1743,7 @@
           "label": "MANUAL-OK",
           "closed": 8,
           "pending": 200,
-          "closed_early_not_counted": 1,
+          "closed_early_not_counted": 4,
           "pnl_usd": 8.7,
           "avg_c": 6.6,
           "win_pct": 87.5,
@@ -1755,7 +1755,7 @@
           "label": "MANUAL-OK",
           "closed": 8,
           "pending": 200,
-          "closed_early_not_counted": 0,
+          "closed_early_not_counted": 4,
           "pnl_usd": 4.06,
           "avg_c": 5.78,
           "win_pct": 62.5,
@@ -1767,7 +1767,7 @@
           "label": "MANUAL-OK",
           "closed": 8,
           "pending": 200,
-          "closed_early_not_counted": 5,
+          "closed_early_not_counted": 8,
           "pnl_usd": 3.0,
           "avg_c": 2.26,
           "win_pct": 87.5,
@@ -1779,7 +1779,7 @@
           "label": "MANUAL-OK",
           "closed": 8,
           "pending": 200,
-          "closed_early_not_counted": 4,
+          "closed_early_not_counted": 7,
           "pnl_usd": 4.17,
           "avg_c": 3.12,
           "win_pct": 100.0,
