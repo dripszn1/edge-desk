@@ -26417,3 +26417,45 @@ snapshot_ts,league,event,ticker,side,price,fair,edge,sharp_line,odds_fetched_ts,
 2026-11-13T10:44:51Z,NFL,Seattle vs Las Vegas: Spread,KXNFLSPREAD-26NOV15SEALV-SEA21,YES,0.13,0.1711,0.0328,6.5,2026-11-13T10:44:48Z,rung far from sharp line (unvalidated range)
 2026-11-13T10:44:51Z,NFL,Seattle vs Las Vegas: Spread,KXNFLSPREAD-26NOV15SEALV-SEA18,YES,0.18,0.2299,0.0387,6.5,2026-11-13T10:44:48Z,rung far from sharp line (unvalidated range)
 2026-11-13T10:44:51Z,NFL,Miami vs Indianapolis: Total Points,KXNFLTOTAL-26NOV15MIAIND-22,NO,0.07,0.1064,0.0317,38.0,2026-11-13T10:44:48Z,rung far from sharp line (unvalidated range)
+2026-11-13T13:45:33Z,NFL,Buffalo vs New York J: Spread,KXNFLSPREAD-26NOV15BUFNYJ-NYJ2,YES,0.2,0.242,0.0303,-8.5,2026-11-13T10:44:48Z,sharp line stale
+2026-11-13T13:45:33Z,NFL,Buffalo vs New York J: Spread,KXNFLSPREAD-26NOV15BUFNYJ-NYJ3,YES,0.18,0.226,0.0347,-8.5,2026-11-13T10:44:48Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-13T13:45:33Z,NFL,Jacksonville vs Tennessee: Spread,KXNFLSPREAD-26NOV15JACTEN-JAC15,NO,0.61,0.6587,0.032,10.5,2026-11-13T10:44:48Z,sharp line stale
+2026-11-13T13:45:33Z,NFL,Jacksonville vs Tennessee: Spread,KXNFLSPREAD-26NOV15JACTEN-JAC7,NO,0.34,0.3918,0.0351,10.5,2026-11-13T10:44:48Z,sharp line stale
+2026-11-13T13:45:33Z,NFL,Seattle vs Las Vegas: Spread,KXNFLSPREAD-26NOV15SEALV-SEA21,YES,0.13,0.1711,0.0328,6.5,2026-11-13T10:44:48Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-13T13:45:33Z,NFL,Seattle vs Las Vegas: Spread,KXNFLSPREAD-26NOV15SEALV-SEA18,YES,0.18,0.2299,0.0387,6.5,2026-11-13T10:44:48Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-13T13:45:33Z,NFL,Seattle vs Las Vegas: Spread,KXNFLSPREAD-26NOV15SEALV-SEA17,YES,0.21,0.2586,0.0361,6.5,2026-11-13T10:44:48Z,sharp line stale
+2026-11-13T13:45:33Z,NFL,Seattle vs Las Vegas: Spread,KXNFLSPREAD-26NOV15SEALV-SEA15,YES,0.23,0.2921,0.0494,6.5,2026-11-13T10:44:48Z,sharp line stale
+2026-11-13T13:45:33Z,NFL,Miami vs Indianapolis: Total Points,KXNFLTOTAL-26NOV15MIAIND-22,NO,0.07,0.1064,0.0317,38.0,2026-11-13T10:44:48Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-13T13:45:33Z,NFL,Los Angeles C vs Baltimore: Total Points,KXNFLTOTAL-26NOV16LACBAL-24,NO,0.08,0.1287,0.0435,38.5,2026-11-13T10:44:48Z,rung far from sharp line (unvalidated range); sharp line stale
+2026-11-13T13:45:33Z,CFB,Michigan vs Oregon: Spread,KXNCAAFSPREAD-26NOV14MICHORE-ORE3,NO,0.24,0.2871,0.0343,10.5,2026-11-13T13:45:28Z,rung far from sharp line (unvalidated range)
+2026-11-13T13:45:33Z,CFB,South Carolina vs Arkansas: Spread,KXNCAAFSPREAD-26NOV14SCARARK-ARK3,YES,0.22,0.2645,0.0311,-7.5,2026-11-13T13:45:28Z,rung far from sharp line (unvalidated range)
+2026-11-13T13:45:33Z,CFB,Illinois vs UCLA: Total Points,KXNCAAFTOTAL-26NOV13ILLUCLA-28,NO,0.07,0.1088,0.034,47.5,2026-11-13T13:45:28Z,rung far from sharp line (unvalidated range)
+2026-11-13T13:45:33Z,CFB,Northwestern vs Ohio St.: Total Points,KXNCAAFTOTAL-26NOV14NWOSU-28,NO,0.11,0.1545,0.0376,44.0,2026-11-13T13:45:28Z,rung far from sharp line (unvalidated range)
+2026-11-13T13:45:33Z,CFB,Northwestern vs Ohio St.: Total Points,KXNCAAFTOTAL-26NOV14NWOSU-31,NO,0.16,0.2026,0.0326,44.0,2026-11-13T13:45:28Z,rung far from sharp line (unvalidated range)
+2026-11-13T13:45:33Z,CFB,Wisconsin vs Maryland: Total Points,KXNCAAFTOTAL-26NOV14WISMD-24,NO,0.08,0.127,0.0415,42.0,2026-11-13T13:45:28Z,rung far from sharp line (unvalidated range)
+2026-11-13T13:45:33Z,CFB,Wisconsin vs Maryland: Total Points,KXNCAAFTOTAL-26NOV14WISMD-27,NO,0.11,0.1696,0.0526,42.0,2026-11-13T13:45:28Z,rung far from sharp line (unvalidated range)
+2026-11-13T13:45:33Z,CFB,Wisconsin vs Maryland: Total Points,KXNCAAFTOTAL-26NOV14WISMD-30,NO,0.16,0.2204,0.051,42.0,2026-11-13T13:45:28Z,rung far from sharp line (unvalidated range)
+2026-11-13T13:45:33Z,CFB,Wisconsin vs Maryland: Total Points,KXNCAAFTOTAL-26NOV14WISMD-33,NO,0.23,0.279,0.0362,42.0,2026-11-13T13:45:28Z,rung far from sharp line (unvalidated range)
+2026-11-13T13:45:33Z,CFB,East Carolina vs Charlotte: Total Points,KXNCAAFTOTAL-26NOV14ECUCHAR-26,NO,0.07,0.1146,0.0398,45.0,2026-11-13T13:45:28Z,rung far from sharp line (unvalidated range)
+2026-11-13T13:45:33Z,CFB,East Carolina vs Charlotte: Total Points,KXNCAAFTOTAL-26NOV14ECUCHAR-29,NO,0.11,0.1545,0.0376,45.0,2026-11-13T13:45:28Z,rung far from sharp line (unvalidated range)
+2026-11-13T13:45:33Z,CFB,Kansas St. vs TCU: Total Points,KXNCAAFTOTAL-26NOV14KSUTCU-26,NO,0.08,0.1207,0.0351,44.5,2026-11-13T13:45:28Z,rung far from sharp line (unvalidated range)
+2026-11-13T13:45:33Z,CFB,Kansas St. vs TCU: Total Points,KXNCAAFTOTAL-26NOV14KSUTCU-29,NO,0.12,0.1619,0.0341,44.5,2026-11-13T13:45:28Z,rung far from sharp line (unvalidated range)
+2026-11-13T13:45:33Z,CFB,Tennessee vs Texas A&M: Total Points,KXNCAAFTOTAL-26NOV14TENNTXAM-26,NO,0.09,0.1335,0.0374,43.5,2026-11-13T13:45:28Z,rung far from sharp line (unvalidated range)
+2026-11-13T13:45:33Z,CFB,Tennessee vs Texas A&M: Total Points,KXNCAAFTOTAL-26NOV14TENNTXAM-29,NO,0.13,0.1775,0.0395,43.5,2026-11-13T13:45:28Z,rung far from sharp line (unvalidated range)
+2026-11-13T13:45:33Z,CFB,Boston College vs Notre Dame: Total Points,KXNCAAFTOTAL-26NOV14BCND-32,NO,0.06,0.0977,0.0334,52.5,2026-11-13T13:45:28Z,rung far from sharp line (unvalidated range)
+2026-11-13T13:45:33Z,CFB,Michigan vs Oregon: Total Points,KXNCAAFTOTAL-26NOV14MICHORE-22,NO,0.09,0.1403,0.0444,39.0,2026-11-13T13:45:28Z,rung far from sharp line (unvalidated range)
+2026-11-13T13:45:33Z,CFB,Michigan vs Oregon: Total Points,KXNCAAFTOTAL-26NOV14MICHORE-25,NO,0.14,0.1856,0.0372,39.0,2026-11-13T13:45:28Z,rung far from sharp line (unvalidated range)
+2026-11-13T13:45:33Z,CFB,Missouri vs Georgia: Total Points,KXNCAAFTOTAL-26NOV14MIZZUGA-28,NO,0.07,0.1146,0.0398,47.0,2026-11-13T13:45:28Z,rung far from sharp line (unvalidated range)
+2026-11-13T13:45:33Z,CFB,Missouri vs Georgia: Total Points,KXNCAAFTOTAL-26NOV14MIZZUGA-31,NO,0.11,0.1545,0.0376,47.0,2026-11-13T13:45:28Z,rung far from sharp line (unvalidated range)
+2026-11-13T13:45:33Z,CFB,Missouri vs Georgia: Total Points,KXNCAAFTOTAL-26NOV14MIZZUGA-34,NO,0.16,0.2026,0.0326,47.0,2026-11-13T13:45:28Z,rung far from sharp line (unvalidated range)
+2026-11-13T13:45:33Z,CFB,Missouri vs Georgia: Total Points,KXNCAAFTOTAL-26NOV14MIZZUGA-37,NO,0.21,0.2587,0.0362,47.0,2026-11-13T13:45:28Z,rung far from sharp line (unvalidated range)
+2026-11-13T13:45:33Z,CFB,Minnesota vs Penn St.: Total Points,KXNCAAFTOTAL-26NOV14MINNPSU-24,NO,0.08,0.127,0.0415,42.0,2026-11-13T13:45:28Z,rung far from sharp line (unvalidated range)
+2026-11-13T13:45:33Z,CFB,Minnesota vs Penn St.: Total Points,KXNCAAFTOTAL-26NOV14MINNPSU-27,NO,0.11,0.1696,0.0526,42.0,2026-11-13T13:45:28Z,rung far from sharp line (unvalidated range)
+2026-11-13T13:45:33Z,CFB,Minnesota vs Penn St.: Total Points,KXNCAAFTOTAL-26NOV14MINNPSU-30,NO,0.17,0.2204,0.0404,42.0,2026-11-13T13:45:28Z,rung far from sharp line (unvalidated range)
+2026-11-13T13:45:33Z,CFB,Minnesota vs Penn St.: Total Points,KXNCAAFTOTAL-26NOV14MINNPSU-33,NO,0.23,0.279,0.0362,42.0,2026-11-13T13:45:28Z,rung far from sharp line (unvalidated range)
+2026-11-13T13:45:33Z,CFB,Utah St. vs San Diego St.: Total Points,KXNCAAFTOTAL-26NOV14USUSDSU-25,NO,0.09,0.127,0.031,43.0,2026-11-13T13:45:28Z,rung far from sharp line (unvalidated range)
+2026-11-13T13:45:33Z,CFB,Wyoming vs UTEP: Total Points,KXNCAAFTOTAL-26NOV14WYOUTEP-27,NO,0.15,0.194,0.0348,40.5,2026-11-13T13:45:28Z,rung far from sharp line (unvalidated range)
+2026-11-13T13:45:33Z,CFB,North Dakota St. vs Hawai'i: Total Points,KXNCAAFTOTAL-26NOV14NDSUHAW-21,NO,0.08,0.1335,0.0481,38.5,2026-11-13T13:45:28Z,rung far from sharp line (unvalidated range)
+2026-11-13T13:45:33Z,CFB,North Dakota St. vs Hawai'i: Total Points,KXNCAAFTOTAL-26NOV14NDSUHAW-24,NO,0.12,0.1775,0.05,38.5,2026-11-13T13:45:28Z,rung far from sharp line (unvalidated range)
+2026-11-13T13:45:33Z,CFB,North Dakota St. vs Hawai'i: Total Points,KXNCAAFTOTAL-26NOV14NDSUHAW-27,NO,0.18,0.2297,0.0386,38.5,2026-11-13T13:45:28Z,rung far from sharp line (unvalidated range)
+2026-11-13T13:45:33Z,CFB,North Dakota St. vs Hawai'i: Total Points,KXNCAAFTOTAL-26NOV14NDSUHAW-30,NO,0.24,0.2895,0.0366,38.5,2026-11-13T13:45:28Z,rung far from sharp line (unvalidated range)
