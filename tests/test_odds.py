@@ -161,7 +161,7 @@ def test_run_writes_cache_and_state(monkeypatch, tmp_path):
     assert set(plan) == {"NFL", "CFB"}                 # CBB removed 11-13
     st = json.loads((tmp_path / "state.json").read_text())
     assert st["remaining"] == 480 and st["spent"]["2026-11-14"] == 6                 # 2 leagues x 3 credits (CBB removed)
-    assert len(list((tmp_path / "raw" / "2026-11-14").glob("*.json"))) == 3
+    assert len(list((tmp_path / "raw" / "2026-11-14").glob("*.json"))) == 2
     assert (tmp_path / "fair_latest.csv").exists()
 
 
