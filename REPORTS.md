@@ -1,5 +1,12 @@
 # Reports (newest first)
 
+## 2026-11-13 (builder, 01:45Z run)
+- Shipped to `dev` as #51 (on top of your chat session's #50): **"gone, don't chase" now uses the latest sharp price.** Before, a price-gone push compared the ask with the max price from when the alert went out, even after a newer sharp pull had moved the fair. If the line moved our way, that meant a false "don't chase" on a price that was still playable. The 3-s fast lane had no fair values at all. Now every fresh pull's fair is saved on the alert and used until it goes stale (90 min, or 60 near kickoff). Still at most 1 gone per contract.
+- Tests: 413/413 green (6 new; 3 failed on the old code: line moved our way, fast lane uses the saved fair, gone shows the current max).
+- Honest results: 14 of 26 alerts so far went out with 0¢ room (ask = max price), and 11 got a price-gone. Tonight's NYG +1.5 alert got "don't chase" 16 s after its "new" push, on a 1¢ tick (50→51¢). It was back at 50¢ 24 min later. #51 doesn't change that case, because the fair hadn't moved. Live TNF run: 1,326 fast-lane ticks in 137 min, 0 throttled, median loop 9.6 s, alert quote→send ~10 s. Odds: 19,757 of 20,000 credits left (the Odds API resets on the 1st of each month, which matches the code). Nothing settled is stuck. Every gate is still closed.
+- Watchdog: live (since 23:16Z) and keeper were running, so I dispatched nothing. I waited because your chat session had pushed #50 to dev at 01:51Z.
+- Needs Emerson: decide whether alerts need ≥1¢ room below the max price before they go out (0¢-room alerts tend to flip to "gone" on one tick). Merge the dev→main PR (#50 + #51).
+
 ## 2026-11-12 (builder, 22:45Z run)
 - Shipped to `dev` (the backlog was empty, so I added this as #47): **fake test plays had started being graded as real.** 4 fixture rows from an old test run were sitting in `sharp_tracked.csv` with future timestamps. They were ignored only until those times passed. Since 18:00Z a fake "YES Giants +3.5" play on tonight's real TNF ticker was counted as a held-back bet, including a fake Auto Sell fill. A fake Auburn play would have joined on Saturday. Now a SHARP play only gets graded if it was priced off a sharp pull we actually recorded. On real data exactly those 4 rows fail; nothing is deleted.
 - Tests: 398/398 green (4 new; they failed before the fix).
