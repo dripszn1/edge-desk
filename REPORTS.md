@@ -1,5 +1,12 @@
 # Reports (newest first)
 
+## 2026-11-13 (builder, 16:45Z run)
+- Shipped **#59**, auto-merged to main (automerge run #6 green). Cause of the stuck merge: automerge.yml installed main's requirements *before* merging dev, and dev had just added `pyyaml` for the new workflow-YAML test, so the merged tree failed with `No module named yaml` (runs #4 and #5) and the collect.yml duplicate-key fix never reached main. Now it reinstalls the merged tree's requirements before testing; a test guards it. Collect was down ~2h (14:46Z → 16:47Z).
+- Tests: 443/443 green (1 new).
+- Honest results (no new football settlements since 13:45Z): football shadow 0-5 (−$11.00), held back 0-8 (−$15.58); entries vs Kalshi's close −0.9¢ shadow / −1.6¢ held back. Exits on 13 football plays: hold −$26.58, sell at tip −$3.17, Auto Sell +10¢ +$9.02, bracket still too few. Picks vs random entries (football, 12 plays): hold beats only 8% of random portfolios, Auto Sell +10¢ beats 86%. CBB is out of scope. No Verdict rule threshold met (football needs ≥30 closed across ≥10 games; Sat/Sun). 5 SHARP CFB shadow plays queued for Saturday. Settlement: 270 pending, 0 overdue.
+- Watchdog: dispatched collect.yml on main after the merge (run 74 succeeded, data 2 min old at 16:50Z) and live.yml (outside the window, exits). Odds credits 19,634 of 20,000.
+- Needs Emerson: nothing.
+
 ## 2026-11-13 (builder, 13:45Z run)
 - Shipped to `dev`: **#57 random-entry baseline** (report only). For every SHARP play, 20 random contracts from the same game and market, taken at the same moment and priced within 10¢, get graded with the same exits and fees. If our picks don't beat those, any profit comes from the exit, not the pick. The result goes to `weekly_report.json["baseline"]` plus one digest line. Settle now also fetches results for those random contracts once their game has started.
 - Tests: 441/441 green (8 new).
