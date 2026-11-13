@@ -1,4 +1,4 @@
-# edge-desk digest, Thu Nov 12, 11:30 PM CT
+# edge-desk digest, Thu Nov 12, 11:32 PM CT
 
 **PROPOSE cbb: plays entered after Kalshi already moved toward us lose -2.99c to Kalshi's close (t -2.34 by game, 53 plays): skip a play when Kalshi's price already fell 1c+ toward ours in the 30 min before** (Emerson decides; caps unchanged)
 
@@ -15,4 +15,4 @@ Settled in the last 24h:
   vs Kalshi close after fee: shadow CBB -3.0c (0% of 4, 4 games) · shadow football -0.9c (60% of 5, 4 games) · held back CBB -2.4c (11% of 137, 26 games) · held back football -1.6c (29% of 7, 4 games)
   exits compared: football (12 done): hold $-25.14, sell at tip $-2.85, auto-sell at fair $+4.67, auto-sell +10c $+10.46 · CBB (141 done): hold $-7.53, sell at tip $-63.85, auto-sell at fair $-100.95, auto-sell +10c $-76.09
 
-Status: Kalshi data 1m old (ok); sharp odds 22m old; odds credits left 19667 of 20000; gates: MODEL NFL closed, MODEL CFB closed, SHARP NFL closed, SHARP CFB closed, SHARP CBB closed, SHARP NFL ML closed, SHARP CFB ML closed, SHARP CBB ML closed
+Status: Kalshi data 1m old (ok); sharp odds 24m old; odds credits left 19667 of 20000; gates: MODEL NFL closed, MODEL CFB closed, SHARP NFL closed, SHARP CFB closed, SHARP CBB closed, SHARP NFL ML closed, SHARP CFB ML closed, SHARP CBB ML closed
