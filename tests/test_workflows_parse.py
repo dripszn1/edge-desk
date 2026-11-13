@@ -29,3 +29,10 @@ def test_workflows_are_valid_yaml_without_duplicate_keys():
     for f in files:
         doc = yaml.load(f.read_text(), Loader=_NoDupLoader)
         assert isinstance(doc, dict) and doc.get("jobs"), f.name
+
+
+def test_automerge_installs_merged_requirements_before_tests():
+    """11-13: dev added pyyaml; automerge installed main's requirements, then tested dev's tree -> ImportError, no merge."""
+    step = (WF / "automerge.yml").read_text()
+    body = step.split("git merge --no-ff", 1)[1]
+    assert "pip install" in body.split("python -m pytest", 1)[0]
