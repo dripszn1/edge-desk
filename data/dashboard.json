@@ -1,16 +1,16 @@
 {
-  "generated_ts": "2026-11-13T05:20:27Z",
-  "generated_ct": "Thu Nov 12, 11:20 PM CT",
+  "generated_ts": "2026-11-13T05:30:48Z",
+  "generated_ct": "Thu Nov 12, 11:30 PM CT",
   "today_ct": "2026-11-12",
   "snapshot": {
-    "ts": "2026-11-13T05:19:06Z",
-    "ct": "Thu Nov 12, 11:19 PM CT",
+    "ts": "2026-11-13T05:29:34Z",
+    "ct": "Thu Nov 12, 11:29 PM CT",
     "stale": false,
-    "markets_scanned": 7613,
+    "markets_scanned": 7729,
     "kickoff_source": "kalshi occurrence_datetime - 3h",
     "phases": {
       "CBB": {
-        "pregame": 1793
+        "pregame": 1909
       },
       "CFB": {
         "live": 52,
@@ -65,7 +65,7 @@
     "max_bet": 10.0
   },
   "signals": {
-    "weekly_ct": "Thu Nov 12, 11:19 PM CT",
+    "weekly_ct": "Thu Nov 12, 11:30 PM CT",
     "scorecards": [
       {
         "name": "SHARP shadow football",
@@ -157,7 +157,7 @@
           "events": 4,
           "t_by_event": -0.83,
           "stale": 0,
-          "pending": 47,
+          "pending": 48,
           "no_close": 0
         }
       },
@@ -183,7 +183,7 @@
           "events": 4,
           "t_by_event": -1.39,
           "stale": 0,
-          "pending": 152,
+          "pending": 155,
           "no_close": 1
         }
       }
@@ -285,20 +285,6 @@
       }
     },
     "open_alerts": [
-      {
-        "ticker": "KXNCAAMBTOTAL-26NOV12MHUPSU-150",
-        "signal": "SHARP",
-        "side": "YES",
-        "game": "Mercyhurst vs Penn St.: Point Total",
-        "contract": "Over 149.5 points",
-        "max_price": 0.44,
-        "stake": 3.94,
-        "gone": true,
-        "sent_ct": "Thu Nov 12, 4:31 PM CT",
-        "kickoff_utc": "2026-11-12T23:30:00Z",
-        "kickoff_ct": "Thu Nov 12, 5:30 PM CT",
-        "kalshi_url": "https://kalshi.com/markets/kxncaambtotal/event/kxncaambtotal-26nov12mhupsu"
-      },
       {
         "ticker": "KXNCAAFSPREAD-26NOV12MEMUSF-MEM4",
         "signal": "SHARP",
@@ -494,6 +480,20 @@
         "kickoff_utc": "2026-11-14T20:30:00Z",
         "kickoff_ct": "Sat Nov 14, 2:30 PM CT",
         "kalshi_url": "https://kalshi.com/markets/kxncaaftotal/event/kxncaaftotal-26nov14michore"
+      },
+      {
+        "ticker": "KXNCAAFTOTAL-26NOV14MIZZUGA-43",
+        "signal": "SHARP",
+        "side": "NO",
+        "game": "Missouri vs Georgia: Total Points",
+        "contract": "Over 42.5 points",
+        "max_price": 0.34,
+        "stake": 2.14,
+        "gone": false,
+        "sent_ct": "Thu Nov 12, 11:24 PM CT",
+        "kickoff_utc": "2026-11-14T20:30:00Z",
+        "kickoff_ct": "Sat Nov 14, 2:30 PM CT",
+        "kalshi_url": "https://kalshi.com/markets/kxncaaftotal/event/kxncaaftotal-26nov14mizzuga"
       },
       {
         "ticker": "KXNCAAFSPREAD-26NOV14ORSTBSU-BSU10",
