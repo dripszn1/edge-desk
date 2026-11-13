@@ -1,10 +1,10 @@
 {
-  "generated_ts": "2026-11-13T22:00:37Z",
-  "generated_ct": "Fri Nov 13, 4:00 PM CT",
+  "generated_ts": "2026-11-13T22:21:11Z",
+  "generated_ct": "Fri Nov 13, 4:21 PM CT",
   "today_ct": "2026-11-13",
   "snapshot": {
-    "ts": "2026-11-13T21:58:16Z",
-    "ct": "Fri Nov 13, 3:58 PM CT",
+    "ts": "2026-11-13T22:19:50Z",
+    "ct": "Fri Nov 13, 4:19 PM CT",
     "stale": false,
     "markets_scanned": 5782,
     "kickoff_source": "kalshi occurrence_datetime - 3h",
@@ -61,7 +61,7 @@
     "max_bet": 10.0
   },
   "signals": {
-    "weekly_ct": "Fri Nov 13, 3:58 PM CT",
+    "weekly_ct": "Fri Nov 13, 4:20 PM CT",
     "scorecards": [
       {
         "name": "SHARP shadow football",
@@ -186,7 +186,7 @@
           "events": 4,
           "t_by_event": -1.39,
           "stale": 0,
-          "pending": 160,
+          "pending": 163,
           "no_close": 1
         }
       }
@@ -329,6 +329,20 @@
         "kickoff_utc": "2026-11-14T17:00:00Z",
         "kickoff_ct": "Sat Nov 14, 11:00 AM CT",
         "kalshi_url": "https://kalshi.com/markets/kxncaafspread/event/kxncaafspread-26nov14jmuconn"
+      },
+      {
+        "ticker": "KXNCAAFSPREAD-26NOV14ALAVAN-ALA17",
+        "signal": "SHARP",
+        "side": "YES",
+        "game": "Alabama vs Vanderbilt: Spread",
+        "contract": "Alabama wins by over 16.5 points",
+        "max_price": 0.47,
+        "stake": 3.82,
+        "gone": false,
+        "sent_ct": "Fri Nov 13, 4:19 PM CT",
+        "kickoff_utc": "2026-11-14T17:45:00Z",
+        "kickoff_ct": "Sat Nov 14, 11:45 AM CT",
+        "kalshi_url": "https://kalshi.com/markets/kxncaafspread/event/kxncaafspread-26nov14alavan"
       },
       {
         "ticker": "KXNCAAFSPREAD-26NOV14ALAVAN-ALA25",

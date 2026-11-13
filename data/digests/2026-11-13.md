@@ -1,6 +1,7 @@
-# edge-desk digest, Fri Nov 13, 4:00 PM CT
+# edge-desk digest, Fri Nov 13, 4:21 PM CT
 
 Paper only, nothing is placed. Plays kicking off in the next 36h:
+- SHARP shadow: Alabama vs Vanderbilt | YES Alabama wins by over 16.5 points @ 46¢, fair 52¢, edge 4.6¢ after fees | $3.82 paper | Sat Nov 14, 11:45 AM CT | [Kalshi](https://kalshi.com/markets/kxncaafspread/event/kxncaafspread-26nov14alavan)
 - SHARP shadow: Kansas St. vs TCU | NO TCU wins by over 7.5 points @ 40¢, fair 45¢, edge 3.1¢ after fees | $2.51 paper | Sat Nov 14, 1:00 PM CT | [Kalshi](https://kalshi.com/markets/kxncaafspread/event/kxncaafspread-26nov14ksutcu)
 - SHARP shadow: Texas vs LSU | NO LSU wins by over 3.5 points @ 48¢, fair 53¢, edge 3.2¢ after fees | $2.99 paper | Sat Nov 14, 2:00 PM CT | [Kalshi](https://kalshi.com/markets/kxncaafspread/event/kxncaafspread-26nov14texlsu)
 - SHARP shadow: Missouri vs Georgia | NO Over 42.5 points @ 34¢, fair 39¢, edge 3.4¢ after fees | $2.14 paper | Sat Nov 14, 2:30 PM CT | [Kalshi](https://kalshi.com/markets/kxncaaftotal/event/kxncaaftotal-26nov14mizzuga)
@@ -19,4 +20,4 @@ Settled in the last 24h:
   exits compared: football (10 done): hold $-19.90, sell at tip $-2.43, auto-sell at fair $+1.91, auto-sell +10c $+5.47 · CBB (138 done): hold $-10.54, sell at tip $-62.26, auto-sell at fair $-95.71, auto-sell +10c $-71.39
   picks vs random entries, $/play: football (9 plays): hold $-2.05 vs $-0.89 (beats 7%), auto-sell +10c $-0.35 vs $-0.67 (beats 78%) · CBB (138 plays): hold $-0.08 vs $-0.06 (beats 48%), auto-sell +10c $-1.02 vs $-0.81 (beats 14%)
 
-Status: Kalshi data 2m old (ok); sharp odds 33m old; odds credits left 19613 of 20000; gates: MODEL NFL closed, MODEL CFB closed, SHARP NFL closed, SHARP CFB closed, SHARP NFL ML closed, SHARP CFB ML closed
+Status: Kalshi data 1m old (ok); sharp odds 53m old; odds credits left 19613 of 20000; gates: MODEL NFL closed, MODEL CFB closed, SHARP NFL closed, SHARP CFB closed, SHARP NFL ML closed, SHARP CFB ML closed
