@@ -20,7 +20,7 @@ from pathlib import Path
 
 import pandas as pd
 
-from . import cfb_results, config, kickoffs, model, moneyline, nfl_results, odds, sharp
+from . import cfb_results, config, kickoffs, model, moneyline, nfl_results, odds, premove, sharp
 from .fees import fee_per_contract
 from .sizing import structural_size
 
@@ -269,7 +269,7 @@ def run_sharp(df: pd.DataFrame, ts: str | None, lost: float | None = None, leagu
         try:
             flags, status = sharp.sharp_flags(df, lines, sharp.history(lg), ts, lost_today=lost, league=lg)
             out["fairs"].update(status.pop("_fairs", None) or {})
-            flags = with_url(flags)
+            flags = with_url(premove.screen(flags, df, ts, lg))     # Emerson 11-12: CBB guard
         except Exception as e:   # never lose other flags over a SHARP bug
             flags, status = [], {"ok": False, "reason": f"error: {e}"}
         is_open, why = sharp.gate(league=lg)
@@ -285,7 +285,7 @@ def run_sharp(df: pd.DataFrame, ts: str | None, lost: float | None = None, leagu
         try:
             flags, status = moneyline.ml_flags(df, lines, ts, lost_today=lost, league=lg)
             out["fairs"].update(status.pop("_fairs", None) or {})
-            flags = with_url(flags)
+            flags = with_url(premove.screen(flags, df, ts, lg))
         except Exception as e:
             flags, status = [], {"ok": False, "reason": f"error: {e}"}
         is_open, why = sharp.gate(league=lg, market="ML")

@@ -196,7 +196,8 @@ SHARP_BETS_OUT = ROOT / "data" / "sharp_shadow_bets.csv"
 
 TRACKED = ROOT / "data" / "flags" / "sharp_tracked.csv"
 TRACKED_BETS_OUT = ROOT / "data" / "sharp_tracked_bets.csv"
-REASON_BUCKETS = (("far from sharp line", "far_rung"), ("line stale", "stale_line"), ("sanity cap", "sanity_cap"))
+REASON_BUCKETS = (("far from sharp line", "far_rung"), ("line stale", "stale_line"), ("sanity cap", "sanity_cap"),
+                  ("kalshi moved first", "kalshi_first"))
 
 
 def reason_bucket(reason) -> str:
