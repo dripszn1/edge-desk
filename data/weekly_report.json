@@ -1,7 +1,7 @@
 {
   "proposals": [],
-  "generated_utc": "2026-11-13T21:28:25Z",
-  "generated_ct": "Fri Nov 13, 3:28 PM CT",
+  "generated_utc": "2026-11-13T21:58:54Z",
+  "generated_ct": "Fri Nov 13, 3:58 PM CT",
   "paper_mode": true,
   "rules": {
     "min_bets": 30,
@@ -1816,62 +1816,62 @@
       "exits": {
         "HOLD": {
           "real_per_play": -0.076,
-          "placebo_mean": -0.049,
+          "placebo_mean": -0.055,
           "band95": [
-            -0.608,
-            0.576
+            -0.653,
+            0.531
           ],
-          "beats_pct": 46.9,
+          "beats_pct": 48.0,
           "verdict": "placebo matches real: the picks add nothing"
         },
         "EXIT_AT_TIP": {
           "real_per_play": -0.436,
           "placebo_mean": -0.478,
           "band95": [
-            -0.532,
+            -0.534,
             -0.43
           ],
-          "beats_pct": 95.2,
+          "beats_pct": 96.2,
           "verdict": "picks add value"
         },
         "RESTING_5": {
           "real_per_play": -1.207,
-          "placebo_mean": -0.85,
+          "placebo_mean": -0.856,
           "band95": [
-            -1.184,
-            -0.509
+            -1.195,
+            -0.531
           ],
-          "beats_pct": 1.8,
+          "beats_pct": 2.2,
           "verdict": "picks do worse than random entries"
         },
         "RESTING_10": {
           "real_per_play": -1.023,
-          "placebo_mean": -0.809,
+          "placebo_mean": -0.813,
           "band95": [
-            -1.178,
-            -0.418
+            -1.199,
+            -0.442
           ],
-          "beats_pct": 14.0,
+          "beats_pct": 13.8,
           "verdict": "placebo matches real: the picks add nothing"
         },
         "RESTING_15": {
           "real_per_play": -0.867,
-          "placebo_mean": -0.802,
+          "placebo_mean": -0.81,
           "band95": [
-            -1.225,
-            -0.358
+            -1.229,
+            -0.41
           ],
-          "beats_pct": 38.7,
+          "beats_pct": 38.5,
           "verdict": "placebo matches real: the picks add nothing"
         },
         "RESTING_FAIR": {
           "real_per_play": -1.139,
-          "placebo_mean": -0.784,
+          "placebo_mean": -0.787,
           "band95": [
-            -1.131,
-            -0.429
+            -1.153,
+            -0.448
           ],
-          "beats_pct": 2.2,
+          "beats_pct": 3.0,
           "verdict": "picks do worse than random entries"
         }
       }
