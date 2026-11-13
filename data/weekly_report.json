@@ -2,8 +2,8 @@
   "proposals": [
     "PROPOSE cbb: plays entered after Kalshi already moved toward us lose -2.99c to Kalshi's close (t -2.34 by game, 53 plays): skip a play when Kalshi's price already fell 1c+ toward ours in the 30 min before"
   ],
-  "generated_utc": "2026-11-13T00:00:42Z",
-  "generated_ct": "Thu Nov 12, 6:00 PM CT",
+  "generated_utc": "2026-11-13T00:15:56Z",
+  "generated_ct": "Thu Nov 12, 6:15 PM CT",
   "paper_mode": true,
   "rules": {
     "min_bets": 30,
@@ -141,7 +141,7 @@
       "bets": 131,
       "real_pnl": 11.31,
       "sim_median_pnl": -16.69,
-      "beat_pct": 0.7141
+      "beat_pct": 0.7105
     },
     "by_week": [
       {
@@ -168,10 +168,10 @@
           "bets": 80,
           "real_pnl": 13.13,
           "sim_median_pnl": -8.87,
-          "beat_pct": 0.7143
+          "beat_pct": 0.7207
         },
         "verdict": "luck / no edge",
-        "why": "t=-0.53, coin-flip beat 71%"
+        "why": "t=-0.53, coin-flip beat 72%"
       },
       "far_rung+stale_line": {
         "settled": 26,
@@ -185,7 +185,7 @@
           "bets": 26,
           "real_pnl": -10.15,
           "sim_median_pnl": -3.15,
-          "beat_pct": 0.3493
+          "beat_pct": 0.3471
         },
         "verdict": "not enough data",
         "why": "26 settled bets (< 30)"
@@ -202,7 +202,7 @@
           "bets": 25,
           "real_pnl": 8.33,
           "sim_median_pnl": -4.67,
-          "beat_pct": 0.7014
+          "beat_pct": 0.6923
         },
         "verdict": "not enough data",
         "why": "25 settled bets (< 30)"
@@ -1475,7 +1475,7 @@
           "label": "API-ONLY",
           "closed": 130,
           "pending": 10,
-          "closed_early_not_counted": 8,
+          "closed_early_not_counted": 9,
           "pnl_usd": -121.05,
           "avg_c": -9.39,
           "win_pct": 16.9,
@@ -1487,7 +1487,7 @@
           "label": "API-ONLY",
           "closed": 130,
           "pending": 10,
-          "closed_early_not_counted": 8,
+          "closed_early_not_counted": 10,
           "pnl_usd": -87.82,
           "avg_c": -7.07,
           "win_pct": 5.4,
@@ -1499,7 +1499,7 @@
           "label": "API-ONLY",
           "closed": 130,
           "pending": 10,
-          "closed_early_not_counted": 8,
+          "closed_early_not_counted": 9,
           "pnl_usd": -124.35,
           "avg_c": -9.54,
           "win_pct": 13.1,
@@ -1511,7 +1511,7 @@
           "label": "API-ONLY",
           "closed": 130,
           "pending": 10,
-          "closed_early_not_counted": 8,
+          "closed_early_not_counted": 10,
           "pnl_usd": -95.82,
           "avg_c": -7.77,
           "win_pct": 0.8,
@@ -1523,7 +1523,7 @@
           "label": "API-ONLY",
           "closed": 130,
           "pending": 10,
-          "closed_early_not_counted": 8,
+          "closed_early_not_counted": 9,
           "pnl_usd": -126.23,
           "avg_c": -9.85,
           "win_pct": 19.2,
@@ -1535,7 +1535,7 @@
           "label": "API-ONLY",
           "closed": 130,
           "pending": 10,
-          "closed_early_not_counted": 8,
+          "closed_early_not_counted": 10,
           "pnl_usd": -90.0,
           "avg_c": -7.25,
           "win_pct": 6.2,
@@ -1571,7 +1571,7 @@
           "label": "MANUAL-OK",
           "closed": 130,
           "pending": 10,
-          "closed_early_not_counted": 0,
+          "closed_early_not_counted": 1,
           "pnl_usd": -54.8,
           "avg_c": -4.09,
           "win_pct": 80.0,
@@ -1583,7 +1583,7 @@
           "label": "MANUAL-OK",
           "closed": 130,
           "pending": 10,
-          "closed_early_not_counted": 0,
+          "closed_early_not_counted": 1,
           "pnl_usd": -17.42,
           "avg_c": -1.06,
           "win_pct": 79.2,
@@ -1595,7 +1595,7 @@
           "label": "MANUAL-OK",
           "closed": 130,
           "pending": 10,
-          "closed_early_not_counted": 0,
+          "closed_early_not_counted": 1,
           "pnl_usd": -83.92,
           "avg_c": -6.18,
           "win_pct": 83.1,
@@ -1607,7 +1607,7 @@
           "label": "MANUAL-OK",
           "closed": 130,
           "pending": 10,
-          "closed_early_not_counted": 0,
+          "closed_early_not_counted": 1,
           "pnl_usd": -78.31,
           "avg_c": -5.52,
           "win_pct": 83.8,
