@@ -1,18 +1,5 @@
 {
  "alerts": {
-  "MODEL|YES KXNFLSPREAD-26NOV15PITCIN-PIT8": {
-   "click": "https://kalshi.com/markets/kxnflspread",
-   "gone": false,
-   "key": "MODEL|YES KXNFLSPREAD-26NOV15PITCIN-PIT8",
-   "kickoff_utc": "2026-11-16T01:20:00Z",
-   "kind": "MODEL",
-   "legs": null,
-   "max_price": 0.18,
-   "sent_utc": "2026-11-10T22:44:59Z",
-   "side": "YES",
-   "stake": 0.14,
-   "ticker": "KXNFLSPREAD-26NOV15PITCIN-PIT8"
-  },
   "SHARP|NO KXNCAAFSPREAD-26NOV12MEMUSF-MEM4": {
    "autosell": 0.53,
    "click": "https://kalshi.com/markets/kxncaafspread/event/kxncaafspread-26nov12memusf",
@@ -48,7 +35,7 @@
    "fair": 0.399,
    "fair_now": 0.399,
    "fair_now_line": 5.5,
-   "fair_now_pull": "2026-11-13T22:41:17Z",
+   "fair_now_pull": "2026-11-13T23:13:15Z",
    "fee_multiplier": 1.0,
    "game": "Georgia Southern vs Georgia St.: Spread",
    "gone": false,
@@ -95,7 +82,7 @@
    "fair": 0.4495,
    "fair_now": 0.4495,
    "fair_now_line": 11.5,
-   "fair_now_pull": "2026-11-13T22:41:17Z",
+   "fair_now_pull": "2026-11-13T23:13:15Z",
    "fee_multiplier": 1.0,
    "game": "Kansas St. vs TCU: Spread",
    "gone": false,
@@ -113,19 +100,6 @@
    "side": "NO",
    "stake": 2.51,
    "ticker": "KXNCAAFSPREAD-26NOV14KSUTCU-TCU8"
-  },
-  "SHARP|NO KXNCAAFSPREAD-26NOV14MICHORE-ORE2": {
-   "click": "https://kalshi.com/markets/kxncaafspread",
-   "gone": true,
-   "key": "SHARP|NO KXNCAAFSPREAD-26NOV14MICHORE-ORE2",
-   "kickoff_utc": "2026-11-14T20:30:00Z",
-   "kind": "SHARP",
-   "legs": null,
-   "max_price": 0.22,
-   "sent_utc": "2026-11-10T22:44:59Z",
-   "side": "NO",
-   "stake": 1.63,
-   "ticker": "KXNCAAFSPREAD-26NOV14MICHORE-ORE2"
   },
   "SHARP|NO KXNCAAFSPREAD-26NOV14MICHORE-ORE6": {
    "click": "https://kalshi.com/markets/kxncaafspread/event/kxncaafspread-26nov14michore",
@@ -168,7 +142,7 @@
    "fair": 0.4009,
    "fair_now": 0.4009,
    "fair_now_line": 14.5,
-   "fair_now_pull": "2026-11-13T22:41:17Z",
+   "fair_now_pull": "2026-11-13T23:13:15Z",
    "fee_multiplier": 1.0,
    "game": "Oregon St. vs Boise St.: Spread",
    "gone": false,
@@ -318,7 +292,7 @@
    "fair": 0.3907,
    "fair_now": 0.3907,
    "fair_now_line": 47.0,
-   "fair_now_pull": "2026-11-13T22:41:17Z",
+   "fair_now_pull": "2026-11-13T23:13:15Z",
    "fee_multiplier": 1.0,
    "game": "Missouri vs Georgia: Total Points",
    "gone": false,
@@ -361,22 +335,6 @@
    "side": "NO",
    "stake": 2.14,
    "ticker": "KXNCAAFTOTAL-26NOV14UABTEM-44"
-  },
-  "SHARP|NO KXNFLSPREAD-26NOV15BUFNYJ-BUF3": {
-   "click": "https://kalshi.com/markets/kxnflspread",
-   "fair_now": 0.2974,
-   "fair_now_line": 8.5,
-   "fair_now_pull": "2026-11-13T21:28:03Z",
-   "gone": false,
-   "key": "SHARP|NO KXNFLSPREAD-26NOV15BUFNYJ-BUF3",
-   "kickoff_utc": "2026-11-15T18:00:00Z",
-   "kind": "SHARP",
-   "legs": null,
-   "max_price": 0.25,
-   "sent_utc": "2026-11-10T22:44:59Z",
-   "side": "NO",
-   "stake": 3.16,
-   "ticker": "KXNFLSPREAD-26NOV15BUFNYJ-BUF3"
   },
   "SHARP|NO KXNFLSPREAD-26NOV15JACTEN-JAC7": {
    "autosell": 0.39,
@@ -485,32 +443,6 @@
    "stake": 3.82,
    "ticker": "KXNCAAFSPREAD-26NOV14ALAVAN-ALA17"
   },
-  "SHARP|YES KXNCAAFSPREAD-26NOV14ALAVAN-ALA25": {
-   "click": "https://kalshi.com/markets/kxncaafspread",
-   "gone": true,
-   "key": "SHARP|YES KXNCAAFSPREAD-26NOV14ALAVAN-ALA25",
-   "kickoff_utc": "2026-11-14T17:45:00Z",
-   "kind": "SHARP",
-   "legs": null,
-   "max_price": 0.28,
-   "sent_utc": "2026-11-10T22:44:59Z",
-   "side": "YES",
-   "stake": 1.77,
-   "ticker": "KXNCAAFSPREAD-26NOV14ALAVAN-ALA25"
-  },
-  "SHARP|YES KXNCAAFSPREAD-26NOV14BCND-ND36": {
-   "click": "https://kalshi.com/markets/kxncaafspread",
-   "gone": true,
-   "key": "SHARP|YES KXNCAAFSPREAD-26NOV14BCND-ND36",
-   "kickoff_utc": "2026-11-14T20:30:00Z",
-   "kind": "SHARP",
-   "legs": null,
-   "max_price": 0.32,
-   "sent_utc": "2026-11-10T22:44:59Z",
-   "side": "YES",
-   "stake": 2.02,
-   "ticker": "KXNCAAFSPREAD-26NOV14BCND-ND36"
-  },
   "SHARP|YES KXNCAAFTOTAL-26NOV14ORSTBSU-66": {
    "autosell": 0.5,
    "click": "https://kalshi.com/markets/kxncaaftotal/event/kxncaaftotal-26nov14orstbsu",
@@ -545,10 +477,10 @@
    "fair": 0.3907,
    "fair_now": 0.3907,
    "fair_now_line": 44.0,
-   "fair_now_pull": "2026-11-13T22:41:17Z",
+   "fair_now_pull": "2026-11-13T23:13:15Z",
    "fee_multiplier": 1.0,
    "game": "Utah St. vs San Diego St.: Total Points",
-   "gone": false,
+   "gone": true,
    "key": "SHARP|YES KXNCAAFTOTAL-26NOV14USUSDSU-49",
    "kickoff_utc": "2026-11-15T02:30:00Z",
    "kind": "SHARP",
@@ -687,32 +619,6 @@
    "stake": 1.27,
    "ticker": "KXNFLSPREAD-26NOV15BUFNYJ-NYJ2"
   },
-  "SHARP|YES KXNFLSPREAD-26NOV15CARNO-CAR4": {
-   "click": "https://kalshi.com/markets/kxnflspread",
-   "gone": true,
-   "key": "SHARP|YES KXNFLSPREAD-26NOV15CARNO-CAR4",
-   "kickoff_utc": "2026-11-15T18:00:00Z",
-   "kind": "SHARP",
-   "legs": null,
-   "max_price": 0.33,
-   "sent_utc": "2026-11-10T22:44:59Z",
-   "side": "YES",
-   "stake": 3.25,
-   "ticker": "KXNFLSPREAD-26NOV15CARNO-CAR4"
-  },
-  "SHARP|YES KXNFLSPREAD-26NOV15MIAIND-MIA2": {
-   "click": "https://kalshi.com/markets/kxnflspread",
-   "gone": true,
-   "key": "SHARP|YES KXNFLSPREAD-26NOV15MIAIND-MIA2",
-   "kickoff_utc": "2026-11-15T18:00:00Z",
-   "kind": "SHARP",
-   "legs": null,
-   "max_price": 0.35,
-   "sent_utc": "2026-11-10T22:44:59Z",
-   "side": "YES",
-   "stake": 3.46,
-   "ticker": "KXNFLSPREAD-26NOV15MIAIND-MIA2"
-  },
   "SHARP|YES KXNFLSPREAD-26NOV15SEALV-SEA15": {
    "autosell": 0.29,
    "click": "https://kalshi.com/markets/kxnflspread/event/kxnflspread-26nov15sealv",
@@ -740,19 +646,6 @@
    "side": "YES",
    "stake": 2.67,
    "ticker": "KXNFLSPREAD-26NOV15SEALV-SEA15"
-  },
-  "SHARP|YES KXNFLTOTAL-26NOV15MIAIND-44": {
-   "click": "https://kalshi.com/markets/kxnfltotal",
-   "gone": true,
-   "key": "SHARP|YES KXNFLTOTAL-26NOV15MIAIND-44",
-   "kickoff_utc": "2026-11-15T18:00:00Z",
-   "kind": "SHARP",
-   "legs": null,
-   "max_price": 0.36,
-   "sent_utc": "2026-11-10T22:44:59Z",
-   "side": "YES",
-   "stake": 4.5,
-   "ticker": "KXNFLTOTAL-26NOV15MIAIND-44"
   }
  }
 }

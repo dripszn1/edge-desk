@@ -1,16 +1,16 @@
 {
-  "generated_ts": "2026-11-13T22:42:59Z",
-  "generated_ct": "Fri Nov 13, 4:42 PM CT",
+  "generated_ts": "2026-11-13T23:14:48Z",
+  "generated_ct": "Fri Nov 13, 5:14 PM CT",
   "today_ct": "2026-11-13",
   "snapshot": {
-    "ts": "2026-11-13T22:41:19Z",
-    "ct": "Fri Nov 13, 4:41 PM CT",
+    "ts": "2026-11-13T23:13:17Z",
+    "ct": "Fri Nov 13, 5:13 PM CT",
     "stale": false,
-    "markets_scanned": 5782,
+    "markets_scanned": 5788,
     "kickoff_source": "kalshi occurrence_datetime - 3h",
     "phases": {
       "CFB": {
-        "pregame": 5108
+        "pregame": 5114
       },
       "NFL": {
         "pregame": 674
@@ -61,7 +61,7 @@
     "max_bet": 10.0
   },
   "signals": {
-    "weekly_ct": "Fri Nov 13, 4:41 PM CT",
+    "weekly_ct": "Fri Nov 13, 5:13 PM CT",
     "scorecards": [
       {
         "name": "SHARP shadow football",
@@ -186,7 +186,7 @@
           "events": 4,
           "t_by_event": -1.39,
           "stale": 0,
-          "pending": 164,
+          "pending": 165,
           "no_close": 1
         }
       }
@@ -345,20 +345,6 @@
         "kalshi_url": "https://kalshi.com/markets/kxncaafspread/event/kxncaafspread-26nov14alavan"
       },
       {
-        "ticker": "KXNCAAFSPREAD-26NOV14ALAVAN-ALA25",
-        "signal": "SHARP",
-        "side": "YES",
-        "game": null,
-        "contract": null,
-        "max_price": 0.28,
-        "stake": 1.77,
-        "gone": true,
-        "sent_ct": "Tue Nov 10, 4:44 PM CT",
-        "kickoff_utc": "2026-11-14T17:45:00Z",
-        "kickoff_ct": "Sat Nov 14, 11:45 AM CT",
-        "kalshi_url": "https://kalshi.com/markets/kxncaafspread"
-      },
-      {
         "ticker": "KXNCAAFTOTAL-26NOV14UABTEM-44",
         "signal": "SHARP",
         "side": "NO",
@@ -401,20 +387,6 @@
         "kalshi_url": "https://kalshi.com/markets/kxncaafspread/event/kxncaafspread-26nov14texlsu"
       },
       {
-        "ticker": "KXNCAAFSPREAD-26NOV14BCND-ND36",
-        "signal": "SHARP",
-        "side": "YES",
-        "game": null,
-        "contract": null,
-        "max_price": 0.32,
-        "stake": 2.02,
-        "gone": true,
-        "sent_ct": "Tue Nov 10, 4:44 PM CT",
-        "kickoff_utc": "2026-11-14T20:30:00Z",
-        "kickoff_ct": "Sat Nov 14, 2:30 PM CT",
-        "kalshi_url": "https://kalshi.com/markets/kxncaafspread"
-      },
-      {
         "ticker": "KXNCAAFSPREAD-26NOV14GASOGAST-GASO2",
         "signal": "SHARP",
         "side": "NO",
@@ -427,20 +399,6 @@
         "kickoff_utc": "2026-11-14T20:30:00Z",
         "kickoff_ct": "Sat Nov 14, 2:30 PM CT",
         "kalshi_url": "https://kalshi.com/markets/kxncaafspread/event/kxncaafspread-26nov14gasogast"
-      },
-      {
-        "ticker": "KXNCAAFSPREAD-26NOV14MICHORE-ORE2",
-        "signal": "SHARP",
-        "side": "NO",
-        "game": null,
-        "contract": null,
-        "max_price": 0.22,
-        "stake": 1.63,
-        "gone": true,
-        "sent_ct": "Tue Nov 10, 4:44 PM CT",
-        "kickoff_utc": "2026-11-14T20:30:00Z",
-        "kickoff_ct": "Sat Nov 14, 2:30 PM CT",
-        "kalshi_url": "https://kalshi.com/markets/kxncaafspread"
       },
       {
         "ticker": "KXNCAAFSPREAD-26NOV14MICHORE-ORE6",
@@ -562,25 +520,11 @@
         "contract": "Over 48.5 points",
         "max_price": 0.34,
         "stake": 2.14,
-        "gone": false,
+        "gone": true,
         "sent_ct": "Fri Nov 13, 1:58 PM CT",
         "kickoff_utc": "2026-11-15T02:30:00Z",
         "kickoff_ct": "Sat Nov 14, 8:30 PM CT",
         "kalshi_url": "https://kalshi.com/markets/kxncaaftotal/event/kxncaaftotal-26nov14ususdsu"
-      },
-      {
-        "ticker": "KXNFLSPREAD-26NOV15BUFNYJ-BUF3",
-        "signal": "SHARP",
-        "side": "NO",
-        "game": null,
-        "contract": null,
-        "max_price": 0.25,
-        "stake": 3.16,
-        "gone": false,
-        "sent_ct": "Tue Nov 10, 4:44 PM CT",
-        "kickoff_utc": "2026-11-15T18:00:00Z",
-        "kickoff_ct": "Sun Nov 15, 12:00 PM CT",
-        "kalshi_url": "https://kalshi.com/markets/kxnflspread"
       },
       {
         "ticker": "KXNFLSPREAD-26NOV15BUFNYJ-NYJ2",
@@ -597,20 +541,6 @@
         "kalshi_url": "https://kalshi.com/markets/kxnflspread/event/kxnflspread-26nov15bufnyj"
       },
       {
-        "ticker": "KXNFLSPREAD-26NOV15CARNO-CAR4",
-        "signal": "SHARP",
-        "side": "YES",
-        "game": null,
-        "contract": null,
-        "max_price": 0.33,
-        "stake": 3.25,
-        "gone": true,
-        "sent_ct": "Tue Nov 10, 4:44 PM CT",
-        "kickoff_utc": "2026-11-15T18:00:00Z",
-        "kickoff_ct": "Sun Nov 15, 12:00 PM CT",
-        "kalshi_url": "https://kalshi.com/markets/kxnflspread"
-      },
-      {
         "ticker": "KXNFLSPREAD-26NOV15JACTEN-JAC7",
         "signal": "SHARP",
         "side": "NO",
@@ -623,34 +553,6 @@
         "kickoff_utc": "2026-11-15T18:00:00Z",
         "kickoff_ct": "Sun Nov 15, 12:00 PM CT",
         "kalshi_url": "https://kalshi.com/markets/kxnflspread/event/kxnflspread-26nov15jacten"
-      },
-      {
-        "ticker": "KXNFLSPREAD-26NOV15MIAIND-MIA2",
-        "signal": "SHARP",
-        "side": "YES",
-        "game": null,
-        "contract": null,
-        "max_price": 0.35,
-        "stake": 3.46,
-        "gone": true,
-        "sent_ct": "Tue Nov 10, 4:44 PM CT",
-        "kickoff_utc": "2026-11-15T18:00:00Z",
-        "kickoff_ct": "Sun Nov 15, 12:00 PM CT",
-        "kalshi_url": "https://kalshi.com/markets/kxnflspread"
-      },
-      {
-        "ticker": "KXNFLTOTAL-26NOV15MIAIND-44",
-        "signal": "SHARP",
-        "side": "YES",
-        "game": null,
-        "contract": null,
-        "max_price": 0.36,
-        "stake": 4.5,
-        "gone": true,
-        "sent_ct": "Tue Nov 10, 4:44 PM CT",
-        "kickoff_utc": "2026-11-15T18:00:00Z",
-        "kickoff_ct": "Sun Nov 15, 12:00 PM CT",
-        "kalshi_url": "https://kalshi.com/markets/kxnfltotal"
       },
       {
         "ticker": "KXNFLSPREAD-26NOV15LARARI-LAR7",
@@ -679,20 +581,6 @@
         "kickoff_utc": "2026-11-15T21:05:00Z",
         "kickoff_ct": "Sun Nov 15, 3:05 PM CT",
         "kalshi_url": "https://kalshi.com/markets/kxnflspread/event/kxnflspread-26nov15sealv"
-      },
-      {
-        "ticker": "KXNFLSPREAD-26NOV15PITCIN-PIT8",
-        "signal": "MODEL",
-        "side": "YES",
-        "game": null,
-        "contract": null,
-        "max_price": 0.18,
-        "stake": 0.14,
-        "gone": false,
-        "sent_ct": "Tue Nov 10, 4:44 PM CT",
-        "kickoff_utc": "2026-11-16T01:20:00Z",
-        "kickoff_ct": "Sun Nov 15, 7:20 PM CT",
-        "kalshi_url": "https://kalshi.com/markets/kxnflspread"
       }
     ],
     "gates": {
