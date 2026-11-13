@@ -184,6 +184,11 @@ def run(now: datetime | None = None) -> dict:
         rep["trades"] = trades.run(now)
     except Exception as e:                 # noqa: BLE001
         rep["trades"] = {"error": str(e)[:200]}
+    try:                                   # #57 random-entry baseline for the exits (report only)
+        from . import baseline
+        rep["baseline"] = baseline.run_if_due(now)
+    except Exception as e:                 # noqa: BLE001
+        rep["baseline"] = {"error": str(e)[:200]}
     OUT.write_text(json.dumps(rep, indent=2, default=str))
     print(f"weekly: paper {rep['paper']['verdict']} ({rep['paper']['settled']}) | "
           f"model shadow {rep['model_shadow']['verdict']} ({rep['model_shadow']['settled']}) | "

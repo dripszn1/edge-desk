@@ -24,6 +24,7 @@ MODEL_FLAGS = (ROOT / "data" / "flags" / "model_flags.csv", ROOT / "data" / "fla
                # held-back SHARP plays (#21b/#24) are graded too; they carry ticker + side, not leg1
                ROOT / "data" / "flags" / "sharp_tracked.csv")
 ODDS_LINES = ROOT / "data" / "odds" / "lines.csv"
+PLACEBOS = ROOT / "data" / "baseline_placebos.csv"    # #57 random-entry draws
 FINAL_STATUSES = {"finalized", "settled", "determined"}
 FINAL_RESULTS = {"yes", "no", "void"}   # void only counts once status is final
 
@@ -43,6 +44,15 @@ def final_tickers(results: pd.DataFrame) -> set[str]:
         return set()
     f = results[results["status"].isin(FINAL_STATUSES) & results["result"].isin(FINAL_RESULTS)]
     return set(f["ticker"])
+
+
+def placebo_tickers(placebos: pd.DataFrame | None, now) -> set[str]:
+    """#57: placebo contracts are fetched only once their game has kicked off (they settle after
+    it), so the far-future slate doesn't add calls on every checkpoint."""
+    if placebos is None or placebos.empty or "kickoff_utc" not in placebos:
+        return set()
+    ko = pd.to_datetime(placebos["kickoff_utc"], utc=True, errors="coerce")
+    return set(placebos.loc[ko.notna() & (ko <= pd.Timestamp(now)), "ticker"].dropna().astype(str))
 
 
 def _key(v) -> str:
@@ -72,8 +82,13 @@ def run(now: datetime | None = None) -> pd.DataFrame:
     # #56: rows the grader never counts (unrecorded sharp pull, #47) aren't fetched either
     flags = pd.concat([drop_unrecorded(pd.read_csv(f), pulls) for f in files], ignore_index=True)
     old = pd.read_csv(RESULTS) if RESULTS.exists() else pd.DataFrame(columns=["ticker"])
-    pending = sorted(flag_tickers(flags) - final_tickers(old))
-    ts = (now or datetime.now(timezone.utc)).strftime("%Y-%m-%dT%H:%M:%SZ")
+    now = now or datetime.now(timezone.utc)
+    try:
+        placebos = pd.read_csv(PLACEBOS) if PLACEBOS.exists() else None
+    except Exception:  # noqa: BLE001
+        placebos = None
+    pending = sorted((flag_tickers(flags) | placebo_tickers(placebos, now)) - final_tickers(old))
+    ts = now.strftime("%Y-%m-%dT%H:%M:%SZ")
     rows = []
     for i in range(0, len(pending), 50):
         batch = pending[i:i + 50]

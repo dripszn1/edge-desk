@@ -61,3 +61,12 @@ def pytest_sessionfinish(session, exitstatus):
 def _cap_review_to_tmp(tmp_path, monkeypatch):
     from edge_desk import caps
     monkeypatch.setattr(caps, "OUT", tmp_path / "cap_review_bets.csv")
+
+
+@pytest.fixture(autouse=True)
+def _baseline_to_tmp(tmp_path, monkeypatch):
+    """#57: placebo draws live in data/; tests must neither read nor write the real ones."""
+    from edge_desk import baseline, settle
+    monkeypatch.setattr(settle, "PLACEBOS", tmp_path / "baseline_placebos.csv")
+    monkeypatch.setattr(baseline, "PLACEBOS", tmp_path / "baseline_placebos.csv")
+    monkeypatch.setattr(baseline, "STATE", tmp_path / "baseline_summary.json")
