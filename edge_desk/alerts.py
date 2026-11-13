@@ -244,9 +244,11 @@ def current_price(alert: dict, quotes: dict) -> float | None:
     return side_price(r, alert.get("side")) if r else None
 
 
-def build_gone(alert: dict, now_price: float, now, row: dict | None = None) -> dict:
+def build_gone(alert: dict, now_price: float, now, row: dict | None = None, max_now: float | None = None) -> dict:
+    """`max_now` (#50): the max price from the current fresh sharp fair, when there is one."""
     tick = alert.get("ticker") or ""
     row = row or {}
+    mx = max_now if max_now is not None else alert.get("max_price")
     # titles as Kalshi shows them; old state rows lack them, so fall back to the live quote row
     game = alert.get("game") or row.get("event_title")
     desc = alert.get("desc") or row.get("yes_sub_title")
@@ -254,10 +256,10 @@ def build_gone(alert: dict, now_price: float, now, row: dict | None = None) -> d
     return {"type": "gone", "key": alert["key"], "kind": alert.get("kind"),
             "title": f"GONE {alert.get('kind')}: don't chase",
             "body": f"{order_lines(game, desc, tick)}\n{side} is now {now_price * 100:.0f}¢, past your "
-                    f"{(alert.get('max_price') or 0) * 100:.0f}¢ max. Skip it.\nsent {_sent_ct(now)}",
+                    f"{(mx or 0) * 100:.0f}¢ max. Skip it.\nsent {_sent_ct(now)}",
             # rebuild the link: old state rows hold the broken series-only URL
             "priority": 3, "click": kalshi_url(tick, alert.get("event_ticker")), "ticker": tick, "price": now_price,
-            "max_price": alert.get("max_price"), "edge": "", "stake": "",
+            "max_price": mx, "edge": "", "stake": "",
             "quote_utc": _iso(row["snapshot_ts"]) if row.get("snapshot_ts") else None}
 
 
@@ -299,6 +301,72 @@ def pushed_stake_today(state: dict, now) -> float:
 # ---------- decide ----------
 def fair_key(ticker, side) -> str:
     return f"{ticker}|{side}"
+
+
+def _contracts(alert: dict, p) -> int:
+    n = alert.get("contracts")
+    if not n:
+        try:
+            n = max(int(round(float(alert.get("stake") or 0) / float(alert.get("price") or p))), 1)
+        except (TypeError, ValueError, ZeroDivisionError):
+            n = 1
+    return max(int(n), 1)
+
+
+def _fresh_pull(alert: dict, fe: dict | None, quote_ts=None) -> bool:
+    """A usable fair entry: SHARP single-leg alert, not stale, a pull newer than the alert's own, and
+    never stamped after the quote it is checked against (no look-ahead)."""
+    if not fe or fe.get("stale") or fe.get("fair") is None or not fe.get("odds_fetched_ts"):
+        return False
+    if alert.get("legs") or alert.get("kind") != "SHARP":
+        return False
+    try:
+        pull = _utc(fe["odds_fetched_ts"])
+        ref = alert.get("odds_fetched_ts") or alert.get("quote_utc") or alert.get("sent_utc")
+        if ref and pull <= _utc(ref):
+            return False
+        if fe.get("snapshot_ts") and alert.get("quote_utc") and _utc(fe["snapshot_ts"]) < _utc(alert["quote_utc"]):
+            return False
+        ref_q = quote_ts or fe.get("snapshot_ts")
+        if ref_q and pull > _utc(ref_q):
+            return False
+    except Exception:  # noqa: BLE001 - unreadable time: not usable
+        return False
+    return True
+
+
+def note_fair(alert: dict, fe: dict | None, quote_ts=None) -> None:
+    """#50: remember the newest fresh fair for this alert, so later checks (incl. the fast lane, which
+    gets no fair values) price against it while it stays fresh."""
+    if not _fresh_pull(alert, fe, quote_ts):
+        return
+    old = alert.get("fair_now_pull")
+    if old and _utc(old) >= _utc(fe["odds_fetched_ts"]):
+        return
+    alert.update(fair_now=float(fe["fair"]), fair_now_pull=_iso(fe["odds_fetched_ts"]),
+                 fair_now_line=fe.get("sharp_line"))
+
+
+def _stored_fe(alert: dict) -> dict:
+    return {"fair": alert.get("fair_now"), "odds_fetched_ts": alert.get("fair_now_pull"),
+            "sharp_line": alert.get("fair_now_line")}
+
+
+def current_fair(alert: dict, quote_ts) -> float | None:
+    """The stored fresh fair if its pull is still fresh at `quote_ts` (90 min; 60 within 3h of
+    kickoff) and not after it; else None (the alert's own max applies)."""
+    f, pull = alert.get("fair_now"), alert.get("fair_now_pull")
+    if f is None or not pull or not quote_ts:
+        return None
+    from . import sharp
+    try:
+        if _utc(pull) > _utc(quote_ts):
+            return None
+    except Exception:  # noqa: BLE001
+        return None
+    if sharp.odds_too_old(_iso(quote_ts), pull, alert.get("kickoff_utc")):
+        return None
+    return float(f)
 
 
 def line_moved(alert: dict, fe: dict | None, price: float | None, quote_ts=None) -> float | None:
@@ -412,11 +480,22 @@ def decide(groups: list[tuple[list[dict], bool]], quotes: dict, state: dict, now
         if qts and flag_ts and _utc(qts) < _utc(flag_ts):
             continue                                        # quote older than the flag's: can't say it moved
         p = current_price(a, quotes)
+        fe = fairs.get(fair_key(a.get("ticker"), a.get("side")))
+        note_fair(a, fe, qts)                               # #50: keep the freshest usable fair
+        cur = current_fair(a, qts or _iso(now))
+        if p is not None and cur is not None:
+            mp = max_price(cur, _contracts(a, p), float(a.get("fee_multiplier") or 1.0))
+            if mp is None or p > mp + 1e-9:
+                a["gone"] = True
+                if p > a["max_price"] + 1e-9:
+                    out.append(build_gone(a, p, now, row, mp))
+                else:
+                    out.append(build_line_gone(a, cur, p, now, fe if fe else _stored_fe(a), row))
+            continue                                        # a fresh fair decides; old max not used
         if p is not None and p > a["max_price"] + 1e-9:
             a["gone"] = True
             out.append(build_gone(a, p, now, row))
             continue
-        fe = fairs.get(fair_key(a.get("ticker"), a.get("side")))
         new_fair = line_moved(a, fe, p, qts)
         if new_fair is not None:
             a["gone"] = True
@@ -596,3 +675,40 @@ def main(argv=None) -> int:
 
 if __name__ == "__main__":
     sys.exit(main())
+
+
+def room_report(log: "pd.DataFrame | None", clv_rows: "pd.DataFrame | None", now) -> dict:
+    """#53 (report only, Emerson decides): do alerts sent with 0c room (ask == max price) do worse
+    than alerts with 1c+ room? Per bucket: alerts, share that later got a 'gone' push, median minutes
+    to that gone, and CLV after fee vs Kalshi's close (data/clv_bets.csv, shadow rows). Alerts or gone
+    pushes sent after `now` are ignored."""
+    import pandas as pd
+    now = pd.Timestamp(_utc(now))
+    if log is None or log.empty or "type" not in log:
+        return {}
+    lg = log.copy()
+    lg["_sent"] = pd.to_datetime(lg["sent_utc"], utc=True, errors="coerce")
+    lg = lg[lg["_sent"].notna() & (lg["_sent"] <= now)]
+    new = lg[lg["type"] == "new"].drop_duplicates("key")
+    if new.empty:
+        return {}
+    gone = lg[lg["type"] == "gone"].groupby("key")["_sent"].min()
+    room = (pd.to_numeric(new["max_price"], errors="coerce") - pd.to_numeric(new["price"], errors="coerce")) * 100
+    new = new.assign(room_c=room.round(1), leg1=new["key"].astype(str).str.split("|", n=1).str[-1])
+    new = new[new["room_c"].notna()]
+    new["bucket"] = ["0c" if r <= 0.05 else "1c+" for r in new["room_c"]]
+    new["gone_min"] = [((gone[k] - s).total_seconds() / 60) if k in gone.index else None
+                       for k, s in zip(new["key"], new["_sent"])]
+    if clv_rows is not None and not clv_rows.empty and "leg1" in clv_rows:
+        c = clv_rows[(clv_rows.get("source") == "shadow") & (clv_rows.get("close_status") == "ok")]
+        new = new.merge(c[["leg1", "clv_c"]].drop_duplicates("leg1"), on="leg1", how="left")
+    else:
+        new["clv_c"] = None
+    out = {}
+    for b, g in new.groupby("bucket"):
+        gm = pd.to_numeric(g["gone_min"], errors="coerce").dropna()
+        cv = pd.to_numeric(g["clv_c"], errors="coerce").dropna()
+        out[b] = {"alerts": int(len(g)), "gone_pct": round(100 * len(gm) / len(g), 1),
+                  "median_min_to_gone": round(float(gm.median()), 1) if len(gm) else None,
+                  "with_close": int(len(cv)), "avg_clv_c": round(float(cv.mean()), 2) if len(cv) else None}
+    return out
