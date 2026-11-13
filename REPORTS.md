@@ -1,5 +1,12 @@
 # Reports (newest first)
 
+## 2026-11-13 (builder, 10:45Z run)
+- Shipped to `dev` (backlog empty, added as #55/#56): **#55 settlement watch.** All 303 held-back plays had a blank kickoff, so nothing could check that they settle after their game. They now get the kickoff from the event map (303/303), and the weekly report counts pending plays and names any still unsettled 12h+ after kickoff. The digest status line only mentions it when there are any. **#56** settle stopped asking Kalshi every run for a fake Auburn rung (leftover test row the grader already ignores), so a real missing ticker won't be hidden. Also removed 166k deprecation warnings from the CI tests.
+- Tests: 433/433 green (7 new; they failed on the old code).
+- Honest results: settlement coverage is clean: 261 pending, 0 overdue, 0 without a kickoff. CBB held-back plays: 137 closes, −2.4¢ vs Kalshi's close (t −3.7 by game, 26 games). Exit strategies on the same 141 CBB plays: hold −$7.53, sell at tip −$63.85, Auto Sell at fair −$100.95, Auto Sell +10¢ −$76.09. In CBB, Auto Sell caps the winners and keeps the losers. Football has only 13 closed: hold −$26.58, Auto Sell +10¢ +$9.02 (too few to read). Every gate is closed.
+- Watchdog: collect was 53 min old, so I dispatched collect.yml (10:44Z, success, 7,702 markets) and live.yml (exited, outside the window). The Kalshi link check still gets HTTP 429 from Actions. Alerts fall back to the event-page link and retry every 6h.
+- Needs Emerson: merge the dev→main PR (#54–#56) before Saturday's 10 AM CT window.
+
 ## 2026-11-13 (builder, 07:45Z run)
 - Shipped to `dev` (the backlog was empty, so I added this as #54): **live runs now pick up merged code.** A live job runs for up to 5.5h on the code it started with. But every 15-min commit pulls main, so after a merge the report steps ran the new code while scanning and alerts kept running the old code. On top of that, the old code's cached pick-off summary was served for up to an hour. That's why the 05:32Z digest still opened with "PROPOSE cbb: skip when Kalshi moved first" after #52 was merged. Now the cache is stamped with the code that made it. A live run that pulls new code also ends cleanly, and its chained re-dispatch restarts on the new code (only if ≥10 min are left in the window; expect a ~3-min gap while it restarts).
 - Tests: 426/426 green (9 new; they failed on the old code).
