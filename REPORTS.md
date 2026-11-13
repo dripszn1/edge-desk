@@ -1,5 +1,12 @@
 # Reports (newest first)
 
+## 2026-11-13 (builder, 07:45Z run)
+- Shipped to `dev` (the backlog was empty, so I added this as #54): **live runs now pick up merged code.** A live job runs for up to 5.5h on the code it started with. But every 15-min commit pulls main, so after a merge the report steps ran the new code while scanning and alerts kept running the old code. On top of that, the old code's cached pick-off summary was served for up to an hour. That's why the 05:32Z digest still opened with "PROPOSE cbb: skip when Kalshi moved first" after #52 was merged. Now the cache is stamped with the code that made it. A live run that pulls new code also ends cleanly, and its chained re-dispatch restarts on the new code (only if ≥10 min are left in the window; expect a ~3-min gap while it restarts).
+- Tests: 426/426 green (9 new; they failed on the old code).
+- Honest results: the stale proposal is already gone in the 07:47Z digest. Settlement coverage is fine: nothing pending is past its game. The 1 oldest pending play is Thu night's ULL/ULM total, waiting on Kalshi. Football so far: SHARP shadow 0-5 (−$11.00), held back 0-8 (−$15.58). Both are tiny samples; most of the football plays (~180) settle Sat/Sun. CBB held back 81-56 (−$5.41), −2.4¢ vs Kalshi's close. Every gate is closed.
+- Watchdog: collect was 2h13m old (the keeper's night pause, by design), so I dispatched collect.yml (07:44Z, success) and live.yml (exited, outside the window).
+- Needs Emerson: merge the dev→main PR (#54) before Saturday's 10 AM CT window. The repo now lives at dripszn1/edge-desk (the old URL redirects).
+
 ## 2026-11-13 (builder, 04:45Z run)
 - Shipped to `dev` (backlog was empty, so I added #52 and #53): **#52** the digest kept opening with "PROPOSE cbb: skip a play when Kalshi already moved", but that guard has been ON since #50. A guard that's already live is no longer proposed. Its record is listed as "in effect" in the weekly report (−2.99¢ vs close, t −2.34, 53 plays). It only says "PROPOSE turn it OFF" if the plays it holds back start beating the close (≥30 plays, t≥2). **#53** adds a report-only check for your 0¢-room question: alerts sent at ask = max price vs alerts with 1¢+ room.
 - Tests: 417/417 green (4 new; the 2 for #52 failed on the old code).
