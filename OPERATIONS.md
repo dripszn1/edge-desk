@@ -43,8 +43,8 @@ and stands down if dev has a non-"Report" commit <15 min old.
 
 ## Where we stand (11-13 morning, after 4 days of paper data)
 - Nothing is proven. Every gate is closed.
-- CBB: our entries lose ~2.4c to Kalshi's close (137 closes, 26 games, t -3.7). No exit fixes it (hold ~flat,
-  every early exit worse). The "Kalshi moved first" guard (#50) is on for CBB.
+- CBB: REMOVED 11-13 (Emerson). Entries lost ~2.4c to Kalshi's close (137 closes, 26 games, t -3.7) and beat
+  only 39% of random entries. Scope is NFL + CFB only.
 - Football: 13 closed plays from ~4 games, too few. Hold -$26.58, Auto Sell +10c +$9.02 (t 1.2). Thursday's 3
   football plays all touched their Auto Sell target in-game and then lost. Suspicion: an Auto Sell edge with
   entries that lose to the close would come from in-game swings, not our picks; #57 (random-entry baseline) tests it.
@@ -59,8 +59,7 @@ Read once football has >=30 closed plays across >=10 games (alerted + held back 
 2. **Exits**: an exit counts as working only if it has >=30 closed, P&L > 0, t >= 2 by game AND beats >=95% of the
    random-entry placebo (#57). If placebo Auto Sell does as well as ours, the edge is the exit (Kalshi
    overreacting in-game), not the pick: that is a different, simpler strategy and gets its own plan.
-3. **CBB**: if CBB entries still lose to the close (<= -1c, t <= -2) after another week, propose dropping CBB
-   from alerts (keep collecting silently). Emerson decides.
+3. **CBB**: resolved 11-13: Emerson removed CBB entirely (picks −2.4c vs close, t −3.7 by game; beat 39% of random).
 4. **Odds plan ($30/mo)**: keep after the month only if rule 1 says the picks have an edge. Exits-only (rule 2)
    doesn't need Pinnacle lines.
 Every proposal from these rules goes to Emerson; nothing changes live behaviour without his OK.

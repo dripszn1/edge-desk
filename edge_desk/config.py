@@ -6,8 +6,8 @@ KALSHI_BASE = "https://api.elections.kalshi.com/trade-api/v2"
 SERIES = {
     "NFL": ["KXNFLSPREAD", "KXNFLTOTAL", "KXNFLGAME"],
     "CFB": ["KXNCAAFSPREAD", "KXNCAAFTOTAL", "KXNCAAFGAME"],
-    # CBB: SHARP-only shadow test (Emerson OK 2026-11-10); never pooled with football
-    "CBB": ["KXNCAAMBSPREAD", "KXNCAAMBTOTAL", "KXNCAAMBGAME"],
+    # CBB removed 2026-11-13 (Emerson: "skip cbb altogether"): its picks lost to Kalshi's close (t -3.7 by
+    # game) and beat only 39% of random entries. Old CBB data stays in data/; nothing new is collected.
 }
 
 # Risk (SPEC.md "Hard rules")

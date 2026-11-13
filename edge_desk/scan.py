@@ -258,7 +258,7 @@ def run_model(df: pd.DataFrame, ts: str | None, leagues=("NFL", "CFB"), seen: se
     return out
 
 
-def run_sharp(df: pd.DataFrame, ts: str | None, lost: float | None = None, leagues=("NFL", "CFB", "CBB"),
+def run_sharp(df: pd.DataFrame, ts: str | None, lost: float | None = None, leagues=("NFL", "CFB"),
               seen: set | None = None) -> dict:
     """SHARP flags (Kalshi vs sharp sportsbook line), per league. Live only if that league's gate
     is open; else shadow. Leagues share one daily loss cap."""

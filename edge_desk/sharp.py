@@ -675,7 +675,7 @@ def inputs_hash(g: pd.DataFrame) -> str:
 
 def run_backtest(force: bool = False) -> dict:
     reps = {}
-    for lg, out in (("NFL", BACKTEST_OUT), ("CFB", CFB_BACKTEST_OUT), ("CBB", CBB_BACKTEST_OUT)):
+    for lg, out in (("NFL", BACKTEST_OUT), ("CFB", CFB_BACKTEST_OUT)):
         g = history(lg)
         if g.empty or g["spread_line"].notna().sum() < 500:
             print(f"sharp backtest {lg}: no closing lines yet, skip")
