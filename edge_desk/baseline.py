@@ -300,6 +300,8 @@ def run(now=None) -> dict:
         return summary([])
     bets = pd.concat(frames, ignore_index=True)
     bets = bets[pd.to_datetime(bets["snapshot_ts"], utc=True, errors="coerce").notna()]
+    from .grade import one_per_contract
+    bets = one_per_contract(bets)                            # #60: a contract counts once
     tick = bets["leg1"].astype(str).str.split(" ", n=1).str[1]
     events = set(tick.str.rsplit("-", n=1).str[0])
     start = pd.to_datetime(bets["snapshot_ts"], utc=True).min() - ENTRY_GAP

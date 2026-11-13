@@ -32,6 +32,22 @@ CT = ZoneInfo(config.TIMEZONE)
 STALE_DAYS = 7
 
 
+def one_per_contract(df: pd.DataFrame) -> pd.DataFrame:
+    """#60: a contract first held back (e.g. stale line) and later alerted sits in BOTH the shadow and the
+    tracked bets (same bet_id "SHARP|<leg1>", different source); pooled summaries must count it once. Keep
+    the shadow (alerted) copy, else the earliest entry. All rows of the kept (source, leg1) stay (trades
+    has one row per exit variant)."""
+    if df is None or len(df) == 0 or "leg1" not in df or "source" not in df:
+        return df
+    ts_col = next((c for c in ("snapshot_ts", "entry_ts") if c in df), None)
+    cols = ["source", "leg1"] + ([ts_col] if ts_col else [])
+    key = df[cols].drop_duplicates(["source", "leg1"]).copy()
+    key["_r"] = key["source"].map(lambda s: 0 if s == "shadow" else 1)
+    key = key.sort_values(["_r"] + ([ts_col] if ts_col else []), kind="stable").drop_duplicates("leg1")
+    keep = set(zip(key["source"], key["leg1"]))
+    return df[[(s, l) in keep for s, l in zip(df["source"], df["leg1"])]]
+
+
 def _settlement(results: pd.DataFrame, ticker: str, after: pd.Timestamp):
     """(result, settled_ts) from the first final result fetched strictly after `after`."""
     r = results[(results["ticker"] == ticker) & (results["_ts"] > after)
