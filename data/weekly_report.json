@@ -2,8 +2,8 @@
   "proposals": [
     "PROPOSE cbb: plays entered after Kalshi already moved toward us lose -2.99c to Kalshi's close (t -2.34 by game, 53 plays): skip a play when Kalshi's price already fell 1c+ toward ours in the 30 min before"
   ],
-  "generated_utc": "2026-11-13T04:35:27Z",
-  "generated_ct": "Thu Nov 12, 10:35 PM CT",
+  "generated_utc": "2026-11-13T04:47:27Z",
+  "generated_ct": "Thu Nov 12, 10:47 PM CT",
   "paper_mode": true,
   "rules": {
     "min_bets": 30,
@@ -141,7 +141,7 @@
       "bets": 141,
       "real_pnl": -12.53,
       "sim_median_pnl": -17.53,
-      "beat_pct": 0.5386
+      "beat_pct": 0.5392
     },
     "by_week": [
       {
@@ -168,7 +168,7 @@
           "bets": 86,
           "real_pnl": -6.26,
           "sim_median_pnl": -10.26,
-          "beat_pct": 0.5316
+          "beat_pct": 0.5336
         },
         "verdict": "luck / no edge",
         "why": "t=-1.35, coin-flip beat 53%"
@@ -190,6 +190,11 @@
         "verdict": "not enough data",
         "why": "26 settled bets (< 30)"
       },
+      "sanity_cap": {
+        "settled": 0,
+        "verdict": "not enough data",
+        "why": "no settled bets yet"
+      },
       "stale_line": {
         "settled": 29,
         "staked": 116.12,
@@ -202,7 +207,7 @@
           "bets": 29,
           "real_pnl": 3.88,
           "sim_median_pnl": -5.12,
-          "beat_pct": 0.6354
+          "beat_pct": 0.6372
         },
         "verdict": "not enough data",
         "why": "29 settled bets (< 30)"
@@ -247,7 +252,7 @@
         "events": 26,
         "t_by_event": -3.74,
         "stale": 0,
-        "pending": 1,
+        "pending": 3,
         "no_close": 0
       },
       "football": {
@@ -1496,7 +1501,7 @@
         "BRACKET_10_10": {
           "label": "API-ONLY",
           "closed": 140,
-          "pending": 3,
+          "pending": 5,
           "closed_early_not_counted": 1,
           "pnl_usd": -132.23,
           "avg_c": -9.64,
@@ -1508,7 +1513,7 @@
         "BRACKET_10_5": {
           "label": "API-ONLY",
           "closed": 140,
-          "pending": 3,
+          "pending": 5,
           "closed_early_not_counted": 2,
           "pnl_usd": -94.75,
           "avg_c": -7.14,
@@ -1520,7 +1525,7 @@
         "BRACKET_15_10": {
           "label": "API-ONLY",
           "closed": 140,
-          "pending": 3,
+          "pending": 5,
           "closed_early_not_counted": 1,
           "pnl_usd": -135.53,
           "avg_c": -9.78,
@@ -1532,7 +1537,7 @@
         "BRACKET_15_5": {
           "label": "API-ONLY",
           "closed": 140,
-          "pending": 3,
+          "pending": 5,
           "closed_early_not_counted": 2,
           "pnl_usd": -102.75,
           "avg_c": -7.79,
@@ -1544,7 +1549,7 @@
         "BRACKET_5_10": {
           "label": "API-ONLY",
           "closed": 140,
-          "pending": 3,
+          "pending": 5,
           "closed_early_not_counted": 1,
           "pnl_usd": -137.41,
           "avg_c": -10.07,
@@ -1556,7 +1561,7 @@
         "BRACKET_5_5": {
           "label": "API-ONLY",
           "closed": 140,
-          "pending": 3,
+          "pending": 5,
           "closed_early_not_counted": 2,
           "pnl_usd": -96.93,
           "avg_c": -7.31,
@@ -1568,7 +1573,7 @@
         "EXIT_AT_TIP": {
           "label": "MANUAL-OK",
           "closed": 140,
-          "pending": 3,
+          "pending": 5,
           "closed_early_not_counted": 1,
           "pnl_usd": -63.69,
           "avg_c": -4.88,
@@ -1580,7 +1585,7 @@
         "HOLD": {
           "label": "MANUAL-OK",
           "closed": 140,
-          "pending": 3,
+          "pending": 5,
           "closed_early_not_counted": 0,
           "pnl_usd": -6.01,
           "avg_c": -0.55,
@@ -1592,7 +1597,7 @@
         "RESTING_10": {
           "label": "MANUAL-OK",
           "closed": 140,
-          "pending": 3,
+          "pending": 5,
           "closed_early_not_counted": 1,
           "pnl_usd": -76.58,
           "avg_c": -5.5,
@@ -1604,7 +1609,7 @@
         "RESTING_15": {
           "label": "MANUAL-OK",
           "closed": 140,
-          "pending": 3,
+          "pending": 5,
           "closed_early_not_counted": 1,
           "pnl_usd": -38.2,
           "avg_c": -2.58,
@@ -1616,7 +1621,7 @@
         "RESTING_5": {
           "label": "MANUAL-OK",
           "closed": 140,
-          "pending": 3,
+          "pending": 5,
           "closed_early_not_counted": 1,
           "pnl_usd": -106.69,
           "avg_c": -7.55,
@@ -1628,7 +1633,7 @@
         "RESTING_FAIR": {
           "label": "MANUAL-OK",
           "closed": 140,
-          "pending": 3,
+          "pending": 5,
           "closed_early_not_counted": 1,
           "pnl_usd": -101.08,
           "avg_c": -6.94,
@@ -1640,7 +1645,7 @@
         "TRADE": {
           "label": "MANUAL-OK",
           "closed": 140,
-          "pending": 3,
+          "pending": 5,
           "closed_early_not_counted": 1,
           "pnl_usd": -63.57,
           "avg_c": -4.87,
