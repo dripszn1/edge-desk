@@ -294,7 +294,8 @@ def run(now=None) -> dict:
     t = bet_table({k: _load(p) for k, p in BET_FILES.items()}, {k: _load(p) for k, p in FLAG_FILES.items()},
                   _load(CLV_FILE), sds, bts, now)
     t.to_csv(OUT, index=False)
-    rep = review(t, sds)
+    from .grade import one_per_contract
+    rep = review(one_per_contract(t) if "source" in t else t, sds)   # #60: a contract counts once
     print("caps: " + " | ".join(f"{lg} {m.lower()} {v['cap_pts']:g}pt={v['cap_sd']}SD"
                                 for lg, d in rep["caps"].items() for m, v in d.items())
           + (" | " + "; ".join(rep["proposals"]) if rep["proposals"] else " | no proposals"))

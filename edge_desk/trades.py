@@ -217,7 +217,8 @@ def summary(t: pd.DataFrame) -> dict:
     out = {"not_available": ["LINE_STOP (needs per-contract sharp-line history)"]}
     if t is None or t.empty:
         return out
-    t = t.copy()
+    from .grade import one_per_contract
+    t = one_per_contract(t).copy()                           # #60: a contract counts once in pooled stats
     t["_grp"] = t["league"].map(lambda x: "cbb" if x == "CBB" else "football")
     # Same denominator for every variant: only bets where ALL variants are final. Otherwise an
     # auto-sell that filled early (a win by construction) is compared with holds still pending,

@@ -36,7 +36,7 @@ def test_pre_move_and_no_lookahead():
 
 
 def _rows(league, n=40, clv0=-3.0, step=-0.1):
-    return [{"bet_id": f"b{i}", "source": "tracked", "league": league, "leg1": f"YES KXT-26NOV12G{i % 10}-1",
+    return [{"bet_id": f"b{i}", "source": "tracked", "league": league, "leg1": f"YES KXT-26NOV12G{i % 10}-{i}",
              "kalshi_first": True, "age_bucket": "30-90 min", "adverse": False, "line_move_fav": 0,
              "pull_age_min": 40, "clv_c": clv0 + (i % 10) * step, "close_status": "ok"} for i in range(n)]
 
@@ -62,7 +62,7 @@ def test_live_guard_revert_proposed_only_on_positive_evidence():
 def test_proposal_needs_30_plays_and_t():
     rows = []
     for i in range(40):
-        rows.append({"bet_id": f"b{i}", "source": "tracked", "league": "NFL", "leg1": f"YES KXT-26NOV12G{i % 10}-1",
+        rows.append({"bet_id": f"b{i}", "source": "tracked", "league": "NFL", "leg1": f"YES KXT-26NOV12G{i % 10}-{i}",
                      "kalshi_first": True, "age_bucket": "30-90 min", "adverse": False, "line_move_fav": 0,
                      "pull_age_min": 40, "clv_c": -3 - (i % 10) * 0.1, "close_status": "ok"})
     s = pickoff.summary(pd.DataFrame(rows))

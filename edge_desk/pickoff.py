@@ -189,7 +189,8 @@ def summary(p: pd.DataFrame) -> dict:
     out = {"proposals": [], "in_effect": []}
     if p is None or p.empty:
         return out
-    p = p.copy()
+    from .grade import one_per_contract
+    p = one_per_contract(p).copy()                           # #60: a contract counts once
     p["_grp"] = p["league"].map(lambda x: "cbb" if x == "CBB" else "football")
     for grp, g in p.groupby("_grp"):
         moved = g[g["adverse"].notna()]
