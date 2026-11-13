@@ -158,9 +158,9 @@ def test_run_writes_cache_and_state(monkeypatch, tmp_path):
         return [_ev()], {"x-requests-remaining": "480", "x-requests-last": "3"}
     monkeypatch.setattr(odds, "_get", fake)
     plan = odds.run(NOW)
-    assert set(plan) == {"NFL", "CFB", "CBB"}
+    assert set(plan) == {"NFL", "CFB"}                 # CBB removed 11-13
     st = json.loads((tmp_path / "state.json").read_text())
-    assert st["remaining"] == 480 and st["spent"]["2026-11-14"] == 9
+    assert st["remaining"] == 480 and st["spent"]["2026-11-14"] == 6                 # 2 leagues x 3 credits (CBB removed)
     assert len(list((tmp_path / "raw" / "2026-11-14").glob("*.json"))) == 3
     assert (tmp_path / "fair_latest.csv").exists()
 
@@ -170,9 +170,9 @@ CBB_NOW = "2026-11-18T21:00:00Z"            # Wed 3 PM CT, 13 days left
 CBB_TIP = "2026-11-19T00:00:00Z"            # 6 PM CT tip, 3h away
 
 
-def test_cbb_pulls_when_surplus_and_tip_near():
+def test_cbb_never_pulled_after_removal():          # CBB removed 11-13: no credits spent on it
     st = {"remaining": 400, "remaining_seen_utc": CBB_NOW}
-    assert odds.plan_pulls(st, CBB_NOW, {"NFL": None, "CFB": None, "CBB": CBB_TIP}) == ["CBB"]
+    assert odds.plan_pulls(st, CBB_NOW, {"NFL": None, "CFB": None, "CBB": CBB_TIP}) == []
 
 
 def test_cbb_never_eats_the_football_floor():

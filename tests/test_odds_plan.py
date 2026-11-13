@@ -83,11 +83,11 @@ def test_20k_hourly_outside_windows_on_game_days():
     assert odds.plan_pulls(st, OUT, ko) == ["CFB"]
 
 
-def test_20k_cbb_pulls_every_ten_minutes_too_but_after_football():
+def test_20k_football_only_after_cbb_removal():      # CBB removed 11-13
     ko = {"NFL": None, "CFB": _in(NOW, 180), "CBB": _in(NOW, 180)}
     st = _hi(last_pull={"CFB": _ago(NOW, 11), "CBB": _ago(NOW, 11)},
              pulls={"CBB": {"2026-11-14": 9}})                          # no 2-per-day cap on 20k
-    assert odds.plan_pulls(st, NOW, ko) == ["CFB", "CBB"]
+    assert odds.plan_pulls(st, NOW, ko) == ["CFB"]
 
 
 def test_20k_never_below_reserve_and_cbb_never_eats_football_floor():
