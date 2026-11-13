@@ -1,17 +1,14 @@
 {
-  "generated_ts": "2026-11-13T14:49:08Z",
-  "generated_ct": "Fri Nov 13, 8:49 AM CT",
+  "generated_ts": "2026-11-13T16:50:05Z",
+  "generated_ct": "Fri Nov 13, 10:50 AM CT",
   "today_ct": "2026-11-13",
   "snapshot": {
-    "ts": "2026-11-13T14:47:26Z",
-    "ct": "Fri Nov 13, 8:47 AM CT",
+    "ts": "2026-11-13T16:48:33Z",
+    "ct": "Fri Nov 13, 10:48 AM CT",
     "stale": false,
-    "markets_scanned": 7718,
+    "markets_scanned": 5768,
     "kickoff_source": "kalshi occurrence_datetime - 3h",
     "phases": {
-      "CBB": {
-        "pregame": 1950
-      },
       "CFB": {
         "pregame": 5094
       },
@@ -64,7 +61,7 @@
     "max_bet": 10.0
   },
   "signals": {
-    "weekly_ct": "Fri Nov 13, 8:47 AM CT",
+    "weekly_ct": "Fri Nov 13, 10:48 AM CT",
     "scorecards": [
       {
         "name": "SHARP shadow football",
@@ -163,7 +160,7 @@
           "events": 4,
           "t_by_event": -0.83,
           "stale": 0,
-          "pending": 50,
+          "pending": 51,
           "no_close": 0
         }
       },
@@ -313,7 +310,7 @@
         "contract": "James Madison wins by over 3.5 points",
         "max_price": 0.48,
         "stake": 3.9,
-        "gone": false,
+        "gone": true,
         "sent_ct": "Wed Nov 11, 12:10 AM CT",
         "kickoff_utc": "2026-11-14T17:00:00Z",
         "kickoff_ct": "Sat Nov 14, 11:00 AM CT",
@@ -346,6 +343,20 @@
         "kickoff_utc": "2026-11-14T18:00:00Z",
         "kickoff_ct": "Sat Nov 14, 12:00 PM CT",
         "kalshi_url": "https://kalshi.com/markets/kxncaaftotal/event/kxncaaftotal-26nov14uabtem"
+      },
+      {
+        "ticker": "KXNCAAFSPREAD-26NOV14KSUTCU-TCU8",
+        "signal": "SHARP",
+        "side": "NO",
+        "game": "Kansas St. vs TCU: Spread",
+        "contract": "TCU wins by over 7.5 points",
+        "max_price": 0.4,
+        "stake": 2.51,
+        "gone": false,
+        "sent_ct": "Fri Nov 13, 10:48 AM CT",
+        "kickoff_utc": "2026-11-14T19:00:00Z",
+        "kickoff_ct": "Sat Nov 14, 1:00 PM CT",
+        "kalshi_url": "https://kalshi.com/markets/kxncaafspread/event/kxncaafspread-26nov14ksutcu"
       },
       {
         "ticker": "KXNCAAFSPREAD-26NOV14TEXLSU-LSU4",
@@ -645,8 +656,6 @@
     "gates": {
       "MODEL CFB": "closed",
       "MODEL NFL": "closed",
-      "SHARP CBB": "closed",
-      "SHARP CBB ML": "closed",
       "SHARP CFB": "closed",
       "SHARP CFB ML": "closed",
       "SHARP NFL": "closed",
