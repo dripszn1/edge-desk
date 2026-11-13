@@ -507,6 +507,30 @@ class Session:
     errors: list = field(default_factory=list)
     fetch_s: list = field(default_factory=list)      # #44: Kalshi fetch seconds per pass
     loop_s: list = field(default_factory=list)       # #44: fetch + scan + alerts seconds per pass
+    restart: str | None = None                       # #54: "code updated" when a pull brought new code
+
+
+RESTART_MIN_LEFT = timedelta(minutes=10)
+
+
+def code_rev(root: Path | None = None) -> str:
+    """#54: hash of the code a live run executes (edge_desk/*.py, requirements, workflows), never data/."""
+    import hashlib
+    root = Path(root or ROOT)
+    h = hashlib.sha256()
+    files = sorted((root / "edge_desk").rglob("*.py")) + [root / "requirements.txt"]
+    for f in files:
+        if f.is_file() and "__pycache__" not in f.parts:
+            h.update(str(f.relative_to(root)).encode())
+            h.update(f.read_bytes())
+    return h.hexdigest()[:16]
+
+
+def exit_reason(end: datetime, window_end: datetime, stop_at: datetime, restart: str | None) -> str:
+    if restart:
+        return restart
+    return ("window end" if end >= window_end - timedelta(minutes=1)
+            else "job limit / budget" if end >= stop_at else "outside window")
 
 
 def _quantile(xs: list, q: float):
@@ -519,7 +543,7 @@ def _quantile(xs: list, q: float):
 def run_loop(now_fn=lambda: datetime.now(UTC), clock=time.monotonic, sleep=time.sleep,
              fetch_full=full_pass, fetch_hot=hot_pass, odds_fn=None, scan_fn=None,
              persist_fn=persist, post_fn=post_steps, commit_fn=git_commit, used_min: float | None = None,
-             seen: set | None = None, alert_fn=None, log_fn=None, fast_fn="default") -> Session:
+             seen: set | None = None, alert_fn=None, log_fn=None, fast_fn="default", code_fn="default") -> Session:
     """Run until the deadline. All I/O is injectable so the ordering guarantees are testable."""
     from . import kickoffs, odds, scan
     odds_fn = odds_fn or (lambda: odds.run(near_h=config.LIVE_ODDS_NEAR_HOURS,
@@ -529,6 +553,8 @@ def run_loop(now_fn=lambda: datetime.now(UTC), clock=time.monotonic, sleep=time.
     if fast_fn == "default":                           # real loop only; injected test loops never hit the network
         fast_fn = default_fast if fetch_full is full_pass else None
     fast_paused = False
+    if code_fn == "default":                           # #54: only the real loop watches its own code
+        code_fn = code_rev if commit_fn is git_commit else None
     log_fn = log_fn or upsert_log
     start = _utc(now_fn())
     w = current_window(start, config.LIVE_EARLY_START_MINUTES)
@@ -539,6 +565,7 @@ def run_loop(now_fn=lambda: datetime.now(UTC), clock=time.monotonic, sleep=time.
     if start < w[0]:                                   # fired a little early: wait for the window
         sleep((w[0] - start).total_seconds())
     seen = seed_seen(start) if seen is None else seen
+    start_rev = code_fn() if code_fn else None
     pacer, mults, meta = Pacer(), {}, {}
     last_full_df = None
     last_odds = last_persist = last_commit = None
@@ -604,6 +631,15 @@ def run_loop(now_fn=lambda: datetime.now(UTC), clock=time.monotonic, sleep=time.
             if commit_fn(f"data: live {ts}"):
                 sess.stats["commits"] += 1
             last_commit = now
+            # #54: the pull inside the commit brought new code (a merge to main): end now so the
+            # chained re-dispatch runs it, instead of mixing old in-memory code with new post steps
+            if code_fn is not None and sess.stop_at - _utc(now_fn()) >= RESTART_MIN_LEFT:
+                try:
+                    if code_fn() != start_rev:
+                        sess.restart = "code updated"
+                        break
+                except Exception as e:  # noqa: BLE001
+                    sess.errors.append(f"code_rev: {type(e).__name__}")
         # 6) wait for the next tick (never past the deadline)
         left = (sess.stop_at - _utc(now_fn())).total_seconds()
         wait = min(max(pacer.interval - (clock() - t0), 0), max(left, 0))
@@ -659,8 +695,7 @@ def main(argv=None) -> int:
         sess = run_loop(used_min=used)
         end = datetime.now(UTC)
         mins = billed_minutes(sess.started, end)
-        reason = ("window end" if end >= sess.window_end - timedelta(minutes=1)
-                  else "job limit / budget" if end >= sess.stop_at else "outside window")
+        reason = exit_reason(end, sess.window_end, sess.stop_at, sess.restart)
         upsert_log(checkpoint_row(sess, end, reason))
         redo = should_redispatch(end, sess.window_end, used + mins)
         _gh_output(redispatch=str(redo).lower())

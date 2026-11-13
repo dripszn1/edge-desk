@@ -271,6 +271,16 @@ RERUN_EVERY = pd.Timedelta(minutes=60)
 STATE = DATA / "pickoff_summary.json"
 
 
+def code_hash() -> str:
+    """Hash of the code that shapes the summary (#54): a cache made by other code is never served."""
+    import hashlib
+    from pathlib import Path
+    h = hashlib.sha256()
+    for mod in (__file__, premove.__file__, clv.__file__):
+        h.update(Path(mod).read_bytes())
+    return h.hexdigest()[:16]
+
+
 def run_if_due(now=None) -> dict:
     """The live loop calls weekly every 15 min; this takes ~35 s, so re-run at most hourly and
     serve the last summary in between (stamped when it was made, never ahead of now)."""
@@ -279,12 +289,13 @@ def run_if_due(now=None) -> dict:
     try:
         last = json.loads(STATE.read_text())
         made = pd.Timestamp(last["made_utc"])
-        if made <= now and now - made < RERUN_EVERY:
+        if made <= now and now - made < RERUN_EVERY and last.get("code") == code_hash():
             return last["summary"]
     except Exception:
         pass
     s = run(now)
-    STATE.write_text(json.dumps({"made_utc": now.strftime("%Y-%m-%dT%H:%M:%SZ"), "summary": s}, default=str))
+    STATE.write_text(json.dumps({"made_utc": now.strftime("%Y-%m-%dT%H:%M:%SZ"), "code": code_hash(),
+                                 "summary": s}, default=str))
     return s
 
 
