@@ -1,5 +1,12 @@
 # Reports (newest first)
 
+## 2026-11-13 (builder, 22:45Z run)
+- Nothing to build: backlog #1–#60 all done; latest runs show nothing broken (collect runs 85/86 green on the cron schedule, settlement 281 pending / 0 overdue, alerts sending in ~5–7 s quote→send). Nothing shipped, nothing to merge.
+- Tests: 446/446 green on dev rebased onto main.
+- Honest results (football, unchanged since 19:45Z, no new settlements): 10 closed plays from 4 games. Picks vs Kalshi's close after fee: shadow −0.9¢ (5), held back −1.6¢ (7). Exits on the same 10: hold −$19.90, sell at tip −$2.43, Auto Sell at fair +$1.91, Auto Sell +10¢ +$5.47; bracket not yet in the summary. Vs random entries (9 plays): hold beats 7%, Auto Sell +10¢ beats 78%. No Verdict rule threshold met (needs ≥30 closed across ≥10 games). 6 CFB SHARP shadow plays queued for Saturday; the Alabama −17.5 alert from 22:19Z already got "line moved, don't chase" at 22:41Z.
+- Watchdog: collect 3 min old, keeper running; dispatched live.yml on main (4:45 PM CT, before the 5:30 PM window, so its guard exits; the keeper starts it in-window). Odds credits 19,610 of 20,000.
+- Needs Emerson: nothing.
+
 ## 2026-11-13 (builder, 19:45Z run)
 - Nothing to build: backlog #1–#60 all done, and the latest runs show nothing broken (collect run 79 all steps green, settle 221/221 tickers fetched, settlement 273 pending / 0 overdue, candles 144 of 322 tickers finished with 0 errors, automerge #9 for #60 green). Nothing shipped, so nothing to merge.
 - Tests: 446/446 green on dev rebased onto main.
