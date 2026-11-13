@@ -1,5 +1,12 @@
 # Reports (newest first)
 
+## 2026-11-13 (builder, 13:45Z run)
+- Shipped to `dev`: **#57 random-entry baseline** (report only). For every SHARP play, 20 random contracts from the same game and market, taken at the same moment and priced within 10¢, get graded with the same exits and fees. If our picks don't beat those, any profit comes from the exit, not the pick. The result goes to `weekly_report.json["baseline"]` plus one digest line. Settle now also fetches results for those random contracts once their game has started.
+- Tests: 441/441 green (8 new).
+- Honest results. Football: 13 closed plays from 4 games, still too few. Hold −$26.58, sell at tip −$3.17, Auto Sell +10¢ +$9.02 (t 1.2), bracket 10/10 +$5.22. Entries vs Kalshi's close: shadow −0.9¢ (5 plays), held back −1.6¢ (7 plays). CBB: 141 closed. Hold −$7.53, sell at tip −$63.85, Auto Sell +10¢ −$76.09, bracket 10/10 −$131.74. Entries vs close −2.4¢ (t −3.7 by game). First random-entry read for CBB (121 plays, 17 games): hold −$0.13/play vs random −$0.04 (ours beats 39% of random portfolios). Auto Sell at fair −$1.30 vs −$0.92 (beats 2%). So in CBB the picks add nothing, and with Auto Sell they do worse than random. Caveat: random-contract results only cover rungs we already track until settle fills in the rest. No Verdict rule threshold is met yet. Football needs ≥30 closed plays across ≥10 games (most settle Sat/Sun). The CBB rule needs another week.
+- Watchdog: collect was 2h50m old, so I dispatched collect.yml (13:45Z snapshot landed) and live.yml (outside the window, so it exits).
+- Needs Emerson: merge PR #18 (#54–#57) before Saturday's 10 AM CT window.
+
 ## 2026-11-13 (builder, 10:45Z run)
 - Shipped to `dev` (backlog empty, added as #55/#56): **#55 settlement watch.** All 303 held-back plays had a blank kickoff, so nothing could check that they settle after their game. They now get the kickoff from the event map (303/303), and the weekly report counts pending plays and names any still unsettled 12h+ after kickoff. The digest status line only mentions it when there are any. **#56** settle stopped asking Kalshi every run for a fake Auburn rung (leftover test row the grader already ignores), so a real missing ticker won't be hidden. Also removed 166k deprecation warnings from the CI tests.
 - Tests: 433/433 green (7 new; they failed on the old code).
