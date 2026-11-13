@@ -1,16 +1,16 @@
 {
-  "generated_ts": "2026-11-13T04:06:27Z",
-  "generated_ct": "Thu Nov 12, 10:06 PM CT",
+  "generated_ts": "2026-11-13T04:20:45Z",
+  "generated_ct": "Thu Nov 12, 10:20 PM CT",
   "today_ct": "2026-11-12",
   "snapshot": {
-    "ts": "2026-11-13T04:04:33Z",
-    "ct": "Thu Nov 12, 10:04 PM CT",
+    "ts": "2026-11-13T04:19:38Z",
+    "ct": "Thu Nov 12, 10:19 PM CT",
     "stale": false,
-    "markets_scanned": 7692,
+    "markets_scanned": 7659,
     "kickoff_source": "kalshi occurrence_datetime - 3h",
     "phases": {
       "CBB": {
-        "live": 61,
+        "live": 28,
         "pregame": 1698
       },
       "CFB": {
@@ -67,7 +67,7 @@
     "max_bet": 10.0
   },
   "signals": {
-    "weekly_ct": "Thu Nov 12, 10:05 PM CT",
+    "weekly_ct": "Thu Nov 12, 10:20 PM CT",
     "scorecards": [
       {
         "name": "SHARP shadow football",
@@ -94,7 +94,7 @@
         "roi": -0.0157,
         "t_stat": -1.17,
         "verdict": "luck / no edge",
-        "why": "t=-1.17, coin-flip beat 55%",
+        "why": "t=-1.17, coin-flip beat 54%",
         "by_reason": {
           "far_rung": {
             "settled": 86,
@@ -121,12 +121,12 @@
       },
       {
         "name": "MODEL shadow",
-        "settled": 3,
-        "pnl": -0.28,
-        "roi": -0.2188,
-        "t_stat": -0.02,
+        "settled": 4,
+        "pnl": 0.31,
+        "roi": 0.1834,
+        "t_stat": 0.44,
         "verdict": "not enough data",
-        "why": "3 settled bets (< 30)"
+        "why": "4 settled bets (< 30)"
       }
     ],
     "clv": {
@@ -140,7 +140,7 @@
           "events": 4,
           "t_by_event": -2.03,
           "stale": 0,
-          "pending": 0,
+          "pending": 1,
           "no_close": 0
         },
         "football": {
@@ -335,6 +335,20 @@
         "kickoff_utc": "2026-11-13T01:15:00Z",
         "kickoff_ct": "Thu Nov 12, 7:15 PM CT",
         "kalshi_url": "https://kalshi.com/markets/kxnfltotal/event/kxnfltotal-26nov12wasnyg"
+      },
+      {
+        "ticker": "KXNCAAMBSPREAD-26NOV13SIUEDUKE-DUKE48",
+        "signal": "SHARP",
+        "side": "YES",
+        "game": "SIU Edwardsville vs Duke: Spread",
+        "contract": "Duke wins by over 47.5 points",
+        "max_price": 0.36,
+        "stake": 2.26,
+        "gone": false,
+        "sent_ct": "Thu Nov 12, 10:09 PM CT",
+        "kickoff_utc": "2026-11-14T01:00:00Z",
+        "kickoff_ct": "Fri Nov 13, 7:00 PM CT",
+        "kalshi_url": "https://kalshi.com/markets/kxncaambspread/event/kxncaambspread-26nov13siueduke"
       },
       {
         "ticker": "KXNCAAFSPREAD-26NOV14JMUCONN-JMU4",

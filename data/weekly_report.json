@@ -2,8 +2,8 @@
   "proposals": [
     "PROPOSE cbb: plays entered after Kalshi already moved toward us lose -2.99c to Kalshi's close (t -2.34 by game, 53 plays): skip a play when Kalshi's price already fell 1c+ toward ours in the 30 min before"
   ],
-  "generated_utc": "2026-11-13T04:05:07Z",
-  "generated_ct": "Thu Nov 12, 10:05 PM CT",
+  "generated_utc": "2026-11-13T04:20:11Z",
+  "generated_ct": "Thu Nov 12, 10:20 PM CT",
   "paper_mode": true,
   "rules": {
     "min_bets": 30,
@@ -17,31 +17,31 @@
     "why": "no settled bets yet"
   },
   "model_shadow": {
-    "settled": 3,
-    "staked": 1.28,
-    "fees": 0.07,
-    "pnl": -0.28,
-    "roi": -0.2188,
-    "t_stat": -0.02,
+    "settled": 4,
+    "staked": 1.69,
+    "fees": 0.09,
+    "pnl": 0.31,
+    "roi": 0.1834,
+    "t_stat": 0.44,
     "coin_flip": {
       "sims": 10000,
-      "bets": 3,
-      "real_pnl": -0.28,
-      "sim_median_pnl": -0.28,
-      "beat_pct": 0.649
+      "bets": 4,
+      "real_pnl": 0.31,
+      "sim_median_pnl": -0.69,
+      "beat_pct": 0.6347
     },
     "by_week": [
       {
         "week_of": "2026-11-09",
-        "bets": 3,
-        "pnl": -0.28,
-        "roi": -0.2188,
-        "claimed_edge_c": 18.91,
-        "realised_edge_c": -5.6
+        "bets": 4,
+        "pnl": 0.31,
+        "roi": 0.1834,
+        "claimed_edge_c": 18.21,
+        "realised_edge_c": 5.17
       }
     ],
     "verdict": "not enough data",
-    "why": "3 settled bets (< 30)"
+    "why": "4 settled bets (< 30)"
   },
   "sharp_shadow": {
     "settled": 3,
@@ -140,8 +140,8 @@
       "sims": 10000,
       "bets": 141,
       "real_pnl": -12.53,
-      "sim_median_pnl": -18.53,
-      "beat_pct": 0.5475
+      "sim_median_pnl": -17.53,
+      "beat_pct": 0.5386
     },
     "by_week": [
       {
@@ -154,7 +154,7 @@
       }
     ],
     "verdict": "luck / no edge",
-    "why": "t=-1.17, coin-flip beat 55%",
+    "why": "t=-1.17, coin-flip beat 54%",
     "by_reason": {
       "far_rung": {
         "settled": 86,
@@ -168,10 +168,10 @@
           "bets": 86,
           "real_pnl": -6.26,
           "sim_median_pnl": -10.26,
-          "beat_pct": 0.5358
+          "beat_pct": 0.5316
         },
         "verdict": "luck / no edge",
-        "why": "t=-1.35, coin-flip beat 54%"
+        "why": "t=-1.35, coin-flip beat 53%"
       },
       "far_rung+stale_line": {
         "settled": 26,
@@ -185,7 +185,7 @@
           "bets": 26,
           "real_pnl": -10.15,
           "sim_median_pnl": -3.15,
-          "beat_pct": 0.3488
+          "beat_pct": 0.3556
         },
         "verdict": "not enough data",
         "why": "26 settled bets (< 30)"
@@ -202,7 +202,7 @@
           "bets": 29,
           "real_pnl": 3.88,
           "sim_median_pnl": -5.12,
-          "beat_pct": 0.6406
+          "beat_pct": 0.6354
         },
         "verdict": "not enough data",
         "why": "29 settled bets (< 30)"
@@ -221,7 +221,7 @@
         "events": 4,
         "t_by_event": -2.03,
         "stale": 0,
-        "pending": 0,
+        "pending": 1,
         "no_close": 0
       },
       "football": {
@@ -312,8 +312,8 @@
     "cells": {
       "CBB SPREAD": {
         "0-3": {
-          "plays": 1,
-          "games": 1,
+          "plays": 2,
+          "games": 2,
           "clv_n": 1,
           "clv_games": 1,
           "avg_clv_c": -2.33,
@@ -324,8 +324,8 @@
           "sd_range": "0.00-0.26",
           "inside_cap": true,
           "adjusted": {
-            "plays": 1,
-            "games": 1,
+            "plays": 2,
+            "games": 2,
             "clv_n": 1,
             "clv_games": 1,
             "avg_clv_c": -2.33,
@@ -338,8 +338,8 @@
           }
         },
         "3-6": {
-          "plays": 2,
-          "games": 2,
+          "plays": 1,
+          "games": 1,
           "clv_n": 1,
           "clv_games": 1,
           "avg_clv_c": -1.17,
@@ -350,8 +350,8 @@
           "sd_range": "0.26-0.53",
           "inside_cap": false,
           "adjusted": {
-            "plays": 2,
-            "games": 2,
+            "plays": 1,
+            "games": 1,
             "clv_n": 1,
             "clv_games": 1,
             "avg_clv_c": -1.17,
@@ -1093,9 +1093,20 @@
     },
     "by_sd": {
       "CBB SPREAD": {
+        "0-0.25": {
+          "plays": 1,
+          "games": 1,
+          "clv_n": 0,
+          "clv_games": 0,
+          "avg_clv_c": null,
+          "clv_t_by_game": null,
+          "settled": 0,
+          "pnl": 0.0,
+          "pnl_t_by_game": null
+        },
         "0.25-0.5": {
-          "plays": 3,
-          "games": 2,
+          "plays": 2,
+          "games": 1,
           "clv_n": 2,
           "clv_games": 1,
           "avg_clv_c": -1.75,
@@ -1485,7 +1496,7 @@
         "BRACKET_10_10": {
           "label": "API-ONLY",
           "closed": 140,
-          "pending": 2,
+          "pending": 3,
           "closed_early_not_counted": 1,
           "pnl_usd": -132.23,
           "avg_c": -9.64,
@@ -1497,7 +1508,7 @@
         "BRACKET_10_5": {
           "label": "API-ONLY",
           "closed": 140,
-          "pending": 2,
+          "pending": 3,
           "closed_early_not_counted": 2,
           "pnl_usd": -94.75,
           "avg_c": -7.14,
@@ -1509,7 +1520,7 @@
         "BRACKET_15_10": {
           "label": "API-ONLY",
           "closed": 140,
-          "pending": 2,
+          "pending": 3,
           "closed_early_not_counted": 1,
           "pnl_usd": -135.53,
           "avg_c": -9.78,
@@ -1521,7 +1532,7 @@
         "BRACKET_15_5": {
           "label": "API-ONLY",
           "closed": 140,
-          "pending": 2,
+          "pending": 3,
           "closed_early_not_counted": 2,
           "pnl_usd": -102.75,
           "avg_c": -7.79,
@@ -1533,7 +1544,7 @@
         "BRACKET_5_10": {
           "label": "API-ONLY",
           "closed": 140,
-          "pending": 2,
+          "pending": 3,
           "closed_early_not_counted": 1,
           "pnl_usd": -137.41,
           "avg_c": -10.07,
@@ -1545,7 +1556,7 @@
         "BRACKET_5_5": {
           "label": "API-ONLY",
           "closed": 140,
-          "pending": 2,
+          "pending": 3,
           "closed_early_not_counted": 2,
           "pnl_usd": -96.93,
           "avg_c": -7.31,
@@ -1557,7 +1568,7 @@
         "EXIT_AT_TIP": {
           "label": "MANUAL-OK",
           "closed": 140,
-          "pending": 2,
+          "pending": 3,
           "closed_early_not_counted": 1,
           "pnl_usd": -63.69,
           "avg_c": -4.88,
@@ -1569,7 +1580,7 @@
         "HOLD": {
           "label": "MANUAL-OK",
           "closed": 140,
-          "pending": 2,
+          "pending": 3,
           "closed_early_not_counted": 0,
           "pnl_usd": -6.01,
           "avg_c": -0.55,
@@ -1581,7 +1592,7 @@
         "RESTING_10": {
           "label": "MANUAL-OK",
           "closed": 140,
-          "pending": 2,
+          "pending": 3,
           "closed_early_not_counted": 1,
           "pnl_usd": -76.58,
           "avg_c": -5.5,
@@ -1593,7 +1604,7 @@
         "RESTING_15": {
           "label": "MANUAL-OK",
           "closed": 140,
-          "pending": 2,
+          "pending": 3,
           "closed_early_not_counted": 1,
           "pnl_usd": -38.2,
           "avg_c": -2.58,
@@ -1605,7 +1616,7 @@
         "RESTING_5": {
           "label": "MANUAL-OK",
           "closed": 140,
-          "pending": 2,
+          "pending": 3,
           "closed_early_not_counted": 1,
           "pnl_usd": -106.69,
           "avg_c": -7.55,
@@ -1617,7 +1628,7 @@
         "RESTING_FAIR": {
           "label": "MANUAL-OK",
           "closed": 140,
-          "pending": 2,
+          "pending": 3,
           "closed_early_not_counted": 1,
           "pnl_usd": -101.08,
           "avg_c": -6.94,
@@ -1629,7 +1640,7 @@
         "TRADE": {
           "label": "MANUAL-OK",
           "closed": 140,
-          "pending": 2,
+          "pending": 3,
           "closed_early_not_counted": 1,
           "pnl_usd": -63.57,
           "avg_c": -4.87,
