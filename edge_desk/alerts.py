@@ -675,3 +675,40 @@ def main(argv=None) -> int:
 
 if __name__ == "__main__":
     sys.exit(main())
+
+
+def room_report(log: "pd.DataFrame | None", clv_rows: "pd.DataFrame | None", now) -> dict:
+    """#53 (report only, Emerson decides): do alerts sent with 0c room (ask == max price) do worse
+    than alerts with 1c+ room? Per bucket: alerts, share that later got a 'gone' push, median minutes
+    to that gone, and CLV after fee vs Kalshi's close (data/clv_bets.csv, shadow rows). Alerts or gone
+    pushes sent after `now` are ignored."""
+    import pandas as pd
+    now = pd.Timestamp(_utc(now))
+    if log is None or log.empty or "type" not in log:
+        return {}
+    lg = log.copy()
+    lg["_sent"] = pd.to_datetime(lg["sent_utc"], utc=True, errors="coerce")
+    lg = lg[lg["_sent"].notna() & (lg["_sent"] <= now)]
+    new = lg[lg["type"] == "new"].drop_duplicates("key")
+    if new.empty:
+        return {}
+    gone = lg[lg["type"] == "gone"].groupby("key")["_sent"].min()
+    room = (pd.to_numeric(new["max_price"], errors="coerce") - pd.to_numeric(new["price"], errors="coerce")) * 100
+    new = new.assign(room_c=room.round(1), leg1=new["key"].astype(str).str.split("|", n=1).str[-1])
+    new = new[new["room_c"].notna()]
+    new["bucket"] = ["0c" if r <= 0.05 else "1c+" for r in new["room_c"]]
+    new["gone_min"] = [((gone[k] - s).total_seconds() / 60) if k in gone.index else None
+                       for k, s in zip(new["key"], new["_sent"])]
+    if clv_rows is not None and not clv_rows.empty and "leg1" in clv_rows:
+        c = clv_rows[(clv_rows.get("source") == "shadow") & (clv_rows.get("close_status") == "ok")]
+        new = new.merge(c[["leg1", "clv_c"]].drop_duplicates("leg1"), on="leg1", how="left")
+    else:
+        new["clv_c"] = None
+    out = {}
+    for b, g in new.groupby("bucket"):
+        gm = pd.to_numeric(g["gone_min"], errors="coerce").dropna()
+        cv = pd.to_numeric(g["clv_c"], errors="coerce").dropna()
+        out[b] = {"alerts": int(len(g)), "gone_pct": round(100 * len(gm) / len(g), 1),
+                  "median_min_to_gone": round(float(gm.median()), 1) if len(gm) else None,
+                  "with_close": int(len(cv)), "avg_clv_c": round(float(cv.mean()), 2) if len(cv) else None}
+    return out

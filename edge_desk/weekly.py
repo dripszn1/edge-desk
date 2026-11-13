@@ -161,6 +161,14 @@ def run(now: datetime | None = None) -> dict:
         rep["pickoff"] = pickoff.run_if_due(now)
     except Exception as e:                 # noqa: BLE001
         rep["pickoff"] = {"error": str(e)[:200], "proposals": []}
+    try:                                   # #53 alerts with 0c room vs 1c+ room (report only)
+        import pandas as _pd
+        from . import alerts as _alerts
+        _log = _pd.read_csv(_alerts.LOG) if _alerts.LOG.exists() else None
+        _clv = _pd.read_csv(ROOT / "data" / "clv_bets.csv") if (ROOT / "data" / "clv_bets.csv").exists() else None
+        rep["alert_room"] = _alerts.room_report(_log, _clv, now)
+    except Exception as e:                 # noqa: BLE001
+        rep["alert_room"] = {"error": str(e)[:200]}
     rep = {"proposals": list(rep["cap_review"].get("proposals") or [])
            + list(rep["pickoff"].get("proposals") or []), **rep}                 # top of the report
     try:                                   # #38 trade-out grading (hold vs sell variants)
