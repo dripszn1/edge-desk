@@ -35,10 +35,34 @@ def test_pre_move_and_no_lookahead():
     assert r["close_line"] is None or pd.isna(r["close_line"])        # kickoff not reached: no close line
 
 
+def _rows(league, n=40, clv0=-3.0, step=-0.1):
+    return [{"bet_id": f"b{i}", "source": "tracked", "league": league, "leg1": f"YES KXT-26NOV12G{i % 10}-1",
+             "kalshi_first": True, "age_bucket": "30-90 min", "adverse": False, "line_move_fav": 0,
+             "pull_age_min": 40, "clv_c": clv0 + (i % 10) * step, "close_status": "ok"} for i in range(n)]
+
+
+def test_live_guard_is_not_reproposed_but_reported():
+    """#52: CBB already runs the kalshi-moved-first guard (#50), so the digest must not keep
+    proposing it; the pull-age check still proposes, and the guard's own record is shown."""
+    s = pickoff.summary(pd.DataFrame(_rows("CBB")))
+    assert not any("Kalshi already moved" in p for p in s["proposals"])
+    assert any("30-90 min" in p for p in s["proposals"])
+    assert any("guard is ON" in x and "40 plays" in x for x in s["in_effect"])
+
+
+def test_live_guard_revert_proposed_only_on_positive_evidence():
+    win = pickoff.summary(pd.DataFrame(_rows("CBB", clv0=3.0, step=0.1)))
+    assert any("turn OFF" in p for p in win["proposals"])
+    few = pickoff.summary(pd.DataFrame(_rows("CBB", n=20, clv0=3.0, step=0.1)))
+    assert not any("turn OFF" in p for p in few["proposals"])
+    lose = pickoff.summary(pd.DataFrame(_rows("CBB")))
+    assert not any("turn OFF" in p for p in lose["proposals"])
+
+
 def test_proposal_needs_30_plays_and_t():
     rows = []
     for i in range(40):
-        rows.append({"bet_id": f"b{i}", "source": "tracked", "league": "CBB", "leg1": f"YES KXT-26NOV12G{i % 10}-1",
+        rows.append({"bet_id": f"b{i}", "source": "tracked", "league": "NFL", "leg1": f"YES KXT-26NOV12G{i % 10}-1",
                      "kalshi_first": True, "age_bucket": "30-90 min", "adverse": False, "line_move_fav": 0,
                      "pull_age_min": 40, "clv_c": -3 - (i % 10) * 0.1, "close_status": "ok"})
     s = pickoff.summary(pd.DataFrame(rows))

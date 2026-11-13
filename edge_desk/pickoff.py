@@ -24,7 +24,7 @@ from datetime import datetime, timezone
 
 import pandas as pd
 
-from . import clv, odds, sharp
+from . import clv, odds, premove, sharp
 
 DATA = clv.DATA
 OUT = DATA / "pickoff_bets.csv"
@@ -186,7 +186,7 @@ def _cell(g: pd.DataFrame) -> dict:
 
 
 def summary(p: pd.DataFrame) -> dict:
-    out = {"proposals": []}
+    out = {"proposals": [], "in_effect": []}
     if p is None or p.empty:
         return out
     p = p.copy()
@@ -207,6 +207,19 @@ def summary(p: pd.DataFrame) -> dict:
                   *[(f"plays priced on a {b} old sharp line", d["by_pull_age"].get(b),
                      f"alert only within {AGE_BUCKETS[i][0]} min of a fresh sharp pull")
                     for i, (_, _, b) in enumerate(AGE_BUCKETS) if i > 0]]
+        guarded = grp == "cbb" and "CBB" in premove.GUARD_LEAGUES          # #50: this guard is live for CBB
+        if guarded:
+            cell = d["kalshi_first"].get("True")
+            out["in_effect"].append(f"{grp}: kalshi-moved-first guard is ON (Emerson OK'd 11-12)"
+                                    + (f"; those plays {cell['avg_clv_c']}c vs Kalshi's close "
+                                       f"(t {cell['t_by_game']} by game, {cell['with_close']} plays)"
+                                       if cell and cell["with_close"] else ""))
+            if cell and cell["with_close"] >= MIN_PLAYS and cell["t_by_game"] is not None \
+                    and cell["t_by_game"] >= -T_BAD and (cell["avg_clv_c"] or 0) > 0:
+                out["proposals"].append(f"PROPOSE {grp}: turn OFF the kalshi-moved-first guard: the plays it holds "
+                                        f"back beat Kalshi's close by {cell['avg_clv_c']}c "
+                                        f"(t {cell['t_by_game']} by game, {cell['with_close']} plays)")
+            checks = checks[1:]                                              # never re-propose a live guard
         for what, cell, fix in checks:
             if cell and cell["with_close"] >= MIN_PLAYS and cell["t_by_game"] is not None \
                     and cell["t_by_game"] <= T_BAD and (cell["avg_clv_c"] or 0) < 0:
