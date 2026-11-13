@@ -26413,3 +26413,7 @@ snapshot_ts,league,event,ticker,side,price,fair,edge,sharp_line,odds_fetched_ts,
 2026-11-13T09:52:13Z,CFB,North Dakota St. vs Hawai'i: Total Points,KXNCAAFTOTAL-26NOV14NDSUHAW-30,NO,0.24,0.2895,0.0366,38.5,2026-11-13T09:52:09Z,rung far from sharp line (unvalidated range)
 2026-11-13T09:52:13Z,CBB,Northern Arizona vs Kentucky,KXNCAAMBGAME-26NOV13NAUUK-UK,NO,0.01,0.5526,0.5419,,2026-11-13T03:59:29Z,sharp line stale; edge above sanity cap
 2026-11-13T09:52:13Z,CBB,Northern Arizona vs Kentucky,KXNCAAMBGAME-26NOV13NAUUK-NAU,YES,0.01,0.5526,0.5419,,2026-11-13T03:59:29Z,sharp line stale; edge above sanity cap
+2026-11-13T10:44:51Z,NFL,Buffalo vs New York J: Spread,KXNFLSPREAD-26NOV15BUFNYJ-NYJ3,YES,0.18,0.226,0.0347,-8.5,2026-11-13T10:44:48Z,rung far from sharp line (unvalidated range)
+2026-11-13T10:44:51Z,NFL,Seattle vs Las Vegas: Spread,KXNFLSPREAD-26NOV15SEALV-SEA21,YES,0.13,0.1711,0.0328,6.5,2026-11-13T10:44:48Z,rung far from sharp line (unvalidated range)
+2026-11-13T10:44:51Z,NFL,Seattle vs Las Vegas: Spread,KXNFLSPREAD-26NOV15SEALV-SEA18,YES,0.18,0.2299,0.0387,6.5,2026-11-13T10:44:48Z,rung far from sharp line (unvalidated range)
+2026-11-13T10:44:51Z,NFL,Miami vs Indianapolis: Total Points,KXNFLTOTAL-26NOV15MIAIND-22,NO,0.07,0.1064,0.0317,38.0,2026-11-13T10:44:48Z,rung far from sharp line (unvalidated range)
