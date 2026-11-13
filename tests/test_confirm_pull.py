@@ -93,7 +93,7 @@ def test_month_with_confirm_always_on_fits_free_tier():
         kick = {}
         for lg in odds.SPORTS:
             d = t.normalize()
-            nxt = [d + pd.Timedelta(days=k, hours=18) for k in range(8) if (d + pd.Timedelta(days=k)).dayofweek in (3, 5, 6)]
+            nxt = [d + pd.Timedelta(days=k, hours=18) for k in range(8) if (d + pd.Timedelta(days=k)).day_of_week in (3, 5, 6)]
             kick[lg] = next((x for x in nxt if x > t), None)
         for lg in odds.plan_pulls(st, t, kick, near_h=1.5, near_interval_h=1.0, confirm={"NFL", "CFB"}):
             rem = odds.remaining(st, t) - odds.COST_PER_PULL

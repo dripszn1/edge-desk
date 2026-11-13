@@ -168,6 +168,18 @@ def trades_line(t: pd.DataFrame | None) -> list[str]:
     return ["  exits compared: " + " · ".join(parts)] if parts else []
 
 
+def baseline_line(weekly: dict | None, now) -> list[str]:
+    """#57: real $/play vs random entries from the same games. A report stamped after `now` is ignored."""
+    from . import baseline
+    try:
+        if not weekly or _ts(weekly.get("generated_utc")) > now:
+            return []
+    except (ValueError, TypeError):
+        return []
+    b = weekly.get("baseline")
+    return baseline.digest_line(b) if isinstance(b, dict) else []
+
+
 def status_line(latest: dict, odds_state: dict, now) -> str:
     snap = _age_min((latest or {}).get("snapshot_ts"), now)
     pulls = (odds_state or {}).get("last_pull") or {}
@@ -198,6 +210,19 @@ def proposals(weekly: dict | None, now) -> list[str]:
     return [f"**{p}** (Emerson decides; caps unchanged)" for p in (weekly.get("proposals") or [])[:3]]
 
 
+def settlement_note(weekly: dict | None, now) -> str:
+    """#55: '; N plays unsettled 12h+ after kickoff' on the status line, only when there are any.
+    A report stamped after `now` is ignored."""
+    try:
+        if not weekly or _ts(weekly.get("generated_utc")) > now:
+            return ""
+    except (ValueError, TypeError):
+        return ""
+    w = weekly.get("settlement") or {}
+    n = int(w.get("overdue") or 0)
+    return f"; {n} plays unsettled {int(w.get('grace_hours', 12))}h+ after kickoff" if n else ""
+
+
 def build(latest: dict, bets: dict, odds_state: dict, now, clv: pd.DataFrame | None = None,
           trades_df: pd.DataFrame | None = None, weekly: dict | None = None) -> str:
     now = _ts(now)
@@ -215,8 +240,8 @@ def build(latest: dict, bets: dict, odds_state: dict, now, clv: pd.DataFrame | N
             body.append(f"- +{len(p) - MAX_PLAYS} more in data/flags/latest.json")
     rc = (["", f"Settled in the last {RECAP_H}h:"] + recap(bets, now)
           + held_back_by_reason(bets.get("SHARP tracked (held back)"), now)
-          + clv_line(clv) + trades_line(trades_df))
-    tail = ["", status_line(latest, odds_state, now)]
+          + clv_line(clv) + trades_line(trades_df) + baseline_line(weekly, now))
+    tail = ["", status_line(latest, odds_state, now) + settlement_note(weekly, now)]
     lines = head + body + rc + tail
     if len(lines) > MAX_LINES:                       # trim plays first, keep recap + status
         keep = MAX_LINES - len(head) - len(rc) - len(tail) - 1

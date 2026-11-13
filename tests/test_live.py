@@ -396,3 +396,60 @@ def test_log_fast_only_changes(tmp_path):
     df2 = df.assign(snapshot_ts="2026-11-14T19:00:03Z", yes_bid=0.41)
     assert live.log_fast(df2, tmp_path) == 1
     assert len(pd.read_csv(tmp_path / "2026-11-14.csv")) == 2
+
+
+# ---------- #54: a merge mid-run restarts the loop on the new code ----------
+def _code_run(monkeypatch, tmp_path, revs, minutes=60):
+    monkeypatch.setattr(scan, "FLAG_DIR", tmp_path)
+    commits = []
+    c = FakeClock(datetime(2026, 11, 14, 16, 0, tzinfo=UTC))
+    monkeypatch.setattr(live, "deadline", lambda *a, **k: c.t + timedelta(minutes=minutes))
+    it = iter(revs)
+    last = [None]
+
+    def rev():
+        last[0] = next(it, last[0])
+        return last[0]
+    s = live.run_loop(now_fn=c.now, clock=c.clock, sleep=c.sleep,
+                      fetch_full=lambda m, ts: (pd.DataFrame(), [], False), odds_fn=lambda: None,
+                      scan_fn=lambda *a: None, persist_fn=lambda *a: None, post_fn=lambda: [],
+                      commit_fn=lambda m: commits.append(m) or True, used_min=0, seen=set(),
+                      alert_fn=lambda df, ts: [], log_fn=lambda row: None, code_fn=rev)
+    return s, c, commits
+
+
+def test_loop_ends_after_a_commit_pulls_new_code(monkeypatch, tmp_path):
+    # rev at start "a", after the first 15-min commit "b": stop right there, final commit still made
+    s, c, commits = _code_run(monkeypatch, tmp_path, ["a", "b"])
+    assert s.restart == "code updated"
+    assert c.t < s.stop_at - timedelta(minutes=30)
+    assert commits[-1].endswith("(end)")
+
+
+def test_loop_same_code_runs_to_deadline(monkeypatch, tmp_path):
+    s, c, _ = _code_run(monkeypatch, tmp_path, ["a"])
+    assert s.restart is None and c.t >= s.stop_at - timedelta(seconds=31)
+
+
+def test_no_restart_near_the_deadline(monkeypatch, tmp_path):
+    # new code with < 10 min left: a restart would cost more than it buys
+    s, c, _ = _code_run(monkeypatch, tmp_path, ["a", "b"], minutes=20)
+    assert s.restart is None
+
+
+def test_code_rev_tracks_python_files(tmp_path):
+    (tmp_path / "edge_desk").mkdir()
+    f = tmp_path / "edge_desk" / "x.py"
+    f.write_text("a = 1\n")
+    r1 = live.code_rev(tmp_path)
+    (tmp_path / "data").mkdir()
+    (tmp_path / "data" / "y.csv").write_text("1\n")          # data never counts
+    assert live.code_rev(tmp_path) == r1
+    f.write_text("a = 2\n")
+    assert live.code_rev(tmp_path) != r1
+
+
+def test_main_redispatches_on_restart():
+    end = datetime(2026, 11, 14, 18, 0, tzinfo=UTC)
+    assert live.exit_reason(end, end + timedelta(hours=3), end + timedelta(hours=5), "code updated") == "code updated"
+    assert live.exit_reason(end, end, end, None) == "window end"

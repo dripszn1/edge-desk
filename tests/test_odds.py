@@ -124,7 +124,7 @@ def test_budget_month_spend_fits_free_tier():
         for lg in odds.SPORTS:
             d = t.normalize()
             nxt = [d + pd.Timedelta(days=k, hours=18) for k in range(8)
-                   if (d + pd.Timedelta(days=k)).dayofweek in (3, 5, 6)]
+                   if (d + pd.Timedelta(days=k)).day_of_week in (3, 5, 6)]
             kick[lg] = next((x for x in nxt if x > t), None)
         for lg in odds.plan_pulls(st, t, kick):
             rem = odds.remaining(st, t) - odds.COST_PER_PULL
@@ -225,7 +225,7 @@ def test_month_with_cbb_every_night_fits():
         d = t.normalize()
         kick = {}
         for lg in ("NFL", "CFB"):
-            nxt = [d + pd.Timedelta(days=k, hours=18) for k in range(8) if (d + pd.Timedelta(days=k)).dayofweek in (3, 5, 6)]
+            nxt = [d + pd.Timedelta(days=k, hours=18) for k in range(8) if (d + pd.Timedelta(days=k)).day_of_week in (3, 5, 6)]
             kick[lg] = next((x for x in nxt if x > t), None)
         tips = [d + pd.Timedelta(days=k, hours=h) for k in range(2) for h in (0, 1, 2)]
         kick["CBB"] = next((x for x in tips if x > t), None)

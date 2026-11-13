@@ -39,19 +39,53 @@ open the in-progress run -> Cancel workflow -> wait ~30 s -> Run workflow (main,
 **Builder lock.** The 3-hourly builder skips a backlog item marked "IN PROGRESS in Emerson's chat session",
 and stands down if dev has a non-"Report" commit <15 min old.
 
+## Where we stand (11-13 morning, after 4 days of paper data)
+- Nothing is proven. Every gate is closed.
+- CBB: our entries lose ~2.4c to Kalshi's close (137 closes, 26 games, t -3.7). No exit fixes it (hold ~flat,
+  every early exit worse). The "Kalshi moved first" guard (#50) is on for CBB.
+- Football: 13 closed plays from ~4 games, too few. Hold -$26.58, Auto Sell +10c +$9.02 (t 1.2). Thursday's 3
+  football plays all touched their Auto Sell target in-game and then lost. Suspicion: an Auto Sell edge with
+  entries that lose to the close would come from in-game swings, not our picks; #57 (random-entry baseline) tests it.
+- ~180 football plays settle Sat 11-14 / Sun 11-15. That weekend is the decisive read (see Verdict rules).
+
+## Verdict rules (pre-registered 11-13, BEFORE the weekend's football results; don't bend them after)
+Read once football has >=30 closed plays across >=10 games (alerted + held back within the caps):
+1. **Picks**: football entries vs Kalshi's close after fee, t by game.
+   - CLV > 0 and t >= 2 → the sharp-line picks have an edge. Keep going toward the gate.
+   - CLV <= 0 and t <= -2 → the picks have no edge on Kalshi. STOP adding SHARP features. Say so plainly.
+   - In between → inconclusive: one more week of data, bug fixes only, no new features.
+2. **Exits**: an exit counts as working only if it has >=30 closed, P&L > 0, t >= 2 by game AND beats >=95% of the
+   random-entry placebo (#57). If placebo Auto Sell does as well as ours, the edge is the exit (Kalshi
+   overreacting in-game), not the pick: that is a different, simpler strategy and gets its own plan.
+3. **CBB**: if CBB entries still lose to the close (<= -1c, t <= -2) after another week, propose dropping CBB
+   from alerts (keep collecting silently). Emerson decides.
+4. **Odds plan ($30/mo)**: keep after the month only if rule 1 says the picks have an edge. Exits-only (rule 2)
+   doesn't need Pinnacle lines.
+Every proposal from these rules goes to Emerson; nothing changes live behaviour without his OK.
+
+## What the builder may build (11-13)
+Useful = it answers the verdict question, fixes something broken in the data, or Emerson asked for it.
+When the backlog is empty the builder does NOT invent features (it added #52-#56 itself on 11-13: reasonable,
+but more measurement isn't more edge). It fixes real bugs it finds in the runs/data (with evidence), else
+reports "nothing to build" and stops.
+
 ## Scheduled tasks (Claude, not GitHub)
 - edge-desk builder: every 3h at :43 CT, works the backlog on `dev`, opens a PR.
 - edge-desk game-day digest: 11:17 AM / 5:17 PM / 11:17 PM CT, relays data/digest.md as its own chat.
 - edge-desk live kicker: 10:05, 11:05, 18:05 CT, dispatches live/collect if missing.
-- Daily check-in: 11:30 AM CT in Emerson's main edge-desk chat (each one schedules the next).
+- Daily check-in: ~11:30 AM CT, a FRESH session each day (recurring scheduled task, 11-13): reads this file,
+  REPORTS.md, digest and the data, merges any green PR, pushes Emerson a phone-short summary (always incl. the
+  four exits: hold / sell at tip / Auto Sell / bracket, per sport), refreshes the dashboard, applies the
+  Verdict rules once their thresholds are met. Moved off the long 11-10 chat on purpose (long-context drift).
 GitHub's own cron is unreliable here; keeper.yml dispatches collect/live.
 
-## Open decisions (as of 11-12)
+## Open decisions (as of 11-13)
+- Alerts with 0c room (ask = max price) flip to "gone" on one tick. Decide after the weekend from
+  weekly_report.json["alert_room"] (closes, not gone-rate).
 - Distance caps (NFL 10.5 / CFB 6 / CBB 3 pts from the sharp line): evidence-driven review is backlog item; the weekly report proposes widen/tighten, Emerson decides. Don't make him re-raise it.
-- Odds plan: free (500 credits). $30 START 20K trial decision pending; code auto-detects the plan.
-  Trial rule: keep only if CLV by game t>=2 and paper P&L beats $30/mo; judge ~1 month in.
+- Odds plan: START 20K ($30/mo) active since 11-12 2:06 PM CT (new key in the secret). Judge per Verdict rule 4.
 - Which exit strategy wins (hold / sell at tip / Auto Sell / bracket): data decides after ~30 closed plays.
-- Unverified in Actions: Kalshi 1-min candlesticks endpoint (no key?) and GET /markets?tickers= (fast lane).
+- Verified in Actions: 1-min candlesticks (no key) and the 3-s fast lane (TNF: 3,347 ticks, 0 throttled).
 
 ## Artifacts (built 11-12 in chat)
 - Design System "Edge Desk": https://claude.ai/artifact/TP96QAFG92wghWRB9NapGg (slug d5a4f4a5-1e0b-41bd-afc3-1b85c1798f21). Anton headings/numbers, JetBrains Mono body, dark scoreboard palette.

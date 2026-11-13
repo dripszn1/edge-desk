@@ -146,6 +146,13 @@ def run(now: datetime | None = None) -> dict:
            "rules": {"min_bets": MIN_BETS, "skill_t": SKILL_T, "skill_beat_pct": SKILL_PCTL, "sims": N_SIMS},
            "paper": assess(_load(PAPER)), "model_shadow": assess(_load(SHADOW)),
            **sharp_split(_load(SHARP_SHADOW)), "sharp_tracked": tracked_report(_load(SHARP_TRACKED))}
+    try:                                   # #55 settlement watch: nothing stays pending forever
+        from . import grade as _grade
+        rep["settlement"] = _grade.settlement_watch(
+            {"shadow": _load(SHARP_SHADOW), "tracked": _load(SHARP_TRACKED), "model": _load(SHADOW)},
+            _grade.event_kickoffs(), now)
+    except Exception as e:                 # noqa: BLE001
+        rep["settlement"] = {"error": str(e)[:200]}
     try:                                   # #31 closing-price value; never blocks the report
         from . import clv
         rep["clv"] = clv.run(now)
@@ -177,6 +184,11 @@ def run(now: datetime | None = None) -> dict:
         rep["trades"] = trades.run(now)
     except Exception as e:                 # noqa: BLE001
         rep["trades"] = {"error": str(e)[:200]}
+    try:                                   # #57 random-entry baseline for the exits (report only)
+        from . import baseline
+        rep["baseline"] = baseline.run_if_due(now)
+    except Exception as e:                 # noqa: BLE001
+        rep["baseline"] = {"error": str(e)[:200]}
     OUT.write_text(json.dumps(rep, indent=2, default=str))
     print(f"weekly: paper {rep['paper']['verdict']} ({rep['paper']['settled']}) | "
           f"model shadow {rep['model_shadow']['verdict']} ({rep['model_shadow']['settled']}) | "
