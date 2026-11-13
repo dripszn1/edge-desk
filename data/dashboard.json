@@ -1,10 +1,10 @@
 {
-  "generated_ts": "2026-11-13T20:29:26Z",
-  "generated_ct": "Fri Nov 13, 2:29 PM CT",
+  "generated_ts": "2026-11-13T20:59:40Z",
+  "generated_ct": "Fri Nov 13, 2:59 PM CT",
   "today_ct": "2026-11-13",
   "snapshot": {
-    "ts": "2026-11-13T20:27:42Z",
-    "ct": "Fri Nov 13, 2:27 PM CT",
+    "ts": "2026-11-13T20:57:46Z",
+    "ct": "Fri Nov 13, 2:57 PM CT",
     "stale": false,
     "markets_scanned": 5782,
     "kickoff_source": "kalshi occurrence_datetime - 3h",
@@ -61,7 +61,7 @@
     "max_bet": 10.0
   },
   "signals": {
-    "weekly_ct": "Fri Nov 13, 2:28 PM CT",
+    "weekly_ct": "Fri Nov 13, 2:58 PM CT",
     "scorecards": [
       {
         "name": "SHARP shadow football",
@@ -160,7 +160,7 @@
           "events": 4,
           "t_by_event": -0.83,
           "stale": 0,
-          "pending": 52,
+          "pending": 53,
           "no_close": 0
         }
       },
@@ -186,7 +186,7 @@
           "events": 4,
           "t_by_event": -1.39,
           "stale": 0,
-          "pending": 158,
+          "pending": 160,
           "no_close": 1
         }
       }
@@ -301,6 +301,20 @@
         "kickoff_utc": "2026-11-14T01:00:00Z",
         "kickoff_ct": "Fri Nov 13, 7:00 PM CT",
         "kalshi_url": "https://kalshi.com/markets/kxncaambspread/event/kxncaambspread-26nov13siueduke"
+      },
+      {
+        "ticker": "KXNCAAFTOTAL-26NOV13HOUCOLO-49",
+        "signal": "SHARP",
+        "side": "NO",
+        "game": "Houston vs Colorado: Total Points",
+        "contract": "Over 48.5 points",
+        "max_price": 0.39,
+        "stake": 2.04,
+        "gone": false,
+        "sent_ct": "Fri Nov 13, 2:57 PM CT",
+        "kickoff_utc": "2026-11-14T03:15:00Z",
+        "kickoff_ct": "Fri Nov 13, 9:15 PM CT",
+        "kalshi_url": "https://kalshi.com/markets/kxncaaftotal/event/kxncaaftotal-26nov13houcolo"
       },
       {
         "ticker": "KXNCAAFSPREAD-26NOV14JMUCONN-JMU4",
