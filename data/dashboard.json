@@ -1,10 +1,10 @@
 {
-  "generated_ts": "2026-11-13T23:14:48Z",
-  "generated_ct": "Fri Nov 13, 5:14 PM CT",
+  "generated_ts": "2026-11-13T23:46:36Z",
+  "generated_ct": "Fri Nov 13, 5:46 PM CT",
   "today_ct": "2026-11-13",
   "snapshot": {
-    "ts": "2026-11-13T23:13:17Z",
-    "ct": "Fri Nov 13, 5:13 PM CT",
+    "ts": "2026-11-13T23:45:02Z",
+    "ct": "Fri Nov 13, 5:45 PM CT",
     "stale": false,
     "markets_scanned": 5788,
     "kickoff_source": "kalshi occurrence_datetime - 3h",
@@ -61,7 +61,7 @@
     "max_bet": 10.0
   },
   "signals": {
-    "weekly_ct": "Fri Nov 13, 5:13 PM CT",
+    "weekly_ct": "Fri Nov 13, 5:45 PM CT",
     "scorecards": [
       {
         "name": "SHARP shadow football",
@@ -160,7 +160,7 @@
           "events": 4,
           "t_by_event": -0.83,
           "stale": 0,
-          "pending": 53,
+          "pending": 54,
           "no_close": 0
         }
       },
@@ -387,6 +387,20 @@
         "kalshi_url": "https://kalshi.com/markets/kxncaafspread/event/kxncaafspread-26nov14texlsu"
       },
       {
+        "ticker": "KXNCAAFSPREAD-26NOV14TEXLSU-LSU5",
+        "signal": "SHARP",
+        "side": "NO",
+        "game": "Texas vs LSU: Spread",
+        "contract": "LSU wins by over 4.5 points",
+        "max_price": 0.5,
+        "stake": 3.63,
+        "gone": true,
+        "sent_ct": "Fri Nov 13, 5:32 PM CT",
+        "kickoff_utc": "2026-11-14T20:00:00Z",
+        "kickoff_ct": "Sat Nov 14, 2:00 PM CT",
+        "kalshi_url": "https://kalshi.com/markets/kxncaafspread/event/kxncaafspread-26nov14texlsu"
+      },
+      {
         "ticker": "KXNCAAFSPREAD-26NOV14GASOGAST-GASO2",
         "signal": "SHARP",
         "side": "NO",
@@ -525,6 +539,20 @@
         "kickoff_utc": "2026-11-15T02:30:00Z",
         "kickoff_ct": "Sat Nov 14, 8:30 PM CT",
         "kalshi_url": "https://kalshi.com/markets/kxncaaftotal/event/kxncaaftotal-26nov14ususdsu"
+      },
+      {
+        "ticker": "KXNFLSPREAD-26NOV15BUFNYJ-BUF3",
+        "signal": "SHARP",
+        "side": "NO",
+        "game": "Buffalo vs New York J: Spread",
+        "contract": "Buffalo wins by over 2.5 points",
+        "max_price": 0.25,
+        "stake": 1.58,
+        "gone": false,
+        "sent_ct": "Fri Nov 13, 5:30 PM CT",
+        "kickoff_utc": "2026-11-15T18:00:00Z",
+        "kickoff_ct": "Sun Nov 15, 12:00 PM CT",
+        "kalshi_url": "https://kalshi.com/markets/kxnflspread/event/kxnflspread-26nov15bufnyj"
       },
       {
         "ticker": "KXNFLSPREAD-26NOV15BUFNYJ-NYJ2",
