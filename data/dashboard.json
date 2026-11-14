@@ -1,16 +1,16 @@
 {
-  "generated_ts": "2026-11-14T18:34:59Z",
-  "generated_ct": "Sat Nov 14, 12:34 PM CT",
+  "generated_ts": "2026-11-14T18:50:29Z",
+  "generated_ct": "Sat Nov 14, 12:50 PM CT",
   "today_ct": "2026-11-14",
   "snapshot": {
-    "ts": "2026-11-14T18:33:11Z",
-    "ct": "Sat Nov 14, 12:33 PM CT",
+    "ts": "2026-11-14T18:48:39Z",
+    "ct": "Sat Nov 14, 12:48 PM CT",
     "stale": false,
-    "markets_scanned": 5647,
+    "markets_scanned": 5654,
     "kickoff_source": "kalshi occurrence_datetime - 3h",
     "phases": {
       "CFB": {
-        "live": 1512,
+        "live": 1519,
         "pregame": 3461
       },
       "NFL": {
@@ -62,7 +62,7 @@
     "max_bet": 10.0
   },
   "signals": {
-    "weekly_ct": "Sat Nov 14, 12:33 PM CT",
+    "weekly_ct": "Sat Nov 14, 12:49 PM CT",
     "scorecards": [
       {
         "name": "SHARP shadow football",
@@ -89,7 +89,7 @@
         "roi": 0.0178,
         "t_stat": -0.14,
         "verdict": "luck / no edge",
-        "why": "t=-0.14, coin-flip beat 79%",
+        "why": "t=-0.14, coin-flip beat 78%",
         "by_reason": {
           "far_rung": {
             "settled": 101,
@@ -161,7 +161,7 @@
           "events": 12,
           "t_by_event": -2.71,
           "stale": 0,
-          "pending": 71,
+          "pending": 74,
           "no_close": 0
         }
       },
@@ -187,7 +187,7 @@
           "events": 14,
           "t_by_event": -2.84,
           "stale": 0,
-          "pending": 168,
+          "pending": 176,
           "no_close": 2
         }
       }
@@ -374,6 +374,34 @@
         "kalshi_url": "https://kalshi.com/markets/kxncaafspread/event/kxncaafspread-26nov14ksutcu"
       },
       {
+        "ticker": "KXNCAAFGAME-26NOV14ALAVAN-ALA",
+        "signal": "SHARP",
+        "side": "YES",
+        "game": "Alabama vs Vanderbilt",
+        "contract": "Alabama",
+        "max_price": 0.81,
+        "stake": 8.93,
+        "gone": true,
+        "sent_ct": "Sat Nov 14, 12:38 PM CT",
+        "kickoff_utc": "2026-11-14T20:00:00Z",
+        "kickoff_ct": "Sat Nov 14, 2:00 PM CT",
+        "kalshi_url": "https://kalshi.com/markets/kxncaafgame/event/kxncaafgame-26nov14alavan"
+      },
+      {
+        "ticker": "KXNCAAFGAME-26NOV14ALAVAN-VAN",
+        "signal": "SHARP",
+        "side": "NO",
+        "game": "Alabama vs Vanderbilt",
+        "contract": "Vanderbilt",
+        "max_price": 0.81,
+        "stake": 6.57,
+        "gone": true,
+        "sent_ct": "Sat Nov 14, 12:36 PM CT",
+        "kickoff_utc": "2026-11-14T20:00:00Z",
+        "kickoff_ct": "Sat Nov 14, 2:00 PM CT",
+        "kalshi_url": "https://kalshi.com/markets/kxncaafgame/event/kxncaafgame-26nov14alavan"
+      },
+      {
         "ticker": "KXNCAAFGAME-26NOV14ARSTCCAR-ARST",
         "signal": "SHARP",
         "side": "NO",
@@ -395,7 +423,7 @@
         "contract": "Arkansas St.",
         "max_price": 0.44,
         "stake": 7.14,
-        "gone": false,
+        "gone": true,
         "sent_ct": "Sat Nov 14, 12:20 PM CT",
         "kickoff_utc": "2026-11-14T20:00:00Z",
         "kickoff_ct": "Sat Nov 14, 2:00 PM CT",
@@ -409,8 +437,22 @@
         "contract": "Coastal Carolina",
         "max_price": 0.44,
         "stake": 5.13,
-        "gone": false,
+        "gone": true,
         "sent_ct": "Sat Nov 14, 12:20 PM CT",
+        "kickoff_utc": "2026-11-14T20:00:00Z",
+        "kickoff_ct": "Sat Nov 14, 2:00 PM CT",
+        "kalshi_url": "https://kalshi.com/markets/kxncaafgame/event/kxncaafgame-26nov14arstccar"
+      },
+      {
+        "ticker": "KXNCAAFGAME-26NOV14ARSTCCAR-CCAR",
+        "signal": "SHARP",
+        "side": "YES",
+        "game": "Arkansas St. vs Coastal Carolina",
+        "contract": "Coastal Carolina",
+        "max_price": 0.46,
+        "stake": 2.39,
+        "gone": false,
+        "sent_ct": "Sat Nov 14, 12:47 PM CT",
         "kickoff_utc": "2026-11-14T20:00:00Z",
         "kickoff_ct": "Sat Nov 14, 2:00 PM CT",
         "kalshi_url": "https://kalshi.com/markets/kxncaafgame/event/kxncaafgame-26nov14arstccar"
