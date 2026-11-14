@@ -1,17 +1,17 @@
 {
-  "generated_ts": "2026-11-14T17:33:23Z",
-  "generated_ct": "Sat Nov 14, 11:33 AM CT",
+  "generated_ts": "2026-11-14T17:48:49Z",
+  "generated_ct": "Sat Nov 14, 11:48 AM CT",
   "today_ct": "2026-11-14",
   "snapshot": {
-    "ts": "2026-11-14T17:31:37Z",
-    "ct": "Sat Nov 14, 11:31 AM CT",
+    "ts": "2026-11-14T17:47:01Z",
+    "ct": "Sat Nov 14, 11:47 AM CT",
     "stale": false,
-    "markets_scanned": 5621,
+    "markets_scanned": 5629,
     "kickoff_source": "kalshi occurrence_datetime - 3h",
     "phases": {
       "CFB": {
-        "live": 960,
-        "pregame": 3987
+        "live": 1013,
+        "pregame": 3942
       },
       "NFL": {
         "pregame": 674
@@ -62,7 +62,7 @@
     "max_bet": 10.0
   },
   "signals": {
-    "weekly_ct": "Sat Nov 14, 11:32 AM CT",
+    "weekly_ct": "Sat Nov 14, 11:47 AM CT",
     "scorecards": [
       {
         "name": "SHARP shadow football",
@@ -89,7 +89,7 @@
         "roi": 0.0178,
         "t_stat": -0.14,
         "verdict": "luck / no edge",
-        "why": "t=-0.14, coin-flip beat 79%",
+        "why": "t=-0.14, coin-flip beat 78%",
         "by_reason": {
           "far_rung": {
             "settled": 101,
@@ -153,15 +153,15 @@
           "no_close": 0
         },
         "football": {
-          "n": 17,
-          "avg_clv_c": -1.48,
-          "avg_raw_c": 0.03,
-          "beat_close_pct": 35.3,
-          "t_stat": -2.97,
-          "events": 9,
-          "t_by_event": -2.68,
+          "n": 20,
+          "avg_clv_c": -1.8,
+          "avg_raw_c": -0.3,
+          "beat_close_pct": 30.0,
+          "t_stat": -3.83,
+          "events": 10,
+          "t_by_event": -3.16,
           "stale": 0,
-          "pending": 61,
+          "pending": 60,
           "no_close": 0
         }
       },
@@ -179,16 +179,16 @@
           "no_close": 8
         },
         "football": {
-          "n": 44,
-          "avg_clv_c": -1.13,
-          "avg_raw_c": 0.05,
-          "beat_close_pct": 34.1,
-          "t_stat": -4.01,
-          "events": 11,
-          "t_by_event": -2.97,
+          "n": 48,
+          "avg_clv_c": -1.27,
+          "avg_raw_c": -0.08,
+          "beat_close_pct": 31.2,
+          "t_stat": -4.73,
+          "events": 12,
+          "t_by_event": -3.4,
           "stale": 0,
-          "pending": 155,
-          "no_close": 1
+          "pending": 153,
+          "no_close": 2
         }
       }
     },
@@ -414,6 +414,34 @@
         "kickoff_utc": "2026-11-14T20:00:00Z",
         "kickoff_ct": "Sat Nov 14, 2:00 PM CT",
         "kalshi_url": "https://kalshi.com/markets/kxncaafgame/event/kxncaafgame-26nov14cinisu"
+      },
+      {
+        "ticker": "KXNCAAFGAME-26NOV14GTCLEM-CLEM",
+        "signal": "SHARP",
+        "side": "NO",
+        "game": "Georgia Tech vs Clemson",
+        "contract": "Clemson",
+        "max_price": 0.12,
+        "stake": 1.53,
+        "gone": true,
+        "sent_ct": "Sat Nov 14, 11:43 AM CT",
+        "kickoff_utc": "2026-11-14T20:00:00Z",
+        "kickoff_ct": "Sat Nov 14, 2:00 PM CT",
+        "kalshi_url": "https://kalshi.com/markets/kxncaafgame/event/kxncaafgame-26nov14gtclem"
+      },
+      {
+        "ticker": "KXNCAAFGAME-26NOV14NEBRUTG-RUTG",
+        "signal": "SHARP",
+        "side": "YES",
+        "game": "Nebraska vs Rutgers",
+        "contract": "Rutgers",
+        "max_price": 0.11,
+        "stake": 1.87,
+        "gone": true,
+        "sent_ct": "Sat Nov 14, 11:45 AM CT",
+        "kickoff_utc": "2026-11-14T20:00:00Z",
+        "kickoff_ct": "Sat Nov 14, 2:00 PM CT",
+        "kalshi_url": "https://kalshi.com/markets/kxncaafgame/event/kxncaafgame-26nov14nebrutg"
       },
       {
         "ticker": "KXNCAAFGAME-26NOV14NWOSU-NW",
