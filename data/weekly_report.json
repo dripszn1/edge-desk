@@ -1,7 +1,7 @@
 {
   "proposals": [],
-  "generated_utc": "2026-11-13T23:45:28Z",
-  "generated_ct": "Fri Nov 13, 5:45 PM CT",
+  "generated_utc": "2026-11-14T00:00:50Z",
+  "generated_ct": "Fri Nov 13, 6:00 PM CT",
   "paper_mode": true,
   "rules": {
     "min_bets": 30,
@@ -139,7 +139,7 @@
       "bets": 145,
       "real_pnl": -20.99,
       "sim_median_pnl": -18.99,
-      "beat_pct": 0.4815
+      "beat_pct": 0.478
     },
     "by_week": [
       {
@@ -166,7 +166,7 @@
           "bets": 88,
           "real_pnl": -9.22,
           "sim_median_pnl": -11.22,
-          "beat_pct": 0.5236
+          "beat_pct": 0.5191
         },
         "verdict": "luck / no edge",
         "why": "t=-1.6, coin-flip beat 52%"
@@ -182,8 +182,8 @@
           "sims": 10000,
           "bets": 26,
           "real_pnl": -10.15,
-          "sim_median_pnl": -3.15,
-          "beat_pct": 0.3439
+          "sim_median_pnl": -4.15,
+          "beat_pct": 0.3628
         },
         "verdict": "not enough data",
         "why": "26 settled bets (< 30)"
@@ -209,8 +209,8 @@
           "sims": 10000,
           "bets": 31,
           "real_pnl": -1.62,
-          "sim_median_pnl": -4.62,
-          "beat_pct": 0.5497
+          "sim_median_pnl": -5.62,
+          "beat_pct": 0.5539
         },
         "verdict": "luck / no edge",
         "why": "t=-0.05, coin-flip beat 55%"
@@ -262,8 +262,8 @@
         "events": 26,
         "t_by_event": -3.74,
         "stale": 0,
-        "pending": 9,
-        "no_close": 0
+        "pending": 7,
+        "no_close": 2
       },
       "football": {
         "n": 7,
