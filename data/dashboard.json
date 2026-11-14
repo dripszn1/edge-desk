@@ -1,17 +1,18 @@
 {
-  "generated_ts": "2026-11-14T20:10:06Z",
-  "generated_ct": "Sat Nov 14, 2:10 PM CT",
+  "generated_ts": "2026-11-14T20:25:51Z",
+  "generated_ct": "Sat Nov 14, 2:25 PM CT",
   "today_ct": "2026-11-14",
   "snapshot": {
-    "ts": "2026-11-14T20:09:05Z",
-    "ct": "Sat Nov 14, 2:09 PM CT",
+    "ts": "2026-11-14T20:24:30Z",
+    "ct": "Sat Nov 14, 2:24 PM CT",
     "stale": false,
-    "markets_scanned": 5534,
+    "markets_scanned": 5372,
     "kickoff_source": "kalshi occurrence_datetime - 3h",
     "phases": {
       "CFB": {
-        "live": 2400,
-        "pregame": 2460
+        "live": 2188,
+        "pregame": 1873,
+        "unknown": 637
       },
       "NFL": {
         "pregame": 674
@@ -62,16 +63,16 @@
     "max_bet": 10.0
   },
   "signals": {
-    "weekly_ct": "Sat Nov 14, 2:09 PM CT",
+    "weekly_ct": "Sat Nov 14, 2:25 PM CT",
     "scorecards": [
       {
         "name": "SHARP shadow football",
-        "settled": 6,
-        "pnl": -13.04,
-        "roi": -1.0,
-        "t_stat": null,
+        "settled": 8,
+        "pnl": -9.46,
+        "roi": -0.4212,
+        "t_stat": -2.74,
         "verdict": "not enough data",
-        "why": "6 settled bets (< 30)"
+        "why": "8 settled bets (< 30)"
       },
       {
         "name": "SHARP shadow CBB",
@@ -84,12 +85,12 @@
       },
       {
         "name": "SHARP held back",
-        "settled": 160,
-        "pnl": 20.66,
-        "roi": 0.0241,
-        "t_stat": -0.07,
+        "settled": 161,
+        "pnl": 10.91,
+        "roi": 0.0126,
+        "t_stat": -0.14,
         "verdict": "luck / no edge",
-        "why": "t=-0.07, coin-flip beat 79%",
+        "why": "t=-0.14, coin-flip beat 74%",
         "by_reason": {
           "far_rung": {
             "settled": 101,
@@ -113,8 +114,8 @@
             "verdict": "not enough data"
           },
           "sanity_cap": {
-            "settled": 1,
-            "pnl": -5.34,
+            "settled": 2,
+            "pnl": -15.09,
             "roi": -1.0,
             "t_stat": null,
             "verdict": "not enough data"
@@ -244,45 +245,45 @@
         "best_manual": "RESTING_15",
         "variants": {
           "EXIT_AT_TIP": {
-            "closed": 18,
-            "pnl_usd": -4.95,
-            "t_by_game": -3.61,
+            "closed": 20,
+            "pnl_usd": -1.44,
+            "t_by_game": -0.33,
             "gate_open": false
           },
           "HOLD": {
-            "closed": 18,
-            "pnl_usd": 6.07,
-            "t_by_game": 0.21,
+            "closed": 20,
+            "pnl_usd": 9.65,
+            "t_by_game": 0.34,
             "gate_open": false
           },
           "RESTING_10": {
-            "closed": 18,
-            "pnl_usd": 13.89,
-            "t_by_game": 1.9,
+            "closed": 20,
+            "pnl_usd": 11.56,
+            "t_by_game": 1.39,
             "gate_open": false
           },
           "RESTING_15": {
-            "closed": 18,
-            "pnl_usd": 18.35,
-            "t_by_game": 2.02,
+            "closed": 20,
+            "pnl_usd": 16.67,
+            "t_by_game": 1.69,
             "gate_open": false
           },
           "RESTING_5": {
-            "closed": 18,
-            "pnl_usd": 4.27,
-            "t_by_game": 1.0,
+            "closed": 20,
+            "pnl_usd": 1.29,
+            "t_by_game": 0.23,
             "gate_open": false
           },
           "RESTING_FAIR": {
-            "closed": 18,
-            "pnl_usd": 4.69,
-            "t_by_game": 1.68,
+            "closed": 20,
+            "pnl_usd": 2.1,
+            "t_by_game": 0.5,
             "gate_open": false
           },
           "TRADE": {
-            "closed": 18,
-            "pnl_usd": -4.95,
-            "t_by_game": -3.61,
+            "closed": 20,
+            "pnl_usd": -7.55,
+            "t_by_game": -3.14,
             "gate_open": false
           }
         }
@@ -913,7 +914,7 @@
         "contract": "West Virginia wins by over 3.5 points",
         "max_price": 0.56,
         "stake": 3.47,
-        "gone": false,
+        "gone": true,
         "sent_ct": "Sat Nov 14, 11:11 AM CT",
         "kickoff_utc": "2026-11-14T22:30:00Z",
         "kickoff_ct": "Sat Nov 14, 4:30 PM CT",
