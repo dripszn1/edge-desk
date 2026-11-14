@@ -1,10 +1,10 @@
 {
-  "generated_ts": "2026-11-14T01:03:14Z",
-  "generated_ct": "Fri Nov 13, 7:03 PM CT",
+  "generated_ts": "2026-11-14T01:18:44Z",
+  "generated_ct": "Fri Nov 13, 7:18 PM CT",
   "today_ct": "2026-11-13",
   "snapshot": {
-    "ts": "2026-11-14T01:01:37Z",
-    "ct": "Fri Nov 13, 7:01 PM CT",
+    "ts": "2026-11-14T01:16:53Z",
+    "ct": "Fri Nov 13, 7:16 PM CT",
     "stale": false,
     "markets_scanned": 5790,
     "kickoff_source": "kalshi occurrence_datetime - 3h",
@@ -62,7 +62,7 @@
     "max_bet": 10.0
   },
   "signals": {
-    "weekly_ct": "Fri Nov 13, 7:02 PM CT",
+    "weekly_ct": "Fri Nov 13, 7:17 PM CT",
     "scorecards": [
       {
         "name": "SHARP shadow football",
@@ -89,7 +89,7 @@
         "roi": -0.026,
         "t_stat": -1.53,
         "verdict": "luck / no edge",
-        "why": "t=-1.53, coin-flip beat 48%",
+        "why": "t=-1.53, coin-flip beat 47%",
         "by_reason": {
           "far_rung": {
             "settled": 88,
@@ -161,7 +161,7 @@
           "events": 4,
           "t_by_event": -0.83,
           "stale": 0,
-          "pending": 54,
+          "pending": 55,
           "no_close": 0
         }
       },
@@ -187,7 +187,7 @@
           "events": 4,
           "t_by_event": -1.39,
           "stale": 0,
-          "pending": 169,
+          "pending": 170,
           "no_close": 1
         }
       }
@@ -512,6 +512,20 @@
         "kickoff_utc": "2026-11-14T23:00:00Z",
         "kickoff_ct": "Sat Nov 14, 5:00 PM CT",
         "kalshi_url": "https://kalshi.com/markets/kxncaaftotal/event/kxncaaftotal-26nov14orstbsu"
+      },
+      {
+        "ticker": "KXNCAAFSPREAD-26NOV14MINNPSU-PSU7",
+        "signal": "SHARP",
+        "side": "NO",
+        "game": "Minnesota vs Penn St.: Spread",
+        "contract": "Penn St. wins by over 6.5 points",
+        "max_price": 0.35,
+        "stake": 1.83,
+        "gone": true,
+        "sent_ct": "Fri Nov 13, 7:15 PM CT",
+        "kickoff_utc": "2026-11-15T00:00:00Z",
+        "kickoff_ct": "Sat Nov 14, 6:00 PM CT",
+        "kalshi_url": "https://kalshi.com/markets/kxncaafspread/event/kxncaafspread-26nov14minnpsu"
       },
       {
         "ticker": "KXNCAAFSPREAD-26NOV14SJSUAFA-AFA8",
