@@ -1,7 +1,7 @@
 {
   "proposals": [],
-  "generated_utc": "2026-11-14T16:15:30Z",
-  "generated_ct": "Sat Nov 14, 10:15 AM CT",
+  "generated_utc": "2026-11-14T16:30:52Z",
+  "generated_ct": "Sat Nov 14, 10:30 AM CT",
   "paper_mode": true,
   "rules": {
     "min_bets": 30,
@@ -138,8 +138,8 @@
       "sims": 10000,
       "bets": 161,
       "real_pnl": 15.32,
-      "sim_median_pnl": -29.68,
-      "beat_pct": 0.7897
+      "sim_median_pnl": -28.68,
+      "beat_pct": 0.7882
     },
     "by_week": [
       {
@@ -165,11 +165,11 @@
           "sims": 10000,
           "bets": 101,
           "real_pnl": 30.6,
-          "sim_median_pnl": -13.4,
-          "beat_pct": 0.8394
+          "sim_median_pnl": -12.4,
+          "beat_pct": 0.8343
         },
         "verdict": "luck / no edge",
-        "why": "t=0.32, coin-flip beat 84%"
+        "why": "t=0.32, coin-flip beat 83%"
       },
       "far_rung+stale_line": {
         "settled": 26,
@@ -183,7 +183,7 @@
           "bets": 26,
           "real_pnl": -10.15,
           "sim_median_pnl": -3.15,
-          "beat_pct": 0.3522
+          "beat_pct": 0.3427
         },
         "verdict": "not enough data",
         "why": "26 settled bets (< 30)"
@@ -234,7 +234,7 @@
           "bets": 31,
           "real_pnl": -1.62,
           "sim_median_pnl": -5.62,
-          "beat_pct": 0.5526
+          "beat_pct": 0.551
         },
         "verdict": "luck / no edge",
         "why": "t=-0.05, coin-flip beat 55%"
@@ -689,8 +689,8 @@
           }
         },
         "10.5+": {
-          "plays": 12,
-          "games": 8,
+          "plays": 11,
+          "games": 7,
           "clv_n": 1,
           "clv_games": 1,
           "avg_clv_c": 0.62,
@@ -711,7 +711,7 @@
             "pnl": 0.0,
             "pnl_t_by_game": null,
             "dropped": 0,
-            "no_bias": 12
+            "no_bias": 11
           }
         },
         "_all": {
@@ -1258,8 +1258,8 @@
           "pnl_t_by_game": null
         },
         "0.75+": {
-          "plays": 10,
-          "games": 8,
+          "plays": 9,
+          "games": 7,
           "clv_n": 1,
           "clv_games": 1,
           "avg_clv_c": 0.62,
@@ -1772,19 +1772,19 @@
       "exits": {
         "HOLD": {
           "real_per_play": 0.441,
-          "placebo_mean": -0.627,
+          "placebo_mean": -0.642,
           "band95": [
-            -1.891,
-            0.993
+            -1.907,
+            0.954
           ],
-          "beats_pct": 92.0,
+          "beats_pct": 91.8,
           "verdict": "too few closed plays (17/30)"
         },
         "EXIT_AT_TIP": {
           "real_per_play": -0.28,
           "placebo_mean": -0.449,
           "band95": [
-            -0.55,
+            -0.551,
             -0.351
           ],
           "beats_pct": 100.0,
@@ -1792,9 +1792,9 @@
         },
         "RESTING_5": {
           "real_per_play": 0.203,
-          "placebo_mean": -0.421,
+          "placebo_mean": -0.422,
           "band95": [
-            -0.981,
+            -0.982,
             0.111
           ],
           "beats_pct": 98.8,
@@ -1802,22 +1802,22 @@
         },
         "RESTING_10": {
           "real_per_play": 0.308,
-          "placebo_mean": -0.637,
+          "placebo_mean": -0.64,
           "band95": [
-            -1.31,
-            0.065
+            -1.297,
+            0.063
           ],
-          "beats_pct": 99.3,
+          "beats_pct": 99.5,
           "verdict": "too few closed plays (17/30)"
         },
         "RESTING_15": {
           "real_per_play": 0.703,
-          "placebo_mean": -0.75,
+          "placebo_mean": -0.755,
           "band95": [
-            -1.514,
-            0.07
+            -1.519,
+            0.071
           ],
-          "beats_pct": 99.9,
+          "beats_pct": 100.0,
           "verdict": "too few closed plays (17/30)"
         },
         "RESTING_FAIR": {
