@@ -70,3 +70,19 @@ def test_proposal_needs_30_plays_and_t():
     assert any("30-90 min" in p for p in s["proposals"])
     s2 = pickoff.summary(pd.DataFrame(rows[:20]))
     assert s2["proposals"] == []
+
+
+def test_run_returns_summary_when_in_effect_is_listed(monkeypatch, tmp_path):
+    """#62: run()'s log line iterated every non-"proposals" key as a dict, so the in_effect list
+    (#52) crashed it and weekly_report.json["pickoff"] held only an error since 11-13."""
+    bets = tmp_path / "b.csv"
+    pd.DataFrame([{"snapshot_ts": "2026-11-14T15:00:00Z", "leg1": "YES KXNFLSPREAD-26NOV15BUFNYJ-BUF3"}]).to_csv(bets, index=False)
+    monkeypatch.setattr(pickoff.clv, "BET_FILES", {"shadow": bets})
+    monkeypatch.setattr(pickoff, "OUT", tmp_path / "out.csv")
+    monkeypatch.setattr(pickoff, "load_snapshots", lambda *a, **k: None)
+    monkeypatch.setattr(pickoff, "entries", lambda: None)
+    monkeypatch.setattr(pickoff, "analyse", lambda *a, **k: pd.DataFrame(columns=pickoff.COLS))
+    want = {"football": {"adverse_pct": 0.0, "line_checked": 0, "median_pull_age_min": None},
+            "proposals": [], "in_effect": ["cbb: kalshi-moved-first guard is ON (40 plays)"]}
+    monkeypatch.setattr(pickoff, "summary", lambda p: want)
+    assert pickoff.run(pd.Timestamp("2026-11-14T16:00:00Z")) == want

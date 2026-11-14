@@ -263,7 +263,7 @@ def run(now=None) -> dict:
     s = summary(p)
     print("pickoff: " + " | ".join(f"{k} adverse {v['adverse_pct']}% of {v['line_checked']} "
                                    f"median pull age {v['median_pull_age_min']}m"
-                                   for k, v in s.items() if k != "proposals")
+                                   for k, v in s.items() if isinstance(v, dict) and "adverse_pct" in v)
           + (f" | {len(s['proposals'])} proposal(s)" if s["proposals"] else ""))
     return s
 
