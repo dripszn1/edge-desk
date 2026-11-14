@@ -1,5 +1,12 @@
 # Reports (newest first)
 
+## 2026-11-14 (builder, 19:45Z run)
+- Shipped **#61** (one moneyline play per game outcome: YES team A and NO team B of a game-winner market are now one alert, one gone/Auto Sell push and one graded bet, cheaper ask wins; on current data shadow bets drop 103 → 90 and held-back 386 → 369, all ML double legs) and **#62** (pickoff report crashed on the `in_effect` list since 11-13 ~21:29Z; fixed). Auto-merged to main (automerge run #21 green); the live loop restarts on the new code by itself (#54).
+- Tests: 456/456 green (7 new).
+- Honest results (football, before #61 dedupe of today's ML legs): 18 closed plays from 8 games. Picks vs Kalshi's close after fee: shadow −1.8¢ (24 plays, 13 games), held back −1.1¢ (63, 16 games), so picks still lose to the close. Exits on the 18 done: hold +$6.07, sell at tip −$4.95, Auto Sell at fair +$4.69, Auto Sell +10¢ +$13.89; bracket not in the digest summary. Vs random entries (17 plays): hold beats 92%, Auto Sell +10¢ beats 100%. No Verdict rule threshold met (needs ≥30 closed).
+- Watchdog: live run 64 in progress since 15:49Z and keeper running, so I dispatched nothing. Odds credits 19,271 of 20,000.
+- Needs Emerson: nothing. Today's double ML pushes (CIN/ISU, WIS/MD, NW/OSU, SYR/NCST) were the same bet sent twice; treat each pair as one.
+
 ## 2026-11-14 (builder, 16:45Z run)
 - Nothing to build: backlog #1–#60 all done; latest runs show nothing broken (collect run 99 green, live run 64 in progress since 15:49Z with 447 fast-lane ticks / 0 throttled, alerts quote→send 4–6 s, settlement 289 pending / 0 overdue). Nothing shipped, nothing to merge.
 - Tests: 449/449 green on dev rebased onto main.
