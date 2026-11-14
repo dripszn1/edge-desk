@@ -1,16 +1,16 @@
 {
-  "generated_ts": "2026-11-14T19:06:00Z",
-  "generated_ct": "Sat Nov 14, 1:06 PM CT",
+  "generated_ts": "2026-11-14T19:21:17Z",
+  "generated_ct": "Sat Nov 14, 1:21 PM CT",
   "today_ct": "2026-11-14",
   "snapshot": {
-    "ts": "2026-11-14T19:04:09Z",
-    "ct": "Sat Nov 14, 1:04 PM CT",
+    "ts": "2026-11-14T19:19:10Z",
+    "ct": "Sat Nov 14, 1:19 PM CT",
     "stale": false,
-    "markets_scanned": 5654,
+    "markets_scanned": 5655,
     "kickoff_source": "kalshi occurrence_datetime - 3h",
     "phases": {
       "CFB": {
-        "live": 1978,
+        "live": 1979,
         "pregame": 3002
       },
       "NFL": {
@@ -62,7 +62,7 @@
     "max_bet": 10.0
   },
   "signals": {
-    "weekly_ct": "Sat Nov 14, 1:04 PM CT",
+    "weekly_ct": "Sat Nov 14, 1:19 PM CT",
     "scorecards": [
       {
         "name": "SHARP shadow football",
@@ -89,7 +89,7 @@
         "roi": 0.0178,
         "t_stat": -0.14,
         "verdict": "luck / no edge",
-        "why": "t=-0.14, coin-flip beat 78%",
+        "why": "t=-0.14, coin-flip beat 79%",
         "by_reason": {
           "far_rung": {
             "settled": 101,
@@ -161,7 +161,7 @@
           "events": 13,
           "t_by_event": -3.1,
           "stale": 0,
-          "pending": 72,
+          "pending": 74,
           "no_close": 0
         }
       },
@@ -187,7 +187,7 @@
           "events": 16,
           "t_by_event": -3.06,
           "stale": 0,
-          "pending": 170,
+          "pending": 172,
           "no_close": 2
         }
       }
@@ -582,6 +582,34 @@
         "kickoff_utc": "2026-11-14T20:00:00Z",
         "kickoff_ct": "Sat Nov 14, 2:00 PM CT",
         "kalshi_url": "https://kalshi.com/markets/kxncaafgame/event/kxncaafgame-26nov14gtclem"
+      },
+      {
+        "ticker": "KXNCAAFGAME-26NOV14KSUTCU-KSU",
+        "signal": "SHARP",
+        "side": "YES",
+        "game": "Kansas St. vs TCU",
+        "contract": "Kansas St.",
+        "max_price": 0.14,
+        "stake": 1.79,
+        "gone": true,
+        "sent_ct": "Sat Nov 14, 1:17 PM CT",
+        "kickoff_utc": "2026-11-14T20:00:00Z",
+        "kickoff_ct": "Sat Nov 14, 2:00 PM CT",
+        "kalshi_url": "https://kalshi.com/markets/kxncaafgame/event/kxncaafgame-26nov14ksutcu"
+      },
+      {
+        "ticker": "KXNCAAFGAME-26NOV14KSUTCU-TCU",
+        "signal": "SHARP",
+        "side": "NO",
+        "game": "Kansas St. vs TCU",
+        "contract": "TCU",
+        "max_price": 0.14,
+        "stake": 1.79,
+        "gone": false,
+        "sent_ct": "Sat Nov 14, 1:18 PM CT",
+        "kickoff_utc": "2026-11-14T20:00:00Z",
+        "kickoff_ct": "Sat Nov 14, 2:00 PM CT",
+        "kalshi_url": "https://kalshi.com/markets/kxncaafgame/event/kxncaafgame-26nov14ksutcu"
       },
       {
         "ticker": "KXNCAAFGAME-26NOV14NEBRUTG-RUTG",
