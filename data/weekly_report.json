@@ -1,7 +1,7 @@
 {
   "proposals": [],
-  "generated_utc": "2026-11-14T02:21:50Z",
-  "generated_ct": "Fri Nov 13, 8:21 PM CT",
+  "generated_utc": "2026-11-14T02:36:59Z",
+  "generated_ct": "Fri Nov 13, 8:36 PM CT",
   "paper_mode": true,
   "rules": {
     "min_bets": 30,
@@ -139,7 +139,7 @@
       "bets": 147,
       "real_pnl": -31.67,
       "sim_median_pnl": -27.67,
-      "beat_pct": 0.4723
+      "beat_pct": 0.4662
     },
     "by_week": [
       {
@@ -166,7 +166,7 @@
           "bets": 88,
           "real_pnl": -9.22,
           "sim_median_pnl": -10.22,
-          "beat_pct": 0.5098
+          "beat_pct": 0.5109
         },
         "verdict": "luck / no edge",
         "why": "t=-1.6, coin-flip beat 51%"
@@ -183,7 +183,7 @@
           "bets": 26,
           "real_pnl": -10.15,
           "sim_median_pnl": -3.15,
-          "beat_pct": 0.346
+          "beat_pct": 0.3547
         },
         "verdict": "not enough data",
         "why": "26 settled bets (< 30)"
@@ -222,7 +222,7 @@
           "bets": 31,
           "real_pnl": -1.62,
           "sim_median_pnl": -5.62,
-          "beat_pct": 0.5548
+          "beat_pct": 0.5492
         },
         "verdict": "luck / no edge",
         "why": "t=-0.05, coin-flip beat 55%"
@@ -274,8 +274,8 @@
         "events": 26,
         "t_by_event": -3.74,
         "stale": 1,
-        "pending": 6,
-        "no_close": 2
+        "pending": 0,
+        "no_close": 8
       },
       "football": {
         "n": 11,
@@ -1505,7 +1505,7 @@
           "label": "MANUAL-OK",
           "closed": 138,
           "pending": 9,
-          "closed_early_not_counted": 1,
+          "closed_early_not_counted": 7,
           "pnl_usd": -62.26,
           "avg_c": -4.85,
           "win_pct": 6.5,
@@ -1577,7 +1577,7 @@
           "label": "MANUAL-OK",
           "closed": 138,
           "pending": 9,
-          "closed_early_not_counted": 1,
+          "closed_early_not_counted": 7,
           "pnl_usd": -62.14,
           "avg_c": -4.84,
           "win_pct": 6.5,
