@@ -1,5 +1,12 @@
 # Reports (newest first)
 
+## 2026-11-14 (builder, 22:45Z run)
+- Nothing to build: backlog #1–#64 all done (#64 parked by Verdict read #1); latest runs show nothing broken (live run 69 in progress since 21:13Z, 1,061 fast-lane ticks / 0 throttled, Auto Sell pushes 0.3–4.4 s quote→send; settlement 314 pending / 0 overdue; no report errors). Nothing shipped, nothing to merge.
+- Tests: 463/463 green on dev rebased onto main.
+- Honest results (football, 96 closed / 23 games in the exit comparison): picks vs Kalshi's close after fee: shadow −1.9¢ (58 plays, 26 games, t −1.4), held back −1.9¢ (139, 33 games, t −2.4). Exits: hold −$25.54, sell at tip −$27.37, Auto Sell at fair −$4.55 (best), Auto Sell +10¢ −$21.37, best bracket (5/10, API-only) −$36.81. Vs random entries (94 plays) hold and Auto Sell +10¢ beat 100% of placebos, but both still lose money.
+- Verdict rules: thresholds already met (read #1 at 2:49 PM CT). Rule 2: no exit works (none has P&L>0). Rule 1: the held-back half alone is now at t −2.4 (the "no edge" side); the pooled one-per-contract read stays for the daily check-in after Sunday's games, as read #1 set. Not acted on.
+- Watchdog: live run and keeper in progress, so nothing dispatched. Odds credits 19,163 of 20,000. Needs Emerson: nothing.
+
 ## 2026-11-14 (builder, 19:45Z run)
 - Shipped **#61** (one moneyline play per game outcome: YES team A and NO team B of a game-winner market are now one alert, one gone/Auto Sell push and one graded bet, cheaper ask wins; on current data shadow bets drop 103 → 90 and held-back 386 → 369, all ML double legs) and **#62** (pickoff report crashed on the `in_effect` list since 11-13 ~21:29Z; fixed). Auto-merged to main (automerge run #21 green); the live loop restarts on the new code by itself (#54).
 - Tests: 456/456 green (7 new).
