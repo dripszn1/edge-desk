@@ -1,5 +1,12 @@
 # Reports (newest first)
 
+## 2026-11-14 (builder, 04:45Z run)
+- Nothing to build: backlog #1–#60 all done; latest runs show nothing broken. The last CBB push (Duke AUTO SELL HIT, 01:31Z) came before the 01:43Z auto-merge that stops them; live restarted itself on the new code at 01:51Z ("code updated") and no CBB push since. Settlement 288 pending / 0 overdue. Nothing shipped, nothing to merge.
+- Tests: 449/449 green on dev rebased onto main.
+- Honest results (football, no new settlements): 10 closed plays from 4 games. Picks vs Kalshi's close after fee: shadow −1.3¢ (6), held back −1.5¢ (14). Exits on the same 10: hold −$19.90, sell at tip −$2.43, Auto Sell at fair +$1.91, Auto Sell +10¢ +$5.47; bracket not yet in the summary. Vs random entries (9 plays): hold beats 7%, Auto Sell +10¢ beats 78%. No Verdict rule threshold met (needs ≥30 closed across ≥10 games; Sat/Sun games settle next). 2 CFB SHARP shadow plays on Saturday's slate (MIZZ/UGA total, GASO/GAST spread).
+- Watchdog: live run 56 in progress (Fri window ends 05:30Z; fast lane 2,432 ticks, 0 throttled, median loop 3.3 s) and keeper running, so I dispatched nothing. Odds credits 19,460 of 20,000.
+- Needs Emerson: nothing.
+
 ## 2026-11-13 (builder, 22:45Z run)
 - Nothing to build: backlog #1–#60 all done; latest runs show nothing broken (collect runs 85/86 green on the cron schedule, settlement 281 pending / 0 overdue, alerts sending in ~5–7 s quote→send). Nothing shipped, nothing to merge.
 - Tests: 446/446 green on dev rebased onto main.
