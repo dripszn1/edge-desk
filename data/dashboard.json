@@ -1,17 +1,17 @@
 {
-  "generated_ts": "2026-11-14T02:07:43Z",
-  "generated_ct": "Fri Nov 13, 8:07 PM CT",
+  "generated_ts": "2026-11-14T02:23:00Z",
+  "generated_ct": "Fri Nov 13, 8:23 PM CT",
   "today_ct": "2026-11-13",
   "snapshot": {
-    "ts": "2026-11-14T02:06:24Z",
-    "ct": "Fri Nov 13, 8:06 PM CT",
+    "ts": "2026-11-14T02:21:31Z",
+    "ct": "Fri Nov 13, 8:21 PM CT",
     "stale": false,
-    "markets_scanned": 5790,
+    "markets_scanned": 5797,
     "kickoff_source": "kalshi occurrence_datetime - 3h",
     "phases": {
       "CFB": {
-        "live": 104,
-        "pregame": 5012
+        "live": 105,
+        "pregame": 5018
       },
       "NFL": {
         "pregame": 674
@@ -62,7 +62,7 @@
     "max_bet": 10.0
   },
   "signals": {
-    "weekly_ct": "Fri Nov 13, 8:06 PM CT",
+    "weekly_ct": "Fri Nov 13, 8:21 PM CT",
     "scorecards": [
       {
         "name": "SHARP shadow football",
@@ -619,7 +619,7 @@
         "contract": "Seattle wins by over 14.5 points",
         "max_price": 0.24,
         "stake": 2.67,
-        "gone": false,
+        "gone": true,
         "sent_ct": "Thu Nov 12, 7:46 AM CT",
         "kickoff_utc": "2026-11-15T21:05:00Z",
         "kickoff_ct": "Sun Nov 15, 3:05 PM CT",
