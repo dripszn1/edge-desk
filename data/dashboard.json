@@ -1,10 +1,10 @@
 {
-  "generated_ts": "2026-11-14T13:48:12Z",
-  "generated_ct": "Sat Nov 14, 7:48 AM CT",
+  "generated_ts": "2026-11-14T14:20:52Z",
+  "generated_ct": "Sat Nov 14, 8:20 AM CT",
   "today_ct": "2026-11-14",
   "snapshot": {
-    "ts": "2026-11-14T13:45:22Z",
-    "ct": "Sat Nov 14, 7:45 AM CT",
+    "ts": "2026-11-14T14:19:04Z",
+    "ct": "Sat Nov 14, 8:19 AM CT",
     "stale": false,
     "markets_scanned": 5614,
     "kickoff_source": "kalshi occurrence_datetime - 3h",
@@ -61,7 +61,7 @@
     "max_bet": 10.0
   },
   "signals": {
-    "weekly_ct": "Sat Nov 14, 7:46 AM CT",
+    "weekly_ct": "Sat Nov 14, 8:19 AM CT",
     "scorecards": [
       {
         "name": "SHARP shadow football",
@@ -160,7 +160,7 @@
           "events": 5,
           "t_by_event": -1.41,
           "stale": 0,
-          "pending": 55,
+          "pending": 56,
           "no_close": 0
         }
       },
@@ -186,7 +186,7 @@
           "events": 6,
           "t_by_event": -2.13,
           "stale": 0,
-          "pending": 172,
+          "pending": 174,
           "no_close": 1
         }
       }
@@ -288,6 +288,20 @@
       }
     },
     "open_alerts": [
+      {
+        "ticker": "KXNCAAFTOTAL-26NOV14NWOSU-40",
+        "signal": "SHARP",
+        "side": "NO",
+        "game": "Northwestern vs Ohio St.: Total Points",
+        "contract": "Over 39.5 points",
+        "max_price": 0.33,
+        "stake": 2.08,
+        "gone": false,
+        "sent_ct": "Sat Nov 14, 8:19 AM CT",
+        "kickoff_utc": "2026-11-14T17:00:00Z",
+        "kickoff_ct": "Sat Nov 14, 11:00 AM CT",
+        "kalshi_url": "https://kalshi.com/markets/kxncaaftotal/event/kxncaaftotal-26nov14nwosu"
+      },
       {
         "ticker": "KXNCAAFSPREAD-26NOV14ALAVAN-ALA17",
         "signal": "SHARP",
