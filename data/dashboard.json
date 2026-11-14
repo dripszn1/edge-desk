@@ -1,16 +1,16 @@
 {
-  "generated_ts": "2026-11-14T05:11:09Z",
-  "generated_ct": "Fri Nov 13, 11:11 PM CT",
+  "generated_ts": "2026-11-14T05:26:22Z",
+  "generated_ct": "Fri Nov 13, 11:26 PM CT",
   "today_ct": "2026-11-13",
   "snapshot": {
-    "ts": "2026-11-14T05:09:43Z",
-    "ct": "Fri Nov 13, 11:09 PM CT",
+    "ts": "2026-11-14T05:24:46Z",
+    "ct": "Fri Nov 13, 11:24 PM CT",
     "stale": false,
-    "markets_scanned": 5753,
+    "markets_scanned": 5755,
     "kickoff_source": "kalshi occurrence_datetime - 3h",
     "phases": {
       "CFB": {
-        "live": 139,
+        "live": 141,
         "pregame": 4940
       },
       "NFL": {
@@ -62,7 +62,7 @@
     "max_bet": 10.0
   },
   "signals": {
-    "weekly_ct": "Fri Nov 13, 11:10 PM CT",
+    "weekly_ct": "Fri Nov 13, 11:25 PM CT",
     "scorecards": [
       {
         "name": "SHARP shadow football",
