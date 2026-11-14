@@ -1,10 +1,10 @@
 {
-  "generated_ts": "2026-11-14T16:32:05Z",
-  "generated_ct": "Sat Nov 14, 10:32 AM CT",
+  "generated_ts": "2026-11-14T16:47:27Z",
+  "generated_ct": "Sat Nov 14, 10:47 AM CT",
   "today_ct": "2026-11-14",
   "snapshot": {
-    "ts": "2026-11-14T16:30:22Z",
-    "ct": "Sat Nov 14, 10:30 AM CT",
+    "ts": "2026-11-14T16:45:43Z",
+    "ct": "Sat Nov 14, 10:45 AM CT",
     "stale": false,
     "markets_scanned": 5614,
     "kickoff_source": "kalshi occurrence_datetime - 3h",
@@ -61,7 +61,7 @@
     "max_bet": 10.0
   },
   "signals": {
-    "weekly_ct": "Sat Nov 14, 10:30 AM CT",
+    "weekly_ct": "Sat Nov 14, 10:46 AM CT",
     "scorecards": [
       {
         "name": "SHARP shadow football",
@@ -88,7 +88,7 @@
         "roi": 0.0178,
         "t_stat": -0.14,
         "verdict": "luck / no edge",
-        "why": "t=-0.14, coin-flip beat 79%",
+        "why": "t=-0.14, coin-flip beat 78%",
         "by_reason": {
           "far_rung": {
             "settled": 101,
@@ -186,7 +186,7 @@
           "events": 6,
           "t_by_event": -2.13,
           "stale": 0,
-          "pending": 176,
+          "pending": 177,
           "no_close": 1
         }
       }
