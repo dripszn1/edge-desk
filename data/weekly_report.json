@@ -1,7 +1,7 @@
 {
   "proposals": [],
-  "generated_utc": "2026-11-14T04:54:37Z",
-  "generated_ct": "Fri Nov 13, 10:54 PM CT",
+  "generated_utc": "2026-11-14T05:10:04Z",
+  "generated_ct": "Fri Nov 13, 11:10 PM CT",
   "paper_mode": true,
   "rules": {
     "min_bets": 30,
@@ -138,8 +138,8 @@
       "sims": 10000,
       "bets": 154,
       "real_pnl": -12.69,
-      "sim_median_pnl": -29.69,
-      "beat_pct": 0.6154
+      "sim_median_pnl": -28.69,
+      "beat_pct": 0.6158
     },
     "by_week": [
       {
@@ -166,7 +166,7 @@
           "bets": 94,
           "real_pnl": 2.59,
           "sim_median_pnl": -11.41,
-          "beat_pct": 0.6327
+          "beat_pct": 0.6308
         },
         "verdict": "luck / no edge",
         "why": "t=-1.29, coin-flip beat 63%"
@@ -183,7 +183,7 @@
           "bets": 26,
           "real_pnl": -10.15,
           "sim_median_pnl": -3.15,
-          "beat_pct": 0.3502
+          "beat_pct": 0.365
         },
         "verdict": "not enough data",
         "why": "26 settled bets (< 30)"
@@ -233,8 +233,8 @@
           "sims": 10000,
           "bets": 31,
           "real_pnl": -1.62,
-          "sim_median_pnl": -5.62,
-          "beat_pct": 0.5564
+          "sim_median_pnl": -5.12,
+          "beat_pct": 0.5553
         },
         "verdict": "luck / no edge",
         "why": "t=-0.05, coin-flip beat 56%"
@@ -1422,8 +1422,8 @@
   "alert_room": {
     "0c": {
       "alerts": 23,
-      "gone_pct": 82.6,
-      "median_min_to_gone": 195.3,
+      "gone_pct": 87.0,
+      "median_min_to_gone": 197.0,
       "with_close": 4,
       "avg_clv_c": -2.16
     },
@@ -1618,7 +1618,7 @@
           "label": "API-ONLY",
           "closed": 10,
           "pending": 186,
-          "closed_early_not_counted": 69,
+          "closed_early_not_counted": 70,
           "pnl_usd": -3.2,
           "avg_c": -2.17,
           "win_pct": 30.0,
@@ -1642,7 +1642,7 @@
           "label": "API-ONLY",
           "closed": 10,
           "pending": 186,
-          "closed_early_not_counted": 69,
+          "closed_early_not_counted": 70,
           "pnl_usd": -2.67,
           "avg_c": -2.9,
           "win_pct": 20.0,
@@ -1666,7 +1666,7 @@
           "label": "API-ONLY",
           "closed": 10,
           "pending": 186,
-          "closed_early_not_counted": 73,
+          "closed_early_not_counted": 74,
           "pnl_usd": -4.84,
           "avg_c": -3.67,
           "win_pct": 30.0,

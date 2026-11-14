@@ -1,16 +1,16 @@
 {
-  "generated_ts": "2026-11-14T04:55:39Z",
-  "generated_ct": "Fri Nov 13, 10:55 PM CT",
+  "generated_ts": "2026-11-14T05:11:09Z",
+  "generated_ct": "Fri Nov 13, 11:11 PM CT",
   "today_ct": "2026-11-13",
   "snapshot": {
-    "ts": "2026-11-14T04:54:17Z",
-    "ct": "Fri Nov 13, 10:54 PM CT",
+    "ts": "2026-11-14T05:09:43Z",
+    "ct": "Fri Nov 13, 11:09 PM CT",
     "stale": false,
-    "markets_scanned": 5752,
+    "markets_scanned": 5753,
     "kickoff_source": "kalshi occurrence_datetime - 3h",
     "phases": {
       "CFB": {
-        "live": 138,
+        "live": 139,
         "pregame": 4940
       },
       "NFL": {
@@ -62,7 +62,7 @@
     "max_bet": 10.0
   },
   "signals": {
-    "weekly_ct": "Fri Nov 13, 10:54 PM CT",
+    "weekly_ct": "Fri Nov 13, 11:10 PM CT",
     "scorecards": [
       {
         "name": "SHARP shadow football",
@@ -409,7 +409,7 @@
         "contract": "Georgia Southern wins by over 1.5 points",
         "max_price": 0.35,
         "stake": 2.2,
-        "gone": false,
+        "gone": true,
         "sent_ct": "Thu Nov 12, 9:50 AM CT",
         "kickoff_utc": "2026-11-14T20:30:00Z",
         "kickoff_ct": "Sat Nov 14, 2:30 PM CT",
