@@ -1,18 +1,18 @@
 {
-  "generated_ts": "2026-11-14T20:56:21Z",
-  "generated_ct": "Sat Nov 14, 2:56 PM CT",
+  "generated_ts": "2026-11-14T21:11:05Z",
+  "generated_ct": "Sat Nov 14, 3:11 PM CT",
   "today_ct": "2026-11-14",
   "snapshot": {
-    "ts": "2026-11-14T20:54:41Z",
-    "ct": "Sat Nov 14, 2:54 PM CT",
+    "ts": "2026-11-14T21:10:00Z",
+    "ct": "Sat Nov 14, 3:10 PM CT",
     "stale": false,
-    "markets_scanned": 4885,
+    "markets_scanned": 4700,
     "kickoff_source": "kalshi occurrence_datetime - 3h",
     "phases": {
       "CFB": {
-        "live": 2338,
-        "pregame": 1717,
-        "unknown": 156
+        "live": 2309,
+        "pregame": 1621,
+        "unknown": 96
       },
       "NFL": {
         "pregame": 674
@@ -63,16 +63,16 @@
     "max_bet": 10.0
   },
   "signals": {
-    "weekly_ct": "Sat Nov 14, 2:55 PM CT",
+    "weekly_ct": "Sat Nov 14, 3:10 PM CT",
     "scorecards": [
       {
         "name": "SHARP shadow football",
-        "settled": 26,
-        "pnl": -10.33,
-        "roi": -0.1428,
-        "t_stat": -1.21,
-        "verdict": "not enough data",
-        "why": "26 settled bets (< 30)"
+        "settled": 32,
+        "pnl": -13.33,
+        "roi": -0.1398,
+        "t_stat": -0.45,
+        "verdict": "luck / no edge",
+        "why": "t=-0.45, coin-flip beat 34%"
       },
       {
         "name": "SHARP shadow CBB",
@@ -85,18 +85,18 @@
       },
       {
         "name": "SHARP held back",
-        "settled": 198,
-        "pnl": 28.7,
-        "roi": 0.0294,
-        "t_stat": -0.66,
+        "settled": 207,
+        "pnl": 20.44,
+        "roi": 0.0203,
+        "t_stat": -0.7,
         "verdict": "luck / no edge",
-        "why": "t=-0.66, coin-flip beat 81%",
+        "why": "t=-0.7, coin-flip beat 78%",
         "by_reason": {
           "far_rung": {
-            "settled": 119,
-            "pnl": 10.39,
-            "roi": 0.0159,
-            "t_stat": -0.5,
+            "settled": 125,
+            "pnl": 11.09,
+            "roi": 0.0167,
+            "t_stat": -0.44,
             "verdict": "luck / no edge"
           },
           "far_rung+stale_line": {
@@ -114,17 +114,17 @@
             "verdict": "not enough data"
           },
           "sanity_cap": {
-            "settled": 5,
-            "pnl": 39.91,
-            "roi": 0.9482,
-            "t_stat": 0.68,
+            "settled": 6,
+            "pnl": 30.04,
+            "roi": 0.5781,
+            "t_stat": 0.54,
             "verdict": "not enough data"
           },
           "stale_line": {
-            "settled": 47,
-            "pnl": -18.62,
-            "roi": -0.1079,
-            "t_stat": -0.92,
+            "settled": 49,
+            "pnl": -17.71,
+            "roi": -0.0964,
+            "t_stat": -1.01,
             "verdict": "luck / no edge"
           }
         }
@@ -162,7 +162,7 @@
           "events": 25,
           "t_by_event": -1.35,
           "stale": 0,
-          "pending": 41,
+          "pending": 47,
           "no_close": 0
         }
       },
@@ -188,7 +188,7 @@
           "events": 32,
           "t_by_event": -2.37,
           "stale": 0,
-          "pending": 123,
+          "pending": 132,
           "no_close": 2
         }
       }
@@ -245,45 +245,45 @@
         "best_manual": "RESTING_FAIR",
         "variants": {
           "EXIT_AT_TIP": {
-            "closed": 62,
-            "pnl_usd": -16.38,
-            "t_by_game": -1.82,
+            "closed": 74,
+            "pnl_usd": -18.62,
+            "t_by_game": -2.04,
             "gate_open": false
           },
           "HOLD": {
-            "closed": 62,
-            "pnl_usd": -19.89,
-            "t_by_game": -0.39,
+            "closed": 74,
+            "pnl_usd": -22.23,
+            "t_by_game": -0.41,
             "gate_open": false
           },
           "RESTING_10": {
-            "closed": 62,
-            "pnl_usd": -11.14,
-            "t_by_game": -0.55,
+            "closed": 74,
+            "pnl_usd": -27.25,
+            "t_by_game": -1.21,
             "gate_open": false
           },
           "RESTING_15": {
-            "closed": 62,
-            "pnl_usd": -22.23,
-            "t_by_game": -0.59,
+            "closed": 74,
+            "pnl_usd": -36.15,
+            "t_by_game": -0.95,
             "gate_open": false
           },
           "RESTING_5": {
-            "closed": 62,
-            "pnl_usd": 5.12,
-            "t_by_game": 0.66,
+            "closed": 74,
+            "pnl_usd": -6.88,
+            "t_by_game": -0.56,
             "gate_open": false
           },
           "RESTING_FAIR": {
-            "closed": 62,
-            "pnl_usd": 8.8,
-            "t_by_game": 0.98,
+            "closed": 74,
+            "pnl_usd": -3.89,
+            "t_by_game": -0.29,
             "gate_open": false
           },
           "TRADE": {
-            "closed": 62,
-            "pnl_usd": -20.76,
-            "t_by_game": -3.31,
+            "closed": 74,
+            "pnl_usd": -32.07,
+            "t_by_game": -3.42,
             "gate_open": false
           }
         }
@@ -928,8 +928,36 @@
         "contract": "Kansas wins by over 2.5 points",
         "max_price": 0.51,
         "stake": 9.84,
-        "gone": false,
+        "gone": true,
         "sent_ct": "Sat Nov 14, 2:49 PM CT",
+        "kickoff_utc": "2026-11-14T22:30:00Z",
+        "kickoff_ct": "Sat Nov 14, 4:30 PM CT",
+        "kalshi_url": "https://kalshi.com/markets/kxncaafspread/event/kxncaafspread-26nov14kuwvu"
+      },
+      {
+        "ticker": "KXNCAAFSPREAD-26NOV14KUWVU-KU4",
+        "signal": "SHARP",
+        "side": "NO",
+        "game": "Kansas vs West Virginia: Spread",
+        "contract": "Kansas wins by over 3.5 points",
+        "max_price": 0.57,
+        "stake": 5.2,
+        "gone": true,
+        "sent_ct": "Sat Nov 14, 3:06 PM CT",
+        "kickoff_utc": "2026-11-14T22:30:00Z",
+        "kickoff_ct": "Sat Nov 14, 4:30 PM CT",
+        "kalshi_url": "https://kalshi.com/markets/kxncaafspread/event/kxncaafspread-26nov14kuwvu"
+      },
+      {
+        "ticker": "KXNCAAFSPREAD-26NOV14KUWVU-KU5",
+        "signal": "SHARP",
+        "side": "NO",
+        "game": "Kansas vs West Virginia: Spread",
+        "contract": "Kansas wins by over 4.5 points",
+        "max_price": 0.59,
+        "stake": 9.5,
+        "gone": true,
+        "sent_ct": "Sat Nov 14, 2:56 PM CT",
         "kickoff_utc": "2026-11-14T22:30:00Z",
         "kickoff_ct": "Sat Nov 14, 4:30 PM CT",
         "kalshi_url": "https://kalshi.com/markets/kxncaafspread/event/kxncaafspread-26nov14kuwvu"
@@ -942,7 +970,7 @@
         "contract": "West Virginia wins by over 1.5 points",
         "max_price": 0.43,
         "stake": 6.75,
-        "gone": false,
+        "gone": true,
         "sent_ct": "Sat Nov 14, 2:48 PM CT",
         "kickoff_utc": "2026-11-14T22:30:00Z",
         "kickoff_ct": "Sat Nov 14, 4:30 PM CT",
@@ -956,7 +984,7 @@
         "contract": "West Virginia wins by over 2.5 points",
         "max_price": 0.41,
         "stake": 3.66,
-        "gone": false,
+        "gone": true,
         "sent_ct": "Sat Nov 14, 2:50 PM CT",
         "kickoff_utc": "2026-11-14T22:30:00Z",
         "kickoff_ct": "Sat Nov 14, 4:30 PM CT",
@@ -977,6 +1005,20 @@
         "kalshi_url": "https://kalshi.com/markets/kxncaafspread/event/kxncaafspread-26nov14kuwvu"
       },
       {
+        "ticker": "KXNCAAFSPREAD-26NOV14KUWVU-WVU5",
+        "signal": "SHARP",
+        "side": "YES",
+        "game": "Kansas vs West Virginia: Spread",
+        "contract": "West Virginia wins by over 4.5 points",
+        "max_price": 0.31,
+        "stake": 2.28,
+        "gone": true,
+        "sent_ct": "Sat Nov 14, 3:02 PM CT",
+        "kickoff_utc": "2026-11-14T22:30:00Z",
+        "kickoff_ct": "Sat Nov 14, 4:30 PM CT",
+        "kalshi_url": "https://kalshi.com/markets/kxncaafspread/event/kxncaafspread-26nov14kuwvu"
+      },
+      {
         "ticker": "KXNCAAFSPREAD-26NOV14KUWVU-WVU6",
         "signal": "SHARP",
         "side": "YES",
@@ -984,11 +1026,39 @@
         "contract": "West Virginia wins by over 5.5 points",
         "max_price": 0.3,
         "stake": 6.97,
-        "gone": false,
+        "gone": true,
         "sent_ct": "Sat Nov 14, 2:49 PM CT",
         "kickoff_utc": "2026-11-14T22:30:00Z",
         "kickoff_ct": "Sat Nov 14, 4:30 PM CT",
         "kalshi_url": "https://kalshi.com/markets/kxncaafspread/event/kxncaafspread-26nov14kuwvu"
+      },
+      {
+        "ticker": "KXNCAAFSPREAD-26NOV14KUWVU-WVU8",
+        "signal": "SHARP",
+        "side": "YES",
+        "game": "Kansas vs West Virginia: Spread",
+        "contract": "West Virginia wins by over 7.5 points",
+        "max_price": 0.24,
+        "stake": 2.12,
+        "gone": true,
+        "sent_ct": "Sat Nov 14, 2:59 PM CT",
+        "kickoff_utc": "2026-11-14T22:30:00Z",
+        "kickoff_ct": "Sat Nov 14, 4:30 PM CT",
+        "kalshi_url": "https://kalshi.com/markets/kxncaafspread/event/kxncaafspread-26nov14kuwvu"
+      },
+      {
+        "ticker": "KXNCAAFTOTAL-26NOV14KUWVU-65",
+        "signal": "SHARP",
+        "side": "NO",
+        "game": "Kansas vs West Virginia: Total Points",
+        "contract": "Over 64.5 points",
+        "max_price": 0.35,
+        "stake": 3.21,
+        "gone": true,
+        "sent_ct": "Sat Nov 14, 2:56 PM CT",
+        "kickoff_utc": "2026-11-14T22:30:00Z",
+        "kickoff_ct": "Sat Nov 14, 4:30 PM CT",
+        "kalshi_url": "https://kalshi.com/markets/kxncaaftotal/event/kxncaaftotal-26nov14kuwvu"
       },
       {
         "ticker": "KXNCAAFTOTAL-26NOV14KUWVU-66",
@@ -1012,7 +1082,7 @@
         "contract": "Over 67.5 points",
         "max_price": 0.42,
         "stake": 6.57,
-        "gone": false,
+        "gone": true,
         "sent_ct": "Sat Nov 14, 2:53 PM CT",
         "kickoff_utc": "2026-11-14T22:30:00Z",
         "kickoff_ct": "Sat Nov 14, 4:30 PM CT",
@@ -1033,6 +1103,20 @@
         "kalshi_url": "https://kalshi.com/markets/kxncaaftotal/event/kxncaaftotal-26nov14kuwvu"
       },
       {
+        "ticker": "KXNCAAFTOTAL-26NOV14KUWVU-70",
+        "signal": "SHARP",
+        "side": "NO",
+        "game": "Kansas vs West Virginia: Total Points",
+        "contract": "Over 69.5 points",
+        "max_price": 0.47,
+        "stake": 4.68,
+        "gone": false,
+        "sent_ct": "Sat Nov 14, 3:00 PM CT",
+        "kickoff_utc": "2026-11-14T22:30:00Z",
+        "kickoff_ct": "Sat Nov 14, 4:30 PM CT",
+        "kalshi_url": "https://kalshi.com/markets/kxncaaftotal/event/kxncaaftotal-26nov14kuwvu"
+      },
+      {
         "ticker": "KXNCAAFTOTAL-26NOV14KUWVU-71",
         "signal": "SHARP",
         "side": "NO",
@@ -1040,7 +1124,7 @@
         "contract": "Over 70.5 points",
         "max_price": 0.5,
         "stake": 7.78,
-        "gone": false,
+        "gone": true,
         "sent_ct": "Sat Nov 14, 2:50 PM CT",
         "kickoff_utc": "2026-11-14T22:30:00Z",
         "kickoff_ct": "Sat Nov 14, 4:30 PM CT",
@@ -1054,7 +1138,7 @@
         "contract": "Over 73.5 points",
         "max_price": 0.57,
         "stake": 9.5,
-        "gone": false,
+        "gone": true,
         "sent_ct": "Sat Nov 14, 2:51 PM CT",
         "kickoff_utc": "2026-11-14T22:30:00Z",
         "kickoff_ct": "Sat Nov 14, 4:30 PM CT",
