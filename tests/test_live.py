@@ -175,6 +175,9 @@ def _run(monkeypatch, tmp_path, start, minutes, frame_fn, odds_log=None, scans=N
     monkeypatch.setattr(scan, "run_sharp", lambda *a, **k: {"status": {}, "live": [], "shadow": []})
     monkeypatch.setattr(scan, "lost_today", lambda *a, **k: 0.0)
     c = FakeClock(start)
+    real_is_stale = scan.is_stale                               # judge staleness on the loop's clock, not
+    monkeypatch.setattr(scan, "is_stale",                       # the wall clock (fixture date is fixed)
+                        lambda ts, now=None: real_is_stale(ts, now or c.now()))
     stop = start + timedelta(minutes=minutes)
     monkeypatch.setattr(live, "deadline", lambda *a, **k: stop)
 
