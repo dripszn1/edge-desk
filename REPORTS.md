@@ -1,5 +1,12 @@
 # Reports (newest first)
 
+## 2026-11-14 (builder, 10:45Z run)
+- Nothing to build: backlog #1–#60 all done; latest runs show nothing broken (collect run 93 all steps green, 5,614 markets, settlement 275 pending / 0 overdue, last live run ended at the window close with 3,152 fast-lane ticks, 0 throttled). Nothing shipped, nothing to merge.
+- Tests: 449/449 green on dev rebased onto main.
+- Honest results (football, no new settlements since 07:45Z): 18 closed plays from 8 games. Picks vs Kalshi's close after fee: shadow −1.3¢ (6), held back −1.5¢ (14). Exits on the same 18: hold +$6.07, sell at tip −$4.95, Auto Sell at fair +$4.69, Auto Sell +10¢ +$13.89; vs random entries (17 plays) hold beats 92%, Auto Sell +10¢ beats 99%. No Verdict rule threshold met (needs ≥30 closed across ≥10 games; Saturday's games settle next). 3 SHARP shadow plays queued (GASO/GAST, BUF/NYJ, JAC/TEN).
+- Watchdog: collect was 64 min old, so I dispatched collect.yml (run 93 succeeded, 10:47Z snapshot) and live.yml (4:44 AM CT, before the Sat 10 AM window, so its guard exited; the keeper starts it in-window). Odds credits 19,430 of 20,000.
+- Needs Emerson: nothing.
+
 ## 2026-11-14 (builder, 07:45Z run)
 - Nothing to build: backlog #1–#60 all done; latest runs show nothing broken (collect run 91 green, settlement 274 pending / 0 overdue, last live run 3,152 fast-lane ticks, 0 throttled). Nothing shipped, nothing to merge.
 - Tests: 449/449 green on dev rebased onto main.
