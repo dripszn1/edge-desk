@@ -60,6 +60,7 @@ and stands down if dev has a non-"Report" commit <15 min old.
 - Rule 2 exits (53 closed, 14 games): none works. Best Auto Sell at fair +$5.30 (t 0.6), Auto Sell +5¢ +$1.04 (t 0.1); hold −$15.51, sell at tip −$15.79, Auto Sell +10¢ −$9.14. Placebo comparison still on 19 plays (hourly cache), re-read later.
 - Rule 4 odds plan: picks show no edge yet → don't renew unless rule 1 turns positive.
 - Re-read after Sunday's games settle.
+- 2:54 PM CT Emerson: "try building something now" → #64 maker-entry test built anyway (report only). First read: CFB limit buys fill on the losers (adverse selection), still −1.0¢ vs close. NFL reads Sunday.
 
 ## Verdict rules (pre-registered 11-13, BEFORE the weekend's football results; don't bend them after)
 Read once football has >=30 closed plays across >=10 games (alerted + held back within the caps):

@@ -184,6 +184,11 @@ def run(now: datetime | None = None) -> dict:
         rep["trades"] = trades.run(now)
     except Exception as e:                 # noqa: BLE001
         rep["trades"] = {"error": str(e)[:200]}
+    try:                                   # #64 maker-entry test (report only)
+        from . import maker
+        rep["maker_entry"] = maker.run(now)
+    except Exception as e:                 # noqa: BLE001
+        rep["maker_entry"] = {"error": str(e)[:200]}
     try:                                   # #57 random-entry baseline for the exits (report only)
         from . import baseline
         rep["baseline"] = baseline.run_if_due(now)
