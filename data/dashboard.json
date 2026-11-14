@@ -1,6 +1,6 @@
 {
-  "generated_ts": "2026-11-14T19:51:18Z",
-  "generated_ct": "Sat Nov 14, 1:51 PM CT",
+  "generated_ts": "2026-11-14T19:53:13Z",
+  "generated_ct": "Sat Nov 14, 1:53 PM CT",
   "today_ct": "2026-11-14",
   "snapshot": {
     "ts": "2026-11-14T19:49:28Z",
@@ -62,7 +62,7 @@
     "max_bet": 10.0
   },
   "signals": {
-    "weekly_ct": "Sat Nov 14, 1:49 PM CT",
+    "weekly_ct": "Sat Nov 14, 1:51 PM CT",
     "scorecards": [
       {
         "name": "SHARP shadow football",
@@ -84,12 +84,12 @@
       },
       {
         "name": "SHARP held back",
-        "settled": 161,
-        "pnl": 15.32,
-        "roi": 0.0178,
-        "t_stat": -0.14,
+        "settled": 160,
+        "pnl": 20.66,
+        "roi": 0.0241,
+        "t_stat": -0.07,
         "verdict": "luck / no edge",
-        "why": "t=-0.14, coin-flip beat 79%",
+        "why": "t=-0.07, coin-flip beat 79%",
         "by_reason": {
           "far_rung": {
             "settled": 101,
@@ -113,8 +113,8 @@
             "verdict": "not enough data"
           },
           "sanity_cap": {
-            "settled": 2,
-            "pnl": -10.68,
+            "settled": 1,
+            "pnl": -5.34,
             "roi": -1.0,
             "t_stat": null,
             "verdict": "not enough data"
@@ -161,7 +161,7 @@
           "events": 13,
           "t_by_event": -3.1,
           "stale": 0,
-          "pending": 74,
+          "pending": 61,
           "no_close": 0
         }
       },
@@ -176,7 +176,7 @@
           "t_by_event": -3.74,
           "stale": 1,
           "pending": 0,
-          "no_close": 8
+          "no_close": 7
         },
         "football": {
           "n": 63,
@@ -187,7 +187,7 @@
           "events": 16,
           "t_by_event": -3.06,
           "stale": 0,
-          "pending": 175,
+          "pending": 159,
           "no_close": 2
         }
       }
