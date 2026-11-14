@@ -422,6 +422,12 @@ def build_line_gone(alert: dict, fair: float, price: float | None, now, fe: dict
             "stake": "", "quote_utc": _iso(q) if q else None, "reason": "line_moved"}
 
 
+def in_scope(ticker) -> bool:
+    """Ticker's series is in config.SERIES (CBB removed 11-13: its old alerts get no more pushes)."""
+    series = str(ticker or "").split("-")[0]
+    return not series.startswith("KX") or any(series in lst for lst in config.SERIES.values())
+
+
 def decide(groups: list[tuple[list[dict], bool]], quotes: dict, state: dict, now,
            lost_today: float = 0.0, template: str | None = None, fairs: dict | None = None) -> list[dict]:
     """Alerts to send now. `groups` = [(flags, gate_open), ...]. Mutates `state` as if sent.
@@ -469,6 +475,8 @@ def decide(groups: list[tuple[list[dict], bool]], quotes: dict, state: dict, now
         out.append(a)
     already_gone = _gone_keys_logged()
     for k, a in alerts.items():
+        if not in_scope(a.get("ticker")):
+            continue                                        # league out of scope: no follow-ups
         if a.get("gone") or a.get("max_price") is None or k in already_gone:
             a["gone"] = a.get("gone") or k in already_gone
             continue
@@ -503,7 +511,7 @@ def decide(groups: list[tuple[list[dict], bool]], quotes: dict, state: dict, now
     # #38: Auto Sell target reached (pregame or in-game), one push per contract
     for k, a in alerts.items():
         tgt = a.get("autosell")
-        if tgt is None or a.get("sell_hit") or a.get("legs"):
+        if tgt is None or a.get("sell_hit") or a.get("legs") or not in_scope(a.get("ticker")):
             continue
         ko = a.get("kickoff_utc")
         if ko and _utc(now) > _utc(ko) + timedelta(hours=6):
