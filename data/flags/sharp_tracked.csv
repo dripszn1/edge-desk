@@ -33434,3 +33434,36 @@ snapshot_ts,league,event,ticker,side,price,fair,edge,sharp_line,odds_fetched_ts,
 2026-11-14T22:13:59Z,CFB,North Dakota St. vs Hawai'i: Total Points,KXNCAAFTOTAL-26NOV14NDSUHAW-21,NO,0.08,0.1207,0.0351,39.5,2026-11-14T22:13:57Z,rung far from sharp line (unvalidated range)
 2026-11-14T22:13:59Z,CFB,North Dakota St. vs Hawai'i: Total Points,KXNCAAFTOTAL-26NOV14NDSUHAW-24,NO,0.12,0.1619,0.0341,39.5,2026-11-14T22:13:57Z,rung far from sharp line (unvalidated range)
 2026-11-14T22:13:59Z,CFB,North Dakota St. vs Hawai'i: Total Points,KXNCAAFTOTAL-26NOV14NDSUHAW-27,NO,0.17,0.2114,0.0314,39.5,2026-11-14T22:13:57Z,rung far from sharp line (unvalidated range)
+2026-11-14T22:15:38Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU7,YES,0.02,0.3295,0.3082,1.5,2026-11-14T20:29:30Z,sharp line stale; edge above sanity cap
+2026-11-14T22:15:38Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU12,NO,0.26,0.8109,0.5372,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); sharp line stale; edge above sanity cap
+2026-11-14T22:15:38Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU14,NO,0.31,0.8261,0.5011,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); sharp line stale; edge above sanity cap
+2026-11-14T22:15:38Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU15,NO,0.34,0.8489,0.493,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); sharp line stale; edge above sanity cap
+2026-11-14T22:15:38Z,CFB,Utah vs Arizona: Total Points,KXNCAAFTOTAL-26NOV14UTAHARIZ-40,NO,0.13,0.1696,0.0313,55.0,2026-11-14T22:13:57Z,rung far from sharp line (unvalidated range)
+2026-11-14T22:16:08Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU12,NO,0.27,0.8109,0.5271,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); sharp line stale; edge above sanity cap
+2026-11-14T22:16:08Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU14,NO,0.3,0.8261,0.5112,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); sharp line stale; edge above sanity cap
+2026-11-14T22:16:38Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU12,NO,0.26,0.8109,0.5372,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); sharp line stale; edge above sanity cap
+2026-11-14T22:19:11Z,CFB,Minnesota vs Penn St.: Total Points,KXNCAAFTOTAL-26NOV14MINNPSU-24,NO,0.08,0.127,0.0415,42.0,2026-11-14T22:19:08Z,rung far from sharp line (unvalidated range)
+2026-11-14T22:19:11Z,CFB,Minnesota vs Penn St.: Total Points,KXNCAAFTOTAL-26NOV14MINNPSU-27,NO,0.11,0.1696,0.0526,42.0,2026-11-14T22:19:08Z,rung far from sharp line (unvalidated range)
+2026-11-14T22:19:11Z,CFB,Minnesota vs Penn St.: Total Points,KXNCAAFTOTAL-26NOV14MINNPSU-30,NO,0.16,0.2204,0.051,42.0,2026-11-14T22:19:08Z,rung far from sharp line (unvalidated range)
+2026-11-14T22:19:11Z,CFB,Minnesota vs Penn St.: Total Points,KXNCAAFTOTAL-26NOV14MINNPSU-33,NO,0.23,0.279,0.0362,42.0,2026-11-14T22:19:08Z,rung far from sharp line (unvalidated range)
+2026-11-14T22:19:11Z,CFB,Utah vs Arizona: Total Points,KXNCAAFTOTAL-26NOV14UTAHARIZ-40,NO,0.13,0.1696,0.0313,55.0,2026-11-14T22:19:08Z,rung far from sharp line (unvalidated range)
+2026-11-14T22:19:11Z,CFB,North Dakota St. vs Hawai'i: Total Points,KXNCAAFTOTAL-26NOV14NDSUHAW-21,NO,0.08,0.1207,0.0351,39.5,2026-11-14T22:19:08Z,rung far from sharp line (unvalidated range)
+2026-11-14T22:19:11Z,CFB,North Dakota St. vs Hawai'i: Total Points,KXNCAAFTOTAL-26NOV14NDSUHAW-24,NO,0.12,0.1619,0.0341,39.5,2026-11-14T22:19:08Z,rung far from sharp line (unvalidated range)
+2026-11-14T22:19:11Z,CFB,North Dakota St. vs Hawai'i: Total Points,KXNCAAFTOTAL-26NOV14NDSUHAW-27,NO,0.17,0.2114,0.0314,39.5,2026-11-14T22:19:08Z,rung far from sharp line (unvalidated range)
+2026-11-14T22:24:11Z,CFB,Minnesota vs Penn St.: Total Points,KXNCAAFTOTAL-26NOV14MINNPSU-24,NO,0.08,0.127,0.0415,42.0,2026-11-14T22:24:08Z,rung far from sharp line (unvalidated range)
+2026-11-14T22:24:11Z,CFB,Minnesota vs Penn St.: Total Points,KXNCAAFTOTAL-26NOV14MINNPSU-27,NO,0.11,0.1696,0.0526,42.0,2026-11-14T22:24:08Z,rung far from sharp line (unvalidated range)
+2026-11-14T22:24:11Z,CFB,Minnesota vs Penn St.: Total Points,KXNCAAFTOTAL-26NOV14MINNPSU-30,NO,0.16,0.2204,0.051,42.0,2026-11-14T22:24:08Z,rung far from sharp line (unvalidated range)
+2026-11-14T22:24:11Z,CFB,Minnesota vs Penn St.: Total Points,KXNCAAFTOTAL-26NOV14MINNPSU-33,NO,0.23,0.279,0.0362,42.0,2026-11-14T22:24:08Z,rung far from sharp line (unvalidated range)
+2026-11-14T22:24:11Z,CFB,Utah vs Arizona: Total Points,KXNCAAFTOTAL-26NOV14UTAHARIZ-40,NO,0.13,0.1696,0.0313,55.0,2026-11-14T22:24:08Z,rung far from sharp line (unvalidated range)
+2026-11-14T22:24:11Z,CFB,North Dakota St. vs Hawai'i: Total Points,KXNCAAFTOTAL-26NOV14NDSUHAW-21,NO,0.08,0.1207,0.0351,39.5,2026-11-14T22:24:08Z,rung far from sharp line (unvalidated range)
+2026-11-14T22:24:11Z,CFB,North Dakota St. vs Hawai'i: Total Points,KXNCAAFTOTAL-26NOV14NDSUHAW-24,NO,0.12,0.1619,0.0341,39.5,2026-11-14T22:24:08Z,rung far from sharp line (unvalidated range)
+2026-11-14T22:24:11Z,CFB,North Dakota St. vs Hawai'i: Total Points,KXNCAAFTOTAL-26NOV14NDSUHAW-27,NO,0.17,0.2114,0.0314,39.5,2026-11-14T22:24:08Z,rung far from sharp line (unvalidated range)
+2026-11-14T22:26:08Z,CFB,Minnesota vs Penn St.: Total Points,KXNCAAFTOTAL-26NOV14MINNPSU-27,NO,0.12,0.1696,0.042,42.0,2026-11-14T22:24:08Z,rung far from sharp line (unvalidated range)
+2026-11-14T22:29:11Z,CFB,Minnesota vs Penn St.: Total Points,KXNCAAFTOTAL-26NOV14MINNPSU-24,NO,0.08,0.127,0.0415,42.0,2026-11-14T22:29:08Z,rung far from sharp line (unvalidated range)
+2026-11-14T22:29:11Z,CFB,Minnesota vs Penn St.: Total Points,KXNCAAFTOTAL-26NOV14MINNPSU-27,NO,0.12,0.1696,0.042,42.0,2026-11-14T22:29:08Z,rung far from sharp line (unvalidated range)
+2026-11-14T22:29:11Z,CFB,Minnesota vs Penn St.: Total Points,KXNCAAFTOTAL-26NOV14MINNPSU-30,NO,0.16,0.2204,0.051,42.0,2026-11-14T22:29:08Z,rung far from sharp line (unvalidated range)
+2026-11-14T22:29:11Z,CFB,Minnesota vs Penn St.: Total Points,KXNCAAFTOTAL-26NOV14MINNPSU-33,NO,0.23,0.279,0.0362,42.0,2026-11-14T22:29:08Z,rung far from sharp line (unvalidated range)
+2026-11-14T22:29:11Z,CFB,Utah vs Arizona: Total Points,KXNCAAFTOTAL-26NOV14UTAHARIZ-40,NO,0.13,0.1696,0.0313,55.0,2026-11-14T22:29:08Z,rung far from sharp line (unvalidated range)
+2026-11-14T22:29:11Z,CFB,North Dakota St. vs Hawai'i: Total Points,KXNCAAFTOTAL-26NOV14NDSUHAW-21,NO,0.08,0.1207,0.0351,39.5,2026-11-14T22:29:08Z,rung far from sharp line (unvalidated range)
+2026-11-14T22:29:11Z,CFB,North Dakota St. vs Hawai'i: Total Points,KXNCAAFTOTAL-26NOV14NDSUHAW-24,NO,0.12,0.1619,0.0341,39.5,2026-11-14T22:29:08Z,rung far from sharp line (unvalidated range)
+2026-11-14T22:29:11Z,CFB,North Dakota St. vs Hawai'i: Total Points,KXNCAAFTOTAL-26NOV14NDSUHAW-27,NO,0.17,0.2114,0.0314,39.5,2026-11-14T22:29:08Z,rung far from sharp line (unvalidated range)

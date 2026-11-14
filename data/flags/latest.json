@@ -1,12 +1,13 @@
 {
-  "snapshot_ts": "2026-11-14T22:13:59Z",
+  "snapshot_ts": "2026-11-14T22:29:11Z",
   "stale": false,
-  "markets_scanned": 4206,
+  "markets_scanned": 3975,
   "kickoff_source": "kalshi occurrence_datetime - 3h",
   "phases": {
     "CFB": {
-      "live": 1957,
-      "pregame": 1575
+      "live": 1726,
+      "pregame": 1527,
+      "unknown": 48
     },
     "NFL": {
       "pregame": 674
@@ -18,7 +19,7 @@
     "NFL": {
       "ok": true,
       "reason": "ok",
-      "ratings_as_of": "2026-11-14T22:13:59Z",
+      "ratings_as_of": "2026-11-14T22:29:11Z",
       "games_priced": 28,
       "n_games": 1830,
       "events_unmatched": 0,
@@ -35,7 +36,7 @@
   "model_flags": [],
   "model_shadow": [
     {
-      "snapshot_ts": "2026-11-14T22:13:59Z",
+      "snapshot_ts": "2026-11-14T22:29:11Z",
       "league": "NFL",
       "kind": "MODEL",
       "market": "TOTAL",
@@ -51,19 +52,19 @@
       "fee_per_contract": 0.015,
       "edge": 0.2425,
       "stake": 9.75,
-      "size_available": 328023.67,
+      "size_available": 325063.67,
       "fee_multiplier": 1.0,
       "home": "ARI",
       "away": "LA",
       "proj_margin_home": -5.55,
       "proj_total": 47.81,
-      "ratings_as_of": "2026-11-14T22:13:59Z",
+      "ratings_as_of": "2026-11-14T22:29:11Z",
       "kickoff_utc": "2026-11-15T21:05:00Z",
       "kickoff_ct": "Sun Nov 15, 3:05 PM CT",
       "kalshi_url": "https://kalshi.com/markets/kxnfltotal/event/kxnfltotal-26nov15larari"
     },
     {
-      "snapshot_ts": "2026-11-14T22:13:59Z",
+      "snapshot_ts": "2026-11-14T22:29:11Z",
       "league": "NFL",
       "kind": "MODEL",
       "market": "TOTAL",
@@ -85,13 +86,13 @@
       "away": "MIA",
       "proj_margin_home": 2.82,
       "proj_total": 46.26,
-      "ratings_as_of": "2026-11-14T22:13:59Z",
+      "ratings_as_of": "2026-11-14T22:29:11Z",
       "kickoff_utc": "2026-11-15T18:00:00Z",
       "kickoff_ct": "Sun Nov 15, 12:00 PM CT",
       "kalshi_url": "https://kalshi.com/markets/kxnfltotal/event/kxnfltotal-26nov15miaind"
     },
     {
-      "snapshot_ts": "2026-11-14T22:13:59Z",
+      "snapshot_ts": "2026-11-14T22:29:11Z",
       "league": "NFL",
       "kind": "MODEL",
       "market": "SPREAD",
@@ -113,13 +114,13 @@
       "away": "LA",
       "proj_margin_home": -5.55,
       "proj_total": 47.81,
-      "ratings_as_of": "2026-11-14T22:13:59Z",
+      "ratings_as_of": "2026-11-14T22:29:11Z",
       "kickoff_utc": "2026-11-15T21:05:00Z",
       "kickoff_ct": "Sun Nov 15, 3:05 PM CT",
       "kalshi_url": "https://kalshi.com/markets/kxnflspread/event/kxnflspread-26nov15larari"
     },
     {
-      "snapshot_ts": "2026-11-14T22:13:59Z",
+      "snapshot_ts": "2026-11-14T22:29:11Z",
       "league": "NFL",
       "kind": "MODEL",
       "market": "SPREAD",
@@ -141,7 +142,7 @@
       "away": "JAX",
       "proj_margin_home": -8.92,
       "proj_total": 44.59,
-      "ratings_as_of": "2026-11-14T22:13:59Z",
+      "ratings_as_of": "2026-11-14T22:29:11Z",
       "kickoff_utc": "2026-11-15T18:00:00Z",
       "kickoff_ct": "Sun Nov 15, 12:00 PM CT",
       "kalshi_url": "https://kalshi.com/markets/kxnflspread/event/kxnflspread-26nov15jacten"
@@ -160,14 +161,11 @@
     "CFB": {
       "ok": true,
       "reason": "ok",
-      "events_priced": 36,
+      "events_priced": 34,
       "events_no_sharp_line": 16,
-      "odds_fetched": "2026-11-14T22:13:57Z",
-      "rungs_out_of_range": 563,
-      "odds_too_old": 48,
-      "rejected_edge_cap": 28,
-      "stale_only": 3,
-      "gate": "gated: 20 settled SHARP shadow bets (< 30)"
+      "odds_fetched": "2026-11-14T22:29:08Z",
+      "rungs_out_of_range": 535,
+      "gate": "gated: 22 settled SHARP shadow bets (< 30)"
     },
     "NFL ML": {
       "ok": true,
@@ -182,14 +180,14 @@
       "reason": "ok",
       "events_priced": 6,
       "events_no_sharp_line": 184,
-      "odds_fetched": "2026-11-14T22:13:57Z",
-      "gate": "gated: 17 settled SHARP shadow bets (< 30)"
+      "odds_fetched": "2026-11-14T22:29:08Z",
+      "gate": "gated: 18 settled SHARP shadow bets (< 30)"
     }
   },
   "sharp_flags": [],
   "sharp_shadow": [
     {
-      "snapshot_ts": "2026-11-14T22:13:59Z",
+      "snapshot_ts": "2026-11-14T22:29:11Z",
       "league": "NFL",
       "kind": "SHARP",
       "market": "SPREAD",
@@ -215,7 +213,7 @@
       "kalshi_url": "https://kalshi.com/markets/kxnflspread/event/kxnflspread-26nov19indhou"
     },
     {
-      "snapshot_ts": "2026-11-14T22:13:59Z",
+      "snapshot_ts": "2026-11-14T22:29:11Z",
       "league": "NFL",
       "kind": "SHARP",
       "market": "SPREAD",
@@ -231,7 +229,7 @@
       "fee_per_contract": 0.0167,
       "edge": 0.032,
       "stake": 3.76,
-      "size_available": 150.0,
+      "size_available": 300.0,
       "fee_multiplier": 1.0,
       "sharp_line": 10.5,
       "sharp_source": "pinnacle",
@@ -241,7 +239,7 @@
       "kalshi_url": "https://kalshi.com/markets/kxnflspread/event/kxnflspread-26nov15jacten"
     },
     {
-      "snapshot_ts": "2026-11-14T22:13:59Z",
+      "snapshot_ts": "2026-11-14T22:29:11Z",
       "league": "NFL",
       "kind": "SHARP",
       "market": "SPREAD",
@@ -272,7 +270,7 @@
       "fair": 0.242,
       "price": 0.2,
       "odds_fetched_ts": "2026-11-14T22:13:57Z",
-      "snapshot_ts": "2026-11-14T22:13:59Z",
+      "snapshot_ts": "2026-11-14T22:29:11Z",
       "sharp_line": -8.5,
       "stale": false,
       "kickoff_utc": "2026-11-15T18:00:00Z"
@@ -281,19 +279,10 @@
       "fair": 0.6587,
       "price": 0.61,
       "odds_fetched_ts": "2026-11-14T22:13:57Z",
-      "snapshot_ts": "2026-11-14T22:13:59Z",
+      "snapshot_ts": "2026-11-14T22:29:11Z",
       "sharp_line": 10.5,
       "stale": false,
       "kickoff_utc": "2026-11-15T18:00:00Z"
-    },
-    "KXNCAAFSPREAD-26NOV14KUWVU-WVU7|YES": {
-      "fair": 0.3295,
-      "price": 0.01,
-      "odds_fetched_ts": "2026-11-14T20:29:30Z",
-      "snapshot_ts": "2026-11-14T22:13:59Z",
-      "sharp_line": 1.5,
-      "stale": true,
-      "kickoff_utc": "2026-11-14T22:30:00Z"
     }
   }
 }

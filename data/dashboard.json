@@ -1,17 +1,18 @@
 {
-  "generated_ts": "2026-11-14T22:15:30Z",
-  "generated_ct": "Sat Nov 14, 4:15 PM CT",
+  "generated_ts": "2026-11-14T22:31:15Z",
+  "generated_ct": "Sat Nov 14, 4:31 PM CT",
   "today_ct": "2026-11-14",
   "snapshot": {
-    "ts": "2026-11-14T22:13:59Z",
-    "ct": "Sat Nov 14, 4:13 PM CT",
+    "ts": "2026-11-14T22:29:11Z",
+    "ct": "Sat Nov 14, 4:29 PM CT",
     "stale": false,
-    "markets_scanned": 4206,
+    "markets_scanned": 3975,
     "kickoff_source": "kalshi occurrence_datetime - 3h",
     "phases": {
       "CFB": {
-        "live": 1957,
-        "pregame": 1575
+        "live": 1726,
+        "pregame": 1527,
+        "unknown": 48
       },
       "NFL": {
         "pregame": 674
@@ -62,7 +63,7 @@
     "max_bet": 10.0
   },
   "signals": {
-    "weekly_ct": "Sat Nov 14, 4:14 PM CT",
+    "weekly_ct": "Sat Nov 14, 4:29 PM CT",
     "scorecards": [
       {
         "name": "SHARP shadow football",
@@ -84,18 +85,18 @@
       },
       {
         "name": "SHARP held back",
-        "settled": 221,
-        "pnl": 13.3,
-        "roi": 0.0125,
-        "t_stat": -0.89,
+        "settled": 226,
+        "pnl": 19.41,
+        "roi": 0.0181,
+        "t_stat": -0.7,
         "verdict": "luck / no edge",
-        "why": "t=-0.89, coin-flip beat 74%",
+        "why": "t=-0.7, coin-flip beat 77%",
         "by_reason": {
           "far_rung": {
-            "settled": 134,
-            "pnl": 4.63,
-            "roi": 0.0068,
-            "t_stat": -0.63,
+            "settled": 139,
+            "pnl": 10.74,
+            "roi": 0.0156,
+            "t_stat": -0.4,
             "verdict": "luck / no edge"
           },
           "far_rung+stale_line": {
@@ -130,12 +131,12 @@
       },
       {
         "name": "MODEL shadow",
-        "settled": 14,
-        "pnl": -2.09,
-        "roi": -0.511,
-        "t_stat": -2.35,
+        "settled": 15,
+        "pnl": -2.16,
+        "roi": -0.5192,
+        "t_stat": -2.61,
         "verdict": "not enough data",
-        "why": "14 settled bets (< 30)"
+        "why": "15 settled bets (< 30)"
       }
     ],
     "clv": {
@@ -187,7 +188,7 @@
           "events": 33,
           "t_by_event": -2.4,
           "stale": 0,
-          "pending": 136,
+          "pending": 137,
           "no_close": 2
         }
       }
@@ -244,45 +245,45 @@
         "best_manual": "RESTING_FAIR",
         "variants": {
           "EXIT_AT_TIP": {
-            "closed": 91,
-            "pnl_usd": -25.6,
-            "t_by_game": -2.43,
+            "closed": 96,
+            "pnl_usd": -27.37,
+            "t_by_game": -2.59,
             "gate_open": false
           },
           "HOLD": {
-            "closed": 91,
-            "pnl_usd": -31.65,
-            "t_by_game": -0.59,
+            "closed": 96,
+            "pnl_usd": -25.54,
+            "t_by_game": -0.47,
             "gate_open": false
           },
           "RESTING_10": {
-            "closed": 91,
-            "pnl_usd": -17.34,
-            "t_by_game": -0.72,
+            "closed": 96,
+            "pnl_usd": -21.37,
+            "t_by_game": -0.88,
             "gate_open": false
           },
           "RESTING_15": {
-            "closed": 91,
-            "pnl_usd": -22.47,
-            "t_by_game": -0.56,
+            "closed": 96,
+            "pnl_usd": -25.76,
+            "t_by_game": -0.64,
             "gate_open": false
           },
           "RESTING_5": {
-            "closed": 91,
-            "pnl_usd": -2.12,
-            "t_by_game": -0.17,
+            "closed": 96,
+            "pnl_usd": -6.9,
+            "t_by_game": -0.51,
             "gate_open": false
           },
           "RESTING_FAIR": {
-            "closed": 91,
-            "pnl_usd": 0.31,
-            "t_by_game": 0.02,
+            "closed": 96,
+            "pnl_usd": -4.55,
+            "t_by_game": -0.31,
             "gate_open": false
           },
           "TRADE": {
-            "closed": 91,
-            "pnl_usd": -34.89,
-            "t_by_game": -3.5,
+            "closed": 96,
+            "pnl_usd": -36.66,
+            "t_by_game": -3.68,
             "gate_open": false
           }
         }
