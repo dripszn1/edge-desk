@@ -41,14 +41,19 @@ open the in-progress run -> Cancel workflow -> wait ~30 s -> Run workflow (main,
 **Builder lock.** The 3-hourly builder skips a backlog item marked "IN PROGRESS in Emerson's chat session",
 and stands down if dev has a non-"Report" commit <15 min old.
 
-## Where we stand (11-13 morning, after 4 days of paper data)
-- Nothing is proven. Every gate is closed.
-- CBB: REMOVED 11-13 (Emerson). Entries lost ~2.4c to Kalshi's close (137 closes, 26 games, t -3.7) and beat
-  only 39% of random entries. Scope is NFL + CFB only.
-- Football: 13 closed plays from ~4 games, too few. Hold -$26.58, Auto Sell +10c +$9.02 (t 1.2). Thursday's 3
-  football plays all touched their Auto Sell target in-game and then lost. Suspicion: an Auto Sell edge with
-  entries that lose to the close would come from in-game swings, not our picks; #57 (random-entry baseline) tests it.
-- ~180 football plays settle Sat 11-14 / Sun 11-15. That weekend is the decisive read (see Verdict rules).
+## Where we stand (11-14 1 AM CT, before the big Saturday slate)
+- Nothing is proven. Every gate is closed. Scope NFL + CFB only (CBB removed 11-13; out-of-scope alerts get no
+  fast lane or follow-up pushes since 11-13 evening).
+- Football (one row per contract, #60): 10 closed plays / 6 games. Hold -$19.90 (0-10), sell at tip -$2.43,
+  Auto Sell +10c +$5.47 (8 of 10 hit), Auto Sell at fair +$1.91, best bracket (10/10) +$2.94. Entries lose
+  ~1.3-1.5c to Kalshi's close. vs random: hold beats 7%, Auto Sell +10c beats 78% (needs 95%).
+- Fri 11-13 night games ended after the last save, so not graded yet: HOU/COLO (COLO 42-32) alerted NO Over 48.5
+  loses on hold, its Auto Sell (44c) filled; held-back far rungs YES COLO by 2.5/3.5/4.5 all won (~+$27);
+  ILL/UCLA (22-14) held-back NO Over 27.5/30.5/33.5 lost, NO Over 36.5 won (~+$1.4). Two games = noise.
+- ~186 football plays settle Sat 11-14 / Sun 11-15. Apply the Verdict rules once >=30 closed across >=10 games,
+  and report the four exits (hold / sell at tip / Auto Sell / bracket) split NFL vs CFB.
+- Open, deliberately undecided: #53 require >=1c room below max price? (about half of alerts go out with 0c room
+  and get "gone" within seconds, e.g. MINN/PSU 11-13 7:15 PM). Decide on weekend data.
 
 ## Verdict rules (pre-registered 11-13, BEFORE the weekend's football results; don't bend them after)
 Read once football has >=30 closed plays across >=10 games (alerted + held back within the caps):
