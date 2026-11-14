@@ -1,10 +1,10 @@
 {
-  "generated_ts": "2026-11-14T07:47:35Z",
-  "generated_ct": "Sat Nov 14, 1:47 AM CT",
+  "generated_ts": "2026-11-14T09:43:35Z",
+  "generated_ct": "Sat Nov 14, 3:43 AM CT",
   "today_ct": "2026-11-14",
   "snapshot": {
-    "ts": "2026-11-14T07:45:09Z",
-    "ct": "Sat Nov 14, 1:45 AM CT",
+    "ts": "2026-11-14T09:41:30Z",
+    "ct": "Sat Nov 14, 3:41 AM CT",
     "stale": false,
     "markets_scanned": 5614,
     "kickoff_source": "kalshi occurrence_datetime - 3h",
@@ -61,7 +61,7 @@
     "max_bet": 10.0
   },
   "signals": {
-    "weekly_ct": "Sat Nov 14, 1:45 AM CT",
+    "weekly_ct": "Sat Nov 14, 3:42 AM CT",
     "scorecards": [
       {
         "name": "SHARP shadow football",
@@ -288,20 +288,6 @@
       }
     },
     "open_alerts": [
-      {
-        "ticker": "KXNCAAFTOTAL-26NOV13HOUCOLO-49",
-        "signal": "SHARP",
-        "side": "NO",
-        "game": "Houston vs Colorado: Total Points",
-        "contract": "Over 48.5 points",
-        "max_price": 0.39,
-        "stake": 2.04,
-        "gone": true,
-        "sent_ct": "Fri Nov 13, 2:57 PM CT",
-        "kickoff_utc": "2026-11-14T03:15:00Z",
-        "kickoff_ct": "Fri Nov 13, 9:15 PM CT",
-        "kalshi_url": "https://kalshi.com/markets/kxncaaftotal/event/kxncaaftotal-26nov13houcolo"
-      },
       {
         "ticker": "KXNCAAFSPREAD-26NOV14ALAVAN-ALA17",
         "signal": "SHARP",
