@@ -1,17 +1,17 @@
 {
-  "generated_ts": "2026-11-14T17:02:51Z",
-  "generated_ct": "Sat Nov 14, 11:02 AM CT",
+  "generated_ts": "2026-11-14T17:18:29Z",
+  "generated_ct": "Sat Nov 14, 11:18 AM CT",
   "today_ct": "2026-11-14",
   "snapshot": {
-    "ts": "2026-11-14T17:01:07Z",
-    "ct": "Sat Nov 14, 11:01 AM CT",
+    "ts": "2026-11-14T17:16:30Z",
+    "ct": "Sat Nov 14, 11:16 AM CT",
     "stale": false,
-    "markets_scanned": 5614,
+    "markets_scanned": 5620,
     "kickoff_source": "kalshi occurrence_datetime - 3h",
     "phases": {
       "CFB": {
         "live": 833,
-        "pregame": 4107
+        "pregame": 4113
       },
       "NFL": {
         "pregame": 674
@@ -62,7 +62,7 @@
     "max_bet": 10.0
   },
   "signals": {
-    "weekly_ct": "Sat Nov 14, 11:01 AM CT",
+    "weekly_ct": "Sat Nov 14, 11:17 AM CT",
     "scorecards": [
       {
         "name": "SHARP shadow football",
@@ -161,7 +161,7 @@
           "events": 8,
           "t_by_event": -2.26,
           "stale": 0,
-          "pending": 50,
+          "pending": 59,
           "no_close": 0
         }
       },
@@ -187,7 +187,7 @@
           "events": 9,
           "t_by_event": -2.53,
           "stale": 0,
-          "pending": 150,
+          "pending": 154,
           "no_close": 1
         }
       }
@@ -374,6 +374,118 @@
         "kalshi_url": "https://kalshi.com/markets/kxncaafspread/event/kxncaafspread-26nov14ksutcu"
       },
       {
+        "ticker": "KXNCAAFGAME-26NOV14CINISU-CIN",
+        "signal": "SHARP",
+        "side": "NO",
+        "game": "Cincinnati vs Iowa St.",
+        "contract": "Cincinnati",
+        "max_price": 0.48,
+        "stake": 6.08,
+        "gone": true,
+        "sent_ct": "Sat Nov 14, 11:04 AM CT",
+        "kickoff_utc": "2026-11-14T20:00:00Z",
+        "kickoff_ct": "Sat Nov 14, 2:00 PM CT",
+        "kalshi_url": "https://kalshi.com/markets/kxncaafgame/event/kxncaafgame-26nov14cinisu"
+      },
+      {
+        "ticker": "KXNCAAFGAME-26NOV14CINISU-ISU",
+        "signal": "SHARP",
+        "side": "YES",
+        "game": "Cincinnati vs Iowa St.",
+        "contract": "Iowa St.",
+        "max_price": 0.48,
+        "stake": 6.86,
+        "gone": true,
+        "sent_ct": "Sat Nov 14, 11:05 AM CT",
+        "kickoff_utc": "2026-11-14T20:00:00Z",
+        "kickoff_ct": "Sat Nov 14, 2:00 PM CT",
+        "kalshi_url": "https://kalshi.com/markets/kxncaafgame/event/kxncaafgame-26nov14cinisu"
+      },
+      {
+        "ticker": "KXNCAAFGAME-26NOV14NWOSU-NW",
+        "signal": "SHARP",
+        "side": "YES",
+        "game": "Northwestern vs Ohio St.",
+        "contract": "Northwestern",
+        "max_price": 0.13,
+        "stake": 2.3,
+        "gone": false,
+        "sent_ct": "Sat Nov 14, 11:14 AM CT",
+        "kickoff_utc": "2026-11-14T20:00:00Z",
+        "kickoff_ct": "Sat Nov 14, 2:00 PM CT",
+        "kalshi_url": "https://kalshi.com/markets/kxncaafgame/event/kxncaafgame-26nov14nwosu"
+      },
+      {
+        "ticker": "KXNCAAFGAME-26NOV14NWOSU-OSU",
+        "signal": "SHARP",
+        "side": "NO",
+        "game": "Northwestern vs Ohio St.",
+        "contract": "Ohio St.",
+        "max_price": 0.13,
+        "stake": 2.3,
+        "gone": false,
+        "sent_ct": "Sat Nov 14, 11:15 AM CT",
+        "kickoff_utc": "2026-11-14T20:00:00Z",
+        "kickoff_ct": "Sat Nov 14, 2:00 PM CT",
+        "kalshi_url": "https://kalshi.com/markets/kxncaafgame/event/kxncaafgame-26nov14nwosu"
+      },
+      {
+        "ticker": "KXNCAAFGAME-26NOV14SYRNCST-NCST",
+        "signal": "SHARP",
+        "side": "YES",
+        "game": "Syracuse vs NC St.",
+        "contract": "NC St.",
+        "max_price": 0.39,
+        "stake": 2.85,
+        "gone": true,
+        "sent_ct": "Sat Nov 14, 11:10 AM CT",
+        "kickoff_utc": "2026-11-14T20:00:00Z",
+        "kickoff_ct": "Sat Nov 14, 2:00 PM CT",
+        "kalshi_url": "https://kalshi.com/markets/kxncaafgame/event/kxncaafgame-26nov14syrncst"
+      },
+      {
+        "ticker": "KXNCAAFGAME-26NOV14WAKESMU-SMU",
+        "signal": "SHARP",
+        "side": "YES",
+        "game": "Wake Forest vs SMU",
+        "contract": "SMU",
+        "max_price": 0.5,
+        "stake": 3.11,
+        "gone": false,
+        "sent_ct": "Sat Nov 14, 11:07 AM CT",
+        "kickoff_utc": "2026-11-14T20:00:00Z",
+        "kickoff_ct": "Sat Nov 14, 2:00 PM CT",
+        "kalshi_url": "https://kalshi.com/markets/kxncaafgame/event/kxncaafgame-26nov14wakesmu"
+      },
+      {
+        "ticker": "KXNCAAFGAME-26NOV14WISMD-MD",
+        "signal": "SHARP",
+        "side": "YES",
+        "game": "Wisconsin vs Maryland",
+        "contract": "Maryland",
+        "max_price": 0.22,
+        "stake": 2.22,
+        "gone": true,
+        "sent_ct": "Sat Nov 14, 11:07 AM CT",
+        "kickoff_utc": "2026-11-14T20:00:00Z",
+        "kickoff_ct": "Sat Nov 14, 2:00 PM CT",
+        "kalshi_url": "https://kalshi.com/markets/kxncaafgame/event/kxncaafgame-26nov14wismd"
+      },
+      {
+        "ticker": "KXNCAAFGAME-26NOV14WISMD-WIS",
+        "signal": "SHARP",
+        "side": "NO",
+        "game": "Wisconsin vs Maryland",
+        "contract": "Wisconsin",
+        "max_price": 0.22,
+        "stake": 2.22,
+        "gone": true,
+        "sent_ct": "Sat Nov 14, 11:06 AM CT",
+        "kickoff_utc": "2026-11-14T20:00:00Z",
+        "kickoff_ct": "Sat Nov 14, 2:00 PM CT",
+        "kalshi_url": "https://kalshi.com/markets/kxncaafgame/event/kxncaafgame-26nov14wismd"
+      },
+      {
         "ticker": "KXNCAAFSPREAD-26NOV14TEXLSU-LSU5",
         "signal": "SHARP",
         "side": "NO",
@@ -442,6 +554,20 @@
         "kickoff_utc": "2026-11-14T20:30:00Z",
         "kickoff_ct": "Sat Nov 14, 2:30 PM CT",
         "kalshi_url": "https://kalshi.com/markets/kxncaaftotal/event/kxncaaftotal-26nov14mizzuga"
+      },
+      {
+        "ticker": "KXNCAAFSPREAD-26NOV14KUWVU-WVU4",
+        "signal": "SHARP",
+        "side": "NO",
+        "game": "Kansas vs West Virginia: Spread",
+        "contract": "West Virginia wins by over 3.5 points",
+        "max_price": 0.56,
+        "stake": 3.47,
+        "gone": false,
+        "sent_ct": "Sat Nov 14, 11:11 AM CT",
+        "kickoff_utc": "2026-11-14T22:30:00Z",
+        "kickoff_ct": "Sat Nov 14, 4:30 PM CT",
+        "kalshi_url": "https://kalshi.com/markets/kxncaafspread/event/kxncaafspread-26nov14kuwvu"
       },
       {
         "ticker": "KXNCAAFSPREAD-26NOV14ORSTBSU-BSU10",
