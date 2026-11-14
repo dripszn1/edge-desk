@@ -1,17 +1,18 @@
 {
-  "generated_ts": "2026-11-14T21:44:54Z",
-  "generated_ct": "Sat Nov 14, 3:44 PM CT",
+  "generated_ts": "2026-11-14T22:01:19Z",
+  "generated_ct": "Sat Nov 14, 4:01 PM CT",
   "today_ct": "2026-11-14",
   "snapshot": {
-    "ts": "2026-11-14T21:43:24Z",
-    "ct": "Sat Nov 14, 3:43 PM CT",
+    "ts": "2026-11-14T21:58:35Z",
+    "ct": "Sat Nov 14, 3:58 PM CT",
     "stale": false,
-    "markets_scanned": 4403,
+    "markets_scanned": 4304,
     "kickoff_source": "kalshi occurrence_datetime - 3h",
     "phases": {
       "CFB": {
-        "live": 2108,
-        "pregame": 1621
+        "live": 2009,
+        "pregame": 1575,
+        "unknown": 46
       },
       "NFL": {
         "pregame": 674
@@ -62,16 +63,16 @@
     "max_bet": 10.0
   },
   "signals": {
-    "weekly_ct": "Sat Nov 14, 3:44 PM CT",
+    "weekly_ct": "Sat Nov 14, 3:59 PM CT",
     "scorecards": [
       {
         "name": "SHARP shadow football",
-        "settled": 37,
-        "pnl": -14.8,
-        "roi": -0.1324,
-        "t_stat": -0.48,
+        "settled": 39,
+        "pnl": -13.71,
+        "roi": -0.1126,
+        "t_stat": -0.54,
         "verdict": "luck / no edge",
-        "why": "t=-0.48, coin-flip beat 34%"
+        "why": "t=-0.54, coin-flip beat 37%"
       },
       {
         "name": "SHARP shadow CBB",
@@ -84,18 +85,18 @@
       },
       {
         "name": "SHARP held back",
-        "settled": 211,
-        "pnl": 15.09,
-        "roi": 0.0145,
-        "t_stat": -0.77,
+        "settled": 214,
+        "pnl": 16.17,
+        "roi": 0.0154,
+        "t_stat": -0.84,
         "verdict": "luck / no edge",
-        "why": "t=-0.77, coin-flip beat 75%",
+        "why": "t=-0.84, coin-flip beat 75%",
         "by_reason": {
           "far_rung": {
-            "settled": 125,
-            "pnl": 11.09,
-            "roi": 0.0167,
-            "t_stat": -0.44,
+            "settled": 127,
+            "pnl": 7.5,
+            "roi": 0.0112,
+            "t_stat": -0.57,
             "verdict": "luck / no edge"
           },
           "far_rung+stale_line": {
@@ -113,10 +114,10 @@
             "verdict": "not enough data"
           },
           "sanity_cap": {
-            "settled": 9,
-            "pnl": 26.83,
-            "roi": 0.3305,
-            "t_stat": 0.49,
+            "settled": 10,
+            "pnl": 31.5,
+            "roi": 0.3481,
+            "t_stat": 0.55,
             "verdict": "not enough data"
           },
           "stale_line": {
@@ -161,7 +162,7 @@
           "events": 26,
           "t_by_event": -1.4,
           "stale": 0,
-          "pending": 47,
+          "pending": 51,
           "no_close": 0
         }
       },
@@ -187,7 +188,7 @@
           "events": 33,
           "t_by_event": -2.4,
           "stale": 0,
-          "pending": 135,
+          "pending": 136,
           "no_close": 2
         }
       }
@@ -244,45 +245,45 @@
         "best_manual": "RESTING_FAIR",
         "variants": {
           "EXIT_AT_TIP": {
-            "closed": 79,
-            "pnl_usd": -17.35,
-            "t_by_game": -1.84,
+            "closed": 82,
+            "pnl_usd": -22.62,
+            "t_by_game": -2.18,
             "gate_open": false
           },
           "HOLD": {
-            "closed": 79,
-            "pnl_usd": -23.7,
-            "t_by_game": -0.44,
+            "closed": 82,
+            "pnl_usd": -24.48,
+            "t_by_game": -0.46,
             "gate_open": false
           },
           "RESTING_10": {
-            "closed": 79,
-            "pnl_usd": -24.3,
-            "t_by_game": -1.06,
+            "closed": 82,
+            "pnl_usd": -23.67,
+            "t_by_game": -1.03,
             "gate_open": false
           },
           "RESTING_15": {
-            "closed": 79,
-            "pnl_usd": -31.29,
-            "t_by_game": -0.81,
+            "closed": 82,
+            "pnl_usd": -33.42,
+            "t_by_game": -0.87,
             "gate_open": false
           },
           "RESTING_5": {
-            "closed": 79,
-            "pnl_usd": -5.83,
-            "t_by_game": -0.48,
+            "closed": 82,
+            "pnl_usd": -3.84,
+            "t_by_game": -0.31,
             "gate_open": false
           },
           "RESTING_FAIR": {
-            "closed": 79,
-            "pnl_usd": -2.44,
-            "t_by_game": -0.18,
+            "closed": 82,
+            "pnl_usd": -0.72,
+            "t_by_game": -0.05,
             "gate_open": false
           },
           "TRADE": {
-            "closed": 79,
-            "pnl_usd": -31.13,
-            "t_by_game": -3.16,
+            "closed": 82,
+            "pnl_usd": -31.91,
+            "t_by_game": -3.23,
             "gate_open": false
           }
         }
@@ -1109,7 +1110,7 @@
         "contract": "Over 68.5 points",
         "max_price": 0.45,
         "stake": 5.25,
-        "gone": false,
+        "gone": true,
         "sent_ct": "Sat Nov 14, 2:49 PM CT",
         "kickoff_utc": "2026-11-14T22:30:00Z",
         "kickoff_ct": "Sat Nov 14, 4:30 PM CT",
@@ -1172,6 +1173,34 @@
         "kalshi_url": "https://kalshi.com/markets/kxncaafspread/event/kxncaafspread-26nov14orstbsu"
       },
       {
+        "ticker": "KXNCAAFTOTAL-26NOV14ORSTBSU-62",
+        "signal": "SHARP",
+        "side": "NO",
+        "game": "Oregon St. vs Boise St.: Total Points",
+        "contract": "Over 61.5 points",
+        "max_price": 0.39,
+        "stake": 2.04,
+        "gone": true,
+        "sent_ct": "Sat Nov 14, 3:49 PM CT",
+        "kickoff_utc": "2026-11-14T23:00:00Z",
+        "kickoff_ct": "Sat Nov 14, 5:00 PM CT",
+        "kalshi_url": "https://kalshi.com/markets/kxncaaftotal/event/kxncaaftotal-26nov14orstbsu"
+      },
+      {
+        "ticker": "KXNCAAFTOTAL-26NOV14ORSTBSU-65",
+        "signal": "SHARP",
+        "side": "NO",
+        "game": "Oregon St. vs Boise St.: Total Points",
+        "contract": "Over 64.5 points",
+        "max_price": 0.46,
+        "stake": 2.87,
+        "gone": true,
+        "sent_ct": "Sat Nov 14, 3:51 PM CT",
+        "kickoff_utc": "2026-11-14T23:00:00Z",
+        "kickoff_ct": "Sat Nov 14, 5:00 PM CT",
+        "kalshi_url": "https://kalshi.com/markets/kxncaaftotal/event/kxncaaftotal-26nov14orstbsu"
+      },
+      {
         "ticker": "KXNCAAFTOTAL-26NOV14ORSTBSU-66",
         "signal": "SHARP",
         "side": "YES",
@@ -1223,6 +1252,34 @@
         "stake": 2.02,
         "gone": true,
         "sent_ct": "Sat Nov 14, 12:16 PM CT",
+        "kickoff_utc": "2026-11-15T00:00:00Z",
+        "kickoff_ct": "Sat Nov 14, 6:00 PM CT",
+        "kalshi_url": "https://kalshi.com/markets/kxncaaftotal/event/kxncaaftotal-26nov14sjsuafa"
+      },
+      {
+        "ticker": "KXNCAAFTOTAL-26NOV14SJSUAFA-50",
+        "signal": "SHARP",
+        "side": "NO",
+        "game": "San Jose St. vs Air Force: Total Points",
+        "contract": "Over 49.5 points",
+        "max_price": 0.48,
+        "stake": 3.49,
+        "gone": true,
+        "sent_ct": "Sat Nov 14, 3:45 PM CT",
+        "kickoff_utc": "2026-11-15T00:00:00Z",
+        "kickoff_ct": "Sat Nov 14, 6:00 PM CT",
+        "kalshi_url": "https://kalshi.com/markets/kxncaaftotal/event/kxncaaftotal-26nov14sjsuafa"
+      },
+      {
+        "ticker": "KXNCAAFTOTAL-26NOV14SJSUAFA-51",
+        "signal": "SHARP",
+        "side": "NO",
+        "game": "San Jose St. vs Air Force: Total Points",
+        "contract": "Over 50.5 points",
+        "max_price": 0.51,
+        "stake": 5.08,
+        "gone": true,
+        "sent_ct": "Sat Nov 14, 3:50 PM CT",
         "kickoff_utc": "2026-11-15T00:00:00Z",
         "kickoff_ct": "Sat Nov 14, 6:00 PM CT",
         "kalshi_url": "https://kalshi.com/markets/kxncaaftotal/event/kxncaaftotal-26nov14sjsuafa"
