@@ -1,7 +1,7 @@
 {
   "proposals": [],
-  "generated_utc": "2026-11-14T04:08:35Z",
-  "generated_ct": "Fri Nov 13, 10:08 PM CT",
+  "generated_utc": "2026-11-14T04:24:01Z",
+  "generated_ct": "Fri Nov 13, 10:24 PM CT",
   "paper_mode": true,
   "rules": {
     "min_bets": 30,
@@ -139,7 +139,7 @@
       "bets": 148,
       "real_pnl": -34.36,
       "sim_median_pnl": -27.36,
-      "beat_pct": 0.4473
+      "beat_pct": 0.4462
     },
     "by_week": [
       {
@@ -165,11 +165,11 @@
           "sims": 10000,
           "bets": 89,
           "real_pnl": -11.91,
-          "sim_median_pnl": -9.91,
-          "beat_pct": 0.4805
+          "sim_median_pnl": -10.91,
+          "beat_pct": 0.4886
         },
         "verdict": "luck / no edge",
-        "why": "t=-1.73, coin-flip beat 48%"
+        "why": "t=-1.73, coin-flip beat 49%"
       },
       "far_rung+stale_line": {
         "settled": 26,
@@ -183,7 +183,7 @@
           "bets": 26,
           "real_pnl": -10.15,
           "sim_median_pnl": -3.15,
-          "beat_pct": 0.3434
+          "beat_pct": 0.3502
         },
         "verdict": "not enough data",
         "why": "26 settled bets (< 30)"
@@ -222,10 +222,10 @@
           "bets": 31,
           "real_pnl": -1.62,
           "sim_median_pnl": -5.62,
-          "beat_pct": 0.5491
+          "beat_pct": 0.5564
         },
         "verdict": "luck / no edge",
-        "why": "t=-0.05, coin-flip beat 55%"
+        "why": "t=-0.05, coin-flip beat 56%"
       }
     },
     "propose_widen": []
@@ -1529,7 +1529,7 @@
           "label": "MANUAL-OK",
           "closed": 139,
           "pending": 8,
-          "closed_early_not_counted": 7,
+          "closed_early_not_counted": 8,
           "pnl_usd": -70.92,
           "avg_c": -5.17,
           "win_pct": 77.0,
@@ -1541,7 +1541,7 @@
           "label": "MANUAL-OK",
           "closed": 139,
           "pending": 8,
-          "closed_early_not_counted": 7,
+          "closed_early_not_counted": 8,
           "pnl_usd": -32.84,
           "avg_c": -2.23,
           "win_pct": 76.3,
@@ -1553,7 +1553,7 @@
           "label": "MANUAL-OK",
           "closed": 139,
           "pending": 8,
-          "closed_early_not_counted": 7,
+          "closed_early_not_counted": 8,
           "pnl_usd": -100.73,
           "avg_c": -7.24,
           "win_pct": 79.9,
@@ -1565,7 +1565,7 @@
           "label": "MANUAL-OK",
           "closed": 139,
           "pending": 8,
-          "closed_early_not_counted": 7,
+          "closed_early_not_counted": 8,
           "pnl_usd": -95.54,
           "avg_c": -6.65,
           "win_pct": 80.6,
@@ -1828,62 +1828,62 @@
       "exits": {
         "HOLD": {
           "real_per_play": -0.092,
-          "placebo_mean": -0.055,
+          "placebo_mean": -0.061,
           "band95": [
-            -0.631,
-            0.515
+            -0.65,
+            0.557
           ],
-          "beats_pct": 44.6,
+          "beats_pct": 46.2,
           "verdict": "placebo matches real: the picks add nothing"
         },
         "EXIT_AT_TIP": {
           "real_per_play": -0.434,
-          "placebo_mean": -0.48,
+          "placebo_mean": -0.481,
           "band95": [
-            -0.536,
+            -0.534,
             -0.433
           ],
-          "beats_pct": 97.1,
+          "beats_pct": 96.9,
           "verdict": "picks add value"
         },
         "RESTING_5": {
           "real_per_play": -1.215,
-          "placebo_mean": -0.861,
+          "placebo_mean": -0.863,
           "band95": [
-            -1.182,
-            -0.542
+            -1.177,
+            -0.529
           ],
-          "beats_pct": 1.5,
+          "beats_pct": 1.6,
           "verdict": "picks do worse than random entries"
         },
         "RESTING_10": {
           "real_per_play": -1.032,
-          "placebo_mean": -0.817,
+          "placebo_mean": -0.82,
           "band95": [
-            -1.175,
+            -1.184,
             -0.434
           ],
-          "beats_pct": 12.7,
+          "beats_pct": 13.5,
           "verdict": "placebo matches real: the picks add nothing"
         },
         "RESTING_15": {
           "real_per_play": -0.877,
-          "placebo_mean": -0.811,
+          "placebo_mean": -0.815,
           "band95": [
-            -1.213,
-            -0.412
+            -1.226,
+            -0.396
           ],
-          "beats_pct": 38.4,
+          "beats_pct": 38.6,
           "verdict": "placebo matches real: the picks add nothing"
         },
         "RESTING_FAIR": {
           "real_per_play": -1.147,
-          "placebo_mean": -0.793,
+          "placebo_mean": -0.796,
           "band95": [
-            -1.134,
-            -0.462
+            -1.138,
+            -0.446
           ],
-          "beats_pct": 2.0,
+          "beats_pct": 1.9,
           "verdict": "picks do worse than random entries"
         }
       }
