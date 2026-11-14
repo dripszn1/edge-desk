@@ -55,6 +55,12 @@ and stands down if dev has a non-"Report" commit <15 min old.
 - Open, deliberately undecided: #53 require >=1c room below max price? (about half of alerts go out with 0c room
   and get "gone" within seconds, e.g. MINN/PSU 11-13 7:15 PM). Decide on weekend data.
 
+## Verdict read #1 (11-14 2:49 PM CT, mid-slate; football 53 closed / 14 games, so thresholds met)
+- Rule 1 picks: 155 football plays / 33 games (one per contract, alerted + held back) vs Kalshi's close: −1.23¢ after fee (raw +0.03¢), t −1.31 by game → INCONCLUSIVE: one more week of data, bug fixes only, no new features. Backlog #64 (maker-entry test) moved to Parked.
+- Rule 2 exits (53 closed, 14 games): none works. Best Auto Sell at fair +$5.30 (t 0.6), Auto Sell +5¢ +$1.04 (t 0.1); hold −$15.51, sell at tip −$15.79, Auto Sell +10¢ −$9.14. Placebo comparison still on 19 plays (hourly cache), re-read later.
+- Rule 4 odds plan: picks show no edge yet → don't renew unless rule 1 turns positive.
+- Re-read after Sunday's games settle.
+
 ## Verdict rules (pre-registered 11-13, BEFORE the weekend's football results; don't bend them after)
 Read once football has >=30 closed plays across >=10 games (alerted + held back within the caps):
 1. **Picks**: football entries vs Kalshi's close after fee, t by game.
