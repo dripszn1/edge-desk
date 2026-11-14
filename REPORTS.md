@@ -1,5 +1,12 @@
 # Reports (newest first)
 
+## 2026-11-14 (builder, 07:45Z run)
+- Nothing to build: backlog #1–#60 all done; latest runs show nothing broken (collect run 91 green, settlement 274 pending / 0 overdue, last live run 3,152 fast-lane ticks, 0 throttled). Nothing shipped, nothing to merge.
+- Tests: 449/449 green on dev rebased onto main.
+- Honest results (football, Fri night HOU/COLO + ILL/UCLA now graded): 18 closed plays from 8 games. Picks vs Kalshi's close after fee unchanged: shadow −1.3¢ (6 plays), held back −1.5¢ (14, t −2.1 by game). Exits on the same 18: hold +$6.07 (t 0.2), sell at tip −$4.95 (t −3.6), Auto Sell at fair +$4.69, Auto Sell +10¢ +$13.89 (t 1.9), +15¢ +$18.35 (t 2.0); best bracket (15/10, API-only) +$2.31. Vs random entries (17 plays): hold beats 92%, Auto Sell +10¢ beats 100%. Small sample, mostly from one game's far rungs. No Verdict rule threshold met: it needs ≥30 closed across ≥10 games, and Saturday's games settle next.
+- Watchdog: collect was 2h11m old, so I dispatched collect.yml (run 91 succeeded, 07:47Z snapshot) and live.yml (outside the Sat 10 AM CT window, so its guard exited). Odds credits 19,442 of 20,000.
+- Needs Emerson: nothing.
+
 ## 2026-11-14 (builder, 04:45Z run)
 - Nothing to build: backlog #1–#60 all done; latest runs show nothing broken. The last CBB push (Duke AUTO SELL HIT, 01:31Z) came before the 01:43Z auto-merge that stops them; live restarted itself on the new code at 01:51Z ("code updated") and no CBB push since. Settlement 288 pending / 0 overdue. Nothing shipped, nothing to merge.
 - Tests: 449/449 green on dev rebased onto main.
