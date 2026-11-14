@@ -1,17 +1,17 @@
 {
-  "generated_ts": "2026-11-14T18:20:01Z",
-  "generated_ct": "Sat Nov 14, 12:20 PM CT",
+  "generated_ts": "2026-11-14T18:34:59Z",
+  "generated_ct": "Sat Nov 14, 12:34 PM CT",
   "today_ct": "2026-11-14",
   "snapshot": {
-    "ts": "2026-11-14T18:17:57Z",
-    "ct": "Sat Nov 14, 12:17 PM CT",
+    "ts": "2026-11-14T18:33:11Z",
+    "ct": "Sat Nov 14, 12:33 PM CT",
     "stale": false,
-    "markets_scanned": 5641,
+    "markets_scanned": 5647,
     "kickoff_source": "kalshi occurrence_datetime - 3h",
     "phases": {
       "CFB": {
-        "live": 1454,
-        "pregame": 3513
+        "live": 1512,
+        "pregame": 3461
       },
       "NFL": {
         "pregame": 674
@@ -62,7 +62,7 @@
     "max_bet": 10.0
   },
   "signals": {
-    "weekly_ct": "Sat Nov 14, 12:18 PM CT",
+    "weekly_ct": "Sat Nov 14, 12:33 PM CT",
     "scorecards": [
       {
         "name": "SHARP shadow football",
@@ -89,7 +89,7 @@
         "roi": 0.0178,
         "t_stat": -0.14,
         "verdict": "luck / no edge",
-        "why": "t=-0.14, coin-flip beat 78%",
+        "why": "t=-0.14, coin-flip beat 79%",
         "by_reason": {
           "far_rung": {
             "settled": 101,
@@ -161,7 +161,7 @@
           "events": 12,
           "t_by_event": -2.71,
           "stale": 0,
-          "pending": 66,
+          "pending": 71,
           "no_close": 0
         }
       },
@@ -187,7 +187,7 @@
           "events": 14,
           "t_by_event": -2.84,
           "stale": 0,
-          "pending": 158,
+          "pending": 168,
           "no_close": 2
         }
       }
@@ -388,6 +388,34 @@
         "kalshi_url": "https://kalshi.com/markets/kxncaafgame/event/kxncaafgame-26nov14arstccar"
       },
       {
+        "ticker": "KXNCAAFGAME-26NOV14ARSTCCAR-ARST",
+        "signal": "SHARP",
+        "side": "YES",
+        "game": "Arkansas St. vs Coastal Carolina",
+        "contract": "Arkansas St.",
+        "max_price": 0.44,
+        "stake": 7.14,
+        "gone": false,
+        "sent_ct": "Sat Nov 14, 12:20 PM CT",
+        "kickoff_utc": "2026-11-14T20:00:00Z",
+        "kickoff_ct": "Sat Nov 14, 2:00 PM CT",
+        "kalshi_url": "https://kalshi.com/markets/kxncaafgame/event/kxncaafgame-26nov14arstccar"
+      },
+      {
+        "ticker": "KXNCAAFGAME-26NOV14ARSTCCAR-CCAR",
+        "signal": "SHARP",
+        "side": "NO",
+        "game": "Arkansas St. vs Coastal Carolina",
+        "contract": "Coastal Carolina",
+        "max_price": 0.44,
+        "stake": 5.13,
+        "gone": false,
+        "sent_ct": "Sat Nov 14, 12:20 PM CT",
+        "kickoff_utc": "2026-11-14T20:00:00Z",
+        "kickoff_ct": "Sat Nov 14, 2:00 PM CT",
+        "kalshi_url": "https://kalshi.com/markets/kxncaafgame/event/kxncaafgame-26nov14arstccar"
+      },
+      {
         "ticker": "KXNCAAFGAME-26NOV14CINISU-CIN",
         "signal": "SHARP",
         "side": "NO",
@@ -453,6 +481,20 @@
         "stake": 8.19,
         "gone": true,
         "sent_ct": "Sat Nov 14, 12:09 PM CT",
+        "kickoff_utc": "2026-11-14T20:00:00Z",
+        "kickoff_ct": "Sat Nov 14, 2:00 PM CT",
+        "kalshi_url": "https://kalshi.com/markets/kxncaafgame/event/kxncaafgame-26nov14ecuchar"
+      },
+      {
+        "ticker": "KXNCAAFGAME-26NOV14ECUCHAR-ECU",
+        "signal": "SHARP",
+        "side": "YES",
+        "game": "East Carolina vs Charlotte",
+        "contract": "East Carolina",
+        "max_price": 0.74,
+        "stake": 6.79,
+        "gone": true,
+        "sent_ct": "Sat Nov 14, 12:24 PM CT",
         "kickoff_utc": "2026-11-14T20:00:00Z",
         "kickoff_ct": "Sat Nov 14, 2:00 PM CT",
         "kalshi_url": "https://kalshi.com/markets/kxncaafgame/event/kxncaafgame-26nov14ecuchar"
@@ -586,6 +628,20 @@
       {
         "ticker": "KXNCAAFGAME-26NOV14UABTEM-TEM",
         "signal": "SHARP",
+        "side": "NO",
+        "game": "UAB vs Temple",
+        "contract": "Temple",
+        "max_price": 0.39,
+        "stake": 2.44,
+        "gone": true,
+        "sent_ct": "Sat Nov 14, 12:22 PM CT",
+        "kickoff_utc": "2026-11-14T20:00:00Z",
+        "kickoff_ct": "Sat Nov 14, 2:00 PM CT",
+        "kalshi_url": "https://kalshi.com/markets/kxncaafgame/event/kxncaafgame-26nov14uabtem"
+      },
+      {
+        "ticker": "KXNCAAFGAME-26NOV14UABTEM-TEM",
+        "signal": "SHARP",
         "side": "YES",
         "game": "UAB vs Temple",
         "contract": "Temple",
@@ -607,6 +663,20 @@
         "stake": 6.34,
         "gone": true,
         "sent_ct": "Sat Nov 14, 12:08 PM CT",
+        "kickoff_utc": "2026-11-14T20:00:00Z",
+        "kickoff_ct": "Sat Nov 14, 2:00 PM CT",
+        "kalshi_url": "https://kalshi.com/markets/kxncaafgame/event/kxncaafgame-26nov14uabtem"
+      },
+      {
+        "ticker": "KXNCAAFGAME-26NOV14UABTEM-UAB",
+        "signal": "SHARP",
+        "side": "YES",
+        "game": "UAB vs Temple",
+        "contract": "UAB",
+        "max_price": 0.39,
+        "stake": 3.87,
+        "gone": true,
+        "sent_ct": "Sat Nov 14, 12:24 PM CT",
         "kickoff_utc": "2026-11-14T20:00:00Z",
         "kickoff_ct": "Sat Nov 14, 2:00 PM CT",
         "kalshi_url": "https://kalshi.com/markets/kxncaafgame/event/kxncaafgame-26nov14uabtem"
@@ -815,7 +885,7 @@
         "contract": "Over 42.5 points",
         "max_price": 0.32,
         "stake": 2.02,
-        "gone": false,
+        "gone": true,
         "sent_ct": "Sat Nov 14, 12:16 PM CT",
         "kickoff_utc": "2026-11-15T00:00:00Z",
         "kickoff_ct": "Sat Nov 14, 6:00 PM CT",
