@@ -180,6 +180,18 @@ def baseline_line(weekly: dict | None, now) -> list[str]:
     return baseline.digest_line(b) if isinstance(b, dict) else []
 
 
+def maker_line(weekly: dict | None, now) -> list[str]:
+    """#64: limit-order (maker) entries vs taking the ask. A report stamped after `now` is ignored."""
+    from . import maker
+    try:
+        if not weekly or _ts(weekly.get("generated_utc")) > now:
+            return []
+    except (ValueError, TypeError):
+        return []
+    m = weekly.get("maker_entry")
+    return maker.digest_line(m) if isinstance(m, dict) else []
+
+
 def status_line(latest: dict, odds_state: dict, now) -> str:
     snap = _age_min((latest or {}).get("snapshot_ts"), now)
     pulls = (odds_state or {}).get("last_pull") or {}
@@ -240,7 +252,7 @@ def build(latest: dict, bets: dict, odds_state: dict, now, clv: pd.DataFrame | N
             body.append(f"- +{len(p) - MAX_PLAYS} more in data/flags/latest.json")
     rc = (["", f"Settled in the last {RECAP_H}h:"] + recap(bets, now)
           + held_back_by_reason(bets.get("SHARP tracked (held back)"), now)
-          + clv_line(clv) + trades_line(trades_df) + baseline_line(weekly, now))
+          + clv_line(clv) + trades_line(trades_df) + baseline_line(weekly, now) + maker_line(weekly, now))
     tail = ["", status_line(latest, odds_state, now) + settlement_note(weekly, now)]
     lines = head + body + rc + tail
     if len(lines) > MAX_LINES:                       # trim plays first, keep recap + status
