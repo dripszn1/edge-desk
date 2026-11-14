@@ -1,4 +1,4 @@
-# edge-desk digest, Sat Nov 14, 9:52 AM CT
+# edge-desk digest, Sat Nov 14, 10:16 AM CT
 
 Paper only, nothing is placed. Plays kicking off in the next 36h:
 - SHARP shadow: Stanford vs Virginia Tech | YES Virginia Tech wins by over 17.5 points @ 45¢, fair 50¢, edge 3.2¢ after fees | $2.81 paper | Sat Nov 14, 6:30 PM CT | [Kalshi](https://kalshi.com/markets/kxncaafspread/event/kxncaafspread-26nov14stanvt)
@@ -14,6 +14,6 @@ Settled in the last 24h:
   held back by reason: far_rung 63-38 $+30.60 · far_rung+stale_line 12-14 $-10.15 · kalshi_first 1-0 $+7.17 · sanity_cap 0-2 $-10.68 · stale_line 14-17 $-1.62
   vs Kalshi close after fee: shadow CBB -3.0c (0% of 4, 4 games) · shadow football -1.3c (50% of 6, 5 games) · held back CBB -2.4c (11% of 137, 26 games) · held back football -1.5c (21% of 14, 6 games)
   exits compared: football (18 done): hold $+6.07, sell at tip $-4.95, auto-sell at fair $+4.69, auto-sell +10c $+13.89 · CBB (145 done): hold $+8.87, sell at tip $-70.31, auto-sell at fair $-92.74, auto-sell +10c $-66.25
-  picks vs random entries, $/play: football (17 plays): hold $+0.44 vs $-0.63 (beats 92%), auto-sell +10c $+0.31 vs $-0.64 (beats 99%) · CBB (139 plays): hold $-0.09 vs $-0.06 (beats 46%), auto-sell +10c $-1.03 vs $-0.82 (beats 14%)
+  picks vs random entries, $/play: football (17 plays): hold $+0.44 vs $-0.64 (beats 92%), auto-sell +10c $+0.31 vs $-0.64 (beats 100%) · CBB (139 plays): hold $-0.09 vs $-0.06 (beats 46%), auto-sell +10c $-1.03 vs $-0.82 (beats 14%)
 
-Status: Kalshi data 3m old (ok); sharp odds 3m old; odds credits left 19412 of 20000; gates: MODEL NFL closed, MODEL CFB closed, SHARP NFL closed, SHARP CFB closed, SHARP NFL ML closed, SHARP CFB ML closed
+Status: Kalshi data 2m old (ok); sharp odds 2m old; odds credits left 19397 of 20000; gates: MODEL NFL closed, MODEL CFB closed, SHARP NFL closed, SHARP CFB closed, SHARP NFL ML closed, SHARP CFB ML closed
