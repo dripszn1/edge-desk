@@ -1,4 +1,4 @@
-# edge-desk digest, Fri Nov 13, 11:31 PM CT
+# edge-desk digest, Fri Nov 13, 11:36 PM CT
 
 Paper only, nothing is placed. Plays kicking off in the next 36h:
 - SHARP shadow: Missouri vs Georgia | NO Over 42.5 points @ 34¢, fair 39¢, edge 3.4¢ after fees | $2.14 paper | Sat Nov 14, 2:30 PM CT | [Kalshi](https://kalshi.com/markets/kxncaaftotal/event/kxncaaftotal-26nov14mizzuga)
@@ -15,4 +15,4 @@ Settled in the last 24h:
   exits compared: football (10 done): hold $-19.90, sell at tip $-2.43, auto-sell at fair $+1.91, auto-sell +10c $+5.47 · CBB (145 done): hold $+8.87, sell at tip $-70.31, auto-sell at fair $-92.74, auto-sell +10c $-66.25
   picks vs random entries, $/play: football (9 plays): hold $-2.05 vs $-0.89 (beats 7%), auto-sell +10c $-0.35 vs $-0.67 (beats 78%) · CBB (139 plays): hold $-0.09 vs $-0.06 (beats 46%), auto-sell +10c $-1.03 vs $-0.82 (beats 14%)
 
-Status: Kalshi data 1m old (ok); sharp odds 7m old; odds credits left 19451 of 20000; gates: MODEL NFL closed, MODEL CFB closed, SHARP NFL closed, SHARP CFB closed, SHARP NFL ML closed, SHARP CFB ML closed
+Status: Kalshi data 2m old (ok); sharp odds 2m old; odds credits left 19448 of 20000; gates: MODEL NFL closed, MODEL CFB closed, SHARP NFL closed, SHARP CFB closed, SHARP NFL ML closed, SHARP CFB ML closed
