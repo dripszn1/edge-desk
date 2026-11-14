@@ -1,17 +1,17 @@
 {
-  "generated_ts": "2026-11-14T18:50:29Z",
-  "generated_ct": "Sat Nov 14, 12:50 PM CT",
+  "generated_ts": "2026-11-14T19:06:00Z",
+  "generated_ct": "Sat Nov 14, 1:06 PM CT",
   "today_ct": "2026-11-14",
   "snapshot": {
-    "ts": "2026-11-14T18:48:39Z",
-    "ct": "Sat Nov 14, 12:48 PM CT",
+    "ts": "2026-11-14T19:04:09Z",
+    "ct": "Sat Nov 14, 1:04 PM CT",
     "stale": false,
     "markets_scanned": 5654,
     "kickoff_source": "kalshi occurrence_datetime - 3h",
     "phases": {
       "CFB": {
-        "live": 1519,
-        "pregame": 3461
+        "live": 1978,
+        "pregame": 3002
       },
       "NFL": {
         "pregame": 674
@@ -62,7 +62,7 @@
     "max_bet": 10.0
   },
   "signals": {
-    "weekly_ct": "Sat Nov 14, 12:49 PM CT",
+    "weekly_ct": "Sat Nov 14, 1:04 PM CT",
     "scorecards": [
       {
         "name": "SHARP shadow football",
@@ -153,15 +153,15 @@
           "no_close": 0
         },
         "football": {
-          "n": 22,
-          "avg_clv_c": -1.64,
-          "avg_raw_c": -0.18,
-          "beat_close_pct": 31.8,
-          "t_stat": -3.59,
-          "events": 12,
-          "t_by_event": -2.71,
+          "n": 24,
+          "avg_clv_c": -1.8,
+          "avg_raw_c": -0.38,
+          "beat_close_pct": 33.3,
+          "t_stat": -3.71,
+          "events": 13,
+          "t_by_event": -3.1,
           "stale": 0,
-          "pending": 74,
+          "pending": 72,
           "no_close": 0
         }
       },
@@ -179,15 +179,15 @@
           "no_close": 8
         },
         "football": {
-          "n": 51,
-          "avg_clv_c": -1.24,
-          "avg_raw_c": -0.07,
-          "beat_close_pct": 31.4,
-          "t_stat": -4.75,
-          "events": 14,
-          "t_by_event": -2.84,
+          "n": 63,
+          "avg_clv_c": -1.13,
+          "avg_raw_c": 0.01,
+          "beat_close_pct": 31.7,
+          "t_stat": -5.05,
+          "events": 16,
+          "t_by_event": -3.06,
           "stale": 0,
-          "pending": 176,
+          "pending": 170,
           "no_close": 2
         }
       }
@@ -451,7 +451,7 @@
         "contract": "Coastal Carolina",
         "max_price": 0.46,
         "stake": 2.39,
-        "gone": false,
+        "gone": true,
         "sent_ct": "Sat Nov 14, 12:47 PM CT",
         "kickoff_utc": "2026-11-14T20:00:00Z",
         "kickoff_ct": "Sat Nov 14, 2:00 PM CT",
