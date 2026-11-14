@@ -1,5 +1,12 @@
 # Reports (newest first)
 
+## 2026-11-14 (builder, 16:45Z run)
+- Nothing to build: backlog #1–#60 all done; latest runs show nothing broken (collect run 99 green, live run 64 in progress since 15:49Z with 447 fast-lane ticks / 0 throttled, alerts quote→send 4–6 s, settlement 289 pending / 0 overdue). Nothing shipped, nothing to merge.
+- Tests: 449/449 green on dev rebased onto main.
+- Honest results (football, no new settlements since Fri night): 18 closed plays from 8 games. Picks vs Kalshi's close after fee: shadow −1.3¢ (6), held back −1.5¢ (14). Exits on the same 18: hold +$6.07, sell at tip −$4.95, Auto Sell at fair +$4.69, Auto Sell +10¢ +$13.89; vs random entries (17 plays) hold beats 92%, Auto Sell +10¢ beats 100%. No Verdict rule threshold met (needs ≥30 closed across ≥10 games; today's CFB slate settles tonight). Today's CFB alerts so far: VT −17.5 (live), WIS/MD Over 45 got "line moved, don't chase" 4 min after its push.
+- Watchdog: live run in progress and collect 55 min old but standing down for live by design, so I dispatched nothing. Odds credits 19,388 of 20,000.
+- Needs Emerson: nothing.
+
 ## 2026-11-14 (builder, 13:45Z run)
 - Nothing to build: backlog #1–#60 all done; latest runs show nothing broken (collect run 95 green, 13:48Z snapshot, settlement 281 pending / 0 overdue). Nothing shipped, nothing to merge.
 - Tests: 449/449 green on dev merged with main.
