@@ -1,4 +1,4 @@
-# edge-desk digest, Sat Nov 14, 3:11 PM CT
+# edge-desk digest, Sat Nov 14, 3:12 PM CT
 
 Paper only, nothing is placed. Plays kicking off in the next 36h:
 - SHARP shadow: Kansas vs West Virginia | YES West Virginia wins by over 5.5 points @ 26¢, fair 35¢, edge 7.8¢ after fees | $4.65 paper | Sat Nov 14, 4:30 PM CT | [Kalshi](https://kalshi.com/markets/kxncaafspread/event/kxncaafspread-26nov14kuwvu)
@@ -16,5 +16,6 @@ Settled in the last 24h:
   vs Kalshi close after fee: shadow CBB -3.0c (0% of 4, 4 games) · shadow football -1.9c (39% of 57, 25 games) · held back CBB -2.4c (11% of 137, 26 games) · held back football -1.9c (36% of 135, 32 games)
   exits compared: football (74 done): hold $-22.23, sell at tip $-18.62, auto-sell at fair $-3.89, auto-sell +10c $-27.25 · CBB (145 done): hold $+8.87, sell at tip $-70.31, auto-sell at fair $-92.74, auto-sell +10c $-66.25
   picks vs random entries, $/play: football (19 plays): hold $+0.58 vs $-0.80 (beats 96%), auto-sell +10c $+0.15 vs $-0.93 (beats 100%) · CBB (139 plays): hold $-0.09 vs $-0.06 (beats 46%), auto-sell +10c $-1.03 vs $-0.82 (beats 15%)
+  limit-order entries (paper): NFL: 21/22 filled · CFB: 41/131 filled, vs close -1.0c, hold $-19.77, auto-sell +10c $-3.65 (13 done)
 
-Status: Kalshi data 1m old (ok); sharp odds 1m old; odds credits left 19211 of 20000; gates: MODEL NFL closed, MODEL CFB closed, SHARP NFL closed, SHARP CFB closed, SHARP NFL ML closed, SHARP CFB ML closed
+Status: Kalshi data 2m old (ok); sharp odds 2m old; odds credits left 19211 of 20000; gates: MODEL NFL closed, MODEL CFB closed, SHARP NFL closed, SHARP CFB closed, SHARP NFL ML closed, SHARP CFB ML closed
