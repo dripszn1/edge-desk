@@ -1,10 +1,10 @@
 {
-  "generated_ts": "2026-11-14T14:50:43Z",
-  "generated_ct": "Sat Nov 14, 8:50 AM CT",
+  "generated_ts": "2026-11-14T15:20:45Z",
+  "generated_ct": "Sat Nov 14, 9:20 AM CT",
   "today_ct": "2026-11-14",
   "snapshot": {
-    "ts": "2026-11-14T14:49:02Z",
-    "ct": "Sat Nov 14, 8:49 AM CT",
+    "ts": "2026-11-14T15:19:11Z",
+    "ct": "Sat Nov 14, 9:19 AM CT",
     "stale": false,
     "markets_scanned": 5614,
     "kickoff_source": "kalshi occurrence_datetime - 3h",
@@ -61,7 +61,7 @@
     "max_bet": 10.0
   },
   "signals": {
-    "weekly_ct": "Sat Nov 14, 8:49 AM CT",
+    "weekly_ct": "Sat Nov 14, 9:19 AM CT",
     "scorecards": [
       {
         "name": "SHARP shadow football",
@@ -506,7 +506,7 @@
         "contract": "Buffalo wins by over 2.5 points",
         "max_price": 0.25,
         "stake": 1.58,
-        "gone": false,
+        "gone": true,
         "sent_ct": "Fri Nov 13, 5:30 PM CT",
         "kickoff_utc": "2026-11-15T18:00:00Z",
         "kickoff_ct": "Sun Nov 15, 12:00 PM CT",
