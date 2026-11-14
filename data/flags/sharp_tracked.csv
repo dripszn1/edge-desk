@@ -29104,3 +29104,141 @@ snapshot_ts,league,event,ticker,side,price,fair,edge,sharp_line,odds_fetched_ts,
 2026-11-14T17:47:01Z,CFB,North Dakota St. vs Hawai'i: Total Points,KXNCAAFTOTAL-26NOV14NDSUHAW-27,NO,0.17,0.2114,0.0314,39.5,2026-11-14T17:47:00Z,rung far from sharp line (unvalidated range)
 2026-11-14T17:47:01Z,CFB,Wake Forest vs SMU,KXNCAAFGAME-26NOV14WAKESMU-SMU,YES,0.27,0.5528,0.269,,2026-11-14T17:01:04Z,edge above sanity cap
 2026-11-14T17:47:01Z,CFB,Wake Forest vs SMU,KXNCAAFGAME-26NOV14WAKESMU-WAKE,NO,0.28,0.5528,0.2586,,2026-11-14T17:01:04Z,edge above sanity cap
+2026-11-14T17:48:56Z,CFB,Cincinnati vs Iowa St.,KXNCAAFGAME-26NOV14CINISU-ISU,NO,0.06,0.4631,0.399,,2026-11-14T16:56:04Z,edge above sanity cap
+2026-11-14T17:48:56Z,CFB,Cincinnati vs Iowa St.,KXNCAAFGAME-26NOV14CINISU-CIN,YES,0.06,0.4631,0.399,,2026-11-14T16:56:04Z,edge above sanity cap
+2026-11-14T17:48:56Z,CFB,Wake Forest vs SMU,KXNCAAFGAME-26NOV14WAKESMU-SMU,YES,0.21,0.5528,0.3312,,2026-11-14T17:01:04Z,edge above sanity cap
+2026-11-14T17:48:56Z,CFB,Wake Forest vs SMU,KXNCAAFGAME-26NOV14WAKESMU-WAKE,NO,0.21,0.5528,0.3312,,2026-11-14T17:01:04Z,edge above sanity cap
+2026-11-14T17:48:56Z,CFB,Wisconsin vs Maryland,KXNCAAFGAME-26NOV14WISMD-MD,YES,0.1,0.2654,0.1591,,2026-11-14T17:01:04Z,edge above sanity cap
+2026-11-14T17:48:56Z,CFB,Wisconsin vs Maryland,KXNCAAFGAME-26NOV14WISMD-WIS,NO,0.1,0.2654,0.1591,,2026-11-14T17:01:04Z,edge above sanity cap
+2026-11-14T17:49:56Z,CFB,Cincinnati vs Iowa St.,KXNCAAFGAME-26NOV14CINISU-ISU,NO,0.08,0.4631,0.3778,,2026-11-14T16:56:04Z,edge above sanity cap
+2026-11-14T17:49:56Z,CFB,Cincinnati vs Iowa St.,KXNCAAFGAME-26NOV14CINISU-CIN,YES,0.07,0.4631,0.3885,,2026-11-14T16:56:04Z,edge above sanity cap
+2026-11-14T17:50:26Z,CFB,Cincinnati vs Iowa St.,KXNCAAFGAME-26NOV14CINISU-CIN,YES,0.08,0.4631,0.3778,,2026-11-14T16:56:04Z,edge above sanity cap
+2026-11-14T17:50:26Z,CFB,Wisconsin vs Maryland,KXNCAAFGAME-26NOV14WISMD-MD,YES,0.09,0.2654,0.1696,,2026-11-14T17:01:04Z,edge above sanity cap
+2026-11-14T17:50:26Z,CFB,Wisconsin vs Maryland,KXNCAAFGAME-26NOV14WISMD-WIS,NO,0.09,0.2654,0.1696,,2026-11-14T17:01:04Z,edge above sanity cap
+2026-11-14T17:51:26Z,CFB,Cincinnati vs Iowa St.,KXNCAAFGAME-26NOV14CINISU-ISU,NO,0.09,0.4631,0.3673,,2026-11-14T16:56:04Z,edge above sanity cap
+2026-11-14T17:51:26Z,CFB,Cincinnati vs Iowa St.,KXNCAAFGAME-26NOV14CINISU-CIN,YES,0.09,0.4631,0.3673,,2026-11-14T16:56:04Z,edge above sanity cap
+2026-11-14T17:51:56Z,CFB,Cincinnati vs Iowa St.,KXNCAAFGAME-26NOV14CINISU-ISU,NO,0.08,0.4631,0.3778,,2026-11-14T16:56:04Z,edge above sanity cap
+2026-11-14T17:51:56Z,CFB,Cincinnati vs Iowa St.,KXNCAAFGAME-26NOV14CINISU-CIN,YES,0.08,0.4631,0.3779,,2026-11-14T16:56:04Z,edge above sanity cap
+2026-11-14T17:51:56Z,CFB,Wisconsin vs Maryland,KXNCAAFGAME-26NOV14WISMD-MD,YES,0.08,0.2654,0.1802,,2026-11-14T17:01:04Z,edge above sanity cap
+2026-11-14T17:51:56Z,CFB,Wisconsin vs Maryland,KXNCAAFGAME-26NOV14WISMD-WIS,NO,0.08,0.2654,0.1802,,2026-11-14T17:01:04Z,edge above sanity cap
+2026-11-14T17:52:28Z,CFB,Kansas St. vs TCU: Spread,KXNCAAFSPREAD-26NOV14KSUTCU-TCU28,YES,0.17,0.2112,0.0312,13.5,2026-11-14T17:52:26Z,rung far from sharp line (unvalidated range)
+2026-11-14T17:52:28Z,CFB,Kansas St. vs TCU: Spread,KXNCAAFSPREAD-26NOV14KSUTCU-TCU25,YES,0.21,0.2542,0.0326,13.5,2026-11-14T17:52:26Z,rung far from sharp line (unvalidated range)
+2026-11-14T17:52:28Z,CFB,Kansas St. vs TCU: Spread,KXNCAAFSPREAD-26NOV14KSUTCU-TCU22,YES,0.27,0.315,0.03,13.5,2026-11-14T17:52:26Z,rung far from sharp line (unvalidated range)
+2026-11-14T17:52:28Z,CFB,Boston College vs Notre Dame: Spread,KXNCAAFSPREAD-26NOV14BCND-ND46,YES,0.14,0.1823,0.0331,29.0,2026-11-14T17:52:26Z,rung far from sharp line (unvalidated range)
+2026-11-14T17:52:28Z,CFB,Missouri vs Georgia: Spread,KXNCAAFSPREAD-26NOV14MIZZUGA-UGA31,YES,0.17,0.2162,0.0362,16.5,2026-11-14T17:52:26Z,rung far from sharp line (unvalidated range)
+2026-11-14T17:52:28Z,CFB,Missouri vs Georgia: Spread,KXNCAAFSPREAD-26NOV14MIZZUGA-UGA28,YES,0.23,0.2791,0.0362,16.5,2026-11-14T17:52:26Z,rung far from sharp line (unvalidated range)
+2026-11-14T17:52:28Z,CFB,Kansas St. vs TCU: Total Points,KXNCAAFTOTAL-26NOV14KSUTCU-26,NO,0.07,0.1207,0.0459,44.5,2026-11-14T17:52:26Z,rung far from sharp line (unvalidated range)
+2026-11-14T17:52:28Z,CFB,Kansas St. vs TCU: Total Points,KXNCAAFTOTAL-26NOV14KSUTCU-29,NO,0.11,0.1619,0.0446,44.5,2026-11-14T17:52:26Z,rung far from sharp line (unvalidated range)
+2026-11-14T17:52:28Z,CFB,Tennessee vs Texas A&M: Total Points,KXNCAAFTOTAL-26NOV14TENNTXAM-26,NO,0.09,0.1335,0.0374,43.5,2026-11-14T17:52:26Z,rung far from sharp line (unvalidated range)
+2026-11-14T17:52:28Z,CFB,Tennessee vs Texas A&M: Total Points,KXNCAAFTOTAL-26NOV14TENNTXAM-29,NO,0.13,0.1775,0.0395,43.5,2026-11-14T17:52:26Z,rung far from sharp line (unvalidated range)
+2026-11-14T17:52:28Z,CFB,Michigan vs Oregon: Total Points,KXNCAAFTOTAL-26NOV14MICHORE-22,NO,0.08,0.127,0.0415,40.0,2026-11-14T17:52:26Z,rung far from sharp line (unvalidated range)
+2026-11-14T17:52:28Z,CFB,Michigan vs Oregon: Total Points,KXNCAAFTOTAL-26NOV14MICHORE-25,NO,0.13,0.1696,0.0313,40.0,2026-11-14T17:52:26Z,rung far from sharp line (unvalidated range)
+2026-11-14T17:52:28Z,CFB,Missouri vs Georgia: Total Points,KXNCAAFTOTAL-26NOV14MIZZUGA-31,NO,0.1,0.1403,0.0336,48.0,2026-11-14T17:52:26Z,rung far from sharp line (unvalidated range)
+2026-11-14T17:52:28Z,CFB,Nevada vs Northern Illinois: Total Points,KXNCAAFTOTAL-26NOV14NEVNIU-27,NO,0.06,0.0977,0.0334,47.5,2026-11-14T17:52:26Z,rung far from sharp line (unvalidated range)
+2026-11-14T17:52:28Z,CFB,Washington vs Michigan St.: Total Points,KXNCAAFTOTAL-26NOV14WASHMSU-24,NO,0.07,0.1088,0.034,43.5,2026-11-14T17:52:26Z,rung far from sharp line (unvalidated range)
+2026-11-14T17:52:28Z,CFB,Washington vs Michigan St.: Total Points,KXNCAAFTOTAL-26NOV14WASHMSU-27,NO,0.1,0.1473,0.0406,43.5,2026-11-14T17:52:26Z,rung far from sharp line (unvalidated range)
+2026-11-14T17:52:28Z,CFB,Washington vs Michigan St.: Total Points,KXNCAAFTOTAL-26NOV14WASHMSU-30,NO,0.15,0.194,0.0348,43.5,2026-11-14T17:52:26Z,rung far from sharp line (unvalidated range)
+2026-11-14T17:52:28Z,CFB,Minnesota vs Penn St.: Total Points,KXNCAAFTOTAL-26NOV14MINNPSU-24,NO,0.08,0.127,0.0415,42.0,2026-11-14T17:52:26Z,rung far from sharp line (unvalidated range)
+2026-11-14T17:52:28Z,CFB,Minnesota vs Penn St.: Total Points,KXNCAAFTOTAL-26NOV14MINNPSU-27,NO,0.12,0.1696,0.042,42.0,2026-11-14T17:52:26Z,rung far from sharp line (unvalidated range)
+2026-11-14T17:52:28Z,CFB,Minnesota vs Penn St.: Total Points,KXNCAAFTOTAL-26NOV14MINNPSU-30,NO,0.16,0.2204,0.051,42.0,2026-11-14T17:52:26Z,rung far from sharp line (unvalidated range)
+2026-11-14T17:52:28Z,CFB,San Jose St. vs Air Force: Total Points,KXNCAAFTOTAL-26NOV14SJSUAFA-31,NO,0.1,0.1403,0.0336,48.0,2026-11-14T17:52:26Z,rung far from sharp line (unvalidated range)
+2026-11-14T17:52:28Z,CFB,North Dakota St. vs Hawai'i: Total Points,KXNCAAFTOTAL-26NOV14NDSUHAW-21,NO,0.08,0.1207,0.0351,39.5,2026-11-14T17:52:26Z,rung far from sharp line (unvalidated range)
+2026-11-14T17:52:28Z,CFB,North Dakota St. vs Hawai'i: Total Points,KXNCAAFTOTAL-26NOV14NDSUHAW-24,NO,0.12,0.1619,0.0341,39.5,2026-11-14T17:52:26Z,rung far from sharp line (unvalidated range)
+2026-11-14T17:52:28Z,CFB,North Dakota St. vs Hawai'i: Total Points,KXNCAAFTOTAL-26NOV14NDSUHAW-27,NO,0.17,0.2114,0.0314,39.5,2026-11-14T17:52:26Z,rung far from sharp line (unvalidated range)
+2026-11-14T17:52:28Z,CFB,Wisconsin vs Maryland,KXNCAAFGAME-26NOV14WISMD-MD,YES,0.09,0.2654,0.1696,,2026-11-14T17:01:04Z,edge above sanity cap
+2026-11-14T17:52:28Z,CFB,Wisconsin vs Maryland,KXNCAAFGAME-26NOV14WISMD-WIS,NO,0.09,0.2654,0.1696,,2026-11-14T17:01:04Z,edge above sanity cap
+2026-11-14T17:53:26Z,CFB,Cincinnati vs Iowa St.,KXNCAAFGAME-26NOV14CINISU-ISU,NO,0.05,0.4631,0.4097,,2026-11-14T16:56:04Z,edge above sanity cap
+2026-11-14T17:53:26Z,CFB,Cincinnati vs Iowa St.,KXNCAAFGAME-26NOV14CINISU-CIN,YES,0.05,0.4631,0.4097,,2026-11-14T16:56:04Z,edge above sanity cap
+2026-11-14T17:53:26Z,CFB,Wisconsin vs Maryland,KXNCAAFGAME-26NOV14WISMD-MD,YES,0.1,0.2654,0.1591,,2026-11-14T17:01:04Z,edge above sanity cap
+2026-11-14T17:53:26Z,CFB,Wisconsin vs Maryland,KXNCAAFGAME-26NOV14WISMD-WIS,NO,0.1,0.2654,0.1591,,2026-11-14T17:01:04Z,edge above sanity cap
+2026-11-14T17:53:56Z,CFB,Syracuse vs NC St.,KXNCAAFGAME-26NOV14SYRNCST-NCST,NO,0.41,0.554,0.127,,2026-11-14T16:56:04Z,edge above sanity cap
+2026-11-14T17:53:56Z,CFB,Syracuse vs NC St.,KXNCAAFGAME-26NOV14SYRNCST-SYR,YES,0.41,0.554,0.127,,2026-11-14T16:56:04Z,edge above sanity cap
+2026-11-14T17:53:56Z,CFB,Wake Forest vs SMU,KXNCAAFGAME-26NOV14WAKESMU-SMU,YES,0.2,0.5528,0.3415,,2026-11-14T17:01:04Z,edge above sanity cap
+2026-11-14T17:53:56Z,CFB,Wake Forest vs SMU,KXNCAAFGAME-26NOV14WAKESMU-WAKE,NO,0.2,0.5528,0.3415,,2026-11-14T17:01:04Z,edge above sanity cap
+2026-11-14T17:55:26Z,CFB,Minnesota vs Penn St.: Total Points,KXNCAAFTOTAL-26NOV14MINNPSU-33,NO,0.23,0.279,0.0362,42.0,2026-11-14T17:52:26Z,rung far from sharp line (unvalidated range)
+2026-11-14T17:55:26Z,CFB,Wake Forest vs SMU,KXNCAAFGAME-26NOV14WAKESMU-SMU,YES,0.16,0.5528,0.3833,,2026-11-14T17:01:04Z,edge above sanity cap
+2026-11-14T17:55:26Z,CFB,Wake Forest vs SMU,KXNCAAFGAME-26NOV14WAKESMU-WAKE,NO,0.17,0.5528,0.3728,,2026-11-14T17:01:04Z,edge above sanity cap
+2026-11-14T17:55:56Z,CFB,Wake Forest vs SMU,KXNCAAFGAME-26NOV14WAKESMU-SMU,YES,0.13,0.5528,0.4148,,2026-11-14T17:01:04Z,edge above sanity cap
+2026-11-14T17:55:56Z,CFB,Wake Forest vs SMU,KXNCAAFGAME-26NOV14WAKESMU-WAKE,NO,0.13,0.5528,0.4148,,2026-11-14T17:01:04Z,edge above sanity cap
+2026-11-14T17:56:26Z,CFB,Cincinnati vs Iowa St.,KXNCAAFGAME-26NOV14CINISU-ISU,NO,0.05,0.4631,0.4097,,2026-11-14T16:56:04Z,sharp line stale; edge above sanity cap
+2026-11-14T17:56:26Z,CFB,Cincinnati vs Iowa St.,KXNCAAFGAME-26NOV14CINISU-CIN,YES,0.05,0.4631,0.4097,,2026-11-14T16:56:04Z,sharp line stale; edge above sanity cap
+2026-11-14T17:56:26Z,CFB,Syracuse vs NC St.,KXNCAAFGAME-26NOV14SYRNCST-NCST,NO,0.41,0.554,0.127,,2026-11-14T16:56:04Z,sharp line stale; edge above sanity cap
+2026-11-14T17:56:26Z,CFB,Syracuse vs NC St.,KXNCAAFGAME-26NOV14SYRNCST-SYR,YES,0.41,0.554,0.127,,2026-11-14T16:56:04Z,sharp line stale; edge above sanity cap
+2026-11-14T17:56:26Z,CFB,Wake Forest vs SMU,KXNCAAFGAME-26NOV14WAKESMU-SMU,YES,0.12,0.5528,0.4253,,2026-11-14T17:01:04Z,edge above sanity cap
+2026-11-14T17:56:26Z,CFB,Wake Forest vs SMU,KXNCAAFGAME-26NOV14WAKESMU-WAKE,NO,0.12,0.5528,0.4253,,2026-11-14T17:01:04Z,edge above sanity cap
+2026-11-14T17:57:28Z,CFB,Kansas St. vs TCU: Spread,KXNCAAFSPREAD-26NOV14KSUTCU-TCU28,YES,0.17,0.2112,0.0312,13.5,2026-11-14T17:57:26Z,rung far from sharp line (unvalidated range)
+2026-11-14T17:57:28Z,CFB,Kansas St. vs TCU: Spread,KXNCAAFSPREAD-26NOV14KSUTCU-TCU25,YES,0.21,0.2542,0.0326,13.5,2026-11-14T17:57:26Z,rung far from sharp line (unvalidated range)
+2026-11-14T17:57:28Z,CFB,Kansas St. vs TCU: Spread,KXNCAAFSPREAD-26NOV14KSUTCU-TCU22,YES,0.27,0.315,0.03,13.5,2026-11-14T17:57:26Z,rung far from sharp line (unvalidated range)
+2026-11-14T17:57:28Z,CFB,Boston College vs Notre Dame: Spread,KXNCAAFSPREAD-26NOV14BCND-ND46,YES,0.14,0.1823,0.0331,29.0,2026-11-14T17:57:26Z,rung far from sharp line (unvalidated range)
+2026-11-14T17:57:28Z,CFB,Missouri vs Georgia: Spread,KXNCAAFSPREAD-26NOV14MIZZUGA-UGA31,YES,0.17,0.2162,0.0362,16.5,2026-11-14T17:57:26Z,rung far from sharp line (unvalidated range)
+2026-11-14T17:57:28Z,CFB,Missouri vs Georgia: Spread,KXNCAAFSPREAD-26NOV14MIZZUGA-UGA28,YES,0.23,0.2791,0.0362,16.5,2026-11-14T17:57:26Z,rung far from sharp line (unvalidated range)
+2026-11-14T17:57:28Z,CFB,Kansas St. vs TCU: Total Points,KXNCAAFTOTAL-26NOV14KSUTCU-26,NO,0.07,0.1207,0.0459,44.5,2026-11-14T17:57:26Z,rung far from sharp line (unvalidated range)
+2026-11-14T17:57:28Z,CFB,Kansas St. vs TCU: Total Points,KXNCAAFTOTAL-26NOV14KSUTCU-29,NO,0.11,0.1619,0.0446,44.5,2026-11-14T17:57:26Z,rung far from sharp line (unvalidated range)
+2026-11-14T17:57:28Z,CFB,Tennessee vs Texas A&M: Total Points,KXNCAAFTOTAL-26NOV14TENNTXAM-26,NO,0.09,0.1335,0.0374,43.5,2026-11-14T17:57:26Z,rung far from sharp line (unvalidated range)
+2026-11-14T17:57:28Z,CFB,Tennessee vs Texas A&M: Total Points,KXNCAAFTOTAL-26NOV14TENNTXAM-29,NO,0.13,0.1775,0.0395,43.5,2026-11-14T17:57:26Z,rung far from sharp line (unvalidated range)
+2026-11-14T17:57:28Z,CFB,Michigan vs Oregon: Total Points,KXNCAAFTOTAL-26NOV14MICHORE-22,NO,0.08,0.127,0.0415,40.0,2026-11-14T17:57:26Z,rung far from sharp line (unvalidated range)
+2026-11-14T17:57:28Z,CFB,Michigan vs Oregon: Total Points,KXNCAAFTOTAL-26NOV14MICHORE-25,NO,0.13,0.1696,0.0313,40.0,2026-11-14T17:57:26Z,rung far from sharp line (unvalidated range)
+2026-11-14T17:57:28Z,CFB,Missouri vs Georgia: Total Points,KXNCAAFTOTAL-26NOV14MIZZUGA-31,NO,0.1,0.1403,0.0336,48.0,2026-11-14T17:57:26Z,rung far from sharp line (unvalidated range)
+2026-11-14T17:57:28Z,CFB,Nevada vs Northern Illinois: Total Points,KXNCAAFTOTAL-26NOV14NEVNIU-27,NO,0.06,0.0977,0.0334,47.5,2026-11-14T17:57:26Z,rung far from sharp line (unvalidated range)
+2026-11-14T17:57:28Z,CFB,Washington vs Michigan St.: Total Points,KXNCAAFTOTAL-26NOV14WASHMSU-24,NO,0.07,0.1088,0.034,43.5,2026-11-14T17:57:26Z,rung far from sharp line (unvalidated range)
+2026-11-14T17:57:28Z,CFB,Washington vs Michigan St.: Total Points,KXNCAAFTOTAL-26NOV14WASHMSU-27,NO,0.1,0.1473,0.0406,43.5,2026-11-14T17:57:26Z,rung far from sharp line (unvalidated range)
+2026-11-14T17:57:28Z,CFB,Washington vs Michigan St.: Total Points,KXNCAAFTOTAL-26NOV14WASHMSU-30,NO,0.15,0.194,0.0348,43.5,2026-11-14T17:57:26Z,rung far from sharp line (unvalidated range)
+2026-11-14T17:57:28Z,CFB,Minnesota vs Penn St.: Total Points,KXNCAAFTOTAL-26NOV14MINNPSU-24,NO,0.08,0.127,0.0415,42.0,2026-11-14T17:57:26Z,rung far from sharp line (unvalidated range)
+2026-11-14T17:57:28Z,CFB,Minnesota vs Penn St.: Total Points,KXNCAAFTOTAL-26NOV14MINNPSU-27,NO,0.12,0.1696,0.042,42.0,2026-11-14T17:57:26Z,rung far from sharp line (unvalidated range)
+2026-11-14T17:57:28Z,CFB,Minnesota vs Penn St.: Total Points,KXNCAAFTOTAL-26NOV14MINNPSU-30,NO,0.16,0.2204,0.051,42.0,2026-11-14T17:57:26Z,rung far from sharp line (unvalidated range)
+2026-11-14T17:57:28Z,CFB,Minnesota vs Penn St.: Total Points,KXNCAAFTOTAL-26NOV14MINNPSU-33,NO,0.23,0.279,0.0362,42.0,2026-11-14T17:57:26Z,rung far from sharp line (unvalidated range)
+2026-11-14T17:57:28Z,CFB,San Jose St. vs Air Force: Total Points,KXNCAAFTOTAL-26NOV14SJSUAFA-31,NO,0.1,0.1403,0.0336,48.0,2026-11-14T17:57:26Z,rung far from sharp line (unvalidated range)
+2026-11-14T17:57:28Z,CFB,North Dakota St. vs Hawai'i: Total Points,KXNCAAFTOTAL-26NOV14NDSUHAW-21,NO,0.08,0.1207,0.0351,39.5,2026-11-14T17:57:26Z,rung far from sharp line (unvalidated range)
+2026-11-14T17:57:28Z,CFB,North Dakota St. vs Hawai'i: Total Points,KXNCAAFTOTAL-26NOV14NDSUHAW-24,NO,0.12,0.1619,0.0341,39.5,2026-11-14T17:57:26Z,rung far from sharp line (unvalidated range)
+2026-11-14T17:57:28Z,CFB,North Dakota St. vs Hawai'i: Total Points,KXNCAAFTOTAL-26NOV14NDSUHAW-27,NO,0.17,0.2114,0.0314,39.5,2026-11-14T17:57:26Z,rung far from sharp line (unvalidated range)
+2026-11-14T17:57:28Z,CFB,Cincinnati vs Iowa St.,KXNCAAFGAME-26NOV14CINISU-CIN,YES,0.07,0.4631,0.3885,,2026-11-14T16:56:04Z,sharp line stale; edge above sanity cap
+2026-11-14T17:57:56Z,CFB,Cincinnati vs Iowa St.,KXNCAAFGAME-26NOV14CINISU-CIN,YES,0.05,0.4631,0.4097,,2026-11-14T16:56:04Z,sharp line stale; edge above sanity cap
+2026-11-14T17:57:56Z,CFB,Syracuse vs NC St.,KXNCAAFGAME-26NOV14SYRNCST-NCST,NO,0.4,0.554,0.137,,2026-11-14T16:56:04Z,sharp line stale; edge above sanity cap
+2026-11-14T17:57:56Z,CFB,Syracuse vs NC St.,KXNCAAFGAME-26NOV14SYRNCST-SYR,YES,0.4,0.554,0.137,,2026-11-14T16:56:04Z,sharp line stale; edge above sanity cap
+2026-11-14T17:58:26Z,CFB,Cincinnati vs Iowa St.,KXNCAAFGAME-26NOV14CINISU-ISU,NO,0.04,0.4631,0.4203,,2026-11-14T16:56:04Z,sharp line stale; edge above sanity cap
+2026-11-14T17:58:26Z,CFB,Cincinnati vs Iowa St.,KXNCAAFGAME-26NOV14CINISU-CIN,YES,0.04,0.4631,0.4203,,2026-11-14T16:56:04Z,sharp line stale; edge above sanity cap
+2026-11-14T17:58:26Z,CFB,Wisconsin vs Maryland,KXNCAAFGAME-26NOV14WISMD-MD,YES,0.09,0.2654,0.1696,,2026-11-14T17:01:04Z,edge above sanity cap
+2026-11-14T17:58:56Z,CFB,Syracuse vs NC St.,KXNCAAFGAME-26NOV14SYRNCST-NCST,NO,0.43,0.554,0.1065,,2026-11-14T16:56:04Z,sharp line stale
+2026-11-14T17:58:56Z,CFB,Syracuse vs NC St.,KXNCAAFGAME-26NOV14SYRNCST-SYR,YES,0.42,0.554,0.1167,,2026-11-14T16:56:04Z,sharp line stale
+2026-11-14T17:58:56Z,CFB,Wisconsin vs Maryland,KXNCAAFGAME-26NOV14WISMD-MD,YES,0.1,0.2654,0.1591,,2026-11-14T17:01:04Z,edge above sanity cap
+2026-11-14T17:58:56Z,CFB,Wisconsin vs Maryland,KXNCAAFGAME-26NOV14WISMD-WIS,NO,0.09,0.2654,0.1696,,2026-11-14T17:01:04Z,edge above sanity cap
+2026-11-14T17:59:26Z,CFB,Syracuse vs NC St.,KXNCAAFGAME-26NOV14SYRNCST-NCST,NO,0.38,0.554,0.1573,,2026-11-14T16:56:04Z,sharp line stale; edge above sanity cap
+2026-11-14T17:59:26Z,CFB,Syracuse vs NC St.,KXNCAAFGAME-26NOV14SYRNCST-SYR,YES,0.38,0.554,0.1573,,2026-11-14T16:56:04Z,sharp line stale; edge above sanity cap
+2026-11-14T17:59:56Z,CFB,Syracuse vs NC St.,KXNCAAFGAME-26NOV14SYRNCST-NCST,NO,0.41,0.554,0.127,,2026-11-14T16:56:04Z,sharp line stale; edge above sanity cap
+2026-11-14T17:59:56Z,CFB,Syracuse vs NC St.,KXNCAAFGAME-26NOV14SYRNCST-SYR,YES,0.41,0.554,0.127,,2026-11-14T16:56:04Z,sharp line stale; edge above sanity cap
+2026-11-14T18:01:26Z,CFB,Cincinnati vs Iowa St.,KXNCAAFGAME-26NOV14CINISU-ISU,NO,0.05,0.4631,0.4097,,2026-11-14T16:56:04Z,sharp line stale; edge above sanity cap
+2026-11-14T18:01:26Z,CFB,Cincinnati vs Iowa St.,KXNCAAFGAME-26NOV14CINISU-CIN,YES,0.05,0.4631,0.4097,,2026-11-14T16:56:04Z,sharp line stale; edge above sanity cap
+2026-11-14T18:01:26Z,CFB,Wake Forest vs SMU,KXNCAAFGAME-26NOV14WAKESMU-SMU,YES,0.13,0.5528,0.4148,,2026-11-14T17:01:04Z,sharp line stale; edge above sanity cap
+2026-11-14T18:01:26Z,CFB,Wake Forest vs SMU,KXNCAAFGAME-26NOV14WAKESMU-WAKE,NO,0.14,0.5528,0.4043,,2026-11-14T17:01:04Z,sharp line stale; edge above sanity cap
+2026-11-14T18:01:26Z,CFB,Wisconsin vs Maryland,KXNCAAFGAME-26NOV14WISMD-MD,YES,0.1,0.2654,0.1591,,2026-11-14T17:01:04Z,sharp line stale; edge above sanity cap
+2026-11-14T18:01:26Z,CFB,Wisconsin vs Maryland,KXNCAAFGAME-26NOV14WISMD-WIS,NO,0.09,0.2654,0.1696,,2026-11-14T17:01:04Z,sharp line stale; edge above sanity cap
+2026-11-14T18:01:56Z,CFB,Wake Forest vs SMU,KXNCAAFGAME-26NOV14WAKESMU-SMU,YES,0.12,0.5528,0.4253,,2026-11-14T17:01:04Z,sharp line stale; edge above sanity cap
+2026-11-14T18:01:56Z,CFB,Wake Forest vs SMU,KXNCAAFGAME-26NOV14WAKESMU-WAKE,NO,0.12,0.5528,0.4253,,2026-11-14T17:01:04Z,sharp line stale; edge above sanity cap
+2026-11-14T18:01:56Z,CFB,Wisconsin vs Maryland,KXNCAAFGAME-26NOV14WISMD-WIS,NO,0.1,0.2654,0.1591,,2026-11-14T17:01:04Z,sharp line stale; edge above sanity cap
+2026-11-14T18:02:28Z,NFL,Buffalo vs New York J: Spread,KXNFLSPREAD-26NOV15BUFNYJ-NYJ3,YES,0.18,0.226,0.0347,-8.5,2026-11-14T18:02:26Z,rung far from sharp line (unvalidated range)
+2026-11-14T18:02:28Z,NFL,Los Angeles C vs Baltimore: Total Points,KXNFLTOTAL-26NOV16LACBAL-24,NO,0.08,0.1287,0.0435,38.5,2026-11-14T18:02:26Z,rung far from sharp line (unvalidated range)
+2026-11-14T18:02:28Z,CFB,Kansas St. vs TCU: Spread,KXNCAAFSPREAD-26NOV14KSUTCU-TCU28,YES,0.17,0.2112,0.0312,13.5,2026-11-14T18:02:26Z,rung far from sharp line (unvalidated range)
+2026-11-14T18:02:28Z,CFB,Kansas St. vs TCU: Spread,KXNCAAFSPREAD-26NOV14KSUTCU-TCU25,YES,0.21,0.2542,0.0326,13.5,2026-11-14T18:02:26Z,rung far from sharp line (unvalidated range)
+2026-11-14T18:02:28Z,CFB,Kansas St. vs TCU: Spread,KXNCAAFSPREAD-26NOV14KSUTCU-TCU22,YES,0.27,0.315,0.03,13.5,2026-11-14T18:02:26Z,rung far from sharp line (unvalidated range)
+2026-11-14T18:02:28Z,CFB,Boston College vs Notre Dame: Spread,KXNCAAFSPREAD-26NOV14BCND-ND46,YES,0.14,0.1823,0.0331,29.0,2026-11-14T18:02:26Z,rung far from sharp line (unvalidated range)
+2026-11-14T18:02:28Z,CFB,Missouri vs Georgia: Spread,KXNCAAFSPREAD-26NOV14MIZZUGA-UGA31,YES,0.17,0.2162,0.0362,16.5,2026-11-14T18:02:26Z,rung far from sharp line (unvalidated range)
+2026-11-14T18:02:28Z,CFB,Missouri vs Georgia: Spread,KXNCAAFSPREAD-26NOV14MIZZUGA-UGA28,YES,0.23,0.2791,0.0362,16.5,2026-11-14T18:02:26Z,rung far from sharp line (unvalidated range)
+2026-11-14T18:02:28Z,CFB,Kansas St. vs TCU: Total Points,KXNCAAFTOTAL-26NOV14KSUTCU-26,NO,0.07,0.1207,0.0459,44.5,2026-11-14T18:02:26Z,rung far from sharp line (unvalidated range)
+2026-11-14T18:02:28Z,CFB,Kansas St. vs TCU: Total Points,KXNCAAFTOTAL-26NOV14KSUTCU-29,NO,0.11,0.1619,0.0446,44.5,2026-11-14T18:02:26Z,rung far from sharp line (unvalidated range)
+2026-11-14T18:02:28Z,CFB,Tennessee vs Texas A&M: Total Points,KXNCAAFTOTAL-26NOV14TENNTXAM-26,NO,0.09,0.1335,0.0374,43.5,2026-11-14T18:02:26Z,rung far from sharp line (unvalidated range)
+2026-11-14T18:02:28Z,CFB,Tennessee vs Texas A&M: Total Points,KXNCAAFTOTAL-26NOV14TENNTXAM-29,NO,0.13,0.1775,0.0395,43.5,2026-11-14T18:02:26Z,rung far from sharp line (unvalidated range)
+2026-11-14T18:02:28Z,CFB,Michigan vs Oregon: Total Points,KXNCAAFTOTAL-26NOV14MICHORE-22,NO,0.08,0.127,0.0415,40.0,2026-11-14T18:02:26Z,rung far from sharp line (unvalidated range)
+2026-11-14T18:02:28Z,CFB,Michigan vs Oregon: Total Points,KXNCAAFTOTAL-26NOV14MICHORE-25,NO,0.13,0.1696,0.0313,40.0,2026-11-14T18:02:26Z,rung far from sharp line (unvalidated range)
+2026-11-14T18:02:28Z,CFB,Missouri vs Georgia: Total Points,KXNCAAFTOTAL-26NOV14MIZZUGA-31,NO,0.1,0.1403,0.0336,48.0,2026-11-14T18:02:26Z,rung far from sharp line (unvalidated range)
+2026-11-14T18:02:28Z,CFB,Washington vs Michigan St.: Total Points,KXNCAAFTOTAL-26NOV14WASHMSU-24,NO,0.07,0.1088,0.034,43.5,2026-11-14T18:02:26Z,rung far from sharp line (unvalidated range)
+2026-11-14T18:02:28Z,CFB,Washington vs Michigan St.: Total Points,KXNCAAFTOTAL-26NOV14WASHMSU-27,NO,0.1,0.1473,0.0406,43.5,2026-11-14T18:02:26Z,rung far from sharp line (unvalidated range)
+2026-11-14T18:02:28Z,CFB,Washington vs Michigan St.: Total Points,KXNCAAFTOTAL-26NOV14WASHMSU-30,NO,0.15,0.194,0.0348,43.5,2026-11-14T18:02:26Z,rung far from sharp line (unvalidated range)
+2026-11-14T18:02:28Z,CFB,Minnesota vs Penn St.: Total Points,KXNCAAFTOTAL-26NOV14MINNPSU-24,NO,0.08,0.127,0.0415,42.0,2026-11-14T18:02:26Z,rung far from sharp line (unvalidated range)
+2026-11-14T18:02:28Z,CFB,Minnesota vs Penn St.: Total Points,KXNCAAFTOTAL-26NOV14MINNPSU-27,NO,0.12,0.1696,0.042,42.0,2026-11-14T18:02:26Z,rung far from sharp line (unvalidated range)
+2026-11-14T18:02:28Z,CFB,Minnesota vs Penn St.: Total Points,KXNCAAFTOTAL-26NOV14MINNPSU-30,NO,0.16,0.2204,0.051,42.0,2026-11-14T18:02:26Z,rung far from sharp line (unvalidated range)
+2026-11-14T18:02:28Z,CFB,North Dakota St. vs Hawai'i: Total Points,KXNCAAFTOTAL-26NOV14NDSUHAW-21,NO,0.08,0.1207,0.0351,39.5,2026-11-14T18:02:26Z,rung far from sharp line (unvalidated range)
+2026-11-14T18:02:28Z,CFB,North Dakota St. vs Hawai'i: Total Points,KXNCAAFTOTAL-26NOV14NDSUHAW-24,NO,0.12,0.1619,0.0341,39.5,2026-11-14T18:02:26Z,rung far from sharp line (unvalidated range)
+2026-11-14T18:02:28Z,CFB,North Dakota St. vs Hawai'i: Total Points,KXNCAAFTOTAL-26NOV14NDSUHAW-27,NO,0.17,0.2114,0.0314,39.5,2026-11-14T18:02:26Z,rung far from sharp line (unvalidated range)
+2026-11-14T18:02:28Z,CFB,Georgia Tech vs Clemson,KXNCAAFGAME-26NOV14GTCLEM-GT,NO,0.69,0.8424,0.1374,,2026-11-14T17:37:00Z,edge above sanity cap
+2026-11-14T18:02:28Z,CFB,Wake Forest vs SMU,KXNCAAFGAME-26NOV14WAKESMU-SMU,YES,0.09,0.5528,0.457,,2026-11-14T17:01:04Z,sharp line stale; edge above sanity cap
+2026-11-14T18:02:28Z,CFB,Wake Forest vs SMU,KXNCAAFGAME-26NOV14WAKESMU-WAKE,NO,0.09,0.5528,0.457,,2026-11-14T17:01:04Z,sharp line stale; edge above sanity cap
