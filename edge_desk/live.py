@@ -250,6 +250,12 @@ def hot_pass(events: list[str], meta: dict, mults: dict, ts: str):
 FAST_MAX_ALERT_AGE = timedelta(days=8)  # #40: an alert this old is never fast-laned
 
 
+def _in_scope(ticker: str) -> bool:
+    """Series still in config.SERIES (CBB removed 11-13: its old alerts leave the fast lane)."""
+    series = str(ticker or "").split("-")[0]
+    return not series.startswith("KX") or any(series in lst for lst in config.SERIES.values())
+
+
 def fast_tickers(state: dict, now: datetime, limit: int = config.LIVE_FAST_MAX_TICKERS) -> list[str]:
     """#40: alerted contracts whose game isn't over (kickoff + 6h), soonest kickoff first.
 
@@ -261,7 +267,7 @@ def fast_tickers(state: dict, now: datetime, limit: int = config.LIVE_FAST_MAX_T
     keep = {}
     for a in ((state or {}).get("alerts") or {}).values():
         t, sent = a.get("ticker"), a.get("sent_utc")
-        if not t or a.get("legs") or not sent:
+        if not t or a.get("legs") or not sent or not _in_scope(t):
             continue
         try:
             age = now - _utc(datetime.strptime(sent, "%Y-%m-%dT%H:%M:%SZ"))
