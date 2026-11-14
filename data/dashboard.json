@@ -1,16 +1,16 @@
 {
-  "generated_ts": "2026-11-14T00:32:43Z",
-  "generated_ct": "Fri Nov 13, 6:32 PM CT",
+  "generated_ts": "2026-11-14T00:47:57Z",
+  "generated_ct": "Fri Nov 13, 6:47 PM CT",
   "today_ct": "2026-11-13",
   "snapshot": {
-    "ts": "2026-11-14T00:31:08Z",
-    "ct": "Fri Nov 13, 6:31 PM CT",
+    "ts": "2026-11-14T00:46:22Z",
+    "ct": "Fri Nov 13, 6:46 PM CT",
     "stale": false,
-    "markets_scanned": 5788,
+    "markets_scanned": 5789,
     "kickoff_source": "kalshi occurrence_datetime - 3h",
     "phases": {
       "CFB": {
-        "live": 50,
+        "live": 51,
         "pregame": 5064
       },
       "NFL": {
@@ -62,7 +62,7 @@
     "max_bet": 10.0
   },
   "signals": {
-    "weekly_ct": "Fri Nov 13, 6:31 PM CT",
+    "weekly_ct": "Fri Nov 13, 6:46 PM CT",
     "scorecards": [
       {
         "name": "SHARP shadow football",
@@ -187,7 +187,7 @@
           "events": 4,
           "t_by_event": -1.39,
           "stale": 0,
-          "pending": 165,
+          "pending": 166,
           "no_close": 1
         }
       }
@@ -367,7 +367,7 @@
         "contract": "TCU wins by over 7.5 points",
         "max_price": 0.4,
         "stake": 2.51,
-        "gone": false,
+        "gone": true,
         "sent_ct": "Fri Nov 13, 10:48 AM CT",
         "kickoff_utc": "2026-11-14T19:00:00Z",
         "kickoff_ct": "Sat Nov 14, 1:00 PM CT",
@@ -493,7 +493,7 @@
         "contract": "Boise St. wins by over 9.5 points",
         "max_price": 0.35,
         "stake": 1.83,
-        "gone": false,
+        "gone": true,
         "sent_ct": "Thu Nov 12, 10:21 AM CT",
         "kickoff_utc": "2026-11-14T23:00:00Z",
         "kickoff_ct": "Sat Nov 14, 5:00 PM CT",
