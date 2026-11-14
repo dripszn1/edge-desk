@@ -1,10 +1,4 @@
 league,event_id,commence_utc,home_team,away_team,market,outcome,point,fair,source,n_books,fetched_ts
-CFB,4c15d7c4261fa1d8b75615a46d4d2ea7,2026-11-14T20:00:00Z,Texas A&M Aggies,Tennessee Volunteers,h2h,Tennessee Volunteers,,0.50229,pinnacle,1,2026-11-14T05:24:45Z
-CFB,4c15d7c4261fa1d8b75615a46d4d2ea7,2026-11-14T20:00:00Z,Texas A&M Aggies,Tennessee Volunteers,h2h,Texas A&M Aggies,,0.49771,pinnacle,1,2026-11-14T05:24:45Z
-CFB,4c15d7c4261fa1d8b75615a46d4d2ea7,2026-11-14T20:00:00Z,Texas A&M Aggies,Tennessee Volunteers,spreads,Tennessee Volunteers,-1.0,0.4887,pinnacle,1,2026-11-14T05:24:45Z
-CFB,4c15d7c4261fa1d8b75615a46d4d2ea7,2026-11-14T20:00:00Z,Texas A&M Aggies,Tennessee Volunteers,spreads,Texas A&M Aggies,1.0,0.5113,pinnacle,1,2026-11-14T05:24:45Z
-CFB,4c15d7c4261fa1d8b75615a46d4d2ea7,2026-11-14T20:00:00Z,Texas A&M Aggies,Tennessee Volunteers,totals,Over,43.5,0.518847,pinnacle,1,2026-11-14T05:24:45Z
-CFB,4c15d7c4261fa1d8b75615a46d4d2ea7,2026-11-14T20:00:00Z,Texas A&M Aggies,Tennessee Volunteers,totals,Under,43.5,0.481153,pinnacle,1,2026-11-14T05:24:45Z
 CFB,0431ccbcda08ef99781fee8c341c8932,2026-11-14T17:00:00Z,Iowa State Cyclones,Cincinnati Bearcats,h2h,Cincinnati Bearcats,,0.437211,pinnacle,1,2026-11-14T10:45:04Z
 CFB,0431ccbcda08ef99781fee8c341c8932,2026-11-14T17:00:00Z,Iowa State Cyclones,Cincinnati Bearcats,h2h,Iowa State Cyclones,,0.562789,pinnacle,1,2026-11-14T10:45:04Z
 CFB,0431ccbcda08ef99781fee8c341c8932,2026-11-14T17:00:00Z,Iowa State Cyclones,Cincinnati Bearcats,spreads,Cincinnati Bearcats,3.0,0.512345,pinnacle,1,2026-11-14T10:45:04Z
@@ -107,6 +101,10 @@ CFB,8a0a3acc1b435727e1e571600aecb68f,2026-11-14T20:00:00Z,Missouri State Bears,N
 CFB,8a0a3acc1b435727e1e571600aecb68f,2026-11-14T20:00:00Z,Missouri State Bears,New Mexico State Aggies,spreads,New Mexico State Aggies,1.5,0.5,pinnacle,1,2026-11-14T10:45:04Z
 CFB,8a0a3acc1b435727e1e571600aecb68f,2026-11-14T20:00:00Z,Missouri State Bears,New Mexico State Aggies,totals,Over,49.0,0.5,pinnacle,1,2026-11-14T10:45:04Z
 CFB,8a0a3acc1b435727e1e571600aecb68f,2026-11-14T20:00:00Z,Missouri State Bears,New Mexico State Aggies,totals,Under,49.0,0.5,pinnacle,1,2026-11-14T10:45:04Z
+CFB,4c15d7c4261fa1d8b75615a46d4d2ea7,2026-11-14T20:00:00Z,Texas A&M Aggies,Tennessee Volunteers,spreads,Tennessee Volunteers,0.0,0.5,consensus:2,2,2026-11-14T10:45:04Z
+CFB,4c15d7c4261fa1d8b75615a46d4d2ea7,2026-11-14T20:00:00Z,Texas A&M Aggies,Tennessee Volunteers,spreads,Texas A&M Aggies,0.0,0.5,consensus:2,2,2026-11-14T10:45:04Z
+CFB,4c15d7c4261fa1d8b75615a46d4d2ea7,2026-11-14T20:00:00Z,Texas A&M Aggies,Tennessee Volunteers,totals,Over,44.0,0.5,consensus:2,2,2026-11-14T10:45:04Z
+CFB,4c15d7c4261fa1d8b75615a46d4d2ea7,2026-11-14T20:00:00Z,Texas A&M Aggies,Tennessee Volunteers,totals,Under,44.0,0.5,consensus:2,2,2026-11-14T10:45:04Z
 CFB,1daaf8ba9d71d56b9657b450f3df7861,2026-11-14T20:30:00Z,Notre Dame Fighting Irish,Boston College Eagles,spreads,Boston College Eagles,29.0,0.5,pinnacle,1,2026-11-14T10:45:04Z
 CFB,1daaf8ba9d71d56b9657b450f3df7861,2026-11-14T20:30:00Z,Notre Dame Fighting Irish,Boston College Eagles,spreads,Notre Dame Fighting Irish,-29.0,0.5,pinnacle,1,2026-11-14T10:45:04Z
 CFB,1daaf8ba9d71d56b9657b450f3df7861,2026-11-14T20:30:00Z,Notre Dame Fighting Irish,Boston College Eagles,totals,Over,51.5,0.502226,pinnacle,1,2026-11-14T10:45:04Z

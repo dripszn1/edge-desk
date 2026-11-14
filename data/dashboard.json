@@ -1,10 +1,10 @@
 {
-  "generated_ts": "2026-11-14T10:47:12Z",
-  "generated_ct": "Sat Nov 14, 4:47 AM CT",
+  "generated_ts": "2026-11-14T11:34:22Z",
+  "generated_ct": "Sat Nov 14, 5:34 AM CT",
   "today_ct": "2026-11-14",
   "snapshot": {
-    "ts": "2026-11-14T10:45:06Z",
-    "ct": "Sat Nov 14, 4:45 AM CT",
+    "ts": "2026-11-14T11:31:56Z",
+    "ct": "Sat Nov 14, 5:31 AM CT",
     "stale": false,
     "markets_scanned": 5614,
     "kickoff_source": "kalshi occurrence_datetime - 3h",
@@ -61,7 +61,7 @@
     "max_bet": 10.0
   },
   "signals": {
-    "weekly_ct": "Sat Nov 14, 4:45 AM CT",
+    "weekly_ct": "Sat Nov 14, 5:32 AM CT",
     "scorecards": [
       {
         "name": "SHARP shadow football",
@@ -357,20 +357,6 @@
         "kickoff_utc": "2026-11-14T20:30:00Z",
         "kickoff_ct": "Sat Nov 14, 2:30 PM CT",
         "kalshi_url": "https://kalshi.com/markets/kxncaafspread/event/kxncaafspread-26nov14gasogast"
-      },
-      {
-        "ticker": "KXNCAAFSPREAD-26NOV14MICHORE-ORE8",
-        "signal": "SHARP",
-        "side": "NO",
-        "game": "Michigan vs Oregon: Spread",
-        "contract": "Oregon wins by over 7.5 points",
-        "max_price": 0.4,
-        "stake": 2.92,
-        "gone": true,
-        "sent_ct": "Wed Nov 11, 4:45 AM CT",
-        "kickoff_utc": "2026-11-14T20:30:00Z",
-        "kickoff_ct": "Sat Nov 14, 2:30 PM CT",
-        "kalshi_url": "https://kalshi.com/markets/kxncaafspread/event/kxncaafspread-26nov14michore"
       },
       {
         "ticker": "KXNCAAFTOTAL-26NOV14GASOGAST-54",

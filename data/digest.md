@@ -1,4 +1,4 @@
-# edge-desk digest, Sat Nov 14, 4:47 AM CT
+# edge-desk digest, Sat Nov 14, 5:34 AM CT
 
 Paper only, nothing is placed. Plays kicking off in the next 36h:
 - SHARP shadow: Georgia Southern vs Georgia St. | NO Georgia Southern wins by over 1.5 points @ 35¢, fair 40¢, edge 3.2¢ after fees | $2.20 paper | Sat Nov 14, 2:30 PM CT | [Kalshi](https://kalshi.com/markets/kxncaafspread/event/kxncaafspread-26nov14gasogast)
@@ -16,4 +16,4 @@ Settled in the last 24h:
   exits compared: football (18 done): hold $+6.07, sell at tip $-4.95, auto-sell at fair $+4.69, auto-sell +10c $+13.89 · CBB (145 done): hold $+8.87, sell at tip $-70.31, auto-sell at fair $-92.74, auto-sell +10c $-66.25
   picks vs random entries, $/play: football (17 plays): hold $+0.44 vs $-0.63 (beats 92%), auto-sell +10c $+0.31 vs $-0.64 (beats 99%) · CBB (139 plays): hold $-0.09 vs $-0.07 (beats 46%), auto-sell +10c $-1.03 vs $-0.82 (beats 14%)
 
-Status: Kalshi data 2m old (ok); sharp odds 2m old; odds credits left 19430 of 20000; gates: MODEL NFL closed, MODEL CFB closed, SHARP NFL closed, SHARP CFB closed, SHARP NFL ML closed, SHARP CFB ML closed
+Status: Kalshi data 2m old (ok); sharp odds 49m old; odds credits left 19430 of 20000; gates: MODEL NFL closed, MODEL CFB closed, SHARP NFL closed, SHARP CFB closed, SHARP NFL ML closed, SHARP CFB ML closed
