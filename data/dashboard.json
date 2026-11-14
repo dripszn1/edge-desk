@@ -1,17 +1,18 @@
 {
-  "generated_ts": "2026-11-14T22:45:56Z",
-  "generated_ct": "Sat Nov 14, 4:45 PM CT",
+  "generated_ts": "2026-11-14T23:02:32Z",
+  "generated_ct": "Sat Nov 14, 5:02 PM CT",
   "today_ct": "2026-11-14",
   "snapshot": {
-    "ts": "2026-11-14T22:44:25Z",
-    "ct": "Sat Nov 14, 4:44 PM CT",
+    "ts": "2026-11-14T22:59:35Z",
+    "ct": "Sat Nov 14, 4:59 PM CT",
     "stale": false,
-    "markets_scanned": 3954,
+    "markets_scanned": 3963,
     "kickoff_source": "kalshi occurrence_datetime - 3h",
     "phases": {
       "CFB": {
-        "live": 1753,
-        "pregame": 1527
+        "live": 1762,
+        "pregame": 1400,
+        "unknown": 127
       },
       "NFL": {
         "pregame": 674
@@ -62,7 +63,7 @@
     "max_bet": 10.0
   },
   "signals": {
-    "weekly_ct": "Sat Nov 14, 4:45 PM CT",
+    "weekly_ct": "Sat Nov 14, 5:00 PM CT",
     "scorecards": [
       {
         "name": "SHARP shadow football",
@@ -153,15 +154,15 @@
           "no_close": 0
         },
         "football": {
-          "n": 76,
-          "avg_clv_c": -4.46,
-          "avg_raw_c": -2.97,
-          "beat_close_pct": 39.5,
-          "t_stat": -1.73,
-          "events": 27,
-          "t_by_event": -1.6,
+          "n": 80,
+          "avg_clv_c": -4.29,
+          "avg_raw_c": -2.79,
+          "beat_close_pct": 38.8,
+          "t_stat": -1.75,
+          "events": 28,
+          "t_by_event": -1.62,
           "stale": 0,
-          "pending": 33,
+          "pending": 29,
           "no_close": 0
         }
       },
@@ -179,15 +180,15 @@
           "no_close": 7
         },
         "football": {
-          "n": 187,
-          "avg_clv_c": -5.41,
-          "avg_raw_c": -4.2,
-          "beat_close_pct": 33.7,
-          "t_stat": -4.69,
-          "events": 34,
-          "t_by_event": -2.6,
+          "n": 193,
+          "avg_clv_c": -5.08,
+          "avg_raw_c": -3.85,
+          "beat_close_pct": 35.2,
+          "t_stat": -4.5,
+          "events": 35,
+          "t_by_event": -2.5,
           "stale": 0,
-          "pending": 89,
+          "pending": 83,
           "no_close": 2
         }
       }
@@ -289,34 +290,6 @@
       }
     },
     "open_alerts": [
-      {
-        "ticker": "KXNCAAFTOTAL-26NOV14NWOSU-40",
-        "signal": "SHARP",
-        "side": "NO",
-        "game": "Northwestern vs Ohio St.: Total Points",
-        "contract": "Over 39.5 points",
-        "max_price": 0.33,
-        "stake": 2.08,
-        "gone": true,
-        "sent_ct": "Sat Nov 14, 8:19 AM CT",
-        "kickoff_utc": "2026-11-14T17:00:00Z",
-        "kickoff_ct": "Sat Nov 14, 11:00 AM CT",
-        "kalshi_url": "https://kalshi.com/markets/kxncaaftotal/event/kxncaaftotal-26nov14nwosu"
-      },
-      {
-        "ticker": "KXNCAAFTOTAL-26NOV14WISMD-45",
-        "signal": "SHARP",
-        "side": "YES",
-        "game": "Wisconsin vs Maryland: Total Points",
-        "contract": "Over 44.5 points",
-        "max_price": 0.39,
-        "stake": 2.04,
-        "gone": true,
-        "sent_ct": "Sat Nov 14, 10:06 AM CT",
-        "kickoff_utc": "2026-11-14T17:00:00Z",
-        "kickoff_ct": "Sat Nov 14, 11:00 AM CT",
-        "kalshi_url": "https://kalshi.com/markets/kxncaaftotal/event/kxncaaftotal-26nov14wismd"
-      },
       {
         "ticker": "KXNCAAFSPREAD-26NOV14NEBRUTG-NEB14",
         "signal": "SHARP",
