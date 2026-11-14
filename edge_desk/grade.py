@@ -32,6 +32,38 @@ CT = ZoneInfo(config.TIMEZONE)
 STALE_DAYS = 7
 
 
+def outcome_key(leg1) -> str:
+    """#61: a Kalshi game-winner event (KX*GAME) has one market per team, so 'YES <ev>-A' and
+    'NO <ev>-B' are the same outcome (team A wins; on an NFL tie both pay differently by the tie
+    probability, ~0.35%, so they still count as one play). Returns '<event>><winner>' for those legs,
+    else the leg itself. Event code = 2-digit year + 3-letter month + 2-digit day + team codes."""
+    s = str(leg1 or "")
+    side, _, ticker = s.partition(" ")
+    parts = ticker.split("-")
+    if side not in ("YES", "NO") or len(parts) != 3 or not parts[0].endswith("GAME") or len(parts[1]) <= 7:
+        return s
+    teams, team = parts[1][7:], parts[2]
+    if not team or team == teams:
+        return s
+    ev = f"{parts[0]}-{parts[1]}"
+    if side == "YES":
+        return f"{ev}>{team}" if (teams.startswith(team) or teams.endswith(team)) else s
+    if teams.startswith(team):
+        return f"{ev}>{teams[len(team):]}"
+    if teams.endswith(team):
+        return f"{ev}>{teams[:-len(team)]}"
+    return s
+
+
+def _first_per_outcome(f: pd.DataFrame) -> pd.DataFrame:
+    """First sighting per outcome (#61); within one snapshot the cheaper ask wins, then file order."""
+    f = f.copy()
+    f["_ok"] = f["leg1"].map(outcome_key)
+    f["_px"] = pd.to_numeric(f["price"], errors="coerce") if "price" in f else 0.0
+    f = f.sort_values(["_ts", "_px"], kind="stable").drop_duplicates(["_ok"], keep="first")
+    return f.drop(columns=["_ok", "_px"])
+
+
 def one_per_contract(df: pd.DataFrame) -> pd.DataFrame:
     """#60: a contract first held back (e.g. stale line) and later alerted sits in BOTH the shadow and the
     tracked bets (same bet_id "SHARP|<leg1>", different source); pooled summaries must count it once. Keep
@@ -43,7 +75,8 @@ def one_per_contract(df: pd.DataFrame) -> pd.DataFrame:
     cols = ["source", "leg1"] + ([ts_col] if ts_col else [])
     key = df[cols].drop_duplicates(["source", "leg1"]).copy()
     key["_r"] = key["source"].map(lambda s: 0 if s == "shadow" else 1)
-    key = key.sort_values(["_r"] + ([ts_col] if ts_col else []), kind="stable").drop_duplicates("leg1")
+    key["_ok"] = key["leg1"].map(outcome_key)          # #61: YES A / NO B of one game = one play
+    key = key.sort_values(["_r"] + ([ts_col] if ts_col else []), kind="stable").drop_duplicates("_ok")
     keep = set(zip(key["source"], key["leg1"]))
     return df[[(s, l) in keep for s, l in zip(df["source"], df["leg1"])]]
 
@@ -181,7 +214,7 @@ def model_bets(flags: pd.DataFrame, results: pd.DataFrame, now: datetime | None 
     results["_ts"] = pd.to_datetime(results.get("fetched_ts"), utc=True)
     f = flags.copy()
     f["_ts"] = pd.to_datetime(f["snapshot_ts"], utc=True)
-    f = f.sort_values("_ts").drop_duplicates(["leg1"], keep="first")
+    f = _first_per_outcome(f)                           # #61, else first sighting per leg
     rows = []
     for r in f.to_dict("records"):
         n = int(r.get("contracts") or 0)
@@ -300,7 +333,7 @@ def tracked_bets(tracked: pd.DataFrame, results: pd.DataFrame, now: datetime | N
     if t.empty:
         return pd.DataFrame(columns=cols)
     t["leg1"] = t["side"].astype(str) + " " + t["ticker"].astype(str)
-    t = t.sort_values("_ts").drop_duplicates(["leg1"], keep="first")
+    t = _first_per_outcome(t)
     from .sizing import bet_size
     n = []
     for r in t.to_dict("records"):

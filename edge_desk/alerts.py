@@ -444,12 +444,29 @@ def decide(groups: list[tuple[list[dict], bool]], quotes: dict, state: dict, now
     rank = {"LADDER": 0, "EXCLUSIVE": 0, "COVER": 0, "SHARP": 1, "MODEL": 2}
     cands.sort(key=lambda x: (not x[1], rank.get(x[0].get("kind"), 3),
                               -float(x[0].get("edge", x[0].get("edge_per_set", 0)) or 0)))
-    for f, g in cands:
+    # #61: YES team A and NO team B of one game-winner event are the same outcome: one push per
+    # (event, outcome), the cheaper ask this pass (ties: first seen), never one already alerted
+    from .grade import outcome_key
+    alerted_outcomes = {outcome_key(a.get("key", k).split("|", 1)[-1]) for k, a in alerts.items()}
+    cheapest = {}
+    for i, (f, g) in enumerate(cands):
+        if f.get("leg1") and f.get("kind") != "MODEL":
+            ok = outcome_key(f["leg1"])
+            if ok != f["leg1"]:
+                p = float(f.get("price") or 0)
+                if ok not in cheapest or p < cheapest[ok][0] - 1e-9:
+                    cheapest[ok] = (p, i)
+    for i, (f, g) in enumerate(cands):
         if f.get("kind") == "MODEL":
             continue                                        # failed its backtest: logged, never pushed
         k = key_of(f)
         if k in alerts:
             continue
+        ok = outcome_key(f.get("leg1")) if f.get("leg1") else None
+        if ok in cheapest and (cheapest[ok][1] != i or ok in alerted_outcomes):
+            continue
+        if ok in cheapest:
+            alerted_outcomes.add(ok)
         a = build_new(f, g, now, template)
         if f.get("kind") not in STRUCTURAL and a["max_price"] is None:
             continue
