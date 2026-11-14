@@ -31434,3 +31434,553 @@ snapshot_ts,league,event,ticker,side,price,fair,edge,sharp_line,odds_fetched_ts,
 2026-11-14T21:10:00Z,CFB,North Dakota St. vs Hawai'i: Total Points,KXNCAAFTOTAL-26NOV14NDSUHAW-21,NO,0.08,0.1207,0.0351,39.5,2026-11-14T21:09:58Z,rung far from sharp line (unvalidated range)
 2026-11-14T21:10:00Z,CFB,North Dakota St. vs Hawai'i: Total Points,KXNCAAFTOTAL-26NOV14NDSUHAW-24,NO,0.12,0.1619,0.0341,39.5,2026-11-14T21:09:58Z,rung far from sharp line (unvalidated range)
 2026-11-14T21:10:00Z,CFB,North Dakota St. vs Hawai'i: Total Points,KXNCAAFTOTAL-26NOV14NDSUHAW-27,NO,0.17,0.2114,0.0314,39.5,2026-11-14T21:09:58Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:13:22Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU17,YES,0.07,0.1536,0.079,1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:13:22Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU11,YES,0.17,0.2261,0.0461,1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:13:22Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU7,NO,0.55,0.6923,0.1246,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:13:22Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU8,NO,0.58,0.7487,0.1512,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:13:22Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU10,NO,0.68,0.7673,0.0716,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:13:22Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-50,NO,0.04,0.1207,0.078,68.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:13:22Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-53,NO,0.06,0.1619,0.0979,68.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:13:22Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-62,NO,0.14,0.333,0.1845,68.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:13:22Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-65,NO,0.15,0.4026,0.2426,68.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:13:22Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-66,NO,0.19,0.4266,0.2258,68.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:13:22Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-67,NO,0.19,0.4509,0.25,68.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:13:22Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-68,NO,0.21,0.4754,0.2538,68.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:13:22Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-69,NO,0.23,0.5,0.2575,68.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:13:22Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-70,NO,0.25,0.5246,0.2613,68.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:13:22Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-71,NO,0.28,0.5491,0.2547,68.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:13:22Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-74,NO,0.36,0.6211,0.2449,68.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:13:22Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-77,NO,0.46,0.6891,0.2116,68.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:13:22Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-86,NO,0.67,0.8527,0.167,68.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:13:22Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-89,NO,0.74,0.8912,0.1374,68.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:13:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU21,YES,0.05,0.106,0.0525,1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:13:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU18,YES,0.06,0.1314,0.0673,1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:13:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU15,YES,0.08,0.1716,0.0863,1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:13:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU14,YES,0.1,0.1952,0.0887,1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:13:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU12,YES,0.11,0.2094,0.0925,1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:13:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU11,YES,0.13,0.2261,0.0881,1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:13:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU10,YES,0.14,0.2529,0.1044,1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:13:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU6,NO,0.55,0.6702,0.1026,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:13:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU7,NO,0.58,0.6923,0.0948,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:13:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU8,NO,0.62,0.7487,0.112,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:13:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU10,NO,0.65,0.7673,0.1009,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:13:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU11,NO,0.7,0.7948,0.0794,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:13:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU12,NO,0.7,0.8109,0.0955,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:13:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU14,NO,0.74,0.8261,0.0722,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:13:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU15,NO,0.77,0.8489,0.0664,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:13:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU17,NO,0.79,0.8627,0.061,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:13:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU18,NO,0.82,0.8869,0.056,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:13:50Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-47,NO,0.02,0.0875,0.066,68.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:13:50Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-50,NO,0.03,0.1207,0.0886,68.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:13:50Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-56,NO,0.07,0.2114,0.1368,68.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:13:50Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-59,NO,0.09,0.2687,0.1729,68.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:13:50Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-62,NO,0.12,0.333,0.2055,68.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:13:50Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-66,NO,0.18,0.4266,0.2362,68.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:13:50Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-68,NO,0.2,0.4754,0.2641,68.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:13:50Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-69,NO,0.22,0.5,0.2678,68.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:13:50Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-71,NO,0.26,0.5491,0.2754,68.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:13:50Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-74,NO,0.35,0.6211,0.2551,68.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:13:50Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-77,NO,0.42,0.6891,0.2518,68.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:13:50Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-80,NO,0.5,0.7512,0.2333,68.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:13:50Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-83,NO,0.57,0.806,0.2185,68.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:13:50Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-86,NO,0.64,0.8527,0.1961,68.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:13:50Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-89,NO,0.71,0.8912,0.1666,68.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:14:20Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU21,YES,0.04,0.106,0.0633,1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:14:20Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU18,YES,0.05,0.1314,0.078,1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:14:20Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU17,YES,0.06,0.1536,0.0896,1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:14:20Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU15,YES,0.07,0.1716,0.0969,1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:14:20Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU14,YES,0.08,0.1952,0.11,1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:14:20Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU12,YES,0.09,0.2094,0.1136,1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:14:20Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU11,YES,0.11,0.2261,0.1091,1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:14:20Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU10,YES,0.11,0.2529,0.136,1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:14:20Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU8,YES,0.14,0.2853,0.1369,1.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:14:20Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU7,YES,0.18,0.3295,0.139,1.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:14:20Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU6,YES,0.19,0.3518,0.1509,1.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:14:20Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU5,YES,0.21,0.3648,0.1429,1.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:14:20Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU4,YES,0.24,0.3865,0.1337,1.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:14:20Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU3,YES,0.29,0.4627,0.158,1.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:14:20Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU2,YES,0.31,0.4843,0.1593,1.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:14:20Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU2,NO,0.37,0.5402,0.1538,-1.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:14:20Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU3,NO,0.4,0.5649,0.1479,-1.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:14:20Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU4,NO,0.47,0.6253,0.1378,-1.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:14:20Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU5,NO,0.48,0.6467,0.1492,-1.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:14:20Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU6,NO,0.52,0.6702,0.1325,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:14:20Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU7,NO,0.54,0.6923,0.1346,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:14:20Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU8,NO,0.58,0.7487,0.1512,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:14:20Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU10,NO,0.63,0.7673,0.1206,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:14:20Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU11,NO,0.66,0.7948,0.1191,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:14:20Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU12,NO,0.69,0.8109,0.1059,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:14:20Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU14,NO,0.72,0.8261,0.0915,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:14:20Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU15,NO,0.74,0.8489,0.095,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:14:20Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU17,NO,0.77,0.8627,0.0802,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:14:20Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU18,NO,0.8,0.8869,0.0752,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:14:20Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-62,NO,0.13,0.333,0.195,68.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:14:20Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-65,NO,0.16,0.4026,0.2331,68.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:14:20Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-67,NO,0.2,0.4509,0.2396,68.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:14:20Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-68,NO,0.21,0.4754,0.2538,68.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:14:20Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-69,NO,0.23,0.5,0.2575,68.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:14:20Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-71,NO,0.27,0.5491,0.2652,68.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:14:20Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-80,NO,0.49,0.7512,0.2433,68.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:14:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU21,YES,0.05,0.106,0.0525,1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:14:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU17,YES,0.05,0.1536,0.1003,1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:14:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU11,YES,0.1,0.2261,0.1197,1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:14:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU10,YES,0.12,0.2529,0.1255,1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:14:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU8,YES,0.13,0.2853,0.1473,1.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:14:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU7,YES,0.16,0.3295,0.1601,1.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:14:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU6,YES,0.18,0.3518,0.1614,1.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:14:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU5,YES,0.19,0.3648,0.1639,1.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:14:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU4,YES,0.23,0.3865,0.144,1.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:14:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU3,YES,0.27,0.4627,0.1789,1.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:14:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU2,YES,0.29,0.4843,0.1796,1.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:14:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU2,NO,0.34,0.5402,0.1843,-1.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:14:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU3,NO,0.37,0.5649,0.1785,-1.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:14:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU4,NO,0.46,0.6253,0.1478,-1.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:14:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU5,NO,0.47,0.6467,0.1592,-1.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:14:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU6,NO,0.49,0.6702,0.1623,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:14:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU7,NO,0.53,0.6923,0.1445,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:14:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU8,NO,0.56,0.7487,0.171,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:14:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU10,NO,0.62,0.7673,0.1306,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:14:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU12,NO,0.66,0.8109,0.1352,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:14:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU14,NO,0.7,0.8261,0.1107,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:14:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU15,NO,0.72,0.8489,0.1143,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:14:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU17,NO,0.74,0.8627,0.1088,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:14:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU18,NO,0.78,0.8869,0.0944,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:14:50Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-62,NO,0.12,0.333,0.2055,68.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:14:50Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-70,NO,0.26,0.5246,0.2509,68.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:14:50Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-71,NO,0.28,0.5491,0.2548,68.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:14:50Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-74,NO,0.36,0.6211,0.2449,68.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:14:50Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-77,NO,0.43,0.6891,0.2418,68.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:14:50Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-80,NO,0.51,0.7512,0.2234,68.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:15:20Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU10,YES,0.11,0.2529,0.136,1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:15:20Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU7,NO,0.52,0.6923,0.1545,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:15:20Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU10,NO,0.6,0.7673,0.1504,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:15:20Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU11,NO,0.65,0.7948,0.1283,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:15:20Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU17,NO,0.75,0.8627,0.0993,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:15:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU21,YES,0.03,0.106,0.0739,1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:15:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU15,YES,0.06,0.1716,0.1076,1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:15:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU14,YES,0.07,0.1952,0.1206,1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:15:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU12,YES,0.07,0.2094,0.1348,1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:15:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU11,YES,0.08,0.2261,0.1409,1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:15:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU10,YES,0.09,0.2529,0.1571,1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:15:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU8,YES,0.12,0.2853,0.1578,1.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:15:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU7,YES,0.15,0.3295,0.1705,1.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:15:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU6,YES,0.16,0.3518,0.1823,1.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:15:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU5,YES,0.17,0.3648,0.1848,1.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:15:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU4,YES,0.21,0.3865,0.1649,1.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:15:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU3,YES,0.25,0.4627,0.1995,1.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:15:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU2,YES,0.27,0.4843,0.2005,1.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:15:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU2,NO,0.32,0.5402,0.2047,-1.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:15:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU3,NO,0.36,0.5649,0.1887,-1.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:15:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU4,NO,0.45,0.6253,0.1577,-1.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:15:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU6,NO,0.48,0.6702,0.1727,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:15:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU7,NO,0.5,0.6923,0.1744,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:15:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU8,NO,0.54,0.7487,0.191,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:15:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU10,NO,0.58,0.7673,0.1698,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:15:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU11,NO,0.63,0.7948,0.1481,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:15:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU12,NO,0.64,0.8109,0.1542,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:15:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU14,NO,0.68,0.8261,0.1304,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:15:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU15,NO,0.71,0.8489,0.1243,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:15:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU17,NO,0.74,0.8627,0.1088,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:15:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU18,NO,0.77,0.8869,0.1044,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:15:50Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-47,NO,0.03,0.0875,0.0553,68.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:15:50Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-56,NO,0.06,0.2114,0.1474,68.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:15:50Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-68,NO,0.22,0.4754,0.2432,68.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:15:50Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-70,NO,0.27,0.5246,0.2408,68.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:15:50Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-80,NO,0.52,0.7512,0.2134,68.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:15:50Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-83,NO,0.58,0.806,0.2085,68.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:15:50Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-86,NO,0.65,0.8527,0.1863,68.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:15:50Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-89,NO,0.72,0.8912,0.1566,68.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:16:20Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU5,NO,0.46,0.6467,0.1692,-1.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:16:20Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU8,NO,0.55,0.7487,0.181,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:16:20Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU10,NO,0.59,0.7673,0.1598,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:16:20Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU12,NO,0.65,0.8109,0.1445,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:16:20Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-47,NO,0.02,0.0875,0.066,68.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:16:20Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-67,NO,0.19,0.4509,0.2501,68.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:16:20Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-68,NO,0.2,0.4754,0.2641,68.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:16:20Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-69,NO,0.21,0.5,0.2784,68.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:16:20Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-70,NO,0.25,0.5246,0.2613,68.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:16:20Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-71,NO,0.27,0.5491,0.2652,68.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:16:20Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-83,NO,0.57,0.806,0.2185,68.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:16:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU14,NO,0.69,0.8261,0.1211,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:16:50Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-65,NO,0.15,0.4026,0.2436,68.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:17:20Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU18,NO,0.78,0.8869,0.0944,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:18:22Z,CFB,Minnesota vs Penn St.: Total Points,KXNCAAFTOTAL-26NOV14MINNPSU-24,NO,0.07,0.127,0.0522,42.0,2026-11-14T21:18:20Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:18:22Z,CFB,Minnesota vs Penn St.: Total Points,KXNCAAFTOTAL-26NOV14MINNPSU-27,NO,0.11,0.1696,0.0526,42.0,2026-11-14T21:18:20Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:18:22Z,CFB,Minnesota vs Penn St.: Total Points,KXNCAAFTOTAL-26NOV14MINNPSU-30,NO,0.16,0.2204,0.051,42.0,2026-11-14T21:18:20Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:18:22Z,CFB,Minnesota vs Penn St.: Total Points,KXNCAAFTOTAL-26NOV14MINNPSU-33,NO,0.23,0.279,0.0362,42.0,2026-11-14T21:18:20Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:18:22Z,CFB,San Jose St. vs Air Force: Total Points,KXNCAAFTOTAL-26NOV14SJSUAFA-31,NO,0.1,0.1403,0.0336,48.0,2026-11-14T21:18:20Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:18:22Z,CFB,San Jose St. vs Air Force: Total Points,KXNCAAFTOTAL-26NOV14SJSUAFA-34,NO,0.14,0.1856,0.0372,48.0,2026-11-14T21:18:20Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:18:22Z,CFB,San Jose St. vs Air Force: Total Points,KXNCAAFTOTAL-26NOV14SJSUAFA-37,NO,0.19,0.2391,0.0379,48.0,2026-11-14T21:18:20Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:18:22Z,CFB,North Dakota St. vs Hawai'i: Total Points,KXNCAAFTOTAL-26NOV14NDSUHAW-21,NO,0.08,0.1207,0.0351,39.5,2026-11-14T21:18:20Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:18:22Z,CFB,North Dakota St. vs Hawai'i: Total Points,KXNCAAFTOTAL-26NOV14NDSUHAW-24,NO,0.12,0.1619,0.0341,39.5,2026-11-14T21:18:20Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:18:22Z,CFB,North Dakota St. vs Hawai'i: Total Points,KXNCAAFTOTAL-26NOV14NDSUHAW-27,NO,0.17,0.2114,0.0314,39.5,2026-11-14T21:18:20Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:19:20Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU15,NO,0.72,0.8489,0.1143,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:19:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU18,NO,0.77,0.8869,0.1044,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:19:50Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-74,NO,0.35,0.6211,0.2551,68.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:20:20Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU21,YES,0.04,0.106,0.0633,1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:20:20Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU17,YES,0.07,0.1536,0.079,1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:20:20Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU14,YES,0.08,0.1952,0.11,1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:20:20Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU12,YES,0.1,0.2094,0.103,1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:20:20Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU11,YES,0.1,0.2261,0.1197,1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:20:20Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU10,YES,0.1,0.2529,0.1465,1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:20:20Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU8,YES,0.13,0.2853,0.1473,1.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:20:20Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU6,YES,0.17,0.3518,0.1718,1.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:20:20Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU5,YES,0.19,0.3648,0.1639,1.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:20:20Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU3,YES,0.26,0.4627,0.189,1.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:20:20Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU2,YES,0.28,0.4843,0.19,1.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:20:20Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU7,NO,0.51,0.6923,0.1645,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:20:20Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU10,NO,0.6,0.7673,0.1504,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:20:20Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU11,NO,0.64,0.7948,0.1381,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:20:20Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU12,NO,0.66,0.8109,0.1352,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:20:20Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU17,NO,0.75,0.8627,0.0993,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:20:20Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-56,NO,0.07,0.2114,0.1368,68.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:20:20Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-59,NO,0.08,0.2687,0.1835,68.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:20:20Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-62,NO,0.11,0.333,0.2161,68.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:20:20Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-69,NO,0.22,0.5,0.2678,68.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:20:20Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-71,NO,0.26,0.5491,0.2754,68.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:20:20Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-77,NO,0.42,0.6891,0.2518,68.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:20:20Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-80,NO,0.5,0.7512,0.2333,68.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:20:20Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-83,NO,0.56,0.806,0.2283,68.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:20:20Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-86,NO,0.64,0.8527,0.1961,68.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:20:20Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-89,NO,0.7,0.8912,0.1759,68.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:20:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU18,YES,0.04,0.1314,0.0887,1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:20:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU17,YES,0.05,0.1536,0.1003,1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:20:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU14,YES,0.07,0.1952,0.1206,1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:20:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU12,YES,0.07,0.2094,0.1348,1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:20:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU11,YES,0.08,0.2261,0.1409,1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:20:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU7,YES,0.16,0.3295,0.1601,1.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:20:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU6,YES,0.18,0.3518,0.1614,1.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:20:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU5,YES,0.18,0.3648,0.1744,1.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:20:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU4,YES,0.22,0.3865,0.1543,1.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:20:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU2,YES,0.27,0.4843,0.2005,1.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:20:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU4,NO,0.43,0.6253,0.1781,-1.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:20:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU6,NO,0.47,0.6702,0.1827,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:20:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU7,NO,0.49,0.6923,0.1844,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:20:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU10,NO,0.58,0.7673,0.1698,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:20:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU11,NO,0.62,0.7948,0.1581,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:20:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU12,NO,0.64,0.8109,0.1542,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:20:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU14,NO,0.68,0.8261,0.1304,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:20:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU15,NO,0.7,0.8489,0.1335,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:20:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU17,NO,0.73,0.8627,0.1188,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:20:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU18,NO,0.76,0.8869,0.1135,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:20:50Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-47,NO,0.03,0.0875,0.0553,68.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:20:50Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-53,NO,0.04,0.1619,0.1192,68.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:20:50Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-59,NO,0.09,0.2687,0.1729,68.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:20:50Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-69,NO,0.2,0.5,0.2887,68.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:20:50Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-70,NO,0.24,0.5246,0.2717,68.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:20:50Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-74,NO,0.34,0.6211,0.2651,68.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:20:50Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-86,NO,0.65,0.8527,0.1863,68.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:20:50Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-89,NO,0.71,0.8912,0.1666,68.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:21:20Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU15,YES,0.05,0.1716,0.1182,1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:21:20Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU12,YES,0.08,0.2094,0.1241,1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:21:20Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU11,YES,0.09,0.2261,0.1303,1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:21:20Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU7,YES,0.15,0.3295,0.1705,1.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:21:20Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU6,YES,0.17,0.3518,0.1718,1.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:21:20Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU3,YES,0.25,0.4627,0.1995,1.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:21:20Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU2,YES,0.26,0.4843,0.2106,1.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:21:20Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU3,NO,0.35,0.5649,0.199,-1.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:21:20Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU4,NO,0.42,0.6253,0.1881,-1.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:21:20Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU5,NO,0.45,0.6467,0.1791,-1.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:21:20Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU6,NO,0.46,0.6702,0.1927,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:21:20Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU8,NO,0.54,0.7487,0.191,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:21:20Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU10,NO,0.57,0.7673,0.1798,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:21:20Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU12,NO,0.63,0.8109,0.1642,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:21:20Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU18,NO,0.77,0.8869,0.1044,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:21:20Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-53,NO,0.06,0.1619,0.0979,68.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:21:20Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-62,NO,0.13,0.333,0.195,68.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:21:20Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-65,NO,0.17,0.4026,0.2226,68.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:21:20Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-67,NO,0.21,0.4509,0.2289,68.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:21:20Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-68,NO,0.22,0.4754,0.2428,68.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:21:20Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-69,NO,0.22,0.5,0.2679,68.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:21:20Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-71,NO,0.27,0.5491,0.2652,68.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:21:20Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-74,NO,0.36,0.6211,0.2449,68.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:21:20Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-77,NO,0.45,0.6891,0.2215,68.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:21:20Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-80,NO,0.52,0.7512,0.2134,68.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:21:20Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-83,NO,0.57,0.806,0.2185,68.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:21:20Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-89,NO,0.73,0.8912,0.147,68.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:21:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU18,YES,0.06,0.1314,0.0673,1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:21:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU17,YES,0.06,0.1536,0.0896,1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:21:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU15,YES,0.07,0.1716,0.0969,1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:21:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU14,YES,0.08,0.1952,0.11,1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:21:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU12,YES,0.09,0.2094,0.1136,1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:21:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU10,YES,0.11,0.2529,0.1359,1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:21:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU8,YES,0.14,0.2853,0.1369,1.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:21:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU7,YES,0.17,0.3295,0.1495,1.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:21:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU6,YES,0.19,0.3518,0.1509,1.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:21:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU5,YES,0.2,0.3648,0.1534,1.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:21:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU4,YES,0.23,0.3865,0.144,1.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:21:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU3,YES,0.27,0.4627,0.1789,1.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:21:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU2,YES,0.29,0.4843,0.1796,1.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:21:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU2,NO,0.33,0.5402,0.1945,-1.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:21:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU3,NO,0.38,0.5649,0.1682,-1.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:21:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU4,NO,0.43,0.6253,0.1781,-1.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:21:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU6,NO,0.48,0.6702,0.1727,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:21:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU7,NO,0.51,0.6923,0.1645,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:21:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU8,NO,0.55,0.7487,0.181,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:21:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU10,NO,0.59,0.7673,0.1598,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:21:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU11,NO,0.63,0.7948,0.1481,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:21:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU12,NO,0.65,0.8109,0.1445,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:21:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU15,NO,0.72,0.8489,0.1143,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:21:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU17,NO,0.75,0.8627,0.0993,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:21:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU18,NO,0.79,0.8869,0.0852,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:21:50Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-53,NO,0.05,0.1619,0.1085,68.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:21:50Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-69,NO,0.23,0.5,0.257,68.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:21:50Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-70,NO,0.26,0.5246,0.2509,68.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:21:50Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-71,NO,0.29,0.5491,0.2444,68.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:21:50Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-77,NO,0.46,0.6891,0.2116,68.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:22:20Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU17,YES,0.08,0.1536,0.0684,1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:22:20Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU15,YES,0.13,0.1716,0.0331,1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:22:20Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU11,YES,0.12,0.2261,0.0986,1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:22:20Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU6,YES,0.21,0.3518,0.13,1.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:22:20Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU5,YES,0.21,0.3648,0.1429,1.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:22:20Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU4,YES,0.25,0.3865,0.1231,1.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:22:20Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU2,YES,0.32,0.4843,0.1488,1.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:22:20Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU3,NO,0.4,0.5649,0.1479,-1.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:22:20Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU4,NO,0.42,0.6253,0.1881,-1.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:22:20Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU5,NO,0.48,0.6467,0.1492,-1.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:22:20Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU6,NO,0.51,0.6702,0.1425,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:22:20Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU7,NO,0.53,0.6923,0.1445,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:22:20Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU14,NO,0.7,0.8261,0.1107,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:22:20Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU18,NO,0.8,0.8869,0.0752,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:22:20Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-66,NO,0.19,0.4266,0.2258,68.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:22:20Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-67,NO,0.2,0.4509,0.2396,68.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:22:20Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-69,NO,0.24,0.5,0.247,68.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:22:20Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-74,NO,0.37,0.6211,0.2347,68.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:22:20Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-77,NO,0.45,0.6891,0.2215,68.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:22:20Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-80,NO,0.53,0.7512,0.2034,68.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:22:20Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-83,NO,0.61,0.806,0.1793,68.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:22:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU15,YES,0.11,0.1716,0.0545,1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:22:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU5,YES,0.23,0.3648,0.1223,1.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:22:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU3,YES,0.28,0.4627,0.1677,1.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:22:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU2,YES,0.3,0.4843,0.1695,1.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:22:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU2,NO,0.37,0.5402,0.1538,-1.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:22:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU3,NO,0.39,0.5649,0.1582,-1.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:22:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU4,NO,0.41,0.6253,0.1984,-1.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:22:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU5,NO,0.47,0.6467,0.1587,-1.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:22:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU6,NO,0.5,0.6702,0.1523,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:22:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU17,NO,0.78,0.8627,0.0697,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:22:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU18,NO,0.82,0.8869,0.056,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:22:50Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-47,NO,0.02,0.0875,0.065,68.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:22:50Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-62,NO,0.12,0.333,0.205,68.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:22:50Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-65,NO,0.18,0.4026,0.2115,68.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:22:50Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-66,NO,0.18,0.4266,0.2362,68.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:22:50Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-67,NO,0.21,0.4509,0.2293,68.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:22:50Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-68,NO,0.23,0.4754,0.2329,68.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:22:50Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-69,NO,0.23,0.5,0.257,68.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:22:50Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-70,NO,0.28,0.5246,0.2303,68.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:22:50Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-71,NO,0.28,0.5491,0.2548,68.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:22:50Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-74,NO,0.38,0.6211,0.2244,68.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:22:50Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-86,NO,0.7,0.8527,0.1373,68.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:23:22Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU17,YES,0.06,0.1536,0.0896,1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:23:22Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU15,YES,0.06,0.1716,0.1076,1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:23:22Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU14,YES,0.07,0.1952,0.1206,1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:23:22Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU5,YES,0.22,0.3648,0.1327,1.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:23:22Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU3,YES,0.25,0.4627,0.1995,1.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:23:22Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU2,YES,0.28,0.4843,0.19,1.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:23:22Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU2,NO,0.33,0.5402,0.1942,-1.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:23:22Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU4,NO,0.43,0.6253,0.1781,-1.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:23:22Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU7,NO,0.51,0.6923,0.1645,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:23:22Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU11,NO,0.64,0.7948,0.1385,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:23:22Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU14,NO,0.69,0.8261,0.1211,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:23:22Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU17,NO,0.74,0.8627,0.1088,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:23:22Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-47,NO,0.04,0.0875,0.0446,68.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:23:22Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-50,NO,0.04,0.1207,0.078,68.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:23:22Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-53,NO,0.07,0.1619,0.0872,68.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:23:22Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-56,NO,0.09,0.2114,0.1157,68.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:23:22Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-65,NO,0.19,0.4026,0.2017,68.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:23:22Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-68,NO,0.24,0.4754,0.2221,68.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:23:22Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-71,NO,0.31,0.5491,0.2241,68.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:23:22Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-77,NO,0.47,0.6891,0.2016,68.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:23:22Z,CFB,Minnesota vs Penn St.: Total Points,KXNCAAFTOTAL-26NOV14MINNPSU-24,NO,0.07,0.127,0.0522,42.0,2026-11-14T21:23:20Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:23:22Z,CFB,Minnesota vs Penn St.: Total Points,KXNCAAFTOTAL-26NOV14MINNPSU-27,NO,0.11,0.1696,0.0526,42.0,2026-11-14T21:23:20Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:23:22Z,CFB,Minnesota vs Penn St.: Total Points,KXNCAAFTOTAL-26NOV14MINNPSU-30,NO,0.16,0.2204,0.051,42.0,2026-11-14T21:23:20Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:23:22Z,CFB,Minnesota vs Penn St.: Total Points,KXNCAAFTOTAL-26NOV14MINNPSU-33,NO,0.23,0.279,0.0362,42.0,2026-11-14T21:23:20Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:23:22Z,CFB,San Jose St. vs Air Force: Total Points,KXNCAAFTOTAL-26NOV14SJSUAFA-31,NO,0.1,0.1403,0.0336,48.0,2026-11-14T21:23:20Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:23:22Z,CFB,San Jose St. vs Air Force: Total Points,KXNCAAFTOTAL-26NOV14SJSUAFA-34,NO,0.14,0.1856,0.0372,48.0,2026-11-14T21:23:20Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:23:22Z,CFB,San Jose St. vs Air Force: Total Points,KXNCAAFTOTAL-26NOV14SJSUAFA-37,NO,0.19,0.2391,0.0379,48.0,2026-11-14T21:23:20Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:23:22Z,CFB,North Dakota St. vs Hawai'i: Total Points,KXNCAAFTOTAL-26NOV14NDSUHAW-21,NO,0.08,0.1207,0.0351,39.5,2026-11-14T21:23:20Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:23:22Z,CFB,North Dakota St. vs Hawai'i: Total Points,KXNCAAFTOTAL-26NOV14NDSUHAW-24,NO,0.12,0.1619,0.0341,39.5,2026-11-14T21:23:20Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:23:22Z,CFB,North Dakota St. vs Hawai'i: Total Points,KXNCAAFTOTAL-26NOV14NDSUHAW-27,NO,0.17,0.2114,0.0314,39.5,2026-11-14T21:23:20Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:23:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU21,YES,0.03,0.106,0.0739,1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:23:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU18,YES,0.04,0.1314,0.0887,1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:23:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU17,YES,0.05,0.1536,0.1003,1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:23:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU11,YES,0.1,0.2261,0.1197,1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:23:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU10,YES,0.12,0.2529,0.1255,1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:23:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU6,YES,0.19,0.3518,0.1509,1.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:23:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU5,YES,0.19,0.3648,0.1639,1.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:23:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU3,YES,0.27,0.4627,0.1789,1.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:23:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU2,YES,0.3,0.4843,0.1695,1.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:23:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU2,NO,0.34,0.5402,0.1843,-1.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:23:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU4,NO,0.48,0.6253,0.1278,-1.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:23:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU5,NO,0.5,0.6467,0.1288,-1.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:23:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU6,NO,0.51,0.6702,0.1425,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:23:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU7,NO,0.52,0.6923,0.1545,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:23:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU8,NO,0.57,0.7487,0.1612,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:23:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU10,NO,0.62,0.7673,0.1306,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:23:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU11,NO,0.66,0.7948,0.1191,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:23:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU12,NO,0.68,0.8109,0.1152,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:23:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU14,NO,0.73,0.8261,0.0822,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:23:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU15,NO,0.76,0.8489,0.0756,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:23:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU17,NO,0.79,0.8627,0.061,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:23:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU18,NO,0.8,0.8869,0.0752,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:23:50Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-47,NO,0.03,0.0875,0.0553,68.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:23:50Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-53,NO,0.06,0.1619,0.0979,68.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:23:50Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-56,NO,0.08,0.2114,0.1261,68.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:23:50Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-59,NO,0.11,0.2687,0.1517,68.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:23:50Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-62,NO,0.15,0.333,0.174,68.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:23:50Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-65,NO,0.2,0.4026,0.1913,68.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:23:50Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-66,NO,0.22,0.4266,0.1944,68.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:23:50Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-68,NO,0.26,0.4754,0.2017,68.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:23:50Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-69,NO,0.28,0.5,0.2058,68.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:23:50Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-70,NO,0.31,0.5246,0.1996,68.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:23:50Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-74,NO,0.44,0.6211,0.1635,68.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:23:50Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-77,NO,0.51,0.6891,0.1613,68.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:23:50Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-80,NO,0.6,0.7512,0.1343,68.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:23:50Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-83,NO,0.67,0.806,0.1203,68.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:23:50Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-86,NO,0.75,0.8527,0.0894,68.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:23:50Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-89,NO,0.79,0.8912,0.0896,68.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:24:20Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU21,YES,0.04,0.106,0.0633,1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:24:20Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU18,YES,0.05,0.1314,0.078,1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:24:20Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU15,YES,0.07,0.1716,0.0969,1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:24:20Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU14,YES,0.08,0.1952,0.11,1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:24:20Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU12,YES,0.1,0.2094,0.103,1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:24:20Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU11,YES,0.12,0.2261,0.0985,1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:24:20Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU10,YES,0.13,0.2529,0.1149,1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:24:20Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU6,YES,0.2,0.3518,0.1405,1.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:24:20Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU5,YES,0.23,0.3648,0.1221,1.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:24:20Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU3,YES,0.32,0.4627,0.1272,1.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:24:20Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU2,NO,0.38,0.5402,0.1436,-1.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:24:20Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU3,NO,0.4,0.5649,0.1479,-1.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:24:20Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU7,NO,0.54,0.6923,0.1346,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:24:20Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU10,NO,0.66,0.7673,0.0916,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:24:20Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU11,NO,0.69,0.7948,0.0898,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:24:20Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU12,NO,0.73,0.8109,0.067,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:24:20Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU14,NO,0.76,0.8261,0.0527,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:24:20Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU15,NO,0.79,0.8489,0.0472,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:24:20Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU18,NO,0.83,0.8869,0.0469,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:24:20Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-66,NO,0.23,0.4266,0.1841,68.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:24:20Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-67,NO,0.26,0.4509,0.1772,68.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:24:20Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-68,NO,0.27,0.4754,0.1916,68.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:24:20Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-70,NO,0.32,0.5246,0.1891,68.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:24:20Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-83,NO,0.66,0.806,0.1303,68.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:24:20Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-86,NO,0.74,0.8527,0.0989,68.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:24:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU11,YES,0.11,0.2261,0.1091,1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:24:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU8,NO,0.62,0.7487,0.112,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:24:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU10,NO,0.67,0.7673,0.0816,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:24:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU11,NO,0.7,0.7948,0.0794,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:24:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU17,NO,0.8,0.8627,0.051,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:24:50Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-71,NO,0.33,0.5491,0.2034,68.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:24:50Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-83,NO,0.67,0.806,0.1203,68.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:25:20Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU6,YES,0.21,0.3518,0.13,1.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:25:20Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU6,NO,0.53,0.6702,0.1225,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:25:20Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-59,NO,0.12,0.2687,0.1412,68.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:25:20Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-65,NO,0.21,0.4026,0.181,68.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:25:20Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-66,NO,0.24,0.4266,0.1737,68.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:25:20Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-67,NO,0.27,0.4509,0.1671,68.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:25:20Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-69,NO,0.29,0.5,0.1953,68.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:25:20Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-71,NO,0.34,0.5491,0.1931,68.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:25:20Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-86,NO,0.73,0.8527,0.1089,68.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:25:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU14,NO,0.75,0.8261,0.0627,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:25:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU15,NO,0.78,0.8489,0.0564,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:25:50Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-67,NO,0.26,0.4509,0.1772,68.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:25:50Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-70,NO,0.33,0.5246,0.1789,68.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:25:50Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-83,NO,0.66,0.806,0.1303,68.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:26:20Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU2,YES,0.32,0.4843,0.1488,1.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:26:20Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU3,NO,0.41,0.5649,0.1379,-1.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:26:20Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU7,NO,0.56,0.6923,0.1146,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:26:20Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU10,NO,0.66,0.7673,0.0916,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:26:20Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-66,NO,0.23,0.4266,0.1841,68.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:26:20Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-67,NO,0.25,0.4509,0.1877,68.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:26:20Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-83,NO,0.67,0.806,0.1203,68.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:26:20Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-89,NO,0.78,0.8912,0.0987,68.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:26:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU2,YES,0.33,0.4843,0.1386,1.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:26:50Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-66,NO,0.24,0.4266,0.1737,68.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:26:50Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-86,NO,0.72,0.8527,0.1181,68.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:27:20Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-50,NO,0.03,0.1207,0.0885,68.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:27:20Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-53,NO,0.05,0.1619,0.1086,68.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:27:20Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-56,NO,0.09,0.2114,0.1157,68.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:27:20Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-59,NO,0.11,0.2687,0.1519,68.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:27:20Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-62,NO,0.16,0.333,0.1634,68.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:27:20Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-65,NO,0.2,0.4026,0.1913,68.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:27:20Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-66,NO,0.23,0.4266,0.1841,68.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:27:20Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-67,NO,0.26,0.4509,0.1772,68.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:27:20Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-69,NO,0.28,0.5,0.2058,68.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:27:20Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-74,NO,0.45,0.6211,0.1535,68.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:27:20Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-77,NO,0.52,0.6891,0.1513,68.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:27:20Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-83,NO,0.66,0.806,0.1303,68.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:27:20Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-86,NO,0.74,0.8527,0.0989,68.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:27:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU18,YES,0.06,0.1314,0.0673,1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:27:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU17,YES,0.06,0.1536,0.0896,1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:27:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU10,YES,0.12,0.2529,0.1255,1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:27:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU8,YES,0.15,0.2853,0.1262,1.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:27:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU7,YES,0.19,0.3295,0.1287,1.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:27:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU6,YES,0.2,0.3518,0.1405,1.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:27:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU5,YES,0.22,0.3648,0.1327,1.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:27:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU3,YES,0.31,0.4627,0.1375,1.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:27:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU2,YES,0.31,0.4843,0.1593,1.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:27:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU2,NO,0.36,0.5402,0.1641,-1.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:27:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU3,NO,0.4,0.5649,0.1479,-1.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:27:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU6,NO,0.52,0.6702,0.1325,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:27:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU7,NO,0.55,0.6923,0.1246,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:27:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU8,NO,0.6,0.7487,0.1318,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:27:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU10,NO,0.64,0.7673,0.1106,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:27:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU11,NO,0.68,0.7948,0.0991,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:27:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU12,NO,0.7,0.8109,0.0955,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:27:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU14,NO,0.73,0.8261,0.0822,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:27:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU15,NO,0.76,0.8489,0.0756,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:27:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU17,NO,0.79,0.8627,0.061,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:27:50Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU18,NO,0.82,0.8869,0.056,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:27:50Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-47,NO,0.02,0.0875,0.066,68.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:27:50Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-56,NO,0.08,0.2114,0.1261,68.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:27:50Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-59,NO,0.12,0.2687,0.1412,68.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:27:50Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-62,NO,0.15,0.333,0.174,68.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:27:50Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-65,NO,0.21,0.4026,0.181,68.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:27:50Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-66,NO,0.24,0.4266,0.1737,68.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:27:50Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-67,NO,0.27,0.4509,0.1671,68.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:27:50Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-68,NO,0.28,0.4754,0.1812,68.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:27:50Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-69,NO,0.3,0.5,0.1852,68.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:27:50Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-70,NO,0.34,0.5246,0.1687,68.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:27:50Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-71,NO,0.35,0.5491,0.1831,68.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:27:50Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-74,NO,0.43,0.6211,0.1738,68.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:27:50Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-77,NO,0.53,0.6891,0.1413,68.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:27:50Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-80,NO,0.61,0.7512,0.1245,68.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:27:50Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-83,NO,0.68,0.806,0.1103,68.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:27:50Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-89,NO,0.79,0.8912,0.0896,68.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:28:22Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU21,YES,0.05,0.106,0.0525,1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:28:22Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU17,YES,0.07,0.1536,0.079,1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:28:22Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU15,YES,0.08,0.1716,0.0863,1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:28:22Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU14,YES,0.1,0.1952,0.0887,1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:28:22Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU12,YES,0.12,0.2094,0.082,1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:28:22Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU11,YES,0.13,0.2261,0.0881,1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:28:22Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-WVU10,YES,0.14,0.2529,0.1044,1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:28:22Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU6,NO,0.59,0.6702,0.0627,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:28:22Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU7,NO,0.63,0.6923,0.0456,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:28:22Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU10,NO,0.71,0.7673,0.0429,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:28:22Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU11,NO,0.74,0.7948,0.0403,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:28:22Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU12,NO,0.74,0.8109,0.057,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:28:22Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU14,NO,0.78,0.8261,0.0336,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:28:22Z,CFB,Kansas vs West Virginia: Spread,KXNCAAFSPREAD-26NOV14KUWVU-KU18,NO,0.84,0.8869,0.0369,-1.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:28:22Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-47,NO,0.04,0.0875,0.0446,68.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:28:22Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-50,NO,0.07,0.1207,0.0459,68.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:28:22Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-53,NO,0.07,0.1619,0.0872,68.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:28:22Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-56,NO,0.11,0.2114,0.0944,68.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:28:22Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-59,NO,0.15,0.2687,0.1097,68.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:28:22Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-62,NO,0.19,0.333,0.1322,68.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:28:22Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-65,NO,0.22,0.4026,0.1704,68.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:28:22Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-66,NO,0.27,0.4266,0.1427,68.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:28:22Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-69,NO,0.31,0.5,0.175,68.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:28:22Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-70,NO,0.35,0.5246,0.1587,68.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:28:22Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-71,NO,0.37,0.5491,0.1627,68.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:28:22Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-74,NO,0.46,0.6211,0.1436,68.5,2026-11-14T20:29:30Z,edge above sanity cap
+2026-11-14T21:28:22Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-77,NO,0.54,0.6891,0.1314,68.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range); edge above sanity cap
+2026-11-14T21:28:22Z,CFB,Kansas vs West Virginia: Total Points,KXNCAAFTOTAL-26NOV14KUWVU-89,NO,0.8,0.8912,0.0796,68.5,2026-11-14T20:29:30Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:28:22Z,CFB,Minnesota vs Penn St.: Total Points,KXNCAAFTOTAL-26NOV14MINNPSU-24,NO,0.07,0.127,0.0522,42.0,2026-11-14T21:28:20Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:28:22Z,CFB,Minnesota vs Penn St.: Total Points,KXNCAAFTOTAL-26NOV14MINNPSU-27,NO,0.11,0.1696,0.0526,42.0,2026-11-14T21:28:20Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:28:22Z,CFB,Minnesota vs Penn St.: Total Points,KXNCAAFTOTAL-26NOV14MINNPSU-30,NO,0.16,0.2204,0.051,42.0,2026-11-14T21:28:20Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:28:22Z,CFB,Minnesota vs Penn St.: Total Points,KXNCAAFTOTAL-26NOV14MINNPSU-33,NO,0.23,0.279,0.0362,42.0,2026-11-14T21:28:20Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:28:22Z,CFB,San Jose St. vs Air Force: Total Points,KXNCAAFTOTAL-26NOV14SJSUAFA-31,NO,0.1,0.1403,0.0336,48.0,2026-11-14T21:28:20Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:28:22Z,CFB,San Jose St. vs Air Force: Total Points,KXNCAAFTOTAL-26NOV14SJSUAFA-34,NO,0.14,0.1856,0.0372,48.0,2026-11-14T21:28:20Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:28:22Z,CFB,San Jose St. vs Air Force: Total Points,KXNCAAFTOTAL-26NOV14SJSUAFA-37,NO,0.19,0.2391,0.0379,48.0,2026-11-14T21:28:20Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:28:22Z,CFB,North Dakota St. vs Hawai'i: Total Points,KXNCAAFTOTAL-26NOV14NDSUHAW-21,NO,0.08,0.1207,0.0351,39.5,2026-11-14T21:28:20Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:28:22Z,CFB,North Dakota St. vs Hawai'i: Total Points,KXNCAAFTOTAL-26NOV14NDSUHAW-24,NO,0.12,0.1619,0.0341,39.5,2026-11-14T21:28:20Z,rung far from sharp line (unvalidated range)
+2026-11-14T21:28:22Z,CFB,North Dakota St. vs Hawai'i: Total Points,KXNCAAFTOTAL-26NOV14NDSUHAW-27,NO,0.17,0.2114,0.0314,39.5,2026-11-14T21:28:20Z,rung far from sharp line (unvalidated range)
