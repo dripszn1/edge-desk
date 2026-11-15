@@ -186,6 +186,18 @@ def _cell(g: pd.DataFrame) -> dict:
             "t_by_game": clv._t(v.groupby(ev).mean()) if len(v) else None}
 
 
+def _in_effect(out: dict, grp: str, label: str, cell, held: str) -> None:
+    """Record an ON guard; propose turning it OFF only if what it holds back beats the close."""
+    out["in_effect"].append(f"{grp}: {label}"
+                            + (f"; {held}: {cell['avg_clv_c']}c vs Kalshi's close "
+                               f"(t {cell['t_by_game']} by game, {cell['with_close']} plays)"
+                               if cell and cell["with_close"] else ""))
+    if cell and cell["with_close"] >= MIN_PLAYS and cell["t_by_game"] is not None \
+            and cell["t_by_game"] >= -T_BAD and (cell["avg_clv_c"] or 0) > 0:
+        out["proposals"].append(f"PROPOSE {grp}: turn OFF the guard '{label}': {held} beat Kalshi's close by "
+                                f"{cell['avg_clv_c']}c (t {cell['t_by_game']} by game, {cell['with_close']} plays)")
+
+
 def summary(p: pd.DataFrame) -> dict:
     out = {"proposals": [], "in_effect": []}
     if p is None or p.empty:
@@ -204,24 +216,26 @@ def summary(p: pd.DataFrame) -> dict:
              "kalshi_first": {str(k): _cell(x) for k, x in g[g["kalshi_first"].notna()].groupby(g["kalshi_first"].astype(bool))},
              "by_pull_age": {b: _cell(g[g["age_bucket"] == b]) for _, _, b in AGE_BUCKETS if (g["age_bucket"] == b).any()}}
         out[grp] = d
-        checks = [("plays entered after Kalshi already moved toward us", d["kalshi_first"].get("True"),
-                   "skip a play when Kalshi's price already fell 1c+ toward ours in the 30 min before"),
-                  *[(f"plays priced on a {b} old sharp line", d["by_pull_age"].get(b),
-                     f"alert only within {AGE_BUCKETS[i][0]} min of a fresh sharp pull")
-                    for i, (_, _, b) in enumerate(AGE_BUCKETS) if i > 0]]
-        guarded = grp == "cbb" and "CBB" in premove.GUARD_LEAGUES          # #50: this guard is live for CBB
-        if guarded:
-            cell = d["kalshi_first"].get("True")
-            out["in_effect"].append(f"{grp}: kalshi-moved-first guard is ON (Emerson OK'd 11-12)"
-                                    + (f"; those plays {cell['avg_clv_c']}c vs Kalshi's close "
-                                       f"(t {cell['t_by_game']} by game, {cell['with_close']} plays)"
-                                       if cell and cell["with_close"] else ""))
-            if cell and cell["with_close"] >= MIN_PLAYS and cell["t_by_game"] is not None \
-                    and cell["t_by_game"] >= -T_BAD and (cell["avg_clv_c"] or 0) > 0:
-                out["proposals"].append(f"PROPOSE {grp}: turn OFF the kalshi-moved-first guard: the plays it holds "
-                                        f"back beat Kalshi's close by {cell['avg_clv_c']}c "
-                                        f"(t {cell['t_by_game']} by game, {cell['with_close']} plays)")
-            checks = checks[1:]                                              # never re-propose a live guard
+        kf = ("plays entered after Kalshi already moved toward us", d["kalshi_first"].get("True"),
+              "skip a play when Kalshi's price already fell 1c+ toward ours in the 30 min before")
+        ages = [(f"plays priced on a {b} old sharp line", d["by_pull_age"].get(b),
+                 f"alert only within {AGE_BUCKETS[i][0]} min of a fresh sharp pull", AGE_BUCKETS[i][0])
+                for i, (_, _, b) in enumerate(AGE_BUCKETS) if i > 0]
+        leagues = {"CBB"} if grp == "cbb" else {"NFL", "CFB"}
+        checks = []
+        # #50/#52/#68/#69: a guard that is already ON is reported, never re-proposed
+        if leagues <= set(premove.GUARD_LEAGUES):
+            _in_effect(out, grp, "kalshi-moved-first guard is ON", kf[1], "the plays it holds back")
+        else:
+            checks.append(kf[:3])
+        fresh_limit = max(sharp.ODDS_MAX_AGE_MIN, sharp.ODDS_MAX_AGE_NEAR_KO_MIN)
+        for what, cell, fix, mins in ages:
+            if fresh_limit <= mins:
+                if cell:
+                        _in_effect(out, grp, f"sharp line must be <={fresh_limit} min old (ON)", cell,
+                               f"{what} (held back now)")
+            else:
+                checks.append((what, cell, fix))
         for what, cell, fix in checks:
             if cell and cell["with_close"] >= MIN_PLAYS and cell["t_by_game"] is not None \
                     and cell["t_by_game"] <= T_BAD and (cell["avg_clv_c"] or 0) < 0:
