@@ -1,17 +1,17 @@
 {
-  "generated_ts": "2026-11-15T02:08:40Z",
-  "generated_ct": "Sat Nov 14, 8:08 PM CT",
+  "generated_ts": "2026-11-15T02:41:42Z",
+  "generated_ct": "Sat Nov 14, 8:41 PM CT",
   "today_ct": "2026-11-14",
   "snapshot": {
-    "ts": "2026-11-15T02:01:57Z",
-    "ct": "Sat Nov 14, 8:01 PM CT",
+    "ts": "2026-11-15T02:40:12Z",
+    "ct": "Sat Nov 14, 8:40 PM CT",
     "stale": false,
-    "markets_scanned": 2711,
+    "markets_scanned": 2620,
     "kickoff_source": "kalshi occurrence_datetime - 3h",
     "phases": {
       "CFB": {
-        "live": 1195,
-        "pregame": 842
+        "live": 1151,
+        "pregame": 795
       },
       "NFL": {
         "pregame": 674
@@ -62,7 +62,7 @@
     "max_bet": 10.0
   },
   "signals": {
-    "weekly_ct": "Sat Nov 14, 8:06 PM CT",
+    "weekly_ct": "Sat Nov 14, 8:41 PM CT",
     "scorecards": [
       {
         "name": "SHARP shadow football",
@@ -153,15 +153,15 @@
           "no_close": 0
         },
         "football": {
-          "n": 53,
-          "avg_clv_c": -0.93,
-          "avg_raw_c": 0.59,
-          "beat_close_pct": 32.1,
-          "t_stat": -1.06,
-          "events": 26,
-          "t_by_event": -0.14,
+          "n": 56,
+          "avg_clv_c": -1.01,
+          "avg_raw_c": 0.51,
+          "beat_close_pct": 30.4,
+          "t_stat": -1.22,
+          "events": 27,
+          "t_by_event": -0.2,
           "stale": 0,
-          "pending": 23,
+          "pending": 22,
           "no_close": 0
         }
       },
@@ -179,15 +179,15 @@
           "no_close": 7
         },
         "football": {
-          "n": 153,
-          "avg_clv_c": -1.0,
-          "avg_raw_c": 0.2,
-          "beat_close_pct": 34.0,
-          "t_stat": -4.8,
-          "events": 37,
-          "t_by_event": -3.82,
+          "n": 156,
+          "avg_clv_c": -1.03,
+          "avg_raw_c": 0.15,
+          "beat_close_pct": 33.3,
+          "t_stat": -5.04,
+          "events": 38,
+          "t_by_event": -4.03,
           "stale": 0,
-          "pending": 62,
+          "pending": 59,
           "no_close": 1
         }
       }
@@ -289,90 +289,6 @@
       }
     },
     "open_alerts": [
-      {
-        "ticker": "KXNCAAFSPREAD-26NOV14GASOGAST-GASO2",
-        "signal": "SHARP",
-        "side": "NO",
-        "game": "Georgia Southern vs Georgia St.: Spread",
-        "contract": "Georgia Southern wins by over 1.5 points",
-        "max_price": 0.35,
-        "stake": 2.2,
-        "gone": true,
-        "sent_ct": "Thu Nov 12, 9:50 AM CT",
-        "kickoff_utc": "2026-11-14T20:30:00Z",
-        "kickoff_ct": "Sat Nov 14, 2:30 PM CT",
-        "kalshi_url": "https://kalshi.com/markets/kxncaafspread/event/kxncaafspread-26nov14gasogast"
-      },
-      {
-        "ticker": "KXNCAAFSPREAD-26NOV14MTULIB-LIB18",
-        "signal": "SHARP",
-        "side": "NO",
-        "game": "Middle Tennessee vs Liberty: Spread",
-        "contract": "Liberty wins by over 17.5 points",
-        "max_price": 0.39,
-        "stake": 3.18,
-        "gone": true,
-        "sent_ct": "Sat Nov 14, 2:07 PM CT",
-        "kickoff_utc": "2026-11-14T20:30:00Z",
-        "kickoff_ct": "Sat Nov 14, 2:30 PM CT",
-        "kalshi_url": "https://kalshi.com/markets/kxncaafspread/event/kxncaafspread-26nov14mtulib"
-      },
-      {
-        "ticker": "KXNCAAFSPREAD-26NOV14MTULIB-LIB22",
-        "signal": "SHARP",
-        "side": "NO",
-        "game": "Middle Tennessee vs Liberty: Spread",
-        "contract": "Liberty wins by over 21.5 points",
-        "max_price": 0.5,
-        "stake": 3.11,
-        "gone": true,
-        "sent_ct": "Sat Nov 14, 2:06 PM CT",
-        "kickoff_utc": "2026-11-14T20:30:00Z",
-        "kickoff_ct": "Sat Nov 14, 2:30 PM CT",
-        "kalshi_url": "https://kalshi.com/markets/kxncaafspread/event/kxncaafspread-26nov14mtulib"
-      },
-      {
-        "ticker": "KXNCAAFTOTAL-26NOV14GASOGAST-54",
-        "signal": "SHARP",
-        "side": "NO",
-        "game": "Georgia Southern vs Georgia St.: Total Points",
-        "contract": "Over 53.5 points",
-        "max_price": 0.4,
-        "stake": 2.51,
-        "gone": true,
-        "sent_ct": "Fri Nov 13, 1:46 AM CT",
-        "kickoff_utc": "2026-11-14T20:30:00Z",
-        "kickoff_ct": "Sat Nov 14, 2:30 PM CT",
-        "kalshi_url": "https://kalshi.com/markets/kxncaaftotal/event/kxncaaftotal-26nov14gasogast"
-      },
-      {
-        "ticker": "KXNCAAFTOTAL-26NOV14MICHORE-34",
-        "signal": "SHARP",
-        "side": "NO",
-        "game": "Michigan vs Oregon: Total Points",
-        "contract": "Over 33.5 points",
-        "max_price": 0.34,
-        "stake": 2.77,
-        "gone": true,
-        "sent_ct": "Thu Nov 12, 7:46 AM CT",
-        "kickoff_utc": "2026-11-14T20:30:00Z",
-        "kickoff_ct": "Sat Nov 14, 2:30 PM CT",
-        "kalshi_url": "https://kalshi.com/markets/kxncaaftotal/event/kxncaaftotal-26nov14michore"
-      },
-      {
-        "ticker": "KXNCAAFTOTAL-26NOV14MIZZUGA-43",
-        "signal": "SHARP",
-        "side": "NO",
-        "game": "Missouri vs Georgia: Total Points",
-        "contract": "Over 42.5 points",
-        "max_price": 0.34,
-        "stake": 2.14,
-        "gone": true,
-        "sent_ct": "Thu Nov 12, 11:24 PM CT",
-        "kickoff_utc": "2026-11-14T20:30:00Z",
-        "kickoff_ct": "Sat Nov 14, 2:30 PM CT",
-        "kalshi_url": "https://kalshi.com/markets/kxncaaftotal/event/kxncaaftotal-26nov14mizzuga"
-      },
       {
         "ticker": "KXNCAAFSPREAD-26NOV14KUWVU-KU2",
         "signal": "SHARP",
@@ -822,6 +738,20 @@
         "kalshi_url": "https://kalshi.com/markets/kxncaaftotal/event/kxncaaftotal-26nov14ususdsu"
       },
       {
+        "ticker": "KXNCAAFSPREAD-26NOV14CSUWSU-WSU10",
+        "signal": "SHARP",
+        "side": "YES",
+        "game": "Colorado St. vs Washington St.: Spread",
+        "contract": "Washington St. wins by over 9.5 points",
+        "max_price": 0.46,
+        "stake": 3.35,
+        "gone": false,
+        "sent_ct": "Sat Nov 14, 8:40 PM CT",
+        "kickoff_utc": "2026-11-15T03:30:00Z",
+        "kickoff_ct": "Sat Nov 14, 9:30 PM CT",
+        "kalshi_url": "https://kalshi.com/markets/kxncaafspread/event/kxncaafspread-26nov14csuwsu"
+      },
+      {
         "ticker": "KXNCAAFSPREAD-26NOV14NDSUHAW-NDSU2",
         "signal": "SHARP",
         "side": "NO",
@@ -873,6 +803,20 @@
         "stake": 3.76,
         "gone": true,
         "sent_ct": "Sat Nov 14, 1:45 AM CT",
+        "kickoff_utc": "2026-11-15T18:00:00Z",
+        "kickoff_ct": "Sun Nov 15, 12:00 PM CT",
+        "kalshi_url": "https://kalshi.com/markets/kxnflspread/event/kxnflspread-26nov15jacten"
+      },
+      {
+        "ticker": "KXNFLSPREAD-26NOV15JACTEN-JAC5",
+        "signal": "SHARP",
+        "side": "NO",
+        "game": "Jacksonville vs Tennessee: Spread",
+        "contract": "Jacksonville wins by over 4.5 points",
+        "max_price": 0.28,
+        "stake": 2.56,
+        "gone": false,
+        "sent_ct": "Sat Nov 14, 8:10 PM CT",
         "kickoff_utc": "2026-11-15T18:00:00Z",
         "kickoff_ct": "Sun Nov 15, 12:00 PM CT",
         "kalshi_url": "https://kalshi.com/markets/kxnflspread/event/kxnflspread-26nov15jacten"
