@@ -18,6 +18,7 @@ from .collect import _get
 ROOT = Path(__file__).resolve().parents[1]
 FLAGS = ROOT / "data" / "flags" / "flags.csv"
 RESULTS = ROOT / "data" / "results" / "results.csv"
+STREAM_FILLS = ROOT / "data" / "stream"              # #66 instant paper trades
 # single-leg MODEL flags (live + shadow) get graded too, so the model's real-price record builds up
 MODEL_FLAGS = (ROOT / "data" / "flags" / "model_flags.csv", ROOT / "data" / "flags" / "model_shadow.csv",
                ROOT / "data" / "flags" / "sharp_flags.csv", ROOT / "data" / "flags" / "sharp_shadow.csv",
@@ -87,7 +88,12 @@ def run(now: datetime | None = None) -> pd.DataFrame:
         placebos = pd.read_csv(PLACEBOS) if PLACEBOS.exists() else None
     except Exception:  # noqa: BLE001
         placebos = None
-    pending = sorted((flag_tickers(flags) | placebo_tickers(placebos, now)) - final_tickers(old))
+    try:                                               # #66 instant paper trades from the Kalshi stream
+        from .stream_grade import stream_tickers
+        stream_t = stream_tickers(STREAM_FILLS)
+    except Exception:  # noqa: BLE001
+        stream_t = set()
+    pending = sorted((flag_tickers(flags) | placebo_tickers(placebos, now) | stream_t) - final_tickers(old))
     ts = now.strftime("%Y-%m-%dT%H:%M:%SZ")
     rows = []
     for i in range(0, len(pending), 50):
