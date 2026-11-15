@@ -12,4 +12,4 @@ run_id,started_utc,ended_utc,minutes,full_passes,hot_passes,snapshots_saved,comm
 43641558759,2026-11-14T21:13:20Z,2026-11-15T02:08:43Z,298,518,0,20,20,58,9,36,,code updated,3970,0,0.2,4.0,5.3
 43666372233,2026-11-15T02:09:56Z,2026-11-15T02:58:25Z,51,87,0,4,4,10,9,3,,code updated,666,0,0.3,4.1,5.9
 43670207094,2026-11-15T02:59:21Z,2026-11-15T03:14:21Z,18,31,0,2,0,4,0,1,stream start: ValueError: Unable to load PEM file. See https://cryptography.io/en/latest/faq/#why-can-t-i-import-my-pem-file for more details. MalformedFraming,running (checkpoint),267,0,0.3,2.1,3.3
-43672784724,2026-11-15T03:33:00Z,2026-11-15T04:03:13Z,33,59,0,3,1,7,3,1,,running (checkpoint),504,0,0.4,2.8,4.1
+43672784724,2026-11-15T03:33:00Z,2026-11-15T04:05:37Z,35,59,0,3,3,7,3,1,,code updated,504,0,0.4,2.8,4.1
