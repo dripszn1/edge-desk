@@ -65,11 +65,46 @@ def _utc(t: datetime) -> datetime:
     return t.replace(tzinfo=UTC) if t.tzinfo is None else t.astimezone(UTC)
 
 
+EARLY_LEAD_H = 2.5                                     # open this long before an early kickoff
+KICKOFF_MAP = DATA / "kickoffs" / "event_map.csv"
+_KO_CACHE: dict = {}
+
+
+def kickoffs_on(day: date, path: Path | None = None) -> list[datetime]:
+    """NFL/CFB kickoffs (UTC) on this CT day from the persistent event map (stdlib only: the guard
+    job runs without pandas). Unknown or unreadable map -> []."""
+    path = path or KICKOFF_MAP
+    try:
+        key = (str(path), path.stat().st_mtime)
+    except OSError:
+        return []
+    if _KO_CACHE.get("key") != key:
+        kos = []
+        try:
+            with path.open(newline="") as fh:
+                for r in csv.DictReader(fh):
+                    t = str(r.get("event_ticker") or "")
+                    if not (t.startswith("KXNFL") or t.startswith("KXNCAAF")):
+                        continue
+                    try:
+                        kos.append(_utc(datetime.fromisoformat(str(r["kickoff_utc"]).replace("Z", "+00:00"))))
+                    except (KeyError, ValueError):
+                        continue
+        except OSError:
+            kos = []
+        _KO_CACHE.update(key=key, kos=kos)
+    return [k for k in _KO_CACHE["kos"] if k.astimezone(CT).date() == day]
+
+
 def window_on(day: date) -> tuple[datetime, datetime]:
     (sh, sm), (eh, em) = WINDOWS[day.weekday()]
     s = datetime(day.year, day.month, day.day, sh, sm, tzinfo=CT)
     e = datetime(day.year, day.month, day.day, eh, em, tzinfo=CT)
-    return s.astimezone(UTC), e.astimezone(UTC)
+    s, e = s.astimezone(UTC), e.astimezone(UTC)
+    kos = kickoffs_on(day)                             # 11-15: London/early games open the window sooner
+    if kos and min(kos) - timedelta(hours=EARLY_LEAD_H) < s:
+        s = min(kos) - timedelta(hours=EARLY_LEAD_H)
+    return s, e
 
 
 def current_window(now: datetime, early_min: float = 0) -> tuple[datetime, datetime] | None:

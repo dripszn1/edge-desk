@@ -456,3 +456,19 @@ def test_main_redispatches_on_restart():
     end = datetime(2026, 11, 14, 18, 0, tzinfo=UTC)
     assert live.exit_reason(end, end + timedelta(hours=3), end + timedelta(hours=5), "code updated") == "code updated"
     assert live.exit_reason(end, end, end, None) == "window end"
+
+
+def test_window_opens_early_for_an_early_kickoff(tmp_path, monkeypatch):
+    from datetime import date, datetime, timezone
+    from edge_desk import live
+    m = tmp_path / "event_map.csv"
+    m.write_text("event_ticker,kickoff_utc\nKXNFLSPREAD-26NOV15NEDET,2026-11-15T14:30:00Z\n"
+                 "KXNCAAMBSPREAD-26NOV15AB,2026-11-15T09:00:00Z\n")
+    monkeypatch.setattr(live, "KICKOFF_MAP", m)
+    live._KO_CACHE.clear()
+    s, e = live.window_on(date(2026, 11, 15))
+    assert s == datetime(2026, 11, 15, 12, 0, tzinfo=timezone.utc)          # 8:30 AM CT game -> 6:00 AM CT
+    assert live.current_window(datetime(2026, 11, 15, 13, 10, tzinfo=timezone.utc)) is not None
+    monkeypatch.setattr(live, "KICKOFF_MAP", tmp_path / "missing.csv")
+    live._KO_CACHE.clear()
+    assert live.window_on(date(2026, 11, 15))[0] == datetime(2026, 11, 15, 17, 0, tzinfo=timezone.utc)

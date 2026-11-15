@@ -77,3 +77,11 @@ def _no_real_stream_fills(monkeypatch, tmp_path):
     """#66: tests never pick up the real data/stream fills when they run settle."""
     from edge_desk import settle
     monkeypatch.setattr(settle, "STREAM_FILLS", tmp_path / "no_stream")
+
+
+@pytest.fixture(autouse=True)
+def _no_real_kickoff_map(monkeypatch, tmp_path):
+    """Live windows in tests use the fixed table unless a test supplies its own kickoff map."""
+    from edge_desk import live
+    monkeypatch.setattr(live, "KICKOFF_MAP", tmp_path / "no_event_map.csv")
+    live._KO_CACHE.clear()
