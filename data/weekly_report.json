@@ -1,7 +1,7 @@
 {
   "proposals": [],
-  "generated_utc": "2026-11-15T23:19:30Z",
-  "generated_ct": "Sun Nov 15, 5:19 PM CT",
+  "generated_utc": "2026-11-15T23:34:57Z",
+  "generated_ct": "Sun Nov 15, 5:34 PM CT",
   "paper_mode": true,
   "rules": {
     "min_bets": 30,
@@ -287,7 +287,7 @@
     "propose_widen": []
   },
   "settlement": {
-    "pending": 85,
+    "pending": 86,
     "overdue": 0,
     "no_kickoff": 0,
     "grace_hours": 12,
@@ -1523,14 +1523,14 @@
       }
     },
     "football": {
-      "plays": 262,
+      "plays": 263,
       "line_checked": 249,
       "adverse_pct": 60.2,
       "avg_line_move_fav": -0.78,
-      "median_pull_age_min": 28.9,
+      "median_pull_age_min": 29.0,
       "kalshi_first": {
         "False": {
-          "plays": 151,
+          "plays": 152,
           "with_close": 144,
           "avg_clv_c": -1.43,
           "games": 44,
@@ -1567,7 +1567,7 @@
           "t_by_game": -3.38
         },
         "90+ min": {
-          "plays": 74,
+          "plays": 75,
           "with_close": 70,
           "avg_clv_c": -1.12,
           "games": 18,
