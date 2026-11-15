@@ -1,4 +1,4 @@
-# edge-desk digest, Sat Nov 14, 7:17 PM CT
+# edge-desk digest, Sat Nov 14, 7:33 PM CT
 
 Paper only, nothing is placed. Plays kicking off in the next 36h:
 - SHARP shadow: Buffalo vs New York J | YES New York J wins by over 1.5 points @ 20¢, fair 24¢, edge 3.0¢ after fees | $1.27 paper | Sun Nov 15, 12:00 PM CT | [Kalshi](https://kalshi.com/markets/kxnflspread/event/kxnflspread-26nov15bufnyj)
@@ -15,4 +15,4 @@ Settled in the last 24h:
   picks vs random entries, $/play: football (199 plays): hold $-0.69 vs $-0.36 (beats 15%), auto-sell +10c $-1.04 vs $-0.92 (beats 16%) · CBB (139 plays): hold $-0.09 vs $-0.06 (beats 46%), auto-sell +10c $-1.03 vs $-0.82 (beats 15%)
   limit-order entries (paper): NFL: 24/25 filled · CFB: 50/162 filled, vs close -4.3c, hold $-57.74, auto-sell +10c $-35.55 (34 done)
 
-Status: Kalshi data 2m old (ok); sharp odds 2m old; odds credits left 19055 of 20000; gates: MODEL NFL closed, MODEL CFB closed, SHARP NFL closed, SHARP CFB closed, SHARP NFL ML closed, SHARP CFB ML closed
+Status: Kalshi data 2m old (ok); sharp odds 2m old; odds credits left 19046 of 20000; gates: MODEL NFL closed, MODEL CFB closed, SHARP NFL closed, SHARP CFB closed, SHARP NFL ML closed, SHARP CFB ML closed

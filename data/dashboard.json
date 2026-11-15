@@ -1,16 +1,16 @@
 {
-  "generated_ts": "2026-11-15T01:17:51Z",
-  "generated_ct": "Sat Nov 14, 7:17 PM CT",
+  "generated_ts": "2026-11-15T01:33:34Z",
+  "generated_ct": "Sat Nov 14, 7:33 PM CT",
   "today_ct": "2026-11-14",
   "snapshot": {
-    "ts": "2026-11-15T01:16:17Z",
-    "ct": "Sat Nov 14, 7:16 PM CT",
+    "ts": "2026-11-15T01:31:31Z",
+    "ct": "Sat Nov 14, 7:31 PM CT",
     "stale": false,
-    "markets_scanned": 2810,
+    "markets_scanned": 2816,
     "kickoff_source": "kalshi occurrence_datetime - 3h",
     "phases": {
       "CFB": {
-        "live": 1249,
+        "live": 1255,
         "pregame": 887
       },
       "NFL": {
@@ -62,7 +62,7 @@
     "max_bet": 10.0
   },
   "signals": {
-    "weekly_ct": "Sat Nov 14, 7:17 PM CT",
+    "weekly_ct": "Sat Nov 14, 7:32 PM CT",
     "scorecards": [
       {
         "name": "SHARP shadow football",
@@ -161,7 +161,7 @@
           "events": 32,
           "t_by_event": -1.8,
           "stale": 0,
-          "pending": 22,
+          "pending": 23,
           "no_close": 0
         }
       },
@@ -187,7 +187,7 @@
           "events": 43,
           "t_by_event": -2.66,
           "stale": 0,
-          "pending": 63,
+          "pending": 65,
           "no_close": 2
         }
       }
@@ -1268,6 +1268,20 @@
         "kickoff_utc": "2026-11-15T02:30:00Z",
         "kickoff_ct": "Sat Nov 14, 8:30 PM CT",
         "kalshi_url": "https://kalshi.com/markets/kxncaaftotal/event/kxncaaftotal-26nov14ususdsu"
+      },
+      {
+        "ticker": "KXNCAAFSPREAD-26NOV14NDSUHAW-NDSU2",
+        "signal": "SHARP",
+        "side": "NO",
+        "game": "North Dakota St. vs Hawai'i: Spread",
+        "contract": "North Dakota St. wins by over 1.5 points",
+        "max_price": 0.3,
+        "stake": 1.89,
+        "gone": true,
+        "sent_ct": "Sat Nov 14, 7:26 PM CT",
+        "kickoff_utc": "2026-11-15T04:00:00Z",
+        "kickoff_ct": "Sat Nov 14, 10:00 PM CT",
+        "kalshi_url": "https://kalshi.com/markets/kxncaafspread/event/kxncaafspread-26nov14ndsuhaw"
       },
       {
         "ticker": "KXNFLSPREAD-26NOV15BUFNYJ-BUF3",
