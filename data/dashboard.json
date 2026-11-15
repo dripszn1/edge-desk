@@ -1,12 +1,12 @@
 {
-  "generated_ts": "2026-11-15T17:30:51Z",
-  "generated_ct": "Sun Nov 15, 11:30 AM CT",
+  "generated_ts": "2026-11-15T17:46:25Z",
+  "generated_ct": "Sun Nov 15, 11:46 AM CT",
   "today_ct": "2026-11-15",
   "snapshot": {
-    "ts": "2026-11-15T17:29:48Z",
-    "ct": "Sun Nov 15, 11:29 AM CT",
+    "ts": "2026-11-15T17:45:05Z",
+    "ct": "Sun Nov 15, 11:45 AM CT",
     "stale": false,
-    "markets_scanned": 3790,
+    "markets_scanned": 3737,
     "kickoff_source": "kalshi occurrence_datetime - 3h",
     "phases": {
       "CFB": {
@@ -14,7 +14,6 @@
         "pregame": 3009
       },
       "NFL": {
-        "live": 53,
         "pregame": 629
       }
     }
@@ -63,7 +62,7 @@
     "max_bet": 10.0
   },
   "signals": {
-    "weekly_ct": "Sun Nov 15, 11:30 AM CT",
+    "weekly_ct": "Sun Nov 15, 11:45 AM CT",
     "scorecards": [
       {
         "name": "SHARP shadow football",
@@ -382,7 +381,7 @@
         "contract": "Jacksonville wins by over 4.5 points",
         "max_price": 0.28,
         "stake": 2.56,
-        "gone": false,
+        "gone": true,
         "sent_ct": "Sat Nov 14, 8:10 PM CT",
         "kickoff_utc": "2026-11-15T18:00:00Z",
         "kickoff_ct": "Sun Nov 15, 12:00 PM CT",
