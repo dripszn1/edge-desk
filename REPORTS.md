@@ -1,5 +1,12 @@
 # Reports (newest first)
 
+## 2026-11-15 (builder, 13:45Z run)
+- Shipped **#69** (bug): the 7:33 AM CT digest still opened with both football proposals although #68 turned them ON at 13:07Z (the pickoff report only knew the CBB guard and never read the line-age limit). Now ON guards are listed under `pickoff.in_effect` with their record, never re-proposed; a "turn OFF" proposal appears only if what they hold back beats Kalshi's close (≥30, t≥2). On current data: 0 proposals. Auto-merged (automerge run #42 green); the live loop restarts on the new code by itself (#54).
+- Tests: 508/508 green (2 new).
+- Honest results (football, unchanged, Sunday NFL not settled yet): picks vs Kalshi's close after fee: alerted −1.1¢ (59 plays, 29 games), held back −1.1¢ (163, 40 games). Exits (192 done): hold −$76.45, sell at tip −$55.60, Auto Sell at fair −$16.15 (best), Auto Sell +10¢ −$16.79; bracket API-only. Market-making paper (first read): NFL ±1¢ −$4.38 on 17 fills (t −2.1), fills lose ~2¢ right after.
+- Verdict rules: thresholds met since read #1; rule 2 (no exit with P&L > 0) and the held-back half of rule 1 (no edge) read the same. Not acted on; pooled read stays with the daily check-in after Sunday's games.
+- Watchdog: live run 82 in progress since 13:14Z (keeper too), nothing dispatched. Needs Emerson: nothing.
+
 ## 2026-11-15 (builder, 10:45Z run)
 - Nothing to build: backlog #1–#67 all done; latest runs show nothing broken (collect 108 green, automerge 38 green, settlement 109 pending / 0 overdue, no report errors). Nothing shipped, nothing to merge.
 - Tests: 505/505 green on dev rebased onto main.
