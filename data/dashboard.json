@@ -1,16 +1,16 @@
 {
-  "generated_ts": "2026-11-15T00:03:21Z",
-  "generated_ct": "Sat Nov 14, 6:03 PM CT",
+  "generated_ts": "2026-11-15T00:17:04Z",
+  "generated_ct": "Sat Nov 14, 6:17 PM CT",
   "today_ct": "2026-11-14",
   "snapshot": {
-    "ts": "2026-11-15T00:00:25Z",
-    "ct": "Sat Nov 14, 6:00 PM CT",
+    "ts": "2026-11-15T00:15:31Z",
+    "ct": "Sat Nov 14, 6:15 PM CT",
     "stale": false,
-    "markets_scanned": 3346,
+    "markets_scanned": 3013,
     "kickoff_source": "kalshi occurrence_datetime - 3h",
     "phases": {
       "CFB": {
-        "live": 1542,
+        "live": 1209,
         "pregame": 1130
       },
       "NFL": {
@@ -62,16 +62,16 @@
     "max_bet": 10.0
   },
   "signals": {
-    "weekly_ct": "Sat Nov 14, 6:01 PM CT",
+    "weekly_ct": "Sat Nov 14, 6:16 PM CT",
     "scorecards": [
       {
         "name": "SHARP shadow football",
-        "settled": 64,
-        "pnl": -34.1,
-        "roi": -0.1438,
-        "t_stat": -1.1,
+        "settled": 72,
+        "pnl": -40.2,
+        "roi": -0.1563,
+        "t_stat": -1.37,
         "verdict": "luck / no edge",
-        "why": "t=-1.1, coin-flip beat 28%"
+        "why": "t=-1.37, coin-flip beat 25%"
       },
       {
         "name": "SHARP shadow CBB",
@@ -84,25 +84,25 @@
       },
       {
         "name": "SHARP held back",
-        "settled": 297,
-        "pnl": -20.61,
-        "roi": -0.0144,
-        "t_stat": -1.21,
+        "settled": 325,
+        "pnl": -87.83,
+        "roi": -0.0585,
+        "t_stat": -2.14,
         "verdict": "luck / no edge",
-        "why": "t=-1.21, coin-flip beat 62%",
+        "why": "t=-2.14, coin-flip beat 36%",
         "by_reason": {
           "far_rung": {
-            "settled": 188,
-            "pnl": -63.06,
-            "roi": -0.0731,
-            "t_stat": -1.13,
+            "settled": 200,
+            "pnl": -79.14,
+            "roi": -0.0893,
+            "t_stat": -1.5,
             "verdict": "luck / no edge"
           },
           "far_rung+stale_line": {
-            "settled": 26,
-            "pnl": -10.15,
-            "roi": -0.1003,
-            "t_stat": -0.88,
+            "settled": 28,
+            "pnl": -13.88,
+            "roi": -0.1323,
+            "t_stat": -1.24,
             "verdict": "not enough data"
           },
           "kalshi_first": {
@@ -120,22 +120,22 @@
             "verdict": "not enough data"
           },
           "stale_line": {
-            "settled": 53,
-            "pnl": -27.39,
-            "roi": -0.1416,
-            "t_stat": -1.51,
+            "settled": 67,
+            "pnl": -74.8,
+            "roi": -0.3106,
+            "t_stat": -3.18,
             "verdict": "luck / no edge"
           }
         }
       },
       {
         "name": "MODEL shadow",
-        "settled": 21,
-        "pnl": -3.11,
-        "roi": -0.6086,
-        "t_stat": -4.19,
+        "settled": 22,
+        "pnl": -3.32,
+        "roi": -0.6241,
+        "t_stat": -4.46,
         "verdict": "not enough data",
-        "why": "21 settled bets (< 30)"
+        "why": "22 settled bets (< 30)"
       }
     ],
     "clv": {
@@ -161,7 +161,7 @@
           "events": 30,
           "t_by_event": -1.75,
           "stale": 0,
-          "pending": 24,
+          "pending": 25,
           "no_close": 0
         }
       },
@@ -187,7 +187,7 @@
           "events": 38,
           "t_by_event": -2.58,
           "stale": 0,
-          "pending": 69,
+          "pending": 73,
           "no_close": 2
         }
       }
@@ -244,45 +244,45 @@
         "best_manual": "RESTING_5",
         "variants": {
           "EXIT_AT_TIP": {
-            "closed": 171,
-            "pnl_usd": -151.25,
-            "t_by_game": -1.32,
+            "closed": 201,
+            "pnl_usd": -157.21,
+            "t_by_game": -1.38,
             "gate_open": false
           },
           "HOLD": {
-            "closed": 171,
-            "pnl_usd": -82.38,
-            "t_by_game": -1.39,
+            "closed": 201,
+            "pnl_usd": -141.28,
+            "t_by_game": -1.79,
             "gate_open": false
           },
           "RESTING_10": {
-            "closed": 171,
-            "pnl_usd": -145.8,
-            "t_by_game": -1.19,
+            "closed": 201,
+            "pnl_usd": -150.5,
+            "t_by_game": -1.21,
             "gate_open": false
           },
           "RESTING_15": {
-            "closed": 171,
-            "pnl_usd": -141.82,
-            "t_by_game": -1.15,
-            "gate_open": false
-          },
-          "RESTING_5": {
-            "closed": 171,
-            "pnl_usd": -71.16,
-            "t_by_game": -1.26,
-            "gate_open": false
-          },
-          "RESTING_FAIR": {
-            "closed": 171,
-            "pnl_usd": -138.96,
+            "closed": 201,
+            "pnl_usd": -137.63,
             "t_by_game": -1.1,
             "gate_open": false
           },
+          "RESTING_5": {
+            "closed": 201,
+            "pnl_usd": -81.64,
+            "t_by_game": -1.39,
+            "gate_open": false
+          },
+          "RESTING_FAIR": {
+            "closed": 201,
+            "pnl_usd": -146.95,
+            "t_by_game": -1.16,
+            "gate_open": false
+          },
           "TRADE": {
-            "closed": 171,
-            "pnl_usd": -159.27,
-            "t_by_game": -1.41,
+            "closed": 201,
+            "pnl_usd": -165.23,
+            "t_by_game": -1.47,
             "gate_open": false
           }
         }
@@ -1254,6 +1254,20 @@
         "kickoff_utc": "2026-11-15T00:30:00Z",
         "kickoff_ct": "Sat Nov 14, 6:30 PM CT",
         "kalshi_url": "https://kalshi.com/markets/kxncaafspread/event/kxncaafspread-26nov14stanvt"
+      },
+      {
+        "ticker": "KXNCAAFSPREAD-26NOV14UNLVUNM-UNM24",
+        "signal": "SHARP",
+        "side": "YES",
+        "game": "UNLV vs New Mexico: Spread",
+        "contract": "New Mexico wins by over 23.5 points",
+        "max_price": 0.37,
+        "stake": 2.71,
+        "gone": true,
+        "sent_ct": "Sat Nov 14, 6:10 PM CT",
+        "kickoff_utc": "2026-11-15T00:30:00Z",
+        "kickoff_ct": "Sat Nov 14, 6:30 PM CT",
+        "kalshi_url": "https://kalshi.com/markets/kxncaafspread/event/kxncaafspread-26nov14unlvunm"
       },
       {
         "ticker": "KXNCAAFTOTAL-26NOV14USUSDSU-49",
