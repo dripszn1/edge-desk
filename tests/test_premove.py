@@ -37,7 +37,9 @@ def test_no_side_mirrors_and_football_untouched(tmp_path):
     keep = premove.screen([_flag("A", "NO")], now, "2026-11-12T22:31:00Z", "CBB",
                           log=lambda f, r: logged.append(f["ticker"]), snap_dir=tmp_path)
     assert keep == [] and logged == ["A"]
-    keep = premove.screen([_flag("A", "NO")], now, "2026-11-12T22:31:00Z", "NFL", log=None, snap_dir=tmp_path)
+    keep = premove.screen([_flag("A", "NO")], now, "2026-11-12T22:31:00Z", "NFL", log=lambda f, r: None, snap_dir=tmp_path)
+    assert keep == []                                                  # football guarded since 11-15
+    keep = premove.screen([_flag("A", "NO")], now, "2026-11-12T22:31:00Z", "XYZ", log=None, snap_dir=tmp_path)
     assert len(keep) == 1
 
 

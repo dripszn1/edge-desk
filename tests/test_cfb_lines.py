@@ -156,9 +156,9 @@ def test_cfb_far_rung_skipped():
 
 def test_stale_odds_guard():
     snap = "2026-11-14T15:00:00Z"
-    assert not sharp.odds_too_old(snap, "2026-11-14T14:00:00Z", "2026-11-15T00:00:00Z")  # 60 min, far from KO
-    assert sharp.odds_too_old(snap, "2026-11-14T13:00:00Z", "2026-11-15T00:00:00Z")      # 120 min
-    assert sharp.odds_too_old(snap, "2026-11-14T13:55:00Z", "2026-11-14T17:00:00Z")      # 65 min, KO in 2h
+    assert not sharp.odds_too_old(snap, "2026-11-14T14:35:00Z", "2026-11-15T00:00:00Z")  # 25 min, far from KO
+    assert sharp.odds_too_old(snap, "2026-11-14T14:25:00Z", "2026-11-15T00:00:00Z")      # 35 min (30-min guard, 11-15)
+    assert sharp.odds_too_old(snap, "2026-11-14T14:25:00Z", "2026-11-14T17:00:00Z")      # 35 min, KO in 2h
 
 
 def _cbb_row(vol=6000.0, size=500, strike=4.5, bid=0.50, ask=0.52):
