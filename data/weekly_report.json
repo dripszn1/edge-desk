@@ -3,8 +3,8 @@
     "PROPOSE football: plays entered after Kalshi already moved toward us lose -1.97c to Kalshi's close (t -4.54 by game, 30 plays): skip a play when Kalshi's price already fell 1c+ toward ours in the 30 min before",
     "PROPOSE football: plays priced on a 30-90 min old sharp line lose -1.65c to Kalshi's close (t -3.26 by game, 48 plays): alert only within 30 min of a fresh sharp pull"
   ],
-  "generated_utc": "2026-11-15T10:46:27Z",
-  "generated_ct": "Sun Nov 15, 4:46 AM CT",
+  "generated_utc": "2026-11-15T13:31:27Z",
+  "generated_ct": "Sun Nov 15, 7:31 AM CT",
   "paper_mode": true,
   "rules": {
     "min_bets": 30,
@@ -246,7 +246,7 @@
     "propose_widen": []
   },
   "settlement": {
-    "pending": 111,
+    "pending": 115,
     "overdue": 0,
     "no_kickoff": 0,
     "grace_hours": 12,
@@ -275,7 +275,7 @@
         "events": 29,
         "t_by_event": -0.35,
         "stale": 0,
-        "pending": 20,
+        "pending": 22,
         "no_close": 0
       }
     },
@@ -874,8 +874,8 @@
       },
       "NFL SPREAD": {
         "0-3": {
-          "plays": 2,
-          "games": 2,
+          "plays": 3,
+          "games": 3,
           "clv_n": 1,
           "clv_games": 1,
           "avg_clv_c": -1.3,
@@ -886,8 +886,8 @@
           "sd_range": "0.00-0.23",
           "inside_cap": true,
           "adjusted": {
-            "plays": 2,
-            "games": 2,
+            "plays": 3,
+            "games": 3,
             "clv_n": 1,
             "clv_games": 1,
             "avg_clv_c": -1.3,
@@ -900,7 +900,7 @@
           }
         },
         "3-6": {
-          "plays": 7,
+          "plays": 8,
           "games": 5,
           "clv_n": 0,
           "clv_games": 0,
@@ -912,7 +912,7 @@
           "sd_range": "0.23-0.46",
           "inside_cap": true,
           "adjusted": {
-            "plays": 6,
+            "plays": 7,
             "games": 5,
             "clv_n": 0,
             "clv_games": 0,
@@ -979,7 +979,7 @@
         },
         "_all": {
           "raw": {
-            "plays": 18,
+            "plays": 20,
             "games": 11,
             "clv_n": 1,
             "clv_games": 1,
@@ -990,7 +990,7 @@
             "pnl_t_by_game": null
           },
           "adjusted": {
-            "plays": 10,
+            "plays": 12,
             "games": 8,
             "clv_n": 1,
             "clv_games": 1,
@@ -1320,8 +1320,8 @@
       },
       "NFL SPREAD": {
         "0-0.25": {
-          "plays": 2,
-          "games": 2,
+          "plays": 3,
+          "games": 3,
           "clv_n": 1,
           "clv_games": 1,
           "avg_clv_c": -1.3,
@@ -1331,7 +1331,7 @@
           "pnl_t_by_game": null
         },
         "0.25-0.5": {
-          "plays": 7,
+          "plays": 8,
           "games": 5,
           "clv_n": 0,
           "clv_games": 0,
@@ -1480,11 +1480,11 @@
       }
     },
     "football": {
-      "plays": 250,
+      "plays": 252,
       "line_checked": 192,
       "adverse_pct": 62.5,
       "avg_line_move_fav": -0.7,
-      "median_pull_age_min": 28.9,
+      "median_pull_age_min": 28.5,
       "kalshi_first": {
         "False": {
           "plays": 145,
@@ -1503,7 +1503,7 @@
       },
       "by_pull_age": {
         "0-10 min": {
-          "plays": 102,
+          "plays": 104,
           "with_close": 84,
           "avg_clv_c": -1.04,
           "games": 35,
@@ -1542,8 +1542,8 @@
       "avg_clv_c": -1.12
     },
     "1c+": {
-      "alerts": 49,
-      "gone_pct": 87.8,
+      "alerts": 51,
+      "gone_pct": 84.3,
       "median_min_to_gone": 8.1,
       "with_close": 9,
       "avg_clv_c": -0.92
@@ -1719,7 +1719,7 @@
         "BRACKET_10_10": {
           "label": "API-ONLY",
           "closed": 192,
-          "pending": 58,
+          "pending": 60,
           "closed_early_not_counted": 2,
           "pnl_usd": -95.18,
           "avg_c": -6.18,
@@ -1731,7 +1731,7 @@
         "BRACKET_10_5": {
           "label": "API-ONLY",
           "closed": 192,
-          "pending": 58,
+          "pending": 60,
           "closed_early_not_counted": 20,
           "pnl_usd": -104.92,
           "avg_c": -5.82,
@@ -1743,7 +1743,7 @@
         "BRACKET_15_10": {
           "label": "API-ONLY",
           "closed": 192,
-          "pending": 58,
+          "pending": 60,
           "closed_early_not_counted": 2,
           "pnl_usd": -110.58,
           "avg_c": -7.27,
@@ -1755,7 +1755,7 @@
         "BRACKET_15_5": {
           "label": "API-ONLY",
           "closed": 192,
-          "pending": 58,
+          "pending": 60,
           "closed_early_not_counted": 20,
           "pnl_usd": -111.37,
           "avg_c": -6.19,
@@ -1767,8 +1767,8 @@
         "BRACKET_5_10": {
           "label": "API-ONLY",
           "closed": 192,
-          "pending": 58,
-          "closed_early_not_counted": 2,
+          "pending": 60,
+          "closed_early_not_counted": 3,
           "pnl_usd": -89.99,
           "avg_c": -5.7,
           "win_pct": 40.6,
@@ -1779,8 +1779,8 @@
         "BRACKET_5_5": {
           "label": "API-ONLY",
           "closed": 192,
-          "pending": 58,
-          "closed_early_not_counted": 20,
+          "pending": 60,
+          "closed_early_not_counted": 21,
           "pnl_usd": -97.41,
           "avg_c": -5.53,
           "win_pct": 17.2,
@@ -1791,7 +1791,7 @@
         "EXIT_AT_TIP": {
           "label": "MANUAL-OK",
           "closed": 192,
-          "pending": 58,
+          "pending": 60,
           "closed_early_not_counted": 0,
           "pnl_usd": -55.6,
           "avg_c": -3.2,
@@ -1803,7 +1803,7 @@
         "HOLD": {
           "label": "MANUAL-OK",
           "closed": 192,
-          "pending": 58,
+          "pending": 60,
           "closed_early_not_counted": 0,
           "pnl_usd": -76.45,
           "avg_c": -3.55,
@@ -1815,7 +1815,7 @@
         "RESTING_10": {
           "label": "MANUAL-OK",
           "closed": 192,
-          "pending": 58,
+          "pending": 60,
           "closed_early_not_counted": 0,
           "pnl_usd": -16.79,
           "avg_c": -1.2,
@@ -1827,7 +1827,7 @@
         "RESTING_15": {
           "label": "MANUAL-OK",
           "closed": 192,
-          "pending": 58,
+          "pending": 60,
           "closed_early_not_counted": 0,
           "pnl_usd": -1.9,
           "avg_c": -0.2,
@@ -1839,8 +1839,8 @@
         "RESTING_5": {
           "label": "MANUAL-OK",
           "closed": 192,
-          "pending": 58,
-          "closed_early_not_counted": 0,
+          "pending": 60,
+          "closed_early_not_counted": 1,
           "pnl_usd": -20.78,
           "avg_c": -1.25,
           "win_pct": 79.7,
@@ -1851,8 +1851,8 @@
         "RESTING_FAIR": {
           "label": "MANUAL-OK",
           "closed": 192,
-          "pending": 58,
-          "closed_early_not_counted": 1,
+          "pending": 60,
+          "closed_early_not_counted": 2,
           "pnl_usd": -16.15,
           "avg_c": -1.08,
           "win_pct": 82.8,
@@ -1863,7 +1863,7 @@
         "TRADE": {
           "label": "MANUAL-OK",
           "closed": 192,
-          "pending": 58,
+          "pending": 60,
           "closed_early_not_counted": 1,
           "pnl_usd": -56.31,
           "avg_c": -3.23,
@@ -1883,9 +1883,9 @@
       "fills": 0,
       "fill_rate_pct": 0.0
     },
-    "median_latency_ms": 637,
+    "median_latency_ms": 599,
     "NFL": {
-      "plays": 8,
+      "plays": 15,
       "settled": 0,
       "hold_pnl_usd": 0.0,
       "hold_record": "0-0",
@@ -1898,7 +1898,7 @@
         "events": 0,
         "t_by_event": null,
         "stale": 0,
-        "pending": 8,
+        "pending": 15,
         "no_close": 0
       },
       "exits": {
@@ -1985,34 +1985,50 @@
     "by_k": {
       "1": {
         "NFL": {
-          "fills": 2,
-          "contracts": 20,
+          "fills": 17,
+          "contracts": 170,
           "paired_contracts": 0,
-          "tickers": 2,
-          "games": 2,
-          "fees_usd": 0.1,
-          "pnl_usd": -0.35,
-          "t_by_game": -7.0,
+          "tickers": 16,
+          "games": 7,
+          "fees_usd": 0.73,
+          "pnl_usd": -4.38,
+          "t_by_game": -2.13,
           "settled_fills": 0,
           "settled_pnl_usd": null,
-          "adverse_c": -1.25,
-          "max_exposure_usd": 5.0
+          "adverse_c": -1.91,
+          "max_exposure_usd": 44.9
         }
       },
       "2": {
         "NFL": {
-          "fills": 1,
-          "contracts": 10,
+          "fills": 10,
+          "contracts": 100,
           "paired_contracts": 0,
-          "tickers": 1,
+          "tickers": 10,
+          "games": 2,
+          "fees_usd": 0.44,
+          "pnl_usd": -2.74,
+          "t_by_game": -1.16,
+          "settled_fills": 0,
+          "settled_pnl_usd": null,
+          "adverse_c": -2.5,
+          "max_exposure_usd": 46.1
+        }
+      },
+      "3": {
+        "NFL": {
+          "fills": 7,
+          "contracts": 70,
+          "paired_contracts": 0,
+          "tickers": 7,
           "games": 1,
-          "fees_usd": 0.04,
-          "pnl_usd": -0.19,
+          "fees_usd": 0.32,
+          "pnl_usd": -1.77,
           "t_by_game": null,
           "settled_fills": 0,
           "settled_pnl_usd": null,
-          "adverse_c": null,
-          "max_exposure_usd": 3.0
+          "adverse_c": -1.93,
+          "max_exposure_usd": 40.9
         }
       }
     }
@@ -2021,7 +2037,7 @@
     "note": "report only; resting buys fill at the limit when a later ask reaches it, maker fee",
     "football": {
       "MAKER_BID": {
-        "plays": 220,
+        "plays": 221,
         "decided": 190,
         "filled": 66,
         "fill_rate_pct": 34.7,
@@ -2119,7 +2135,7 @@
     },
     "NFL": {
       "MAKER_BID": {
-        "plays": 56,
+        "plays": 57,
         "decided": 26,
         "filled": 25,
         "fill_rate_pct": 96.2,
@@ -2317,7 +2333,7 @@
   "baseline": {
     "method": "placebo = other rungs/sides of the same game and series at the same snapshot, ask within 10c, same contracts and fees; snapshot paths only for both",
     "football": {
-      "plays": 250,
+      "plays": 252,
       "closed": 191,
       "games": 42,
       "no_placebo": 0,

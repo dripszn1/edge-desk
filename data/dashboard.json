@@ -1,17 +1,17 @@
 {
-  "generated_ts": "2026-11-15T10:48:37Z",
-  "generated_ct": "Sun Nov 15, 4:48 AM CT",
+  "generated_ts": "2026-11-15T13:33:47Z",
+  "generated_ct": "Sun Nov 15, 7:33 AM CT",
   "today_ct": "2026-11-15",
   "snapshot": {
-    "ts": "2026-11-15T10:45:32Z",
-    "ct": "Sun Nov 15, 4:45 AM CT",
+    "ts": "2026-11-15T13:30:28Z",
+    "ct": "Sun Nov 15, 7:30 AM CT",
     "stale": false,
-    "markets_scanned": 2035,
+    "markets_scanned": 2489,
     "kickoff_source": "kalshi occurrence_datetime - 3h",
     "phases": {
       "CFB": {
         "live": 99,
-        "pregame": 1262
+        "pregame": 1716
       },
       "NFL": {
         "pregame": 674
@@ -62,7 +62,7 @@
     "max_bet": 10.0
   },
   "signals": {
-    "weekly_ct": "Sun Nov 15, 4:46 AM CT",
+    "weekly_ct": "Sun Nov 15, 7:31 AM CT",
     "scorecards": [
       {
         "name": "SHARP shadow football",
@@ -161,7 +161,7 @@
           "events": 29,
           "t_by_event": -0.35,
           "stale": 0,
-          "pending": 20,
+          "pending": 22,
           "no_close": 0
         }
       },
@@ -316,6 +316,34 @@
         "kickoff_utc": "2026-11-15T18:00:00Z",
         "kickoff_ct": "Sun Nov 15, 12:00 PM CT",
         "kalshi_url": "https://kalshi.com/markets/kxnflspread/event/kxnflspread-26nov15bufnyj"
+      },
+      {
+        "ticker": "KXNFLSPREAD-26NOV15CARNO-CAR2",
+        "signal": "SHARP",
+        "side": "NO",
+        "game": "Carolina vs New Orleans: Spread",
+        "contract": "Carolina wins by over 1.5 points",
+        "max_price": 0.55,
+        "stake": 4.46,
+        "gone": false,
+        "sent_ct": "Sun Nov 15, 7:28 AM CT",
+        "kickoff_utc": "2026-11-15T18:00:00Z",
+        "kickoff_ct": "Sun Nov 15, 12:00 PM CT",
+        "kalshi_url": "https://kalshi.com/markets/kxnflspread/event/kxnflspread-26nov15carno"
+      },
+      {
+        "ticker": "KXNFLSPREAD-26NOV15CARNO-NO2",
+        "signal": "SHARP",
+        "side": "YES",
+        "game": "Carolina vs New Orleans: Spread",
+        "contract": "New Orleans wins by over 1.5 points",
+        "max_price": 0.5,
+        "stake": 3.56,
+        "gone": false,
+        "sent_ct": "Sun Nov 15, 7:15 AM CT",
+        "kickoff_utc": "2026-11-15T18:00:00Z",
+        "kickoff_ct": "Sun Nov 15, 12:00 PM CT",
+        "kalshi_url": "https://kalshi.com/markets/kxnflspread/event/kxnflspread-26nov15carno"
       },
       {
         "ticker": "KXNFLSPREAD-26NOV15JACTEN-JAC15",
