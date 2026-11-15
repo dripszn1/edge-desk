@@ -567,7 +567,8 @@ def sharp_flags(df: pd.DataFrame, lines: pd.DataFrame, games: pd.DataFrame, snap
         stale_line = "sharp line stale" in why
         for side, price, size, p in (("YES", row["yes_ask"], row.get("yes_ask_size") or 0, p_yes),
                                      ("NO", round(1 - row["yes_bid"], 4), row.get("yes_bid_size") or 0, 1 - p_yes)):
-            fairs[f"{row['ticker']}|{side}"] = fair_entry(row, p, price, fe, line, stale_line)   # #35
+            fairs[f"{row['ticker']}|{side}"] = {**fair_entry(row, p, price, fe, line, stale_line),   # #35
+                                                "far": any(w.startswith("rung far") for w in why)}     # #66 stream skips far rungs
             if league == "CBB" and (size or 0) < config.CBB_MIN_SIZE:
                 continue
             s = price_side(p, price, size, mult, config.DAILY_LOSS_CAP - lost_today)

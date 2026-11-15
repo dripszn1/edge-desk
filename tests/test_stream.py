@@ -157,3 +157,9 @@ def test_load_key_survives_bad_pastes():
                        pem.replace("\n", ""), body, '"' + pem + '"'):
             k = stream.load_key(pasted)
             assert k.private_numbers() == key.private_numbers()
+
+
+def test_no_fill_on_far_rung():
+    e = eng([T0])
+    e.set_fairs({"X-1|YES": {**fair(0.60), "far": True}})
+    assert not e.on_quote("X-1", 0.48, 0.50, 10, 10, T0)
