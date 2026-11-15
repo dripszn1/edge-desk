@@ -3,8 +3,8 @@
     "PROPOSE football: plays entered after Kalshi already moved toward us lose -1.97c to Kalshi's close (t -4.54 by game, 30 plays): skip a play when Kalshi's price already fell 1c+ toward ours in the 30 min before",
     "PROPOSE football: plays priced on a 30-90 min old sharp line lose -1.65c to Kalshi's close (t -3.26 by game, 48 plays): alert only within 30 min of a fresh sharp pull"
   ],
-  "generated_utc": "2026-11-15T04:54:33Z",
-  "generated_ct": "Sat Nov 14, 10:54 PM CT",
+  "generated_utc": "2026-11-15T05:11:46Z",
+  "generated_ct": "Sat Nov 14, 11:11 PM CT",
   "paper_mode": true,
   "rules": {
     "min_bets": 30,
@@ -246,7 +246,7 @@
     "propose_widen": []
   },
   "settlement": {
-    "pending": 133,
+    "pending": 134,
     "overdue": 0,
     "no_kickoff": 0,
     "grace_hours": 12,
@@ -1828,7 +1828,7 @@
           "label": "MANUAL-OK",
           "closed": 175,
           "pending": 73,
-          "closed_early_not_counted": 5,
+          "closed_early_not_counted": 6,
           "pnl_usd": -10.39,
           "avg_c": -0.89,
           "win_pct": 59.4,
@@ -1879,11 +1879,11 @@
   "stream": {
     "note": "instant paper trades from the Kalshi stream; kept apart from the alert scorecards",
     "maker": {
-      "quotes": 7,
+      "quotes": 8,
       "fills": 0,
       "fill_rate_pct": 0.0
     },
-    "median_latency_ms": 769,
+    "median_latency_ms": 764,
     "NFL": {
       "plays": 8,
       "settled": 0,
