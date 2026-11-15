@@ -179,7 +179,7 @@ class Engine:
             return {k.split("|", 1)[0] for k in self.fairs}
 
     def _usable(self, f: dict, now: int) -> bool:
-        if not f or f.get("stale"):
+        if not f or f.get("stale") or f.get("far"):       # same guards as alerts: no far rungs
             return False
         ko = _utc_ms(f.get("kickoff_utc"))
         if ko is not None and now >= ko:
