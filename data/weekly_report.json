@@ -3,8 +3,8 @@
     "PROPOSE football: plays entered after Kalshi already moved toward us lose -1.97c to Kalshi's close (t -4.54 by game, 30 plays): skip a play when Kalshi's price already fell 1c+ toward ours in the 30 min before",
     "PROPOSE football: plays priced on a 30-90 min old sharp line lose -1.65c to Kalshi's close (t -3.26 by game, 48 plays): alert only within 30 min of a fresh sharp pull"
   ],
-  "generated_utc": "2026-11-15T13:46:59Z",
-  "generated_ct": "Sun Nov 15, 7:46 AM CT",
+  "generated_utc": "2026-11-15T14:02:10Z",
+  "generated_ct": "Sun Nov 15, 8:02 AM CT",
   "paper_mode": true,
   "rules": {
     "min_bets": 30,
@@ -1879,11 +1879,11 @@
   "stream": {
     "note": "instant paper trades from the Kalshi stream; kept apart from the alert scorecards",
     "maker": {
-      "quotes": 10,
+      "quotes": 11,
       "fills": 0,
       "fill_rate_pct": 0.0
     },
-    "median_latency_ms": 599,
+    "median_latency_ms": 637,
     "NFL": {
       "plays": 15,
       "settled": 0,
@@ -1985,49 +1985,49 @@
     "by_k": {
       "1": {
         "NFL": {
-          "fills": 18,
-          "contracts": 180,
+          "fills": 21,
+          "contracts": 210,
           "paired_contracts": 0,
-          "tickers": 17,
-          "games": 7,
-          "fees_usd": 0.76,
-          "pnl_usd": -4.66,
-          "t_by_game": -2.0,
+          "tickers": 20,
+          "games": 9,
+          "fees_usd": 0.9,
+          "pnl_usd": -5.45,
+          "t_by_game": -2.31,
           "settled_fills": 0,
           "settled_pnl_usd": null,
-          "adverse_c": -1.97,
+          "adverse_c": -1.95,
           "max_exposure_usd": 47.0
         }
       },
       "2": {
         "NFL": {
-          "fills": 15,
-          "contracts": 150,
+          "fills": 21,
+          "contracts": 210,
           "paired_contracts": 0,
-          "tickers": 14,
-          "games": 4,
-          "fees_usd": 0.65,
-          "pnl_usd": -3.75,
-          "t_by_game": -1.35,
+          "tickers": 16,
+          "games": 5,
+          "fees_usd": 0.9,
+          "pnl_usd": -5.85,
+          "t_by_game": -1.91,
           "settled_fills": 0,
           "settled_pnl_usd": null,
-          "adverse_c": -2.08,
+          "adverse_c": -2.03,
           "max_exposure_usd": 51.6
         }
       },
       "3": {
         "NFL": {
-          "fills": 8,
-          "contracts": 80,
+          "fills": 9,
+          "contracts": 90,
           "paired_contracts": 0,
-          "tickers": 8,
-          "games": 1,
-          "fees_usd": 0.36,
-          "pnl_usd": -1.96,
-          "t_by_game": null,
+          "tickers": 9,
+          "games": 2,
+          "fees_usd": 0.4,
+          "pnl_usd": -2.6,
+          "t_by_game": -1.51,
           "settled_fills": 0,
           "settled_pnl_usd": null,
-          "adverse_c": -1.93,
+          "adverse_c": -1.88,
           "max_exposure_usd": 44.3
         }
       }
@@ -2038,9 +2038,9 @@
     "football": {
       "MAKER_BID": {
         "plays": 221,
-        "decided": 190,
-        "filled": 66,
-        "fill_rate_pct": 34.7,
+        "decided": 191,
+        "filled": 67,
+        "fill_rate_pct": 35.1,
         "clv": {
           "n": 41,
           "games": 15,
@@ -2136,9 +2136,9 @@
     "NFL": {
       "MAKER_BID": {
         "plays": 57,
-        "decided": 26,
-        "filled": 25,
-        "fill_rate_pct": 96.2,
+        "decided": 27,
+        "filled": 26,
+        "fill_rate_pct": 96.3,
         "clv": {
           "n": 0,
           "games": 0,

@@ -1,10 +1,10 @@
 {
-  "generated_ts": "2026-11-15T13:47:27Z",
-  "generated_ct": "Sun Nov 15, 7:47 AM CT",
+  "generated_ts": "2026-11-15T14:02:39Z",
+  "generated_ct": "Sun Nov 15, 8:02 AM CT",
   "today_ct": "2026-11-15",
   "snapshot": {
-    "ts": "2026-11-15T13:45:57Z",
-    "ct": "Sun Nov 15, 7:45 AM CT",
+    "ts": "2026-11-15T14:01:07Z",
+    "ct": "Sun Nov 15, 8:01 AM CT",
     "stale": false,
     "markets_scanned": 2489,
     "kickoff_source": "kalshi occurrence_datetime - 3h",
@@ -62,7 +62,7 @@
     "max_bet": 10.0
   },
   "signals": {
-    "weekly_ct": "Sun Nov 15, 7:46 AM CT",
+    "weekly_ct": "Sun Nov 15, 8:02 AM CT",
     "scorecards": [
       {
         "name": "SHARP shadow football",
@@ -374,20 +374,6 @@
         "kalshi_url": "https://kalshi.com/markets/kxnflspread/event/kxnflspread-26nov15jacten"
       },
       {
-        "ticker": "KXNFLSPREAD-26NOV15JACTEN-JAC7",
-        "signal": "SHARP",
-        "side": "NO",
-        "game": "Jacksonville vs Tennessee: Spread",
-        "contract": "Jacksonville wins by over 6.5 points",
-        "max_price": 0.34,
-        "stake": 2.14,
-        "gone": true,
-        "sent_ct": "Thu Nov 12, 7:46 AM CT",
-        "kickoff_utc": "2026-11-15T18:00:00Z",
-        "kickoff_ct": "Sun Nov 15, 12:00 PM CT",
-        "kalshi_url": "https://kalshi.com/markets/kxnflspread/event/kxnflspread-26nov15jacten"
-      },
-      {
         "ticker": "KXNFLSPREAD-26NOV15LARARI-LAR7",
         "signal": "SHARP",
         "side": "NO",
@@ -400,20 +386,6 @@
         "kickoff_utc": "2026-11-15T21:05:00Z",
         "kickoff_ct": "Sun Nov 15, 3:05 PM CT",
         "kalshi_url": "https://kalshi.com/markets/kxnflspread/event/kxnflspread-26nov15larari"
-      },
-      {
-        "ticker": "KXNFLSPREAD-26NOV15SEALV-SEA15",
-        "signal": "SHARP",
-        "side": "YES",
-        "game": "Seattle vs Las Vegas: Spread",
-        "contract": "Seattle wins by over 14.5 points",
-        "max_price": 0.24,
-        "stake": 2.67,
-        "gone": true,
-        "sent_ct": "Thu Nov 12, 7:46 AM CT",
-        "kickoff_utc": "2026-11-15T21:05:00Z",
-        "kickoff_ct": "Sun Nov 15, 3:05 PM CT",
-        "kalshi_url": "https://kalshi.com/markets/kxnflspread/event/kxnflspread-26nov15sealv"
       },
       {
         "ticker": "KXNFLTOTAL-26NOV15LARARI-30",
