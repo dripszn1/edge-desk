@@ -91,6 +91,9 @@ def ml_flags(df: pd.DataFrame, lines: pd.DataFrame, snapshot_ts: str | None, los
                  "odds_fetched_ts": str(fe["fetched_ts"].max()), "kickoff_utc": row.get("kickoff_utc"),
                  "kickoff_ct": row.get("kickoff_ct") or to_ct(row.get("kickoff_utc"))}
             reasons = list(why)
+            if not sharp.in_core_price(price):              # core zone, Emerson 11-15
+                status["outside_core_price"] = status.get("outside_core_price", 0) + 1
+                reasons.append("price outside core zone (35-65c)")
             if f["edge"] > sharp.EDGE_SANITY_CAP:
                 status["rejected_edge_cap"] = status.get("rejected_edge_cap", 0) + 1
                 reasons.append("edge above sanity cap")
