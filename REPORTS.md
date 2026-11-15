@@ -1,5 +1,12 @@
 # Reports (newest first)
 
+## 2026-11-15 (builder, 01:45Z run)
+- Shipped **#65** (bug): one kickoff per game. Kalshi's occurrence time differs across a game's series and can be hours late. On 11-14 that tagged in-game markets "pregame": GT/CLEM moneyline alerts went out at 17:43–18:00Z mid-game, and ~20 KU/WVU spread/total "new" pushes went out at 20:44–21:24Z, after the 20:30Z start. The CLV and exit closes for those games were in-game prices too. Now the scanner, the SHARP/ML pricing (sharp feed's commence) and every grader use the earliest kickoff of the game, and in-game flag rows (3,788 held back + 49 shadow, 23 games) are skipped for grading (the logs are untouched). Auto-merged (automerge run #27 green); the live loop moves to the new code by itself (#54).
+- Tests: 468/468 green (5 new).
+- Honest results (football, corrected): picks vs Kalshi's close after fee: shadow −0.9¢ (53 plays, 26 games, t −0.1 by game, raw +0.6¢), held back −1.0¢ (153, 37 games, t −3.8, raw +0.2¢). That is in line with Friday, not the −4.2¢/−4.8¢ in the 7:33 PM CT digest, which counted in-game entries. Exit and placebo numbers rebuild on the next collect/live checkpoint, so none are quoted here.
+- Verdict rules: thresholds were already met (read #1). Rule 1 on the corrected data: alerted plays are inconclusive, while held-back plays alone meet the "no edge" side (CLV ≤0, t ≤−2). The pooled one-per-contract read stays with the daily check-in after Sunday, as read #1 set. Nothing acted on.
+- Watchdog: live run 69 and keeper in progress, so nothing was dispatched. Needs Emerson: ignore Saturday's in-game KU/WVU and GT/CLEM pushes. The repo now answers at dripszn1/edge-desk, and this session's remote still points at the old emersonclark10-hub name.
+
 ## 2026-11-14 (builder, 22:45Z run)
 - Nothing to build: backlog #1–#64 all done (#64 parked by Verdict read #1); latest runs show nothing broken (live run 69 in progress since 21:13Z, 1,061 fast-lane ticks / 0 throttled, Auto Sell pushes 0.3–4.4 s quote→send; settlement 314 pending / 0 overdue; no report errors). Nothing shipped, nothing to merge.
 - Tests: 463/463 green on dev rebased onto main.
