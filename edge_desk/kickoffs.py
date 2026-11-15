@@ -12,6 +12,7 @@ from __future__ import annotations
 
 import re
 from datetime import date, datetime
+from functools import lru_cache
 from difflib import SequenceMatcher
 from zoneinfo import ZoneInfo
 
@@ -206,6 +207,8 @@ def tag_kalshi(df: pd.DataFrame, snapshot_ts: str | None) -> pd.DataFrame:
     snap = pd.Timestamp(snapshot_ts)
     occ = pd.to_datetime(df["occurrence_datetime"], utc=True, errors="coerce")
     ko = occ - KALSHI_OCCURRENCE_OFFSET
+    tick = df["event_ticker"] if "event_ticker" in df else df.get("ticker", pd.Series(None, index=df.index))
+    ko = game_min(pd.Series([game_key(t) for t in tick], index=df.index), ko)   # #65 one kickoff per game
     lead = pd.Timedelta(minutes=config.PREGAME_MIN_LEAD_MINUTES)
     phase = pd.Series("unknown", index=df.index)
     phase[ko.notna() & (snap >= ko)] = "live"
@@ -214,3 +217,72 @@ def tag_kalshi(df: pd.DataFrame, snapshot_ts: str | None) -> pd.DataFrame:
     df["kickoff_utc"] = ko.dt.strftime("%Y-%m-%dT%H:%M:%SZ").where(ko.notna(), None)
     df["kickoff_ct"] = [to_ct(k) for k in df["kickoff_utc"]]
     return df
+
+
+# --- One kickoff per game (#65) --------------------------------------------------------------
+# Kalshi's occurrence_datetime is NOT consistent across the series of one game, and can be hours
+# late: 11-14 GT/CLEM spread+total said kickoff 17:30Z (right) while its game-winner said 20:00Z;
+# KU/WVU spread said 22:30Z and total 22:30Z while the game started 20:30Z (Odds API commence
+# since 05:04Z). Markets of the late series were tagged "pregame" mid-game: ~20 in-game SHARP
+# alerts and in-game "closes" in the CLV/exit grading. A game's kickoff is now the EARLIEST
+# kickoff any of its series (or the sharp feed) shows; earlier can only make us stricter.
+_SERIES_SUFFIX = re.compile(r"(SPREAD|TOTAL|GAME)$")
+
+
+@lru_cache(maxsize=65536)
+def _gkey_cached(t: str) -> str | None:
+    parts = t.strip().split(" ")[-1].split("-")
+    if len(parts) < 2 or not parts[0] or not parts[1]:
+        return None
+    return f"{_SERIES_SUFFIX.sub('', parts[0])}-{parts[1]}"
+
+
+def game_key(ticker) -> str | None:
+    """'KXNCAAFSPREAD-26NOV14KUWVU-KU8' / event 'KXNCAAFGAME-26NOV14KUWVU' -> 'KXNCAAF-26NOV14KUWVU'."""
+    if ticker is None or (isinstance(ticker, float) and ticker != ticker):
+        return None
+    return _gkey_cached(str(ticker))
+
+
+def game_min(keys: pd.Series, ko: pd.Series) -> pd.Series:
+    """Per row: the earliest kickoff among rows of the same game (NaT stays NaT if none known)."""
+    ko = pd.to_datetime(ko, utc=True, errors="coerce")
+    k = pd.Series(list(keys), index=ko.index)
+    m = ko.groupby(k).transform("min") if k.notna().any() else ko
+    return ko.where(k.isna(), m)
+
+
+def game_kickoff_map(path=None) -> dict:
+    """game_key -> earliest kickoff over every series of that game in the persistent event map."""
+    from pathlib import Path
+    path = Path(path) if path else Path(__file__).resolve().parents[1] / "data" / "kickoffs" / "event_map.csv"
+    try:
+        m = pd.read_csv(path, dtype=str, usecols=["event_ticker", "kickoff_utc"])
+    except (FileNotFoundError, ValueError):
+        return {}
+    ko = pd.to_datetime(m["kickoff_utc"], utc=True, errors="coerce")
+    out: dict = {}
+    for e, k in zip(m["event_ticker"], ko):
+        g = game_key(e)
+        if g and pd.notna(k) and (g not in out or k < out[g]):
+            out[g] = k
+    return out
+
+
+def earliest_kickoff(tickers: pd.Series, ko: pd.Series, gmap: dict | None) -> pd.Series:
+    """Per row: min(own kickoff, same-game rows' kickoffs, the event map's game kickoff)."""
+    keys = pd.Series([game_key(t) for t in tickers], index=ko.index)
+    out = game_min(keys, ko)
+    if gmap:
+        mk = pd.to_datetime(pd.Series([gmap.get(k) for k in keys], index=ko.index), utc=True, errors="coerce")
+        out = pd.concat([out, mk], axis=1).min(axis=1)
+    return out
+
+
+def snap_kickoff(s: pd.DataFrame, offset=KALSHI_OCCURRENCE_OFFSET, gmap: dict | None = None) -> pd.Series:
+    """#65: kickoff per snapshot row for the graders (CLV close, sell-at-tip, exits, placebos):
+    the earliest of its own occurrence - 3h, any same-game row's, and the event map's game kickoff."""
+    ko = pd.to_datetime(s["occurrence_datetime"], utc=True, errors="coerce") - offset
+    if s.empty:
+        return ko
+    return earliest_kickoff(s["ticker"], ko, game_kickoff_map() if gmap is None else gmap)

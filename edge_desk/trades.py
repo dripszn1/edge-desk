@@ -35,7 +35,7 @@ from pathlib import Path
 
 import pandas as pd
 
-from . import fees
+from . import fees, kickoffs
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data"
@@ -299,7 +299,7 @@ def grade_all(bets: pd.DataFrame, snaps: pd.DataFrame, now, candles_fn=load_cand
     if not s.empty:
         s["_ts"] = pd.to_datetime(s["snapshot_ts"], utc=True, errors="coerce")
         s = s[s["_ts"].notna() & (s["_ts"] <= now)]
-        s["_ko"] = pd.to_datetime(s["occurrence_datetime"], utc=True, errors="coerce") - OCC_OFFSET
+        s["_ko"] = kickoffs.snap_kickoff(s, OCC_OFFSET)   # #65
     by_t = {t: g for t, g in s.groupby("ticker")} if not s.empty else {}
     fast_t = {t: g for t, g in fast.groupby("ticker")} if fast is not None and not fast.empty else {}
     rows = []

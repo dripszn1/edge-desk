@@ -26,7 +26,7 @@ from datetime import datetime, timezone
 
 import pandas as pd
 
-from . import fees, trades
+from . import fees, kickoffs, trades
 from .clv import _event, _t
 
 DATA = trades.DATA
@@ -160,7 +160,7 @@ def grade_all(bets: pd.DataFrame, snaps: pd.DataFrame, clv_bets: pd.DataFrame | 
     if not s.empty:
         s["_ts"] = pd.to_datetime(s["snapshot_ts"], utc=True, errors="coerce")
         s = s[s["_ts"].notna() & (s["_ts"] <= now)]
-        s["_ko"] = pd.to_datetime(s["occurrence_datetime"], utc=True, errors="coerce") - trades.OCC_OFFSET
+        s["_ko"] = kickoffs.snap_kickoff(s, trades.OCC_OFFSET)   # #65
     by_t = {t: g for t, g in s.groupby("ticker")} if not s.empty else {}
     fast_t = {t: g for t, g in fast.groupby("ticker")} if fast is not None and not fast.empty else {}
     closes = {}

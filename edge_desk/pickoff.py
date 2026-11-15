@@ -24,7 +24,7 @@ from datetime import datetime, timezone
 
 import pandas as pd
 
-from . import clv, odds, premove, sharp
+from . import clv, kickoffs, odds, premove, sharp
 
 DATA = clv.DATA
 OUT = DATA / "pickoff_bets.csv"
@@ -129,6 +129,7 @@ def analyse(bets: pd.DataFrame, flags: pd.DataFrame, snaps: pd.DataFrame, lines:
           if clv_rows is not None and len(clv_rows) else {})
     lines = lines if lines is not None else pd.DataFrame()
     cache: dict = {}
+    gmap = kickoffs.game_kickoff_map()
     rows = []
     for b in bets.to_dict("records"):
         side, ticker = str(b["leg1"]).split(" ", 1)
@@ -138,9 +139,9 @@ def analyse(bets: pd.DataFrame, flags: pd.DataFrame, snaps: pd.DataFrame, lines:
         g = by_t.get(ticker)
         ko = None
         if g is not None and len(g):
-            occ = pd.to_datetime(g["occurrence_datetime"].dropna().iloc[-1], utc=True, errors="coerce") \
-                if g["occurrence_datetime"].notna().any() else None
-            ko = occ - clv.OCC_OFFSET if occ is not None and not pd.isna(occ) else None
+            k = kickoffs.snap_kickoff(g.iloc[[-1]] if g["occurrence_datetime"].isna().all()
+                                      else g[g["occurrence_datetime"].notna()].iloc[[-1]], clv.OCC_OFFSET, gmap).iloc[0]
+            ko = None if pd.isna(k) else k   # #65 one kickoff per game
         r = {"bet_id": b["bet_id"], "source": b["source"], "league": b["league"], "leg1": b["leg1"],
              "entry_ts": entry.strftime("%Y-%m-%dT%H:%M:%SZ"),
              "kickoff_utc": ko.strftime("%Y-%m-%dT%H:%M:%SZ") if ko is not None else None,

@@ -379,6 +379,28 @@ def drop_unrecorded(flags: pd.DataFrame, pulls: set | None) -> pd.DataFrame:
     return flags[~bad]
 
 
+def drop_ingame(flags: pd.DataFrame, gmap: dict | None = None) -> pd.DataFrame:
+    """#65: skip a SHARP play logged when its game had already started (or was inside the pregame
+    lead window) by the game's EARLIEST known kickoff over all its series. Kalshi's occurrence time
+    on one series can be hours late (11-14 KU/WVU spread said 22:30Z, the game began 20:30Z), so
+    those rows were in-game entries tagged pregame. Rows are only skipped for grading; the log
+    itself is never changed."""
+    if flags is None or flags.empty or "ticker" not in flags or "snapshot_ts" not in flags:
+        return flags
+    from . import kickoffs
+    gmap = kickoffs.game_kickoff_map() if gmap is None else gmap
+    if not gmap:
+        return flags
+    ko = pd.to_datetime(pd.Series([gmap.get(kickoffs.game_key(t)) for t in flags["ticker"]],
+                                  index=flags.index), utc=True, errors="coerce")
+    ts = pd.to_datetime(flags["snapshot_ts"], utc=True, errors="coerce")
+    bad = ko.notna() & ts.notna() & (ts >= ko - pd.Timedelta(minutes=config.PREGAME_MIN_LEAD_MINUTES))
+    if bad.any():
+        print(f"in-game: {int(bad.sum())} flag rows logged after their game's earliest kickoff skipped "
+              f"({len(set(flags.loc[bad, 'ticker'].map(kickoffs.game_key)))} games)")
+    return flags[~bad]
+
+
 def run() -> pd.DataFrame:
     flags = pd.read_csv(FLAGS) if FLAGS.exists() else pd.DataFrame()
     pulls = recorded_pulls()
@@ -389,11 +411,17 @@ def run() -> pd.DataFrame:
     mb = model_bets(shadow, results)
     mb.to_csv(MODEL_BETS_OUT, index=False)   # graded on its own; never touches the paper ledger
     sh = pd.read_csv(SHARP_SHADOW) if SHARP_SHADOW.exists() else pd.DataFrame()
-    sb = model_bets(drop_unrecorded(sh, pulls), results, kind="SHARP")
+    gmap = None
+    try:
+        from . import kickoffs
+        gmap = kickoffs.game_kickoff_map()
+    except Exception:                                   # never let the guard break grading
+        gmap = {}
+    sb = model_bets(drop_ingame(drop_unrecorded(sh, pulls), gmap), results, kind="SHARP")
     sb.to_csv(SHARP_BETS_OUT, index=False)
     print(f"sharp shadow bets {len(sb)} | " + (str(sb["status"].value_counts().to_dict()) if len(sb) else "{}"))
     tr = pd.read_csv(TRACKED) if TRACKED.exists() else pd.DataFrame()
-    tb = tracked_bets(drop_unrecorded(tr, pulls), results, kickoffs=event_kickoffs())
+    tb = tracked_bets(drop_ingame(drop_unrecorded(tr, pulls), gmap), results, kickoffs=event_kickoffs())
     tb.to_csv(TRACKED_BETS_OUT, index=False)
     print(f"sharp tracked bets {len(tb)} | " + (str(tb["status"].value_counts().to_dict()) if len(tb) else "{}"))
     print(f"model shadow bets {len(mb)} | " + (str(mb["status"].value_counts().to_dict()) if len(mb) else "{}"))

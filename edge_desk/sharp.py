@@ -76,6 +76,18 @@ EDGE_SANITY_CAP = 0.12         # an "edge" this big vs a sharp line is almost al
 REJECTED = Path(__file__).resolve().parents[1] / "data" / "flags" / "sharp_tracked.csv"
 
 
+def sharp_started(fe: pd.DataFrame, snapshot_ts) -> bool:
+    """#65: the sharp feed's own start time (Odds API commence_utc of the matched event, latest pull)
+    is inside the pregame lead window or past -> the game is (about to be) in play: no SHARP/ML play.
+    Kalshi's occurrence time can be hours late (11-14 KU/WVU: Kalshi spread 22:30Z, real 20:30Z)."""
+    if fe is None or fe.empty or "commence_utc" not in fe:
+        return False
+    c = pd.to_datetime(fe["commence_utc"], utc=True, errors="coerce").dropna()
+    if c.empty or snapshot_ts is None:
+        return False
+    return _ts(snapshot_ts) >= c.min() - pd.Timedelta(minutes=config.PREGAME_MIN_LEAD_MINUTES)
+
+
 def odds_too_old(snapshot_ts, odds_fetched_ts, kickoff_utc) -> bool:
     """True when the sharp line is too stale to trust for this snapshot."""
     try:
@@ -536,6 +548,9 @@ def sharp_flags(df: pd.DataFrame, lines: pd.DataFrame, games: pd.DataFrame, snap
             seen[ev] = match_event(league, row, fair)
         sides, fe = seen[ev]
         if fe.empty:
+            continue
+        if sharp_started(fe, row["snapshot_ts"]):
+            status["sharp_says_started"] = status.get("sharp_says_started", 0) + 1
             continue
         rp = rung_prob(dists, fe, row, sides)
         if rp is None:
