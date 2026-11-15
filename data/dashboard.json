@@ -1,10 +1,10 @@
 {
-  "generated_ts": "2026-11-15T17:46:25Z",
-  "generated_ct": "Sun Nov 15, 11:46 AM CT",
+  "generated_ts": "2026-11-15T18:01:14Z",
+  "generated_ct": "Sun Nov 15, 12:01 PM CT",
   "today_ct": "2026-11-15",
   "snapshot": {
-    "ts": "2026-11-15T17:45:05Z",
-    "ct": "Sun Nov 15, 11:45 AM CT",
+    "ts": "2026-11-15T18:00:07Z",
+    "ct": "Sun Nov 15, 12:00 PM CT",
     "stale": false,
     "markets_scanned": 3737,
     "kickoff_source": "kalshi occurrence_datetime - 3h",
@@ -14,7 +14,8 @@
         "pregame": 3009
       },
       "NFL": {
-        "pregame": 629
+        "live": 325,
+        "pregame": 304
       }
     }
   },
@@ -62,7 +63,7 @@
     "max_bet": 10.0
   },
   "signals": {
-    "weekly_ct": "Sun Nov 15, 11:45 AM CT",
+    "weekly_ct": "Sun Nov 15, 12:00 PM CT",
     "scorecards": [
       {
         "name": "SHARP shadow football",
@@ -167,15 +168,15 @@
           "no_close": 0
         },
         "football": {
-          "n": 59,
-          "avg_clv_c": -1.13,
-          "avg_raw_c": 0.38,
+          "n": 73,
+          "avg_clv_c": -1.2,
+          "avg_raw_c": 0.32,
           "beat_close_pct": 28.8,
-          "t_stat": -1.43,
-          "events": 29,
-          "t_by_event": -0.35,
+          "t_stat": -1.85,
+          "events": 34,
+          "t_by_event": -0.54,
           "stale": 0,
-          "pending": 22,
+          "pending": 8,
           "no_close": 0
         }
       },
@@ -193,15 +194,15 @@
           "no_close": 7
         },
         "football": {
-          "n": 163,
-          "avg_clv_c": -1.13,
-          "avg_raw_c": 0.06,
-          "beat_close_pct": 31.9,
-          "t_stat": -5.6,
-          "events": 40,
-          "t_by_event": -4.25,
+          "n": 209,
+          "avg_clv_c": -1.33,
+          "avg_raw_c": -0.11,
+          "beat_close_pct": 30.6,
+          "t_stat": -7.11,
+          "events": 46,
+          "t_by_event": -4.24,
           "stale": 0,
-          "pending": 56,
+          "pending": 10,
           "no_close": 1
         }
       }
