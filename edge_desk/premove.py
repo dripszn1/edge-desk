@@ -20,7 +20,7 @@ from . import clv
 
 PRE_WINDOW = pd.Timedelta(minutes=30)
 PRE_MOVE_C = 1.0
-GUARD_LEAGUES = ("CBB",)
+GUARD_LEAGUES = ("CBB", "NFL", "CFB")   # football added 11-15 (Emerson OK 7:04 AM CT: 30 plays, -1.97c, t -4.54)
 REASON = "kalshi moved first"
 QCOLS = ["ticker", "yes_bid", "yes_ask", "no_bid", "no_ask"]
 _CACHE: dict = {}

@@ -66,8 +66,8 @@ CBB_SD = {"spread": 11.4, "total": 16.5}   # fallback only, until data/cbb/lines
 # (#29) Was 11.0/11.5; CBBD 2021-26 finals (32k games, 0-0/forfeit rows dropped) fit 11.35 / 16.5.
 CBB_MIN_FIT_GAMES = 500     # settled CBB games with a closing line needed to fit the SDs
 SHADOW_ONLY = ("CBB",)      # Emerson: CBB is a shadow/PAPER test; never live, whatever its gate says
-ODDS_MAX_AGE_MIN = 90          # no SHARP flag from a sharp line older than this...
-ODDS_MAX_AGE_NEAR_KO_MIN = 60  # ...or older than this within NEAR_KO_H of kickoff
+ODDS_MAX_AGE_MIN = 30          # no SHARP flag from a sharp line older than this (was 90; Emerson OK 11-15: 30-90 min pulls lost -1.65c, t -3.26, 48 plays)...
+ODDS_MAX_AGE_NEAR_KO_MIN = 30  # ...or older than this within NEAR_KO_H of kickoff (was 60)
 NEAR_KO_H = 3
 EDGE_SANITY_CAP = 0.12         # an "edge" this big vs a sharp line is almost always a data/matching error
 # Low-confidence plays are NOT thrown away: they are logged here with the reason, graded like
