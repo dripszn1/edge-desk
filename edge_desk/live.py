@@ -411,6 +411,9 @@ def seed_seen(now: datetime, hours: float = 36) -> set:
     return seen
 
 
+STREAM = None                                          # #66: (Engine, Stream) while the real loop runs
+
+
 def default_alerts(df, ts: str) -> list:
     """Alert on what scan.run just found (scan.run.last), priced against this pass's quotes."""
     from . import alerts, scan
@@ -421,6 +424,8 @@ def default_alerts(df, ts: str) -> list:
     groups = [(last["flags"], False), (m.get("live", []), True), (m.get("shadow", []), False),
               (sh.get("live", []), True), (sh.get("shadow", []), False)]
     scan.run.last = None                               # never alert twice on the same scan
+    if STREAM is not None:                             # #66: hand this scan's fair values to the stream engine
+        STREAM[0].set_fairs(sh.get("fairs") or {})
     return alerts.process(groups, alerts.quotes_of(df), lost_today=scan.lost_today(),
                           fairs=sh.get("fairs") or {})
 
@@ -546,6 +551,26 @@ def _quantile(xs: list, q: float):
     return round(ys[min(int(q * len(ys)), len(ys) - 1)], 1)
 
 
+def _stream_flush(sess, stop: bool = False) -> None:
+    """#66: write the stream's paper fills, quotes and status before each commit."""
+    global STREAM
+    if STREAM is None:
+        return
+    from . import stream
+    eng, st = STREAM
+    try:
+        if stop:
+            st.stop()
+        eng.flush()
+        stream.write_status(eng, st)
+        sess.stats["stream"] = {**eng.summary(), "connected": st.status.get("connected"),
+                                "url": st.status.get("url")}
+    except Exception as e:  # noqa: BLE001
+        sess.errors.append(f"stream flush: {type(e).__name__}")
+    if stop:
+        STREAM = None
+
+
 def run_loop(now_fn=lambda: datetime.now(UTC), clock=time.monotonic, sleep=time.sleep,
              fetch_full=full_pass, fetch_hot=hot_pass, odds_fn=None, scan_fn=None,
              persist_fn=persist, post_fn=post_steps, commit_fn=git_commit, used_min: float | None = None,
@@ -572,6 +597,15 @@ def run_loop(now_fn=lambda: datetime.now(UTC), clock=time.monotonic, sleep=time.
         sleep((w[0] - start).total_seconds())
     seen = seed_seen(start) if seen is None else seen
     start_rev = code_fn() if code_fn else None
+    global STREAM
+    if commit_fn is git_commit and STREAM is None:     # #66: real loop only; tests never open a socket
+        try:
+            from . import stream
+            STREAM = stream.start_from_env()
+            print(f"live: kalshi stream {'on' if STREAM else 'off (no KALSHI_KEY_ID/KALSHI_PRIVATE_KEY)'}")
+        except Exception as e:  # noqa: BLE001 - the loop runs without the stream
+            sess.errors.append(f"stream start: {type(e).__name__}: {e}")
+            STREAM = None
     pacer, mults, meta = Pacer(), {}, {}
     last_full_df = None
     last_odds = last_persist = last_commit = None
@@ -629,6 +663,7 @@ def run_loop(now_fn=lambda: datetime.now(UTC), clock=time.monotonic, sleep=time.
         if last_commit is None:
             last_commit = now
         elif now - last_commit >= timedelta(minutes=config.LIVE_COMMIT_MINUTES):
+            _stream_flush(sess)
             sess.errors += post_fn()
             try:                                       # checkpoint: a cancelled run still logs its minutes
                 log_fn(checkpoint_row(sess, now))
@@ -670,6 +705,7 @@ def run_loop(now_fn=lambda: datetime.now(UTC), clock=time.monotonic, sleep=time.
                 sleep(min(step, wait))
             wait = end_wait - clock()
         fast_paused = False
+    _stream_flush(sess, stop=True)
     sess.errors += post_fn()
     if commit_fn(f"data: live {_utc(now_fn()).strftime('%Y-%m-%dT%H:%MZ')} (end)"):
         sess.stats["commits"] += 1
