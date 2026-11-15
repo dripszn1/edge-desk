@@ -61,6 +61,9 @@ def ml_flags(df: pd.DataFrame, lines: pd.DataFrame, snapshot_ts: str | None, los
         sides, fe = seen[ev]
         if fe.empty or not sides:
             continue
+        if sharp.sharp_started(fe, row["snapshot_ts"]):     # #65
+            status["sharp_says_started"] = status.get("sharp_says_started", 0) + 1
+            continue
         team = sides.get(team_abbr(row["ticker"]))
         r = fe[fe["outcome"] == team] if team else fe.iloc[0:0]
         if len(r) != 1:

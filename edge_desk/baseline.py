@@ -38,7 +38,7 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
-from . import fees, trades
+from . import fees, kickoffs, trades
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data"
@@ -148,7 +148,7 @@ def grade_plays(bets: pd.DataFrame, snaps: pd.DataFrame, results: pd.DataFrame |
     s = snaps.copy()
     s["_ts"] = pd.to_datetime(s["snapshot_ts"], utc=True, errors="coerce")
     s = s[s["_ts"].notna() & (s["_ts"] <= now)]                   # never a snapshot from the future
-    s["_ko"] = pd.to_datetime(s["occurrence_datetime"], utc=True, errors="coerce") - OCC_OFFSET
+    s["_ko"] = kickoffs.snap_kickoff(s, OCC_OFFSET)   # #65
     times = sorted(s["_ts"].unique())
     by_time = {t: g for t, g in s.groupby("_ts")}
     by_ticker = {t: g for t, g in s.groupby("ticker")}

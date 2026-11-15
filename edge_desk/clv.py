@@ -23,6 +23,8 @@ from pathlib import Path
 
 import pandas as pd
 
+from . import kickoffs
+
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data"
 SNAP_DIR = DATA / "snapshots"
@@ -54,7 +56,7 @@ def closing_value(bets: pd.DataFrame, snaps: pd.DataFrame, now=None) -> pd.DataF
         s = pd.DataFrame(columns=SNAP_COLS)
     s["_ts"] = pd.to_datetime(s["snapshot_ts"], utc=True, errors="coerce")
     s = s[s["_ts"].notna() & (s["_ts"] <= now)]
-    s["_ko"] = pd.to_datetime(s["occurrence_datetime"], utc=True, errors="coerce") - OCC_OFFSET
+    s["_ko"] = kickoffs.snap_kickoff(s, OCC_OFFSET)   # #65 one kickoff per game
     by_t = {t: g.sort_values("_ts") for t, g in s.groupby("ticker")}
     rows = []
     for b in bets.to_dict("records"):
