@@ -82,7 +82,13 @@ def current_window(now: datetime, early_min: float = 0) -> tuple[datetime, datet
 
 
 # ---------- minutes budget ----------
+def on_vps() -> bool:
+    """#66c: EDGE_RUNNER=vps marks the always-on server runner (deploy/run.sh)."""
+    return os.environ.get("EDGE_RUNNER", "").strip().lower() == "vps"
+
+
 def minutes_used_this_month(now: datetime, path: Path | None = None) -> float:
+    """Actions minutes only: VPS rows (run_id "vps-...") cost no Actions minutes (#66c)."""
     path = path or LIVE_LOG
     if not path.exists():
         return 0.0
@@ -90,6 +96,8 @@ def minutes_used_this_month(now: datetime, path: Path | None = None) -> float:
     tot = 0.0
     with path.open() as fh:
         for r in csv.DictReader(fh):
+            if str(r.get("run_id", "")).startswith("vps-"):
+                continue
             if str(r.get("started_utc", "")).startswith(month):
                 try:
                     tot += float(r.get("minutes") or 0)
@@ -108,10 +116,12 @@ def deadline(start: datetime, window_end: datetime, used_min: float,
 
 
 def guard(now: datetime, active_runs: int, chained: bool, used_min: float,
-          budget_min: float = config.LIVE_MINUTES_BUDGET_MONTH) -> tuple[bool, str]:
+          budget_min: float = config.LIVE_MINUTES_BUDGET_MONTH, vps: bool = False) -> tuple[bool, str]:
     w = current_window(now, config.LIVE_EARLY_START_MINUTES)
     if w is None:
         return False, "outside game windows"
+    if vps:                                            # #66c: the VPS loop is live; even a chained run stands down
+        return False, "vps runner active"
     if used_min + 10 > budget_min:
         return False, f"monthly live budget used ({used_min:.0f}/{budget_min:.0f} min)"
     if active_runs > 0 and not chained:
@@ -122,7 +132,9 @@ def guard(now: datetime, active_runs: int, chained: bool, used_min: float,
 
 
 def should_redispatch(now: datetime, window_end: datetime, used_min: float,
-                      budget_min: float = config.LIVE_MINUTES_BUDGET_MONTH) -> bool:
+                      budget_min: float = config.LIVE_MINUTES_BUDGET_MONTH, restart: str | None = None) -> bool:
+    if restart == "vps active":                        # #66c: the VPS took over this window
+        return False
     return _utc(window_end) - _utc(now) >= timedelta(minutes=10) and used_min + 10 <= budget_min
 
 
@@ -493,7 +505,8 @@ def upsert_log(row: dict, path: Path | None = None) -> None:
 
 
 def checkpoint_row(sess, now: datetime, reason: str = "running (checkpoint)") -> dict:
-    return {"run_id": os.environ.get("GITHUB_RUN_ID", "local"),
+    rid = f"vps-{sess.started:%Y%m%dT%H%M%SZ}" if on_vps() else os.environ.get("GITHUB_RUN_ID", "local")
+    return {"run_id": rid,
             "started_utc": sess.started.strftime("%Y-%m-%dT%H:%M:%SZ"),
             "ended_utc": _utc(now).strftime("%Y-%m-%dT%H:%M:%SZ"), "minutes": billed_minutes(sess.started, now),
             **sess.stats, "errors": " ; ".join(sess.errors[:20]), "exit_reason": reason,
@@ -574,7 +587,8 @@ def _stream_flush(sess, stop: bool = False) -> None:
 def run_loop(now_fn=lambda: datetime.now(UTC), clock=time.monotonic, sleep=time.sleep,
              fetch_full=full_pass, fetch_hot=hot_pass, odds_fn=None, scan_fn=None,
              persist_fn=persist, post_fn=post_steps, commit_fn=git_commit, used_min: float | None = None,
-             seen: set | None = None, alert_fn=None, log_fn=None, fast_fn="default", code_fn="default") -> Session:
+             seen: set | None = None, alert_fn=None, log_fn=None, fast_fn="default", code_fn="default",
+             vps_fn="default") -> Session:
     """Run until the deadline. All I/O is injectable so the ordering guarantees are testable."""
     from . import kickoffs, odds, scan
     odds_fn = odds_fn or (lambda: odds.run(near_h=config.LIVE_ODDS_NEAR_HOURS,
@@ -586,6 +600,11 @@ def run_loop(now_fn=lambda: datetime.now(UTC), clock=time.monotonic, sleep=time.
     fast_paused = False
     if code_fn == "default":                           # #54: only the real loop watches its own code
         code_fn = code_rev if commit_fn is git_commit else None
+    if vps_fn == "default":                            # #66c: real Actions loop hands over to a live VPS loop
+        from . import fresh
+        vps_fn = (lambda: fresh.vps_active(_utc(now_fn()))) if commit_fn is git_commit else None
+    if on_vps():                                       # the VPS loop itself never stands down for itself
+        vps_fn = None
     log_fn = log_fn or upsert_log
     start = _utc(now_fn())
     w = current_window(start, config.LIVE_EARLY_START_MINUTES)
@@ -672,6 +691,13 @@ def run_loop(now_fn=lambda: datetime.now(UTC), clock=time.monotonic, sleep=time.
             if commit_fn(f"data: live {ts}"):
                 sess.stats["commits"] += 1
             last_commit = now
+            if vps_fn is not None:
+                try:
+                    if vps_fn():
+                        sess.restart = "vps active"
+                        break
+                except Exception as e:  # noqa: BLE001
+                    sess.errors.append(f"vps check: {type(e).__name__}")
             # #54: the pull inside the commit brought new code (a merge to main): end now so the
             # chained re-dispatch runs it, instead of mixing old in-memory code with new post steps
             if code_fn is not None and sess.stop_at - _utc(now_fn()) >= RESTART_MIN_LEFT:
@@ -728,18 +754,19 @@ def main(argv=None) -> int:
     if cmd == "guard":
         active = int(argv[1]) if len(argv) > 1 and argv[1].lstrip("-").isdigit() else 0
         chained = len(argv) > 2 and argv[2].lower() == "true"
-        go, why = guard(now, active, chained, minutes_used_this_month(now))
+        from . import fresh
+        go, why = guard(now, active, chained, minutes_used_this_month(now), vps=fresh.vps_active(now))
         print(f"live guard: {why} (now {now.astimezone(CT):%a %H:%M} CT, active={active}, chained={chained})")
         _gh_output(go=str(go).lower())
         return 0
     if cmd == "loop":
-        used = minutes_used_this_month(now)
+        used = 0.0 if on_vps() else minutes_used_this_month(now)   # #66c: the VPS spends no Actions minutes
         sess = run_loop(used_min=used)
         end = datetime.now(UTC)
         mins = billed_minutes(sess.started, end)
         reason = exit_reason(end, sess.window_end, sess.stop_at, sess.restart)
         upsert_log(checkpoint_row(sess, end, reason))
-        redo = should_redispatch(end, sess.window_end, used + mins)
+        redo = (not on_vps()) and should_redispatch(end, sess.window_end, used + mins, restart=sess.restart)
         _gh_output(redispatch=str(redo).lower())
         git_commit(f"data: live log {end:%Y-%m-%dT%H:%MZ}")
         print(f"live: {mins} min, {sess.stats}, errors={len(sess.errors)}, redispatch={redo}")

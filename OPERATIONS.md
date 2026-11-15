@@ -82,6 +82,33 @@ When the backlog is empty the builder does NOT invent features (it added #52-#56
 but more measurement isn't more edge). It fixes real bugs it finds in the runs/data (with evidence), else
 reports "nothing to build" and stops.
 
+## VPS runner (#66c, built 11-15; not running until Emerson creates the server)
+Why: Actions jobs restart every ≤5.5 h, wait for cron/dispatch and can't hold the Kalshi socket between windows.
+One small always-on server runs the SAME live loop (stream + SHARP fairs + paper engine + alerts) with no job limit.
+Read-only and PAPER: no order code exists anywhere. Files: `deploy/` (Dockerfile, run.sh, edge-desk.service, env.example).
+Hand-off is automatic: while the server's loop checkpoints (`data/live_log.csv` row `vps-...` "running", every 15 min)
+the Actions live job ends at its next commit ("vps active", no re-dispatch), its guard won't start, and collect.yml
+stands down. If the server stops, its row goes stale and Actions takes over again within ~25 min.
+Server minutes never count against LIVE_MINUTES_BUDGET_MONTH. Expect up to ~30 min of both running at hand-over.
+
+Setup (Emerson, once; ~20 min; keys never go in chat or the repo):
+1. Create a small Linux VPS (1 vCPU / 1–2 GB RAM / 25 GB disk, Ubuntu 24.04; ~$5–10/mo at Hetzner, DigitalOcean,
+   Vultr or Lightsail; a US-East region is closest to Kalshi). Install Docker: `curl -fsSL https://get.docker.com | sh`.
+2. Deploy key with write access: on the server `ssh-keygen -t ed25519 -N "" -f /etc/edge-desk/ssh/id_ed25519`,
+   then `ssh-keyscan github.com > /etc/edge-desk/ssh/known_hosts`; add the `.pub` on GitHub → repo Settings →
+   Deploy keys → "Allow write access". (`chmod 700 /etc/edge-desk/ssh; chmod 600 /etc/edge-desk/ssh/id_ed25519`.)
+3. `git clone git@github.com:dripszn1/edge-desk.git /srv/edge-desk` (with `GIT_SSH_COMMAND="ssh -i /etc/edge-desk/ssh/id_ed25519"`)
+   and `git -C /srv/edge-desk checkout main`.
+4. `cp /srv/edge-desk/deploy/env.example /etc/edge-desk/env; chmod 600 /etc/edge-desk/env`, fill in the same values
+   as the GitHub secrets; put the Kalshi private key in `/etc/edge-desk/kalshi.pem` (chmod 600).
+5. `cd /srv/edge-desk && docker build -t edge-desk:latest -f deploy/Dockerfile .`
+6. `cp /srv/edge-desk/deploy/edge-desk.service /etc/systemd/system/ && systemctl daemon-reload && systemctl enable --now edge-desk`.
+If main's branch rule blocks pushes, add the deploy key to the rule's bypass list (the Actions bot already pushes data to main).
+Check: `journalctl -u edge-desk -f` shows "live: kalshi stream on"; within ~15 min of a window opening
+`data/live_log.csv` gets a `vps-...` row. Stop: `systemctl disable --now edge-desk` (Actions resumes by itself).
+Code updates need nothing: run.sh pulls main before each loop and #54 restarts the loop after a merge; rebuild
+the image only when the Dockerfile changes.
+
 ## Scheduled tasks (Claude, not GitHub)
 - edge-desk builder: every 3h at :43 CT, works the backlog on `dev`, opens a PR.
 - edge-desk game-day digest: 11:17 AM / 5:17 PM / 11:17 PM CT, relays data/digest.md as its own chat.
