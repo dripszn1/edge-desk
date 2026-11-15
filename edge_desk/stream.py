@@ -166,6 +166,8 @@ class Engine:
         self.resting: dict[str, dict] = {}          # contract -> open maker quote
         self.rows: list[dict] = []
         self.quotes: list[tuple] = []
+        self.fair_log: list[tuple] = []             # #67: YES-side fair changes, for the market-making replay
+        self._fair_sig: dict[str, tuple] = {}
         self.latency: deque = deque(maxlen=2000)
         self.stats = {"updates": 0, "priced_updates": 0, "taker_fills": 0, "maker_quotes": 0,
                       "maker_fills": 0}
@@ -173,6 +175,15 @@ class Engine:
     def set_fairs(self, fairs: dict) -> None:
         with self.lock:
             self.fairs.update(fairs or {})
+            now = self.now_ms()
+            for k, f in (fairs or {}).items():       # #67: log each new YES fair once (not far rungs)
+                if not k.endswith("|YES") or not f or f.get("far"):
+                    continue
+                sig = (f.get("fair"), f.get("odds_fetched_ts"), bool(f.get("stale")))
+                if self._fair_sig.get(k) != sig:
+                    self._fair_sig[k] = sig
+                    self.fair_log.append((now, k.split("|", 1)[0], f.get("fair"), f.get("odds_fetched_ts"),
+                                          bool(f.get("stale")), f.get("kickoff_utc")))
 
     def tickers(self) -> set[str]:
         with self.lock:
@@ -192,6 +203,8 @@ class Engine:
         out = []
         with self.lock:
             self.stats["updates"] += 1
+            if f"{ticker}|YES" in self.fairs or f"{ticker}|NO" in self.fairs:
+                self.quotes.append((now, ts_ms, ticker, yb, ya, bsz, asz))     # once per update (was once per side)
             for side in ("YES", "NO"):
                 k = f"{ticker}|{side}"
                 f = self.fairs.get(k)
@@ -199,7 +212,6 @@ class Engine:
                     continue
                 self.stats["priced_updates"] += 1
                 bid, ask = side_quotes(side, yb, ya)
-                self.quotes.append((now, ts_ms, ticker, yb, ya, bsz, asz))
                 # a resting maker quote fills on a LATER update whose ask reaches it, before kickoff
                 r = self.resting.get(k)
                 if r and ask is not None and ask <= r["limit"] + 1e-9 and now > r["decided_ms"]:
@@ -256,6 +268,7 @@ class Engine:
         with self.lock:
             rows, self.rows = self.rows, []
             quotes, self.quotes = self.quotes, []
+            flog, self.fair_log = self.fair_log, []
         self.dir.mkdir(parents=True, exist_ok=True)
         if rows:
             p = self.dir / f"fills_{day}.csv"
@@ -274,6 +287,15 @@ class Engine:
                     if new:
                         w.writerow(["recv_ms", "ts_ms", "ticker", "yes_bid", "yes_ask", "bid_size", "ask_size"])
                     w.writerows(quotes)
+        if flog:
+            p = self.dir / f"fairs_{day}.csv"
+            if not p.exists() or p.stat().st_size < QUOTE_LOG_MAX_BYTES:
+                new = not p.exists()
+                with p.open("a", newline="") as fh:
+                    w = csv.writer(fh)
+                    if new:
+                        w.writerow(["logged_ms", "ticker", "fair", "odds_fetched_ts", "stale", "kickoff_utc"])
+                    w.writerows(flog)
 
 
 # ---------- socket thread ----------

@@ -189,6 +189,11 @@ def run(now: datetime | None = None) -> dict:
         rep["stream"] = stream_grade.run(now)
     except Exception as e:                 # noqa: BLE001
         rep["stream"] = {"error": str(e)[:200]}
+    try:                                   # #67 market-making paper test on the stream (report only)
+        from . import mm
+        rep["market_making"] = mm.run(now)
+    except Exception as e:                 # noqa: BLE001
+        rep["market_making"] = {"error": str(e)[:200]}
     try:                                   # #64 maker-entry test (report only)
         from . import maker
         rep["maker_entry"] = maker.run(now)
