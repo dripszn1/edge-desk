@@ -184,6 +184,11 @@ def run(now: datetime | None = None) -> dict:
         rep["trades"] = trades.run(now)
     except Exception as e:                 # noqa: BLE001
         rep["trades"] = {"error": str(e)[:200]}
+    try:                                   # #66 instant paper trades from the Kalshi stream
+        from . import stream_grade
+        rep["stream"] = stream_grade.run(now)
+    except Exception as e:                 # noqa: BLE001
+        rep["stream"] = {"error": str(e)[:200]}
     try:                                   # #64 maker-entry test (report only)
         from . import maker
         rep["maker_entry"] = maker.run(now)

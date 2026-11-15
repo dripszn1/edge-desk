@@ -70,3 +70,10 @@ def _baseline_to_tmp(tmp_path, monkeypatch):
     monkeypatch.setattr(settle, "PLACEBOS", tmp_path / "baseline_placebos.csv")
     monkeypatch.setattr(baseline, "PLACEBOS", tmp_path / "baseline_placebos.csv")
     monkeypatch.setattr(baseline, "STATE", tmp_path / "baseline_summary.json")
+
+
+@pytest.fixture(autouse=True)
+def _no_real_stream_fills(monkeypatch, tmp_path):
+    """#66: tests never pick up the real data/stream fills when they run settle."""
+    from edge_desk import settle
+    monkeypatch.setattr(settle, "STREAM_FILLS", tmp_path / "no_stream")
