@@ -48,6 +48,33 @@ def should_skip(min_minutes: float, snap_dir: Path | None = None, now: datetime 
     return a is not None and 0 <= a < min_minutes      # a snapshot "from the future" never skips
 
 
+LIVE_LOG = ROOT / "data" / "live_log.csv"
+VPS_FRESH_MINUTES = 25    # a VPS loop checkpoints every 15 min (#66c); older than this -> it stopped
+
+
+def vps_active(now: datetime, path: Path | None = None, fresh_min: float = VPS_FRESH_MINUTES) -> bool:
+    """#66c: is an always-on VPS live loop running? True when data/live_log.csv has a "vps-" row still
+    "running" whose checkpoint is < fresh_min old (never a future stamp). Stdlib only."""
+    import csv
+    path = path or LIVE_LOG
+    if not path.exists():
+        return False
+    with path.open() as fh:
+        for r in csv.DictReader(fh):
+            if not str(r.get("run_id", "")).startswith("vps-"):
+                continue
+            if not str(r.get("exit_reason", "")).startswith("running"):
+                continue
+            try:
+                t = datetime.strptime(r.get("ended_utc", ""), "%Y-%m-%dT%H:%M:%SZ").replace(tzinfo=timezone.utc)
+            except ValueError:
+                continue
+            age = (now - t).total_seconds() / 60
+            if 0 <= age < fresh_min:
+                return True
+    return False
+
+
 LIVE_FRESH_MINUTES = 45   # live saves a snapshot every 15 min; older than this -> its loop isn't saving
 
 
@@ -83,6 +110,8 @@ def main(argv=None) -> int:
     event = _opt(argv, "--event", "schedule")
     raw = _opt(argv, "--live-active", "0").strip()
     live = int(raw) if raw.isdigit() else 0          # unknown -> assume no live run, collect (fails safe)
+    if vps_active(_now()):                           # #66c: a VPS live loop counts as a live run
+        live += 1
     d = decide(_now(), SNAP_DIR, mins, event, live)
     a = d["age_min"]
     print(f"latest snapshot {'none' if a is None else f'{a:.1f} min old'}; event {event}; live runs {live}; "

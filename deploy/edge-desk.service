@@ -1,0 +1,22 @@
+# /etc/systemd/system/edge-desk.service  (backlog #66c; runbook in OPERATIONS.md)
+# Read-only market data + PAPER trades. Keys live in /etc/edge-desk/ on the server only.
+[Unit]
+Description=edge-desk live runner (read-only, paper)
+After=docker.service network-online.target
+Requires=docker.service
+Wants=network-online.target
+
+[Service]
+Restart=always
+RestartSec=30
+ExecStartPre=-/usr/bin/docker rm -f edge-desk
+ExecStart=/usr/bin/docker run --rm --name edge-desk \
+  --env-file /etc/edge-desk/env \
+  -v /srv/edge-desk:/srv/edge-desk \
+  -v /etc/edge-desk/ssh:/root/.ssh:ro \
+  -v /etc/edge-desk/kalshi.pem:/run/secrets/kalshi.pem:ro \
+  edge-desk:latest
+ExecStop=/usr/bin/docker stop -t 90 edge-desk
+
+[Install]
+WantedBy=multi-user.target
