@@ -3,8 +3,8 @@
     "PROPOSE football: plays entered after Kalshi already moved toward us lose -1.97c to Kalshi's close (t -4.54 by game, 30 plays): skip a play when Kalshi's price already fell 1c+ toward ours in the 30 min before",
     "PROPOSE football: plays priced on a 30-90 min old sharp line lose -1.65c to Kalshi's close (t -3.26 by game, 48 plays): alert only within 30 min of a fresh sharp pull"
   ],
-  "generated_utc": "2026-11-15T07:46:01Z",
-  "generated_ct": "Sun Nov 15, 1:46 AM CT",
+  "generated_utc": "2026-11-15T09:43:13Z",
+  "generated_ct": "Sun Nov 15, 3:43 AM CT",
   "paper_mode": true,
   "rules": {
     "min_bets": 30,
@@ -246,7 +246,7 @@
     "propose_widen": []
   },
   "settlement": {
-    "pending": 105,
+    "pending": 109,
     "overdue": 0,
     "no_kickoff": 0,
     "grace_hours": 12,

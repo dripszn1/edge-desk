@@ -1,17 +1,17 @@
 {
-  "generated_ts": "2026-11-15T07:47:48Z",
-  "generated_ct": "Sun Nov 15, 1:47 AM CT",
+  "generated_ts": "2026-11-15T09:45:31Z",
+  "generated_ct": "Sun Nov 15, 3:45 AM CT",
   "today_ct": "2026-11-15",
   "snapshot": {
-    "ts": "2026-11-15T07:45:18Z",
-    "ct": "Sun Nov 15, 1:45 AM CT",
+    "ts": "2026-11-15T09:42:14Z",
+    "ct": "Sun Nov 15, 3:42 AM CT",
     "stale": false,
-    "markets_scanned": 1584,
+    "markets_scanned": 2035,
     "kickoff_source": "kalshi occurrence_datetime - 3h",
     "phases": {
       "CFB": {
         "live": 99,
-        "pregame": 811
+        "pregame": 1262
       },
       "NFL": {
         "pregame": 674
@@ -62,7 +62,7 @@
     "max_bet": 10.0
   },
   "signals": {
-    "weekly_ct": "Sun Nov 15, 1:46 AM CT",
+    "weekly_ct": "Sun Nov 15, 3:43 AM CT",
     "scorecards": [
       {
         "name": "SHARP shadow football",
@@ -289,34 +289,6 @@
       }
     },
     "open_alerts": [
-      {
-        "ticker": "KXNCAAFTOTAL-26NOV14USUSDSU-49",
-        "signal": "SHARP",
-        "side": "YES",
-        "game": "Utah St. vs San Diego St.: Total Points",
-        "contract": "Over 48.5 points",
-        "max_price": 0.34,
-        "stake": 2.14,
-        "gone": true,
-        "sent_ct": "Fri Nov 13, 1:58 PM CT",
-        "kickoff_utc": "2026-11-15T02:30:00Z",
-        "kickoff_ct": "Sat Nov 14, 8:30 PM CT",
-        "kalshi_url": "https://kalshi.com/markets/kxncaaftotal/event/kxncaaftotal-26nov14ususdsu"
-      },
-      {
-        "ticker": "KXNCAAFSPREAD-26NOV14CSUWSU-WSU10",
-        "signal": "SHARP",
-        "side": "YES",
-        "game": "Colorado St. vs Washington St.: Spread",
-        "contract": "Washington St. wins by over 9.5 points",
-        "max_price": 0.46,
-        "stake": 3.35,
-        "gone": true,
-        "sent_ct": "Sat Nov 14, 8:40 PM CT",
-        "kickoff_utc": "2026-11-15T03:30:00Z",
-        "kickoff_ct": "Sat Nov 14, 9:30 PM CT",
-        "kalshi_url": "https://kalshi.com/markets/kxncaafspread/event/kxncaafspread-26nov14csuwsu"
-      },
       {
         "ticker": "KXNCAAFSPREAD-26NOV14NDSUHAW-NDSU2",
         "signal": "SHARP",
