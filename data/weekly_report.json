@@ -1,10 +1,7 @@
 {
-  "proposals": [
-    "PROPOSE football: plays entered after Kalshi already moved toward us lose -1.97c to Kalshi's close (t -4.54 by game, 30 plays): skip a play when Kalshi's price already fell 1c+ toward ours in the 30 min before",
-    "PROPOSE football: plays priced on a 30-90 min old sharp line lose -1.65c to Kalshi's close (t -3.26 by game, 48 plays): alert only within 30 min of a fresh sharp pull"
-  ],
-  "generated_utc": "2026-11-15T14:02:10Z",
-  "generated_ct": "Sun Nov 15, 8:02 AM CT",
+  "proposals": [],
+  "generated_utc": "2026-11-15T14:03:48Z",
+  "generated_ct": "Sun Nov 15, 8:03 AM CT",
   "paper_mode": true,
   "rules": {
     "min_bets": 30,
@@ -1419,12 +1416,14 @@
     }
   },
   "pickoff": {
-    "proposals": [
-      "PROPOSE football: plays entered after Kalshi already moved toward us lose -1.97c to Kalshi's close (t -4.54 by game, 30 plays): skip a play when Kalshi's price already fell 1c+ toward ours in the 30 min before",
-      "PROPOSE football: plays priced on a 30-90 min old sharp line lose -1.65c to Kalshi's close (t -3.26 by game, 48 plays): alert only within 30 min of a fresh sharp pull"
-    ],
+    "proposals": [],
     "in_effect": [
-      "cbb: kalshi-moved-first guard is ON (Emerson OK'd 11-12); those plays -2.99c vs Kalshi's close (t -2.34 by game, 53 plays)"
+      "cbb: kalshi-moved-first guard is ON; the plays it holds back: -2.99c vs Kalshi's close (t -2.34 by game, 53 plays)",
+      "cbb: sharp line must be <=30 min old (ON); plays priced on a 30-90 min old sharp line (held back now): -1.81c vs Kalshi's close (t -1.4 by game, 22 plays)",
+      "cbb: sharp line must be <=30 min old (ON); plays priced on a 90+ min old sharp line (held back now): -2.55c vs Kalshi's close (t -1.98 by game, 51 plays)",
+      "football: kalshi-moved-first guard is ON; the plays it holds back: -1.97c vs Kalshi's close (t -4.54 by game, 30 plays)",
+      "football: sharp line must be <=30 min old (ON); plays priced on a 30-90 min old sharp line (held back now): -1.65c vs Kalshi's close (t -3.26 by game, 48 plays)",
+      "football: sharp line must be <=30 min old (ON); plays priced on a 90+ min old sharp line (held back now): 0.21c vs Kalshi's close (t -1.35 by game, 34 plays)"
     ],
     "cbb": {
       "plays": 146,
@@ -2007,11 +2006,11 @@
           "tickers": 16,
           "games": 5,
           "fees_usd": 0.9,
-          "pnl_usd": -5.85,
-          "t_by_game": -1.91,
+          "pnl_usd": -5.8,
+          "t_by_game": -1.9,
           "settled_fills": 0,
           "settled_pnl_usd": null,
-          "adverse_c": -2.03,
+          "adverse_c": -2.12,
           "max_exposure_usd": 51.6
         }
       },
@@ -2023,11 +2022,11 @@
           "tickers": 9,
           "games": 2,
           "fees_usd": 0.4,
-          "pnl_usd": -2.6,
-          "t_by_game": -1.51,
+          "pnl_usd": -2.55,
+          "t_by_game": -1.44,
           "settled_fills": 0,
           "settled_pnl_usd": null,
-          "adverse_c": -1.88,
+          "adverse_c": -2.06,
           "max_exposure_usd": 44.3
         }
       }
