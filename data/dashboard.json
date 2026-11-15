@@ -1,17 +1,18 @@
 {
-  "generated_ts": "2026-11-15T02:08:40Z",
-  "generated_ct": "Sat Nov 14, 8:08 PM CT",
+  "generated_ts": "2026-11-15T02:26:26Z",
+  "generated_ct": "Sat Nov 14, 8:26 PM CT",
   "today_ct": "2026-11-14",
   "snapshot": {
-    "ts": "2026-11-15T02:01:57Z",
-    "ct": "Sat Nov 14, 8:01 PM CT",
+    "ts": "2026-11-15T02:24:58Z",
+    "ct": "Sat Nov 14, 8:24 PM CT",
     "stale": false,
-    "markets_scanned": 2711,
+    "markets_scanned": 2666,
     "kickoff_source": "kalshi occurrence_datetime - 3h",
     "phases": {
       "CFB": {
-        "live": 1195,
-        "pregame": 842
+        "live": 1147,
+        "pregame": 795,
+        "unknown": 50
       },
       "NFL": {
         "pregame": 674
@@ -62,7 +63,7 @@
     "max_bet": 10.0
   },
   "signals": {
-    "weekly_ct": "Sat Nov 14, 8:06 PM CT",
+    "weekly_ct": "Sat Nov 14, 8:25 PM CT",
     "scorecards": [
       {
         "name": "SHARP shadow football",
@@ -161,7 +162,7 @@
           "events": 26,
           "t_by_event": -0.14,
           "stale": 0,
-          "pending": 23,
+          "pending": 24,
           "no_close": 0
         }
       },
@@ -873,6 +874,20 @@
         "stake": 3.76,
         "gone": true,
         "sent_ct": "Sat Nov 14, 1:45 AM CT",
+        "kickoff_utc": "2026-11-15T18:00:00Z",
+        "kickoff_ct": "Sun Nov 15, 12:00 PM CT",
+        "kalshi_url": "https://kalshi.com/markets/kxnflspread/event/kxnflspread-26nov15jacten"
+      },
+      {
+        "ticker": "KXNFLSPREAD-26NOV15JACTEN-JAC5",
+        "signal": "SHARP",
+        "side": "NO",
+        "game": "Jacksonville vs Tennessee: Spread",
+        "contract": "Jacksonville wins by over 4.5 points",
+        "max_price": 0.28,
+        "stake": 2.56,
+        "gone": false,
+        "sent_ct": "Sat Nov 14, 8:10 PM CT",
         "kickoff_utc": "2026-11-15T18:00:00Z",
         "kickoff_ct": "Sun Nov 15, 12:00 PM CT",
         "kalshi_url": "https://kalshi.com/markets/kxnflspread/event/kxnflspread-26nov15jacten"
