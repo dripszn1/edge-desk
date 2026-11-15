@@ -1,7 +1,7 @@
 {
   "proposals": [],
-  "generated_utc": "2026-11-15T01:47:33Z",
-  "generated_ct": "Sat Nov 14, 7:47 PM CT",
+  "generated_utc": "2026-11-15T02:02:48Z",
+  "generated_ct": "Sat Nov 14, 8:02 PM CT",
   "paper_mode": true,
   "rules": {
     "min_bets": 30,
@@ -290,15 +290,15 @@
         "no_close": 7
       },
       "football": {
-        "n": 217,
-        "avg_clv_c": -4.79,
-        "avg_raw_c": -3.58,
-        "beat_close_pct": 32.7,
+        "n": 218,
+        "avg_clv_c": -4.77,
+        "avg_raw_c": -3.56,
+        "beat_close_pct": 32.6,
         "t_stat": -4.77,
-        "events": 43,
+        "events": 44,
         "t_by_event": -2.66,
         "stale": 0,
-        "pending": 65,
+        "pending": 64,
         "no_close": 2
       }
     }
@@ -821,10 +821,10 @@
         "10.5+": {
           "plays": 78,
           "games": 32,
-          "clv_n": 69,
-          "clv_games": 27,
-          "avg_clv_c": -0.93,
-          "clv_t_by_game": -4.23,
+          "clv_n": 70,
+          "clv_games": 28,
+          "avg_clv_c": -0.92,
+          "clv_t_by_game": -4.28,
           "settled": 55,
           "pnl": 2.18,
           "pnl_t_by_game": 0.05,
@@ -848,10 +848,10 @@
           "raw": {
             "plays": 118,
             "games": 36,
-            "clv_n": 107,
-            "clv_games": 31,
+            "clv_n": 108,
+            "clv_games": 32,
             "avg_clv_c": -0.42,
-            "clv_t_by_game": -3.21,
+            "clv_t_by_game": -3.26,
             "settled": 84,
             "pnl": 41.68,
             "pnl_t_by_game": 0.42
@@ -1306,10 +1306,10 @@
         "0.75+": {
           "plays": 70,
           "games": 32,
-          "clv_n": 62,
-          "clv_games": 27,
-          "avg_clv_c": -1.05,
-          "clv_t_by_game": -4.47,
+          "clv_n": 63,
+          "clv_games": 28,
+          "avg_clv_c": -1.04,
+          "clv_t_by_game": -4.51,
           "settled": 49,
           "pnl": -6.76,
           "pnl_t_by_game": -0.16
@@ -1474,14 +1474,14 @@
       }
     },
     "football": {
-      "plays": 318,
-      "line_checked": 229,
-      "adverse_pct": 45.4,
+      "plays": 321,
+      "line_checked": 230,
+      "adverse_pct": 45.2,
       "avg_line_move_fav": -0.5,
-      "median_pull_age_min": 21.6,
+      "median_pull_age_min": 21.0,
       "kalshi_first": {
         "False": {
-          "plays": 159,
+          "plays": 162,
           "with_close": 117,
           "avg_clv_c": -0.74,
           "games": 41,
@@ -1497,10 +1497,10 @@
       },
       "by_pull_age": {
         "0-10 min": {
-          "plays": 106,
-          "with_close": 86,
+          "plays": 109,
+          "with_close": 87,
           "avg_clv_c": -0.63,
-          "games": 35,
+          "games": 36,
           "t_by_game": 0.15
         },
         "10-30 min": {
@@ -1786,7 +1786,7 @@
           "label": "MANUAL-OK",
           "closed": 201,
           "pending": 120,
-          "closed_early_not_counted": 49,
+          "closed_early_not_counted": 50,
           "pnl_usd": -157.21,
           "avg_c": -6.72,
           "win_pct": 14.4,
@@ -1858,7 +1858,7 @@
           "label": "MANUAL-OK",
           "closed": 201,
           "pending": 120,
-          "closed_early_not_counted": 50,
+          "closed_early_not_counted": 51,
           "pnl_usd": -165.23,
           "avg_c": -6.97,
           "win_pct": 19.4,
@@ -1875,9 +1875,9 @@
     "football": {
       "MAKER_BID": {
         "plays": 228,
-        "decided": 187,
+        "decided": 188,
         "filled": 74,
-        "fill_rate_pct": 39.6,
+        "fill_rate_pct": 39.4,
         "clv": {
           "n": 49,
           "games": 14,
@@ -1890,8 +1890,8 @@
             "avg_c": -7.34
           },
           "taker_clv_if_unfilled": {
-            "n": 113,
-            "avg_c": 0.06
+            "n": 114,
+            "avg_c": 0.05
           }
         },
         "exits": {
@@ -2071,9 +2071,9 @@
     "CFB": {
       "MAKER_BID": {
         "plays": 175,
-        "decided": 162,
+        "decided": 163,
         "filled": 50,
-        "fill_rate_pct": 30.9,
+        "fill_rate_pct": 30.7,
         "clv": {
           "n": 49,
           "games": 14,
@@ -2086,7 +2086,7 @@
             "avg_c": -7.34
           },
           "taker_clv_if_unfilled": {
-            "n": 112,
+            "n": 113,
             "avg_c": 0.05
           }
         },
