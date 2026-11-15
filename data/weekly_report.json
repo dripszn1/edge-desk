@@ -1,7 +1,7 @@
 {
   "proposals": [],
-  "generated_utc": "2026-11-15T14:40:37Z",
-  "generated_ct": "Sun Nov 15, 8:40 AM CT",
+  "generated_utc": "2026-11-15T14:57:39Z",
+  "generated_ct": "Sun Nov 15, 8:57 AM CT",
   "paper_mode": true,
   "rules": {
     "min_bets": 30,
@@ -154,6 +154,11 @@
     "verdict": "luck / no edge",
     "why": "t=-1.73, coin-flip beat 36%",
     "by_reason": {
+      "core_zone": {
+        "settled": 0,
+        "verdict": "not enough data",
+        "why": "no settled bets yet"
+      },
       "far_rung": {
         "settled": 205,
         "staked": 820.06,
@@ -243,7 +248,7 @@
     "propose_widen": []
   },
   "settlement": {
-    "pending": 116,
+    "pending": 120,
     "overdue": 0,
     "no_kickoff": 0,
     "grace_hours": 12,
@@ -298,7 +303,7 @@
         "events": 40,
         "t_by_event": -4.25,
         "stale": 0,
-        "pending": 53,
+        "pending": 55,
         "no_close": 1
       }
     }
@@ -1983,34 +1988,62 @@
     "max_inventory": 50,
     "by_k": {
       "1": {
-        "NFL": {
-          "fills": 30,
-          "contracts": 300,
+        "CFB": {
+          "fills": 5,
+          "contracts": 50,
           "paired_contracts": 0,
-          "tickers": 29,
-          "games": 12,
-          "fees_usd": 1.31,
-          "pnl_usd": -7.51,
-          "t_by_game": -2.95,
+          "tickers": 1,
+          "games": 1,
+          "fees_usd": 0.25,
+          "pnl_usd": -2.0,
+          "t_by_game": null,
           "settled_fills": 0,
           "settled_pnl_usd": null,
-          "adverse_c": -1.91,
+          "adverse_c": -3.5,
+          "max_exposure_usd": 24.5
+        },
+        "NFL": {
+          "fills": 32,
+          "contracts": 320,
+          "paired_contracts": 0,
+          "tickers": 30,
+          "games": 13,
+          "fees_usd": 1.38,
+          "pnl_usd": -7.93,
+          "t_by_game": -3.12,
+          "settled_fills": 0,
+          "settled_pnl_usd": null,
+          "adverse_c": -1.88,
           "max_exposure_usd": 47.0
         }
       },
       "2": {
-        "NFL": {
-          "fills": 24,
-          "contracts": 240,
+        "CFB": {
+          "fills": 5,
+          "contracts": 50,
           "paired_contracts": 0,
-          "tickers": 18,
-          "games": 6,
-          "fees_usd": 1.05,
-          "pnl_usd": -6.2,
-          "t_by_game": -2.01,
+          "tickers": 1,
+          "games": 1,
+          "fees_usd": 0.25,
+          "pnl_usd": -1.5,
+          "t_by_game": null,
           "settled_fills": 0,
           "settled_pnl_usd": null,
-          "adverse_c": -2.04,
+          "adverse_c": -2.5,
+          "max_exposure_usd": 24.0
+        },
+        "NFL": {
+          "fills": 26,
+          "contracts": 260,
+          "paired_contracts": 0,
+          "tickers": 19,
+          "games": 7,
+          "fees_usd": 1.14,
+          "pnl_usd": -6.79,
+          "t_by_game": -2.16,
+          "settled_fills": 0,
+          "settled_pnl_usd": null,
+          "adverse_c": -1.98,
           "max_exposure_usd": 51.6
         }
       },
