@@ -1,4 +1,4 @@
-# edge-desk digest, Sun Nov 15, 8:39 AM CT
+# edge-desk digest, Sun Nov 15, 8:41 AM CT
 
 Paper only, nothing is placed. Plays kicking off in the next 36h:
 - SHARP shadow: Jacksonville vs Tennessee | NO Jacksonville wins by over 4.5 points @ 28¢, fair 33¢, edge 3.6¢ after fees | $2.06 paper | Sun Nov 15, 12:00 PM CT | [Kalshi](https://kalshi.com/markets/kxnflspread/event/kxnflspread-26nov15jacten)
@@ -16,6 +16,6 @@ Settled in the last 24h:
   picks vs random entries, $/play: football (191 plays): hold $-0.39 vs $-0.71 (beats 95%), auto-sell +10c $-0.41 vs $-0.86 (beats 100%) · CBB (139 plays): hold $-0.09 vs $-0.06 (beats 46%), auto-sell +10c $-1.03 vs $-0.82 (beats 15%)
   limit-order entries (paper): NFL: 26/27 filled · CFB: 41/164 filled, vs close -0.7c, hold $+29.51, auto-sell +10c $+7.30 (41 done)
   instant (stream) paper trades: NFL 16 plays · CFB 4 plays, vs close -1.4c (4, 1 games), hold $-42.06, auto-sell at fair $+15.51 (4 done) · median 618 ms
-  market-making paper: NFL ±1c 30 fills/12 games $-7.66 t -2.9, after-fill -1.9c · NFL ±2c 24 fills/6 games $-6.20 t -2.0, after-fill -2.0c · NFL ±3c 9 fills/2 games $-2.55 t -1.4, after-fill -2.1c
+  market-making paper: NFL ±1c 30 fills/12 games $-7.51 t -3.0, after-fill -1.9c · NFL ±2c 24 fills/6 games $-6.20 t -2.0, after-fill -2.0c · NFL ±3c 9 fills/2 games $-2.55 t -1.4, after-fill -2.1c
 
-Status: Kalshi data 2m old (ok); sharp odds 2m old; odds credits left 18806 of 20000; gates: MODEL NFL closed, MODEL CFB closed, SHARP NFL closed, SHARP CFB closed, SHARP NFL ML closed, SHARP CFB ML closed
+Status: Kalshi data 4m old (ok); sharp odds 4m old; odds credits left 18806 of 20000; gates: MODEL NFL closed, MODEL CFB closed, SHARP NFL closed, SHARP CFB closed, SHARP NFL ML closed, SHARP CFB ML closed
