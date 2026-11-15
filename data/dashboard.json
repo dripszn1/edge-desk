@@ -1,10 +1,10 @@
 {
-  "generated_ts": "2026-11-15T09:45:31Z",
-  "generated_ct": "Sun Nov 15, 3:45 AM CT",
+  "generated_ts": "2026-11-15T10:48:37Z",
+  "generated_ct": "Sun Nov 15, 4:48 AM CT",
   "today_ct": "2026-11-15",
   "snapshot": {
-    "ts": "2026-11-15T09:42:14Z",
-    "ct": "Sun Nov 15, 3:42 AM CT",
+    "ts": "2026-11-15T10:45:32Z",
+    "ct": "Sun Nov 15, 4:45 AM CT",
     "stale": false,
     "markets_scanned": 2035,
     "kickoff_source": "kalshi occurrence_datetime - 3h",
@@ -62,7 +62,7 @@
     "max_bet": 10.0
   },
   "signals": {
-    "weekly_ct": "Sun Nov 15, 3:43 AM CT",
+    "weekly_ct": "Sun Nov 15, 4:46 AM CT",
     "scorecards": [
       {
         "name": "SHARP shadow football",
@@ -161,7 +161,7 @@
           "events": 29,
           "t_by_event": -0.35,
           "stale": 0,
-          "pending": 19,
+          "pending": 20,
           "no_close": 0
         }
       },
@@ -187,7 +187,7 @@
           "events": 40,
           "t_by_event": -4.25,
           "stale": 0,
-          "pending": 52,
+          "pending": 53,
           "no_close": 1
         }
       }
@@ -290,20 +290,6 @@
     },
     "open_alerts": [
       {
-        "ticker": "KXNCAAFSPREAD-26NOV14NDSUHAW-NDSU2",
-        "signal": "SHARP",
-        "side": "NO",
-        "game": "North Dakota St. vs Hawai'i: Spread",
-        "contract": "North Dakota St. wins by over 1.5 points",
-        "max_price": 0.3,
-        "stake": 1.89,
-        "gone": true,
-        "sent_ct": "Sat Nov 14, 7:26 PM CT",
-        "kickoff_utc": "2026-11-15T04:00:00Z",
-        "kickoff_ct": "Sat Nov 14, 10:00 PM CT",
-        "kalshi_url": "https://kalshi.com/markets/kxncaafspread/event/kxncaafspread-26nov14ndsuhaw"
-      },
-      {
         "ticker": "KXNFLSPREAD-26NOV15BUFNYJ-BUF3",
         "signal": "SHARP",
         "side": "NO",
@@ -400,6 +386,20 @@
         "kickoff_utc": "2026-11-15T21:05:00Z",
         "kickoff_ct": "Sun Nov 15, 3:05 PM CT",
         "kalshi_url": "https://kalshi.com/markets/kxnflspread/event/kxnflspread-26nov15sealv"
+      },
+      {
+        "ticker": "KXNFLTOTAL-26NOV15LARARI-30",
+        "signal": "SHARP",
+        "side": "NO",
+        "game": "Los Angeles R vs Arizona: Total Points",
+        "contract": "Over 29.5 points",
+        "max_price": 0.21,
+        "stake": 1.78,
+        "gone": false,
+        "sent_ct": "Sun Nov 15, 4:45 AM CT",
+        "kickoff_utc": "2026-11-15T21:05:00Z",
+        "kickoff_ct": "Sun Nov 15, 3:05 PM CT",
+        "kalshi_url": "https://kalshi.com/markets/kxnfltotal/event/kxnfltotal-26nov15larari"
       },
       {
         "ticker": "KXNFLSPREAD-26NOV19INDHOU-HOU15",

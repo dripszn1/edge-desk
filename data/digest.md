@@ -1,4 +1,4 @@
-# edge-desk digest, Sun Nov 15, 3:45 AM CT
+# edge-desk digest, Sun Nov 15, 4:48 AM CT
 
 **PROPOSE football: plays entered after Kalshi already moved toward us lose -1.97c to Kalshi's close (t -4.54 by game, 30 plays): skip a play when Kalshi's price already fell 1c+ toward ours in the 30 min before** (Emerson decides; caps unchanged)
 **PROPOSE football: plays priced on a 30-90 min old sharp line lose -1.65c to Kalshi's close (t -3.26 by game, 48 plays): alert only within 30 min of a fresh sharp pull** (Emerson decides; caps unchanged)
@@ -6,6 +6,7 @@
 Paper only, nothing is placed. Plays kicking off in the next 36h:
 - SHARP shadow: Jacksonville vs Tennessee | NO Jacksonville wins by over 4.5 points @ 28¢, fair 33¢, edge 3.6¢ after fees | $2.06 paper | Sun Nov 15, 12:00 PM CT | [Kalshi](https://kalshi.com/markets/kxnflspread/event/kxnflspread-26nov15jacten)
 - SHARP shadow: Buffalo vs New York J | YES New York J wins by over 1.5 points @ 20¢, fair 24¢, edge 3.0¢ after fees | $1.27 paper | Sun Nov 15, 12:00 PM CT | [Kalshi](https://kalshi.com/markets/kxnflspread/event/kxnflspread-26nov15bufnyj)
+- SHARP shadow: Los Angeles R vs Arizona | NO Over 29.5 points @ 21¢, fair 26¢, edge 3.8¢ after fees | $1.78 paper | Sun Nov 15, 3:05 PM CT | [Kalshi](https://kalshi.com/markets/kxnfltotal/event/kxnfltotal-26nov15larari)
 
 Settled in the last 24h:
 - MODEL shadow: 8-24, $+82.49 after fees (running 10-33, $+80.87)
@@ -21,4 +22,4 @@ Settled in the last 24h:
   instant (stream) paper trades: NFL 8 plays · CFB 4 plays, vs close -1.4c (4, 1 games), hold $-42.06, auto-sell at fair $+15.51 (4 done) · median 637 ms
   market-making paper: NFL ±1c 2 fills/2 games $-0.35 t -7.0, after-fill -1.2c · NFL ±2c 1 fills/1 games $-0.19
 
-Status: Kalshi data 3m old (ok); sharp odds 3m old; odds credits left 18887 of 20000; gates: MODEL NFL closed, MODEL CFB closed, SHARP NFL closed, SHARP CFB closed, SHARP NFL ML closed, SHARP CFB ML closed
+Status: Kalshi data 3m old (ok); sharp odds 3m old; odds credits left 18881 of 20000; gates: MODEL NFL closed, MODEL CFB closed, SHARP NFL closed, SHARP CFB closed, SHARP NFL ML closed, SHARP CFB ML closed
