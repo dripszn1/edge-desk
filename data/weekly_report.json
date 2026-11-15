@@ -3,8 +3,8 @@
     "PROPOSE football: plays entered after Kalshi already moved toward us lose -1.97c to Kalshi's close (t -4.54 by game, 30 plays): skip a play when Kalshi's price already fell 1c+ toward ours in the 30 min before",
     "PROPOSE football: plays priced on a 30-90 min old sharp line lose -1.65c to Kalshi's close (t -3.26 by game, 48 plays): alert only within 30 min of a fresh sharp pull"
   ],
-  "generated_utc": "2026-11-15T05:11:46Z",
-  "generated_ct": "Sat Nov 14, 11:11 PM CT",
+  "generated_utc": "2026-11-15T05:13:23Z",
+  "generated_ct": "Sat Nov 14, 11:13 PM CT",
   "paper_mode": true,
   "rules": {
     "min_bets": 30,
@@ -1879,11 +1879,11 @@
   "stream": {
     "note": "instant paper trades from the Kalshi stream; kept apart from the alert scorecards",
     "maker": {
-      "quotes": 8,
+      "quotes": 9,
       "fills": 0,
       "fill_rate_pct": 0.0
     },
-    "median_latency_ms": 764,
+    "median_latency_ms": 765,
     "NFL": {
       "plays": 8,
       "settled": 0,
@@ -1972,6 +1972,18 @@
         }
       }
     }
+  },
+  "market_making": {
+    "note": "paper market making around the sharp fair; fills only on a later trade-through, maker fees, cancel at kickoff; report only",
+    "grid_c": [
+      1,
+      2,
+      3
+    ],
+    "contracts": 10,
+    "max_inventory": 50,
+    "by_k": {},
+    "status": "no fair log yet (starts with the next live run)"
   },
   "maker_entry": {
     "note": "report only; resting buys fill at the limit when a later ask reaches it, maker fee",
