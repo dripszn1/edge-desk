@@ -1,10 +1,10 @@
 {
-  "generated_ts": "2026-11-15T16:44:58Z",
-  "generated_ct": "Sun Nov 15, 10:44 AM CT",
+  "generated_ts": "2026-11-15T17:00:12Z",
+  "generated_ct": "Sun Nov 15, 11:00 AM CT",
   "today_ct": "2026-11-15",
   "snapshot": {
-    "ts": "2026-11-15T16:43:43Z",
-    "ct": "Sun Nov 15, 10:43 AM CT",
+    "ts": "2026-11-15T16:59:09Z",
+    "ct": "Sun Nov 15, 10:59 AM CT",
     "stale": false,
     "markets_scanned": 2497,
     "kickoff_source": "kalshi occurrence_datetime - 3h",
@@ -63,7 +63,7 @@
     "max_bet": 10.0
   },
   "signals": {
-    "weekly_ct": "Sun Nov 15, 10:44 AM CT",
+    "weekly_ct": "Sun Nov 15, 10:59 AM CT",
     "scorecards": [
       {
         "name": "SHARP shadow football",
@@ -387,20 +387,6 @@
         "kickoff_utc": "2026-11-15T18:00:00Z",
         "kickoff_ct": "Sun Nov 15, 12:00 PM CT",
         "kalshi_url": "https://kalshi.com/markets/kxnflspread/event/kxnflspread-26nov15jacten"
-      },
-      {
-        "ticker": "KXNFLSPREAD-26NOV15LARARI-LAR7",
-        "signal": "SHARP",
-        "side": "NO",
-        "game": "Los Angeles R vs Arizona: Spread",
-        "contract": "Los Angeles R wins by over 6.5 points",
-        "max_price": 0.38,
-        "stake": 2.38,
-        "gone": true,
-        "sent_ct": "Thu Nov 12, 10:51 AM CT",
-        "kickoff_utc": "2026-11-15T21:05:00Z",
-        "kickoff_ct": "Sun Nov 15, 3:05 PM CT",
-        "kalshi_url": "https://kalshi.com/markets/kxnflspread/event/kxnflspread-26nov15larari"
       },
       {
         "ticker": "KXNFLTOTAL-26NOV15LARARI-30",
