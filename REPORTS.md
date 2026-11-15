@@ -1,5 +1,12 @@
 # Reports (newest first)
 
+## 2026-11-15 (builder, 07:45Z run)
+- Nothing to build: backlog #1–#67 all done; latest runs show nothing broken (collect runs 106/107 green, live run 78 ended at the Sat window close, settlement 134 pending / 0 overdue, no report errors). Nothing shipped, nothing to merge.
+- Tests: 505/505 green on dev rebased onto main.
+- Honest results (football, 192 closed in the exit comparison): picks vs Kalshi's close after fee: alerted −1.1¢ (59 plays, 29 games, t −0.4 by game), held back −1.1¢ (163, 40 games, t −4.3). Exits: hold −$76.45, sell at tip −$55.60, Auto Sell at fair −$16.15 (best), Auto Sell +10¢ −$16.79; bracket is API-only and not in the digest line. Vs random entries (191 plays): hold beats 95%, Auto Sell +10¢ beats 100%, but both still lose money. Bets from Sunday's NFL slate settle tonight.
+- Verdict rules: thresholds met since read #1. Rule 2: no exit works (all P&L < 0). Rule 1: held-back plays alone sit on the "no edge" side (CLV ≤ 0, t ≤ −2); the pooled read stays with the daily check-in after Sunday's games, as read #1 set. Not acted on.
+- Watchdog: collect was 2h10m old (keeper skips 06–14Z by design) and no live run active, so I dispatched collect (run 107, 07:47Z snapshot) and live (run 79, its guard exited outside the window). Needs Emerson: the two football proposals at the top of the digest are still open.
+
 ## 2026-11-15 (builder, 04:45Z run)
 - Shipped **#66c** (always-on server runner: `deploy/` Dockerfile + run.sh + systemd unit + runbook in OPERATIONS.md; while a server loop checkpoints, the Actions live job hands over and collect stands down, and they take back over ~25 min after it stops; server minutes don't count against the Actions budget; inert until Emerson creates the server), **#66d** (sharp-feed speed options with prices in OPERATIONS.md: the Odds API refreshes every 60 s, so every-minute pulls on its 100K plan = $59/mo; Pinnacle push resellers ~$190–240/mo; no purchase, and per rule 4 none is worth it yet), **#67** (market-making paper test on the stream, report only; the stream now logs fair values for it, and writes each quote once instead of twice). All auto-merged (automerge runs #34–36 green); first market-making read after Sunday's live run.
 - Tests: 505/505 green (22 new).
