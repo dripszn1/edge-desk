@@ -144,3 +144,16 @@ def test_start_from_env_off_without_secrets(monkeypatch):
     monkeypatch.delenv("KALSHI_KEY_ID", raising=False)
     monkeypatch.delenv("KALSHI_PRIVATE_KEY", raising=False)
     assert stream.start_from_env() is None
+
+
+def test_load_key_survives_bad_pastes():
+    from cryptography.hazmat.primitives import serialization
+    from cryptography.hazmat.primitives.asymmetric import rsa
+    key = rsa.generate_private_key(public_exponent=65537, key_size=2048)
+    for fmt in (serialization.PrivateFormat.PKCS8, serialization.PrivateFormat.TraditionalOpenSSL):
+        pem = key.private_bytes(serialization.Encoding.PEM, fmt, serialization.NoEncryption()).decode()
+        body = "".join(l for l in pem.splitlines() if not l.startswith("-----"))
+        for pasted in (pem, pem.replace("\n", " "), pem.replace("\n", "\r\n"), "  " + pem + "  \n",
+                       pem.replace("\n", ""), body, '"' + pem + '"'):
+            k = stream.load_key(pasted)
+            assert k.private_numbers() == key.private_numbers()
