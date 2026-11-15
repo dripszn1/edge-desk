@@ -1,7 +1,7 @@
 {
   "proposals": [],
-  "generated_utc": "2026-11-15T01:01:54Z",
-  "generated_ct": "Sat Nov 14, 7:01 PM CT",
+  "generated_utc": "2026-11-15T01:17:07Z",
+  "generated_ct": "Sat Nov 14, 7:17 PM CT",
   "paper_mode": true,
   "rules": {
     "min_bets": 30,
@@ -15,31 +15,31 @@
     "why": "no settled bets yet"
   },
   "model_shadow": {
-    "settled": 22,
-    "staked": 5.32,
-    "fees": 0.37,
-    "pnl": -3.32,
-    "roi": -0.6241,
-    "t_stat": -4.46,
+    "settled": 25,
+    "staked": 34.23,
+    "fees": 1.8,
+    "pnl": -32.23,
+    "roi": -0.9416,
+    "t_stat": -5.24,
     "coin_flip": {
       "sims": 10000,
-      "bets": 22,
-      "real_pnl": -3.32,
-      "sim_median_pnl": -0.32,
-      "beat_pct": 0.0929
+      "bets": 25,
+      "real_pnl": -32.23,
+      "sim_median_pnl": 0.77,
+      "beat_pct": 0.0151
     },
     "by_week": [
       {
         "week_of": "2026-11-09",
-        "bets": 22,
-        "pnl": -3.32,
-        "roi": -0.6241,
-        "claimed_edge_c": 13.6,
-        "realised_edge_c": -13.83
+        "bets": 25,
+        "pnl": -32.23,
+        "roi": -0.9416,
+        "claimed_edge_c": 24.94,
+        "realised_edge_c": -24.23
       }
     ],
     "verdict": "not enough data",
-    "why": "22 settled bets (< 30)"
+    "why": "25 settled bets (< 30)"
   },
   "sharp_shadow": {
     "settled": 72,
@@ -243,7 +243,7 @@
     "propose_widen": []
   },
   "settlement": {
-    "pending": 184,
+    "pending": 181,
     "overdue": 0,
     "no_kickoff": 0,
     "grace_hours": 12,
@@ -1530,8 +1530,8 @@
   "alert_room": {
     "0c": {
       "alerts": 53,
-      "gone_pct": 92.5,
-      "median_min_to_gone": 18.3,
+      "gone_pct": 94.3,
+      "median_min_to_gone": 18.4,
       "with_close": 43,
       "avg_clv_c": -0.33
     },
@@ -1714,7 +1714,7 @@
           "label": "API-ONLY",
           "closed": 201,
           "pending": 117,
-          "closed_early_not_counted": 46,
+          "closed_early_not_counted": 47,
           "pnl_usd": -140.91,
           "avg_c": -6.81,
           "win_pct": 25.9,
@@ -1726,7 +1726,7 @@
           "label": "API-ONLY",
           "closed": 201,
           "pending": 117,
-          "closed_early_not_counted": 76,
+          "closed_early_not_counted": 78,
           "pnl_usd": -128.34,
           "avg_c": -6.08,
           "win_pct": 9.5,
@@ -1738,7 +1738,7 @@
           "label": "API-ONLY",
           "closed": 201,
           "pending": 117,
-          "closed_early_not_counted": 46,
+          "closed_early_not_counted": 47,
           "pnl_usd": -162.06,
           "avg_c": -8.05,
           "win_pct": 15.9,
@@ -1750,7 +1750,7 @@
           "label": "API-ONLY",
           "closed": 201,
           "pending": 117,
-          "closed_early_not_counted": 76,
+          "closed_early_not_counted": 78,
           "pnl_usd": -134.47,
           "avg_c": -6.43,
           "win_pct": 5.5,
@@ -1774,7 +1774,7 @@
           "label": "API-ONLY",
           "closed": 201,
           "pending": 117,
-          "closed_early_not_counted": 78,
+          "closed_early_not_counted": 79,
           "pnl_usd": -119.26,
           "avg_c": -5.58,
           "win_pct": 18.4,
@@ -1810,7 +1810,7 @@
           "label": "MANUAL-OK",
           "closed": 201,
           "pending": 117,
-          "closed_early_not_counted": 21,
+          "closed_early_not_counted": 25,
           "pnl_usd": -150.5,
           "avg_c": -6.79,
           "win_pct": 60.2,
@@ -1822,7 +1822,7 @@
           "label": "MANUAL-OK",
           "closed": 201,
           "pending": 117,
-          "closed_early_not_counted": 16,
+          "closed_early_not_counted": 21,
           "pnl_usd": -137.63,
           "avg_c": -5.96,
           "win_pct": 54.2,
@@ -1875,9 +1875,9 @@
     "football": {
       "MAKER_BID": {
         "plays": 226,
-        "decided": 186,
-        "filled": 73,
-        "fill_rate_pct": 39.2,
+        "decided": 187,
+        "filled": 74,
+        "fill_rate_pct": 39.6,
         "clv": {
           "n": 49,
           "games": 14,
@@ -1973,9 +1973,9 @@
     "NFL": {
       "MAKER_BID": {
         "plays": 52,
-        "decided": 24,
-        "filled": 23,
-        "fill_rate_pct": 95.8,
+        "decided": 25,
+        "filled": 24,
+        "fill_rate_pct": 96.0,
         "clv": {
           "n": 0,
           "games": 0,
