@@ -109,6 +109,25 @@ Check: `journalctl -u edge-desk -f` shows "live: kalshi stream on"; within ~15 m
 Code updates need nothing: run.sh pulls main before each loop and #54 restarts the loop after a merge; rebuild
 the image only when the Dockerfile changes.
 
+## Sharp-side speed (#66d, builder 11-15 research; no purchase, Emerson decides)
+The Kalshi side is now near-instant (stream, ~0.6 s median). The sharp side is not:
+- **Now (The Odds API 20K, $30/mo):** their featured markets (h2h/spreads/totals) refresh every **60 s** pre-match
+  (40 s in-play). We pull every 5 min within 1.5 h of a kickoff, 10 min in windows; one pull = 3 credits per league.
+  So a sharp move reaches us 1–6 min late. Polling faster than 60 s buys nothing on this source.
+- **Same source, every 60 s in game windows:** ~2 leagues × 3 credits × ~14,000 window-min/month ≈ 84k credits →
+  their **100K plan, $59/mo** (+$29). Best value step if rule 1 ever says the picks have an edge; lag ≈ 1–2 min.
+  (Their 5M plan is $119/mo; not needed.)
+- **Pinnacle-direct push feeds** (third-party resellers; Pinnacle closed its own public API in July 2025, so these are
+  unofficial, their own latency claims, untested here): pinnapi REST $99 / Edge $149 / Scale $229, WebSocket add-on
+  +$99 (claims ~22 ms median); PinnWire Pro $89 / Pro+Drops $139 / Scale $219, WebSocket +$89 ("sub-second" SSE
+  drop alerts); SharpAPI Hobby $79 / Pro $229 / Sharp $399 (only Sharp lists "sharp books"), streaming +$99–149.
+  Realistic cost for a Pinnacle push feed: **~$190–240/mo**. Lag: seconds.
+- **Enterprise** (Sportradar, OpticOdds): sales-led pricing, far above this project's scale.
+Honest read: speed only pays if the picks have an edge. Verdict read #1 has picks ≈ even with Kalshi's close
+before fees (raw +0.0¢) and negative after them, so per rule 4 none of these is worth buying yet. If the stream's
+instant paper trades (#66, weekly_report["stream"]) beat the close after fees, the $59 step is the first to try.
+Sources: the-odds-api.com (plans; update-intervals page), pinnapi.com/pinnacle-api-pricing, pinnwire.com, sharpapi.io/pricing.
+
 ## Scheduled tasks (Claude, not GitHub)
 - edge-desk builder: every 3h at :43 CT, works the backlog on `dev`, opens a PR.
 - edge-desk game-day digest: 11:17 AM / 5:17 PM / 11:17 PM CT, relays data/digest.md as its own chat.
