@@ -1,15 +1,17 @@
 {
- "utc": "2026-11-15T15:42:54.096Z",
+ "utc": "2026-11-15T15:58:15.290Z",
  "stream": {
   "connected": true,
   "url": "wss://api.elections.kalshi.com/trade-api/ws/v2",
-  "connects": 1,
-  "errors": [],
+  "connects": 2,
+  "errors": [
+   "wss://api.elections.kalshi.com/trade-api/ws/v2: ConnectionClosedError: no close frame received or sent"
+  ],
   "subscribed": 1712
  },
  "engine": {
-  "updates": 63051,
-  "priced_updates": 126102,
+  "updates": 80787,
+  "priced_updates": 161574,
   "taker_fills": 1,
   "maker_quotes": 1,
   "maker_fills": 1,
