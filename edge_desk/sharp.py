@@ -66,6 +66,21 @@ CBB_SD = {"spread": 11.4, "total": 16.5}   # fallback only, until data/cbb/lines
 # (#29) Was 11.0/11.5; CBBD 2021-26 finals (32k games, 0-0/forfeit rows dropped) fit 11.35 / 16.5.
 CBB_MIN_FIT_GAMES = 500     # settled CBB games with a closing line needed to fit the SDs
 SHADOW_ONLY = ("CBB",)      # Emerson: CBB is a shadow/PAPER test; never live, whatever its gate says
+# Core zone (Emerson 11-15 8:28 AM CT: "you take full control"): only lines near the sharp line and
+# near a coin flip alert / fast-trade. CFB vs Kalshi's close: within 3 pts +0.8c (39 plays), 3+ pts
+# -1.5 to -2.0c (t <= -3.8); price 35-65c +0.2c (46) vs <35c -1.5c (144, t -6.4). Plays outside are
+# still logged to sharp_tracked.csv with their reason and graded, so the zone can be judged on data.
+CORE_MAX_DIST = 3.0
+CORE_PRICE = (0.35, 0.65)
+
+
+def in_core_price(price) -> bool:
+    try:
+        return CORE_PRICE[0] <= float(price) <= CORE_PRICE[1]
+    except (TypeError, ValueError):
+        return False
+
+
 ODDS_MAX_AGE_MIN = 30          # no SHARP flag from a sharp line older than this (was 90; Emerson OK 11-15: 30-90 min pulls lost -1.65c, t -3.26, 48 plays)...
 ODDS_MAX_AGE_NEAR_KO_MIN = 30  # ...or older than this within NEAR_KO_H of kickoff (was 60)
 NEAR_KO_H = 3
@@ -560,6 +575,9 @@ def sharp_flags(df: pd.DataFrame, lines: pd.DataFrame, games: pd.DataFrame, snap
         if abs(float(row["floor_strike"]) - line) > MAX_RUNG_OFFSET_BY_LEAGUE.get(league, MAX_RUNG_OFFSET):
             status["rungs_out_of_range"] = status.get("rungs_out_of_range", 0) + 1
             why.append("rung far from sharp line (unvalidated range)")
+        elif abs(float(row["floor_strike"]) - line) > CORE_MAX_DIST:
+            status["outside_core_dist"] = status.get("outside_core_dist", 0) + 1
+            why.append("rung outside core zone (>3 pts from sharp line)")
         if odds_too_old(row["snapshot_ts"], fe["fetched_ts"].max(), row.get("kickoff_utc")):
             status["odds_too_old"] = status.get("odds_too_old", 0) + 1
             why.append("sharp line stale")
@@ -568,7 +586,7 @@ def sharp_flags(df: pd.DataFrame, lines: pd.DataFrame, games: pd.DataFrame, snap
         for side, price, size, p in (("YES", row["yes_ask"], row.get("yes_ask_size") or 0, p_yes),
                                      ("NO", round(1 - row["yes_bid"], 4), row.get("yes_bid_size") or 0, 1 - p_yes)):
             fairs[f"{row['ticker']}|{side}"] = {**fair_entry(row, p, price, fe, line, stale_line),   # #35
-                                                "far": any(w.startswith("rung far") for w in why)}     # #66 stream skips far rungs
+                                                "far": any(w.startswith("rung ") for w in why)}       # #66 stream skips far / outside-core rungs
             if league == "CBB" and (size or 0) < config.CBB_MIN_SIZE:
                 continue
             s = price_side(p, price, size, mult, config.DAILY_LOSS_CAP - lost_today)
@@ -583,6 +601,9 @@ def sharp_flags(df: pd.DataFrame, lines: pd.DataFrame, games: pd.DataFrame, snap
                  "odds_fetched_ts": str(fe["fetched_ts"].max()), "kickoff_utc": row.get("kickoff_utc"),
                  "kickoff_ct": row.get("kickoff_ct") or to_ct(row.get("kickoff_utc"))}
             reasons = list(why)
+            if not in_core_price(price):
+                status["outside_core_price"] = status.get("outside_core_price", 0) + 1
+                reasons.append("price outside core zone (35-65c)")
             if f["edge"] > EDGE_SANITY_CAP:
                 status["rejected_edge_cap"] = status.get("rejected_edge_cap", 0) + 1
                 reasons.append("edge above sanity cap")

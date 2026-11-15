@@ -230,7 +230,8 @@ class Engine:
                 n = max(1, int(config.MAX_BET // ask)) if ask > 0 else 1
                 fee = fees.taker_fee(ask, n)
                 edge = fair - ask - fee / n
-                if ask > MAX_PRICE or edge < config.MIN_MODEL_EDGE:
+                from .sharp import in_core_price           # core zone (Emerson 11-15)
+                if ask > MAX_PRICE or edge < config.MIN_MODEL_EDGE or not in_core_price(ask):
                     continue
                 self.taken.add(k)
                 lat = (now - ts_ms) if ts_ms is not None else None

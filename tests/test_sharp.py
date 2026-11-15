@@ -119,8 +119,9 @@ def test_no_flag_when_fee_eats_edge():
     assert not nyg
 
 
-def test_spread_side_mapping():
+def test_spread_side_mapping(monkeypatch):
     """WAS rung priced from the WAS point (+3): P(WAS by 3.5+) is small."""
+    monkeypatch.setattr(sharp, "CORE_MAX_DIST", 10.5)      # 6.5 pts away: outside the live core zone
     df = pd.DataFrame([_row("KXNFLSPREAD-26NOV12WASNYG-WAS4", "KXNFLSPREAD", 3.5, 0.40, 0.42)])
     flags, _ = _flags(df=df)
     assert flags and flags[0]["side"] == "NO" and flags[0]["sharp_line"] == -3.0
@@ -231,3 +232,14 @@ def test_backtest_by_offset_bands_and_longshot_calibration():
     assert far["longshot_gap"] < -0.02                      # normal overprices the far longshots
     assert abs(far["longshot_gap"]) > abs(near["longshot_gap"])
     assert "by_offset" in r["spread"]
+
+
+def test_core_zone_holds_back_far_and_longshot_plays(monkeypatch):
+    held = []
+    monkeypatch.setattr(sharp, "log_rejected", lambda f, r: held.append(r))
+    df = pd.DataFrame([_row("KXNFLSPREAD-26NOV12WASNYG-WAS4", "KXNFLSPREAD", 3.5, 0.40, 0.42)])
+    flags, _ = _flags(df=df)
+    assert flags == [] and any("core zone" in r for r in held)
+    assert sharp.in_core_price(0.35) and sharp.in_core_price(0.65) and not sharp.in_core_price(0.30)
+    from edge_desk import grade
+    assert grade.reason_bucket("price outside core zone (35-65c)") == "core_zone"

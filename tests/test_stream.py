@@ -163,3 +163,9 @@ def test_no_fill_on_far_rung():
     e = eng([T0])
     e.set_fairs({"X-1|YES": {**fair(0.60), "far": True}})
     assert not e.on_quote("X-1", 0.48, 0.50, 10, 10, T0)
+
+
+def test_no_fill_outside_core_price():
+    e = eng([T0])
+    e.set_fairs({"X-1|YES": fair(0.30)})
+    assert not e.on_quote("X-1", 0.18, 0.20, 10, 10, T0)      # 10c edge but a 20c longshot

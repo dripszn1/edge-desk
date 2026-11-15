@@ -62,6 +62,14 @@ and stands down if dev has a non-"Report" commit <15 min old.
 - Re-read after Sunday's games settle.
 - 2:54 PM CT Emerson: "try building something now" → #64 maker-entry test built anyway (report only). First read: CFB limit buys fill on the losers (adverse selection), still −1.0¢ vs close. NFL reads Sunday.
 
+## Core-zone test + stop rule (pre-registered 11-15 8:30 AM CT; Emerson: "you take full control ... this is not going anywhere")
+- Live since 11-15: alerts and fast (stream) paper trades only on rungs within 3 pts of the sharp line AND priced 35-65c (`sharp.CORE_MAX_DIST`, `sharp.CORE_PRICE`). Everything else is logged to sharp_tracked.csv (bucket `core_zone`) and graded.
+- Read once core-zone football plays (alerted + fast, one per contract) reach >= 60 with a pregame close across >= 20 games:
+  - CLV after fee > 0 with t >= 2 by game -> keep going: VPS + faster sharp feed next, then the parked order work under its own preconditions.
+  - CLV after fee <= 0 (any t) -> STOP: no new features, cancel the Odds API plan at renewal, leave collection running passively for the record. Claude tells Emerson plainly.
+  - In between -> one more week, bug fixes only.
+- Nobody edits this rule after the data starts coming in.
+
 ## Verdict rules (pre-registered 11-13, BEFORE the weekend's football results; don't bend them after)
 Read once football has >=30 closed plays across >=10 games (alerted + held back within the caps):
 1. **Picks**: football entries vs Kalshi's close after fee, t by game.
