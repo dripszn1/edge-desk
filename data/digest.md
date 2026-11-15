@@ -1,4 +1,4 @@
-# edge-desk digest, Sat Nov 14, 10:38 PM CT
+# edge-desk digest, Sat Nov 14, 10:53 PM CT
 
 **PROPOSE football: plays entered after Kalshi already moved toward us lose -1.97c to Kalshi's close (t -4.54 by game, 30 plays): skip a play when Kalshi's price already fell 1c+ toward ours in the 30 min before** (Emerson decides; caps unchanged)
 **PROPOSE football: plays priced on a 30-90 min old sharp line lose -1.65c to Kalshi's close (t -3.26 by game, 48 plays): alert only within 30 min of a fresh sharp pull** (Emerson decides; caps unchanged)
@@ -20,4 +20,4 @@ Settled in the last 24h:
   limit-order entries (paper): NFL: 25/26 filled · CFB: 41/164 filled, vs close -0.7c, hold $+30.78, auto-sell +10c $+3.09 (37 done)
   instant (stream) paper trades: NFL 8 plays · CFB 4 plays, vs close -1.4c (4, 1 games) · median 769 ms
 
-Status: Kalshi data 1m old (ok); sharp odds 1m old; odds credits left 18914 of 20000; gates: MODEL NFL closed, MODEL CFB closed, SHARP NFL closed, SHARP CFB closed, SHARP NFL ML closed, SHARP CFB ML closed
+Status: Kalshi data 1m old (ok); sharp odds 6m old; odds credits left 18911 of 20000; gates: MODEL NFL closed, MODEL CFB closed, SHARP NFL closed, SHARP CFB closed, SHARP NFL ML closed, SHARP CFB ML closed
