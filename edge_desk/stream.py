@@ -54,8 +54,27 @@ FILL_COLS = ["kind", "decided_utc", "quote_ts_ms", "latency_ms", "ticker", "side
 
 # ---------- auth ----------
 def load_key(pem: str):
+    """Load the private key however it was pasted into the secret: proper PEM, PEM squashed onto
+    one line (spaces or literal \\n instead of line breaks), CRLF, or the bare base64 body."""
+    import re
     from cryptography.hazmat.primitives import serialization
-    return serialization.load_pem_private_key(pem.replace("\\n", "\n").strip().encode(), password=None)
+    raw = pem.replace("\\n", "\n").replace("\r", "").strip().strip('"').strip("'").strip()
+    try:
+        return serialization.load_pem_private_key(raw.encode(), password=None)
+    except ValueError:
+        pass
+    m = re.search(r"-----BEGIN ([A-Z ]+)-----(.*?)-----END \1-----", raw, re.S)
+    labels = [m.group(1)] if m else ["PRIVATE KEY", "RSA PRIVATE KEY", "EC PRIVATE KEY"]
+    body = re.sub(r"[^A-Za-z0-9+/=]", "", m.group(2) if m else raw)
+    lines = "\n".join(body[i:i + 64] for i in range(0, len(body), 64))
+    for lab in labels:
+        try:
+            return serialization.load_pem_private_key(
+                f"-----BEGIN {lab}-----\n{lines}\n-----END {lab}-----\n".encode(), password=None)
+        except ValueError:
+            continue
+    der = base64.b64decode(body + "=" * (-len(body) % 4))
+    return serialization.load_der_private_key(der, password=None)
 
 
 def sign(key, ts_ms: int, method: str, path: str) -> str:
