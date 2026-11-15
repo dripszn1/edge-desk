@@ -2,8 +2,8 @@
   "proposals": [
     "PROPOSE football: plays priced on a 30-90 min old sharp line lose -1.57c to Kalshi's close (t -2.93 by game, 46 plays): alert only within 30 min of a fresh sharp pull"
   ],
-  "generated_utc": "2026-11-15T04:03:52Z",
-  "generated_ct": "Sat Nov 14, 10:03 PM CT",
+  "generated_utc": "2026-11-15T04:05:05Z",
+  "generated_ct": "Sat Nov 14, 10:05 PM CT",
   "paper_mode": true,
   "rules": {
     "min_bets": 30,
@@ -1872,6 +1872,103 @@
         }
       },
       "best_manual": "RESTING_15"
+    }
+  },
+  "stream": {
+    "note": "instant paper trades from the Kalshi stream; kept apart from the alert scorecards",
+    "maker": {
+      "quotes": 4,
+      "fills": 0,
+      "fill_rate_pct": 0.0
+    },
+    "median_latency_ms": 637,
+    "NFL": {
+      "plays": 7,
+      "settled": 0,
+      "hold_pnl_usd": 0.0,
+      "hold_record": "0-0",
+      "clv": {
+        "n": 0,
+        "avg_clv_c": null,
+        "avg_raw_c": null,
+        "beat_close_pct": null,
+        "t_stat": null,
+        "events": 0,
+        "t_by_event": null,
+        "stale": 0,
+        "pending": 7,
+        "no_close": 0
+      },
+      "exits": {
+        "HOLD": {
+          "closed": 0,
+          "games": 0,
+          "pnl_usd": 0.0,
+          "t_by_game": null
+        },
+        "EXIT_AT_TIP": {
+          "closed": 0,
+          "games": 0,
+          "pnl_usd": 0.0,
+          "t_by_game": null
+        },
+        "RESTING_10": {
+          "closed": 0,
+          "games": 0,
+          "pnl_usd": 0.0,
+          "t_by_game": null
+        },
+        "RESTING_FAIR": {
+          "closed": 0,
+          "games": 0,
+          "pnl_usd": 0.0,
+          "t_by_game": null
+        }
+      }
+    },
+    "CFB": {
+      "plays": 4,
+      "settled": 0,
+      "hold_pnl_usd": 0.0,
+      "hold_record": "0-0",
+      "clv": {
+        "n": 4,
+        "avg_clv_c": -1.43,
+        "avg_raw_c": -0.62,
+        "beat_close_pct": 0.0,
+        "t_stat": -6.33,
+        "events": 1,
+        "t_by_event": null,
+        "stale": 0,
+        "pending": 0,
+        "no_close": 0
+      },
+      "exits": {
+        "HOLD": {
+          "closed": 0,
+          "games": 0,
+          "pnl_usd": 0.0,
+          "t_by_game": null
+        },
+        "EXIT_AT_TIP": {
+          "closed": 0,
+          "games": 0,
+          "pnl_usd": 0.0,
+          "t_by_game": null
+        },
+        "RESTING_10": {
+          "closed": 0,
+          "games": 0,
+          "pnl_usd": 0.0,
+          "t_by_game": null
+        },
+        "RESTING_FAIR": {
+          "closed": 0,
+          "games": 0,
+          "pnl_usd": 0.0,
+          "t_by_game": null
+        }
+      }
     }
   },
   "maker_entry": {
