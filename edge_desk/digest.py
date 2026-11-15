@@ -201,7 +201,10 @@ def stream_line(weekly: dict | None, now) -> list[str]:
     except (ValueError, TypeError):
         return []
     m = weekly.get("stream")
-    return stream_grade.digest_line(m) if isinstance(m, dict) else []
+    out = stream_grade.digest_line(m) if isinstance(m, dict) else []
+    from . import mm                                   # #67 market-making paper test
+    k = weekly.get("market_making")
+    return out + (mm.digest_line(k) if isinstance(k, dict) else [])
 
 
 def status_line(latest: dict, odds_state: dict, now) -> str:
