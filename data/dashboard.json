@@ -1,16 +1,16 @@
 {
-  "generated_ts": "2026-11-15T00:47:25Z",
-  "generated_ct": "Sat Nov 14, 6:47 PM CT",
+  "generated_ts": "2026-11-15T01:04:07Z",
+  "generated_ct": "Sat Nov 14, 7:04 PM CT",
   "today_ct": "2026-11-14",
   "snapshot": {
-    "ts": "2026-11-15T00:45:55Z",
-    "ct": "Sat Nov 14, 6:45 PM CT",
+    "ts": "2026-11-15T01:01:04Z",
+    "ct": "Sat Nov 14, 7:01 PM CT",
     "stale": false,
-    "markets_scanned": 2937,
+    "markets_scanned": 2869,
     "kickoff_source": "kalshi occurrence_datetime - 3h",
     "phases": {
       "CFB": {
-        "live": 1376,
+        "live": 1308,
         "pregame": 887
       },
       "NFL": {
@@ -62,7 +62,7 @@
     "max_bet": 10.0
   },
   "signals": {
-    "weekly_ct": "Sat Nov 14, 6:46 PM CT",
+    "weekly_ct": "Sat Nov 14, 7:01 PM CT",
     "scorecards": [
       {
         "name": "SHARP shadow football",
@@ -289,20 +289,6 @@
       }
     },
     "open_alerts": [
-      {
-        "ticker": "KXNCAAFSPREAD-26NOV14KSUTCU-TCU8",
-        "signal": "SHARP",
-        "side": "NO",
-        "game": "Kansas St. vs TCU: Spread",
-        "contract": "TCU wins by over 7.5 points",
-        "max_price": 0.4,
-        "stake": 2.51,
-        "gone": true,
-        "sent_ct": "Fri Nov 13, 10:48 AM CT",
-        "kickoff_utc": "2026-11-14T19:00:00Z",
-        "kickoff_ct": "Sat Nov 14, 1:00 PM CT",
-        "kalshi_url": "https://kalshi.com/markets/kxncaafspread/event/kxncaafspread-26nov14ksutcu"
-      },
       {
         "ticker": "KXNCAAFGAME-26NOV14ALAVAN-ALA",
         "signal": "SHARP",
