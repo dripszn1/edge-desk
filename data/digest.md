@@ -1,4 +1,4 @@
-# edge-desk digest, Mon Nov 16, 5:42 PM CT
+# edge-desk digest, Mon Nov 16, 5:57 PM CT
 
 Paper only, nothing is placed. Plays kicking off in the next 36h:
 - no plays
@@ -15,6 +15,6 @@ Settled in the last 24h:
   picks vs random entries, $/play: football (252 plays): hold $-0.33 vs $-0.60 (beats 93%), auto-sell +10c $-0.42 vs $-0.77 (beats 100%) · CBB (139 plays): hold $-0.09 vs $-0.06 (beats 46%), auto-sell +10c $-1.03 vs $-0.82 (beats 15%)
   limit-order entries (paper): NFL: 30/59 filled, vs close -1.0c, hold $+37.34, auto-sell +10c $+13.05 (26 done) · CFB: 49/172 filled, vs close -0.7c, hold $+29.51, auto-sell +10c $+7.30 (41 done)
   instant (stream) paper trades: NFL 23 plays, vs close -2.1c (16, 7 games), hold $-100.38, auto-sell at fair $-52.38 (16 done) · CFB 10 plays, vs close -1.4c (4, 1 games), hold $-42.06, auto-sell at fair $+15.51 (4 done) · median 576 ms
-  market-making paper: CFB ±1c 76 fills/36 games $-15.02 t -4.1, after-fill -2.6c · NFL ±1c 108 fills/27 games $-31.40 t -3.5, after-fill -1.7c · CFB ±2c 28 fills/12 games $-7.70 t -4.3, after-fill -2.3c · NFL ±2c 80 fills/14 games $-18.95 t -3.6, after-fill -1.7c · CFB ±3c 12 fills/4 games $-4.95 t -2.6, after-fill -5.2c · NFL ±3c 22 fills/8 games $-7.54 t -2.5, after-fill -1.8c
+  market-making paper: CFB ±1c 76 fills/36 games $-14.72 t -4.0, after-fill -2.6c · NFL ±1c 109 fills/27 games $-32.20 t -3.6, after-fill -1.7c · CFB ±2c 28 fills/12 games $-7.40 t -4.2, after-fill -2.3c · NFL ±2c 80 fills/14 games $-18.95 t -3.6, after-fill -1.7c · CFB ±3c 12 fills/4 games $-4.95 t -2.6, after-fill -5.2c · NFL ±3c 22 fills/8 games $-7.54 t -2.5, after-fill -1.8c
 
-Status: Kalshi data 2m old (ok); sharp odds 7m old; odds credits left 18329 of 20000; gates: MODEL NFL closed, MODEL CFB closed, SHARP NFL closed, SHARP CFB closed, SHARP NFL ML closed, SHARP CFB ML closed
+Status: Kalshi data 2m old (ok); sharp odds 2m old; odds credits left 18317 of 20000; gates: MODEL NFL closed, MODEL CFB closed, SHARP NFL closed, SHARP CFB closed, SHARP NFL ML closed, SHARP CFB ML closed
