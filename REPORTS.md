@@ -1,5 +1,12 @@
 # Reports (newest first)
 
+## 2026-11-16 (builder, 19:45Z run)
+- Nothing to build: backlog #1–#70 all done; nothing broken (collect 129–133 green, 134 running at 19:38Z; keeper active; automerge #53 green; settlement 178 pending / 0 overdue; no report errors; 0 proposals). Nothing shipped, nothing to merge.
+- Tests: 510/510 green on dev rebased onto main.
+- Honest results (football, unchanged since Sunday settled): picks vs Kalshi's close after fee: alerted −1.1¢ (79 plays, 38 games, 29% beat it), held back −1.3¢ (220, 49 games). Exits (253 done): hold −$85.94, sell at tip −$75.61, Auto Sell at fair −$17.79 (best), Auto Sell +10¢ −$19.58; bracket API-only. Picks beat 93% (hold) / 100% (Auto Sell +10¢) of random entries but still lose money.
+- Verdict rules: thresholds met since read #1; rule 2 (no exit with P&L > 0) and the held-back half of rule 1 (no edge) read the same. Core-zone stop rule not yet readable. Not acted on.
+- Watchdog: collect fresh (in progress), no live run active → dispatched live.yml on main (guard exits before tonight's MNF window). Needs Emerson: nothing.
+
 ## 2026-11-16 (builder, 16:45Z run)
 - Nothing to build: backlog #1–#70 all done; nothing broken (collect 126–128 green, latest 16:37Z; keeper active; live 97 guard exited outside the window; automerge #52 green; settlement 158 pending / 0 overdue; no report errors; 0 proposals). Nothing shipped, nothing to merge.
 - Tests: 510/510 green on dev rebased onto main.
