@@ -34381,3 +34381,18 @@ snapshot_ts,league,event,ticker,side,price,fair,edge,sharp_line,odds_fetched_ts,
 2026-11-16T00:49:25Z,NFL,Los Angeles C vs Baltimore: Total Points,KXNFLTOTAL-26NOV16LACBAL-24,NO,0.08,0.1287,0.0435,38.5,2026-11-16T00:49:22Z,rung far from sharp line (unvalidated range); price outside core zone (35-65c)
 2026-11-16T00:49:25Z,NFL,New Orleans vs Chicago: Spread,KXNFLSPREAD-26NOV22NOCHI-CHI10,NO,0.48,0.5359,0.0373,9.5,2026-11-16T00:49:22Z,kalshi moved first
 2026-11-16T00:49:25Z,NFL,Pittsburgh vs Cincinnati: Spread,KXNFLSPREAD-26NOV15PITCIN-CIN7,NO,0.58,0.6299,0.0315,3.5,2026-11-16T00:49:22Z,kalshi moved first
+2026-11-16T00:53:00Z,NFL,Las Vegas vs Denver: Spread,KXNFLSPREAD-26NOV22LVDEN-LV2,YES,0.18,0.2231,0.0316,-9.0,2026-11-16T00:49:22Z,rung outside core zone (>3 pts from sharp line); price outside core zone (35-65c)
+2026-11-16T00:54:00Z,NFL,Pittsburgh vs Cincinnati: Spread,KXNFLSPREAD-26NOV15PITCIN-CIN3,NO,0.38,0.4375,0.0403,3.5,2026-11-16T00:49:22Z,kalshi moved first
+2026-11-16T00:54:32Z,NFL,Los Angeles C vs Baltimore: Total Points,KXNFLTOTAL-26NOV16LACBAL-24,NO,0.08,0.1287,0.0435,38.5,2026-11-16T00:54:30Z,rung far from sharp line (unvalidated range); price outside core zone (35-65c)
+2026-11-16T00:54:32Z,NFL,Pittsburgh vs Cincinnati: Spread,KXNFLSPREAD-26NOV15PITCIN-CIN3,NO,0.38,0.4375,0.0403,3.5,2026-11-16T00:54:30Z,kalshi moved first
+2026-11-16T00:59:32Z,NFL,Los Angeles C vs Baltimore: Total Points,KXNFLTOTAL-26NOV16LACBAL-24,NO,0.08,0.1287,0.0435,38.5,2026-11-16T00:59:30Z,rung far from sharp line (unvalidated range); price outside core zone (35-65c)
+2026-11-16T00:59:32Z,NFL,Pittsburgh vs Cincinnati: Spread,KXNFLSPREAD-26NOV15PITCIN-CIN3,NO,0.38,0.4375,0.0403,3.5,2026-11-16T00:59:30Z,kalshi moved first
+2026-11-16T00:59:32Z,CFB,Miami (OH) vs Kent St.: Total Points,KXNCAAFTOTAL-26NOV17MOHKENT-30,NO,0.11,0.1544,0.0376,46.0,2026-11-16T00:29:14Z,rung far from sharp line (unvalidated range); sharp line stale; price outside core zone (35-65c)
+2026-11-16T00:59:32Z,CFB,Northwestern vs Minnesota: Total Points,KXNCAAFTOTAL-26NOV21NWMINN-25,NO,0.09,0.1269,0.0309,43.0,2026-11-16T00:29:14Z,rung far from sharp line (unvalidated range); sharp line stale; price outside core zone (35-65c)
+2026-11-16T00:59:32Z,CFB,Northwestern vs Minnesota: Total Points,KXNCAAFTOTAL-26NOV21NWMINN-28,NO,0.13,0.1696,0.0312,43.0,2026-11-16T00:29:14Z,rung far from sharp line (unvalidated range); sharp line stale; price outside core zone (35-65c)
+2026-11-16T00:59:32Z,CFB,Iowa vs Illinois: Total Points,KXNCAAFTOTAL-26NOV21IOWAILL-30,NO,0.16,0.2113,0.0413,42.5,2026-11-16T00:29:14Z,rung far from sharp line (unvalidated range); sharp line stale; price outside core zone (35-65c)
+2026-11-16T01:04:00Z,NFL,Las Vegas vs Denver: Spread,KXNFLSPREAD-26NOV22LVDEN-LV2,YES,0.18,0.2231,0.0316,-9.0,2026-11-16T00:59:30Z,rung outside core zone (>3 pts from sharp line); price outside core zone (35-65c)
+2026-11-16T01:04:32Z,NFL,Las Vegas vs Denver: Spread,KXNFLSPREAD-26NOV22LVDEN-LV2,YES,0.18,0.2231,0.0316,-9.0,2026-11-16T01:04:30Z,rung outside core zone (>3 pts from sharp line); price outside core zone (35-65c)
+2026-11-16T01:04:32Z,NFL,Las Vegas vs Denver: Spread,KXNFLSPREAD-26NOV22LVDEN-LV3,YES,0.16,0.204,0.034,-9.0,2026-11-16T01:04:30Z,rung far from sharp line (unvalidated range); price outside core zone (35-65c)
+2026-11-16T01:04:32Z,NFL,Los Angeles C vs Baltimore: Total Points,KXNFLTOTAL-26NOV16LACBAL-24,NO,0.08,0.1287,0.0435,38.5,2026-11-16T01:04:30Z,rung far from sharp line (unvalidated range); price outside core zone (35-65c)
+2026-11-16T01:04:32Z,NFL,Pittsburgh vs Cincinnati: Spread,KXNFLSPREAD-26NOV15PITCIN-CIN3,NO,0.38,0.4375,0.0403,3.5,2026-11-16T01:04:30Z,kalshi moved first
