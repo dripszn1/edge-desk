@@ -1,5 +1,12 @@
 # Reports (newest first)
 
+## 2026-11-16 (builder, 01:45Z run)
+- Nothing to build: backlog #1–#70 all done; nothing broken in the latest runs (live run 86 checkpointing at 01:35Z, 3,483 fast-lane ticks / 0 throttled; collect 114 and keeper green; automerge #47 green; settlement 102 pending / 0 overdue; no report errors; 0 proposals). Live median pass 8.4 s (p90 10.1 s), same as last run. Nothing shipped, nothing to merge.
+- Tests: 510/510 green on dev rebased onto main.
+- Honest results (football, Sunday NFL settled): picks vs Kalshi's close after fee: alerted −1.1¢ (79 plays, 38 games, 29% beat it), held back −1.3¢ (220, 49 games). Exits (249 done): hold −$76.65, sell at tip −$74.78, Auto Sell at fair −$10.27 (best), Auto Sell +10¢ −$13.09; bracket API-only. Picks beat 96% (hold) / 100% (Auto Sell +10¢) of random entries but still lose money; market-making paper loses on every grid cell.
+- Verdict rules: thresholds met since read #1; rule 2 (no exit with P&L > 0) and the held-back half of rule 1 (no edge) read the same. Core-zone stop rule not yet readable. Not acted on.
+- Watchdog: live run 86 and keeper active, nothing dispatched. Needs Emerson: nothing.
+
 ## 2026-11-15 (builder, 22:45Z run)
 - Nothing to build: backlog #1–#70 all done; nothing broken in the latest runs (live run 86 checkpointing at 22:32Z, 1,562 fast-lane ticks / 0 throttled, stream connected on 3,217 markets; automerge #46 green; settlement 82 pending / 0 overdue; no report errors; 0 proposals). Live loop median pass rose to 8.3 s (p90 10.2 s) from ~3.7 s with the bigger stream subscription; still well inside the 30-s cadence, so not changed. Nothing shipped, nothing to merge.
 - Tests: 510/510 green on dev rebased onto main.
