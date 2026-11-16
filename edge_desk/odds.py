@@ -16,7 +16,8 @@ Game-day detection uses the free /events endpoint (costs no credits).
 
 Storage (everything cached; nothing deleted):
   data/odds/raw/<YYYY-MM-DD>/<league>_<HHMMZ>.json   raw API response
-  data/odds/lines.csv     one row per book x market x outcome, with per-book de-vigged prob
+  data/odds/lines/<day>.csv  one row per book x market x outcome, with per-book de-vigged prob
+                          (day files by fetched_ts since #71; the old single lines.csv hit 100 MB)
   data/odds/state.json    last pull per league, credits remaining/used as last reported
 
 Fair value (`fair_lines`): per event + market, Pinnacle's de-vigged line if present, else the
@@ -444,19 +445,83 @@ def load_state(path: Path | None = None) -> dict:
         return {}
 
 
-def load_lines(path: Path | None = None) -> pd.DataFrame:
+PART_MAX_BYTES = 80 * 1024 * 1024   # #71: GitHub rejects any file > 100 MB; roll a day file over well before
+
+
+def lines_dir(path: Path | None = None) -> Path:
+    """Day files live next to the old single file: data/odds/lines.csv -> data/odds/lines/."""
+    return (path or LINES).with_suffix("")
+
+
+def lines_files(path: Path | None = None) -> list[Path]:
+    """The old single file (if still present) + every day part, oldest first."""
     path = path or LINES
-    if not path.exists():
-        return pd.DataFrame(columns=LINE_COLS)
-    return pd.read_csv(path)
+    d = lines_dir(path)
+    def order(f: Path):                                # <day>.csv, <day>-2.csv, ... in write order
+        day, n = f.stem[:10], f.stem[11:]
+        return day, int(n) if n.isdigit() else 1
+    parts = sorted(d.glob("*.csv"), key=order) if d.is_dir() else []
+    return ([path] if path.is_file() else []) + parts
+
+
+def load_lines(path: Path | None = None, usecols=None) -> pd.DataFrame:
+    files = lines_files(path)
+    if not files:
+        return pd.DataFrame(columns=usecols or LINE_COLS)
+    frames = [pd.read_csv(f, usecols=usecols) for f in files]
+    return frames[0] if len(frames) == 1 else pd.concat(frames, ignore_index=True)
+
+
+def _part_for(d: Path, day: str) -> Path:
+    """Newest part for a day (<day>.csv, <day>-2.csv, ...); a new part once it passes PART_MAX_BYTES."""
+    n = 1
+    while (d / f"{day}-{n + 1}.csv").exists():
+        n += 1
+    cur = d / (f"{day}.csv" if n == 1 else f"{day}-{n}.csv")
+    if cur.exists() and cur.stat().st_size >= PART_MAX_BYTES:
+        cur = d / f"{day}-{n + 1}.csv"
+    return cur
 
 
 def append_lines(df: pd.DataFrame, path: Path | None = None) -> None:
-    path = path or LINES
+    """#71: append to the day file of each row's fetched_ts (UTC date), never the old single file."""
     if df.empty:
         return
-    path.parent.mkdir(parents=True, exist_ok=True)
-    df.to_csv(path, mode="a", header=not path.exists(), index=False)
+    d = lines_dir(path)
+    d.mkdir(parents=True, exist_ok=True)
+    day = df["fetched_ts"].astype(str).str[:10]
+    for k in sorted(day.unique()):
+        f = _part_for(d, k)
+        df[day == k].to_csv(f, mode="a", header=not f.exists(), index=False)
+
+
+def split_legacy(path: Path | None = None) -> int:
+    """#71 one-off: move the old single lines file into day files. Refuses if a part already holds
+    one of its days (no interleaving); the single file is removed only after every row is read back."""
+    path = path or LINES
+    if not path.is_file():
+        return 0
+    src = pd.read_csv(path, dtype=str, keep_default_na=False)
+    d = lines_dir(path)
+    day = src["fetched_ts"].str[:10]
+    clash = [k for k in sorted(day.unique()) if d.is_dir() and any(d.glob(f"{k}*.csv"))]
+    if clash:
+        raise RuntimeError(f"day files already exist for {clash}; not splitting")
+    d.mkdir(parents=True, exist_ok=True)
+    written = []
+    for k in sorted(day.unique()):
+        f = _part_for(d, k)
+        src[day == k].to_csv(f, index=False)
+        written.append(f)
+    back = pd.concat([pd.read_csv(f, dtype=str, keep_default_na=False) for f in written], ignore_index=True)
+    key = list(src.columns)
+    if len(back) != len(src) or not back[key].sort_values(key).reset_index(drop=True).equals(
+            src.sort_values(key).reset_index(drop=True)):
+        for f in written:
+            f.unlink()
+        raise RuntimeError("day files don't match the single file; nothing moved")
+    path.unlink()
+    return len(src)
 
 
 # ---------- network (Actions only) ----------
