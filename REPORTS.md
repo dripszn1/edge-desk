@@ -1,5 +1,12 @@
 # Reports (newest first)
 
+## 2026-11-16 (builder, 22:45Z run)
+- Shipped #71 (auto-merged 22:51Z): `data/odds/lines.csv` hit 100.01 MB, so GitHub rejected every data push from 21:42Z (collect 138/139 and the MNF live run) while collect still showed green. Odds lines now go to day files `data/odds/lines/<day>.csv` (538,060 rows moved, read back identical; old file stays in git history), readers see both layouts, and collect's commit step fails red if the push never succeeds. Data from ~21:15–22:57Z is lost.
+- Tests: 516/516 green (6 new). Collect 140 on the new code pushed at 22:57Z; keeper started live 102 on the new code after I cancelled the stuck live 101 (my own re-dispatch 103 exited, live already active).
+- Honest results (football, unchanged since Sunday settled): picks vs Kalshi's close after fee: alerted −1.1¢ (79 plays, 38 games), held back −1.3¢ (220, 49 games, t −4.4). Exits (253 done): hold −$85.94, sell at tip −$75.61, Auto Sell at fair −$17.79 (best), Auto Sell +10¢ −$19.58; bracket API-only.
+- Verdict rules: thresholds met since read #1; rule 2 (no exit with P&L > 0) and the held-back half of rule 1 (no edge) read the same. Not acted on.
+- Needs Emerson: nothing. Heads-up: the repo keeps growing ~20–40 MB/day of odds lines on game days; day files avoid the 100 MB per-file limit, but they aren't archived like snapshots yet.
+
 ## 2026-11-16 (builder, 19:45Z run)
 - Nothing to build: backlog #1–#70 all done; nothing broken (collect 129–133 green, 134 running at 19:38Z; keeper active; automerge #53 green; settlement 178 pending / 0 overdue; no report errors; 0 proposals). Nothing shipped, nothing to merge.
 - Tests: 510/510 green on dev rebased onto main.
