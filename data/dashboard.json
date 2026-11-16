@@ -1,10 +1,10 @@
 {
-  "generated_ts": "2026-11-16T20:11:43Z",
-  "generated_ct": "Mon Nov 16, 2:11 PM CT",
+  "generated_ts": "2026-11-16T20:44:30Z",
+  "generated_ct": "Mon Nov 16, 2:44 PM CT",
   "today_ct": "2026-11-16",
   "snapshot": {
-    "ts": "2026-11-16T20:09:29Z",
-    "ct": "Mon Nov 16, 2:09 PM CT",
+    "ts": "2026-11-16T20:39:43Z",
+    "ct": "Mon Nov 16, 2:39 PM CT",
     "stale": false,
     "markets_scanned": 4163,
     "kickoff_source": "kalshi occurrence_datetime - 3h",
@@ -61,7 +61,7 @@
     "max_bet": 10.0
   },
   "signals": {
-    "weekly_ct": "Mon Nov 16, 2:10 PM CT",
+    "weekly_ct": "Mon Nov 16, 2:41 PM CT",
     "scorecards": [
       {
         "name": "SHARP shadow football",
@@ -188,7 +188,7 @@
           "events": 38,
           "t_by_event": -0.55,
           "stale": 0,
-          "pending": 12,
+          "pending": 13,
           "no_close": 0
         }
       },
@@ -214,7 +214,7 @@
           "events": 49,
           "t_by_event": -4.43,
           "stale": 0,
-          "pending": 82,
+          "pending": 83,
           "no_close": 1
         }
       }
@@ -394,7 +394,7 @@
         "contract": "Oregon wins by over 13.5 points",
         "max_price": 0.42,
         "stake": 3.06,
-        "gone": false,
+        "gone": true,
         "sent_ct": "Mon Nov 16, 12:08 PM CT",
         "kickoff_utc": "2026-11-21T01:00:00Z",
         "kickoff_ct": "Fri Nov 20, 7:00 PM CT",
@@ -408,7 +408,7 @@
         "contract": "Wake Forest wins by over 21.5 points",
         "max_price": 0.5,
         "stake": 3.11,
-        "gone": false,
+        "gone": true,
         "sent_ct": "Mon Nov 16, 7:01 AM CT",
         "kickoff_utc": "2026-11-21T17:00:00Z",
         "kickoff_ct": "Sat Nov 21, 11:00 AM CT",
@@ -441,6 +441,20 @@
         "kickoff_utc": "2026-11-21T20:00:00Z",
         "kickoff_ct": "Sat Nov 21, 2:00 PM CT",
         "kalshi_url": "https://kalshi.com/markets/kxncaafspread/event/kxncaafspread-26nov21ttubay"
+      },
+      {
+        "ticker": "KXNCAAFSPREAD-26NOV21UCLAMICH-UCLA4",
+        "signal": "SHARP",
+        "side": "NO",
+        "game": "UCLA vs Michigan: Spread",
+        "contract": "UCLA wins by over 3.5 points",
+        "max_price": 0.48,
+        "stake": 2.99,
+        "gone": false,
+        "sent_ct": "Mon Nov 16, 2:39 PM CT",
+        "kickoff_utc": "2026-11-21T20:00:00Z",
+        "kickoff_ct": "Sat Nov 21, 2:00 PM CT",
+        "kalshi_url": "https://kalshi.com/markets/kxncaafspread/event/kxncaafspread-26nov21uclamich"
       },
       {
         "ticker": "KXNFLSPREAD-26NOV22NOCHI-CHI10",
