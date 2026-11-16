@@ -126,7 +126,8 @@ jobs:
           git add data
           git diff --cached --quiet && exit 0
           git commit -m "data: snapshot $(date -u +%Y-%m-%dT%H:%MZ)"
-          for i in 1 2 3; do git pull --rebase -q && git push -q && break; sleep 5; done
+          for i in 1 2 3; do git pull --rebase -q && git push -q && exit 0; sleep 5; done
+          echo "::error::data push failed 3 times (see the remote error above; #71: a file over 100 MB is rejected)"; exit 1
       - name: Restart the keeper if its chain broke (backlog #21)
         if: always()
         continue-on-error: true

@@ -356,8 +356,9 @@ ODDS_LINES = ROOT / "data" / "odds" / "lines.csv"
 def recorded_pulls(path=ODDS_LINES) -> set | None:
     """Every sharp pull time we actually recorded (fetched_ts in data/odds/lines.csv); None if
     the file is missing, in which case nothing can be checked and nothing is filtered."""
+    from . import odds                                   # #71: old single file + day parts
     try:
-        s = pd.read_csv(path, usecols=["fetched_ts"])["fetched_ts"].dropna().astype(str)
+        s = odds.load_lines(Path(path), usecols=["fetched_ts"])["fetched_ts"].dropna().astype(str)
     except (FileNotFoundError, ValueError):
         return None
     return set(s) if len(s) else None
