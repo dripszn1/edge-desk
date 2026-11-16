@@ -1,52 +1,4 @@
 league,event_id,commence_utc,home_team,away_team,market,outcome,point,fair,source,n_books,fetched_ts
-NFL,be0e03cc42fbc9b6962467b22c7bf9dd,2026-11-15T18:00:00Z,Cleveland Browns,Houston Texans,h2h,Cleveland Browns,,0.368946,pinnacle,1,2026-11-15T17:55:06Z
-NFL,be0e03cc42fbc9b6962467b22c7bf9dd,2026-11-15T18:00:00Z,Cleveland Browns,Houston Texans,h2h,Houston Texans,,0.631054,pinnacle,1,2026-11-15T17:55:06Z
-NFL,be0e03cc42fbc9b6962467b22c7bf9dd,2026-11-15T18:00:00Z,Cleveland Browns,Houston Texans,spreads,Cleveland Browns,4.0,0.524019,pinnacle,1,2026-11-15T17:55:06Z
-NFL,be0e03cc42fbc9b6962467b22c7bf9dd,2026-11-15T18:00:00Z,Cleveland Browns,Houston Texans,spreads,Houston Texans,-4.0,0.475981,pinnacle,1,2026-11-15T17:55:06Z
-NFL,be0e03cc42fbc9b6962467b22c7bf9dd,2026-11-15T18:00:00Z,Cleveland Browns,Houston Texans,totals,Over,41.0,0.482917,pinnacle,1,2026-11-15T17:55:06Z
-NFL,be0e03cc42fbc9b6962467b22c7bf9dd,2026-11-15T18:00:00Z,Cleveland Browns,Houston Texans,totals,Under,41.0,0.517083,pinnacle,1,2026-11-15T17:55:06Z
-NFL,b5700b4d938fd94429f60d4622cc9c0a,2026-11-15T18:00:00Z,Indianapolis Colts,Miami Dolphins,h2h,Indianapolis Colts,,0.66794,pinnacle,1,2026-11-15T17:55:06Z
-NFL,b5700b4d938fd94429f60d4622cc9c0a,2026-11-15T18:00:00Z,Indianapolis Colts,Miami Dolphins,h2h,Miami Dolphins,,0.33206,pinnacle,1,2026-11-15T17:55:06Z
-NFL,b5700b4d938fd94429f60d4622cc9c0a,2026-11-15T18:00:00Z,Indianapolis Colts,Miami Dolphins,spreads,Indianapolis Colts,-4.5,0.517291,pinnacle,1,2026-11-15T17:55:06Z
-NFL,b5700b4d938fd94429f60d4622cc9c0a,2026-11-15T18:00:00Z,Indianapolis Colts,Miami Dolphins,spreads,Miami Dolphins,4.5,0.482709,pinnacle,1,2026-11-15T17:55:06Z
-NFL,b5700b4d938fd94429f60d4622cc9c0a,2026-11-15T18:00:00Z,Indianapolis Colts,Miami Dolphins,totals,Over,38.0,0.485194,pinnacle,1,2026-11-15T17:55:06Z
-NFL,b5700b4d938fd94429f60d4622cc9c0a,2026-11-15T18:00:00Z,Indianapolis Colts,Miami Dolphins,totals,Under,38.0,0.514806,pinnacle,1,2026-11-15T17:55:06Z
-NFL,3c71d515b726f1096aabb435badb83fd,2026-11-15T18:05:00Z,Atlanta Falcons,Kansas City Chiefs,h2h,Atlanta Falcons,,0.369394,pinnacle,1,2026-11-15T17:55:06Z
-NFL,3c71d515b726f1096aabb435badb83fd,2026-11-15T18:05:00Z,Atlanta Falcons,Kansas City Chiefs,h2h,Kansas City Chiefs,,0.630606,pinnacle,1,2026-11-15T17:55:06Z
-NFL,3c71d515b726f1096aabb435badb83fd,2026-11-15T18:05:00Z,Atlanta Falcons,Kansas City Chiefs,spreads,Atlanta Falcons,3.5,0.521797,pinnacle,1,2026-11-15T17:55:06Z
-NFL,3c71d515b726f1096aabb435badb83fd,2026-11-15T18:05:00Z,Atlanta Falcons,Kansas City Chiefs,spreads,Kansas City Chiefs,-3.5,0.478203,pinnacle,1,2026-11-15T17:55:06Z
-NFL,3c71d515b726f1096aabb435badb83fd,2026-11-15T18:05:00Z,Atlanta Falcons,Kansas City Chiefs,totals,Over,47.5,0.509166,pinnacle,1,2026-11-15T17:55:06Z
-NFL,3c71d515b726f1096aabb435badb83fd,2026-11-15T18:05:00Z,Atlanta Falcons,Kansas City Chiefs,totals,Under,47.5,0.490834,pinnacle,1,2026-11-15T17:55:06Z
-NFL,1057d50949844ddf483da9c8c20354be,2026-11-15T18:05:00Z,New York Jets,Buffalo Bills,h2h,Buffalo Bills,,0.799303,pinnacle,1,2026-11-15T17:55:06Z
-NFL,1057d50949844ddf483da9c8c20354be,2026-11-15T18:05:00Z,New York Jets,Buffalo Bills,h2h,New York Jets,,0.200697,pinnacle,1,2026-11-15T17:55:06Z
-NFL,1057d50949844ddf483da9c8c20354be,2026-11-15T18:05:00Z,New York Jets,Buffalo Bills,spreads,Buffalo Bills,-8.5,0.465165,pinnacle,1,2026-11-15T17:55:06Z
-NFL,1057d50949844ddf483da9c8c20354be,2026-11-15T18:05:00Z,New York Jets,Buffalo Bills,spreads,New York Jets,8.5,0.534835,pinnacle,1,2026-11-15T17:55:06Z
-NFL,1057d50949844ddf483da9c8c20354be,2026-11-15T18:05:00Z,New York Jets,Buffalo Bills,totals,Over,51.0,0.482917,pinnacle,1,2026-11-15T17:55:06Z
-NFL,1057d50949844ddf483da9c8c20354be,2026-11-15T18:05:00Z,New York Jets,Buffalo Bills,totals,Under,51.0,0.517083,pinnacle,1,2026-11-15T17:55:06Z
-NFL,e5aa20e1364dd639f042af1c2281bbe2,2026-11-15T18:05:00Z,New Orleans Saints,Carolina Panthers,h2h,Carolina Panthers,,0.502323,pinnacle,1,2026-11-15T17:55:06Z
-NFL,e5aa20e1364dd639f042af1c2281bbe2,2026-11-15T18:05:00Z,New Orleans Saints,Carolina Panthers,h2h,New Orleans Saints,,0.497677,pinnacle,1,2026-11-15T17:55:06Z
-NFL,e5aa20e1364dd639f042af1c2281bbe2,2026-11-15T18:05:00Z,New Orleans Saints,Carolina Panthers,spreads,Carolina Panthers,1.0,0.521797,pinnacle,1,2026-11-15T17:55:06Z
-NFL,e5aa20e1364dd639f042af1c2281bbe2,2026-11-15T18:05:00Z,New Orleans Saints,Carolina Panthers,spreads,New Orleans Saints,-1.0,0.478203,pinnacle,1,2026-11-15T17:55:06Z
-NFL,e5aa20e1364dd639f042af1c2281bbe2,2026-11-15T18:05:00Z,New Orleans Saints,Carolina Panthers,totals,Over,48.5,0.517083,pinnacle,1,2026-11-15T17:55:06Z
-NFL,e5aa20e1364dd639f042af1c2281bbe2,2026-11-15T18:05:00Z,New Orleans Saints,Carolina Panthers,totals,Under,48.5,0.482917,pinnacle,1,2026-11-15T17:55:06Z
-NFL,5d8d85473b87f772a979ecf294acab94,2026-11-15T18:05:00Z,Green Bay Packers,Minnesota Vikings,h2h,Green Bay Packers,,0.572257,pinnacle,1,2026-11-15T17:55:06Z
-NFL,5d8d85473b87f772a979ecf294acab94,2026-11-15T18:05:00Z,Green Bay Packers,Minnesota Vikings,h2h,Minnesota Vikings,,0.427743,pinnacle,1,2026-11-15T17:55:06Z
-NFL,5d8d85473b87f772a979ecf294acab94,2026-11-15T18:05:00Z,Green Bay Packers,Minnesota Vikings,spreads,Green Bay Packers,-3.0,0.46729,pinnacle,1,2026-11-15T17:55:06Z
-NFL,5d8d85473b87f772a979ecf294acab94,2026-11-15T18:05:00Z,Green Bay Packers,Minnesota Vikings,spreads,Minnesota Vikings,3.0,0.53271,pinnacle,1,2026-11-15T17:55:06Z
-NFL,5d8d85473b87f772a979ecf294acab94,2026-11-15T18:05:00Z,Green Bay Packers,Minnesota Vikings,totals,Over,43.0,0.482917,pinnacle,1,2026-11-15T17:55:06Z
-NFL,5d8d85473b87f772a979ecf294acab94,2026-11-15T18:05:00Z,Green Bay Packers,Minnesota Vikings,totals,Under,43.0,0.517083,pinnacle,1,2026-11-15T17:55:06Z
-NFL,28800df7e768ecec14f116454d560f9b,2026-11-15T18:05:00Z,Tennessee Titans,Jacksonville Jaguars,h2h,Jacksonville Jaguars,,0.806917,pinnacle,1,2026-11-15T17:55:06Z
-NFL,28800df7e768ecec14f116454d560f9b,2026-11-15T18:05:00Z,Tennessee Titans,Jacksonville Jaguars,h2h,Tennessee Titans,,0.193083,pinnacle,1,2026-11-15T17:55:06Z
-NFL,28800df7e768ecec14f116454d560f9b,2026-11-15T18:05:00Z,Tennessee Titans,Jacksonville Jaguars,spreads,Jacksonville Jaguars,-10.5,0.513948,pinnacle,1,2026-11-15T17:55:06Z
-NFL,28800df7e768ecec14f116454d560f9b,2026-11-15T18:05:00Z,Tennessee Titans,Jacksonville Jaguars,spreads,Tennessee Titans,10.5,0.486052,pinnacle,1,2026-11-15T17:55:06Z
-NFL,28800df7e768ecec14f116454d560f9b,2026-11-15T18:05:00Z,Tennessee Titans,Jacksonville Jaguars,totals,Over,46.5,0.474016,pinnacle,1,2026-11-15T17:55:06Z
-NFL,28800df7e768ecec14f116454d560f9b,2026-11-15T18:05:00Z,Tennessee Titans,Jacksonville Jaguars,totals,Under,46.5,0.525984,pinnacle,1,2026-11-15T17:55:06Z
-CFB,8ad669f4c9b70f38fdb057c114588776,2026-11-15T18:00:00Z,Oklahoma Sooners,Ole Miss Rebels,h2h,Oklahoma Sooners,,0.546045,pinnacle,1,2026-11-15T17:55:06Z
-CFB,8ad669f4c9b70f38fdb057c114588776,2026-11-15T18:00:00Z,Oklahoma Sooners,Ole Miss Rebels,h2h,Ole Miss Rebels,,0.453955,pinnacle,1,2026-11-15T17:55:06Z
-CFB,8ad669f4c9b70f38fdb057c114588776,2026-11-15T18:00:00Z,Oklahoma Sooners,Ole Miss Rebels,spreads,Oklahoma Sooners,-2.5,0.5,pinnacle,1,2026-11-15T17:55:06Z
-CFB,8ad669f4c9b70f38fdb057c114588776,2026-11-15T18:00:00Z,Oklahoma Sooners,Ole Miss Rebels,spreads,Ole Miss Rebels,2.5,0.5,pinnacle,1,2026-11-15T17:55:06Z
-CFB,8ad669f4c9b70f38fdb057c114588776,2026-11-15T18:00:00Z,Oklahoma Sooners,Ole Miss Rebels,totals,Over,48.5,0.49332,pinnacle,1,2026-11-15T17:55:06Z
-CFB,8ad669f4c9b70f38fdb057c114588776,2026-11-15T18:00:00Z,Oklahoma Sooners,Ole Miss Rebels,totals,Under,48.5,0.50668,pinnacle,1,2026-11-15T17:55:06Z
 NFL,6c932a965110f3f89ec4a5f1a6ac256e,2026-11-15T21:05:00Z,Arizona Cardinals,Los Angeles Rams,h2h,Arizona Cardinals,,0.202462,pinnacle,1,2026-11-15T20:59:49Z
 NFL,6c932a965110f3f89ec4a5f1a6ac256e,2026-11-15T21:05:00Z,Arizona Cardinals,Los Angeles Rams,h2h,Los Angeles Rams,,0.797538,pinnacle,1,2026-11-15T20:59:49Z
 NFL,6c932a965110f3f89ec4a5f1a6ac256e,2026-11-15T21:05:00Z,Arizona Cardinals,Los Angeles Rams,spreads,Arizona Cardinals,10.5,0.521797,pinnacle,1,2026-11-15T20:59:49Z
@@ -329,29 +281,37 @@ CFB,6e36f5c3c55edcb31749b0de4a146d14,2026-11-22T03:30:00Z,Oregon State Beavers,U
 CFB,6e36f5c3c55edcb31749b0de4a146d14,2026-11-22T03:30:00Z,Oregon State Beavers,Utah State Aggies,spreads,Utah State Aggies,9.0,0.511148,consensus:2,2,2026-11-15T23:12:45Z
 CFB,6e36f5c3c55edcb31749b0de4a146d14,2026-11-22T03:30:00Z,Oregon State Beavers,Utah State Aggies,totals,Over,52.0,0.5,consensus:2,2,2026-11-15T23:12:45Z
 CFB,6e36f5c3c55edcb31749b0de4a146d14,2026-11-22T03:30:00Z,Oregon State Beavers,Utah State Aggies,totals,Under,52.0,0.5,consensus:2,2,2026-11-15T23:12:45Z
-NFL,48e497c230e6c9afcb3b600091d28e17,2026-11-16T01:20:00Z,Cincinnati Bengals,Pittsburgh Steelers,h2h,Cincinnati Bengals,,0.645902,pinnacle,1,2026-11-15T23:48:39Z
-NFL,48e497c230e6c9afcb3b600091d28e17,2026-11-16T01:20:00Z,Cincinnati Bengals,Pittsburgh Steelers,h2h,Pittsburgh Steelers,,0.354098,pinnacle,1,2026-11-15T23:48:39Z
-NFL,48e497c230e6c9afcb3b600091d28e17,2026-11-16T01:20:00Z,Cincinnati Bengals,Pittsburgh Steelers,spreads,Cincinnati Bengals,-3.5,0.513948,pinnacle,1,2026-11-15T23:48:39Z
-NFL,48e497c230e6c9afcb3b600091d28e17,2026-11-16T01:20:00Z,Cincinnati Bengals,Pittsburgh Steelers,spreads,Pittsburgh Steelers,3.5,0.486052,pinnacle,1,2026-11-15T23:48:39Z
-NFL,48e497c230e6c9afcb3b600091d28e17,2026-11-16T01:20:00Z,Cincinnati Bengals,Pittsburgh Steelers,totals,Over,50.0,0.47184,pinnacle,1,2026-11-15T23:48:39Z
-NFL,48e497c230e6c9afcb3b600091d28e17,2026-11-16T01:20:00Z,Cincinnati Bengals,Pittsburgh Steelers,totals,Under,50.0,0.52816,pinnacle,1,2026-11-15T23:48:39Z
-NFL,35e3bdff558b5d1506251e814986f164,2026-11-17T01:15:00Z,Baltimore Ravens,Los Angeles Chargers,h2h,Baltimore Ravens,,0.662691,pinnacle,1,2026-11-15T23:48:39Z
-NFL,35e3bdff558b5d1506251e814986f164,2026-11-17T01:15:00Z,Baltimore Ravens,Los Angeles Chargers,h2h,Los Angeles Chargers,,0.337309,pinnacle,1,2026-11-15T23:48:39Z
-NFL,35e3bdff558b5d1506251e814986f164,2026-11-17T01:15:00Z,Baltimore Ravens,Los Angeles Chargers,spreads,Baltimore Ravens,-4.5,0.5,pinnacle,1,2026-11-15T23:48:39Z
-NFL,35e3bdff558b5d1506251e814986f164,2026-11-17T01:15:00Z,Baltimore Ravens,Los Angeles Chargers,spreads,Los Angeles Chargers,4.5,0.5,pinnacle,1,2026-11-15T23:48:39Z
-NFL,35e3bdff558b5d1506251e814986f164,2026-11-17T01:15:00Z,Baltimore Ravens,Los Angeles Chargers,totals,Over,38.5,0.52327,pinnacle,1,2026-11-15T23:48:39Z
-NFL,35e3bdff558b5d1506251e814986f164,2026-11-17T01:15:00Z,Baltimore Ravens,Los Angeles Chargers,totals,Under,38.5,0.47673,pinnacle,1,2026-11-15T23:48:39Z
-NFL,66f9e83cf025d58acee12bce18661fb3,2026-11-20T01:15:00Z,Houston Texans,Indianapolis Colts,spreads,Houston Texans,-10.5,0.467547,pinnacle,1,2026-11-15T23:48:39Z
-NFL,66f9e83cf025d58acee12bce18661fb3,2026-11-20T01:15:00Z,Houston Texans,Indianapolis Colts,spreads,Indianapolis Colts,10.5,0.532453,pinnacle,1,2026-11-15T23:48:39Z
-NFL,66f9e83cf025d58acee12bce18661fb3,2026-11-20T01:15:00Z,Houston Texans,Indianapolis Colts,totals,Over,44.0,0.5,pinnacle,1,2026-11-15T23:48:39Z
-NFL,66f9e83cf025d58acee12bce18661fb3,2026-11-20T01:15:00Z,Houston Texans,Indianapolis Colts,totals,Under,44.0,0.5,pinnacle,1,2026-11-15T23:48:39Z
-NFL,66f9e83cf025d58acee12bce18661fb3,2026-11-20T01:15:00Z,Houston Texans,Indianapolis Colts,h2h,Houston Texans,,0.804973,pinnacle,1,2026-11-15T23:48:39Z
-NFL,66f9e83cf025d58acee12bce18661fb3,2026-11-20T01:15:00Z,Houston Texans,Indianapolis Colts,h2h,Indianapolis Colts,,0.195027,pinnacle,1,2026-11-15T23:48:39Z
-NFL,4527f57f5bc32742d8194af1ccf7da7e,2026-11-22T18:00:00Z,Carolina Panthers,Baltimore Ravens,spreads,Baltimore Ravens,2.5,0.5,consensus:2,2,2026-11-15T23:48:39Z
-NFL,4527f57f5bc32742d8194af1ccf7da7e,2026-11-22T18:00:00Z,Carolina Panthers,Baltimore Ravens,spreads,Carolina Panthers,-2.5,0.5,consensus:2,2,2026-11-15T23:48:39Z
-NFL,4527f57f5bc32742d8194af1ccf7da7e,2026-11-22T18:00:00Z,Carolina Panthers,Baltimore Ravens,totals,Over,44.5,0.493364,consensus:2,2,2026-11-15T23:48:39Z
-NFL,4527f57f5bc32742d8194af1ccf7da7e,2026-11-22T18:00:00Z,Carolina Panthers,Baltimore Ravens,totals,Under,44.5,0.506636,consensus:2,2,2026-11-15T23:48:39Z
-NFL,41e2dd69bddd65d7e823d9ed61cc2afc,2026-11-22T18:00:00Z,Detroit Lions,Tampa Bay Buccaneers,spreads,Detroit Lions,-5.5,0.515007,consensus:1,1,2026-11-15T23:48:39Z
-NFL,41e2dd69bddd65d7e823d9ed61cc2afc,2026-11-22T18:00:00Z,Detroit Lions,Tampa Bay Buccaneers,spreads,Tampa Bay Buccaneers,5.5,0.484993,consensus:1,1,2026-11-15T23:48:39Z
-NFL,41e2dd69bddd65d7e823d9ed61cc2afc,2026-11-22T18:00:00Z,Detroit Lions,Tampa Bay Buccaneers,totals,Over,46.5,0.5,consensus:1,1,2026-11-15T23:48:39Z
-NFL,41e2dd69bddd65d7e823d9ed61cc2afc,2026-11-22T18:00:00Z,Detroit Lions,Tampa Bay Buccaneers,totals,Under,46.5,0.5,consensus:1,1,2026-11-15T23:48:39Z
+NFL,48e497c230e6c9afcb3b600091d28e17,2026-11-16T01:20:00Z,Cincinnati Bengals,Pittsburgh Steelers,h2h,Cincinnati Bengals,,0.645902,pinnacle,1,2026-11-16T00:04:09Z
+NFL,48e497c230e6c9afcb3b600091d28e17,2026-11-16T01:20:00Z,Cincinnati Bengals,Pittsburgh Steelers,h2h,Pittsburgh Steelers,,0.354098,pinnacle,1,2026-11-16T00:04:09Z
+NFL,48e497c230e6c9afcb3b600091d28e17,2026-11-16T01:20:00Z,Cincinnati Bengals,Pittsburgh Steelers,spreads,Cincinnati Bengals,-3.5,0.513948,pinnacle,1,2026-11-16T00:04:09Z
+NFL,48e497c230e6c9afcb3b600091d28e17,2026-11-16T01:20:00Z,Cincinnati Bengals,Pittsburgh Steelers,spreads,Pittsburgh Steelers,3.5,0.486052,pinnacle,1,2026-11-16T00:04:09Z
+NFL,48e497c230e6c9afcb3b600091d28e17,2026-11-16T01:20:00Z,Cincinnati Bengals,Pittsburgh Steelers,totals,Over,50.0,0.47184,pinnacle,1,2026-11-16T00:04:09Z
+NFL,48e497c230e6c9afcb3b600091d28e17,2026-11-16T01:20:00Z,Cincinnati Bengals,Pittsburgh Steelers,totals,Under,50.0,0.52816,pinnacle,1,2026-11-16T00:04:09Z
+NFL,35e3bdff558b5d1506251e814986f164,2026-11-17T01:15:00Z,Baltimore Ravens,Los Angeles Chargers,h2h,Baltimore Ravens,,0.662691,pinnacle,1,2026-11-16T00:04:09Z
+NFL,35e3bdff558b5d1506251e814986f164,2026-11-17T01:15:00Z,Baltimore Ravens,Los Angeles Chargers,h2h,Los Angeles Chargers,,0.337309,pinnacle,1,2026-11-16T00:04:09Z
+NFL,35e3bdff558b5d1506251e814986f164,2026-11-17T01:15:00Z,Baltimore Ravens,Los Angeles Chargers,spreads,Baltimore Ravens,-4.5,0.5,pinnacle,1,2026-11-16T00:04:09Z
+NFL,35e3bdff558b5d1506251e814986f164,2026-11-17T01:15:00Z,Baltimore Ravens,Los Angeles Chargers,spreads,Los Angeles Chargers,4.5,0.5,pinnacle,1,2026-11-16T00:04:09Z
+NFL,35e3bdff558b5d1506251e814986f164,2026-11-17T01:15:00Z,Baltimore Ravens,Los Angeles Chargers,totals,Over,38.5,0.52327,pinnacle,1,2026-11-16T00:04:09Z
+NFL,35e3bdff558b5d1506251e814986f164,2026-11-17T01:15:00Z,Baltimore Ravens,Los Angeles Chargers,totals,Under,38.5,0.47673,pinnacle,1,2026-11-16T00:04:09Z
+NFL,66f9e83cf025d58acee12bce18661fb3,2026-11-20T01:15:00Z,Houston Texans,Indianapolis Colts,spreads,Houston Texans,-10.5,0.480662,pinnacle,1,2026-11-16T00:04:09Z
+NFL,66f9e83cf025d58acee12bce18661fb3,2026-11-20T01:15:00Z,Houston Texans,Indianapolis Colts,spreads,Indianapolis Colts,10.5,0.519338,pinnacle,1,2026-11-16T00:04:09Z
+NFL,66f9e83cf025d58acee12bce18661fb3,2026-11-20T01:15:00Z,Houston Texans,Indianapolis Colts,totals,Over,44.0,0.5,pinnacle,1,2026-11-16T00:04:09Z
+NFL,66f9e83cf025d58acee12bce18661fb3,2026-11-20T01:15:00Z,Houston Texans,Indianapolis Colts,totals,Under,44.0,0.5,pinnacle,1,2026-11-16T00:04:09Z
+NFL,66f9e83cf025d58acee12bce18661fb3,2026-11-20T01:15:00Z,Houston Texans,Indianapolis Colts,h2h,Houston Texans,,0.80928,pinnacle,1,2026-11-16T00:04:09Z
+NFL,66f9e83cf025d58acee12bce18661fb3,2026-11-20T01:15:00Z,Houston Texans,Indianapolis Colts,h2h,Indianapolis Colts,,0.19072,pinnacle,1,2026-11-16T00:04:09Z
+NFL,4527f57f5bc32742d8194af1ccf7da7e,2026-11-22T18:00:00Z,Carolina Panthers,Baltimore Ravens,spreads,Baltimore Ravens,2.5,0.5,consensus:2,2,2026-11-16T00:04:09Z
+NFL,4527f57f5bc32742d8194af1ccf7da7e,2026-11-22T18:00:00Z,Carolina Panthers,Baltimore Ravens,spreads,Carolina Panthers,-2.5,0.5,consensus:2,2,2026-11-16T00:04:09Z
+NFL,4527f57f5bc32742d8194af1ccf7da7e,2026-11-22T18:00:00Z,Carolina Panthers,Baltimore Ravens,totals,Over,44.5,0.493364,consensus:2,2,2026-11-16T00:04:09Z
+NFL,4527f57f5bc32742d8194af1ccf7da7e,2026-11-22T18:00:00Z,Carolina Panthers,Baltimore Ravens,totals,Under,44.5,0.506636,consensus:2,2,2026-11-16T00:04:09Z
+NFL,3ea90704fb576633bd1e2fa5aafd9ea3,2026-11-22T18:00:00Z,Chicago Bears,New Orleans Saints,spreads,Chicago Bears,-9.5,0.511231,consensus:2,2,2026-11-16T00:04:09Z
+NFL,3ea90704fb576633bd1e2fa5aafd9ea3,2026-11-22T18:00:00Z,Chicago Bears,New Orleans Saints,spreads,New Orleans Saints,9.5,0.488769,consensus:2,2,2026-11-16T00:04:09Z
+NFL,3ea90704fb576633bd1e2fa5aafd9ea3,2026-11-22T18:00:00Z,Chicago Bears,New Orleans Saints,totals,Over,49.0,0.5,consensus:2,2,2026-11-16T00:04:09Z
+NFL,3ea90704fb576633bd1e2fa5aafd9ea3,2026-11-22T18:00:00Z,Chicago Bears,New Orleans Saints,totals,Under,49.0,0.5,consensus:2,2,2026-11-16T00:04:09Z
+NFL,41e2dd69bddd65d7e823d9ed61cc2afc,2026-11-22T18:00:00Z,Detroit Lions,Tampa Bay Buccaneers,spreads,Detroit Lions,-5.5,0.514007,consensus:2,2,2026-11-16T00:04:09Z
+NFL,41e2dd69bddd65d7e823d9ed61cc2afc,2026-11-22T18:00:00Z,Detroit Lions,Tampa Bay Buccaneers,spreads,Tampa Bay Buccaneers,5.5,0.485993,consensus:2,2,2026-11-16T00:04:09Z
+NFL,41e2dd69bddd65d7e823d9ed61cc2afc,2026-11-22T18:00:00Z,Detroit Lions,Tampa Bay Buccaneers,totals,Over,46.5,0.5,consensus:2,2,2026-11-16T00:04:09Z
+NFL,41e2dd69bddd65d7e823d9ed61cc2afc,2026-11-22T18:00:00Z,Detroit Lions,Tampa Bay Buccaneers,totals,Under,46.5,0.5,consensus:2,2,2026-11-16T00:04:09Z
+NFL,8ba112fabf4e87639338a5f437c5abfe,2026-11-22T21:25:00Z,New York Giants,Jacksonville Jaguars,spreads,Jacksonville Jaguars,-6.0,0.5,consensus:2,2,2026-11-16T00:04:09Z
+NFL,8ba112fabf4e87639338a5f437c5abfe,2026-11-22T21:25:00Z,New York Giants,Jacksonville Jaguars,spreads,New York Giants,6.0,0.5,consensus:2,2,2026-11-16T00:04:09Z
+NFL,8ba112fabf4e87639338a5f437c5abfe,2026-11-22T21:25:00Z,New York Giants,Jacksonville Jaguars,totals,Over,46.5,0.5,consensus:2,2,2026-11-16T00:04:09Z
+NFL,8ba112fabf4e87639338a5f437c5abfe,2026-11-22T21:25:00Z,New York Giants,Jacksonville Jaguars,totals,Under,46.5,0.5,consensus:2,2,2026-11-16T00:04:09Z

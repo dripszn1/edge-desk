@@ -1,12 +1,12 @@
 {
-  "generated_ts": "2026-11-15T23:51:00Z",
-  "generated_ct": "Sun Nov 15, 5:51 PM CT",
+  "generated_ts": "2026-11-16T00:07:03Z",
+  "generated_ct": "Sun Nov 15, 6:07 PM CT",
   "today_ct": "2026-11-15",
   "snapshot": {
-    "ts": "2026-11-15T23:48:41Z",
-    "ct": "Sun Nov 15, 5:48 PM CT",
+    "ts": "2026-11-16T00:04:11Z",
+    "ct": "Sun Nov 15, 6:04 PM CT",
     "stale": false,
-    "markets_scanned": 4219,
+    "markets_scanned": 4162,
     "kickoff_source": "kalshi occurrence_datetime - 3h",
     "phases": {
       "CFB": {
@@ -14,7 +14,7 @@
         "pregame": 3400
       },
       "NFL": {
-        "live": 153,
+        "live": 96,
         "pregame": 617
       }
     }
@@ -63,16 +63,16 @@
     "max_bet": 10.0
   },
   "signals": {
-    "weekly_ct": "Sun Nov 15, 5:50 PM CT",
+    "weekly_ct": "Sun Nov 15, 6:05 PM CT",
     "scorecards": [
       {
         "name": "SHARP shadow football",
-        "settled": 75,
-        "pnl": -48.85,
-        "roi": -0.2546,
-        "t_stat": -3.5,
+        "settled": 76,
+        "pnl": -51.23,
+        "roi": -0.2638,
+        "t_stat": -3.61,
         "verdict": "luck / no edge",
-        "why": "t=-3.5, coin-flip beat 11%"
+        "why": "t=-3.61, coin-flip beat 9%"
       },
       {
         "name": "SHARP shadow CBB",
@@ -85,12 +85,12 @@
       },
       {
         "name": "SHARP held back",
-        "settled": 357,
-        "pnl": -46.77,
-        "roi": -0.0354,
-        "t_stat": -1.5,
+        "settled": 358,
+        "pnl": -49.15,
+        "roi": -0.0371,
+        "t_stat": -1.53,
         "verdict": "luck / no edge",
-        "why": "t=-1.5, coin-flip beat 50%",
+        "why": "t=-1.53, coin-flip beat 49%",
         "by_reason": {
           "core_zone": {
             "settled": 1,
@@ -142,10 +142,10 @@
             "verdict": "not enough data"
           },
           "stale_line": {
-            "settled": 105,
-            "pnl": -3.93,
-            "roi": -0.0111,
-            "t_stat": -0.95,
+            "settled": 106,
+            "pnl": -6.31,
+            "roi": -0.0177,
+            "t_stat": -1.03,
             "verdict": "luck / no edge"
           },
           "stale_line+core_zone": {
@@ -159,12 +159,12 @@
       },
       {
         "name": "MODEL shadow",
-        "settled": 56,
-        "pnl": 157.59,
-        "roi": 1.0477,
-        "t_stat": 1.09,
+        "settled": 61,
+        "pnl": 127.67,
+        "roi": 0.708,
+        "t_stat": 0.86,
         "verdict": "luck / no edge",
-        "why": "t=1.09, coin-flip beat 100%"
+        "why": "t=0.86, coin-flip beat 99%"
       }
     ],
     "clv": {
@@ -216,7 +216,7 @@
           "events": 48,
           "t_by_event": -4.38,
           "stale": 0,
-          "pending": 15,
+          "pending": 16,
           "no_close": 1
         }
       }
@@ -273,135 +273,51 @@
         "best_manual": "RESTING_15",
         "variants": {
           "EXIT_AT_TIP": {
-            "closed": 243,
-            "pnl_usd": -73.58,
-            "t_by_game": -5.18,
+            "closed": 244,
+            "pnl_usd": -73.84,
+            "t_by_game": -5.21,
             "gate_open": false
           },
           "HOLD": {
-            "closed": 243,
-            "pnl_usd": -65.58,
-            "t_by_game": -0.61,
+            "closed": 244,
+            "pnl_usd": -67.96,
+            "t_by_game": -0.63,
             "gate_open": false
           },
           "RESTING_10": {
-            "closed": 243,
-            "pnl_usd": -15.2,
-            "t_by_game": -0.38,
+            "closed": 244,
+            "pnl_usd": -14.73,
+            "t_by_game": -0.36,
             "gate_open": false
           },
           "RESTING_15": {
-            "closed": 243,
-            "pnl_usd": 4.13,
-            "t_by_game": 0.08,
+            "closed": 244,
+            "pnl_usd": 4.9,
+            "t_by_game": 0.09,
             "gate_open": false
           },
           "RESTING_5": {
-            "closed": 243,
-            "pnl_usd": -22.07,
-            "t_by_game": -0.87,
+            "closed": 244,
+            "pnl_usd": -21.9,
+            "t_by_game": -0.86,
             "gate_open": false
           },
           "RESTING_FAIR": {
-            "closed": 243,
-            "pnl_usd": -11.87,
+            "closed": 244,
+            "pnl_usd": -11.76,
             "t_by_game": -0.47,
             "gate_open": false
           },
           "TRADE": {
-            "closed": 243,
-            "pnl_usd": -73.61,
-            "t_by_game": -5.23,
+            "closed": 244,
+            "pnl_usd": -73.87,
+            "t_by_game": -5.25,
             "gate_open": false
           }
         }
       }
     },
     "open_alerts": [
-      {
-        "ticker": "KXNFLSPREAD-26NOV15BUFNYJ-BUF3",
-        "signal": "SHARP",
-        "side": "NO",
-        "game": "Buffalo vs New York J: Spread",
-        "contract": "Buffalo wins by over 2.5 points",
-        "max_price": 0.25,
-        "stake": 1.58,
-        "gone": true,
-        "sent_ct": "Fri Nov 13, 5:30 PM CT",
-        "kickoff_utc": "2026-11-15T18:00:00Z",
-        "kickoff_ct": "Sun Nov 15, 12:00 PM CT",
-        "kalshi_url": "https://kalshi.com/markets/kxnflspread/event/kxnflspread-26nov15bufnyj"
-      },
-      {
-        "ticker": "KXNFLSPREAD-26NOV15BUFNYJ-NYJ2",
-        "signal": "SHARP",
-        "side": "YES",
-        "game": "Buffalo vs New York J: Spread",
-        "contract": "New York J wins by over 1.5 points",
-        "max_price": 0.2,
-        "stake": 1.27,
-        "gone": false,
-        "sent_ct": "Fri Nov 13, 4:44 AM CT",
-        "kickoff_utc": "2026-11-15T18:00:00Z",
-        "kickoff_ct": "Sun Nov 15, 12:00 PM CT",
-        "kalshi_url": "https://kalshi.com/markets/kxnflspread/event/kxnflspread-26nov15bufnyj"
-      },
-      {
-        "ticker": "KXNFLSPREAD-26NOV15CARNO-CAR2",
-        "signal": "SHARP",
-        "side": "NO",
-        "game": "Carolina vs New Orleans: Spread",
-        "contract": "Carolina wins by over 1.5 points",
-        "max_price": 0.55,
-        "stake": 4.46,
-        "gone": true,
-        "sent_ct": "Sun Nov 15, 7:28 AM CT",
-        "kickoff_utc": "2026-11-15T18:00:00Z",
-        "kickoff_ct": "Sun Nov 15, 12:00 PM CT",
-        "kalshi_url": "https://kalshi.com/markets/kxnflspread/event/kxnflspread-26nov15carno"
-      },
-      {
-        "ticker": "KXNFLSPREAD-26NOV15CARNO-NO2",
-        "signal": "SHARP",
-        "side": "YES",
-        "game": "Carolina vs New Orleans: Spread",
-        "contract": "New Orleans wins by over 1.5 points",
-        "max_price": 0.5,
-        "stake": 3.56,
-        "gone": true,
-        "sent_ct": "Sun Nov 15, 7:15 AM CT",
-        "kickoff_utc": "2026-11-15T18:00:00Z",
-        "kickoff_ct": "Sun Nov 15, 12:00 PM CT",
-        "kalshi_url": "https://kalshi.com/markets/kxnflspread/event/kxnflspread-26nov15carno"
-      },
-      {
-        "ticker": "KXNFLSPREAD-26NOV15JACTEN-JAC15",
-        "signal": "SHARP",
-        "side": "NO",
-        "game": "Jacksonville vs Tennessee: Spread",
-        "contract": "Jacksonville wins by over 14.5 points",
-        "max_price": 0.61,
-        "stake": 3.76,
-        "gone": true,
-        "sent_ct": "Sat Nov 14, 1:45 AM CT",
-        "kickoff_utc": "2026-11-15T18:00:00Z",
-        "kickoff_ct": "Sun Nov 15, 12:00 PM CT",
-        "kalshi_url": "https://kalshi.com/markets/kxnflspread/event/kxnflspread-26nov15jacten"
-      },
-      {
-        "ticker": "KXNFLSPREAD-26NOV15JACTEN-JAC5",
-        "signal": "SHARP",
-        "side": "NO",
-        "game": "Jacksonville vs Tennessee: Spread",
-        "contract": "Jacksonville wins by over 4.5 points",
-        "max_price": 0.28,
-        "stake": 2.56,
-        "gone": true,
-        "sent_ct": "Sat Nov 14, 8:10 PM CT",
-        "kickoff_utc": "2026-11-15T18:00:00Z",
-        "kickoff_ct": "Sun Nov 15, 12:00 PM CT",
-        "kalshi_url": "https://kalshi.com/markets/kxnflspread/event/kxnflspread-26nov15jacten"
-      },
       {
         "ticker": "KXNFLTOTAL-26NOV15LARARI-30",
         "signal": "SHARP",
