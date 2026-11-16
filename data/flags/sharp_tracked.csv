@@ -34501,3 +34501,5 @@ snapshot_ts,league,event,ticker,side,price,fair,edge,sharp_line,odds_fetched_ts,
 2026-11-16T05:07:14Z,CFB,Iowa vs Illinois: Total Points,KXNCAAFTOTAL-26NOV21IOWAILL-30,NO,0.16,0.2113,0.0413,42.5,2026-11-16T04:11:13Z,rung far from sharp line (unvalidated range); sharp line stale; price outside core zone (35-65c)
 2026-11-16T05:37:34Z,NFL,Tennessee vs Dallas: Spread,KXNFLSPREAD-26NOV22TENDAL-TEN2,YES,0.19,0.2363,0.0348,-8.0,2026-11-16T05:37:32Z,rung outside core zone (>3 pts from sharp line); price outside core zone (35-65c)
 2026-11-16T05:37:34Z,NFL,Los Angeles C vs Baltimore: Total Points,KXNFLTOTAL-26NOV16LACBAL-24,NO,0.09,0.1286,0.0326,38.5,2026-11-16T05:37:32Z,rung far from sharp line (unvalidated range); price outside core zone (35-65c)
+2026-11-16T06:36:01Z,NFL,Los Angeles C vs Baltimore: Total Points,KXNFLTOTAL-26NOV16LACBAL-24,NO,0.09,0.1286,0.0326,38.5,2026-11-16T05:37:32Z,rung far from sharp line (unvalidated range); sharp line stale; price outside core zone (35-65c)
+2026-11-16T06:36:01Z,CFB,Texas Tech vs Baylor: Spread,KXNCAAFSPREAD-26NOV21TTUBAY-TTU7,NO,0.55,0.6002,0.0322,3.5,2026-11-16T04:11:13Z,sharp line stale
