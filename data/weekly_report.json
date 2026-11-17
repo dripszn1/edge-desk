@@ -1,7 +1,7 @@
 {
   "proposals": [],
-  "generated_utc": "2026-11-17T03:44:21Z",
-  "generated_ct": "Mon Nov 16, 9:44 PM CT",
+  "generated_utc": "2026-11-17T03:59:34Z",
+  "generated_ct": "Mon Nov 16, 9:59 PM CT",
   "paper_mode": true,
   "rules": {
     "min_bets": 30,
@@ -15,31 +15,31 @@
     "why": "no settled bets yet"
   },
   "model_shadow": {
-    "settled": 71,
-    "staked": 183.77,
-    "fees": 8.82,
-    "pnl": 124.23,
-    "roi": 0.676,
-    "t_stat": 0.43,
+    "settled": 72,
+    "staked": 193.39,
+    "fees": 9.2,
+    "pnl": 136.61,
+    "roi": 0.7064,
+    "t_stat": 0.48,
     "coin_flip": {
       "sims": 10000,
-      "bets": 71,
-      "real_pnl": 124.23,
-      "sim_median_pnl": -9.77,
-      "beat_pct": 0.9818
+      "bets": 72,
+      "real_pnl": 136.61,
+      "sim_median_pnl": -12.39,
+      "beat_pct": 0.9884
     },
     "by_week": [
       {
         "week_of": "2026-11-09",
-        "bets": 71,
-        "pnl": 124.23,
-        "roi": 0.676,
-        "claimed_edge_c": 22.29,
-        "realised_edge_c": 20.47
+        "bets": 72,
+        "pnl": 136.61,
+        "roi": 0.7064,
+        "claimed_edge_c": 22.0,
+        "realised_edge_c": 21.72
       }
     ],
     "verdict": "luck / no edge",
-    "why": "t=0.43, coin-flip beat 98%"
+    "why": "t=0.48, coin-flip beat 99%"
   },
   "sharp_shadow": {
     "settled": 80,
@@ -295,7 +295,7 @@
     "propose_widen": []
   },
   "settlement": {
-    "pending": 233,
+    "pending": 232,
     "overdue": 0,
     "no_kickoff": 0,
     "grace_hours": 12,
@@ -2042,8 +2042,8 @@
           "tickers": 60,
           "games": 45,
           "fees_usd": 4.77,
-          "pnl_usd": -18.97,
-          "t_by_game": -4.04,
+          "pnl_usd": -19.17,
+          "t_by_game": -4.07,
           "settled_fills": 0,
           "settled_pnl_usd": null,
           "adverse_c": -2.44,
@@ -2056,8 +2056,8 @@
           "tickers": 72,
           "games": 29,
           "fees_usd": 5.15,
-          "pnl_usd": -33.9,
-          "t_by_game": -3.6,
+          "pnl_usd": -33.6,
+          "t_by_game": -3.56,
           "settled_fills": 43,
           "settled_pnl_usd": -23.91,
           "adverse_c": -1.67,
@@ -2086,8 +2086,8 @@
           "tickers": 45,
           "games": 14,
           "fees_usd": 3.7,
-          "pnl_usd": -21.4,
-          "t_by_game": -3.54,
+          "pnl_usd": -21.35,
+          "t_by_game": -3.55,
           "settled_fills": 30,
           "settled_pnl_usd": -51.33,
           "adverse_c": -1.68,
