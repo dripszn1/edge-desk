@@ -1,16 +1,16 @@
 {
-  "generated_ts": "2026-11-17T07:51:19Z",
-  "generated_ct": "Tue Nov 17, 1:51 AM CT",
+  "generated_ts": "2026-11-17T10:49:46Z",
+  "generated_ct": "Tue Nov 17, 4:49 AM CT",
   "today_ct": "2026-11-17",
   "snapshot": {
-    "ts": "2026-11-17T07:45:16Z",
-    "ct": "Tue Nov 17, 1:45 AM CT",
+    "ts": "2026-11-17T10:45:47Z",
+    "ct": "Tue Nov 17, 4:45 AM CT",
     "stale": false,
-    "markets_scanned": 4201,
+    "markets_scanned": 4205,
     "kickoff_source": "kalshi occurrence_datetime - 3h",
     "phases": {
       "CFB": {
-        "pregame": 3554
+        "pregame": 3558
       },
       "NFL": {
         "pregame": 647
@@ -61,7 +61,7 @@
     "max_bet": 10.0
   },
   "signals": {
-    "weekly_ct": "Tue Nov 17, 1:47 AM CT",
+    "weekly_ct": "Tue Nov 17, 4:47 AM CT",
     "scorecards": [
       {
         "name": "SHARP shadow football",
@@ -188,7 +188,7 @@
           "events": 39,
           "t_by_event": -0.55,
           "stale": 0,
-          "pending": 12,
+          "pending": 14,
           "no_close": 0
         }
       },
@@ -214,7 +214,7 @@
           "events": 50,
           "t_by_event": -4.51,
           "stale": 0,
-          "pending": 128,
+          "pending": 130,
           "no_close": 1
         }
       }
@@ -457,6 +457,20 @@
         "kalshi_url": "https://kalshi.com/markets/kxncaafspread/event/kxncaafspread-26nov21uclamich"
       },
       {
+        "ticker": "KXNCAAFTOTAL-26NOV21UCLAMICH-42",
+        "signal": "SHARP",
+        "side": "YES",
+        "game": "UCLA vs Michigan: Total Points",
+        "contract": "Over 41.5 points",
+        "max_price": 0.39,
+        "stake": 2.04,
+        "gone": false,
+        "sent_ct": "Tue Nov 17, 4:45 AM CT",
+        "kickoff_utc": "2026-11-21T20:00:00Z",
+        "kickoff_ct": "Sat Nov 21, 2:00 PM CT",
+        "kalshi_url": "https://kalshi.com/markets/kxncaaftotal/event/kxncaaftotal-26nov21uclamich"
+      },
+      {
         "ticker": "KXNFLSPREAD-26NOV22NOCHI-CHI10",
         "signal": "SHARP",
         "side": "NO",
@@ -469,6 +483,20 @@
         "kickoff_utc": "2026-11-22T18:00:00Z",
         "kickoff_ct": "Sun Nov 22, 12:00 PM CT",
         "kalshi_url": "https://kalshi.com/markets/kxnflspread/event/kxnflspread-26nov22nochi"
+      },
+      {
+        "ticker": "KXNFLSPREAD-26NOV22TENDAL-DAL8",
+        "signal": "SHARP",
+        "side": "NO",
+        "game": "Tennessee vs Dallas: Spread",
+        "contract": "Dallas wins by over 7.5 points",
+        "max_price": 0.47,
+        "stake": 2.93,
+        "gone": false,
+        "sent_ct": "Tue Nov 17, 4:45 AM CT",
+        "kickoff_utc": "2026-11-22T18:00:00Z",
+        "kickoff_ct": "Sun Nov 22, 12:00 PM CT",
+        "kalshi_url": "https://kalshi.com/markets/kxnflspread/event/kxnflspread-26nov22tendal"
       },
       {
         "ticker": "KXNFLSPREAD-26NOV22LVDEN-DEN9",
