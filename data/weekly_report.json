@@ -1,7 +1,7 @@
 {
   "proposals": [],
-  "generated_utc": "2026-11-17T21:31:46Z",
-  "generated_ct": "Tue Nov 17, 3:31 PM CT",
+  "generated_utc": "2026-11-17T21:47:05Z",
+  "generated_ct": "Tue Nov 17, 3:47 PM CT",
   "paper_mode": true,
   "rules": {
     "min_bets": 30,
@@ -1531,14 +1531,14 @@
       }
     },
     "football": {
-      "plays": 420,
+      "plays": 424,
       "line_checked": 256,
       "adverse_pct": 60.2,
       "avg_line_move_fav": -0.77,
-      "median_pull_age_min": 29.9,
+      "median_pull_age_min": 29.4,
       "kalshi_first": {
         "False": {
-          "plays": 197,
+          "plays": 201,
           "with_close": 145,
           "avg_clv_c": -1.41,
           "games": 45,
@@ -1554,7 +1554,7 @@
       },
       "by_pull_age": {
         "0-10 min": {
-          "plays": 171,
+          "plays": 175,
           "with_close": 108,
           "avg_clv_c": -1.03,
           "games": 46,
@@ -2036,17 +2036,17 @@
     "by_k": {
       "1": {
         "CFB": {
-          "fills": 125,
-          "contracts": 1250,
+          "fills": 127,
+          "contracts": 1270,
           "paired_contracts": 40,
-          "tickers": 81,
-          "games": 54,
-          "fees_usd": 6.22,
-          "pnl_usd": -27.97,
-          "t_by_game": -4.06,
+          "tickers": 82,
+          "games": 55,
+          "fees_usd": 6.32,
+          "pnl_usd": -28.92,
+          "t_by_game": -4.17,
           "settled_fills": 0,
           "settled_pnl_usd": null,
-          "adverse_c": -2.35,
+          "adverse_c": -2.36,
           "max_exposure_usd": 33.8
         },
         "NFL": {
@@ -2056,7 +2056,7 @@
           "tickers": 72,
           "games": 29,
           "fees_usd": 5.15,
-          "pnl_usd": -33.35,
+          "pnl_usd": -33.3,
           "t_by_game": -3.68,
           "settled_fills": 43,
           "settled_pnl_usd": -23.91,
@@ -2066,17 +2066,17 @@
       },
       "2": {
         "CFB": {
-          "fills": 45,
-          "contracts": 450,
+          "fills": 46,
+          "contracts": 460,
           "paired_contracts": 0,
-          "tickers": 32,
+          "tickers": 33,
           "games": 24,
-          "fees_usd": 2.25,
-          "pnl_usd": -11.0,
-          "t_by_game": -3.44,
+          "fees_usd": 2.3,
+          "pnl_usd": -11.3,
+          "t_by_game": -3.54,
           "settled_fills": 0,
           "settled_pnl_usd": null,
-          "adverse_c": -2.05,
+          "adverse_c": -2.06,
           "max_exposure_usd": 26.5
         },
         "NFL": {
@@ -2096,17 +2096,17 @@
       },
       "3": {
         "CFB": {
-          "fills": 22,
-          "contracts": 220,
+          "fills": 23,
+          "contracts": 230,
           "paired_contracts": 0,
-          "tickers": 10,
-          "games": 9,
-          "fees_usd": 1.1,
-          "pnl_usd": -8.55,
-          "t_by_game": -2.89,
+          "tickers": 11,
+          "games": 10,
+          "fees_usd": 1.15,
+          "pnl_usd": -8.75,
+          "t_by_game": -2.88,
           "settled_fills": 0,
           "settled_pnl_usd": null,
-          "adverse_c": -3.57,
+          "adverse_c": -3.48,
           "max_exposure_usd": 23.5
         },
         "NFL": {
@@ -2426,7 +2426,7 @@
   "baseline": {
     "method": "placebo = other rungs/sides of the same game and series at the same snapshot, ask within 10c, same contracts and fees; snapshot paths only for both",
     "football": {
-      "plays": 420,
+      "plays": 424,
       "closed": 255,
       "games": 53,
       "no_placebo": 2,
