@@ -1,10 +1,10 @@
 {
-  "generated_ts": "2026-11-17T01:15:19Z",
-  "generated_ct": "Mon Nov 16, 7:15 PM CT",
+  "generated_ts": "2026-11-17T01:28:53Z",
+  "generated_ct": "Mon Nov 16, 7:28 PM CT",
   "today_ct": "2026-11-16",
   "snapshot": {
-    "ts": "2026-11-17T01:11:20Z",
-    "ct": "Mon Nov 16, 7:11 PM CT",
+    "ts": "2026-11-17T01:26:24Z",
+    "ct": "Mon Nov 16, 7:26 PM CT",
     "stale": false,
     "markets_scanned": 4167,
     "kickoff_source": "kalshi occurrence_datetime - 3h",
@@ -13,8 +13,8 @@
         "pregame": 3552
       },
       "NFL": {
-        "pregame": 569,
-        "unknown": 46
+        "live": 46,
+        "pregame": 569
       }
     }
   },
@@ -62,7 +62,7 @@
     "max_bet": 10.0
   },
   "signals": {
-    "weekly_ct": "Mon Nov 16, 7:12 PM CT",
+    "weekly_ct": "Mon Nov 16, 7:27 PM CT",
     "scorecards": [
       {
         "name": "SHARP shadow football",
@@ -181,15 +181,15 @@
           "no_close": 0
         },
         "football": {
-          "n": 79,
-          "avg_clv_c": -1.14,
+          "n": 80,
+          "avg_clv_c": -1.13,
           "avg_raw_c": 0.34,
-          "beat_close_pct": 29.1,
+          "beat_close_pct": 28.7,
           "t_stat": -1.89,
-          "events": 38,
+          "events": 39,
           "t_by_event": -0.55,
           "stale": 0,
-          "pending": 13,
+          "pending": 12,
           "no_close": 0
         }
       },
@@ -207,15 +207,15 @@
           "no_close": 7
         },
         "football": {
-          "n": 220,
+          "n": 223,
           "avg_clv_c": -1.3,
-          "avg_raw_c": -0.08,
-          "beat_close_pct": 30.9,
-          "t_stat": -7.28,
-          "events": 49,
-          "t_by_event": -4.43,
+          "avg_raw_c": -0.09,
+          "beat_close_pct": 30.5,
+          "t_stat": -7.34,
+          "events": 50,
+          "t_by_event": -4.51,
           "stale": 0,
-          "pending": 119,
+          "pending": 117,
           "no_close": 1
         }
       }
