@@ -1,7 +1,7 @@
 {
   "proposals": [],
-  "generated_utc": "2026-11-17T05:33:40Z",
-  "generated_ct": "Mon Nov 16, 11:33 PM CT",
+  "generated_utc": "2026-11-17T05:47:29Z",
+  "generated_ct": "Mon Nov 16, 11:47 PM CT",
   "paper_mode": true,
   "rules": {
     "min_bets": 30,
@@ -295,7 +295,7 @@
     "propose_widen": []
   },
   "settlement": {
-    "pending": 230,
+    "pending": 231,
     "overdue": 0,
     "no_kickoff": 0,
     "grace_hours": 12,
@@ -361,13 +361,13 @@
         "SPREAD": {
           "cap_pts": 10.5,
           "sd": 13.09,
-          "games": 4779,
+          "games": 4780,
           "cap_sd": 0.802
         },
         "TOTAL": {
           "cap_pts": 10.5,
           "sd": 13.24,
-          "games": 4779,
+          "games": 4780,
           "cap_sd": 0.793
         }
       },
@@ -375,13 +375,13 @@
         "SPREAD": {
           "cap_pts": 6.0,
           "sd": 15.55,
-          "games": 13067,
+          "games": 13068,
           "cap_sd": 0.386
         },
         "TOTAL": {
           "cap_pts": 6.0,
           "sd": 16.21,
-          "games": 12674,
+          "games": 12675,
           "cap_sd": 0.37
         }
       },
