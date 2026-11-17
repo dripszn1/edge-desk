@@ -1,7 +1,7 @@
 {
   "proposals": [],
-  "generated_utc": "2026-11-17T13:47:57Z",
-  "generated_ct": "Tue Nov 17, 7:47 AM CT",
+  "generated_utc": "2026-11-17T14:22:29Z",
+  "generated_ct": "Tue Nov 17, 8:22 AM CT",
   "paper_mode": true,
   "rules": {
     "min_bets": 30,
@@ -295,7 +295,7 @@
     "propose_widen": []
   },
   "settlement": {
-    "pending": 248,
+    "pending": 250,
     "overdue": 0,
     "no_kickoff": 0,
     "grace_hours": 12,
@@ -350,7 +350,7 @@
         "events": 50,
         "t_by_event": -4.51,
         "stale": 0,
-        "pending": 139,
+        "pending": 141,
         "no_close": 1
       }
     }
@@ -1770,7 +1770,7 @@
         "BRACKET_10_10": {
           "label": "API-ONLY",
           "closed": 256,
-          "pending": 141,
+          "pending": 142,
           "closed_early_not_counted": 4,
           "pnl_usd": -153.47,
           "avg_c": -7.0,
@@ -1782,7 +1782,7 @@
         "BRACKET_10_5": {
           "label": "API-ONLY",
           "closed": 256,
-          "pending": 141,
+          "pending": 142,
           "closed_early_not_counted": 58,
           "pnl_usd": -142.24,
           "avg_c": -5.84,
@@ -1794,7 +1794,7 @@
         "BRACKET_15_10": {
           "label": "API-ONLY",
           "closed": 256,
-          "pending": 141,
+          "pending": 142,
           "closed_early_not_counted": 3,
           "pnl_usd": -168.83,
           "avg_c": -7.78,
@@ -1806,7 +1806,7 @@
         "BRACKET_15_5": {
           "label": "API-ONLY",
           "closed": 256,
-          "pending": 141,
+          "pending": 142,
           "closed_early_not_counted": 57,
           "pnl_usd": -148.45,
           "avg_c": -6.09,
@@ -1818,7 +1818,7 @@
         "BRACKET_5_10": {
           "label": "API-ONLY",
           "closed": 256,
-          "pending": 141,
+          "pending": 142,
           "closed_early_not_counted": 5,
           "pnl_usd": -143.88,
           "avg_c": -6.42,
@@ -1830,7 +1830,7 @@
         "BRACKET_5_5": {
           "label": "API-ONLY",
           "closed": 256,
-          "pending": 141,
+          "pending": 142,
           "closed_early_not_counted": 59,
           "pnl_usd": -136.27,
           "avg_c": -5.71,
@@ -1842,7 +1842,7 @@
         "EXIT_AT_TIP": {
           "label": "MANUAL-OK",
           "closed": 256,
-          "pending": 141,
+          "pending": 142,
           "closed_early_not_counted": 0,
           "pnl_usd": -76.67,
           "avg_c": -3.35,
@@ -1854,7 +1854,7 @@
         "HOLD": {
           "label": "MANUAL-OK",
           "closed": 256,
-          "pending": 141,
+          "pending": 142,
           "closed_early_not_counted": 0,
           "pnl_usd": -90.92,
           "avg_c": -3.86,
@@ -1866,7 +1866,7 @@
         "RESTING_10": {
           "label": "MANUAL-OK",
           "closed": 256,
-          "pending": 141,
+          "pending": 142,
           "closed_early_not_counted": 1,
           "pnl_usd": -24.56,
           "avg_c": -1.02,
@@ -1878,7 +1878,7 @@
         "RESTING_15": {
           "label": "MANUAL-OK",
           "closed": 256,
-          "pending": 141,
+          "pending": 142,
           "closed_early_not_counted": 0,
           "pnl_usd": -9.21,
           "avg_c": -0.24,
@@ -1890,7 +1890,7 @@
         "RESTING_5": {
           "label": "MANUAL-OK",
           "closed": 256,
-          "pending": 141,
+          "pending": 142,
           "closed_early_not_counted": 2,
           "pnl_usd": -34.3,
           "avg_c": -1.38,
@@ -1902,7 +1902,7 @@
         "RESTING_FAIR": {
           "label": "MANUAL-OK",
           "closed": 256,
-          "pending": 141,
+          "pending": 142,
           "closed_early_not_counted": 2,
           "pnl_usd": -22.77,
           "avg_c": -1.12,
@@ -1914,7 +1914,7 @@
         "TRADE": {
           "label": "MANUAL-OK",
           "closed": 256,
-          "pending": 141,
+          "pending": 142,
           "closed_early_not_counted": 2,
           "pnl_usd": -76.7,
           "avg_c": -3.36,
@@ -2130,7 +2130,7 @@
     "note": "report only; resting buys fill at the limit when a later ask reaches it, maker fee",
     "football": {
       "MAKER_BID": {
-        "plays": 359,
+        "plays": 360,
         "decided": 241,
         "filled": 86,
         "fill_rate_pct": 35.7,
@@ -2178,7 +2178,7 @@
         }
       },
       "MAKER_1": {
-        "plays": 211,
+        "plays": 212,
         "decided": 124,
         "filled": 58,
         "fill_rate_pct": 46.8,
@@ -2228,7 +2228,7 @@
     },
     "NFL": {
       "MAKER_BID": {
-        "plays": 100,
+        "plays": 101,
         "decided": 69,
         "filled": 37,
         "fill_rate_pct": 53.6,
@@ -2276,7 +2276,7 @@
         }
       },
       "MAKER_1": {
-        "plays": 45,
+        "plays": 46,
         "decided": 28,
         "filled": 22,
         "fill_rate_pct": 78.6,
