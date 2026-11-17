@@ -1,10 +1,10 @@
 {
-  "generated_ts": "2026-11-17T21:49:19Z",
-  "generated_ct": "Tue Nov 17, 3:49 PM CT",
+  "generated_ts": "2026-11-17T22:03:11Z",
+  "generated_ct": "Tue Nov 17, 4:03 PM CT",
   "today_ct": "2026-11-17",
   "snapshot": {
-    "ts": "2026-11-17T21:45:55Z",
-    "ct": "Tue Nov 17, 3:45 PM CT",
+    "ts": "2026-11-17T22:00:57Z",
+    "ct": "Tue Nov 17, 4:00 PM CT",
     "stale": false,
     "markets_scanned": 4205,
     "kickoff_source": "kalshi occurrence_datetime - 3h",
@@ -61,7 +61,7 @@
     "max_bet": 10.0
   },
   "signals": {
-    "weekly_ct": "Tue Nov 17, 3:47 PM CT",
+    "weekly_ct": "Tue Nov 17, 4:02 PM CT",
     "scorecards": [
       {
         "name": "SHARP shadow football",
@@ -214,7 +214,7 @@
           "events": 50,
           "t_by_event": -4.51,
           "stale": 0,
-          "pending": 167,
+          "pending": 168,
           "no_close": 1
         }
       }
@@ -422,7 +422,7 @@
         "contract": "Texas Tech wins by over 6.5 points",
         "max_price": 0.55,
         "stake": 2.84,
-        "gone": false,
+        "gone": true,
         "sent_ct": "Mon Nov 16, 4:46 AM CT",
         "kickoff_utc": "2026-11-21T20:00:00Z",
         "kickoff_ct": "Sat Nov 21, 2:00 PM CT",
