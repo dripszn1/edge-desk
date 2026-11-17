@@ -1,7 +1,7 @@
 {
   "proposals": [],
-  "generated_utc": "2026-11-17T21:16:30Z",
-  "generated_ct": "Tue Nov 17, 3:16 PM CT",
+  "generated_utc": "2026-11-17T21:31:46Z",
+  "generated_ct": "Tue Nov 17, 3:31 PM CT",
   "paper_mode": true,
   "rules": {
     "min_bets": 30,
@@ -2036,17 +2036,17 @@
     "by_k": {
       "1": {
         "CFB": {
-          "fills": 122,
-          "contracts": 1220,
+          "fills": 125,
+          "contracts": 1250,
           "paired_contracts": 40,
-          "tickers": 78,
-          "games": 53,
-          "fees_usd": 6.07,
-          "pnl_usd": -26.92,
-          "t_by_game": -3.9,
+          "tickers": 81,
+          "games": 54,
+          "fees_usd": 6.22,
+          "pnl_usd": -27.97,
+          "t_by_game": -4.06,
           "settled_fills": 0,
           "settled_pnl_usd": null,
-          "adverse_c": -2.38,
+          "adverse_c": -2.35,
           "max_exposure_usd": 33.8
         },
         "NFL": {
@@ -2056,11 +2056,11 @@
           "tickers": 72,
           "games": 29,
           "fees_usd": 5.15,
-          "pnl_usd": -33.2,
+          "pnl_usd": -33.35,
           "t_by_game": -3.68,
           "settled_fills": 43,
           "settled_pnl_usd": -23.91,
-          "adverse_c": -1.67,
+          "adverse_c": -1.66,
           "max_exposure_usd": 60.1
         }
       },
@@ -2072,11 +2072,11 @@
           "tickers": 32,
           "games": 24,
           "fees_usd": 2.25,
-          "pnl_usd": -10.9,
-          "t_by_game": -3.39,
+          "pnl_usd": -11.0,
+          "t_by_game": -3.44,
           "settled_fills": 0,
           "settled_pnl_usd": null,
-          "adverse_c": -2.07,
+          "adverse_c": -2.05,
           "max_exposure_usd": 26.5
         },
         "NFL": {
@@ -2086,8 +2086,8 @@
           "tickers": 45,
           "games": 14,
           "fees_usd": 3.7,
-          "pnl_usd": -22.05,
-          "t_by_game": -3.48,
+          "pnl_usd": -21.85,
+          "t_by_game": -3.41,
           "settled_fills": 30,
           "settled_pnl_usd": -51.33,
           "adverse_c": -1.68,
@@ -2116,7 +2116,7 @@
           "tickers": 22,
           "games": 8,
           "fees_usd": 1.19,
-          "pnl_usd": -8.09,
+          "pnl_usd": -8.14,
           "t_by_game": -2.81,
           "settled_fills": 17,
           "settled_pnl_usd": -49.5,
