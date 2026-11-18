@@ -1,7 +1,7 @@
 {
   "proposals": [],
-  "generated_utc": "2026-11-18T05:02:25Z",
-  "generated_ct": "Tue Nov 17, 11:02 PM CT",
+  "generated_utc": "2026-11-18T05:17:53Z",
+  "generated_ct": "Tue Nov 17, 11:17 PM CT",
   "paper_mode": true,
   "rules": {
     "min_bets": 30,
@@ -2062,8 +2062,8 @@
           "tickers": 122,
           "games": 70,
           "fees_usd": 9.18,
-          "pnl_usd": -39.38,
-          "t_by_game": -5.05,
+          "pnl_usd": -39.68,
+          "t_by_game": -5.09,
           "settled_fills": 3,
           "settled_pnl_usd": 17.25,
           "adverse_c": -2.09,
@@ -2076,8 +2076,8 @@
           "tickers": 85,
           "games": 33,
           "fees_usd": 6.28,
-          "pnl_usd": -38.48,
-          "t_by_game": -4.22,
+          "pnl_usd": -38.38,
+          "t_by_game": -4.21,
           "settled_fills": 43,
           "settled_pnl_usd": -23.91,
           "adverse_c": -1.78,
@@ -2086,17 +2086,17 @@
       },
       "2": {
         "CFB": {
-          "fills": 66,
-          "contracts": 660,
+          "fills": 67,
+          "contracts": 670,
           "paired_contracts": 0,
-          "tickers": 44,
+          "tickers": 45,
           "games": 29,
-          "fees_usd": 3.3,
-          "pnl_usd": -14.3,
-          "t_by_game": -4.09,
+          "fees_usd": 3.35,
+          "pnl_usd": -14.7,
+          "t_by_game": -4.14,
           "settled_fills": 1,
           "settled_pnl_usd": 6.15,
-          "adverse_c": -1.94,
+          "adverse_c": -1.93,
           "max_exposure_usd": 43.3
         },
         "NFL": {
@@ -2199,9 +2199,9 @@
       },
       "MAKER_1": {
         "plays": 227,
-        "decided": 133,
-        "filled": 60,
-        "fill_rate_pct": 45.1,
+        "decided": 134,
+        "filled": 61,
+        "fill_rate_pct": 45.5,
         "clv": {
           "n": 43,
           "games": 16,
@@ -2395,9 +2395,9 @@
       },
       "MAKER_1": {
         "plays": 179,
-        "decided": 105,
-        "filled": 38,
-        "fill_rate_pct": 36.2,
+        "decided": 106,
+        "filled": 39,
+        "fill_rate_pct": 36.8,
         "clv": {
           "n": 31,
           "games": 12,
