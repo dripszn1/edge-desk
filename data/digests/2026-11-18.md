@@ -1,4 +1,4 @@
-# edge-desk digest, Wed Nov 18, 3:52 PM CT
+# edge-desk digest, Wed Nov 18, 4:06 PM CT
 
 Paper only, nothing is placed. Plays kicking off in the next 36h:
 - no plays
@@ -17,4 +17,4 @@ Settled in the last 24h:
   instant (stream) paper trades: NFL 24 plays, vs close -2.1c (16, 7 games), hold $-100.38, auto-sell at fair $-52.38 (16 done) · CFB 23 plays, vs close -1.6c (5, 2 games), hold $-42.06, auto-sell at fair $+15.51 (4 done) · median 576 ms
   market-making paper: CFB ±1c 222 fills/78 games $-55.40 t -5.8, after-fill -2.0c · NFL ±1c 136 fills/33 games $-37.98 t -4.1, after-fill -1.8c · CFB ±2c 87 fills/34 games $-23.65 t -4.1, after-fill -1.9c · NFL ±2c 91 fills/18 games $-23.03 t -3.4, after-fill -1.7c · CFB ±3c 53 fills/20 games $-17.25 t -3.9, after-fill -2.4c · NFL ±3c 31 fills/10 games $-8.73 t -2.9, after-fill -1.7c
 
-Status: Kalshi data 5m old (ok); sharp odds 5m old; odds credits left 17966 of 20000; gates: MODEL NFL closed, MODEL CFB closed, SHARP NFL closed, SHARP CFB closed, SHARP NFL ML closed, SHARP CFB ML closed
+Status: Kalshi data 3m old (ok); sharp odds 9m old; odds credits left 17963 of 20000; gates: MODEL NFL closed, MODEL CFB closed, SHARP NFL closed, SHARP CFB closed, SHARP NFL ML closed, SHARP CFB ML closed
