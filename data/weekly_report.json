@@ -1,7 +1,7 @@
 {
   "proposals": [],
-  "generated_utc": "2026-11-18T21:18:55Z",
-  "generated_ct": "Wed Nov 18, 3:18 PM CT",
+  "generated_utc": "2026-11-18T21:34:02Z",
+  "generated_ct": "Wed Nov 18, 3:34 PM CT",
   "paper_mode": true,
   "rules": {
     "min_bets": 30,
@@ -1954,7 +1954,7 @@
       "fills": 2,
       "fill_rate_pct": 10.0
     },
-    "median_latency_ms": 591,
+    "median_latency_ms": 576,
     "NFL": {
       "plays": 24,
       "settled": 16,
@@ -2000,7 +2000,7 @@
       }
     },
     "CFB": {
-      "plays": 22,
+      "plays": 23,
       "settled": 4,
       "hold_pnl_usd": -42.06,
       "hold_record": "0-4",
@@ -2013,7 +2013,7 @@
         "events": 2,
         "t_by_event": -4.52,
         "stale": 0,
-        "pending": 17,
+        "pending": 18,
         "no_close": 0
       },
       "exits": {
