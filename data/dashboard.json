@@ -1,10 +1,10 @@
 {
-  "generated_ts": "2026-11-18T19:03:53Z",
-  "generated_ct": "Wed Nov 18, 1:03 PM CT",
+  "generated_ts": "2026-11-18T19:18:58Z",
+  "generated_ct": "Wed Nov 18, 1:18 PM CT",
   "today_ct": "2026-11-18",
   "snapshot": {
-    "ts": "2026-11-18T19:00:52Z",
-    "ct": "Wed Nov 18, 1:00 PM CT",
+    "ts": "2026-11-18T19:15:57Z",
+    "ct": "Wed Nov 18, 1:15 PM CT",
     "stale": false,
     "markets_scanned": 5422,
     "kickoff_source": "kalshi occurrence_datetime - 3h",
@@ -61,7 +61,7 @@
     "max_bet": 10.0
   },
   "signals": {
-    "weekly_ct": "Wed Nov 18, 1:02 PM CT",
+    "weekly_ct": "Wed Nov 18, 1:17 PM CT",
     "scorecards": [
       {
         "name": "SHARP shadow football",
@@ -214,7 +214,7 @@
           "events": 53,
           "t_by_event": -4.8,
           "stale": 0,
-          "pending": 172,
+          "pending": 173,
           "no_close": 1
         }
       }
@@ -450,7 +450,7 @@
         "contract": "Nevada wins by over 3.5 points",
         "max_price": 0.48,
         "stake": 2.99,
-        "gone": false,
+        "gone": true,
         "sent_ct": "Wed Nov 18, 6:45 AM CT",
         "kickoff_utc": "2026-11-21T20:00:00Z",
         "kickoff_ct": "Sat Nov 21, 2:00 PM CT",
