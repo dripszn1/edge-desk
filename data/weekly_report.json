@@ -1,7 +1,7 @@
 {
   "proposals": [],
-  "generated_utc": "2026-11-18T20:33:19Z",
-  "generated_ct": "Wed Nov 18, 2:33 PM CT",
+  "generated_utc": "2026-11-18T20:48:25Z",
+  "generated_ct": "Wed Nov 18, 2:48 PM CT",
   "paper_mode": true,
   "rules": {
     "min_bets": 30,
@@ -1493,8 +1493,8 @@
       "cbb: kalshi-moved-first guard is ON; the plays it holds back: -2.99c vs Kalshi's close (t -2.34 by game, 53 plays)",
       "cbb: sharp line must be <=30 min old (ON); plays priced on a 30-90 min old sharp line (held back now): -1.81c vs Kalshi's close (t -1.4 by game, 22 plays)",
       "cbb: sharp line must be <=30 min old (ON); plays priced on a 90+ min old sharp line (held back now): -2.55c vs Kalshi's close (t -1.98 by game, 51 plays)",
-      "football: kalshi-moved-first guard is ON; the plays it holds back: -1.96c vs Kalshi's close (t -5.86 by game, 40 plays)",
-      "football: sharp line must be <=30 min old (ON); plays priced on a 30-90 min old sharp line (held back now): -1.54c vs Kalshi's close (t -3.54 by game, 55 plays)",
+      "football: kalshi-moved-first guard is ON; the plays it holds back: -2.02c vs Kalshi's close (t -6.24 by game, 43 plays)",
+      "football: sharp line must be <=30 min old (ON); plays priced on a 30-90 min old sharp line (held back now): -1.61c vs Kalshi's close (t -3.96 by game, 60 plays)",
       "football: sharp line must be <=30 min old (ON); plays priced on a 90+ min old sharp line (held back now): -1.11c vs Kalshi's close (t -1.63 by game, 71 plays)"
     ],
     "cbb": {
@@ -1552,33 +1552,33 @@
     },
     "football": {
       "plays": 446,
-      "line_checked": 271,
-      "adverse_pct": 57.9,
-      "avg_line_move_fav": -0.72,
+      "line_checked": 277,
+      "adverse_pct": 58.8,
+      "avg_line_move_fav": -0.74,
       "median_pull_age_min": 28.2,
       "kalshi_first": {
         "False": {
           "plays": 221,
-          "with_close": 156,
-          "avg_clv_c": -1.37,
-          "games": 48,
-          "t_by_game": -0.73
+          "with_close": 159,
+          "avg_clv_c": -1.38,
+          "games": 50,
+          "t_by_game": -0.81
         },
         "True": {
           "plays": 92,
-          "with_close": 40,
-          "avg_clv_c": -1.96,
-          "games": 20,
-          "t_by_game": -5.86
+          "with_close": 43,
+          "avg_clv_c": -2.02,
+          "games": 21,
+          "t_by_game": -6.24
         }
       },
       "by_pull_age": {
         "0-10 min": {
           "plays": 188,
-          "with_close": 116,
-          "avg_clv_c": -1.0,
-          "games": 49,
-          "t_by_game": -0.54
+          "with_close": 117,
+          "avg_clv_c": -1.01,
+          "games": 50,
+          "t_by_game": -0.59
         },
         "10-30 min": {
           "plays": 51,
@@ -1589,10 +1589,10 @@
         },
         "30-90 min": {
           "plays": 113,
-          "with_close": 55,
-          "avg_clv_c": -1.54,
-          "games": 25,
-          "t_by_game": -3.54
+          "with_close": 60,
+          "avg_clv_c": -1.61,
+          "games": 27,
+          "t_by_game": -3.96
         },
         "90+ min": {
           "plays": 94,
