@@ -1,10 +1,10 @@
 {
-  "generated_ts": "2026-11-18T07:49:50Z",
-  "generated_ct": "Wed Nov 18, 1:49 AM CT",
+  "generated_ts": "2026-11-18T10:49:39Z",
+  "generated_ct": "Wed Nov 18, 4:49 AM CT",
   "today_ct": "2026-11-18",
   "snapshot": {
-    "ts": "2026-11-18T07:45:17Z",
-    "ct": "Wed Nov 18, 1:45 AM CT",
+    "ts": "2026-11-18T10:44:53Z",
+    "ct": "Wed Nov 18, 4:44 AM CT",
     "stale": false,
     "markets_scanned": 5374,
     "kickoff_source": "kalshi occurrence_datetime - 3h",
@@ -61,7 +61,7 @@
     "max_bet": 10.0
   },
   "signals": {
-    "weekly_ct": "Wed Nov 18, 1:46 AM CT",
+    "weekly_ct": "Wed Nov 18, 4:46 AM CT",
     "scorecards": [
       {
         "name": "SHARP shadow football",
@@ -188,7 +188,7 @@
           "events": 39,
           "t_by_event": -0.55,
           "stale": 0,
-          "pending": 15,
+          "pending": 16,
           "no_close": 0
         }
       },
@@ -455,6 +455,20 @@
         "kickoff_utc": "2026-11-21T20:00:00Z",
         "kickoff_ct": "Sat Nov 21, 2:00 PM CT",
         "kalshi_url": "https://kalshi.com/markets/kxncaaftotal/event/kxncaaftotal-26nov21uclamich"
+      },
+      {
+        "ticker": "KXNCAAFSPREAD-26NOV21WSUTXST-TXST14",
+        "signal": "SHARP",
+        "side": "NO",
+        "game": "Washington St. vs Texas St.: Spread",
+        "contract": "Texas St. wins by over 13.5 points",
+        "max_price": 0.53,
+        "stake": 3.77,
+        "gone": false,
+        "sent_ct": "Wed Nov 18, 4:45 AM CT",
+        "kickoff_utc": "2026-11-21T23:00:00Z",
+        "kickoff_ct": "Sat Nov 21, 5:00 PM CT",
+        "kalshi_url": "https://kalshi.com/markets/kxncaafspread/event/kxncaafspread-26nov21wsutxst"
       },
       {
         "ticker": "KXNCAAFSPREAD-26NOV21WSUTXST-TXST8",
