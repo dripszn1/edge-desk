@@ -1,7 +1,7 @@
 {
   "proposals": [],
-  "generated_utc": "2026-11-18T01:20:40Z",
-  "generated_ct": "Tue Nov 17, 7:20 PM CT",
+  "generated_utc": "2026-11-18T01:36:08Z",
+  "generated_ct": "Tue Nov 17, 7:36 PM CT",
   "paper_mode": true,
   "rules": {
     "min_bets": 30,
@@ -2036,17 +2036,17 @@
     "by_k": {
       "1": {
         "CFB": {
-          "fills": 180,
-          "contracts": 1800,
+          "fills": 183,
+          "contracts": 1830,
           "paired_contracts": 50,
-          "tickers": 120,
-          "games": 69,
-          "fees_usd": 8.93,
-          "pnl_usd": -40.93,
-          "t_by_game": -5.31,
+          "tickers": 122,
+          "games": 70,
+          "fees_usd": 9.08,
+          "pnl_usd": -41.18,
+          "t_by_game": -5.35,
           "settled_fills": 0,
           "settled_pnl_usd": null,
-          "adverse_c": -2.12,
+          "adverse_c": -2.1,
           "max_exposure_usd": 39.9
         },
         "NFL": {
@@ -2056,7 +2056,7 @@
           "tickers": 85,
           "games": 33,
           "fees_usd": 6.28,
-          "pnl_usd": -39.73,
+          "pnl_usd": -39.68,
           "t_by_game": -4.31,
           "settled_fills": 43,
           "settled_pnl_usd": -23.91,
@@ -2072,8 +2072,8 @@
           "tickers": 41,
           "games": 29,
           "fees_usd": 2.95,
-          "pnl_usd": -13.05,
-          "t_by_game": -4.05,
+          "pnl_usd": -12.8,
+          "t_by_game": -4.02,
           "settled_fills": 0,
           "settled_pnl_usd": null,
           "adverse_c": -1.96,
