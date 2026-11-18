@@ -1,7 +1,7 @@
 {
   "proposals": [],
-  "generated_utc": "2026-11-18T13:46:41Z",
-  "generated_ct": "Wed Nov 18, 7:46 AM CT",
+  "generated_utc": "2026-11-18T14:40:29Z",
+  "generated_ct": "Wed Nov 18, 8:40 AM CT",
   "paper_mode": true,
   "rules": {
     "min_bets": 30,
@@ -315,7 +315,7 @@
     "propose_widen": []
   },
   "settlement": {
-    "pending": 281,
+    "pending": 282,
     "overdue": 0,
     "no_kickoff": 0,
     "grace_hours": 12,
@@ -344,7 +344,7 @@
         "events": 39,
         "t_by_event": -0.55,
         "stale": 0,
-        "pending": 17,
+        "pending": 18,
         "no_close": 0
       }
     },
@@ -683,8 +683,8 @@
       },
       "CFB SPREAD": {
         "0-3": {
-          "plays": 21,
-          "games": 19,
+          "plays": 22,
+          "games": 20,
           "clv_n": 12,
           "clv_games": 11,
           "avg_clv_c": 1.18,
@@ -695,8 +695,8 @@
           "sd_range": "0.00-0.19",
           "inside_cap": true,
           "adjusted": {
-            "plays": 10,
-            "games": 9,
+            "plays": 11,
+            "games": 10,
             "clv_n": 6,
             "clv_games": 6,
             "avg_clv_c": 5.18,
@@ -788,8 +788,8 @@
         },
         "_all": {
           "raw": {
-            "plays": 74,
-            "games": 33,
+            "plays": 75,
+            "games": 34,
             "clv_n": 64,
             "clv_games": 25,
             "avg_clv_c": -1.21,
@@ -799,8 +799,8 @@
             "pnl_t_by_game": -0.13
           },
           "adjusted": {
-            "plays": 27,
-            "games": 18,
+            "plays": 28,
+            "games": 19,
             "clv_n": 23,
             "clv_games": 15,
             "avg_clv_c": 0.02,
@@ -1297,8 +1297,8 @@
       },
       "CFB SPREAD": {
         "0-0.25": {
-          "plays": 22,
-          "games": 19,
+          "plays": 23,
+          "games": 20,
           "clv_n": 13,
           "clv_games": 11,
           "avg_clv_c": 0.91,
@@ -1551,14 +1551,14 @@
       }
     },
     "football": {
-      "plays": 440,
+      "plays": 441,
       "line_checked": 271,
       "adverse_pct": 57.9,
       "avg_line_move_fav": -0.72,
       "median_pull_age_min": 28.9,
       "kalshi_first": {
         "False": {
-          "plays": 216,
+          "plays": 217,
           "with_close": 156,
           "avg_clv_c": -1.37,
           "games": 48,
@@ -1574,7 +1574,7 @@
       },
       "by_pull_age": {
         "0-10 min": {
-          "plays": 183,
+          "plays": 184,
           "with_close": 116,
           "avg_clv_c": -1.0,
           "games": 49,
@@ -1606,8 +1606,8 @@
   },
   "alert_room": {
     "0c": {
-      "alerts": 71,
-      "gone_pct": 93.0,
+      "alerts": 72,
+      "gone_pct": 91.7,
       "median_min_to_gone": 51.8,
       "with_close": 38,
       "avg_clv_c": -1.18
@@ -2446,7 +2446,7 @@
   "baseline": {
     "method": "placebo = other rungs/sides of the same game and series at the same snapshot, ask within 10c, same contracts and fees; snapshot paths only for both",
     "football": {
-      "plays": 440,
+      "plays": 441,
       "closed": 269,
       "games": 56,
       "no_placebo": 2,
