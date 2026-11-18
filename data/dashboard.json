@@ -1,16 +1,17 @@
 {
-  "generated_ts": "2026-11-18T19:50:55Z",
-  "generated_ct": "Wed Nov 18, 1:50 PM CT",
+  "generated_ts": "2026-11-18T20:04:31Z",
+  "generated_ct": "Wed Nov 18, 2:04 PM CT",
   "today_ct": "2026-11-18",
   "snapshot": {
-    "ts": "2026-11-18T19:46:08Z",
-    "ct": "Wed Nov 18, 1:46 PM CT",
+    "ts": "2026-11-18T20:01:29Z",
+    "ct": "Wed Nov 18, 2:01 PM CT",
     "stale": false,
     "markets_scanned": 5422,
     "kickoff_source": "kalshi occurrence_datetime - 3h",
     "phases": {
       "CFB": {
-        "pregame": 4775
+        "live": 100,
+        "pregame": 4675
       },
       "NFL": {
         "pregame": 647
@@ -61,7 +62,7 @@
     "max_bet": 10.0
   },
   "signals": {
-    "weekly_ct": "Wed Nov 18, 1:47 PM CT",
+    "weekly_ct": "Wed Nov 18, 2:03 PM CT",
     "scorecards": [
       {
         "name": "SHARP shadow football",
@@ -180,15 +181,15 @@
           "no_close": 0
         },
         "football": {
-          "n": 80,
-          "avg_clv_c": -1.13,
-          "avg_raw_c": 0.34,
-          "beat_close_pct": 28.7,
-          "t_stat": -1.89,
-          "events": 39,
-          "t_by_event": -0.55,
+          "n": 81,
+          "avg_clv_c": -1.14,
+          "avg_raw_c": 0.33,
+          "beat_close_pct": 28.4,
+          "t_stat": -1.94,
+          "events": 40,
+          "t_by_event": -0.6,
           "stale": 0,
-          "pending": 20,
+          "pending": 19,
           "no_close": 0
         }
       },
@@ -206,15 +207,15 @@
           "no_close": 7
         },
         "football": {
-          "n": 238,
-          "avg_clv_c": -1.29,
-          "avg_raw_c": -0.09,
-          "beat_close_pct": 30.3,
-          "t_stat": -7.63,
-          "events": 53,
-          "t_by_event": -4.8,
+          "n": 243,
+          "avg_clv_c": -1.31,
+          "avg_raw_c": -0.12,
+          "beat_close_pct": 29.6,
+          "t_stat": -7.88,
+          "events": 55,
+          "t_by_event": -5.08,
           "stale": 0,
-          "pending": 173,
+          "pending": 168,
           "no_close": 1
         }
       }
