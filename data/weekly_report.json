@@ -1,7 +1,7 @@
 {
   "proposals": [],
-  "generated_utc": "2026-11-18T15:10:55Z",
-  "generated_ct": "Wed Nov 18, 9:10 AM CT",
+  "generated_utc": "2026-11-18T15:40:24Z",
+  "generated_ct": "Wed Nov 18, 9:40 AM CT",
   "paper_mode": true,
   "rules": {
     "min_bets": 30,
@@ -315,7 +315,7 @@
     "propose_widen": []
   },
   "settlement": {
-    "pending": 284,
+    "pending": 285,
     "overdue": 0,
     "no_kickoff": 0,
     "grace_hours": 12,
@@ -2151,9 +2151,9 @@
     "football": {
       "MAKER_BID": {
         "plays": 396,
-        "decided": 261,
-        "filled": 93,
-        "fill_rate_pct": 35.6,
+        "decided": 262,
+        "filled": 94,
+        "fill_rate_pct": 35.9,
         "clv": {
           "n": 67,
           "games": 19,
@@ -2199,9 +2199,9 @@
       },
       "MAKER_1": {
         "plays": 228,
-        "decided": 134,
-        "filled": 61,
-        "fill_rate_pct": 45.5,
+        "decided": 135,
+        "filled": 62,
+        "fill_rate_pct": 45.9,
         "clv": {
           "n": 43,
           "games": 16,
@@ -2347,9 +2347,9 @@
     "CFB": {
       "MAKER_BID": {
         "plays": 288,
-        "decided": 188,
-        "filled": 52,
-        "fill_rate_pct": 27.7,
+        "decided": 189,
+        "filled": 53,
+        "fill_rate_pct": 28.0,
         "clv": {
           "n": 41,
           "games": 15,
@@ -2395,9 +2395,9 @@
       },
       "MAKER_1": {
         "plays": 180,
-        "decided": 106,
-        "filled": 39,
-        "fill_rate_pct": 36.8,
+        "decided": 107,
+        "filled": 40,
+        "fill_rate_pct": 37.4,
         "clv": {
           "n": 31,
           "games": 12,
