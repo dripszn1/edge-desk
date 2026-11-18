@@ -1,10 +1,10 @@
 {
-  "generated_ts": "2026-11-18T16:12:39Z",
-  "generated_ct": "Wed Nov 18, 10:12 AM CT",
+  "generated_ts": "2026-11-18T16:41:32Z",
+  "generated_ct": "Wed Nov 18, 10:41 AM CT",
   "today_ct": "2026-11-18",
   "snapshot": {
-    "ts": "2026-11-18T16:08:10Z",
-    "ct": "Wed Nov 18, 10:08 AM CT",
+    "ts": "2026-11-18T16:38:26Z",
+    "ct": "Wed Nov 18, 10:38 AM CT",
     "stale": false,
     "markets_scanned": 5374,
     "kickoff_source": "kalshi occurrence_datetime - 3h",
@@ -61,7 +61,7 @@
     "max_bet": 10.0
   },
   "signals": {
-    "weekly_ct": "Wed Nov 18, 10:09 AM CT",
+    "weekly_ct": "Wed Nov 18, 10:40 AM CT",
     "scorecards": [
       {
         "name": "SHARP shadow football",
@@ -188,7 +188,7 @@
           "events": 39,
           "t_by_event": -0.55,
           "stale": 0,
-          "pending": 18,
+          "pending": 19,
           "no_close": 0
         }
       },
@@ -469,6 +469,20 @@
         "kickoff_utc": "2026-11-21T20:00:00Z",
         "kickoff_ct": "Sat Nov 21, 2:00 PM CT",
         "kalshi_url": "https://kalshi.com/markets/kxncaafspread/event/kxncaafspread-26nov21uclamich"
+      },
+      {
+        "ticker": "KXNCAAFTOTAL-26NOV21ARSTLT-51",
+        "signal": "SHARP",
+        "side": "NO",
+        "game": "Arkansas St. vs Louisiana Tech: Total Points",
+        "contract": "Over 50.5 points",
+        "max_price": 0.39,
+        "stake": 2.04,
+        "gone": false,
+        "sent_ct": "Wed Nov 18, 10:38 AM CT",
+        "kickoff_utc": "2026-11-21T20:00:00Z",
+        "kickoff_ct": "Sat Nov 21, 2:00 PM CT",
+        "kalshi_url": "https://kalshi.com/markets/kxncaaftotal/event/kxncaaftotal-26nov21arstlt"
       },
       {
         "ticker": "KXNCAAFTOTAL-26NOV21UCLAMICH-42",

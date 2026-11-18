@@ -1,7 +1,7 @@
 {
   "proposals": [],
-  "generated_utc": "2026-11-18T16:09:44Z",
-  "generated_ct": "Wed Nov 18, 10:09 AM CT",
+  "generated_utc": "2026-11-18T16:40:06Z",
+  "generated_ct": "Wed Nov 18, 10:40 AM CT",
   "paper_mode": true,
   "rules": {
     "min_bets": 30,
@@ -315,7 +315,7 @@
     "propose_widen": []
   },
   "settlement": {
-    "pending": 286,
+    "pending": 287,
     "overdue": 0,
     "no_kickoff": 0,
     "grace_hours": 12,
@@ -344,7 +344,7 @@
         "events": 39,
         "t_by_event": -0.55,
         "stale": 0,
-        "pending": 18,
+        "pending": 19,
         "no_close": 0
       }
     },
@@ -813,8 +813,8 @@
       },
       "CFB TOTAL": {
         "0-3": {
-          "plays": 11,
-          "games": 7,
+          "plays": 12,
+          "games": 8,
           "clv_n": 10,
           "clv_games": 6,
           "avg_clv_c": -0.56,
@@ -834,7 +834,7 @@
             "settled": 6,
             "pnl": 11.03,
             "pnl_t_by_game": 1.47,
-            "dropped": 5,
+            "dropped": 6,
             "no_bias": 0
           }
         },
@@ -918,8 +918,8 @@
         },
         "_all": {
           "raw": {
-            "plays": 98,
-            "games": 34,
+            "plays": 99,
+            "games": 35,
             "clv_n": 96,
             "clv_games": 32,
             "avg_clv_c": -1.63,
@@ -1343,8 +1343,8 @@
       },
       "CFB TOTAL": {
         "0-0.25": {
-          "plays": 11,
-          "games": 7,
+          "plays": 12,
+          "games": 8,
           "clv_n": 10,
           "clv_games": 6,
           "avg_clv_c": -0.56,
@@ -1606,8 +1606,8 @@
   },
   "alert_room": {
     "0c": {
-      "alerts": 72,
-      "gone_pct": 91.7,
+      "alerts": 73,
+      "gone_pct": 90.4,
       "median_min_to_gone": 51.8,
       "with_close": 38,
       "avg_clv_c": -1.18
