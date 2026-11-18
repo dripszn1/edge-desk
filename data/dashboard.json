@@ -1,10 +1,10 @@
 {
-  "generated_ts": "2026-11-18T23:30:45Z",
-  "generated_ct": "Wed Nov 18, 5:30 PM CT",
+  "generated_ts": "2026-11-18T23:45:59Z",
+  "generated_ct": "Wed Nov 18, 5:45 PM CT",
   "today_ct": "2026-11-18",
   "snapshot": {
-    "ts": "2026-11-18T23:27:40Z",
-    "ct": "Wed Nov 18, 5:27 PM CT",
+    "ts": "2026-11-18T23:42:51Z",
+    "ct": "Wed Nov 18, 5:42 PM CT",
     "stale": false,
     "markets_scanned": 5422,
     "kickoff_source": "kalshi occurrence_datetime - 3h",
@@ -62,7 +62,7 @@
     "max_bet": 10.0
   },
   "signals": {
-    "weekly_ct": "Wed Nov 18, 5:29 PM CT",
+    "weekly_ct": "Wed Nov 18, 5:44 PM CT",
     "scorecards": [
       {
         "name": "SHARP shadow football",
@@ -189,7 +189,7 @@
           "events": 40,
           "t_by_event": -0.6,
           "stale": 0,
-          "pending": 19,
+          "pending": 20,
           "no_close": 0
         }
       },
@@ -215,7 +215,7 @@
           "events": 55,
           "t_by_event": -5.08,
           "stale": 0,
-          "pending": 170,
+          "pending": 171,
           "no_close": 1
         }
       }
@@ -456,6 +456,20 @@
         "kickoff_utc": "2026-11-21T20:00:00Z",
         "kickoff_ct": "Sat Nov 21, 2:00 PM CT",
         "kalshi_url": "https://kalshi.com/markets/kxncaafspread/event/kxncaafspread-26nov21hawnev"
+      },
+      {
+        "ticker": "KXNCAAFSPREAD-26NOV21RUTGPSU-PSU24",
+        "signal": "SHARP",
+        "side": "NO",
+        "game": "Rutgers vs Penn St.: Spread",
+        "contract": "Penn St. wins by over 23.5 points",
+        "max_price": 0.45,
+        "stake": 3.28,
+        "gone": false,
+        "sent_ct": "Wed Nov 18, 5:42 PM CT",
+        "kickoff_utc": "2026-11-21T20:00:00Z",
+        "kickoff_ct": "Sat Nov 21, 2:00 PM CT",
+        "kalshi_url": "https://kalshi.com/markets/kxncaafspread/event/kxncaafspread-26nov21rutgpsu"
       },
       {
         "ticker": "KXNCAAFSPREAD-26NOV21TTUBAY-TTU7",
