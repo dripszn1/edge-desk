@@ -1,7 +1,7 @@
 {
   "proposals": [],
-  "generated_utc": "2026-11-18T02:15:27Z",
-  "generated_ct": "Tue Nov 17, 8:15 PM CT",
+  "generated_utc": "2026-11-18T02:30:42Z",
+  "generated_ct": "Tue Nov 17, 8:30 PM CT",
   "paper_mode": true,
   "rules": {
     "min_bets": 30,
@@ -1771,7 +1771,7 @@
           "label": "API-ONLY",
           "closed": 256,
           "pending": 181,
-          "closed_early_not_counted": 15,
+          "closed_early_not_counted": 17,
           "pnl_usd": -153.47,
           "avg_c": -7.0,
           "win_pct": 23.8,
@@ -1795,7 +1795,7 @@
           "label": "API-ONLY",
           "closed": 256,
           "pending": 181,
-          "closed_early_not_counted": 14,
+          "closed_early_not_counted": 16,
           "pnl_usd": -168.83,
           "avg_c": -7.78,
           "win_pct": 16.0,
@@ -1867,7 +1867,7 @@
           "label": "MANUAL-OK",
           "closed": 256,
           "pending": 181,
-          "closed_early_not_counted": 8,
+          "closed_early_not_counted": 10,
           "pnl_usd": -24.56,
           "avg_c": -1.02,
           "win_pct": 67.6,
@@ -1879,7 +1879,7 @@
           "label": "MANUAL-OK",
           "closed": 256,
           "pending": 181,
-          "closed_early_not_counted": 6,
+          "closed_early_not_counted": 9,
           "pnl_usd": -9.21,
           "avg_c": -0.24,
           "win_pct": 60.5,
@@ -2036,18 +2036,18 @@
     "by_k": {
       "1": {
         "CFB": {
-          "fills": 183,
-          "contracts": 1830,
+          "fills": 185,
+          "contracts": 1850,
           "paired_contracts": 50,
           "tickers": 122,
           "games": 70,
-          "fees_usd": 9.08,
-          "pnl_usd": -40.93,
-          "t_by_game": -5.29,
+          "fees_usd": 9.18,
+          "pnl_usd": -41.03,
+          "t_by_game": -5.32,
           "settled_fills": 0,
           "settled_pnl_usd": null,
           "adverse_c": -2.1,
-          "max_exposure_usd": 39.9
+          "max_exposure_usd": 46.0
         },
         "NFL": {
           "fills": 136,
