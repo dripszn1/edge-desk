@@ -1,5 +1,12 @@
 # Reports (newest first)
 
+## 2026-11-18 (builder, 01:45Z run)
+- Nothing to build: backlog #1–#71 all done; nothing broken (live 116 running since 20:21Z, checkpoints every 15 min, 4,012 fast ticks, fast lane median 0.3 s; collect 160–162 green, standing down while live runs; keeper 52 active; automerge #64 green; settlement 295 pending / 0 overdue; no report errors; 0 proposals; no data file over 40 MB). Nothing shipped, nothing to merge.
+- Tests: 516/516 green on dev rebased onto main.
+- Honest results (football; tonight's MACtion still pending): picks vs Kalshi's close after fee: alerted −1.1¢ (80 plays, 39 games, t −0.6 by game), held back −1.3¢ (238, 53 games, t −4.8). Exits (256 done): hold −$90.92, sell at tip −$76.67, Auto Sell at fair −$22.77 (best), Auto Sell +10¢ −$24.56; bracket API-only.
+- Verdict rules: thresholds met since read #1; rule 2 (no exit with P&L > 0) and the held-back half of rule 1 (no edge) read the same. Not acted on.
+- Watchdog: live run in progress → dispatched nothing. Needs Emerson: nothing.
+
 ## 2026-11-17 (builder, 22:45Z run)
 - Nothing to build: backlog #1–#71 all done; nothing broken (live 116 running since 20:21Z, checkpoints every 15 min, fast lane median 0.3 s; collect 160–162 green and standing down while live runs; keeper 51 active; automerge #63 green; settlement 286 pending / 0 overdue; no report errors; 0 proposals; no data file over 40 MB). Nothing shipped, nothing to merge.
 - Tests: 516/516 green on dev rebased onto main.
