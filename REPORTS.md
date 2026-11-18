@@ -1,5 +1,12 @@
 # Reports (newest first)
 
+## 2026-11-18 (builder, 19:45Z run)
+- Nothing to build: backlog #1–#71 all done; nothing broken (live 129 running since 17:19Z, checkpoints every 15 min to 19:31Z, 1,307 fast ticks; collect 176 green; keeper 57 active; automerge #70 green; settlement 291 pending / 0 overdue; no report errors; 0 proposals; no data file over 42 MB; Actions live minutes 4,150 of 15,000 this month). Nothing shipped, nothing to merge.
+- Tests: 516/516 green on dev rebased onto main.
+- Honest results (football): picks vs Kalshi's close after fee: alerted −1.1¢ (80 plays, 39 games), held back −1.3¢ (238, 53 games). Exits (271 done): hold −$61.50, sell at tip −$80.76, Auto Sell at fair −$28.76, Auto Sell +10¢ −$27.49 (best); bracket API-only. Held back +$29.42 on 15 settled in 24h.
+- Verdict rules: thresholds met since read #1; rule 2 (no exit with P&L > 0) and the held-back half of rule 1 (no edge) read the same. Not acted on.
+- For Emerson (report only, a phase rule, not changed): tonight's AKR/MASS and CMU/BUFF carry Kalshi's placeholder kickoff 20:00Z (2 PM CT) while the sharp books say 00:00Z / 00:30Z, so live opened at 11:30 AM CT and from 20:00Z those two games are treated as started: no pregame plays for their last ~4h, close/sell-at-tip cut at 20:00Z (#41's known conservative cut). Fix option: when a unique sharp commence is later than a placeholder 20:00Z kickoff, use the sharp time. Watchdog: live run in progress → dispatched nothing.
+
 ## 2026-11-18 (builder, 16:45Z run)
 - Nothing to build: backlog #1–#71 all done; nothing broken (collect 169–175 green, keeper 56 active, live 124–126 guard exited outside the window, automerge #69 green; settlement 287 pending / 0 overdue; no report errors; 0 proposals; no data file over 40 MB). Nothing shipped, nothing to merge.
 - Tests: 516/516 green on dev rebased onto main.
