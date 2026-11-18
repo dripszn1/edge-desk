@@ -1,7 +1,7 @@
-# edge-desk digest, Wed Nov 18, 11:49 AM CT
+# edge-desk digest, Wed Nov 18, 12:03 PM CT
 
 Paper only, nothing is placed. Plays kicking off in the next 36h:
-- SHARP shadow: Akron vs UMass | NO UMass wins by over 2.5 points @ 43¢, fair 48¢, edge 3.1¢ after fees | $2.24 paper | Wed Nov 18, 2:00 PM CT | [Kalshi](https://kalshi.com/markets/kxncaafspread/event/kxncaafspread-26nov18akrmass)
+- no plays
 
 Settled in the last 24h:
 - MODEL shadow: 2-8, $-45.21 after fees (running 20-67, $+81.14)
@@ -15,6 +15,6 @@ Settled in the last 24h:
   picks vs random entries, $/play: football (269 plays): hold $-0.21 vs $-0.53 (beats 96%), auto-sell +10c $-0.42 vs $-0.74 (beats 100%) · CBB (139 plays): hold $-0.09 vs $-0.06 (beats 46%), auto-sell +10c $-1.03 vs $-0.82 (beats 15%)
   limit-order entries (paper): NFL: 41/73 filled, vs close -1.0c, hold $+37.34, auto-sell +10c $+13.05 (26 done) · CFB: 54/190 filled, vs close -0.7c, hold $+29.51, auto-sell +10c $+7.30 (41 done)
   instant (stream) paper trades: NFL 24 plays, vs close -2.1c (16, 7 games), hold $-100.38, auto-sell at fair $-52.38 (16 done) · CFB 19 plays, vs close -1.4c (4, 1 games), hold $-42.06, auto-sell at fair $+15.51 (4 done) · median 591 ms
-  market-making paper: CFB ±1c 191 fills/71 games $-47.18 t -5.4, after-fill -2.1c · NFL ±1c 136 fills/33 games $-38.33 t -4.2, after-fill -1.8c · CFB ±2c 74 fills/29 games $-17.50 t -4.3, after-fill -1.9c · NFL ±2c 91 fills/18 games $-23.03 t -3.4, after-fill -1.7c · CFB ±3c 44 fills/18 games $-12.80 t -4.1, after-fill -2.5c · NFL ±3c 31 fills/10 games $-8.73 t -2.9, after-fill -1.7c
+  market-making paper: CFB ±1c 200 fills/73 games $-49.22 t -5.5, after-fill -2.1c · NFL ±1c 136 fills/33 games $-38.43 t -4.2, after-fill -1.8c · CFB ±2c 76 fills/30 games $-18.50 t -4.3, after-fill -1.9c · NFL ±2c 91 fills/18 games $-23.13 t -3.4, after-fill -1.7c · CFB ±3c 47 fills/19 games $-13.65 t -4.2, after-fill -2.5c · NFL ±3c 31 fills/10 games $-8.73 t -2.9, after-fill -1.7c
 
-Status: Kalshi data 5m old (ok); sharp odds 10m old; odds credits left 18050 of 20000; gates: MODEL NFL closed, MODEL CFB closed, SHARP NFL closed, SHARP CFB closed, SHARP NFL ML closed, SHARP CFB ML closed
+Status: Kalshi data 3m old (ok); sharp odds 13m old; odds credits left 18047 of 20000; gates: MODEL NFL closed, MODEL CFB closed, SHARP NFL closed, SHARP CFB closed, SHARP NFL ML closed, SHARP CFB ML closed

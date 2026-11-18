@@ -1,10 +1,10 @@
 {
-  "generated_ts": "2026-11-18T17:49:45Z",
-  "generated_ct": "Wed Nov 18, 11:49 AM CT",
+  "generated_ts": "2026-11-18T18:03:10Z",
+  "generated_ct": "Wed Nov 18, 12:03 PM CT",
   "today_ct": "2026-11-18",
   "snapshot": {
-    "ts": "2026-11-18T17:45:01Z",
-    "ct": "Wed Nov 18, 11:45 AM CT",
+    "ts": "2026-11-18T18:00:09Z",
+    "ct": "Wed Nov 18, 12:00 PM CT",
     "stale": false,
     "markets_scanned": 5422,
     "kickoff_source": "kalshi occurrence_datetime - 3h",
@@ -61,7 +61,7 @@
     "max_bet": 10.0
   },
   "signals": {
-    "weekly_ct": "Wed Nov 18, 11:46 AM CT",
+    "weekly_ct": "Wed Nov 18, 12:01 PM CT",
     "scorecards": [
       {
         "name": "SHARP shadow football",
@@ -324,7 +324,7 @@
         "contract": "UMass wins by over 2.5 points",
         "max_price": 0.43,
         "stake": 2.24,
-        "gone": false,
+        "gone": true,
         "sent_ct": "Wed Nov 18, 11:30 AM CT",
         "kickoff_utc": "2026-11-18T20:00:00Z",
         "kickoff_ct": "Wed Nov 18, 2:00 PM CT",
