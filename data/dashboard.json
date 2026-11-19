@@ -1,10 +1,10 @@
 {
-  "generated_ts": "2026-11-19T10:50:55Z",
-  "generated_ct": "Thu Nov 19, 4:50 AM CT",
+  "generated_ts": "2026-11-19T13:21:21Z",
+  "generated_ct": "Thu Nov 19, 7:21 AM CT",
   "today_ct": "2026-11-19",
   "snapshot": {
-    "ts": "2026-11-19T10:45:10Z",
-    "ct": "Thu Nov 19, 4:45 AM CT",
+    "ts": "2026-11-19T13:15:56Z",
+    "ct": "Thu Nov 19, 7:15 AM CT",
     "stale": false,
     "markets_scanned": 5400,
     "kickoff_source": "kalshi occurrence_datetime - 3h",
@@ -61,7 +61,7 @@
     "max_bet": 10.0
   },
   "signals": {
-    "weekly_ct": "Thu Nov 19, 4:47 AM CT",
+    "weekly_ct": "Thu Nov 19, 7:17 AM CT",
     "scorecards": [
       {
         "name": "SHARP shadow football",
@@ -214,7 +214,7 @@
           "events": 55,
           "t_by_event": -5.08,
           "stale": 0,
-          "pending": 191,
+          "pending": 192,
           "no_close": 1
         }
       }
@@ -359,20 +359,6 @@
         "kalshi_url": "https://kalshi.com/markets/kxnflspread/event/kxnflspread-26nov19indhou"
       },
       {
-        "ticker": "KXNCAAFSPREAD-26NOV20CLEMDUKE-DUKE10",
-        "signal": "SHARP",
-        "side": "NO",
-        "game": "Clemson vs Duke: Spread",
-        "contract": "Duke wins by over 9.5 points",
-        "max_price": 0.41,
-        "stake": 2.14,
-        "gone": true,
-        "sent_ct": "Mon Nov 16, 4:46 AM CT",
-        "kickoff_utc": "2026-11-21T00:30:00Z",
-        "kickoff_ct": "Fri Nov 20, 6:30 PM CT",
-        "kalshi_url": "https://kalshi.com/markets/kxncaafspread/event/kxncaafspread-26nov20clemduke"
-      },
-      {
         "ticker": "KXNCAAFSPREAD-26NOV20OREMSU-ORE14",
         "signal": "SHARP",
         "side": "NO",
@@ -399,20 +385,6 @@
         "kickoff_utc": "2026-11-21T17:00:00Z",
         "kickoff_ct": "Sat Nov 21, 11:00 AM CT",
         "kalshi_url": "https://kalshi.com/markets/kxncaafspread/event/kxncaafspread-26nov21ecuarmy"
-      },
-      {
-        "ticker": "KXNCAAFSPREAD-26NOV21WAKEGT-WAKE22",
-        "signal": "SHARP",
-        "side": "NO",
-        "game": "Wake Forest vs Georgia Tech: Spread",
-        "contract": "Wake Forest wins by over 21.5 points",
-        "max_price": 0.5,
-        "stake": 3.11,
-        "gone": true,
-        "sent_ct": "Mon Nov 16, 7:01 AM CT",
-        "kickoff_utc": "2026-11-21T17:00:00Z",
-        "kickoff_ct": "Sat Nov 21, 11:00 AM CT",
-        "kalshi_url": "https://kalshi.com/markets/kxncaafspread/event/kxncaafspread-26nov21wakegt"
       },
       {
         "ticker": "KXNCAAFSPREAD-26NOV21WISPUR-WIS6",
@@ -455,20 +427,6 @@
         "kickoff_utc": "2026-11-21T20:00:00Z",
         "kickoff_ct": "Sat Nov 21, 2:00 PM CT",
         "kalshi_url": "https://kalshi.com/markets/kxncaafspread/event/kxncaafspread-26nov21rutgpsu"
-      },
-      {
-        "ticker": "KXNCAAFSPREAD-26NOV21TTUBAY-TTU7",
-        "signal": "SHARP",
-        "side": "NO",
-        "game": "Texas Tech vs Baylor: Spread",
-        "contract": "Texas Tech wins by over 6.5 points",
-        "max_price": 0.55,
-        "stake": 2.84,
-        "gone": true,
-        "sent_ct": "Mon Nov 16, 4:46 AM CT",
-        "kickoff_utc": "2026-11-21T20:00:00Z",
-        "kickoff_ct": "Sat Nov 21, 2:00 PM CT",
-        "kalshi_url": "https://kalshi.com/markets/kxncaafspread/event/kxncaafspread-26nov21ttubay"
       },
       {
         "ticker": "KXNCAAFSPREAD-26NOV21UCLAMICH-UCLA4",
