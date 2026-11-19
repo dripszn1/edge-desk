@@ -1,7 +1,7 @@
 {
   "proposals": [],
-  "generated_utc": "2026-11-19T19:13:27Z",
-  "generated_ct": "Thu Nov 19, 1:13 PM CT",
+  "generated_utc": "2026-11-19T19:42:17Z",
+  "generated_ct": "Thu Nov 19, 1:42 PM CT",
   "paper_mode": true,
   "rules": {
     "min_bets": 30,
@@ -1615,8 +1615,8 @@
   "alert_room": {
     "0c": {
       "alerts": 78,
-      "gone_pct": 89.7,
-      "median_min_to_gone": 57.2,
+      "gone_pct": 91.0,
+      "median_min_to_gone": 61.1,
       "with_close": 39,
       "avg_clv_c": -1.21
     },
