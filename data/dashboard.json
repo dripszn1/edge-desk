@@ -1,16 +1,16 @@
 {
-  "generated_ts": "2026-11-19T17:11:38Z",
-  "generated_ct": "Thu Nov 19, 11:11 AM CT",
+  "generated_ts": "2026-11-19T17:42:48Z",
+  "generated_ct": "Thu Nov 19, 11:42 AM CT",
   "today_ct": "2026-11-19",
   "snapshot": {
-    "ts": "2026-11-19T17:06:16Z",
-    "ct": "Thu Nov 19, 11:06 AM CT",
+    "ts": "2026-11-19T17:40:07Z",
+    "ct": "Thu Nov 19, 11:40 AM CT",
     "stale": false,
-    "markets_scanned": 5400,
+    "markets_scanned": 5446,
     "kickoff_source": "kalshi occurrence_datetime - 3h",
     "phases": {
       "CFB": {
-        "pregame": 4709
+        "pregame": 4755
       },
       "NFL": {
         "pregame": 691
@@ -61,7 +61,7 @@
     "max_bet": 10.0
   },
   "signals": {
-    "weekly_ct": "Thu Nov 19, 11:08 AM CT",
+    "weekly_ct": "Thu Nov 19, 11:41 AM CT",
     "scorecards": [
       {
         "name": "SHARP shadow football",
@@ -188,7 +188,7 @@
           "events": 40,
           "t_by_event": -0.6,
           "stale": 0,
-          "pending": 21,
+          "pending": 22,
           "no_close": 0
         }
       },
@@ -214,7 +214,7 @@
           "events": 55,
           "t_by_event": -5.08,
           "stale": 0,
-          "pending": 202,
+          "pending": 209,
           "no_close": 1
         }
       }
@@ -497,6 +497,20 @@
         "kickoff_utc": "2026-11-21T23:00:00Z",
         "kickoff_ct": "Sat Nov 21, 5:00 PM CT",
         "kalshi_url": "https://kalshi.com/markets/kxncaafspread/event/kxncaafspread-26nov21wsutxst"
+      },
+      {
+        "ticker": "KXNCAAFSPREAD-26NOV21UKMIZZ-MIZZ6",
+        "signal": "SHARP",
+        "side": "NO",
+        "game": "Kentucky vs Missouri: Spread",
+        "contract": "Missouri wins by over 5.5 points",
+        "max_price": 0.5,
+        "stake": 3.11,
+        "gone": false,
+        "sent_ct": "Thu Nov 19, 11:40 AM CT",
+        "kickoff_utc": "2026-11-22T00:30:00Z",
+        "kickoff_ct": "Sat Nov 21, 6:30 PM CT",
+        "kalshi_url": "https://kalshi.com/markets/kxncaafspread/event/kxncaafspread-26nov21ukmizz"
       },
       {
         "ticker": "KXNFLSPREAD-26NOV22TENDAL-DAL8",
