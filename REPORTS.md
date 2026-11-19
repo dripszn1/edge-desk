@@ -1,5 +1,12 @@
 # Reports (newest first)
 
+## 2026-11-19 (builder, 19:45Z run)
+- Nothing to build: backlog #1–#72 all done; nothing broken (collect 192–196 green every ~30 min, 197 running; keeper 64 active; automerge #79 green; settlement 347 pending / 0 overdue; no report errors; 0 proposals; no data file over 40 MB). Nothing shipped, nothing to merge.
+- Tests: 522/522 green on dev rebased onto main.
+- Honest results (football, no new settlements since 16:45Z): picks vs Kalshi's close after fee: alerted −1.1¢ (81 plays, 40 games), held back −1.3¢ (243, 55 games). Exits (277 done): hold −$68.20, sell at tip −$84.06, Auto Sell at fair −$38.14, Auto Sell +10¢ −$36.57 (best); bracket API-only. Odds credits 17,798 of 20,000 left.
+- Verdict rules: thresholds met since read #1; rule 2 (no exit with P&L > 0) and the held-back half of rule 1 (no edge) read the same. Not acted on.
+- Watchdog: newest collect running (no dispatch); no live run → dispatched live.yml (guard exits; tonight's TNF window opens 5:30 PM CT). Note: GitHub access now resolves as emersonclark10-hub/edge-desk; `gh api` on dripszn1/edge-desk is refused, so the watchdog used the GitHub tools. Needs Emerson: nothing.
+
 ## 2026-11-19 (builder, 16:45Z run)
 - Nothing to build: backlog #1–#72 all done; nothing broken (collect 186–191 green every ~30 min, keeper 63 active, automerge #78 green; settlement 324 pending / 0 overdue; no report errors; 0 proposals; no data file over 40 MB). Nothing shipped, nothing to merge.
 - Tests: 522/522 green on dev merged with main.
