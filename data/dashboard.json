@@ -1,10 +1,10 @@
 {
-  "generated_ts": "2026-11-19T20:14:21Z",
-  "generated_ct": "Thu Nov 19, 2:14 PM CT",
+  "generated_ts": "2026-11-19T20:46:37Z",
+  "generated_ct": "Thu Nov 19, 2:46 PM CT",
   "today_ct": "2026-11-19",
   "snapshot": {
-    "ts": "2026-11-19T20:11:12Z",
-    "ct": "Thu Nov 19, 2:11 PM CT",
+    "ts": "2026-11-19T20:41:05Z",
+    "ct": "Thu Nov 19, 2:41 PM CT",
     "stale": false,
     "markets_scanned": 5634,
     "kickoff_source": "kalshi occurrence_datetime - 3h",
@@ -61,7 +61,7 @@
     "max_bet": 10.0
   },
   "signals": {
-    "weekly_ct": "Thu Nov 19, 2:12 PM CT",
+    "weekly_ct": "Thu Nov 19, 2:42 PM CT",
     "scorecards": [
       {
         "name": "SHARP shadow football",
@@ -357,20 +357,6 @@
         "kickoff_utc": "2026-11-21T20:00:00Z",
         "kickoff_ct": "Sat Nov 21, 2:00 PM CT",
         "kalshi_url": "https://kalshi.com/markets/kxncaafspread/event/kxncaafspread-26nov21rutgpsu"
-      },
-      {
-        "ticker": "KXNCAAFSPREAD-26NOV21UCLAMICH-UCLA4",
-        "signal": "SHARP",
-        "side": "NO",
-        "game": "UCLA vs Michigan: Spread",
-        "contract": "UCLA wins by over 3.5 points",
-        "max_price": 0.48,
-        "stake": 2.99,
-        "gone": true,
-        "sent_ct": "Mon Nov 16, 2:39 PM CT",
-        "kickoff_utc": "2026-11-21T20:00:00Z",
-        "kickoff_ct": "Sat Nov 21, 2:00 PM CT",
-        "kalshi_url": "https://kalshi.com/markets/kxncaafspread/event/kxncaafspread-26nov21uclamich"
       },
       {
         "ticker": "KXNCAAFTOTAL-26NOV21ARSTLT-51",
