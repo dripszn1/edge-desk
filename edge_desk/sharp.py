@@ -103,6 +103,55 @@ def sharp_started(fe: pd.DataFrame, snapshot_ts) -> bool:
     return _ts(snapshot_ts) >= c.min() - pd.Timedelta(minutes=config.PREGAME_MIN_LEAD_MINUTES)
 
 
+PLACEHOLDER_KO = (20, 0)       # Kalshi's TBD-time stamp: occurrence 23:00Z -> kickoff 20:00Z (#41, #72)
+PLACEHOLDER_MIN_GAP = pd.Timedelta(hours=1)   # a 20:00Z game the books put <1h later may be a real 20:00Z kickoff: keep Kalshi's
+
+
+def fix_placeholder_kickoffs(df: pd.DataFrame, lines: pd.DataFrame, snapshot_ts) -> pd.DataFrame:
+    """#72: a game whose Kalshi kickoff is the 20:00Z placeholder, and whose UNIQUE sharp match starts
+    later (within KICKOFF_TOL_WIDE), takes the sharp commence as kickoff; phase is recomputed. Only
+    ever moves a placeholder later onto a time the sharp books publish; an in-play sharp event has
+    no fair rows, so a game that really started is never re-opened. 11-18: AKR/MASS, CMU/BUFF were
+    'started' at 20:00Z while the books said 00:00Z / 00:30Z (~4h of pregame lost)."""
+    if df is None or df.empty or "kickoff_utc" not in df or lines is None or len(lines) == 0 or not snapshot_ts:
+        return df
+    from .kickoffs import game_key
+    ko = pd.to_datetime(df["kickoff_utc"], utc=True, errors="coerce")
+    ph = ko.notna() & (ko.dt.hour == PLACEHOLDER_KO[0]) & (ko.dt.minute == PLACEHOLDER_KO[1]) & ko.dt.second.eq(0)
+    if not ph.any():
+        return df
+    fair = odds.fair_lines(lines, snapshot_ts)
+    if fair is None or fair.empty:
+        return df
+    df = df.copy()
+    keys = pd.Series([game_key(t) for t in df["event_ticker"]], index=df.index)
+    snap, lead = _ts(snapshot_ts), pd.Timedelta(minutes=config.PREGAME_MIN_LEAD_MINUTES)
+    for gk, idx in keys[ph].groupby(keys[ph]).groups.items():
+        if gk is None:
+            continue
+        rows = df.loc[idx]
+        lg = rows["league"].iloc[0]
+        fl = fair[fair["league"] == lg]
+        if fl.empty:
+            continue
+        cands = set()
+        for r in rows.drop_duplicates("event_ticker").to_dict("records"):
+            _, fe = match_event(lg, r, fl)
+            if not fe.empty:
+                cands.add(pd.to_datetime(fe["commence_utc"], utc=True).min())
+        if len(cands) != 1:
+            continue                                   # no match or disagreement -> leave it (strict)
+        c, k0 = cands.pop(), ko[idx].min()
+        if not (k0 + PLACEHOLDER_MIN_GAP <= c <= k0 + KICKOFF_TOL_WIDE):
+            continue
+        allrows = keys.index[keys == gk]
+        df.loc[allrows, "kickoff_utc"] = c.strftime("%Y-%m-%dT%H:%M:%SZ")
+        df.loc[allrows, "kickoff_ct"] = to_ct(c.strftime("%Y-%m-%dT%H:%M:%SZ"))
+        df.loc[allrows, "phase"] = "live" if snap >= c else ("pregame" if c - snap >= lead else "unknown")
+        df.loc[allrows, "kickoff_source"] = "sharp commence (Kalshi placeholder)"
+    return df
+
+
 def odds_too_old(snapshot_ts, odds_fetched_ts, kickoff_utc) -> bool:
     """True when the sharp line is too stale to trust for this snapshot."""
     try:

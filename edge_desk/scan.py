@@ -265,6 +265,10 @@ def run_sharp(df: pd.DataFrame, ts: str | None, lost: float | None = None, leagu
     lost = lost_today() if lost is None else lost
     out = {"status": {}, "live": [], "shadow": [], "fairs": {}}
     lines = odds.load_lines()
+    try:
+        df = sharp.fix_placeholder_kickoffs(df, lines, ts)      # #72
+    except Exception as e:  # noqa: BLE001 - never lose SHARP over this
+        out["status"]["placeholder_kickoffs"] = f"error: {e}"
     for lg in leagues:
         try:
             flags, status = sharp.sharp_flags(df, lines, sharp.history(lg), ts, lost_today=lost, league=lg)
