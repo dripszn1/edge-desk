@@ -1,20 +1,20 @@
 {
-  "generated_ts": "2026-11-19T01:56:06Z",
-  "generated_ct": "Wed Nov 18, 7:56 PM CT",
+  "generated_ts": "2026-11-19T02:14:14Z",
+  "generated_ct": "Wed Nov 18, 8:14 PM CT",
   "today_ct": "2026-11-18",
   "snapshot": {
-    "ts": "2026-11-19T01:51:50Z",
-    "ct": "Wed Nov 18, 7:51 PM CT",
+    "ts": "2026-11-19T02:07:10Z",
+    "ct": "Wed Nov 18, 8:07 PM CT",
     "stale": false,
-    "markets_scanned": 5429,
+    "markets_scanned": 5510,
     "kickoff_source": "kalshi occurrence_datetime - 3h",
     "phases": {
       "CFB": {
-        "live": 107,
-        "pregame": 4675
+        "live": 110,
+        "pregame": 4709
       },
       "NFL": {
-        "pregame": 647
+        "pregame": 691
       }
     }
   },
@@ -62,7 +62,7 @@
     "max_bet": 10.0
   },
   "signals": {
-    "weekly_ct": "Wed Nov 18, 7:54 PM CT",
+    "weekly_ct": "Wed Nov 18, 8:09 PM CT",
     "scorecards": [
       {
         "name": "SHARP shadow football",
@@ -215,7 +215,7 @@
           "events": 55,
           "t_by_event": -5.08,
           "stale": 0,
-          "pending": 186,
+          "pending": 187,
           "no_close": 1
         }
       }
@@ -317,20 +317,6 @@
       }
     },
     "open_alerts": [
-      {
-        "ticker": "KXNCAAFSPREAD-26NOV18AKRMASS-MASS3",
-        "signal": "SHARP",
-        "side": "NO",
-        "game": "Akron vs UMass: Spread",
-        "contract": "UMass wins by over 2.5 points",
-        "max_price": 0.43,
-        "stake": 2.24,
-        "gone": true,
-        "sent_ct": "Wed Nov 18, 11:30 AM CT",
-        "kickoff_utc": "2026-11-18T20:00:00Z",
-        "kickoff_ct": "Wed Nov 18, 2:00 PM CT",
-        "kalshi_url": "https://kalshi.com/markets/kxncaafspread/event/kxncaafspread-26nov18akrmass"
-      },
       {
         "ticker": "KXNFLSPREAD-26NOV19INDHOU-HOU10",
         "signal": "SHARP",
