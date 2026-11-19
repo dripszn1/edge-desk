@@ -1,16 +1,16 @@
 {
-  "generated_ts": "2026-11-19T02:26:31Z",
-  "generated_ct": "Wed Nov 18, 8:26 PM CT",
+  "generated_ts": "2026-11-19T02:41:44Z",
+  "generated_ct": "Wed Nov 18, 8:41 PM CT",
   "today_ct": "2026-11-18",
   "snapshot": {
-    "ts": "2026-11-19T02:22:18Z",
-    "ct": "Wed Nov 18, 8:22 PM CT",
+    "ts": "2026-11-19T02:37:34Z",
+    "ct": "Wed Nov 18, 8:37 PM CT",
     "stale": false,
-    "markets_scanned": 5511,
+    "markets_scanned": 5512,
     "kickoff_source": "kalshi occurrence_datetime - 3h",
     "phases": {
       "CFB": {
-        "live": 111,
+        "live": 112,
         "pregame": 4709
       },
       "NFL": {
@@ -62,7 +62,7 @@
     "max_bet": 10.0
   },
   "signals": {
-    "weekly_ct": "Wed Nov 18, 8:24 PM CT",
+    "weekly_ct": "Wed Nov 18, 8:39 PM CT",
     "scorecards": [
       {
         "name": "SHARP shadow football",
@@ -521,7 +521,7 @@
         "contract": "Texas St. wins by over 13.5 points",
         "max_price": 0.53,
         "stake": 3.77,
-        "gone": false,
+        "gone": true,
         "sent_ct": "Wed Nov 18, 4:45 AM CT",
         "kickoff_utc": "2026-11-21T23:00:00Z",
         "kickoff_ct": "Sat Nov 21, 5:00 PM CT",
