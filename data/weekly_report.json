@@ -1,7 +1,7 @@
 {
   "proposals": [],
-  "generated_utc": "2026-11-19T01:39:00Z",
-  "generated_ct": "Wed Nov 18, 7:39 PM CT",
+  "generated_utc": "2026-11-19T01:54:20Z",
+  "generated_ct": "Wed Nov 18, 7:54 PM CT",
   "paper_mode": true,
   "rules": {
     "min_bets": 30,
@@ -1950,11 +1950,11 @@
   "stream": {
     "note": "instant paper trades from the Kalshi stream; kept apart from the alert scorecards",
     "maker": {
-      "quotes": 20,
+      "quotes": 21,
       "fills": 2,
-      "fill_rate_pct": 10.0
+      "fill_rate_pct": 9.5
     },
-    "median_latency_ms": 557,
+    "median_latency_ms": 541,
     "NFL": {
       "plays": 24,
       "settled": 16,
@@ -2000,7 +2000,7 @@
       }
     },
     "CFB": {
-      "plays": 26,
+      "plays": 27,
       "settled": 4,
       "hold_pnl_usd": -42.06,
       "hold_record": "0-4",
@@ -2013,7 +2013,7 @@
         "events": 2,
         "t_by_event": -4.52,
         "stale": 0,
-        "pending": 21,
+        "pending": 22,
         "no_close": 0
       },
       "exits": {
@@ -2056,14 +2056,14 @@
     "by_k": {
       "1": {
         "CFB": {
-          "fills": 232,
-          "contracts": 2320,
+          "fills": 233,
+          "contracts": 2330,
           "paired_contracts": 50,
-          "tickers": 149,
+          "tickers": 150,
           "games": 78,
-          "fees_usd": 11.5,
-          "pnl_usd": -61.3,
-          "t_by_game": -5.91,
+          "fees_usd": 11.55,
+          "pnl_usd": -60.95,
+          "t_by_game": -5.92,
           "settled_fills": 3,
           "settled_pnl_usd": 17.25,
           "adverse_c": -1.94,
@@ -2092,8 +2092,8 @@
           "tickers": 61,
           "games": 36,
           "fees_usd": 4.5,
-          "pnl_usd": -23.75,
-          "t_by_game": -4.06,
+          "pnl_usd": -23.4,
+          "t_by_game": -3.97,
           "settled_fills": 1,
           "settled_pnl_usd": 6.15,
           "adverse_c": -1.92,
@@ -2122,8 +2122,8 @@
           "tickers": 28,
           "games": 20,
           "fees_usd": 2.65,
-          "pnl_usd": -18.35,
-          "t_by_game": -3.98,
+          "pnl_usd": -18.3,
+          "t_by_game": -3.97,
           "settled_fills": 4,
           "settled_pnl_usd": 24.4,
           "adverse_c": -2.4,
