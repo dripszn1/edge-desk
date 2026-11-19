@@ -1,10 +1,10 @@
 {
-  "generated_ts": "2026-11-19T19:18:01Z",
-  "generated_ct": "Thu Nov 19, 1:18 PM CT",
+  "generated_ts": "2026-11-19T19:43:37Z",
+  "generated_ct": "Thu Nov 19, 1:43 PM CT",
   "today_ct": "2026-11-19",
   "snapshot": {
-    "ts": "2026-11-19T19:10:49Z",
-    "ct": "Thu Nov 19, 1:10 PM CT",
+    "ts": "2026-11-19T19:40:43Z",
+    "ct": "Thu Nov 19, 1:40 PM CT",
     "stale": false,
     "markets_scanned": 5446,
     "kickoff_source": "kalshi occurrence_datetime - 3h",
@@ -61,7 +61,7 @@
     "max_bet": 10.0
   },
   "signals": {
-    "weekly_ct": "Thu Nov 19, 1:13 PM CT",
+    "weekly_ct": "Thu Nov 19, 1:42 PM CT",
     "scorecards": [
       {
         "name": "SHARP shadow football",
@@ -317,20 +317,6 @@
     },
     "open_alerts": [
       {
-        "ticker": "KXNFLSPREAD-26NOV19INDHOU-HOU15",
-        "signal": "SHARP",
-        "side": "YES",
-        "game": "Indianapolis vs Houston: Spread",
-        "contract": "Houston wins by over 14.5 points",
-        "max_price": 0.4,
-        "stake": 2.51,
-        "gone": true,
-        "sent_ct": "Mon Nov 16, 1:39 PM CT",
-        "kickoff_utc": "2026-11-20T01:15:00Z",
-        "kickoff_ct": "Thu Nov 19, 7:15 PM CT",
-        "kalshi_url": "https://kalshi.com/markets/kxnflspread/event/kxnflspread-26nov19indhou"
-      },
-      {
         "ticker": "KXNCAAFSPREAD-26NOV21ECUARMY-ARMY4",
         "signal": "SHARP",
         "side": "NO",
@@ -366,7 +352,7 @@
         "contract": "Penn St. wins by over 23.5 points",
         "max_price": 0.45,
         "stake": 3.28,
-        "gone": false,
+        "gone": true,
         "sent_ct": "Wed Nov 18, 5:42 PM CT",
         "kickoff_utc": "2026-11-21T20:00:00Z",
         "kickoff_ct": "Sat Nov 21, 2:00 PM CT",
