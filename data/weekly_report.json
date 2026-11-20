@@ -2,8 +2,8 @@
   "proposals": [
     "PROPOSE football: plays priced on a 10-30 min old sharp line lose -2.16c to Kalshi's close (t -4.88 by game, 32 plays): alert only within 10 min of a fresh sharp pull"
   ],
-  "generated_utc": "2026-11-20T02:06:56Z",
-  "generated_ct": "Thu Nov 19, 8:06 PM CT",
+  "generated_utc": "2026-11-20T02:21:57Z",
+  "generated_ct": "Thu Nov 19, 8:21 PM CT",
   "paper_mode": true,
   "rules": {
     "min_bets": 30,
@@ -1899,7 +1899,7 @@
           "label": "MANUAL-OK",
           "closed": 277,
           "pending": 234,
-          "closed_early_not_counted": 12,
+          "closed_early_not_counted": 13,
           "pnl_usd": -36.57,
           "avg_c": -1.14,
           "win_pct": 66.1,
@@ -1911,7 +1911,7 @@
           "label": "MANUAL-OK",
           "closed": 277,
           "pending": 234,
-          "closed_early_not_counted": 6,
+          "closed_early_not_counted": 8,
           "pnl_usd": -16.27,
           "avg_c": -0.25,
           "win_pct": 59.6,
@@ -2074,8 +2074,8 @@
           "tickers": 189,
           "games": 91,
           "fees_usd": 14.1,
-          "pnl_usd": -74.75,
-          "t_by_game": -6.39,
+          "pnl_usd": -75.0,
+          "t_by_game": -6.38,
           "settled_fills": 12,
           "settled_pnl_usd": 60.2,
           "adverse_c": -1.89,
@@ -2163,9 +2163,9 @@
     "football": {
       "MAKER_BID": {
         "plays": 456,
-        "decided": 289,
-        "filled": 109,
-        "fill_rate_pct": 37.7,
+        "decided": 290,
+        "filled": 110,
+        "fill_rate_pct": 37.9,
         "clv": {
           "n": 73,
           "games": 23,
@@ -2261,9 +2261,9 @@
     "NFL": {
       "MAKER_BID": {
         "plays": 130,
-        "decided": 79,
-        "filled": 41,
-        "fill_rate_pct": 51.9,
+        "decided": 80,
+        "filled": 42,
+        "fill_rate_pct": 52.5,
         "clv": {
           "n": 29,
           "games": 5,
