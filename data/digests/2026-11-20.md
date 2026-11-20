@@ -1,8 +1,9 @@
-# edge-desk digest, Fri Nov 20, 5:19 PM CT
+# edge-desk digest, Fri Nov 20, 5:35 PM CT
 
 **PROPOSE football: plays priced on a 10-30 min old sharp line lose -2.16c to Kalshi's close (t -4.88 by game, 32 plays): alert only within 10 min of a fresh sharp pull** (Emerson decides; caps unchanged)
 
 Paper only, nothing is placed. Plays kicking off in the next 36h:
+- SHARP shadow: Tennessee Tech vs Mississippi St. | YES Mississippi St. wins by over 33.5 points @ 46¢, fair 53¢, edge 4.8¢ after fees | $4.30 paper | Sat Nov 21, 12:00 PM CT | [Kalshi](https://kalshi.com/markets/kxncaafspread/event/kxncaafspread-26nov21tntcmsst)
 - SHARP shadow: Chattanooga vs Alabama | YES Over 59.5 points @ 41¢, fair 48¢, edge 4.8¢ after fees | $3.85 paper | Sat Nov 21, 1:00 PM CT | [Kalshi](https://kalshi.com/markets/kxncaaftotal/event/kxncaaftotal-26nov21chatala)
 - SHARP shadow: Arkansas St. vs Louisiana Tech | NO Over 50.5 points @ 39¢, fair 44¢, edge 3.1¢ after fees | $2.04 paper | Sat Nov 21, 6:00 PM CT | [Kalshi](https://kalshi.com/markets/kxncaaftotal/event/kxncaaftotal-26nov21arstlt)
 
@@ -16,8 +17,8 @@ Settled in the last 24h:
   vs Kalshi close after fee: shadow CBB -3.0c (0% of 4, 4 games) · shadow football -1.2c (27% of 85, 41 games) · held back CBB -2.4c (11% of 137, 26 games) · held back football -1.3c (30% of 257, 57 games)
   exits compared: football (291 done): hold $-68.41, sell at tip $-86.03, auto-sell at fair $-35.13, auto-sell +10c $-26.64 · CBB (145 done): hold $+8.87, sell at tip $-70.31, auto-sell at fair $-92.74, auto-sell +10c $-66.25
   picks vs random entries, $/play: football (289 plays): hold $-0.22 vs $-0.48 (beats 92%), auto-sell +10c $-0.45 vs $-0.75 (beats 100%) · CBB (139 plays): hold $-0.09 vs $-0.06 (beats 46%), auto-sell +10c $-1.03 vs $-0.82 (beats 15%)
-  limit-order entries (paper): NFL: 44/82 filled, vs close -1.0c, hold $+28.43, auto-sell +10c $+14.76 (29 done) · CFB: 83/225 filled, vs close -0.8c, hold $+24.23, auto-sell +10c $+4.94 (44 done)
+  limit-order entries (paper): NFL: 44/82 filled, vs close -1.0c, hold $+28.43, auto-sell +10c $+14.76 (29 done) · CFB: 85/227 filled, vs close -0.8c, hold $+24.23, auto-sell +10c $+4.94 (44 done)
   instant (stream) paper trades: NFL 24 plays, vs close -2.4c (20, 8 games), hold $-116.43, auto-sell at fair $-60.76 (20 done) · CFB 38 plays, vs close -1.6c (5, 2 games), hold $-29.35, auto-sell at fair $+15.92 (5 done) · median 475 ms
   market-making paper: CFB ±1c 291 fills/93 games $-75.95 t -6.4, after-fill -1.9c · NFL ±1c 153 fills/38 games $-32.51 t -3.0, after-fill -1.8c · CFB ±2c 129 fills/46 games $-33.65 t -3.9, after-fill -1.8c · NFL ±2c 99 fills/20 games $-20.63 t -2.7, after-fill -1.7c · CFB ±3c 71 fills/24 games $-21.35 t -3.5, after-fill -2.2c · NFL ±3c 35 fills/10 games $-6.73 t -1.5, after-fill -1.6c
 
-Status: Kalshi data 4m old (ok); sharp odds 5m old; odds credits left 17483 of 20000; gates: MODEL NFL closed, MODEL CFB closed, SHARP NFL closed, SHARP CFB closed, SHARP NFL ML closed, SHARP CFB ML closed
+Status: Kalshi data 4m old (ok); sharp odds 5m old; odds credits left 17474 of 20000; gates: MODEL NFL closed, MODEL CFB closed, SHARP NFL closed, SHARP CFB closed, SHARP NFL ML closed, SHARP CFB ML closed

@@ -1,10 +1,10 @@
 {
-  "generated_ts": "2026-11-20T23:19:54Z",
-  "generated_ct": "Fri Nov 20, 5:19 PM CT",
+  "generated_ts": "2026-11-20T23:35:04Z",
+  "generated_ct": "Fri Nov 20, 5:35 PM CT",
   "today_ct": "2026-11-20",
   "snapshot": {
-    "ts": "2026-11-20T23:15:55Z",
-    "ct": "Fri Nov 20, 5:15 PM CT",
+    "ts": "2026-11-20T23:30:59Z",
+    "ct": "Fri Nov 20, 5:30 PM CT",
     "stale": false,
     "markets_scanned": 5842,
     "kickoff_source": "kalshi occurrence_datetime - 3h",
@@ -62,7 +62,7 @@
     "max_bet": 10.0
   },
   "signals": {
-    "weekly_ct": "Fri Nov 20, 5:18 PM CT",
+    "weekly_ct": "Fri Nov 20, 5:33 PM CT",
     "scorecards": [
       {
         "name": "SHARP shadow football",
@@ -189,7 +189,7 @@
           "events": 41,
           "t_by_event": -0.68,
           "stale": 0,
-          "pending": 20,
+          "pending": 21,
           "no_close": 0
         }
       },
@@ -215,7 +215,7 @@
           "events": 57,
           "t_by_event": -5.21,
           "stale": 0,
-          "pending": 264,
+          "pending": 265,
           "no_close": 1
         }
       }
@@ -330,6 +330,20 @@
         "kickoff_utc": "2026-11-21T17:00:00Z",
         "kickoff_ct": "Sat Nov 21, 11:00 AM CT",
         "kalshi_url": "https://kalshi.com/markets/kxncaafspread/event/kxncaafspread-26nov21ecuarmy"
+      },
+      {
+        "ticker": "KXNCAAFSPREAD-26NOV21TNTCMSST-MSST34",
+        "signal": "SHARP",
+        "side": "YES",
+        "game": "Tennessee Tech vs Mississippi St.: Spread",
+        "contract": "Mississippi St. wins by over 33.5 points",
+        "max_price": 0.47,
+        "stake": 4.3,
+        "gone": false,
+        "sent_ct": "Fri Nov 20, 5:31 PM CT",
+        "kickoff_utc": "2026-11-21T18:00:00Z",
+        "kickoff_ct": "Sat Nov 21, 12:00 PM CT",
+        "kalshi_url": "https://kalshi.com/markets/kxncaafspread/event/kxncaafspread-26nov21tntcmsst"
       },
       {
         "ticker": "KXNCAAFTOTAL-26NOV21CHATALA-60",
