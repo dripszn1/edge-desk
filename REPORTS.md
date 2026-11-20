@@ -1,5 +1,12 @@
 # Reports (newest first)
 
+## 2026-11-20 (builder, 01:45Z run)
+- Nothing to build: backlog #1–#72 all done; nothing broken (live 143 running through TNF, checkpoints every 15 min to 01:34Z, 2,580 fast ticks, 0 throttled; collect 200–202 green, stand-down while live; keeper 66 active; automerge #81 green; settlement 370 pending / 0 overdue; no report errors; 0 proposals; no data file over 40 MB). Nothing shipped, nothing to merge.
+- Tests: 522/522 green on dev rebased onto main.
+- Honest results (football, 1 shadow win +$2.76, 5 held-back losses −$9.46 in 24h): picks vs Kalshi's close after fee: alerted −1.2¢ (85 plays, 41 games), held back −1.3¢ (257, 57 games). Exits (277 done): hold −$68.20, sell at tip −$84.06, Auto Sell at fair −$38.14, Auto Sell +10¢ −$36.57 (best); bracket API-only. Odds credits 17,606 of 20,000 left. TNF: no plays in the digest.
+- Verdict rules: thresholds met since read #1; rule 2 (no exit with P&L > 0) and the held-back half of rule 1 (no edge) read the same. Not acted on.
+- Watchdog: live run in progress → dispatched nothing (gh api still refused on dripszn1/edge-desk; used the GitHub tools). Needs Emerson: nothing.
+
 ## 2026-11-19 (builder, 22:45Z run)
 - Nothing to build: backlog #1–#72 all done; nothing broken (live 143 running for TNF, checkpoints every 15 min to 22:30Z, 667 fast ticks, 0 throttled; collect 197–202 green, stand-down while live; automerge #80 green; settlement 349 pending / 0 overdue; no report errors; 0 proposals; no data file over 40 MB). Nothing shipped, nothing to merge.
 - Tests: 522/522 green on dev rebased onto main.
