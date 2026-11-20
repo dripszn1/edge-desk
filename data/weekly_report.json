@@ -2,8 +2,8 @@
   "proposals": [
     "PROPOSE football: plays priced on a 10-30 min old sharp line lose -2.16c to Kalshi's close (t -4.88 by game, 32 plays): alert only within 10 min of a fresh sharp pull"
   ],
-  "generated_utc": "2026-11-20T02:36:59Z",
-  "generated_ct": "Thu Nov 19, 8:36 PM CT",
+  "generated_utc": "2026-11-20T02:48:32Z",
+  "generated_ct": "Thu Nov 19, 8:48 PM CT",
   "paper_mode": true,
   "rules": {
     "min_bets": 30,
@@ -2068,14 +2068,14 @@
     "by_k": {
       "1": {
         "CFB": {
-          "fills": 284,
-          "contracts": 2840,
+          "fills": 286,
+          "contracts": 2860,
           "paired_contracts": 50,
-          "tickers": 189,
+          "tickers": 190,
           "games": 91,
-          "fees_usd": 14.1,
-          "pnl_usd": -74.4,
-          "t_by_game": -6.36,
+          "fees_usd": 14.2,
+          "pnl_usd": -75.2,
+          "t_by_game": -6.38,
           "settled_fills": 12,
           "settled_pnl_usd": 60.2,
           "adverse_c": -1.89,
@@ -2088,8 +2088,8 @@
           "tickers": 98,
           "games": 38,
           "fees_usd": 7.11,
-          "pnl_usd": -32.71,
-          "t_by_game": -3.0,
+          "pnl_usd": -32.61,
+          "t_by_game": -2.98,
           "settled_fills": 43,
           "settled_pnl_usd": -23.91,
           "adverse_c": -1.75,
@@ -2104,8 +2104,8 @@
           "tickers": 77,
           "games": 44,
           "fees_usd": 6.25,
-          "pnl_usd": -32.75,
-          "t_by_game": -3.84,
+          "pnl_usd": -32.7,
+          "t_by_game": -3.85,
           "settled_fills": 12,
           "settled_pnl_usd": 62.7,
           "adverse_c": -1.82,
@@ -2128,17 +2128,17 @@
       },
       "3": {
         "CFB": {
-          "fills": 69,
-          "contracts": 690,
+          "fills": 71,
+          "contracts": 710,
           "paired_contracts": 0,
           "tickers": 34,
           "games": 24,
-          "fees_usd": 3.45,
-          "pnl_usd": -21.25,
-          "t_by_game": -3.45,
+          "fees_usd": 3.55,
+          "pnl_usd": -21.5,
+          "t_by_game": -3.52,
           "settled_fills": 5,
           "settled_pnl_usd": 29.15,
-          "adverse_c": -2.23,
+          "adverse_c": -2.21,
           "max_exposure_usd": 57.5
         },
         "NFL": {
