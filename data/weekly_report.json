@@ -2,8 +2,8 @@
   "proposals": [
     "PROPOSE football: plays priced on a 10-30 min old sharp line lose -2.16c to Kalshi's close (t -4.88 by game, 32 plays): alert only within 10 min of a fresh sharp pull"
   ],
-  "generated_utc": "2026-11-20T23:33:10Z",
-  "generated_ct": "Fri Nov 20, 5:33 PM CT",
+  "generated_utc": "2026-11-20T23:48:23Z",
+  "generated_ct": "Fri Nov 20, 5:48 PM CT",
   "paper_mode": true,
   "rules": {
     "min_bets": 30,
@@ -1575,21 +1575,21 @@
       }
     },
     "football": {
-      "plays": 550,
+      "plays": 557,
       "line_checked": 291,
       "adverse_pct": 58.4,
       "avg_line_move_fav": -0.74,
-      "median_pull_age_min": 27.6,
+      "median_pull_age_min": 22.0,
       "kalshi_first": {
         "False": {
-          "plays": 288,
+          "plays": 294,
           "with_close": 169,
           "avg_clv_c": -1.3,
           "games": 52,
           "t_by_game": -0.83
         },
         "True": {
-          "plays": 120,
+          "plays": 121,
           "with_close": 45,
           "avg_clv_c": -1.92,
           "games": 23,
@@ -1598,7 +1598,7 @@
       },
       "by_pull_age": {
         "0-10 min": {
-          "plays": 245,
+          "plays": 252,
           "with_close": 123,
           "avg_clv_c": -1.03,
           "games": 52,
@@ -2470,7 +2470,7 @@
   "baseline": {
     "method": "placebo = other rungs/sides of the same game and series at the same snapshot, ask within 10c, same contracts and fees; snapshot paths only for both",
     "football": {
-      "plays": 550,
+      "plays": 557,
       "closed": 289,
       "games": 60,
       "no_placebo": 2,
