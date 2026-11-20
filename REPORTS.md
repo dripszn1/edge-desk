@@ -1,5 +1,12 @@
 # Reports (newest first)
 
+## 2026-11-20 (builder, 13:45Z run)
+- Shipped #73 (auto-merged 13:47Z): collect 208 (scheduled 10:46Z) queued behind the dispatched 207, checked out the old trigger-time commit, missed 207's fresh snapshot and failed on data conflicts. collect.yml now checks out the branch tip, so a queued run stands down instead. No data lost beyond that one duplicate run.
+- Tests: 523/523 green (1 new workflow test).
+- Honest results (football, no new settlements since 07:51Z): picks vs Kalshi's close after fee still negative (alerted −1.2¢, 85 plays/41 games; held back −1.3¢, 257/57). Exits: hold −$68.41, sell at tip −$86.03, Auto Sell at fair −$35.13, Auto Sell +10¢ −$26.64 (best); bracket API-only. One shadow play on Saturday's slate (ARST/LT NO Over 50.5 @ 39¢).
+- Verdict rules: thresholds met since read #1; rule 2 (no exit with P&L > 0) and the held-back half of rule 1 (no edge) read the same. Not acted on.
+- Watchdog: no live run, newest collect 47 min old → dispatched collect.yml and live.yml on main. Needs Emerson: the open proposal "alert only within 10 min of a fresh sharp pull" (football 10–30 min pulls −2.16¢, t −4.88, 32 plays); not changed.
+
 ## 2026-11-20 (builder, 10:45Z run)
 - Nothing to build: backlog #1–#72 all done; nothing broken (collect 205–206 and live 149 green, keeper 69 active, automerge #84 green, settlement 350 pending / 0 overdue, no report errors). Nothing shipped, nothing to merge.
 - Tests: 522/522 green on dev rebased onto main.
