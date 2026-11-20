@@ -24,6 +24,8 @@ jobs:
     timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}   # branch tip at job start, not the trigger-time sha (#73: queued runs)
       - name: Freshness guard (scheduled runs skip if the latest snapshot is < 20 min old; any run skips while a live run is saving data, #32)
         id: fresh
         env:

@@ -36,3 +36,15 @@ def test_automerge_installs_merged_requirements_before_tests():
     step = (WF / "automerge.yml").read_text()
     body = step.split("git merge --no-ff", 1)[1]
     assert "pip install" in body.split("python -m pytest", 1)[0]
+
+
+def test_collect_checks_out_branch_tip_not_trigger_sha():
+    """11-20 (#73): collect 208 was queued behind 207 (concurrency group). Default checkout = the trigger-time sha, so
+    it read the 07:51Z snapshot as 'latest', ran a full collect on top of 207's push and failed on data conflicts.
+    Checking out the branch tip lets the freshness guard see the snapshot the run before it just pushed."""
+    doc = yaml.load((WF / "collect.yml").read_text(), Loader=_NoDupLoader)
+    steps = doc["jobs"]["run"]["steps"]
+    co = steps[0]
+    assert co["uses"].startswith("actions/checkout")
+    assert "github.ref" in str((co.get("with") or {}).get("ref", "")), "collect must check out the branch tip"
+    assert steps[1].get("id") == "fresh", "freshness guard must run right after checkout"
