@@ -2,8 +2,8 @@
   "proposals": [
     "PROPOSE football: plays priced on a 10-30 min old sharp line lose -2.16c to Kalshi's close (t -4.88 by game, 32 plays): alert only within 10 min of a fresh sharp pull"
   ],
-  "generated_utc": "2026-11-20T17:25:04Z",
-  "generated_ct": "Fri Nov 20, 11:25 AM CT",
+  "generated_utc": "2026-11-20T17:56:17Z",
+  "generated_ct": "Fri Nov 20, 11:56 AM CT",
   "paper_mode": true,
   "rules": {
     "min_bets": 30,
@@ -1575,7 +1575,7 @@
       }
     },
     "football": {
-      "plays": 526,
+      "plays": 528,
       "line_checked": 291,
       "adverse_pct": 58.4,
       "avg_line_move_fav": -0.74,
@@ -1598,7 +1598,7 @@
       },
       "by_pull_age": {
         "0-10 min": {
-          "plays": 227,
+          "plays": 228,
           "with_close": 123,
           "avg_clv_c": -1.03,
           "games": 52,
@@ -1619,7 +1619,7 @@
           "t_by_game": -4.05
         },
         "90+ min": {
-          "plays": 99,
+          "plays": 100,
           "with_close": 73,
           "avg_clv_c": -0.85,
           "games": 20,
@@ -2175,9 +2175,9 @@
     "football": {
       "MAKER_BID": {
         "plays": 473,
-        "decided": 297,
-        "filled": 117,
-        "fill_rate_pct": 39.4,
+        "decided": 298,
+        "filled": 118,
+        "fill_rate_pct": 39.6,
         "clv": {
           "n": 73,
           "games": 23,
@@ -2273,9 +2273,9 @@
     "NFL": {
       "MAKER_BID": {
         "plays": 134,
-        "decided": 80,
-        "filled": 42,
-        "fill_rate_pct": 52.5,
+        "decided": 81,
+        "filled": 43,
+        "fill_rate_pct": 53.1,
         "clv": {
           "n": 29,
           "games": 5,
@@ -2470,7 +2470,7 @@
   "baseline": {
     "method": "placebo = other rungs/sides of the same game and series at the same snapshot, ask within 10c, same contracts and fees; snapshot paths only for both",
     "football": {
-      "plays": 526,
+      "plays": 528,
       "closed": 289,
       "games": 60,
       "no_placebo": 2,
