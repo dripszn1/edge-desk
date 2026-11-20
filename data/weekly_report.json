@@ -2,8 +2,8 @@
   "proposals": [
     "PROPOSE football: plays priced on a 10-30 min old sharp line lose -2.16c to Kalshi's close (t -4.88 by game, 32 plays): alert only within 10 min of a fresh sharp pull"
   ],
-  "generated_utc": "2026-11-20T14:50:24Z",
-  "generated_ct": "Fri Nov 20, 8:50 AM CT",
+  "generated_utc": "2026-11-20T15:21:56Z",
+  "generated_ct": "Fri Nov 20, 9:21 AM CT",
   "paper_mode": true,
   "rules": {
     "min_bets": 30,
@@ -337,7 +337,7 @@
     "propose_widen": []
   },
   "settlement": {
-    "pending": 362,
+    "pending": 363,
     "overdue": 0,
     "no_kickoff": 0,
     "grace_hours": 12,
@@ -403,13 +403,13 @@
         "SPREAD": {
           "cap_pts": 10.5,
           "sd": 13.09,
-          "games": 4780,
+          "games": 4781,
           "cap_sd": 0.802
         },
         "TOTAL": {
           "cap_pts": 10.5,
           "sd": 13.24,
-          "games": 4780,
+          "games": 4781,
           "cap_sd": 0.793
         }
       },
@@ -1575,21 +1575,21 @@
       }
     },
     "football": {
-      "plays": 522,
+      "plays": 524,
       "line_checked": 291,
       "adverse_pct": 58.4,
       "avg_line_move_fav": -0.74,
       "median_pull_age_min": 28.2,
       "kalshi_first": {
         "False": {
-          "plays": 267,
+          "plays": 268,
           "with_close": 169,
           "avg_clv_c": -1.3,
           "games": 52,
           "t_by_game": -0.83
         },
         "True": {
-          "plays": 116,
+          "plays": 117,
           "with_close": 45,
           "avg_clv_c": -1.92,
           "games": 23,
@@ -1612,7 +1612,7 @@
           "t_by_game": -4.88
         },
         "30-90 min": {
-          "plays": 140,
+          "plays": 142,
           "with_close": 62,
           "avg_clv_c": -1.78,
           "games": 29,
@@ -2175,9 +2175,9 @@
     "football": {
       "MAKER_BID": {
         "plays": 469,
-        "decided": 294,
-        "filled": 114,
-        "fill_rate_pct": 38.8,
+        "decided": 295,
+        "filled": 115,
+        "fill_rate_pct": 39.0,
         "clv": {
           "n": 73,
           "games": 23,
@@ -2371,9 +2371,9 @@
     "CFB": {
       "MAKER_BID": {
         "plays": 337,
-        "decided": 214,
-        "filled": 72,
-        "fill_rate_pct": 33.6,
+        "decided": 215,
+        "filled": 73,
+        "fill_rate_pct": 34.0,
         "clv": {
           "n": 44,
           "games": 18,
@@ -2470,7 +2470,7 @@
   "baseline": {
     "method": "placebo = other rungs/sides of the same game and series at the same snapshot, ask within 10c, same contracts and fees; snapshot paths only for both",
     "football": {
-      "plays": 522,
+      "plays": 524,
       "closed": 289,
       "games": 60,
       "no_placebo": 2,
