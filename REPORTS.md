@@ -1,5 +1,12 @@
 # Reports (newest first)
 
+## 2026-11-20 (builder, 10:45Z run)
+- Nothing to build: backlog #1–#72 all done; nothing broken (collect 205–206 and live 149 green, keeper 69 active, automerge #84 green, settlement 350 pending / 0 overdue, no report errors). Nothing shipped, nothing to merge.
+- Tests: 522/522 green on dev rebased onto main.
+- Honest results (football, no new data since the 07:51Z snapshot): picks vs Kalshi's close after fee still negative (alerted −1.2¢, held back −1.3¢); best exit Auto Sell +10¢ −$26.64, hold −$68.41, sell at tip −$86.03; bracket API-only.
+- Verdict rules: thresholds met since read #1; rule 2 (no exit with P&L > 0) and the held-back half of rule 1 (no edge) read the same. Not acted on.
+- Watchdog: no live run, newest collect 3h old → dispatched collect.yml and live.yml on main. Needs Emerson: the open proposal "alert only within 10 min of a fresh sharp pull" (football 10–30 min pulls −2.16¢ vs close, t −4.88, 32 plays); not changed.
+
 ## 2026-11-20 (builder, 07:45Z run)
 - Nothing to build: backlog #1–#72 all done; nothing broken (live 145 ended at window end 05:35Z, 166 min, 1,102 fast ticks, 0 throttled; collect 203–205 green; keeper 68 active; automerge #83 green; settlement 348 pending / 0 overdue; no report errors). The 05:35→07:44Z collect gap is the overnight off-hours by design. Nothing shipped, nothing to merge.
 - Tests: 522/522 green on dev rebased onto main.
