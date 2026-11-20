@@ -1,5 +1,12 @@
 # Reports (newest first)
 
+## 2026-11-20 (builder, 04:45Z run)
+- Nothing to build: backlog #1–#72 all done; nothing broken (live 145 running for TNF, checkpoints every 15 min to 04:23Z, 666 fast ticks, 0 throttled; collect 203–204 green, stand-down while live; keeper 68 active; automerge #82 green; settlement 347 pending / 0 overdue; no report errors; no data file over 40 MB). Nothing shipped, nothing to merge.
+- Tests: 522/522 green on dev rebased onto main.
+- Honest results (football, 24h: shadow 1-3 −$5.97, held back 6-8 −$0.21): picks vs Kalshi's close after fee: alerted −1.2¢ (85 plays, 41 games), held back −1.3¢ (257, 57 games). Exits (291 done): hold −$68.41, sell at tip −$86.03, Auto Sell at fair −$35.13, Auto Sell +10¢ −$26.64 (best); bracket API-only. Odds credits 17,600 of 20,000 left.
+- Verdict rules: thresholds met since read #1; rule 2 (no exit with P&L > 0) and the held-back half of rule 1 (no edge) read the same. Not acted on.
+- Needs Emerson: NEW proposal (#48 pick-off check): football plays priced on a 10–30 min old sharp line lose −2.16¢ to Kalshi's close (t −4.88 by game, 32 plays) → "alert only within 10 min of a fresh sharp pull" (now 30). Not changed. Watchdog: live run in progress → dispatched nothing.
+
 ## 2026-11-20 (builder, 01:45Z run)
 - Nothing to build: backlog #1–#72 all done; nothing broken (live 143 running through TNF, checkpoints every 15 min to 01:34Z, 2,580 fast ticks, 0 throttled; collect 200–202 green, stand-down while live; keeper 66 active; automerge #81 green; settlement 370 pending / 0 overdue; no report errors; 0 proposals; no data file over 40 MB). Nothing shipped, nothing to merge.
 - Tests: 522/522 green on dev rebased onto main.
