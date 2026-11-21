@@ -1,16 +1,17 @@
 {
-  "generated_ts": "2026-11-20T22:34:32Z",
-  "generated_ct": "Fri Nov 20, 4:34 PM CT",
+  "generated_ts": "2026-11-21T01:06:28Z",
+  "generated_ct": "Fri Nov 20, 7:06 PM CT",
   "today_ct": "2026-11-20",
   "snapshot": {
-    "ts": "2026-11-20T22:30:32Z",
-    "ct": "Fri Nov 20, 4:30 PM CT",
+    "ts": "2026-11-21T01:02:19Z",
+    "ct": "Fri Nov 20, 7:02 PM CT",
     "stale": false,
-    "markets_scanned": 5818,
+    "markets_scanned": 5847,
     "kickoff_source": "kalshi occurrence_datetime - 3h",
     "phases": {
       "CFB": {
-        "pregame": 4996
+        "live": 255,
+        "pregame": 4770
       },
       "NFL": {
         "pregame": 822
@@ -61,7 +62,7 @@
     "max_bet": 10.0
   },
   "signals": {
-    "weekly_ct": "Fri Nov 20, 4:32 PM CT",
+    "weekly_ct": "Fri Nov 20, 7:04 PM CT",
     "scorecards": [
       {
         "name": "SHARP shadow football",
@@ -180,15 +181,15 @@
           "no_close": 0
         },
         "football": {
-          "n": 85,
-          "avg_clv_c": -1.24,
-          "avg_raw_c": 0.24,
-          "beat_close_pct": 27.1,
-          "t_stat": -2.2,
-          "events": 41,
-          "t_by_event": -0.68,
+          "n": 87,
+          "avg_clv_c": -1.29,
+          "avg_raw_c": 0.2,
+          "beat_close_pct": 27.6,
+          "t_stat": -2.32,
+          "events": 43,
+          "t_by_event": -0.82,
           "stale": 0,
-          "pending": 20,
+          "pending": 19,
           "no_close": 0
         }
       },
@@ -206,15 +207,15 @@
           "no_close": 7
         },
         "football": {
-          "n": 257,
-          "avg_clv_c": -1.27,
-          "avg_raw_c": -0.07,
-          "beat_close_pct": 29.6,
-          "t_stat": -7.43,
-          "events": 57,
-          "t_by_event": -5.21,
+          "n": 296,
+          "avg_clv_c": -1.21,
+          "avg_raw_c": -0.01,
+          "beat_close_pct": 30.1,
+          "t_stat": -7.67,
+          "events": 61,
+          "t_by_event": -5.38,
           "stale": 0,
-          "pending": 258,
+          "pending": 230,
           "no_close": 1
         }
       }
@@ -329,6 +330,20 @@
         "kickoff_utc": "2026-11-21T17:00:00Z",
         "kickoff_ct": "Sat Nov 21, 11:00 AM CT",
         "kalshi_url": "https://kalshi.com/markets/kxncaafspread/event/kxncaafspread-26nov21ecuarmy"
+      },
+      {
+        "ticker": "KXNCAAFSPREAD-26NOV21TNTCMSST-MSST34",
+        "signal": "SHARP",
+        "side": "YES",
+        "game": "Tennessee Tech vs Mississippi St.: Spread",
+        "contract": "Mississippi St. wins by over 33.5 points",
+        "max_price": 0.47,
+        "stake": 4.3,
+        "gone": false,
+        "sent_ct": "Fri Nov 20, 5:31 PM CT",
+        "kickoff_utc": "2026-11-21T18:00:00Z",
+        "kickoff_ct": "Sat Nov 21, 12:00 PM CT",
+        "kalshi_url": "https://kalshi.com/markets/kxncaafspread/event/kxncaafspread-26nov21tntcmsst"
       },
       {
         "ticker": "KXNCAAFTOTAL-26NOV21CHATALA-60",
