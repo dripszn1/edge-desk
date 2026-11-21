@@ -53,7 +53,7 @@ def test_refresh_only_current_season(monkeypatch, tmp_path):
 
 
 # ---- CFB name matching + SHARP CFB ----
-def _odds(home="Auburn Tigers", away="Mississippi State Bulldogs", home_pt=-7.0, ts="2026-11-14T14:30:00Z", extra=(), league="CFB"):
+def _odds(home="Auburn Tigers", away="Mississippi State Bulldogs", home_pt=-7.0, ts="2026-11-14T14:55:00Z", extra=(), league="CFB"):
     evs = [(f"e_{home}", home, away, home_pt)] + list(extra)
     pay = [{"id": eid, "commence_time": KO, "home_team": h, "away_team": a, "bookmakers": [{"key": "pinnacle", "markets": [
         {"key": "spreads", "outcomes": [{"name": h, "price": -110, "point": pt}, {"name": a, "price": -110, "point": -pt}]},
@@ -156,9 +156,9 @@ def test_cfb_far_rung_skipped():
 
 def test_stale_odds_guard():
     snap = "2026-11-14T15:00:00Z"
-    assert not sharp.odds_too_old(snap, "2026-11-14T14:35:00Z", "2026-11-15T00:00:00Z")  # 25 min, far from KO
-    assert sharp.odds_too_old(snap, "2026-11-14T14:25:00Z", "2026-11-15T00:00:00Z")      # 35 min (30-min guard, 11-15)
-    assert sharp.odds_too_old(snap, "2026-11-14T14:25:00Z", "2026-11-14T17:00:00Z")      # 35 min, KO in 2h
+    assert not sharp.odds_too_old(snap, "2026-11-14T14:52:00Z", "2026-11-15T00:00:00Z")  # 8 min, far from KO
+    assert sharp.odds_too_old(snap, "2026-11-14T14:45:00Z", "2026-11-15T00:00:00Z")      # 15 min (10-min guard, 11-20)
+    assert sharp.odds_too_old(snap, "2026-11-14T14:45:00Z", "2026-11-14T17:00:00Z")      # 15 min, KO in 2h
 
 
 def _cbb_row(vol=6000.0, size=500, strike=4.5, bid=0.50, ask=0.52):

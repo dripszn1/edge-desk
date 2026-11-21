@@ -81,8 +81,8 @@ def in_core_price(price) -> bool:
         return False
 
 
-ODDS_MAX_AGE_MIN = 30          # no SHARP flag from a sharp line older than this (was 90; Emerson OK 11-15: 30-90 min pulls lost -1.65c, t -3.26, 48 plays)...
-ODDS_MAX_AGE_NEAR_KO_MIN = 30  # ...or older than this within NEAR_KO_H of kickoff (was 60)
+ODDS_MAX_AGE_MIN = 10          # no SHARP flag from a sharp line older than this (90 -> 30 Emerson OK 11-15; 30 -> 10 Emerson OK 11-20: 10-30 min pulls lost -2.16c, t -4.88, 32 plays)...
+ODDS_MAX_AGE_NEAR_KO_MIN = 10  # ...or older than this within NEAR_KO_H of kickoff (was 60, then 30)
 NEAR_KO_H = 3
 EDGE_SANITY_CAP = 0.12         # an "edge" this big vs a sharp line is almost always a data/matching error
 # Low-confidence plays are NOT thrown away: they are logged here with the reason, graded like

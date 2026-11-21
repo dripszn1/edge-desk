@@ -9,7 +9,7 @@ SNAP = "2026-11-15T15:00:00Z"
 KO = "2026-11-15T18:00:00Z"
 
 
-def _odds(home_ml=-150, away_ml=130, ts="2026-11-15T14:30:00Z", home="Detroit Lions", away="New England Patriots",
+def _odds(home_ml=-150, away_ml=130, ts="2026-11-15T14:55:00Z", home="Detroit Lions", away="New England Patriots",
           league="NFL"):
     pay = [{"id": "e1", "commence_time": KO, "home_team": home, "away_team": away, "bookmakers": [{"key": "pinnacle", "markets": [
         {"key": "h2h", "outcomes": [{"name": home, "price": home_ml}, {"name": away, "price": away_ml}]}]}]}]
