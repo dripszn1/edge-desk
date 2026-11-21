@@ -1,4 +1,4 @@
-# edge-desk digest, Fri Nov 20, 7:06 PM CT
+# edge-desk digest, Fri Nov 20, 7:21 PM CT
 
 **PROPOSE football: plays priced on a 10-30 min old sharp line lose -2.15c to Kalshi's close (t -5.16 by game, 34 plays): alert only within 10 min of a fresh sharp pull** (Emerson decides; caps unchanged)
 
@@ -19,6 +19,6 @@ Settled in the last 24h:
   picks vs random entries, $/play: football (289 plays): hold $-0.22 vs $-0.48 (beats 92%), auto-sell +10c $-0.45 vs $-0.75 (beats 100%) · CBB (139 plays): hold $-0.09 vs $-0.06 (beats 46%), auto-sell +10c $-1.03 vs $-0.82 (beats 15%)
   limit-order entries (paper): NFL: 44/82 filled, vs close -1.0c, hold $+28.43, auto-sell +10c $+14.76 (29 done) · CFB: 86/251 filled, vs close -0.6c, hold $+24.23, auto-sell +10c $+4.94 (44 done)
   instant (stream) paper trades: NFL 24 plays, vs close -2.4c (20, 8 games), hold $-116.43, auto-sell at fair $-60.76 (20 done) · CFB 42 plays, vs close -1.3c (7, 4 games), hold $-29.35, auto-sell at fair $+15.92 (5 done) · median 475 ms
-  market-making paper: CFB ±1c 330 fills/101 games $-92.90 t -7.2, after-fill -1.9c · NFL ±1c 153 fills/38 games $-28.21 t -2.3, after-fill -1.7c · CFB ±2c 152 fills/54 games $-40.90 t -4.0, after-fill -1.9c · NFL ±2c 99 fills/20 games $-19.08 t -2.3, after-fill -1.7c · CFB ±3c 83 fills/30 games $-24.45 t -3.4, after-fill -2.1c · NFL ±3c 35 fills/10 games $-5.53 t -1.0, after-fill -1.6c
+  market-making paper: CFB ±1c 331 fills/101 games $-93.10 t -7.3, after-fill -1.9c · NFL ±1c 153 fills/38 games $-27.71 t -2.2, after-fill -1.7c · CFB ±2c 153 fills/54 games $-41.35 t -4.0, after-fill -1.9c · NFL ±2c 99 fills/20 games $-18.88 t -2.3, after-fill -1.7c · CFB ±3c 83 fills/30 games $-24.55 t -3.4, after-fill -2.1c · NFL ±3c 35 fills/10 games $-5.53 t -1.0, after-fill -1.6c
 
-Status: Kalshi data 4m old (ok); sharp odds 8m old; odds credits left 17426 of 20000; gates: MODEL NFL closed, MODEL CFB closed, SHARP NFL closed, SHARP CFB closed, SHARP NFL ML closed, SHARP CFB ML closed
+Status: Kalshi data 4m old (ok); sharp odds 5m old; odds credits left 17417 of 20000; gates: MODEL NFL closed, MODEL CFB closed, SHARP NFL closed, SHARP CFB closed, SHARP NFL ML closed, SHARP CFB ML closed
