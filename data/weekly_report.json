@@ -1,7 +1,7 @@
 {
   "proposals": [],
-  "generated_utc": "2026-11-21T07:47:23Z",
-  "generated_ct": "Sat Nov 21, 1:47 AM CT",
+  "generated_utc": "2026-11-21T10:38:51Z",
+  "generated_ct": "Sat Nov 21, 4:38 AM CT",
   "paper_mode": true,
   "rules": {
     "min_bets": 30,
@@ -1636,8 +1636,8 @@
     },
     "1c+": {
       "alerts": 54,
-      "gone_pct": 87.0,
-      "median_min_to_gone": 9.4,
+      "gone_pct": 88.9,
+      "median_min_to_gone": 9.9,
       "with_close": 17,
       "avg_clv_c": -0.99
     }
@@ -2173,9 +2173,9 @@
     "football": {
       "MAKER_BID": {
         "plays": 510,
-        "decided": 346,
-        "filled": 134,
-        "fill_rate_pct": 38.7,
+        "decided": 347,
+        "filled": 135,
+        "fill_rate_pct": 38.9,
         "clv": {
           "n": 87,
           "games": 27,
@@ -2221,9 +2221,9 @@
       },
       "MAKER_1": {
         "plays": 283,
-        "decided": 173,
-        "filled": 84,
-        "fill_rate_pct": 48.6,
+        "decided": 176,
+        "filled": 87,
+        "fill_rate_pct": 49.4,
         "clv": {
           "n": 57,
           "games": 21,
@@ -2369,9 +2369,9 @@
     "CFB": {
       "MAKER_BID": {
         "plays": 374,
-        "decided": 263,
-        "filled": 89,
-        "fill_rate_pct": 33.8,
+        "decided": 264,
+        "filled": 90,
+        "fill_rate_pct": 34.1,
         "clv": {
           "n": 58,
           "games": 22,
@@ -2417,9 +2417,9 @@
       },
       "MAKER_1": {
         "plays": 220,
-        "decided": 138,
-        "filled": 57,
-        "fill_rate_pct": 41.3,
+        "decided": 141,
+        "filled": 60,
+        "fill_rate_pct": 42.6,
         "clv": {
           "n": 43,
           "games": 16,
