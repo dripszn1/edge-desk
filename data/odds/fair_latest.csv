@@ -1,10 +1,4 @@
 league,event_id,commence_utc,home_team,away_team,market,outcome,point,fair,source,n_books,fetched_ts
-CFB,03a07ec7a62fbc2d6bf4748aafd30303,2026-11-21T17:12:00Z,Nebraska Cornhuskers,Ohio State Buckeyes,h2h,Nebraska Cornhuskers,,0.378954,pinnacle,1,2026-11-21T17:11:35Z
-CFB,03a07ec7a62fbc2d6bf4748aafd30303,2026-11-21T17:12:00Z,Nebraska Cornhuskers,Ohio State Buckeyes,h2h,Ohio State Buckeyes,,0.621046,pinnacle,1,2026-11-21T17:11:35Z
-CFB,03a07ec7a62fbc2d6bf4748aafd30303,2026-11-21T17:12:00Z,Nebraska Cornhuskers,Ohio State Buckeyes,spreads,Nebraska Cornhuskers,4.0,0.509166,pinnacle,1,2026-11-21T17:11:35Z
-CFB,03a07ec7a62fbc2d6bf4748aafd30303,2026-11-21T17:12:00Z,Nebraska Cornhuskers,Ohio State Buckeyes,spreads,Ohio State Buckeyes,-4.0,0.490834,pinnacle,1,2026-11-21T17:11:35Z
-CFB,03a07ec7a62fbc2d6bf4748aafd30303,2026-11-21T17:12:00Z,Nebraska Cornhuskers,Ohio State Buckeyes,totals,Over,41.5,0.52327,pinnacle,1,2026-11-21T17:11:35Z
-CFB,03a07ec7a62fbc2d6bf4748aafd30303,2026-11-21T17:12:00Z,Nebraska Cornhuskers,Ohio State Buckeyes,totals,Under,41.5,0.47673,pinnacle,1,2026-11-21T17:11:35Z
 CFB,1f59b6d72003ce254b32c815e73b252d,2026-11-21T17:39:00Z,Virginia Cavaliers,North Carolina Tar Heels,h2h,North Carolina Tar Heels,,0.516247,pinnacle,1,2026-11-21T17:38:40Z
 CFB,1f59b6d72003ce254b32c815e73b252d,2026-11-21T17:39:00Z,Virginia Cavaliers,North Carolina Tar Heels,h2h,Virginia Cavaliers,,0.483753,pinnacle,1,2026-11-21T17:38:40Z
 CFB,1f59b6d72003ce254b32c815e73b252d,2026-11-21T17:39:00Z,Virginia Cavaliers,North Carolina Tar Heels,spreads,North Carolina Tar Heels,-1.0,0.50229,pinnacle,1,2026-11-21T17:38:40Z
@@ -173,108 +167,6 @@ CFB,cbe55180a8bee495fa1520fbc1df314b,2026-11-21T23:05:00Z,Texas State Bobcats,Wa
 CFB,cbe55180a8bee495fa1520fbc1df314b,2026-11-21T23:05:00Z,Texas State Bobcats,Washington State Cougars,spreads,Washington State Cougars,14.0,0.509166,pinnacle,1,2026-11-21T23:00:32Z
 CFB,cbe55180a8bee495fa1520fbc1df314b,2026-11-21T23:05:00Z,Texas State Bobcats,Washington State Cougars,totals,Over,61.0,0.49332,pinnacle,1,2026-11-21T23:00:32Z
 CFB,cbe55180a8bee495fa1520fbc1df314b,2026-11-21T23:05:00Z,Texas State Bobcats,Washington State Cougars,totals,Under,61.0,0.50668,pinnacle,1,2026-11-21T23:00:32Z
-CFB,37f01277971fbdbe6d2b8f77fa63dd52,2026-11-21T23:15:00Z,USC Trojans,Maryland Terrapins,h2h,Maryland Terrapins,,0.1174,pinnacle,1,2026-11-21T23:05:32Z
-CFB,37f01277971fbdbe6d2b8f77fa63dd52,2026-11-21T23:15:00Z,USC Trojans,Maryland Terrapins,h2h,USC Trojans,,0.8826,pinnacle,1,2026-11-21T23:05:32Z
-CFB,37f01277971fbdbe6d2b8f77fa63dd52,2026-11-21T23:15:00Z,USC Trojans,Maryland Terrapins,spreads,Maryland Terrapins,18.5,0.485194,pinnacle,1,2026-11-21T23:05:32Z
-CFB,37f01277971fbdbe6d2b8f77fa63dd52,2026-11-21T23:15:00Z,USC Trojans,Maryland Terrapins,spreads,USC Trojans,-18.5,0.514806,pinnacle,1,2026-11-21T23:05:32Z
-CFB,37f01277971fbdbe6d2b8f77fa63dd52,2026-11-21T23:15:00Z,USC Trojans,Maryland Terrapins,totals,Over,57.5,0.495548,pinnacle,1,2026-11-21T23:05:32Z
-CFB,37f01277971fbdbe6d2b8f77fa63dd52,2026-11-21T23:15:00Z,USC Trojans,Maryland Terrapins,totals,Under,57.5,0.504452,pinnacle,1,2026-11-21T23:05:32Z
-CFB,9470f469f957e9eddae9392cb23b4623,2026-11-22T00:00:00Z,Kansas State Wildcats,Arizona Wildcats,h2h,Arizona Wildcats,,0.756644,pinnacle,1,2026-11-21T23:05:32Z
-CFB,9470f469f957e9eddae9392cb23b4623,2026-11-22T00:00:00Z,Kansas State Wildcats,Arizona Wildcats,h2h,Kansas State Wildcats,,0.243356,pinnacle,1,2026-11-21T23:05:32Z
-CFB,9470f469f957e9eddae9392cb23b4623,2026-11-22T00:00:00Z,Kansas State Wildcats,Arizona Wildcats,spreads,Arizona Wildcats,-10.0,0.50458,pinnacle,1,2026-11-21T23:05:32Z
-CFB,9470f469f957e9eddae9392cb23b4623,2026-11-22T00:00:00Z,Kansas State Wildcats,Arizona Wildcats,spreads,Kansas State Wildcats,10.0,0.49542,pinnacle,1,2026-11-21T23:05:32Z
-CFB,9470f469f957e9eddae9392cb23b4623,2026-11-22T00:00:00Z,Kansas State Wildcats,Arizona Wildcats,totals,Over,53.5,0.50668,pinnacle,1,2026-11-21T23:05:32Z
-CFB,9470f469f957e9eddae9392cb23b4623,2026-11-22T00:00:00Z,Kansas State Wildcats,Arizona Wildcats,totals,Under,53.5,0.49332,pinnacle,1,2026-11-21T23:05:32Z
-CFB,a36fd3d086dffefb5fc58b14fb6255fc,2026-11-22T00:00:00Z,Louisiana Tech Bulldogs,Arkansas State Red Wolves,h2h,Arkansas State Red Wolves,,0.174922,pinnacle,1,2026-11-21T23:05:32Z
-CFB,a36fd3d086dffefb5fc58b14fb6255fc,2026-11-22T00:00:00Z,Louisiana Tech Bulldogs,Arkansas State Red Wolves,h2h,Louisiana Tech Bulldogs,,0.825078,pinnacle,1,2026-11-21T23:05:32Z
-CFB,a36fd3d086dffefb5fc58b14fb6255fc,2026-11-22T00:00:00Z,Louisiana Tech Bulldogs,Arkansas State Red Wolves,spreads,Arkansas State Red Wolves,15.0,0.5,pinnacle,1,2026-11-21T23:05:32Z
-CFB,a36fd3d086dffefb5fc58b14fb6255fc,2026-11-22T00:00:00Z,Louisiana Tech Bulldogs,Arkansas State Red Wolves,spreads,Louisiana Tech Bulldogs,-15.0,0.5,pinnacle,1,2026-11-21T23:05:32Z
-CFB,a36fd3d086dffefb5fc58b14fb6255fc,2026-11-22T00:00:00Z,Louisiana Tech Bulldogs,Arkansas State Red Wolves,totals,Over,54.5,0.502226,pinnacle,1,2026-11-21T23:05:32Z
-CFB,a36fd3d086dffefb5fc58b14fb6255fc,2026-11-22T00:00:00Z,Louisiana Tech Bulldogs,Arkansas State Red Wolves,totals,Under,54.5,0.497774,pinnacle,1,2026-11-21T23:05:32Z
-CFB,8d53f308424d388c9003e02cac8b4cf6,2026-11-22T00:00:00Z,Miami Hurricanes,Virginia Tech Hokies,h2h,Miami Hurricanes,,0.903977,pinnacle,1,2026-11-21T23:05:32Z
-CFB,8d53f308424d388c9003e02cac8b4cf6,2026-11-22T00:00:00Z,Miami Hurricanes,Virginia Tech Hokies,h2h,Virginia Tech Hokies,,0.096023,pinnacle,1,2026-11-21T23:05:32Z
-CFB,8d53f308424d388c9003e02cac8b4cf6,2026-11-22T00:00:00Z,Miami Hurricanes,Virginia Tech Hokies,spreads,Miami Hurricanes,-20.5,0.514806,pinnacle,1,2026-11-21T23:05:32Z
-CFB,8d53f308424d388c9003e02cac8b4cf6,2026-11-22T00:00:00Z,Miami Hurricanes,Virginia Tech Hokies,spreads,Virginia Tech Hokies,20.5,0.485194,pinnacle,1,2026-11-21T23:05:32Z
-CFB,8d53f308424d388c9003e02cac8b4cf6,2026-11-22T00:00:00Z,Miami Hurricanes,Virginia Tech Hokies,totals,Over,61.0,0.508909,pinnacle,1,2026-11-21T23:05:32Z
-CFB,8d53f308424d388c9003e02cac8b4cf6,2026-11-22T00:00:00Z,Miami Hurricanes,Virginia Tech Hokies,totals,Under,61.0,0.491091,pinnacle,1,2026-11-21T23:05:32Z
-CFB,89e434722afd075e5488a6b9310325e9,2026-11-22T00:00:00Z,San Jose State Spartans,UNLV Rebels,h2h,San Jose State Spartans,,0.33346,pinnacle,1,2026-11-21T23:05:32Z
-CFB,89e434722afd075e5488a6b9310325e9,2026-11-22T00:00:00Z,San Jose State Spartans,UNLV Rebels,h2h,UNLV Rebels,,0.66654,pinnacle,1,2026-11-21T23:05:32Z
-CFB,89e434722afd075e5488a6b9310325e9,2026-11-22T00:00:00Z,San Jose State Spartans,UNLV Rebels,spreads,San Jose State Spartans,6.5,0.509166,pinnacle,1,2026-11-21T23:05:32Z
-CFB,89e434722afd075e5488a6b9310325e9,2026-11-22T00:00:00Z,San Jose State Spartans,UNLV Rebels,spreads,UNLV Rebels,-6.5,0.490834,pinnacle,1,2026-11-21T23:05:32Z
-CFB,89e434722afd075e5488a6b9310325e9,2026-11-22T00:00:00Z,San Jose State Spartans,UNLV Rebels,totals,Over,47.5,0.512172,pinnacle,1,2026-11-21T23:05:32Z
-CFB,89e434722afd075e5488a6b9310325e9,2026-11-22T00:00:00Z,San Jose State Spartans,UNLV Rebels,totals,Under,47.5,0.487828,pinnacle,1,2026-11-21T23:05:32Z
-CFB,4e40d05a5d98ac108cd15278646a545d,2026-11-22T00:30:00Z,California Golden Bears,Stanford Cardinal,h2h,California Golden Bears,,0.445229,pinnacle,1,2026-11-21T23:05:32Z
-CFB,4e40d05a5d98ac108cd15278646a545d,2026-11-22T00:30:00Z,California Golden Bears,Stanford Cardinal,h2h,Stanford Cardinal,,0.554771,pinnacle,1,2026-11-21T23:05:32Z
-CFB,4e40d05a5d98ac108cd15278646a545d,2026-11-22T00:30:00Z,California Golden Bears,Stanford Cardinal,spreads,California Golden Bears,2.5,0.492038,pinnacle,1,2026-11-21T23:05:32Z
-CFB,4e40d05a5d98ac108cd15278646a545d,2026-11-22T00:30:00Z,California Golden Bears,Stanford Cardinal,spreads,Stanford Cardinal,-2.5,0.507962,pinnacle,1,2026-11-21T23:05:32Z
-CFB,4e40d05a5d98ac108cd15278646a545d,2026-11-22T00:30:00Z,California Golden Bears,Stanford Cardinal,totals,Over,55.0,0.508909,pinnacle,1,2026-11-21T23:05:32Z
-CFB,4e40d05a5d98ac108cd15278646a545d,2026-11-22T00:30:00Z,California Golden Bears,Stanford Cardinal,totals,Under,55.0,0.491091,pinnacle,1,2026-11-21T23:05:32Z
-CFB,f23bc59387b6db63ad3de8b6bcc541fc,2026-11-22T00:30:00Z,Fresno State Bulldogs,Colorado State Rams,h2h,Colorado State Rams,,0.096887,pinnacle,1,2026-11-21T23:05:32Z
-CFB,f23bc59387b6db63ad3de8b6bcc541fc,2026-11-22T00:30:00Z,Fresno State Bulldogs,Colorado State Rams,h2h,Fresno State Bulldogs,,0.903113,pinnacle,1,2026-11-21T23:05:32Z
-CFB,f23bc59387b6db63ad3de8b6bcc541fc,2026-11-22T00:30:00Z,Fresno State Bulldogs,Colorado State Rams,spreads,Colorado State Rams,20.5,0.49771,pinnacle,1,2026-11-21T23:05:32Z
-CFB,f23bc59387b6db63ad3de8b6bcc541fc,2026-11-22T00:30:00Z,Fresno State Bulldogs,Colorado State Rams,spreads,Fresno State Bulldogs,-20.5,0.50229,pinnacle,1,2026-11-21T23:05:32Z
-CFB,f23bc59387b6db63ad3de8b6bcc541fc,2026-11-22T00:30:00Z,Fresno State Bulldogs,Colorado State Rams,totals,Over,66.5,0.518847,pinnacle,1,2026-11-21T23:05:32Z
-CFB,f23bc59387b6db63ad3de8b6bcc541fc,2026-11-22T00:30:00Z,Fresno State Bulldogs,Colorado State Rams,totals,Under,66.5,0.481153,pinnacle,1,2026-11-21T23:05:32Z
-CFB,a05c0d32b35dfd5cca63a61af28b9739,2026-11-22T00:30:00Z,South Carolina Gamecocks,Georgia Bulldogs,h2h,Georgia Bulldogs,,0.854292,pinnacle,1,2026-11-21T23:05:32Z
-CFB,a05c0d32b35dfd5cca63a61af28b9739,2026-11-22T00:30:00Z,South Carolina Gamecocks,Georgia Bulldogs,h2h,South Carolina Gamecocks,,0.145708,pinnacle,1,2026-11-21T23:05:32Z
-CFB,a05c0d32b35dfd5cca63a61af28b9739,2026-11-22T00:30:00Z,South Carolina Gamecocks,Georgia Bulldogs,spreads,Georgia Bulldogs,-15.0,0.5,pinnacle,1,2026-11-21T23:05:32Z
-CFB,a05c0d32b35dfd5cca63a61af28b9739,2026-11-22T00:30:00Z,South Carolina Gamecocks,Georgia Bulldogs,spreads,South Carolina Gamecocks,15.0,0.5,pinnacle,1,2026-11-21T23:05:32Z
-CFB,a05c0d32b35dfd5cca63a61af28b9739,2026-11-22T00:30:00Z,South Carolina Gamecocks,Georgia Bulldogs,totals,Over,51.5,0.486624,pinnacle,1,2026-11-21T23:05:32Z
-CFB,a05c0d32b35dfd5cca63a61af28b9739,2026-11-22T00:30:00Z,South Carolina Gamecocks,Georgia Bulldogs,totals,Under,51.5,0.513376,pinnacle,1,2026-11-21T23:05:32Z
-CFB,0bb0c3e15e4a8004f708162c14c5575d,2026-11-22T00:30:00Z,Missouri Tigers,Kentucky Wildcats,h2h,Kentucky Wildcats,,0.360729,pinnacle,1,2026-11-21T23:05:32Z
-CFB,0bb0c3e15e4a8004f708162c14c5575d,2026-11-22T00:30:00Z,Missouri Tigers,Kentucky Wildcats,h2h,Missouri Tigers,,0.639271,pinnacle,1,2026-11-21T23:05:32Z
-CFB,0bb0c3e15e4a8004f708162c14c5575d,2026-11-22T00:30:00Z,Missouri Tigers,Kentucky Wildcats,spreads,Kentucky Wildcats,4.5,0.50229,pinnacle,1,2026-11-21T23:05:32Z
-CFB,0bb0c3e15e4a8004f708162c14c5575d,2026-11-22T00:30:00Z,Missouri Tigers,Kentucky Wildcats,spreads,Missouri Tigers,-4.5,0.49771,pinnacle,1,2026-11-21T23:05:32Z
-CFB,0bb0c3e15e4a8004f708162c14c5575d,2026-11-22T00:30:00Z,Missouri Tigers,Kentucky Wildcats,totals,Over,49.5,0.497774,pinnacle,1,2026-11-21T23:05:32Z
-CFB,0bb0c3e15e4a8004f708162c14c5575d,2026-11-22T00:30:00Z,Missouri Tigers,Kentucky Wildcats,totals,Under,49.5,0.502226,pinnacle,1,2026-11-21T23:05:32Z
-CFB,44e73391c2ac535ab552aac4bdcfa3b3,2026-11-22T00:30:00Z,Louisville Cardinals,Pittsburgh Panthers,h2h,Louisville Cardinals,,0.791459,pinnacle,1,2026-11-21T23:05:32Z
-CFB,44e73391c2ac535ab552aac4bdcfa3b3,2026-11-22T00:30:00Z,Louisville Cardinals,Pittsburgh Panthers,h2h,Pittsburgh Panthers,,0.208541,pinnacle,1,2026-11-21T23:05:32Z
-CFB,44e73391c2ac535ab552aac4bdcfa3b3,2026-11-22T00:30:00Z,Louisville Cardinals,Pittsburgh Panthers,spreads,Louisville Cardinals,-11.0,0.50458,pinnacle,1,2026-11-21T23:05:32Z
-CFB,44e73391c2ac535ab552aac4bdcfa3b3,2026-11-22T00:30:00Z,Louisville Cardinals,Pittsburgh Panthers,spreads,Pittsburgh Panthers,11.0,0.49542,pinnacle,1,2026-11-21T23:05:32Z
-CFB,44e73391c2ac535ab552aac4bdcfa3b3,2026-11-22T00:30:00Z,Louisville Cardinals,Pittsburgh Panthers,totals,Over,50.5,0.488859,pinnacle,1,2026-11-21T23:05:32Z
-CFB,44e73391c2ac535ab552aac4bdcfa3b3,2026-11-22T00:30:00Z,Louisville Cardinals,Pittsburgh Panthers,totals,Under,50.5,0.511141,pinnacle,1,2026-11-21T23:05:32Z
-CFB,fa98066b4b400fb6af0672e170cc584a,2026-11-22T00:30:00Z,Notre Dame Fighting Irish,SMU Mustangs,h2h,Notre Dame Fighting Irish,,0.903783,pinnacle,1,2026-11-21T23:05:32Z
-CFB,fa98066b4b400fb6af0672e170cc584a,2026-11-22T00:30:00Z,Notre Dame Fighting Irish,SMU Mustangs,h2h,SMU Mustangs,,0.096217,pinnacle,1,2026-11-21T23:05:32Z
-CFB,fa98066b4b400fb6af0672e170cc584a,2026-11-22T00:30:00Z,Notre Dame Fighting Irish,SMU Mustangs,spreads,Notre Dame Fighting Irish,-20.5,0.50458,pinnacle,1,2026-11-21T23:05:32Z
-CFB,fa98066b4b400fb6af0672e170cc584a,2026-11-22T00:30:00Z,Notre Dame Fighting Irish,SMU Mustangs,spreads,SMU Mustangs,20.5,0.49542,pinnacle,1,2026-11-21T23:05:32Z
-CFB,fa98066b4b400fb6af0672e170cc584a,2026-11-22T00:30:00Z,Notre Dame Fighting Irish,SMU Mustangs,totals,Over,56.0,0.487828,pinnacle,1,2026-11-21T23:05:32Z
-CFB,fa98066b4b400fb6af0672e170cc584a,2026-11-22T00:30:00Z,Notre Dame Fighting Irish,SMU Mustangs,totals,Under,56.0,0.512172,pinnacle,1,2026-11-21T23:05:32Z
-CFB,9f3f8efae55dbb803964a5107350e263,2026-11-22T01:00:00Z,UAB Blazers,UTSA Roadrunners,h2h,UAB Blazers,,0.373433,pinnacle,1,2026-11-21T23:05:32Z
-CFB,9f3f8efae55dbb803964a5107350e263,2026-11-22T01:00:00Z,UAB Blazers,UTSA Roadrunners,h2h,UTSA Roadrunners,,0.626567,pinnacle,1,2026-11-21T23:05:32Z
-CFB,9f3f8efae55dbb803964a5107350e263,2026-11-22T01:00:00Z,UAB Blazers,UTSA Roadrunners,spreads,UAB Blazers,3.5,0.481678,pinnacle,1,2026-11-21T23:05:32Z
-CFB,9f3f8efae55dbb803964a5107350e263,2026-11-22T01:00:00Z,UAB Blazers,UTSA Roadrunners,spreads,UTSA Roadrunners,-3.5,0.518322,pinnacle,1,2026-11-21T23:05:32Z
-CFB,9f3f8efae55dbb803964a5107350e263,2026-11-22T01:00:00Z,UAB Blazers,UTSA Roadrunners,totals,Over,50.0,0.481153,pinnacle,1,2026-11-21T23:05:32Z
-CFB,9f3f8efae55dbb803964a5107350e263,2026-11-22T01:00:00Z,UAB Blazers,UTSA Roadrunners,totals,Under,50.0,0.518847,pinnacle,1,2026-11-21T23:05:32Z
-CFB,7585fb8b12453a68ca1195319ae44c78,2026-11-22T02:00:00Z,TCU Horned Frogs,Utah Utes,h2h,TCU Horned Frogs,,0.261093,pinnacle,1,2026-11-21T23:05:32Z
-CFB,7585fb8b12453a68ca1195319ae44c78,2026-11-22T02:00:00Z,TCU Horned Frogs,Utah Utes,h2h,Utah Utes,,0.738907,pinnacle,1,2026-11-21T23:05:32Z
-CFB,7585fb8b12453a68ca1195319ae44c78,2026-11-22T02:00:00Z,TCU Horned Frogs,Utah Utes,spreads,TCU Horned Frogs,9.0,0.509166,pinnacle,1,2026-11-21T23:05:32Z
-CFB,7585fb8b12453a68ca1195319ae44c78,2026-11-22T02:00:00Z,TCU Horned Frogs,Utah Utes,spreads,Utah Utes,-9.0,0.490834,pinnacle,1,2026-11-21T23:05:32Z
-CFB,7585fb8b12453a68ca1195319ae44c78,2026-11-22T02:00:00Z,TCU Horned Frogs,Utah Utes,totals,Over,46.5,0.488859,pinnacle,1,2026-11-21T23:05:32Z
-CFB,7585fb8b12453a68ca1195319ae44c78,2026-11-22T02:00:00Z,TCU Horned Frogs,Utah Utes,totals,Under,46.5,0.511141,pinnacle,1,2026-11-21T23:05:32Z
-CFB,028f0fcc2f6411c4816e543bb7fa226c,2026-11-22T02:30:00Z,Boise State Broncos,San Diego State Aztecs,h2h,Boise State Broncos,,0.891967,pinnacle,1,2026-11-21T23:05:32Z
-CFB,028f0fcc2f6411c4816e543bb7fa226c,2026-11-22T02:30:00Z,Boise State Broncos,San Diego State Aztecs,h2h,San Diego State Aztecs,,0.108033,pinnacle,1,2026-11-21T23:05:32Z
-CFB,028f0fcc2f6411c4816e543bb7fa226c,2026-11-22T02:30:00Z,Boise State Broncos,San Diego State Aztecs,spreads,Boise State Broncos,-20.5,0.50229,pinnacle,1,2026-11-21T23:05:32Z
-CFB,028f0fcc2f6411c4816e543bb7fa226c,2026-11-22T02:30:00Z,Boise State Broncos,San Diego State Aztecs,spreads,San Diego State Aztecs,20.5,0.49771,pinnacle,1,2026-11-21T23:05:32Z
-CFB,028f0fcc2f6411c4816e543bb7fa226c,2026-11-22T02:30:00Z,Boise State Broncos,San Diego State Aztecs,totals,Over,61.0,0.49332,pinnacle,1,2026-11-21T23:05:32Z
-CFB,028f0fcc2f6411c4816e543bb7fa226c,2026-11-22T02:30:00Z,Boise State Broncos,San Diego State Aztecs,totals,Under,61.0,0.50668,pinnacle,1,2026-11-21T23:05:32Z
-CFB,ecfec2fe1db57f88e603f9947add1e26,2026-11-22T03:15:00Z,Arizona State Sun Devils,Oklahoma State Cowboys,h2h,Arizona State Sun Devils,,0.447994,pinnacle,1,2026-11-21T23:05:32Z
-CFB,ecfec2fe1db57f88e603f9947add1e26,2026-11-22T03:15:00Z,Arizona State Sun Devils,Oklahoma State Cowboys,h2h,Oklahoma State Cowboys,,0.552006,pinnacle,1,2026-11-21T23:05:32Z
-CFB,ecfec2fe1db57f88e603f9947add1e26,2026-11-22T03:15:00Z,Arizona State Sun Devils,Oklahoma State Cowboys,spreads,Arizona State Sun Devils,2.5,0.493128,pinnacle,1,2026-11-21T23:05:32Z
-CFB,ecfec2fe1db57f88e603f9947add1e26,2026-11-22T03:15:00Z,Arizona State Sun Devils,Oklahoma State Cowboys,spreads,Oklahoma State Cowboys,-2.5,0.506872,pinnacle,1,2026-11-21T23:05:32Z
-CFB,ecfec2fe1db57f88e603f9947add1e26,2026-11-22T03:15:00Z,Arizona State Sun Devils,Oklahoma State Cowboys,totals,Over,59.5,0.497774,pinnacle,1,2026-11-21T23:05:32Z
-CFB,ecfec2fe1db57f88e603f9947add1e26,2026-11-22T03:15:00Z,Arizona State Sun Devils,Oklahoma State Cowboys,totals,Under,59.5,0.502226,pinnacle,1,2026-11-21T23:05:32Z
-CFB,430ea047c8a027987881d51f810a6cf8,2026-11-22T03:30:00Z,Nevada Wolf Pack,Hawaii Rainbow Warriors,h2h,Hawaii Rainbow Warriors,,0.293845,pinnacle,1,2026-11-21T23:05:32Z
-CFB,430ea047c8a027987881d51f810a6cf8,2026-11-22T03:30:00Z,Nevada Wolf Pack,Hawaii Rainbow Warriors,h2h,Nevada Wolf Pack,,0.706155,pinnacle,1,2026-11-21T23:05:32Z
-CFB,430ea047c8a027987881d51f810a6cf8,2026-11-22T03:30:00Z,Nevada Wolf Pack,Hawaii Rainbow Warriors,spreads,Hawaii Rainbow Warriors,7.0,0.50229,pinnacle,1,2026-11-21T23:05:32Z
-CFB,430ea047c8a027987881d51f810a6cf8,2026-11-22T03:30:00Z,Nevada Wolf Pack,Hawaii Rainbow Warriors,spreads,Nevada Wolf Pack,-7.0,0.49771,pinnacle,1,2026-11-21T23:05:32Z
-CFB,430ea047c8a027987881d51f810a6cf8,2026-11-22T03:30:00Z,Nevada Wolf Pack,Hawaii Rainbow Warriors,totals,Over,40.5,0.508909,pinnacle,1,2026-11-21T23:05:32Z
-CFB,430ea047c8a027987881d51f810a6cf8,2026-11-22T03:30:00Z,Nevada Wolf Pack,Hawaii Rainbow Warriors,totals,Under,40.5,0.491091,pinnacle,1,2026-11-21T23:05:32Z
-CFB,6e36f5c3c55edcb31749b0de4a146d14,2026-11-22T03:30:00Z,Oregon State Beavers,Utah State Aggies,h2h,Oregon State Beavers,,0.703609,pinnacle,1,2026-11-21T23:05:32Z
-CFB,6e36f5c3c55edcb31749b0de4a146d14,2026-11-22T03:30:00Z,Oregon State Beavers,Utah State Aggies,h2h,Utah State Aggies,,0.296391,pinnacle,1,2026-11-21T23:05:32Z
-CFB,6e36f5c3c55edcb31749b0de4a146d14,2026-11-22T03:30:00Z,Oregon State Beavers,Utah State Aggies,spreads,Oregon State Beavers,-7.0,0.492038,pinnacle,1,2026-11-21T23:05:32Z
-CFB,6e36f5c3c55edcb31749b0de4a146d14,2026-11-22T03:30:00Z,Oregon State Beavers,Utah State Aggies,spreads,Utah State Aggies,7.0,0.507962,pinnacle,1,2026-11-21T23:05:32Z
-CFB,6e36f5c3c55edcb31749b0de4a146d14,2026-11-22T03:30:00Z,Oregon State Beavers,Utah State Aggies,totals,Over,51.0,0.502226,pinnacle,1,2026-11-21T23:05:32Z
-CFB,6e36f5c3c55edcb31749b0de4a146d14,2026-11-22T03:30:00Z,Oregon State Beavers,Utah State Aggies,totals,Under,51.0,0.497774,pinnacle,1,2026-11-21T23:05:32Z
 NFL,403a88701352da05b0710a9e883b803e,2026-11-22T18:00:00Z,Kansas City Chiefs,Arizona Cardinals,h2h,Arizona Cardinals,,0.10297,pinnacle,1,2026-11-21T23:05:32Z
 NFL,403a88701352da05b0710a9e883b803e,2026-11-22T18:00:00Z,Kansas City Chiefs,Arizona Cardinals,h2h,Kansas City Chiefs,,0.89703,pinnacle,1,2026-11-21T23:05:32Z
 NFL,403a88701352da05b0710a9e883b803e,2026-11-22T18:00:00Z,Kansas City Chiefs,Arizona Cardinals,spreads,Arizona Cardinals,16.5,0.525984,pinnacle,1,2026-11-21T23:05:32Z
@@ -403,3 +295,105 @@ NFL,2cdaecba7c0bff9b58a48a82e6ee17a7,2026-12-01T01:15:00Z,Tampa Bay Buccaneers,C
 NFL,2cdaecba7c0bff9b58a48a82e6ee17a7,2026-12-01T01:15:00Z,Tampa Bay Buccaneers,Carolina Panthers,spreads,Tampa Bay Buccaneers,-2.0,0.504488,consensus:2,2,2026-11-21T23:05:32Z
 NFL,2cdaecba7c0bff9b58a48a82e6ee17a7,2026-12-01T01:15:00Z,Tampa Bay Buccaneers,Carolina Panthers,totals,Over,43.0,0.48841,consensus:2,2,2026-11-21T23:05:32Z
 NFL,2cdaecba7c0bff9b58a48a82e6ee17a7,2026-12-01T01:15:00Z,Tampa Bay Buccaneers,Carolina Panthers,totals,Under,43.0,0.51159,consensus:2,2,2026-11-21T23:05:32Z
+CFB,37f01277971fbdbe6d2b8f77fa63dd52,2026-11-21T23:25:00Z,USC Trojans,Maryland Terrapins,h2h,Maryland Terrapins,,0.11767,pinnacle,1,2026-11-21T23:20:42Z
+CFB,37f01277971fbdbe6d2b8f77fa63dd52,2026-11-21T23:25:00Z,USC Trojans,Maryland Terrapins,h2h,USC Trojans,,0.88233,pinnacle,1,2026-11-21T23:20:42Z
+CFB,37f01277971fbdbe6d2b8f77fa63dd52,2026-11-21T23:25:00Z,USC Trojans,Maryland Terrapins,spreads,Maryland Terrapins,18.5,0.486239,pinnacle,1,2026-11-21T23:20:42Z
+CFB,37f01277971fbdbe6d2b8f77fa63dd52,2026-11-21T23:25:00Z,USC Trojans,Maryland Terrapins,spreads,USC Trojans,-18.5,0.513761,pinnacle,1,2026-11-21T23:20:42Z
+CFB,37f01277971fbdbe6d2b8f77fa63dd52,2026-11-21T23:25:00Z,USC Trojans,Maryland Terrapins,totals,Over,57.5,0.488859,pinnacle,1,2026-11-21T23:20:42Z
+CFB,37f01277971fbdbe6d2b8f77fa63dd52,2026-11-21T23:25:00Z,USC Trojans,Maryland Terrapins,totals,Under,57.5,0.511141,pinnacle,1,2026-11-21T23:20:42Z
+CFB,9470f469f957e9eddae9392cb23b4623,2026-11-22T00:00:00Z,Kansas State Wildcats,Arizona Wildcats,h2h,Arizona Wildcats,,0.756644,pinnacle,1,2026-11-21T23:20:42Z
+CFB,9470f469f957e9eddae9392cb23b4623,2026-11-22T00:00:00Z,Kansas State Wildcats,Arizona Wildcats,h2h,Kansas State Wildcats,,0.243356,pinnacle,1,2026-11-21T23:20:42Z
+CFB,9470f469f957e9eddae9392cb23b4623,2026-11-22T00:00:00Z,Kansas State Wildcats,Arizona Wildcats,spreads,Arizona Wildcats,-10.0,0.50458,pinnacle,1,2026-11-21T23:20:42Z
+CFB,9470f469f957e9eddae9392cb23b4623,2026-11-22T00:00:00Z,Kansas State Wildcats,Arizona Wildcats,spreads,Kansas State Wildcats,10.0,0.49542,pinnacle,1,2026-11-21T23:20:42Z
+CFB,9470f469f957e9eddae9392cb23b4623,2026-11-22T00:00:00Z,Kansas State Wildcats,Arizona Wildcats,totals,Over,53.5,0.50668,pinnacle,1,2026-11-21T23:20:42Z
+CFB,9470f469f957e9eddae9392cb23b4623,2026-11-22T00:00:00Z,Kansas State Wildcats,Arizona Wildcats,totals,Under,53.5,0.49332,pinnacle,1,2026-11-21T23:20:42Z
+CFB,a36fd3d086dffefb5fc58b14fb6255fc,2026-11-22T00:00:00Z,Louisiana Tech Bulldogs,Arkansas State Red Wolves,h2h,Arkansas State Red Wolves,,0.174922,pinnacle,1,2026-11-21T23:20:42Z
+CFB,a36fd3d086dffefb5fc58b14fb6255fc,2026-11-22T00:00:00Z,Louisiana Tech Bulldogs,Arkansas State Red Wolves,h2h,Louisiana Tech Bulldogs,,0.825078,pinnacle,1,2026-11-21T23:20:42Z
+CFB,a36fd3d086dffefb5fc58b14fb6255fc,2026-11-22T00:00:00Z,Louisiana Tech Bulldogs,Arkansas State Red Wolves,spreads,Arkansas State Red Wolves,15.0,0.5,pinnacle,1,2026-11-21T23:20:42Z
+CFB,a36fd3d086dffefb5fc58b14fb6255fc,2026-11-22T00:00:00Z,Louisiana Tech Bulldogs,Arkansas State Red Wolves,spreads,Louisiana Tech Bulldogs,-15.0,0.5,pinnacle,1,2026-11-21T23:20:42Z
+CFB,a36fd3d086dffefb5fc58b14fb6255fc,2026-11-22T00:00:00Z,Louisiana Tech Bulldogs,Arkansas State Red Wolves,totals,Over,54.5,0.502226,pinnacle,1,2026-11-21T23:20:42Z
+CFB,a36fd3d086dffefb5fc58b14fb6255fc,2026-11-22T00:00:00Z,Louisiana Tech Bulldogs,Arkansas State Red Wolves,totals,Under,54.5,0.497774,pinnacle,1,2026-11-21T23:20:42Z
+CFB,8d53f308424d388c9003e02cac8b4cf6,2026-11-22T00:00:00Z,Miami Hurricanes,Virginia Tech Hokies,h2h,Miami Hurricanes,,0.90444,pinnacle,1,2026-11-21T23:20:42Z
+CFB,8d53f308424d388c9003e02cac8b4cf6,2026-11-22T00:00:00Z,Miami Hurricanes,Virginia Tech Hokies,h2h,Virginia Tech Hokies,,0.09556,pinnacle,1,2026-11-21T23:20:42Z
+CFB,8d53f308424d388c9003e02cac8b4cf6,2026-11-22T00:00:00Z,Miami Hurricanes,Virginia Tech Hokies,spreads,Miami Hurricanes,-20.5,0.516052,pinnacle,1,2026-11-21T23:20:42Z
+CFB,8d53f308424d388c9003e02cac8b4cf6,2026-11-22T00:00:00Z,Miami Hurricanes,Virginia Tech Hokies,spreads,Virginia Tech Hokies,20.5,0.483948,pinnacle,1,2026-11-21T23:20:42Z
+CFB,8d53f308424d388c9003e02cac8b4cf6,2026-11-22T00:00:00Z,Miami Hurricanes,Virginia Tech Hokies,totals,Over,61.0,0.52327,pinnacle,1,2026-11-21T23:20:42Z
+CFB,8d53f308424d388c9003e02cac8b4cf6,2026-11-22T00:00:00Z,Miami Hurricanes,Virginia Tech Hokies,totals,Under,61.0,0.47673,pinnacle,1,2026-11-21T23:20:42Z
+CFB,89e434722afd075e5488a6b9310325e9,2026-11-22T00:00:00Z,San Jose State Spartans,UNLV Rebels,h2h,San Jose State Spartans,,0.33346,pinnacle,1,2026-11-21T23:20:42Z
+CFB,89e434722afd075e5488a6b9310325e9,2026-11-22T00:00:00Z,San Jose State Spartans,UNLV Rebels,h2h,UNLV Rebels,,0.66654,pinnacle,1,2026-11-21T23:20:42Z
+CFB,89e434722afd075e5488a6b9310325e9,2026-11-22T00:00:00Z,San Jose State Spartans,UNLV Rebels,spreads,San Jose State Spartans,6.5,0.509166,pinnacle,1,2026-11-21T23:20:42Z
+CFB,89e434722afd075e5488a6b9310325e9,2026-11-22T00:00:00Z,San Jose State Spartans,UNLV Rebels,spreads,UNLV Rebels,-6.5,0.490834,pinnacle,1,2026-11-21T23:20:42Z
+CFB,89e434722afd075e5488a6b9310325e9,2026-11-22T00:00:00Z,San Jose State Spartans,UNLV Rebels,totals,Over,47.5,0.512172,pinnacle,1,2026-11-21T23:20:42Z
+CFB,89e434722afd075e5488a6b9310325e9,2026-11-22T00:00:00Z,San Jose State Spartans,UNLV Rebels,totals,Under,47.5,0.487828,pinnacle,1,2026-11-21T23:20:42Z
+CFB,4e40d05a5d98ac108cd15278646a545d,2026-11-22T00:30:00Z,California Golden Bears,Stanford Cardinal,h2h,California Golden Bears,,0.445229,pinnacle,1,2026-11-21T23:20:42Z
+CFB,4e40d05a5d98ac108cd15278646a545d,2026-11-22T00:30:00Z,California Golden Bears,Stanford Cardinal,h2h,Stanford Cardinal,,0.554771,pinnacle,1,2026-11-21T23:20:42Z
+CFB,4e40d05a5d98ac108cd15278646a545d,2026-11-22T00:30:00Z,California Golden Bears,Stanford Cardinal,spreads,California Golden Bears,2.5,0.492038,pinnacle,1,2026-11-21T23:20:42Z
+CFB,4e40d05a5d98ac108cd15278646a545d,2026-11-22T00:30:00Z,California Golden Bears,Stanford Cardinal,spreads,Stanford Cardinal,-2.5,0.507962,pinnacle,1,2026-11-21T23:20:42Z
+CFB,4e40d05a5d98ac108cd15278646a545d,2026-11-22T00:30:00Z,California Golden Bears,Stanford Cardinal,totals,Over,55.0,0.508909,pinnacle,1,2026-11-21T23:20:42Z
+CFB,4e40d05a5d98ac108cd15278646a545d,2026-11-22T00:30:00Z,California Golden Bears,Stanford Cardinal,totals,Under,55.0,0.491091,pinnacle,1,2026-11-21T23:20:42Z
+CFB,f23bc59387b6db63ad3de8b6bcc541fc,2026-11-22T00:30:00Z,Fresno State Bulldogs,Colorado State Rams,h2h,Colorado State Rams,,0.099654,pinnacle,1,2026-11-21T23:20:42Z
+CFB,f23bc59387b6db63ad3de8b6bcc541fc,2026-11-22T00:30:00Z,Fresno State Bulldogs,Colorado State Rams,h2h,Fresno State Bulldogs,,0.900346,pinnacle,1,2026-11-21T23:20:42Z
+CFB,f23bc59387b6db63ad3de8b6bcc541fc,2026-11-22T00:30:00Z,Fresno State Bulldogs,Colorado State Rams,spreads,Colorado State Rams,20.5,0.514806,pinnacle,1,2026-11-21T23:20:42Z
+CFB,f23bc59387b6db63ad3de8b6bcc541fc,2026-11-22T00:30:00Z,Fresno State Bulldogs,Colorado State Rams,spreads,Fresno State Bulldogs,-20.5,0.485194,pinnacle,1,2026-11-21T23:20:42Z
+CFB,f23bc59387b6db63ad3de8b6bcc541fc,2026-11-22T00:30:00Z,Fresno State Bulldogs,Colorado State Rams,totals,Over,66.5,0.516618,pinnacle,1,2026-11-21T23:20:42Z
+CFB,f23bc59387b6db63ad3de8b6bcc541fc,2026-11-22T00:30:00Z,Fresno State Bulldogs,Colorado State Rams,totals,Under,66.5,0.483382,pinnacle,1,2026-11-21T23:20:42Z
+CFB,a05c0d32b35dfd5cca63a61af28b9739,2026-11-22T00:30:00Z,South Carolina Gamecocks,Georgia Bulldogs,h2h,Georgia Bulldogs,,0.854292,pinnacle,1,2026-11-21T23:20:42Z
+CFB,a05c0d32b35dfd5cca63a61af28b9739,2026-11-22T00:30:00Z,South Carolina Gamecocks,Georgia Bulldogs,h2h,South Carolina Gamecocks,,0.145708,pinnacle,1,2026-11-21T23:20:42Z
+CFB,a05c0d32b35dfd5cca63a61af28b9739,2026-11-22T00:30:00Z,South Carolina Gamecocks,Georgia Bulldogs,spreads,Georgia Bulldogs,-15.0,0.5,pinnacle,1,2026-11-21T23:20:42Z
+CFB,a05c0d32b35dfd5cca63a61af28b9739,2026-11-22T00:30:00Z,South Carolina Gamecocks,Georgia Bulldogs,spreads,South Carolina Gamecocks,15.0,0.5,pinnacle,1,2026-11-21T23:20:42Z
+CFB,a05c0d32b35dfd5cca63a61af28b9739,2026-11-22T00:30:00Z,South Carolina Gamecocks,Georgia Bulldogs,totals,Over,51.5,0.486624,pinnacle,1,2026-11-21T23:20:42Z
+CFB,a05c0d32b35dfd5cca63a61af28b9739,2026-11-22T00:30:00Z,South Carolina Gamecocks,Georgia Bulldogs,totals,Under,51.5,0.513376,pinnacle,1,2026-11-21T23:20:42Z
+CFB,0bb0c3e15e4a8004f708162c14c5575d,2026-11-22T00:30:00Z,Missouri Tigers,Kentucky Wildcats,h2h,Kentucky Wildcats,,0.360729,pinnacle,1,2026-11-21T23:20:42Z
+CFB,0bb0c3e15e4a8004f708162c14c5575d,2026-11-22T00:30:00Z,Missouri Tigers,Kentucky Wildcats,h2h,Missouri Tigers,,0.639271,pinnacle,1,2026-11-21T23:20:42Z
+CFB,0bb0c3e15e4a8004f708162c14c5575d,2026-11-22T00:30:00Z,Missouri Tigers,Kentucky Wildcats,spreads,Kentucky Wildcats,4.5,0.50229,pinnacle,1,2026-11-21T23:20:42Z
+CFB,0bb0c3e15e4a8004f708162c14c5575d,2026-11-22T00:30:00Z,Missouri Tigers,Kentucky Wildcats,spreads,Missouri Tigers,-4.5,0.49771,pinnacle,1,2026-11-21T23:20:42Z
+CFB,0bb0c3e15e4a8004f708162c14c5575d,2026-11-22T00:30:00Z,Missouri Tigers,Kentucky Wildcats,totals,Over,49.5,0.497774,pinnacle,1,2026-11-21T23:20:42Z
+CFB,0bb0c3e15e4a8004f708162c14c5575d,2026-11-22T00:30:00Z,Missouri Tigers,Kentucky Wildcats,totals,Under,49.5,0.502226,pinnacle,1,2026-11-21T23:20:42Z
+CFB,44e73391c2ac535ab552aac4bdcfa3b3,2026-11-22T00:30:00Z,Louisville Cardinals,Pittsburgh Panthers,h2h,Louisville Cardinals,,0.791459,pinnacle,1,2026-11-21T23:20:42Z
+CFB,44e73391c2ac535ab552aac4bdcfa3b3,2026-11-22T00:30:00Z,Louisville Cardinals,Pittsburgh Panthers,h2h,Pittsburgh Panthers,,0.208541,pinnacle,1,2026-11-21T23:20:42Z
+CFB,44e73391c2ac535ab552aac4bdcfa3b3,2026-11-22T00:30:00Z,Louisville Cardinals,Pittsburgh Panthers,spreads,Louisville Cardinals,-11.0,0.50458,pinnacle,1,2026-11-21T23:20:42Z
+CFB,44e73391c2ac535ab552aac4bdcfa3b3,2026-11-22T00:30:00Z,Louisville Cardinals,Pittsburgh Panthers,spreads,Pittsburgh Panthers,11.0,0.49542,pinnacle,1,2026-11-21T23:20:42Z
+CFB,44e73391c2ac535ab552aac4bdcfa3b3,2026-11-22T00:30:00Z,Louisville Cardinals,Pittsburgh Panthers,totals,Over,50.5,0.488859,pinnacle,1,2026-11-21T23:20:42Z
+CFB,44e73391c2ac535ab552aac4bdcfa3b3,2026-11-22T00:30:00Z,Louisville Cardinals,Pittsburgh Panthers,totals,Under,50.5,0.511141,pinnacle,1,2026-11-21T23:20:42Z
+CFB,fa98066b4b400fb6af0672e170cc584a,2026-11-22T00:30:00Z,Notre Dame Fighting Irish,SMU Mustangs,h2h,Notre Dame Fighting Irish,,0.903783,pinnacle,1,2026-11-21T23:20:42Z
+CFB,fa98066b4b400fb6af0672e170cc584a,2026-11-22T00:30:00Z,Notre Dame Fighting Irish,SMU Mustangs,h2h,SMU Mustangs,,0.096217,pinnacle,1,2026-11-21T23:20:42Z
+CFB,fa98066b4b400fb6af0672e170cc584a,2026-11-22T00:30:00Z,Notre Dame Fighting Irish,SMU Mustangs,spreads,Notre Dame Fighting Irish,-20.5,0.50458,pinnacle,1,2026-11-21T23:20:42Z
+CFB,fa98066b4b400fb6af0672e170cc584a,2026-11-22T00:30:00Z,Notre Dame Fighting Irish,SMU Mustangs,spreads,SMU Mustangs,20.5,0.49542,pinnacle,1,2026-11-21T23:20:42Z
+CFB,fa98066b4b400fb6af0672e170cc584a,2026-11-22T00:30:00Z,Notre Dame Fighting Irish,SMU Mustangs,totals,Over,56.0,0.487828,pinnacle,1,2026-11-21T23:20:42Z
+CFB,fa98066b4b400fb6af0672e170cc584a,2026-11-22T00:30:00Z,Notre Dame Fighting Irish,SMU Mustangs,totals,Under,56.0,0.512172,pinnacle,1,2026-11-21T23:20:42Z
+CFB,9f3f8efae55dbb803964a5107350e263,2026-11-22T01:00:00Z,UAB Blazers,UTSA Roadrunners,h2h,UAB Blazers,,0.373433,pinnacle,1,2026-11-21T23:20:42Z
+CFB,9f3f8efae55dbb803964a5107350e263,2026-11-22T01:00:00Z,UAB Blazers,UTSA Roadrunners,h2h,UTSA Roadrunners,,0.626567,pinnacle,1,2026-11-21T23:20:42Z
+CFB,9f3f8efae55dbb803964a5107350e263,2026-11-22T01:00:00Z,UAB Blazers,UTSA Roadrunners,spreads,UAB Blazers,3.5,0.481678,pinnacle,1,2026-11-21T23:20:42Z
+CFB,9f3f8efae55dbb803964a5107350e263,2026-11-22T01:00:00Z,UAB Blazers,UTSA Roadrunners,spreads,UTSA Roadrunners,-3.5,0.518322,pinnacle,1,2026-11-21T23:20:42Z
+CFB,9f3f8efae55dbb803964a5107350e263,2026-11-22T01:00:00Z,UAB Blazers,UTSA Roadrunners,totals,Over,50.0,0.481153,pinnacle,1,2026-11-21T23:20:42Z
+CFB,9f3f8efae55dbb803964a5107350e263,2026-11-22T01:00:00Z,UAB Blazers,UTSA Roadrunners,totals,Under,50.0,0.518847,pinnacle,1,2026-11-21T23:20:42Z
+CFB,7585fb8b12453a68ca1195319ae44c78,2026-11-22T02:00:00Z,TCU Horned Frogs,Utah Utes,h2h,TCU Horned Frogs,,0.261093,pinnacle,1,2026-11-21T23:20:42Z
+CFB,7585fb8b12453a68ca1195319ae44c78,2026-11-22T02:00:00Z,TCU Horned Frogs,Utah Utes,h2h,Utah Utes,,0.738907,pinnacle,1,2026-11-21T23:20:42Z
+CFB,7585fb8b12453a68ca1195319ae44c78,2026-11-22T02:00:00Z,TCU Horned Frogs,Utah Utes,spreads,TCU Horned Frogs,9.0,0.509166,pinnacle,1,2026-11-21T23:20:42Z
+CFB,7585fb8b12453a68ca1195319ae44c78,2026-11-22T02:00:00Z,TCU Horned Frogs,Utah Utes,spreads,Utah Utes,-9.0,0.490834,pinnacle,1,2026-11-21T23:20:42Z
+CFB,7585fb8b12453a68ca1195319ae44c78,2026-11-22T02:00:00Z,TCU Horned Frogs,Utah Utes,totals,Over,46.5,0.488859,pinnacle,1,2026-11-21T23:20:42Z
+CFB,7585fb8b12453a68ca1195319ae44c78,2026-11-22T02:00:00Z,TCU Horned Frogs,Utah Utes,totals,Under,46.5,0.511141,pinnacle,1,2026-11-21T23:20:42Z
+CFB,028f0fcc2f6411c4816e543bb7fa226c,2026-11-22T02:30:00Z,Boise State Broncos,San Diego State Aztecs,h2h,Boise State Broncos,,0.891967,pinnacle,1,2026-11-21T23:20:42Z
+CFB,028f0fcc2f6411c4816e543bb7fa226c,2026-11-22T02:30:00Z,Boise State Broncos,San Diego State Aztecs,h2h,San Diego State Aztecs,,0.108033,pinnacle,1,2026-11-21T23:20:42Z
+CFB,028f0fcc2f6411c4816e543bb7fa226c,2026-11-22T02:30:00Z,Boise State Broncos,San Diego State Aztecs,spreads,Boise State Broncos,-20.5,0.50229,pinnacle,1,2026-11-21T23:20:42Z
+CFB,028f0fcc2f6411c4816e543bb7fa226c,2026-11-22T02:30:00Z,Boise State Broncos,San Diego State Aztecs,spreads,San Diego State Aztecs,20.5,0.49771,pinnacle,1,2026-11-21T23:20:42Z
+CFB,028f0fcc2f6411c4816e543bb7fa226c,2026-11-22T02:30:00Z,Boise State Broncos,San Diego State Aztecs,totals,Over,61.0,0.49332,pinnacle,1,2026-11-21T23:20:42Z
+CFB,028f0fcc2f6411c4816e543bb7fa226c,2026-11-22T02:30:00Z,Boise State Broncos,San Diego State Aztecs,totals,Under,61.0,0.50668,pinnacle,1,2026-11-21T23:20:42Z
+CFB,ecfec2fe1db57f88e603f9947add1e26,2026-11-22T03:15:00Z,Arizona State Sun Devils,Oklahoma State Cowboys,h2h,Arizona State Sun Devils,,0.447994,pinnacle,1,2026-11-21T23:20:42Z
+CFB,ecfec2fe1db57f88e603f9947add1e26,2026-11-22T03:15:00Z,Arizona State Sun Devils,Oklahoma State Cowboys,h2h,Oklahoma State Cowboys,,0.552006,pinnacle,1,2026-11-21T23:20:42Z
+CFB,ecfec2fe1db57f88e603f9947add1e26,2026-11-22T03:15:00Z,Arizona State Sun Devils,Oklahoma State Cowboys,spreads,Arizona State Sun Devils,2.5,0.493128,pinnacle,1,2026-11-21T23:20:42Z
+CFB,ecfec2fe1db57f88e603f9947add1e26,2026-11-22T03:15:00Z,Arizona State Sun Devils,Oklahoma State Cowboys,spreads,Oklahoma State Cowboys,-2.5,0.506872,pinnacle,1,2026-11-21T23:20:42Z
+CFB,ecfec2fe1db57f88e603f9947add1e26,2026-11-22T03:15:00Z,Arizona State Sun Devils,Oklahoma State Cowboys,totals,Over,59.5,0.497774,pinnacle,1,2026-11-21T23:20:42Z
+CFB,ecfec2fe1db57f88e603f9947add1e26,2026-11-22T03:15:00Z,Arizona State Sun Devils,Oklahoma State Cowboys,totals,Under,59.5,0.502226,pinnacle,1,2026-11-21T23:20:42Z
+CFB,430ea047c8a027987881d51f810a6cf8,2026-11-22T03:30:00Z,Nevada Wolf Pack,Hawaii Rainbow Warriors,h2h,Hawaii Rainbow Warriors,,0.293845,pinnacle,1,2026-11-21T23:20:42Z
+CFB,430ea047c8a027987881d51f810a6cf8,2026-11-22T03:30:00Z,Nevada Wolf Pack,Hawaii Rainbow Warriors,h2h,Nevada Wolf Pack,,0.706155,pinnacle,1,2026-11-21T23:20:42Z
+CFB,430ea047c8a027987881d51f810a6cf8,2026-11-22T03:30:00Z,Nevada Wolf Pack,Hawaii Rainbow Warriors,spreads,Hawaii Rainbow Warriors,7.0,0.50229,pinnacle,1,2026-11-21T23:20:42Z
+CFB,430ea047c8a027987881d51f810a6cf8,2026-11-22T03:30:00Z,Nevada Wolf Pack,Hawaii Rainbow Warriors,spreads,Nevada Wolf Pack,-7.0,0.49771,pinnacle,1,2026-11-21T23:20:42Z
+CFB,430ea047c8a027987881d51f810a6cf8,2026-11-22T03:30:00Z,Nevada Wolf Pack,Hawaii Rainbow Warriors,totals,Over,40.5,0.508909,pinnacle,1,2026-11-21T23:20:42Z
+CFB,430ea047c8a027987881d51f810a6cf8,2026-11-22T03:30:00Z,Nevada Wolf Pack,Hawaii Rainbow Warriors,totals,Under,40.5,0.491091,pinnacle,1,2026-11-21T23:20:42Z
+CFB,6e36f5c3c55edcb31749b0de4a146d14,2026-11-22T03:30:00Z,Oregon State Beavers,Utah State Aggies,h2h,Oregon State Beavers,,0.703609,pinnacle,1,2026-11-21T23:20:42Z
+CFB,6e36f5c3c55edcb31749b0de4a146d14,2026-11-22T03:30:00Z,Oregon State Beavers,Utah State Aggies,h2h,Utah State Aggies,,0.296391,pinnacle,1,2026-11-21T23:20:42Z
+CFB,6e36f5c3c55edcb31749b0de4a146d14,2026-11-22T03:30:00Z,Oregon State Beavers,Utah State Aggies,spreads,Oregon State Beavers,-7.0,0.492038,pinnacle,1,2026-11-21T23:20:42Z
+CFB,6e36f5c3c55edcb31749b0de4a146d14,2026-11-22T03:30:00Z,Oregon State Beavers,Utah State Aggies,spreads,Utah State Aggies,7.0,0.507962,pinnacle,1,2026-11-21T23:20:42Z
+CFB,6e36f5c3c55edcb31749b0de4a146d14,2026-11-22T03:30:00Z,Oregon State Beavers,Utah State Aggies,totals,Over,51.0,0.502226,pinnacle,1,2026-11-21T23:20:42Z
+CFB,6e36f5c3c55edcb31749b0de4a146d14,2026-11-22T03:30:00Z,Oregon State Beavers,Utah State Aggies,totals,Under,51.0,0.497774,pinnacle,1,2026-11-21T23:20:42Z
