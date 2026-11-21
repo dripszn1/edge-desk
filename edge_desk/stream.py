@@ -155,7 +155,7 @@ class Engine:
     """Event-driven paper trader. Thread-safe: the socket thread calls on_quote, the live loop
     calls set_fairs and flush."""
 
-    def __init__(self, now_ms=lambda: int(time.time() * 1000), max_stale_ms: int = 30 * 60_000,
+    def __init__(self, now_ms=lambda: int(time.time() * 1000), max_stale_ms: int = 10 * 60_000,
                  directory: Path | None = None):
         self.now_ms = now_ms
         self.max_stale_ms = max_stale_ms

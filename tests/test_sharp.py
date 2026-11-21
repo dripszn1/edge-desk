@@ -8,7 +8,7 @@ from edge_desk.fees import fee_per_contract
 
 SNAP = "2026-11-12T18:00:00Z"
 KO = "2026-11-13T01:15:00Z"
-ODDS_TS = "2026-11-12T17:40:00Z"   # 20 min before SNAP (guard is 30 min since 11-15)
+ODDS_TS = "2026-11-12T17:55:00Z"   # 5 min before SNAP (guard is 10 min since 11-20)
 
 
 def _hist(n=4000, seed=1, end="2026-10-01"):
