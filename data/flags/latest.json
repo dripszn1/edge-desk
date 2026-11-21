@@ -1,5 +1,5 @@
 {
-  "snapshot_ts": "2026-11-21T16:31:54Z",
+  "snapshot_ts": "2026-11-21T16:47:11Z",
   "stale": false,
   "markets_scanned": 5590,
   "kickoff_source": "kalshi occurrence_datetime - 3h",
@@ -17,7 +17,7 @@
     "NFL": {
       "ok": true,
       "reason": "ok",
-      "ratings_as_of": "2026-11-21T16:31:54Z",
+      "ratings_as_of": "2026-11-21T16:47:11Z",
       "games_priced": 34,
       "n_games": 1844,
       "events_unmatched": 0,
@@ -34,7 +34,7 @@
   "model_flags": [],
   "model_shadow": [
     {
-      "snapshot_ts": "2026-11-21T16:31:54Z",
+      "snapshot_ts": "2026-11-21T16:47:11Z",
       "league": "NFL",
       "kind": "MODEL",
       "market": "SPREAD",
@@ -56,13 +56,13 @@
       "away": "ARI",
       "proj_margin_home": 8.31,
       "proj_total": 44.89,
-      "ratings_as_of": "2026-11-21T16:31:54Z",
+      "ratings_as_of": "2026-11-21T16:47:11Z",
       "kickoff_utc": "2026-11-22T18:00:00Z",
       "kickoff_ct": "Sun Nov 22, 12:00 PM CT",
       "kalshi_url": "https://kalshi.com/markets/kxnflspread/event/kxnflspread-26nov22arikc"
     },
     {
-      "snapshot_ts": "2026-11-21T16:31:54Z",
+      "snapshot_ts": "2026-11-21T16:47:11Z",
       "league": "NFL",
       "kind": "MODEL",
       "market": "SPREAD",
@@ -84,13 +84,13 @@
       "away": "PHI",
       "proj_margin_home": 0.99,
       "proj_total": 49.48,
-      "ratings_as_of": "2026-11-21T16:31:54Z",
+      "ratings_as_of": "2026-11-21T16:47:11Z",
       "kickoff_utc": "2026-11-26T21:30:00Z",
       "kickoff_ct": "Thu Nov 26, 3:30 PM CT",
       "kalshi_url": "https://kalshi.com/markets/kxnflspread/event/kxnflspread-26nov26phidal"
     },
     {
-      "snapshot_ts": "2026-11-21T16:31:54Z",
+      "snapshot_ts": "2026-11-21T16:47:11Z",
       "league": "NFL",
       "kind": "MODEL",
       "market": "SPREAD",
@@ -112,13 +112,13 @@
       "away": "NO",
       "proj_margin_home": 5.74,
       "proj_total": 46.51,
-      "ratings_as_of": "2026-11-21T16:31:54Z",
+      "ratings_as_of": "2026-11-21T16:47:11Z",
       "kickoff_utc": "2026-11-22T18:00:00Z",
       "kickoff_ct": "Sun Nov 22, 12:00 PM CT",
       "kalshi_url": "https://kalshi.com/markets/kxnflspread/event/kxnflspread-26nov22nochi"
     },
     {
-      "snapshot_ts": "2026-11-21T16:31:54Z",
+      "snapshot_ts": "2026-11-21T16:47:11Z",
       "league": "NFL",
       "kind": "MODEL",
       "market": "SPREAD",
@@ -140,7 +140,7 @@
       "away": "BAL",
       "proj_margin_home": -1.15,
       "proj_total": 47.23,
-      "ratings_as_of": "2026-11-21T16:31:54Z",
+      "ratings_as_of": "2026-11-21T16:47:11Z",
       "kickoff_utc": "2026-11-22T18:00:00Z",
       "kickoff_ct": "Sun Nov 22, 12:00 PM CT",
       "kalshi_url": "https://kalshi.com/markets/kxnflspread/event/kxnflspread-26nov22balcar"
@@ -164,7 +164,7 @@
       "reason": "ok",
       "events_priced": 116,
       "events_no_sharp_line": 128,
-      "odds_fetched": "2026-11-21T16:27:24Z",
+      "odds_fetched": "2026-11-21T16:42:41Z",
       "rungs_out_of_range": 1750,
       "outside_core_dist": 412,
       "outside_core_price": 42,
@@ -184,38 +184,11 @@
       "reason": "ok",
       "events_priced": 54,
       "events_no_sharp_line": 123,
-      "odds_fetched": "2026-11-21T16:27:24Z",
+      "odds_fetched": "2026-11-21T16:42:41Z",
       "gate": "gated: 0 settled SHARP shadow bets (< 30)"
     }
   },
   "sharp_flags": [],
-  "sharp_shadow": [
-    {
-      "snapshot_ts": "2026-11-21T16:31:54Z",
-      "league": "CFB",
-      "kind": "SHARP",
-      "market": "SPREAD",
-      "event": "Wake Forest vs Georgia Tech: Spread",
-      "event_ticker": "KXNCAAFSPREAD-26NOV21WAKEGT",
-      "ticker": "KXNCAAFSPREAD-26NOV21WAKEGT-WAKE22",
-      "leg1": "NO KXNCAAFSPREAD-26NOV21WAKEGT-WAKE22",
-      "leg1_desc": "Wake Forest wins by over 21.5 points",
-      "side": "NO",
-      "price": 0.49,
-      "fair": 0.5462,
-      "contracts": 7,
-      "fee_per_contract": 0.0186,
-      "edge": 0.0376,
-      "stake": 3.56,
-      "size_available": 206537.43,
-      "fee_multiplier": 1.0,
-      "sharp_line": 21.5,
-      "sharp_source": "pinnacle",
-      "odds_fetched_ts": "2026-11-21T16:27:24Z",
-      "kickoff_utc": "2026-11-21T17:00:00Z",
-      "kickoff_ct": "Sat Nov 21, 11:00 AM CT",
-      "kalshi_url": "https://kalshi.com/markets/kxncaafspread/event/kxncaafspread-26nov21wakegt"
-    }
-  ],
+  "sharp_shadow": [],
   "sharp_fairs": {}
 }
