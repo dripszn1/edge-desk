@@ -1,7 +1,7 @@
 {
   "proposals": [],
-  "generated_utc": "2026-11-21T04:18:13Z",
-  "generated_ct": "Fri Nov 20, 10:18 PM CT",
+  "generated_utc": "2026-11-21T04:33:39Z",
+  "generated_ct": "Fri Nov 20, 10:33 PM CT",
   "paper_mode": true,
   "rules": {
     "min_bets": 30,
@@ -335,7 +335,7 @@
     "propose_widen": []
   },
   "settlement": {
-    "pending": 379,
+    "pending": 380,
     "overdue": 0,
     "no_kickoff": 0,
     "grace_hours": 12,
@@ -364,7 +364,7 @@
         "events": 43,
         "t_by_event": -0.82,
         "stale": 0,
-        "pending": 19,
+        "pending": 20,
         "no_close": 0
       }
     },
@@ -703,7 +703,7 @@
       },
       "CFB SPREAD": {
         "0-3": {
-          "plays": 28,
+          "plays": 29,
           "games": 24,
           "clv_n": 15,
           "clv_games": 14,
@@ -715,8 +715,8 @@
           "sd_range": "0.00-0.19",
           "inside_cap": true,
           "adjusted": {
-            "plays": 15,
-            "games": 13,
+            "plays": 16,
+            "games": 14,
             "clv_n": 9,
             "clv_games": 9,
             "avg_clv_c": 2.48,
@@ -808,7 +808,7 @@
         },
         "_all": {
           "raw": {
-            "plays": 82,
+            "plays": 83,
             "games": 38,
             "clv_n": 67,
             "clv_games": 28,
@@ -819,8 +819,8 @@
             "pnl_t_by_game": 0.0
           },
           "adjusted": {
-            "plays": 33,
-            "games": 22,
+            "plays": 34,
+            "games": 23,
             "clv_n": 26,
             "clv_games": 18,
             "avg_clv_c": -0.32,
@@ -1317,7 +1317,7 @@
       },
       "CFB SPREAD": {
         "0-0.25": {
-          "plays": 29,
+          "plays": 30,
           "games": 24,
           "clv_n": 16,
           "clv_games": 14,
@@ -1628,8 +1628,8 @@
   },
   "alert_room": {
     "0c": {
-      "alerts": 78,
-      "gone_pct": 96.2,
+      "alerts": 79,
+      "gone_pct": 94.9,
       "median_min_to_gone": 118.5,
       "with_close": 45,
       "avg_clv_c": -1.49
@@ -1825,7 +1825,7 @@
           "label": "API-ONLY",
           "closed": 321,
           "pending": 247,
-          "closed_early_not_counted": 110,
+          "closed_early_not_counted": 111,
           "pnl_usd": -172.78,
           "avg_c": -5.57,
           "win_pct": 11.2,
@@ -1849,7 +1849,7 @@
           "label": "API-ONLY",
           "closed": 321,
           "pending": 247,
-          "closed_early_not_counted": 109,
+          "closed_early_not_counted": 110,
           "pnl_usd": -179.73,
           "avg_c": -5.79,
           "win_pct": 7.5,
@@ -1873,7 +1873,7 @@
           "label": "API-ONLY",
           "closed": 321,
           "pending": 247,
-          "closed_early_not_counted": 114,
+          "closed_early_not_counted": 115,
           "pnl_usd": -169.63,
           "avg_c": -5.53,
           "win_pct": 16.8,
@@ -1972,9 +1972,9 @@
   "stream": {
     "note": "instant paper trades from the Kalshi stream; kept apart from the alert scorecards",
     "maker": {
-      "quotes": 25,
+      "quotes": 26,
       "fills": 4,
-      "fill_rate_pct": 16.0
+      "fill_rate_pct": 15.4
     },
     "median_latency_ms": 475,
     "NFL": {
@@ -2084,8 +2084,8 @@
           "tickers": 225,
           "games": 103,
           "fees_usd": 17.05,
-          "pnl_usd": -94.6,
-          "t_by_game": -7.16,
+          "pnl_usd": -93.65,
+          "t_by_game": -7.11,
           "settled_fills": 25,
           "settled_pnl_usd": 15.95,
           "adverse_c": -1.86,
@@ -2108,14 +2108,14 @@
       },
       "2": {
         "CFB": {
-          "fills": 166,
-          "contracts": 1660,
+          "fills": 167,
+          "contracts": 1670,
           "paired_contracts": 0,
           "tickers": 99,
           "games": 56,
-          "fees_usd": 8.3,
-          "pnl_usd": -44.0,
-          "t_by_game": -3.89,
+          "fees_usd": 8.35,
+          "pnl_usd": -43.45,
+          "t_by_game": -3.84,
           "settled_fills": 21,
           "settled_pnl_usd": 33.15,
           "adverse_c": -1.81,
@@ -2144,8 +2144,8 @@
           "tickers": 47,
           "games": 31,
           "fees_usd": 4.45,
-          "pnl_usd": -26.0,
-          "t_by_game": -3.1,
+          "pnl_usd": -25.2,
+          "t_by_game": -2.99,
           "settled_fills": 9,
           "settled_pnl_usd": 29.95,
           "adverse_c": -2.02,
@@ -2220,7 +2220,7 @@
         }
       },
       "MAKER_1": {
-        "plays": 281,
+        "plays": 282,
         "decided": 170,
         "filled": 81,
         "fill_rate_pct": 47.6,
@@ -2416,7 +2416,7 @@
         }
       },
       "MAKER_1": {
-        "plays": 218,
+        "plays": 219,
         "decided": 136,
         "filled": 55,
         "fill_rate_pct": 40.4,
