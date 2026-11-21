@@ -1,17 +1,17 @@
 {
-  "generated_ts": "2026-11-21T00:53:14Z",
-  "generated_ct": "Fri Nov 20, 6:53 PM CT",
+  "generated_ts": "2026-11-21T01:06:28Z",
+  "generated_ct": "Fri Nov 20, 7:06 PM CT",
   "today_ct": "2026-11-20",
   "snapshot": {
-    "ts": "2026-11-21T00:46:59Z",
-    "ct": "Fri Nov 20, 6:46 PM CT",
+    "ts": "2026-11-21T01:02:19Z",
+    "ct": "Fri Nov 20, 7:02 PM CT",
     "stale": false,
-    "markets_scanned": 5846,
+    "markets_scanned": 5847,
     "kickoff_source": "kalshi occurrence_datetime - 3h",
     "phases": {
       "CFB": {
-        "live": 157,
-        "pregame": 4867
+        "live": 255,
+        "pregame": 4770
       },
       "NFL": {
         "pregame": 822
@@ -62,7 +62,7 @@
     "max_bet": 10.0
   },
   "signals": {
-    "weekly_ct": "Fri Nov 20, 6:49 PM CT",
+    "weekly_ct": "Fri Nov 20, 7:04 PM CT",
     "scorecards": [
       {
         "name": "SHARP shadow football",
@@ -181,15 +181,15 @@
           "no_close": 0
         },
         "football": {
-          "n": 86,
-          "avg_clv_c": -1.22,
-          "avg_raw_c": 0.27,
-          "beat_close_pct": 27.9,
-          "t_stat": -2.18,
-          "events": 42,
-          "t_by_event": -0.66,
+          "n": 87,
+          "avg_clv_c": -1.29,
+          "avg_raw_c": 0.2,
+          "beat_close_pct": 27.6,
+          "t_stat": -2.32,
+          "events": 43,
+          "t_by_event": -0.82,
           "stale": 0,
-          "pending": 20,
+          "pending": 19,
           "no_close": 0
         }
       },
@@ -207,15 +207,15 @@
           "no_close": 7
         },
         "football": {
-          "n": 279,
-          "avg_clv_c": -1.23,
-          "avg_raw_c": -0.03,
-          "beat_close_pct": 29.4,
-          "t_stat": -7.75,
-          "events": 59,
-          "t_by_event": -5.29,
+          "n": 296,
+          "avg_clv_c": -1.21,
+          "avg_raw_c": -0.01,
+          "beat_close_pct": 30.1,
+          "t_stat": -7.67,
+          "events": 61,
+          "t_by_event": -5.38,
           "stale": 0,
-          "pending": 247,
+          "pending": 230,
           "no_close": 1
         }
       }
