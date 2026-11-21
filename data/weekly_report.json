@@ -1,7 +1,7 @@
 {
   "proposals": [],
-  "generated_utc": "2026-11-21T05:04:11Z",
-  "generated_ct": "Fri Nov 20, 11:04 PM CT",
+  "generated_utc": "2026-11-21T05:19:12Z",
+  "generated_ct": "Fri Nov 20, 11:19 PM CT",
   "paper_mode": true,
   "rules": {
     "min_bets": 30,
@@ -1573,14 +1573,14 @@
       }
     },
     "football": {
-      "plays": 568,
+      "plays": 569,
       "line_checked": 341,
       "adverse_pct": 54.8,
       "avg_line_move_fav": -0.66,
-      "median_pull_age_min": 20.8,
+      "median_pull_age_min": 21.0,
       "kalshi_first": {
         "False": {
-          "plays": 305,
+          "plays": 306,
           "with_close": 191,
           "avg_clv_c": -1.26,
           "games": 57,
@@ -1596,7 +1596,7 @@
       },
       "by_pull_age": {
         "0-10 min": {
-          "plays": 259,
+          "plays": 260,
           "with_close": 155,
           "avg_clv_c": -1.02,
           "games": 57,
