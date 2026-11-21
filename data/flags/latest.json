@@ -1,12 +1,12 @@
 {
-  "snapshot_ts": "2026-11-21T17:02:34Z",
+  "snapshot_ts": "2026-11-21T17:17:35Z",
   "stale": false,
-  "markets_scanned": 5590,
+  "markets_scanned": 5684,
   "kickoff_source": "kalshi occurrence_datetime - 3h",
   "phases": {
     "CFB": {
       "live": 1004,
-      "pregame": 3764
+      "pregame": 3858
     },
     "NFL": {
       "pregame": 822
@@ -18,7 +18,7 @@
     "NFL": {
       "ok": true,
       "reason": "ok",
-      "ratings_as_of": "2026-11-21T17:02:34Z",
+      "ratings_as_of": "2026-11-21T17:17:35Z",
       "games_priced": 34,
       "n_games": 1844,
       "events_unmatched": 0,
@@ -35,7 +35,7 @@
   "model_flags": [],
   "model_shadow": [
     {
-      "snapshot_ts": "2026-11-21T17:02:34Z",
+      "snapshot_ts": "2026-11-21T17:17:35Z",
       "league": "NFL",
       "kind": "MODEL",
       "market": "SPREAD",
@@ -57,13 +57,13 @@
       "away": "ARI",
       "proj_margin_home": 8.31,
       "proj_total": 44.89,
-      "ratings_as_of": "2026-11-21T17:02:34Z",
+      "ratings_as_of": "2026-11-21T17:17:35Z",
       "kickoff_utc": "2026-11-22T18:00:00Z",
       "kickoff_ct": "Sun Nov 22, 12:00 PM CT",
       "kalshi_url": "https://kalshi.com/markets/kxnflspread/event/kxnflspread-26nov22arikc"
     },
     {
-      "snapshot_ts": "2026-11-21T17:02:34Z",
+      "snapshot_ts": "2026-11-21T17:17:35Z",
       "league": "NFL",
       "kind": "MODEL",
       "market": "SPREAD",
@@ -85,38 +85,38 @@
       "away": "PHI",
       "proj_margin_home": 0.99,
       "proj_total": 49.48,
-      "ratings_as_of": "2026-11-21T17:02:34Z",
+      "ratings_as_of": "2026-11-21T17:17:35Z",
       "kickoff_utc": "2026-11-26T21:30:00Z",
       "kickoff_ct": "Thu Nov 26, 3:30 PM CT",
       "kalshi_url": "https://kalshi.com/markets/kxnflspread/event/kxnflspread-26nov26phidal"
     },
     {
-      "snapshot_ts": "2026-11-21T17:02:34Z",
+      "snapshot_ts": "2026-11-21T17:17:35Z",
       "league": "NFL",
       "kind": "MODEL",
       "market": "SPREAD",
-      "event": "Chicago vs Detroit: Spread",
-      "event_ticker": "KXNFLSPREAD-26NOV26CHIDET",
-      "ticker": "KXNFLSPREAD-26NOV26CHIDET-DET5",
-      "leg1": "YES KXNFLSPREAD-26NOV26CHIDET-DET5",
-      "leg1_desc": "Detroit wins by over 4.5 points",
-      "side": "YES",
-      "price": 0.25,
-      "fair": 0.4531,
-      "contracts": 2,
-      "fee_per_contract": 0.015,
-      "edge": 0.1881,
-      "stake": 0.53,
-      "size_available": 470.0,
+      "event": "New Orleans vs Chicago: Spread",
+      "event_ticker": "KXNFLSPREAD-26NOV22NOCHI",
+      "ticker": "KXNFLSPREAD-26NOV22NOCHI-CHI2",
+      "leg1": "NO KXNFLSPREAD-26NOV22NOCHI-CHI2",
+      "leg1_desc": "Chicago wins by over 1.5 points",
+      "side": "NO",
+      "price": 0.18,
+      "fair": 0.3768,
+      "contracts": 3,
+      "fee_per_contract": 0.0133,
+      "edge": 0.1835,
+      "stake": 0.58,
+      "size_available": 100.0,
       "fee_multiplier": 1.0,
-      "home": "DET",
-      "away": "CHI",
-      "proj_margin_home": 2.91,
-      "proj_total": 50.93,
-      "ratings_as_of": "2026-11-21T17:02:34Z",
-      "kickoff_utc": "2026-11-26T18:00:00Z",
-      "kickoff_ct": "Thu Nov 26, 12:00 PM CT",
-      "kalshi_url": "https://kalshi.com/markets/kxnflspread/event/kxnflspread-26nov26chidet"
+      "home": "CHI",
+      "away": "NO",
+      "proj_margin_home": 5.74,
+      "proj_total": 46.51,
+      "ratings_as_of": "2026-11-21T17:17:35Z",
+      "kickoff_utc": "2026-11-22T18:00:00Z",
+      "kickoff_ct": "Sun Nov 22, 12:00 PM CT",
+      "kalshi_url": "https://kalshi.com/markets/kxnflspread/event/kxnflspread-26nov22nochi"
     }
   ],
   "sharp": {
@@ -127,6 +127,7 @@
       "events_no_sharp_line": 0,
       "odds_fetched": "2026-11-21T16:53:04Z",
       "rungs_out_of_range": 318,
+      "odds_too_old": 766,
       "outside_core_dist": 259,
       "outside_core_price": 7,
       "gate": "gated: 27 settled SHARP shadow bets (< 30)"
@@ -135,10 +136,10 @@
       "ok": true,
       "reason": "ok",
       "events_priced": 90,
-      "events_no_sharp_line": 100,
-      "odds_fetched": "2026-11-21T16:58:04Z",
-      "rungs_out_of_range": 1356,
-      "outside_core_dist": 319,
+      "events_no_sharp_line": 104,
+      "odds_fetched": "2026-11-21T17:16:35Z",
+      "rungs_out_of_range": 1354,
+      "outside_core_dist": 321,
       "outside_core_price": 26,
       "gate": "gated: 60 bets, P&L $-24.67, t=-2.16 (needs >0 and t>=2.0)"
     },
@@ -148,6 +149,7 @@
       "events_priced": 12,
       "events_no_sharp_line": 16,
       "odds_fetched": "2026-11-21T16:53:04Z",
+      "odds_too_old": 24,
       "gate": "gated: 0 settled SHARP shadow bets (< 30)"
     },
     "CFB ML": {
@@ -155,7 +157,7 @@
       "reason": "ok",
       "events_priced": 42,
       "events_no_sharp_line": 108,
-      "odds_fetched": "2026-11-21T16:58:04Z",
+      "odds_fetched": "2026-11-21T17:16:35Z",
       "gate": "gated: 0 settled SHARP shadow bets (< 30)"
     }
   },
