@@ -1,11 +1,11 @@
 {
-  "snapshot_ts": "2026-11-21T02:28:10Z",
+  "snapshot_ts": "2026-11-21T02:43:09Z",
   "stale": false,
-  "markets_scanned": 5910,
+  "markets_scanned": 5856,
   "kickoff_source": "kalshi occurrence_datetime - 3h",
   "phases": {
     "CFB": {
-      "live": 320,
+      "live": 266,
       "pregame": 4768
     },
     "NFL": {
@@ -18,7 +18,7 @@
     "NFL": {
       "ok": true,
       "reason": "ok",
-      "ratings_as_of": "2026-11-21T02:28:10Z",
+      "ratings_as_of": "2026-11-21T02:43:09Z",
       "games_priced": 34,
       "n_games": 1844,
       "events_unmatched": 0,
@@ -35,7 +35,7 @@
   "model_flags": [],
   "model_shadow": [
     {
-      "snapshot_ts": "2026-11-21T02:28:10Z",
+      "snapshot_ts": "2026-11-21T02:43:09Z",
       "league": "NFL",
       "kind": "MODEL",
       "market": "SPREAD",
@@ -57,13 +57,13 @@
       "away": "ARI",
       "proj_margin_home": 8.32,
       "proj_total": 44.89,
-      "ratings_as_of": "2026-11-21T02:28:10Z",
+      "ratings_as_of": "2026-11-21T02:43:09Z",
       "kickoff_utc": "2026-11-22T18:00:00Z",
       "kickoff_ct": "Sun Nov 22, 12:00 PM CT",
       "kalshi_url": "https://kalshi.com/markets/kxnflspread/event/kxnflspread-26nov22arikc"
     },
     {
-      "snapshot_ts": "2026-11-21T02:28:10Z",
+      "snapshot_ts": "2026-11-21T02:43:09Z",
       "league": "NFL",
       "kind": "MODEL",
       "market": "SPREAD",
@@ -85,13 +85,13 @@
       "away": "PHI",
       "proj_margin_home": 0.99,
       "proj_total": 49.49,
-      "ratings_as_of": "2026-11-21T02:28:10Z",
+      "ratings_as_of": "2026-11-21T02:43:09Z",
       "kickoff_utc": "2026-11-26T21:30:00Z",
       "kickoff_ct": "Thu Nov 26, 3:30 PM CT",
       "kalshi_url": "https://kalshi.com/markets/kxnflspread/event/kxnflspread-26nov26phidal"
     },
     {
-      "snapshot_ts": "2026-11-21T02:28:10Z",
+      "snapshot_ts": "2026-11-21T02:43:09Z",
       "league": "NFL",
       "kind": "MODEL",
       "market": "SPREAD",
@@ -113,13 +113,13 @@
       "away": "NO",
       "proj_margin_home": 5.74,
       "proj_total": 46.51,
-      "ratings_as_of": "2026-11-21T02:28:10Z",
+      "ratings_as_of": "2026-11-21T02:43:09Z",
       "kickoff_utc": "2026-11-22T18:00:00Z",
       "kickoff_ct": "Sun Nov 22, 12:00 PM CT",
       "kalshi_url": "https://kalshi.com/markets/kxnflspread/event/kxnflspread-26nov22nochi"
     },
     {
-      "snapshot_ts": "2026-11-21T02:28:10Z",
+      "snapshot_ts": "2026-11-21T02:43:09Z",
       "league": "NFL",
       "kind": "MODEL",
       "market": "SPREAD",
@@ -141,13 +141,13 @@
       "away": "MIA",
       "proj_margin_home": 9.79,
       "proj_total": 48.12,
-      "ratings_as_of": "2026-11-21T02:28:10Z",
+      "ratings_as_of": "2026-11-21T02:43:09Z",
       "kickoff_utc": "2026-11-22T18:00:00Z",
       "kickoff_ct": "Sun Nov 22, 12:00 PM CT",
       "kalshi_url": "https://kalshi.com/markets/kxnflspread/event/kxnflspread-26nov22miabuf"
     },
     {
-      "snapshot_ts": "2026-11-21T02:28:10Z",
+      "snapshot_ts": "2026-11-21T02:43:09Z",
       "league": "NFL",
       "kind": "MODEL",
       "market": "SPREAD",
@@ -169,7 +169,7 @@
       "away": "CIN",
       "proj_margin_home": -3.08,
       "proj_total": 51.54,
-      "ratings_as_of": "2026-11-21T02:28:10Z",
+      "ratings_as_of": "2026-11-21T02:43:09Z",
       "kickoff_utc": "2026-11-24T01:15:00Z",
       "kickoff_ct": "Mon Nov 23, 7:15 PM CT",
       "kalshi_url": "https://kalshi.com/markets/kxnflspread/event/kxnflspread-26nov23cinwas"
@@ -197,7 +197,7 @@
       "rungs_out_of_range": 1748,
       "odds_too_old": 2729,
       "outside_core_dist": 411,
-      "outside_core_price": 32,
+      "outside_core_price": 29,
       "stale_only": 4,
       "gate": "gated: 58 bets, P&L $-24.47, t=-2.25 (needs >0 and t>=2.0)"
     },
@@ -227,7 +227,7 @@
       "fair": 0.5253,
       "price": 0.46,
       "odds_fetched_ts": "2026-11-21T02:18:08Z",
-      "snapshot_ts": "2026-11-21T02:28:10Z",
+      "snapshot_ts": "2026-11-21T02:43:09Z",
       "sharp_line": 34.5,
       "stale": true,
       "kickoff_utc": "2026-11-21T18:00:00Z",
@@ -237,7 +237,7 @@
       "fair": 0.4754,
       "price": 0.41,
       "odds_fetched_ts": "2026-11-21T02:18:08Z",
-      "snapshot_ts": "2026-11-21T02:28:10Z",
+      "snapshot_ts": "2026-11-21T02:43:09Z",
       "sharp_line": 58.5,
       "stale": true,
       "kickoff_utc": "2026-11-21T19:00:00Z",
