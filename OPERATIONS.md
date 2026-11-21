@@ -17,6 +17,8 @@ then the top of REPORTS.md (latest builder runs). Nothing important lives only i
 | Odds credits | `data/odds/state.json` (`quota` = plan size read from The Odds API headers) |
 
 ## How Emerson wants it run
+- GitHub name (11-20, Emerson: stop sending "broken" notes about this): the repo answers as `dripszn1/edge-desk` OR `emersonclark10-hub/edge-desk` depending on the session; it is the same repo. If `gh api` on one name is refused, retry with the name add_repo returned, else use the GitHub tools. Not a failure: never report it as broken. The keeper workflow does the dispatching inside Actions, so a refused watchdog dispatch is never urgent.
+- Only message Emerson about something broken when data stopped (Kalshi data or digest >45 min old in a collect/live window), a workflow is red, tests are red, or plays stopped settling. Everything else goes in REPORTS.md only.
 - Plain language, phone-short. He reads on his phone.
 - Edge-desk operations (start/restart workflows): say what you're about to do, then do it. Don't ask. Merges are automatic (automerge.yml); no PR links.
 - Approvals that truly need him: open them in the built-in browser pane, ready to click.
