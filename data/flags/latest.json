@@ -1,12 +1,12 @@
 {
-  "snapshot_ts": "2026-11-21T18:18:51Z",
+  "snapshot_ts": "2026-11-21T18:34:12Z",
   "stale": false,
-  "markets_scanned": 5711,
+  "markets_scanned": 5715,
   "kickoff_source": "kalshi occurrence_datetime - 3h",
   "phases": {
     "CFB": {
-      "live": 1584,
-      "pregame": 3305
+      "live": 1640,
+      "pregame": 3253
     },
     "NFL": {
       "pregame": 822
@@ -18,7 +18,7 @@
     "NFL": {
       "ok": true,
       "reason": "ok",
-      "ratings_as_of": "2026-11-21T18:18:51Z",
+      "ratings_as_of": "2026-11-21T18:34:12Z",
       "games_priced": 34,
       "n_games": 1844,
       "events_unmatched": 0,
@@ -35,7 +35,7 @@
   "model_flags": [],
   "model_shadow": [
     {
-      "snapshot_ts": "2026-11-21T18:18:51Z",
+      "snapshot_ts": "2026-11-21T18:34:12Z",
       "league": "NFL",
       "kind": "MODEL",
       "market": "SPREAD",
@@ -57,13 +57,13 @@
       "away": "ARI",
       "proj_margin_home": 8.31,
       "proj_total": 44.89,
-      "ratings_as_of": "2026-11-21T18:18:51Z",
+      "ratings_as_of": "2026-11-21T18:34:12Z",
       "kickoff_utc": "2026-11-22T18:00:00Z",
       "kickoff_ct": "Sun Nov 22, 12:00 PM CT",
       "kalshi_url": "https://kalshi.com/markets/kxnflspread/event/kxnflspread-26nov22arikc"
     },
     {
-      "snapshot_ts": "2026-11-21T18:18:51Z",
+      "snapshot_ts": "2026-11-21T18:34:12Z",
       "league": "NFL",
       "kind": "MODEL",
       "market": "SPREAD",
@@ -85,13 +85,13 @@
       "away": "PHI",
       "proj_margin_home": 0.99,
       "proj_total": 49.48,
-      "ratings_as_of": "2026-11-21T18:18:51Z",
+      "ratings_as_of": "2026-11-21T18:34:12Z",
       "kickoff_utc": "2026-11-26T21:30:00Z",
       "kickoff_ct": "Thu Nov 26, 3:30 PM CT",
       "kalshi_url": "https://kalshi.com/markets/kxnflspread/event/kxnflspread-26nov26phidal"
     },
     {
-      "snapshot_ts": "2026-11-21T18:18:51Z",
+      "snapshot_ts": "2026-11-21T18:34:12Z",
       "league": "NFL",
       "kind": "MODEL",
       "market": "SPREAD",
@@ -113,7 +113,7 @@
       "away": "NO",
       "proj_margin_home": 5.74,
       "proj_total": 46.51,
-      "ratings_as_of": "2026-11-21T18:18:51Z",
+      "ratings_as_of": "2026-11-21T18:34:12Z",
       "kickoff_utc": "2026-11-22T18:00:00Z",
       "kickoff_ct": "Sun Nov 22, 12:00 PM CT",
       "kalshi_url": "https://kalshi.com/markets/kxnflspread/event/kxnflspread-26nov22nochi"
@@ -128,19 +128,19 @@
       "odds_fetched": "2026-11-21T17:53:57Z",
       "rungs_out_of_range": 318,
       "odds_too_old": 766,
-      "outside_core_dist": 259,
       "outside_core_price": 7,
+      "outside_core_dist": 259,
       "gate": "gated: 27 settled SHARP shadow bets (< 30)"
     },
     "CFB": {
       "ok": true,
       "reason": "ok",
       "events_priced": 82,
-      "events_no_sharp_line": 76,
-      "odds_fetched": "2026-11-21T18:17:51Z",
-      "rungs_out_of_range": 1240,
-      "outside_core_dist": 295,
-      "outside_core_price": 25,
+      "events_no_sharp_line": 72,
+      "odds_fetched": "2026-11-21T18:29:42Z",
+      "rungs_out_of_range": 1239,
+      "outside_core_dist": 294,
+      "outside_core_price": 27,
       "gate": "gated: 60 bets, P&L $-24.67, t=-2.16 (needs >0 and t>=2.0)"
     },
     "NFL ML": {
@@ -156,46 +156,46 @@
       "ok": true,
       "reason": "ok",
       "events_priced": 39,
-      "events_no_sharp_line": 93,
-      "odds_fetched": "2026-11-21T18:17:51Z",
+      "events_no_sharp_line": 91,
+      "odds_fetched": "2026-11-21T18:29:42Z",
       "gate": "gated: 0 settled SHARP shadow bets (< 30)"
     }
   },
   "sharp_flags": [],
   "sharp_shadow": [
     {
-      "snapshot_ts": "2026-11-21T18:18:51Z",
+      "snapshot_ts": "2026-11-21T18:34:12Z",
       "league": "CFB",
       "kind": "SHARP",
       "market": "SPREAD",
       "event": "Chattanooga vs Alabama: Spread",
       "event_ticker": "KXNCAAFSPREAD-26NOV21CHATALA",
-      "ticker": "KXNCAAFSPREAD-26NOV21CHATALA-ALA49",
-      "leg1": "NO KXNCAAFSPREAD-26NOV21CHATALA-ALA49",
-      "leg1_desc": "Alabama wins by over 48.5 points",
+      "ticker": "KXNCAAFSPREAD-26NOV21CHATALA-ALA50",
+      "leg1": "NO KXNCAAFSPREAD-26NOV21CHATALA-ALA50",
+      "leg1_desc": "Alabama wins by over 49.5 points",
       "side": "NO",
-      "price": 0.52,
-      "fair": 0.5842,
-      "contracts": 8,
-      "fee_per_contract": 0.0175,
-      "edge": 0.0467,
-      "stake": 4.3,
-      "size_available": 17113.1,
+      "price": 0.56,
+      "fair": 0.6132,
+      "contracts": 6,
+      "fee_per_contract": 0.0183,
+      "edge": 0.0349,
+      "stake": 3.47,
+      "size_available": 887.02,
       "fee_multiplier": 1.0,
       "sharp_line": 46.5,
       "sharp_source": "pinnacle",
-      "odds_fetched_ts": "2026-11-21T18:17:51Z",
+      "odds_fetched_ts": "2026-11-21T18:29:42Z",
       "kickoff_utc": "2026-11-21T19:00:00Z",
       "kickoff_ct": "Sat Nov 21, 1:00 PM CT",
       "kalshi_url": "https://kalshi.com/markets/kxncaafspread/event/kxncaafspread-26nov21chatala"
     }
   ],
   "sharp_fairs": {
-    "KXNCAAFSPREAD-26NOV21CHATALA-ALA49|NO": {
-      "fair": 0.5842,
-      "price": 0.52,
-      "odds_fetched_ts": "2026-11-21T18:17:51Z",
-      "snapshot_ts": "2026-11-21T18:18:51Z",
+    "KXNCAAFSPREAD-26NOV21CHATALA-ALA50|NO": {
+      "fair": 0.6132,
+      "price": 0.56,
+      "odds_fetched_ts": "2026-11-21T18:29:42Z",
+      "snapshot_ts": "2026-11-21T18:34:12Z",
       "sharp_line": 46.5,
       "stale": false,
       "kickoff_utc": "2026-11-21T19:00:00Z",
