@@ -1,5 +1,5 @@
 {
-  "snapshot_ts": "2026-11-21T15:15:29Z",
+  "snapshot_ts": "2026-11-21T15:30:51Z",
   "stale": false,
   "markets_scanned": 5590,
   "kickoff_source": "kalshi occurrence_datetime - 3h",
@@ -17,7 +17,7 @@
     "NFL": {
       "ok": true,
       "reason": "ok",
-      "ratings_as_of": "2026-11-21T15:15:29Z",
+      "ratings_as_of": "2026-11-21T15:30:51Z",
       "games_priced": 34,
       "n_games": 1844,
       "events_unmatched": 0,
@@ -34,7 +34,7 @@
   "model_flags": [],
   "model_shadow": [
     {
-      "snapshot_ts": "2026-11-21T15:15:29Z",
+      "snapshot_ts": "2026-11-21T15:30:51Z",
       "league": "NFL",
       "kind": "MODEL",
       "market": "SPREAD",
@@ -56,13 +56,13 @@
       "away": "ARI",
       "proj_margin_home": 8.31,
       "proj_total": 44.89,
-      "ratings_as_of": "2026-11-21T15:15:29Z",
+      "ratings_as_of": "2026-11-21T15:30:51Z",
       "kickoff_utc": "2026-11-22T18:00:00Z",
       "kickoff_ct": "Sun Nov 22, 12:00 PM CT",
       "kalshi_url": "https://kalshi.com/markets/kxnflspread/event/kxnflspread-26nov22arikc"
     },
     {
-      "snapshot_ts": "2026-11-21T15:15:29Z",
+      "snapshot_ts": "2026-11-21T15:30:51Z",
       "league": "NFL",
       "kind": "MODEL",
       "market": "SPREAD",
@@ -84,41 +84,41 @@
       "away": "PHI",
       "proj_margin_home": 0.99,
       "proj_total": 49.48,
-      "ratings_as_of": "2026-11-21T15:15:29Z",
+      "ratings_as_of": "2026-11-21T15:30:51Z",
       "kickoff_utc": "2026-11-26T21:30:00Z",
       "kickoff_ct": "Thu Nov 26, 3:30 PM CT",
       "kalshi_url": "https://kalshi.com/markets/kxnflspread/event/kxnflspread-26nov26phidal"
     },
     {
-      "snapshot_ts": "2026-11-21T15:15:29Z",
+      "snapshot_ts": "2026-11-21T15:30:51Z",
       "league": "NFL",
       "kind": "MODEL",
       "market": "SPREAD",
-      "event": "Chicago vs Detroit: Spread",
-      "event_ticker": "KXNFLSPREAD-26NOV26CHIDET",
-      "ticker": "KXNFLSPREAD-26NOV26CHIDET-DET5",
-      "leg1": "YES KXNFLSPREAD-26NOV26CHIDET-DET5",
-      "leg1_desc": "Detroit wins by over 4.5 points",
-      "side": "YES",
-      "price": 0.24,
-      "fair": 0.4532,
+      "event": "New Orleans vs Chicago: Spread",
+      "event_ticker": "KXNFLSPREAD-26NOV22NOCHI",
+      "ticker": "KXNFLSPREAD-26NOV22NOCHI-CHI3",
+      "leg1": "NO KXNFLSPREAD-26NOV22NOCHI-CHI3",
+      "leg1_desc": "Chicago wins by over 2.5 points",
+      "side": "NO",
+      "price": 0.2,
+      "fair": 0.4053,
       "contracts": 2,
       "fee_per_contract": 0.015,
-      "edge": 0.1982,
-      "stake": 0.51,
-      "size_available": 541.0,
+      "edge": 0.1903,
+      "stake": 0.43,
+      "size_available": 332.03,
       "fee_multiplier": 1.0,
-      "home": "DET",
-      "away": "CHI",
-      "proj_margin_home": 2.91,
-      "proj_total": 50.93,
-      "ratings_as_of": "2026-11-21T15:15:29Z",
-      "kickoff_utc": "2026-11-26T18:00:00Z",
-      "kickoff_ct": "Thu Nov 26, 12:00 PM CT",
-      "kalshi_url": "https://kalshi.com/markets/kxnflspread/event/kxnflspread-26nov26chidet"
+      "home": "CHI",
+      "away": "NO",
+      "proj_margin_home": 5.74,
+      "proj_total": 46.51,
+      "ratings_as_of": "2026-11-21T15:30:51Z",
+      "kickoff_utc": "2026-11-22T18:00:00Z",
+      "kickoff_ct": "Sun Nov 22, 12:00 PM CT",
+      "kalshi_url": "https://kalshi.com/markets/kxnflspread/event/kxnflspread-26nov22nochi"
     },
     {
-      "snapshot_ts": "2026-11-21T15:15:29Z",
+      "snapshot_ts": "2026-11-21T15:30:51Z",
       "league": "NFL",
       "kind": "MODEL",
       "market": "SPREAD",
@@ -140,7 +140,7 @@
       "away": "MIA",
       "proj_margin_home": 9.78,
       "proj_total": 48.12,
-      "ratings_as_of": "2026-11-21T15:15:29Z",
+      "ratings_as_of": "2026-11-21T15:30:51Z",
       "kickoff_utc": "2026-11-22T18:00:00Z",
       "kickoff_ct": "Sun Nov 22, 12:00 PM CT",
       "kalshi_url": "https://kalshi.com/markets/kxnflspread/event/kxnflspread-26nov22miabuf"
@@ -156,7 +156,7 @@
       "rungs_out_of_range": 319,
       "odds_too_old": 766,
       "outside_core_dist": 259,
-      "outside_core_price": 11,
+      "outside_core_price": 9,
       "gate": "gated: 27 settled SHARP shadow bets (< 30)"
     },
     "CFB": {
@@ -164,10 +164,10 @@
       "reason": "ok",
       "events_priced": 116,
       "events_no_sharp_line": 128,
-      "odds_fetched": "2026-11-21T15:09:29Z",
-      "rungs_out_of_range": 1750,
-      "outside_core_dist": 412,
-      "outside_core_price": 39,
+      "odds_fetched": "2026-11-21T15:21:21Z",
+      "rungs_out_of_range": 1747,
+      "outside_core_dist": 415,
+      "outside_core_price": 32,
       "gate": "gated: 60 bets, P&L $-24.67, t=-2.16 (needs >0 and t>=2.0)"
     },
     "NFL ML": {
@@ -184,59 +184,11 @@
       "reason": "ok",
       "events_priced": 54,
       "events_no_sharp_line": 123,
-      "odds_fetched": "2026-11-21T15:09:29Z",
+      "odds_fetched": "2026-11-21T15:21:21Z",
       "gate": "gated: 0 settled SHARP shadow bets (< 30)"
     }
   },
   "sharp_flags": [],
-  "sharp_shadow": [
-    {
-      "snapshot_ts": "2026-11-21T15:15:29Z",
-      "league": "CFB",
-      "kind": "SHARP",
-      "market": "SPREAD",
-      "event": "Northern Illinois vs North Dakota St.: Spread",
-      "event_ticker": "KXNCAAFSPREAD-26NOV21NIUNDSU",
-      "ticker": "KXNCAAFSPREAD-26NOV21NIUNDSU-NDSU28",
-      "leg1": "YES KXNCAAFSPREAD-26NOV21NIUNDSU-NDSU28",
-      "leg1_desc": "North Dakota St. wins by over 27.5 points",
-      "side": "YES",
-      "price": 0.46,
-      "fair": 0.5359,
-      "contracts": 11,
-      "fee_per_contract": 0.0182,
-      "edge": 0.0577,
-      "stake": 5.26,
-      "size_available": 6226.0,
-      "fee_multiplier": 1.0,
-      "sharp_line": 27.0,
-      "sharp_source": "pinnacle",
-      "odds_fetched_ts": "2026-11-21T15:09:29Z",
-      "kickoff_utc": "2026-11-21T21:00:00Z",
-      "kickoff_ct": "Sat Nov 21, 3:00 PM CT",
-      "kalshi_url": "https://kalshi.com/markets/kxncaafspread/event/kxncaafspread-26nov21niundsu"
-    }
-  ],
-  "sharp_fairs": {
-    "KXNCAAFSPREAD-26NOV21NIUNDSU-NDSU28|YES": {
-      "fair": 0.5359,
-      "price": 0.46,
-      "odds_fetched_ts": "2026-11-21T15:09:29Z",
-      "snapshot_ts": "2026-11-21T15:15:29Z",
-      "sharp_line": 27.0,
-      "stale": false,
-      "kickoff_utc": "2026-11-21T21:00:00Z",
-      "far": false
-    },
-    "KXNCAAFSPREAD-26NOV21USUORST-ORST10|YES": {
-      "fair": 0.5185,
-      "price": 0.46,
-      "odds_fetched_ts": "2026-11-21T15:09:29Z",
-      "snapshot_ts": "2026-11-21T15:15:29Z",
-      "sharp_line": 9.5,
-      "stale": false,
-      "kickoff_utc": "2026-11-22T03:30:00Z",
-      "far": false
-    }
-  }
+  "sharp_shadow": [],
+  "sharp_fairs": {}
 }
