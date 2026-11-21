@@ -292,8 +292,11 @@ def code_hash() -> str:
     import hashlib
     from pathlib import Path
     h = hashlib.sha256()
-    for mod in (__file__, premove.__file__, clv.__file__):
+    for mod in (__file__, premove.__file__, clv.__file__, sharp.__file__):
         h.update(Path(mod).read_bytes())
+    # #75: the guard settings the summary reads (a 30 -> 10 min change kept a stale proposal up)
+    h.update(repr((sharp.ODDS_MAX_AGE_MIN, sharp.ODDS_MAX_AGE_NEAR_KO_MIN,
+                   sorted(premove.GUARD_LEAGUES))).encode())
     return h.hexdigest()[:16]
 
 

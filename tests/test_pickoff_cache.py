@@ -41,3 +41,16 @@ def test_future_cache_rerun(monkeypatch, tmp_path):
     _, calls = _setup(monkeypatch, tmp_path, "2026-11-13T06:00:00Z", pickoff.code_hash())
     pickoff.run_if_due(pd.Timestamp("2026-11-13T05:32:00Z"))
     assert calls
+
+
+def test_freshness_limit_change_reruns(monkeypatch):
+    """#75: the summary reads sharp.ODDS_MAX_AGE_* (and premove.GUARD_LEAGUES); a change there
+    (#74: 30 -> 10 min) must invalidate the cache, or the digest re-proposes a guard already ON."""
+    from edge_desk import premove, sharp
+    before = pickoff.code_hash()
+    monkeypatch.setattr(sharp, "ODDS_MAX_AGE_MIN", sharp.ODDS_MAX_AGE_MIN + 20)
+    assert pickoff.code_hash() != before
+    monkeypatch.undo()
+    assert pickoff.code_hash() == before
+    monkeypatch.setattr(premove, "GUARD_LEAGUES", tuple(premove.GUARD_LEAGUES) + ("XX",))
+    assert pickoff.code_hash() != before
