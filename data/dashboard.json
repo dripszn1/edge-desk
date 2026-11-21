@@ -1,18 +1,17 @@
 {
-  "generated_ts": "2026-11-21T22:55:26Z",
-  "generated_ct": "Sat Nov 21, 4:55 PM CT",
+  "generated_ts": "2026-11-21T23:10:37Z",
+  "generated_ct": "Sat Nov 21, 5:10 PM CT",
   "today_ct": "2026-11-21",
   "snapshot": {
-    "ts": "2026-11-21T22:51:01Z",
-    "ct": "Sat Nov 21, 4:51 PM CT",
+    "ts": "2026-11-21T23:06:02Z",
+    "ct": "Sat Nov 21, 5:06 PM CT",
     "stale": false,
-    "markets_scanned": 3813,
+    "markets_scanned": 3710,
     "kickoff_source": "kalshi occurrence_datetime - 3h",
     "phases": {
       "CFB": {
-        "live": 2056,
-        "pregame": 857,
-        "unknown": 78
+        "live": 2031,
+        "pregame": 857
       },
       "NFL": {
         "pregame": 822
@@ -63,7 +62,7 @@
     "max_bet": 10.0
   },
   "signals": {
-    "weekly_ct": "Sat Nov 21, 4:53 PM CT",
+    "weekly_ct": "Sat Nov 21, 5:08 PM CT",
     "scorecards": [
       {
         "name": "SHARP shadow football",
@@ -85,18 +84,18 @@
       },
       {
         "name": "SHARP held back",
-        "settled": 530,
-        "pnl": -46.66,
-        "roi": -0.0272,
+        "settled": 542,
+        "pnl": -43.35,
+        "roi": -0.0249,
         "t_stat": -0.59,
         "verdict": "luck / no edge",
-        "why": "t=-0.59, coin-flip beat 58%",
+        "why": "t=-0.59, coin-flip beat 60%",
         "by_reason": {
           "core_zone": {
-            "settled": 18,
-            "pnl": 0.58,
-            "roi": 0.0134,
-            "t_stat": 0.14,
+            "settled": 19,
+            "pnl": -1.5,
+            "roi": -0.033,
+            "t_stat": -0.03,
             "verdict": "not enough data"
           },
           "far_rung": {
@@ -107,10 +106,10 @@
             "verdict": "luck / no edge"
           },
           "far_rung+core_zone": {
-            "settled": 88,
-            "pnl": 19.32,
-            "roi": 0.1087,
-            "t_stat": 0.44,
+            "settled": 93,
+            "pnl": 10.35,
+            "roi": 0.0555,
+            "t_stat": 0.25,
             "verdict": "luck / no edge"
           },
           "far_rung+stale_line": {
@@ -121,11 +120,11 @@
             "verdict": "luck / no edge"
           },
           "far_rung+stale_line+core_zone": {
-            "settled": 27,
-            "pnl": 16.33,
-            "roi": 0.3288,
-            "t_stat": 0.63,
-            "verdict": "not enough data"
+            "settled": 30,
+            "pnl": 17.29,
+            "roi": 0.3104,
+            "t_stat": 0.65,
+            "verdict": "luck / no edge"
           },
           "kalshi_first": {
             "settled": 8,
@@ -142,29 +141,29 @@
             "verdict": "not enough data"
           },
           "stale_line": {
-            "settled": 124,
-            "pnl": -20.11,
-            "roi": -0.0492,
-            "t_stat": -1.35,
+            "settled": 125,
+            "pnl": -15.82,
+            "roi": -0.0384,
+            "t_stat": -1.21,
             "verdict": "luck / no edge"
           },
           "stale_line+core_zone": {
-            "settled": 10,
-            "pnl": 3.24,
-            "roi": 0.0989,
-            "t_stat": 0.22,
+            "settled": 12,
+            "pnl": 12.35,
+            "roi": 0.328,
+            "t_stat": 1.0,
             "verdict": "not enough data"
           }
         }
       },
       {
         "name": "MODEL shadow",
-        "settled": 121,
-        "pnl": 15.49,
-        "roi": 0.0454,
-        "t_stat": 0.27,
+        "settled": 122,
+        "pnl": 15.37,
+        "roi": 0.045,
+        "t_stat": 0.24,
         "verdict": "luck / no edge",
-        "why": "t=0.27, coin-flip beat 67%"
+        "why": "t=0.24, coin-flip beat 67%"
       }
     ],
     "clv": {
@@ -182,15 +181,15 @@
           "no_close": 0
         },
         "football": {
-          "n": 104,
-          "avg_clv_c": -1.56,
-          "avg_raw_c": -0.02,
-          "beat_close_pct": 26.9,
-          "t_stat": -3.19,
-          "events": 55,
-          "t_by_event": -1.5,
+          "n": 107,
+          "avg_clv_c": -1.66,
+          "avg_raw_c": -0.12,
+          "beat_close_pct": 26.2,
+          "t_stat": -3.47,
+          "events": 56,
+          "t_by_event": -1.61,
           "stale": 0,
-          "pending": 7,
+          "pending": 4,
           "no_close": 0
         }
       },
@@ -208,15 +207,15 @@
           "no_close": 7
         },
         "football": {
-          "n": 500,
-          "avg_clv_c": -1.44,
-          "avg_raw_c": -0.25,
-          "beat_close_pct": 25.8,
-          "t_stat": -11.62,
-          "events": 97,
-          "t_by_event": -6.94,
+          "n": 507,
+          "avg_clv_c": -1.51,
+          "avg_raw_c": -0.31,
+          "beat_close_pct": 25.4,
+          "t_stat": -12.06,
+          "events": 98,
+          "t_by_event": -7.02,
           "stale": 0,
-          "pending": 96,
+          "pending": 89,
           "no_close": 1
         }
       }
@@ -273,65 +272,51 @@
         "best_manual": "HOLD",
         "variants": {
           "EXIT_AT_TIP": {
-            "closed": 420,
-            "pnl_usd": -129.72,
-            "t_by_game": -7.27,
+            "closed": 432,
+            "pnl_usd": -132.25,
+            "t_by_game": -7.4,
             "gate_open": false
           },
           "HOLD": {
-            "closed": 420,
-            "pnl_usd": -56.82,
-            "t_by_game": -0.34,
+            "closed": 432,
+            "pnl_usd": -53.51,
+            "t_by_game": -0.32,
             "gate_open": false
           },
           "RESTING_10": {
-            "closed": 420,
-            "pnl_usd": -119.46,
-            "t_by_game": -1.92,
+            "closed": 432,
+            "pnl_usd": -121.55,
+            "t_by_game": -1.96,
             "gate_open": false
           },
           "RESTING_15": {
-            "closed": 420,
-            "pnl_usd": -88.13,
-            "t_by_game": -1.18,
+            "closed": 432,
+            "pnl_usd": -92.45,
+            "t_by_game": -1.24,
             "gate_open": false
           },
           "RESTING_5": {
-            "closed": 420,
-            "pnl_usd": -140.81,
-            "t_by_game": -3.17,
+            "closed": 432,
+            "pnl_usd": -146.09,
+            "t_by_game": -3.28,
             "gate_open": false
           },
           "RESTING_FAIR": {
-            "closed": 420,
-            "pnl_usd": -126.44,
-            "t_by_game": -2.83,
+            "closed": 432,
+            "pnl_usd": -130.18,
+            "t_by_game": -2.91,
             "gate_open": false
           },
           "TRADE": {
-            "closed": 420,
-            "pnl_usd": -130.28,
-            "t_by_game": -7.33,
+            "closed": 432,
+            "pnl_usd": -132.81,
+            "t_by_game": -7.46,
             "gate_open": false
           }
         }
       }
     },
     "open_alerts": [
-      {
-        "ticker": "KXNCAAFSPREAD-26NOV21WAKEGT-WAKE22",
-        "signal": "SHARP",
-        "side": "NO",
-        "game": "Wake Forest vs Georgia Tech: Spread",
-        "contract": "Wake Forest wins by over 21.5 points",
-        "max_price": 0.49,
-        "stake": 3.56,
-        "gone": true,
-        "sent_ct": "Sat Nov 21, 10:16 AM CT",
-        "kickoff_utc": "2026-11-21T17:00:00Z",
-        "kickoff_ct": "Sat Nov 21, 11:00 AM CT",
-        "kalshi_url": "https://kalshi.com/markets/kxncaafspread/event/kxncaafspread-26nov21wakegt"
-      },
       {
         "ticker": "KXNCAAFSPREAD-26NOV21TNTCMSST-MSST34",
         "signal": "SHARP",
