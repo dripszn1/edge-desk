@@ -1,16 +1,16 @@
 {
-  "generated_ts": "2026-11-21T23:28:34Z",
-  "generated_ct": "Sat Nov 21, 5:28 PM CT",
+  "generated_ts": "2026-11-21T23:41:11Z",
+  "generated_ct": "Sat Nov 21, 5:41 PM CT",
   "today_ct": "2026-11-21",
   "snapshot": {
-    "ts": "2026-11-21T23:21:12Z",
-    "ct": "Sat Nov 21, 5:21 PM CT",
+    "ts": "2026-11-21T23:36:40Z",
+    "ct": "Sat Nov 21, 5:36 PM CT",
     "stale": false,
-    "markets_scanned": 3595,
+    "markets_scanned": 3412,
     "kickoff_source": "kalshi occurrence_datetime - 3h",
     "phases": {
       "CFB": {
-        "live": 1870,
+        "live": 1687,
         "pregame": 903
       },
       "NFL": {
@@ -62,7 +62,7 @@
     "max_bet": 10.0
   },
   "signals": {
-    "weekly_ct": "Sat Nov 21, 5:23 PM CT",
+    "weekly_ct": "Sat Nov 21, 5:38 PM CT",
     "scorecards": [
       {
         "name": "SHARP shadow football",
@@ -84,12 +84,12 @@
       },
       {
         "name": "SHARP held back",
-        "settled": 542,
-        "pnl": -43.35,
-        "roi": -0.0249,
-        "t_stat": -0.59,
+        "settled": 544,
+        "pnl": -46.36,
+        "roi": -0.0266,
+        "t_stat": -0.63,
         "verdict": "luck / no edge",
-        "why": "t=-0.59, coin-flip beat 60%",
+        "why": "t=-0.63, coin-flip beat 59%",
         "by_reason": {
           "core_zone": {
             "settled": 19,
@@ -106,10 +106,10 @@
             "verdict": "luck / no edge"
           },
           "far_rung+core_zone": {
-            "settled": 93,
-            "pnl": 10.35,
-            "roi": 0.0555,
-            "t_stat": 0.25,
+            "settled": 95,
+            "pnl": 7.34,
+            "roi": 0.0387,
+            "t_stat": 0.18,
             "verdict": "luck / no edge"
           },
           "far_rung+stale_line": {
@@ -158,12 +158,12 @@
       },
       {
         "name": "MODEL shadow",
-        "settled": 123,
-        "pnl": 15.26,
-        "roi": 0.0447,
-        "t_stat": 0.2,
+        "settled": 124,
+        "pnl": 15.19,
+        "roi": 0.0444,
+        "t_stat": 0.17,
         "verdict": "luck / no edge",
-        "why": "t=0.2, coin-flip beat 68%"
+        "why": "t=0.17, coin-flip beat 67%"
       }
     ],
     "clv": {
@@ -272,45 +272,45 @@
         "best_manual": "HOLD",
         "variants": {
           "EXIT_AT_TIP": {
-            "closed": 432,
-            "pnl_usd": -132.25,
-            "t_by_game": -7.4,
+            "closed": 434,
+            "pnl_usd": -132.87,
+            "t_by_game": -7.42,
             "gate_open": false
           },
           "HOLD": {
-            "closed": 432,
-            "pnl_usd": -53.51,
-            "t_by_game": -0.32,
+            "closed": 434,
+            "pnl_usd": -56.52,
+            "t_by_game": -0.34,
             "gate_open": false
           },
           "RESTING_10": {
-            "closed": 432,
-            "pnl_usd": -121.55,
-            "t_by_game": -1.96,
+            "closed": 434,
+            "pnl_usd": -124.56,
+            "t_by_game": -2.01,
             "gate_open": false
           },
           "RESTING_15": {
-            "closed": 432,
-            "pnl_usd": -92.45,
-            "t_by_game": -1.24,
+            "closed": 434,
+            "pnl_usd": -95.46,
+            "t_by_game": -1.28,
             "gate_open": false
           },
           "RESTING_5": {
-            "closed": 432,
-            "pnl_usd": -146.09,
-            "t_by_game": -3.28,
+            "closed": 434,
+            "pnl_usd": -149.1,
+            "t_by_game": -3.35,
             "gate_open": false
           },
           "RESTING_FAIR": {
-            "closed": 432,
-            "pnl_usd": -130.18,
-            "t_by_game": -2.91,
+            "closed": 434,
+            "pnl_usd": -133.19,
+            "t_by_game": -2.98,
             "gate_open": false
           },
           "TRADE": {
-            "closed": 432,
-            "pnl_usd": -132.81,
-            "t_by_game": -7.46,
+            "closed": 434,
+            "pnl_usd": -133.43,
+            "t_by_game": -7.49,
             "gate_open": false
           }
         }
