@@ -1,5 +1,12 @@
 # Reports (newest first)
 
+## 2026-11-21 (builder, 04:45Z run)
+- Nothing to build: backlog #1–#75 all done; nothing broken (live 158 running since 02:13Z, checkpoints to 04:30Z, 1,023 fast ticks, 0 throttled; #75 verified: the 04:36Z digest no longer re-proposes the 10-min guard; keeper 75 active; automerge #93 green; settlement 380 pending / 0 overdue; no report errors; no data file over 40 MB). Nothing shipped, nothing to merge.
+- Tests: 524/524 green on dev rebased onto main.
+- Honest results (football): picks vs Kalshi's close after fee still negative (alerted −1.3¢, 87 plays/43 games; held back −1.2¢, 307/62). Exits (321 closed, 63 games): hold −$33.69 (t −0.3), sell at tip −$95.44, Auto Sell at fair −$59.04, Auto Sell +15¢ −$26.86 / +10¢ −$43.29; bracket API-only (−$169.63 to −$205.65). Three shadow plays on Saturday's slate (TNTC/MSST, CHAT/ALA, HAW/NEV).
+- Verdict rules: thresholds met since read #1; rule 2 (no exit with P&L > 0) and the held-back half of rule 1 (no edge) read the same. Not acted on.
+- Watchdog: live run active → nothing dispatched. Needs Emerson: nothing.
+
 ## 2026-11-21 (builder, 01:45Z run)
 - Shipped #75 (pickoff cache): the 01:25Z digest still proposed "alert only within 10 min of a fresh sharp pull" after #74 turned it ON, because the hourly pickoff cache's code hash ignored sharp.py's freshness limits. Now a settings change re-runs it at once; it now shows under in_effect. Auto-merge: see the run after this push.
 - Tests: 524/524 green (1 new test) on dev merged with main.
