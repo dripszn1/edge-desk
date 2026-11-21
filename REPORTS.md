@@ -1,5 +1,12 @@
 # Reports (newest first)
 
+## 2026-11-21 (builder, 10:45Z run)
+- Nothing to build: backlog #1–#75 all done; nothing broken (collect 229 green at 10:43Z, keeper 76 active, automerge #95 green, settlement 360 pending / 0 overdue, no report errors, no data file over 40 MB). Nothing shipped, nothing to merge.
+- Tests: 524/524 green on dev rebased onto main.
+- Honest results (football): picks vs Kalshi's close after fee still negative (alerted −1.3¢, 87 plays/43 games; held back −1.2¢, 307/62, t −5.4 by game). Exits (341 closed): hold −$61.18, sell at tip −$99.95, Auto Sell at fair −$68.33, Auto Sell +10¢ −$43.15 (best); bracket API-only, all worse. One shadow play on today's slate (CHAT/ALA YES Over 59.5 @ 42¢, fair 48¢, 1 PM CT).
+- Verdict rules: thresholds met since read #1; rule 2 (no exit with P&L > 0) and the held-back half of rule 1 (no edge) read the same. Not acted on.
+- Watchdog: no live run, collect fresh → dispatched live.yml on main (guard waits for the 10 AM CT window). Needs Emerson: nothing. (`gh api` refused this run; GitHub tools on emersonclark10-hub/edge-desk work.)
+
 ## 2026-11-21 (builder, 07:45Z run)
 - Nothing to build: backlog #1–#75 all done; nothing broken (live 158 ended at window end 05:35Z, 205 min, 1,425 fast ticks, 0 throttled; collect 227 green; keeper 75 active; automerge #94 green; settlement 370 pending / 0 overdue; no report errors; no data file over 40 MB). Nothing shipped, nothing to merge.
 - Tests: 524/524 green on dev rebased onto main.
