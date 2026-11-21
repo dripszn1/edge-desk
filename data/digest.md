@@ -1,7 +1,7 @@
-# edge-desk digest, Sat Nov 21, 12:39 PM CT
+# edge-desk digest, Sat Nov 21, 12:55 PM CT
 
 Paper only, nothing is placed. Plays kicking off in the next 36h:
-- SHARP shadow: Chattanooga vs Alabama | NO Alabama wins by over 49.5 points @ 56¢, fair 61¢, edge 3.5¢ after fees | $3.47 paper | Sat Nov 21, 1:00 PM CT | [Kalshi](https://kalshi.com/markets/kxncaafspread/event/kxncaafspread-26nov21chatala)
+- SHARP shadow: Chattanooga vs Alabama | NO Alabama wins by over 48.5 points @ 53¢, fair 58¢, edge 3.6¢ after fees | $3.29 paper | Sat Nov 21, 1:00 PM CT | [Kalshi](https://kalshi.com/markets/kxncaafspread/event/kxncaafspread-26nov21chatala)
 
 Settled in the last 24h:
 - MODEL shadow: 2-2, $+2.98 after fees (running 23-77, $+61.76)
@@ -17,4 +17,4 @@ Settled in the last 24h:
   instant (stream) paper trades: NFL 24 plays, vs close -2.4c (20, 8 games), hold $-116.43, auto-sell at fair $-60.76 (20 done) · CFB 60 plays, vs close -1.5c (21, 9 games), hold $-24.53, auto-sell at fair $+17.57 (7 done) · median 476 ms
   market-making paper: CFB ±1c 343 fills/103 games $-93.65 t -7.1, after-fill -1.9c · NFL ±1c 153 fills/38 games $-27.26 t -2.1, after-fill -1.7c · CFB ±2c 167 fills/56 games $-43.45 t -3.8, after-fill -1.8c · NFL ±2c 99 fills/20 games $-18.58 t -2.2, after-fill -1.7c · CFB ±3c 89 fills/31 games $-25.20 t -3.0, after-fill -2.0c · NFL ±3c 35 fills/10 games $-5.23 t -0.9, after-fill -1.6c
 
-Status: Kalshi data 6m old (ok); sharp odds 10m old; odds credits left 17255 of 20000; gates: MODEL NFL closed, MODEL CFB closed, SHARP NFL closed, SHARP CFB closed, SHARP NFL ML closed, SHARP CFB ML closed
+Status: Kalshi data 6m old (ok); sharp odds 10m old; odds credits left 17249 of 20000; gates: MODEL NFL closed, MODEL CFB closed, SHARP NFL closed, SHARP CFB closed, SHARP NFL ML closed, SHARP CFB ML closed

@@ -1,16 +1,16 @@
 {
-  "generated_ts": "2026-11-21T18:39:51Z",
-  "generated_ct": "Sat Nov 21, 12:39 PM CT",
+  "generated_ts": "2026-11-21T18:55:11Z",
+  "generated_ct": "Sat Nov 21, 12:55 PM CT",
   "today_ct": "2026-11-21",
   "snapshot": {
-    "ts": "2026-11-21T18:34:12Z",
-    "ct": "Sat Nov 21, 12:34 PM CT",
+    "ts": "2026-11-21T18:49:27Z",
+    "ct": "Sat Nov 21, 12:49 PM CT",
     "stale": false,
-    "markets_scanned": 5715,
+    "markets_scanned": 5719,
     "kickoff_source": "kalshi occurrence_datetime - 3h",
     "phases": {
       "CFB": {
-        "live": 1640,
+        "live": 1644,
         "pregame": 3253
       },
       "NFL": {
@@ -62,7 +62,7 @@
     "max_bet": 10.0
   },
   "signals": {
-    "weekly_ct": "Sat Nov 21, 12:37 PM CT",
+    "weekly_ct": "Sat Nov 21, 12:52 PM CT",
     "scorecards": [
       {
         "name": "SHARP shadow football",
@@ -215,7 +215,7 @@
           "events": 75,
           "t_by_event": -6.29,
           "stale": 0,
-          "pending": 212,
+          "pending": 217,
           "no_close": 1
         }
       }
@@ -367,7 +367,7 @@
         "contract": "Alabama wins by over 49.5 points",
         "max_price": 0.56,
         "stake": 3.47,
-        "gone": false,
+        "gone": true,
         "sent_ct": "Sat Nov 21, 12:24 PM CT",
         "kickoff_utc": "2026-11-21T19:00:00Z",
         "kickoff_ct": "Sat Nov 21, 1:00 PM CT",
