@@ -1,5 +1,33 @@
 {
  "alerts": {
+  "SHARP|NO KXNCAAFSPREAD-26NOV21CHATALA-ALA49": {
+   "autosell": 0.58,
+   "click": "https://kalshi.com/markets/kxncaafspread/event/kxncaafspread-26nov21chatala",
+   "contracts": 10,
+   "desc": "Alabama wins by over 48.5 points",
+   "event_ticker": "KXNCAAFSPREAD-26NOV21CHATALA",
+   "fair": 0.5842,
+   "fair_now": 0.5842,
+   "fair_now_line": 46.5,
+   "fair_now_pull": "2026-11-21T18:17:51Z",
+   "fee_multiplier": 1.0,
+   "game": "Chattanooga vs Alabama: Spread",
+   "gone": false,
+   "key": "SHARP|NO KXNCAAFSPREAD-26NOV21CHATALA-ALA49",
+   "kickoff_utc": "2026-11-21T19:00:00Z",
+   "kind": "SHARP",
+   "legs": null,
+   "max_price": 0.53,
+   "odds_fetched_ts": "2026-11-21T18:12:51Z",
+   "paper": true,
+   "price": 0.51,
+   "quote_utc": "2026-11-21T18:12:54Z",
+   "sent_utc": "2026-11-21T18:13:03Z",
+   "sharp_line": 46.5,
+   "side": "NO",
+   "stake": 5.28,
+   "ticker": "KXNCAAFSPREAD-26NOV21CHATALA-ALA49"
+  },
   "SHARP|NO KXNCAAFSPREAD-26NOV21HAWNEV-NEV3": {
    "autosell": 0.41,
    "click": "https://kalshi.com/markets/kxncaafspread/event/kxncaafspread-26nov21hawnev",

@@ -1,16 +1,16 @@
 {
-  "generated_ts": "2026-11-21T18:12:46Z",
-  "generated_ct": "Sat Nov 21, 12:12 PM CT",
+  "generated_ts": "2026-11-21T18:24:36Z",
+  "generated_ct": "Sat Nov 21, 12:24 PM CT",
   "today_ct": "2026-11-21",
   "snapshot": {
-    "ts": "2026-11-21T18:03:27Z",
-    "ct": "Sat Nov 21, 12:03 PM CT",
+    "ts": "2026-11-21T18:18:51Z",
+    "ct": "Sat Nov 21, 12:18 PM CT",
     "stale": false,
-    "markets_scanned": 5701,
+    "markets_scanned": 5711,
     "kickoff_source": "kalshi occurrence_datetime - 3h",
     "phases": {
       "CFB": {
-        "live": 1574,
+        "live": 1584,
         "pregame": 3305
       },
       "NFL": {
@@ -62,7 +62,7 @@
     "max_bet": 10.0
   },
   "signals": {
-    "weekly_ct": "Sat Nov 21, 12:06 PM CT",
+    "weekly_ct": "Sat Nov 21, 12:21 PM CT",
     "scorecards": [
       {
         "name": "SHARP shadow football",
@@ -189,7 +189,7 @@
           "events": 47,
           "t_by_event": -0.94,
           "stale": 0,
-          "pending": 18,
+          "pending": 19,
           "no_close": 0
         }
       },
@@ -344,6 +344,20 @@
         "kickoff_utc": "2026-11-21T18:00:00Z",
         "kickoff_ct": "Sat Nov 21, 12:00 PM CT",
         "kalshi_url": "https://kalshi.com/markets/kxncaafspread/event/kxncaafspread-26nov21tntcmsst"
+      },
+      {
+        "ticker": "KXNCAAFSPREAD-26NOV21CHATALA-ALA49",
+        "signal": "SHARP",
+        "side": "NO",
+        "game": "Chattanooga vs Alabama: Spread",
+        "contract": "Alabama wins by over 48.5 points",
+        "max_price": 0.53,
+        "stake": 5.28,
+        "gone": false,
+        "sent_ct": "Sat Nov 21, 12:13 PM CT",
+        "kickoff_utc": "2026-11-21T19:00:00Z",
+        "kickoff_ct": "Sat Nov 21, 1:00 PM CT",
+        "kalshi_url": "https://kalshi.com/markets/kxncaafspread/event/kxncaafspread-26nov21chatala"
       },
       {
         "ticker": "KXNCAAFTOTAL-26NOV21CHATALA-60",
