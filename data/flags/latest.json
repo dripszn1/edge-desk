@@ -1,11 +1,11 @@
 {
-  "snapshot_ts": "2026-11-21T22:05:44Z",
+  "snapshot_ts": "2026-11-21T22:20:50Z",
   "stale": false,
-  "markets_scanned": 4122,
+  "markets_scanned": 4062,
   "kickoff_source": "kalshi occurrence_datetime - 3h",
   "phases": {
     "CFB": {
-      "live": 2365,
+      "live": 2305,
       "pregame": 935
     },
     "NFL": {
@@ -18,7 +18,7 @@
     "NFL": {
       "ok": true,
       "reason": "ok",
-      "ratings_as_of": "2026-11-21T22:05:44Z",
+      "ratings_as_of": "2026-11-21T22:20:50Z",
       "games_priced": 34,
       "n_games": 1844,
       "events_unmatched": 0,
@@ -35,7 +35,7 @@
   "model_flags": [],
   "model_shadow": [
     {
-      "snapshot_ts": "2026-11-21T22:05:44Z",
+      "snapshot_ts": "2026-11-21T22:20:50Z",
       "league": "NFL",
       "kind": "MODEL",
       "market": "SPREAD",
@@ -57,13 +57,13 @@
       "away": "ARI",
       "proj_margin_home": 8.31,
       "proj_total": 44.89,
-      "ratings_as_of": "2026-11-21T22:05:44Z",
+      "ratings_as_of": "2026-11-21T22:20:50Z",
       "kickoff_utc": "2026-11-22T18:00:00Z",
       "kickoff_ct": "Sun Nov 22, 12:00 PM CT",
       "kalshi_url": "https://kalshi.com/markets/kxnflspread/event/kxnflspread-26nov22arikc"
     },
     {
-      "snapshot_ts": "2026-11-21T22:05:44Z",
+      "snapshot_ts": "2026-11-21T22:20:50Z",
       "league": "NFL",
       "kind": "MODEL",
       "market": "SPREAD",
@@ -85,13 +85,13 @@
       "away": "PHI",
       "proj_margin_home": 0.99,
       "proj_total": 49.48,
-      "ratings_as_of": "2026-11-21T22:05:44Z",
+      "ratings_as_of": "2026-11-21T22:20:50Z",
       "kickoff_utc": "2026-11-26T21:30:00Z",
       "kickoff_ct": "Thu Nov 26, 3:30 PM CT",
       "kalshi_url": "https://kalshi.com/markets/kxnflspread/event/kxnflspread-26nov26phidal"
     },
     {
-      "snapshot_ts": "2026-11-21T22:05:44Z",
+      "snapshot_ts": "2026-11-21T22:20:50Z",
       "league": "NFL",
       "kind": "MODEL",
       "market": "SPREAD",
@@ -113,13 +113,13 @@
       "away": "NO",
       "proj_margin_home": 5.74,
       "proj_total": 46.51,
-      "ratings_as_of": "2026-11-21T22:05:44Z",
+      "ratings_as_of": "2026-11-21T22:20:50Z",
       "kickoff_utc": "2026-11-22T18:00:00Z",
       "kickoff_ct": "Sun Nov 22, 12:00 PM CT",
       "kalshi_url": "https://kalshi.com/markets/kxnflspread/event/kxnflspread-26nov22nochi"
     },
     {
-      "snapshot_ts": "2026-11-21T22:05:44Z",
+      "snapshot_ts": "2026-11-21T22:20:50Z",
       "league": "NFL",
       "kind": "MODEL",
       "market": "SPREAD",
@@ -141,7 +141,7 @@
       "away": "JAX",
       "proj_margin_home": -5.82,
       "proj_total": 45.57,
-      "ratings_as_of": "2026-11-21T22:05:44Z",
+      "ratings_as_of": "2026-11-21T22:20:50Z",
       "kickoff_utc": "2026-11-22T21:25:00Z",
       "kickoff_ct": "Sun Nov 22, 3:25 PM CT",
       "kalshi_url": "https://kalshi.com/markets/kxnflspread/event/kxnflspread-26nov22jacnyg"
@@ -155,6 +155,7 @@
       "events_no_sharp_line": 0,
       "odds_fetched": "2026-11-21T22:05:14Z",
       "rungs_out_of_range": 318,
+      "odds_too_old": 766,
       "outside_core_price": 9,
       "outside_core_dist": 259,
       "gate": "gated: 27 settled SHARP shadow bets (< 30)"
@@ -164,8 +165,8 @@
       "reason": "ok",
       "events_priced": 36,
       "events_no_sharp_line": 22,
-      "odds_fetched": "2026-11-21T22:05:14Z",
-      "rungs_out_of_range": 555,
+      "odds_fetched": "2026-11-21T22:20:20Z",
+      "rungs_out_of_range": 556,
       "outside_core_dist": 130,
       "outside_core_price": 2,
       "gate": "gated: 67 bets, P&L $-22.41, t=-1.94 (needs >0 and t>=2.0)"
@@ -176,6 +177,7 @@
       "events_priced": 12,
       "events_no_sharp_line": 16,
       "odds_fetched": "2026-11-21T22:05:14Z",
+      "odds_too_old": 24,
       "gate": "gated: 0 settled SHARP shadow bets (< 30)"
     },
     "CFB ML": {
@@ -183,7 +185,7 @@
       "reason": "ok",
       "events_priced": 18,
       "events_no_sharp_line": 64,
-      "odds_fetched": "2026-11-21T22:05:14Z",
+      "odds_fetched": "2026-11-21T22:20:20Z",
       "gate": "gated: 0 settled SHARP shadow bets (< 30)"
     }
   },
