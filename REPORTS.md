@@ -1,5 +1,12 @@
 # Reports (newest first)
 
+## 2026-11-22 (builder, 01:45Z run)
+- Nothing to build: backlog #1–#75 all done; nothing broken (live 168 chained at its job limit 01:38Z into live 172, 3,367 fast ticks, 0 throttled, median pass 4.7 s; collect 236 green, stands down during live; keeper ran 01:05Z; automerge #100 green; settlement 203 pending / 0 overdue; no report errors). Stream quote log for 11-22 already hit its 40 MB/day cap (42 MB, as designed; nothing near GitHub's 100 MB limit). Nothing shipped, nothing to merge.
+- Tests: 524/524 green on dev rebased onto main.
+- Honest results (football): picks vs Kalshi's close after fee still negative (alerted −1.7¢, 107 plays/56 games; held back −1.5¢, 510/100). Exits (507 done): hold −$43.44, sell at tip −$155.12, Auto Sell at fair −$159.44, Auto Sell +10¢ −$146.87; bracket API-only, worse. Last 24h: alerted 7-7 −$1.35, held back 56-157 +$24.00. Stream, market-making and limit-entry paper tests negative vs the close. No plays on the next-36h slate at 01:38Z.
+- Verdict rules: thresholds met since read #1; rule 2 (no exit with P&L > 0) and the held-back half of rule 1 (no edge) read the same. Not acted on.
+- Watchdog: live run active, nothing dispatched. Needs Emerson: nothing.
+
 ## 2026-11-21 (builder, 22:45Z run)
 - Nothing to build: backlog #1–#75 all done; nothing broken (live 166 chained at its job limit 20:02Z into live 168, checkpoints through 22:36Z, 1,592 fast ticks, 0 throttled, median pass 5.0 s; keeper 80 active; collect stands down during live as designed; automerge #99 green; settlement 320 pending / 0 overdue; no report errors; no data file over 40 MB). Nothing shipped, nothing to merge.
 - Tests: 524/524 green on dev merged with main.
