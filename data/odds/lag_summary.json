@@ -3,8 +3,8 @@
   "evaluated": 76,
   "status": {
     "already_moved": 63,
-    "followed": 9,
-    "not_followed": 4
+    "followed": 10,
+    "not_followed": 3
   },
   "rules": {
     "move_pts": 1.0,
@@ -12,7 +12,7 @@
     "act_minutes": 30
   },
   "share_already_moved": 0.829,
-  "median_lag_minutes_followed": 391.8,
+  "median_lag_minutes_followed": 286.4,
   "share_lagged_actionable": 0.158,
   "mean_best_edge_after_fee_c": 1.02,
   "verdict": "no timing edge seen: Kalshi mostly keeps up, or the lag isn't worth fees"
