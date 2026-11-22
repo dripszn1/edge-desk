@@ -1,15 +1,15 @@
 {
- "utc": "2026-11-22T20:05:10.048Z",
+ "utc": "2026-11-22T20:20:28.708Z",
  "stream": {
   "connected": true,
   "url": "wss://api.elections.kalshi.com/trade-api/ws/v2",
   "connects": 1,
   "errors": [],
-  "subscribed": 3817
+  "subscribed": 3867
  },
  "engine": {
-  "updates": 1389099,
-  "priced_updates": 2778198,
+  "updates": 1523023,
+  "priced_updates": 3046046,
   "taker_fills": 2,
   "maker_quotes": 2,
   "maker_fills": 1,
