@@ -1,7 +1,7 @@
 {
   "proposals": [],
-  "generated_utc": "2026-11-22T09:52:44Z",
-  "generated_ct": "Sun Nov 22, 3:52 AM CT",
+  "generated_utc": "2026-11-22T10:48:42Z",
+  "generated_ct": "Sun Nov 22, 4:48 AM CT",
   "paper_mode": true,
   "rules": {
     "min_bets": 30,
@@ -335,7 +335,7 @@
     "propose_widen": []
   },
   "settlement": {
-    "pending": 145,
+    "pending": 147,
     "overdue": 0,
     "no_kickoff": 0,
     "grace_hours": 12,
@@ -1945,7 +1945,7 @@
           "label": "MANUAL-OK",
           "closed": 556,
           "pending": 84,
-          "closed_early_not_counted": 10,
+          "closed_early_not_counted": 11,
           "pnl_usd": -175.33,
           "avg_c": -3.54,
           "win_pct": 73.9,
