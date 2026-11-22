@@ -1,7 +1,7 @@
 {
   "proposals": [],
-  "generated_utc": "2026-11-22T04:00:06Z",
-  "generated_ct": "Sat Nov 21, 10:00 PM CT",
+  "generated_utc": "2026-11-22T04:15:10Z",
+  "generated_ct": "Sat Nov 21, 10:15 PM CT",
   "paper_mode": true,
   "rules": {
     "min_bets": 30,
@@ -15,18 +15,18 @@
     "why": "no settled bets yet"
   },
   "model_shadow": {
-    "settled": 155,
-    "staked": 399.15,
-    "fees": 17.63,
-    "pnl": -29.15,
-    "roi": -0.073,
-    "t_stat": -0.5,
+    "settled": 156,
+    "staked": 399.28,
+    "fees": 17.64,
+    "pnl": -29.28,
+    "roi": -0.0733,
+    "t_stat": -0.53,
     "coin_flip": {
       "sims": 10000,
-      "bets": 155,
-      "real_pnl": -29.15,
-      "sim_median_pnl": -20.15,
-      "beat_pct": 0.4491
+      "bets": 156,
+      "real_pnl": -29.28,
+      "sim_median_pnl": -18.28,
+      "beat_pct": 0.4408
     },
     "by_week": [
       {
@@ -39,15 +39,15 @@
       },
       {
         "week_of": "2026-11-16",
-        "bets": 26,
-        "pnl": -38.27,
-        "roi": -0.9054,
-        "claimed_edge_c": 17.58,
-        "realised_edge_c": -30.86
+        "bets": 27,
+        "pnl": -38.4,
+        "roi": -0.9057,
+        "claimed_edge_c": 17.43,
+        "realised_edge_c": -30.48
       }
     ],
     "verdict": "luck / no edge",
-    "why": "t=-0.5, coin-flip beat 45%"
+    "why": "t=-0.53, coin-flip beat 44%"
   },
   "sharp_shadow": {
     "settled": 104,
@@ -335,7 +335,7 @@
     "propose_widen": []
   },
   "settlement": {
-    "pending": 173,
+    "pending": 172,
     "overdue": 0,
     "no_kickoff": 0,
     "grace_hours": 12,
@@ -1813,7 +1813,7 @@
           "label": "API-ONLY",
           "closed": 529,
           "pending": 109,
-          "closed_early_not_counted": 31,
+          "closed_early_not_counted": 32,
           "pnl_usd": -328.55,
           "avg_c": -7.13,
           "win_pct": 23.3,
@@ -1837,7 +1837,7 @@
           "label": "API-ONLY",
           "closed": 529,
           "pending": 109,
-          "closed_early_not_counted": 28,
+          "closed_early_not_counted": 29,
           "pnl_usd": -348.39,
           "avg_c": -7.57,
           "win_pct": 16.8,
@@ -1909,7 +1909,7 @@
           "label": "MANUAL-OK",
           "closed": 529,
           "pending": 109,
-          "closed_early_not_counted": 8,
+          "closed_early_not_counted": 10,
           "pnl_usd": -143.53,
           "avg_c": -2.96,
           "win_pct": 61.6,
@@ -1921,7 +1921,7 @@
           "label": "MANUAL-OK",
           "closed": 529,
           "pending": 109,
-          "closed_early_not_counted": 3,
+          "closed_early_not_counted": 5,
           "pnl_usd": -104.72,
           "avg_c": -1.96,
           "win_pct": 55.6,
