@@ -1,7 +1,7 @@
 {
   "proposals": [],
-  "generated_utc": "2026-11-22T23:03:32Z",
-  "generated_ct": "Sun Nov 22, 5:03 PM CT",
+  "generated_utc": "2026-11-22T23:18:56Z",
+  "generated_ct": "Sun Nov 22, 5:18 PM CT",
   "paper_mode": true,
   "rules": {
     "min_bets": 30,
@@ -335,7 +335,7 @@
     "propose_widen": []
   },
   "settlement": {
-    "pending": 130,
+    "pending": 133,
     "overdue": 0,
     "no_kickoff": 0,
     "grace_hours": 12,
@@ -1573,14 +1573,14 @@
       }
     },
     "football": {
-      "plays": 660,
+      "plays": 663,
       "line_checked": 624,
       "adverse_pct": 57.1,
       "avg_line_move_fav": -0.86,
-      "median_pull_age_min": 7.0,
+      "median_pull_age_min": 6.0,
       "kalshi_first": {
         "False": {
-          "plays": 369,
+          "plays": 372,
           "with_close": 350,
           "avg_clv_c": -1.58,
           "games": 97,
@@ -1596,7 +1596,7 @@
       },
       "by_pull_age": {
         "0-10 min": {
-          "plays": 336,
+          "plays": 340,
           "with_close": 321,
           "avg_clv_c": -1.5,
           "games": 101,
@@ -1617,7 +1617,7 @@
           "t_by_game": -4.03
         },
         "90+ min": {
-          "plays": 109,
+          "plays": 108,
           "with_close": 96,
           "avg_clv_c": -0.76,
           "games": 28,
@@ -2468,69 +2468,69 @@
   "baseline": {
     "method": "placebo = other rungs/sides of the same game and series at the same snapshot, ask within 10c, same contracts and fees; snapshot paths only for both",
     "football": {
-      "plays": 660,
-      "closed": 607,
-      "games": 111,
+      "plays": 663,
+      "closed": 610,
+      "games": 113,
       "no_placebo": 3,
       "exits": {
         "HOLD": {
-          "real_per_play": -0.232,
-          "placebo_mean": -0.381,
+          "real_per_play": -0.238,
+          "placebo_mean": -0.382,
           "band95": [
-            -0.614,
-            -0.138
+            -0.621,
+            -0.133
           ],
-          "beats_pct": 88.8,
+          "beats_pct": 88.5,
           "verdict": "placebo matches real: the picks add nothing"
         },
         "EXIT_AT_TIP": {
-          "real_per_play": -0.308,
-          "placebo_mean": -0.418,
+          "real_per_play": -0.309,
+          "placebo_mean": -0.42,
           "band95": [
-            -0.438,
-            -0.399
+            -0.439,
+            -0.4
           ],
           "beats_pct": 100.0,
           "verdict": "picks add value"
         },
         "RESTING_5": {
-          "real_per_play": -0.581,
-          "placebo_mean": -0.731,
+          "real_per_play": -0.585,
+          "placebo_mean": -0.736,
           "band95": [
-            -0.832,
-            -0.631
+            -0.836,
+            -0.637
           ],
           "beats_pct": 99.9,
           "verdict": "picks add value"
         },
         "RESTING_10": {
-          "real_per_play": -0.502,
-          "placebo_mean": -0.679,
+          "real_per_play": -0.507,
+          "placebo_mean": -0.684,
           "band95": [
-            -0.8,
-            -0.558
+            -0.805,
+            -0.563
           ],
           "beats_pct": 99.9,
           "verdict": "picks add value"
         },
         "RESTING_15": {
-          "real_per_play": -0.415,
-          "placebo_mean": -0.634,
+          "real_per_play": -0.42,
+          "placebo_mean": -0.637,
           "band95": [
-            -0.769,
-            -0.502
+            -0.771,
+            -0.506
           ],
-          "beats_pct": 99.9,
+          "beats_pct": 100.0,
           "verdict": "picks add value"
         },
         "RESTING_FAIR": {
-          "real_per_play": -0.573,
-          "placebo_mean": -0.733,
+          "real_per_play": -0.578,
+          "placebo_mean": -0.737,
           "band95": [
-            -0.83,
-            -0.638
+            -0.833,
+            -0.641
           ],
-          "beats_pct": 99.9,
+          "beats_pct": 100.0,
           "verdict": "picks add value"
         }
       }
