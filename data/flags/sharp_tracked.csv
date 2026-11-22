@@ -46499,3 +46499,10 @@ snapshot_ts,league,event,ticker,side,price,fair,edge,sharp_line,odds_fetched_ts,
 2026-11-22T19:13:50Z,NFL,Las Vegas vs Denver: Total Points,KXNFLTOTAL-26NOV22LVDEN-26,NO,0.08,0.1208,0.0353,41.0,2026-11-22T19:13:48Z,rung far from sharp line (unvalidated range); price outside core zone (35-65c)
 2026-11-22T19:14:18Z,NFL,Philadelphia vs Dallas: Spread,KXNFLSPREAD-26NOV26PHIDAL-DAL7,NO,0.39,0.4481,0.041,8.0,2026-11-22T16:10:16Z,sharp line stale
 2026-11-22T19:14:48Z,NFL,Philadelphia vs Dallas: Spread,KXNFLSPREAD-26NOV26PHIDAL-DAL7,NO,0.4,0.4481,0.0301,8.0,2026-11-22T16:10:16Z,sharp line stale
+2026-11-22T19:25:13Z,NFL,Las Vegas vs Denver: Total Points,KXNFLTOTAL-26NOV22LVDEN-26,NO,0.08,0.1208,0.0353,41.0,2026-11-22T19:25:11Z,rung far from sharp line (unvalidated range); price outside core zone (35-65c)
+2026-11-22T19:25:13Z,CFB,Kent St. vs Eastern Michigan: Total Points,KXNCAAFTOTAL-26NOV24KENTEMU-26,NO,0.07,0.1085,0.0338,45.5,2026-11-22T17:58:26Z,rung far from sharp line (unvalidated range); sharp line stale; price outside core zone (35-65c)
+2026-11-22T19:27:41Z,NFL,Philadelphia vs Dallas: Spread,KXNFLSPREAD-26NOV26PHIDAL-DAL7,NO,0.39,0.4481,0.041,8.0,2026-11-22T16:10:16Z,sharp line stale
+2026-11-22T19:29:41Z,NFL,Denver vs Pittsburgh: Spread,KXNFLSPREAD-26NOV27DENPIT-DEN10,NO,0.72,0.7689,0.0329,2.0,2026-11-22T16:21:53Z,rung outside core zone (>3 pts from sharp line); sharp line stale; price outside core zone (35-65c)
+2026-11-22T19:30:13Z,CFB,Kent St. vs Eastern Michigan: Total Points,KXNCAAFTOTAL-26NOV24KENTEMU-29,NO,0.1,0.147,0.0404,45.5,2026-11-22T17:58:26Z,rung far from sharp line (unvalidated range); sharp line stale; price outside core zone (35-65c)
+2026-11-22T19:33:11Z,NFL,Philadelphia vs Dallas: Spread,KXNFLSPREAD-26NOV26PHIDAL-DAL7,NO,0.4,0.4481,0.0301,8.0,2026-11-22T16:10:16Z,sharp line stale
+2026-11-22T19:33:41Z,NFL,Philadelphia vs Dallas: Spread,KXNFLSPREAD-26NOV26PHIDAL-DAL7,NO,0.38,0.4481,0.0511,8.0,2026-11-22T16:10:16Z,sharp line stale
