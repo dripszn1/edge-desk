@@ -46523,3 +46523,15 @@ snapshot_ts,league,event,ticker,side,price,fair,edge,sharp_line,odds_fetched_ts,
 2026-11-22T20:20:19Z,CFB,Kent St. vs Eastern Michigan: Total Points,KXNCAAFTOTAL-26NOV24KENTEMU-29,NO,0.1,0.147,0.0404,45.5,2026-11-22T20:20:17Z,rung far from sharp line (unvalidated range); price outside core zone (35-65c)
 2026-11-22T20:20:19Z,CFB,Miami (OH) vs Western Michigan: Total Points,KXNCAAFTOTAL-26NOV24MOHWMU-28,NO,0.09,0.1333,0.0372,45.5,2026-11-22T20:20:17Z,rung far from sharp line (unvalidated range); price outside core zone (35-65c)
 2026-11-22T20:20:19Z,CFB,Miami (OH) vs Western Michigan: Total Points,KXNCAAFTOTAL-26NOV24MOHWMU-31,NO,0.13,0.1773,0.0393,45.5,2026-11-22T20:20:17Z,rung far from sharp line (unvalidated range); price outside core zone (35-65c)
+2026-11-22T20:26:46Z,NFL,Philadelphia vs Dallas: Spread,KXNFLSPREAD-26NOV26PHIDAL-DAL7,NO,0.39,0.4481,0.041,8.0,2026-11-22T16:10:16Z,sharp line stale
+2026-11-22T20:26:46Z,NFL,Las Vegas vs Denver: Total Points,KXNFLTOTAL-26NOV22LVDEN-26,NO,0.08,0.1208,0.0353,41.0,2026-11-22T20:26:44Z,rung far from sharp line (unvalidated range); price outside core zone (35-65c)
+2026-11-22T20:26:46Z,CFB,Texas vs Texas A&M: Spread,KXNCAAFSPREAD-26NOV27TEXTXAM-TEX8,NO,0.39,0.4488,0.0413,11.0,2026-11-22T20:20:17Z,rung outside core zone (>3 pts from sharp line)
+2026-11-22T20:30:44Z,CFB,Texas vs Texas A&M: Spread,KXNCAAFSPREAD-26NOV27TEXTXAM-TEX8,NO,0.39,0.4488,0.0413,11.0,2026-11-22T20:20:17Z,rung outside core zone (>3 pts from sharp line); sharp line stale
+2026-11-22T20:30:44Z,CFB,Tennessee vs Vanderbilt: Spread,KXNCAAFSPREAD-26NOV28TENNVAN-TENN14,NO,0.5,0.5796,0.0615,10.5,2026-11-22T20:20:17Z,sharp line stale
+2026-11-22T20:30:44Z,CFB,Kent St. vs Eastern Michigan: Total Points,KXNCAAFTOTAL-26NOV24KENTEMU-26,NO,0.07,0.1085,0.0338,45.5,2026-11-22T20:20:17Z,rung far from sharp line (unvalidated range); sharp line stale; price outside core zone (35-65c)
+2026-11-22T20:30:44Z,CFB,Kent St. vs Eastern Michigan: Total Points,KXNCAAFTOTAL-26NOV24KENTEMU-29,NO,0.1,0.147,0.0404,45.5,2026-11-22T20:20:17Z,rung far from sharp line (unvalidated range); sharp line stale; price outside core zone (35-65c)
+2026-11-22T20:30:44Z,CFB,Miami (OH) vs Western Michigan: Total Points,KXNCAAFTOTAL-26NOV24MOHWMU-28,NO,0.09,0.1333,0.0372,45.5,2026-11-22T20:20:17Z,rung far from sharp line (unvalidated range); sharp line stale; price outside core zone (35-65c)
+2026-11-22T20:30:44Z,CFB,Miami (OH) vs Western Michigan: Total Points,KXNCAAFTOTAL-26NOV24MOHWMU-31,NO,0.13,0.1773,0.0393,45.5,2026-11-22T20:20:17Z,rung far from sharp line (unvalidated range); sharp line stale; price outside core zone (35-65c)
+2026-11-22T20:31:46Z,NFL,Las Vegas vs Denver: Total Points,KXNFLTOTAL-26NOV22LVDEN-26,NO,0.08,0.1208,0.0353,41.0,2026-11-22T20:31:44Z,rung far from sharp line (unvalidated range); price outside core zone (35-65c)
+2026-11-22T20:32:44Z,NFL,Philadelphia vs Dallas: Spread,KXNFLSPREAD-26NOV26PHIDAL-DAL7,NO,0.4,0.4481,0.0301,8.0,2026-11-22T16:10:16Z,sharp line stale
+2026-11-22T20:34:14Z,NFL,Philadelphia vs Dallas: Spread,KXNFLSPREAD-26NOV26PHIDAL-DAL7,NO,0.38,0.4481,0.0511,8.0,2026-11-22T16:10:16Z,sharp line stale
