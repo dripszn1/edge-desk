@@ -1,7 +1,7 @@
 {
   "proposals": [],
-  "generated_utc": "2026-11-22T17:35:15Z",
-  "generated_ct": "Sun Nov 22, 11:35 AM CT",
+  "generated_utc": "2026-11-22T17:50:31Z",
+  "generated_ct": "Sun Nov 22, 11:50 AM CT",
   "paper_mode": true,
   "rules": {
     "min_bets": 30,
@@ -335,7 +335,7 @@
     "propose_widen": []
   },
   "settlement": {
-    "pending": 174,
+    "pending": 175,
     "overdue": 0,
     "no_kickoff": 0,
     "grace_hours": 12,
@@ -1813,7 +1813,7 @@
           "label": "API-ONLY",
           "closed": 556,
           "pending": 91,
-          "closed_early_not_counted": 12,
+          "closed_early_not_counted": 14,
           "pnl_usd": -345.24,
           "avg_c": -7.17,
           "win_pct": 23.0,
@@ -1837,7 +1837,7 @@
           "label": "API-ONLY",
           "closed": 556,
           "pending": 91,
-          "closed_early_not_counted": 10,
+          "closed_early_not_counted": 12,
           "pnl_usd": -362.3,
           "avg_c": -7.54,
           "win_pct": 16.9,
@@ -1861,7 +1861,7 @@
           "label": "API-ONLY",
           "closed": 556,
           "pending": 91,
-          "closed_early_not_counted": 17,
+          "closed_early_not_counted": 19,
           "pnl_usd": -337.98,
           "avg_c": -6.81,
           "win_pct": 33.1,
@@ -2173,9 +2173,9 @@
     "football": {
       "MAKER_BID": {
         "plays": 559,
-        "decided": 509,
-        "filled": 169,
-        "fill_rate_pct": 33.2,
+        "decided": 510,
+        "filled": 170,
+        "fill_rate_pct": 33.3,
         "clv": {
           "n": 139,
           "games": 42,
@@ -2221,9 +2221,9 @@
       },
       "MAKER_1": {
         "plays": 292,
-        "decided": 269,
-        "filled": 106,
-        "fill_rate_pct": 39.4,
+        "decided": 270,
+        "filled": 107,
+        "fill_rate_pct": 39.6,
         "clv": {
           "n": 84,
           "games": 33,
@@ -2271,9 +2271,9 @@
     "NFL": {
       "MAKER_BID": {
         "plays": 145,
-        "decided": 97,
-        "filled": 59,
-        "fill_rate_pct": 60.8,
+        "decided": 98,
+        "filled": 60,
+        "fill_rate_pct": 61.2,
         "clv": {
           "n": 29,
           "games": 5,
@@ -2319,9 +2319,9 @@
       },
       "MAKER_1": {
         "plays": 65,
-        "decided": 43,
-        "filled": 35,
-        "fill_rate_pct": 81.4,
+        "decided": 44,
+        "filled": 36,
+        "fill_rate_pct": 81.8,
         "clv": {
           "n": 14,
           "games": 5,
