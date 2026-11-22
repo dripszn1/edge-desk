@@ -1,16 +1,16 @@
 {
-  "generated_ts": "2026-11-22T07:47:11Z",
-  "generated_ct": "Sun Nov 22, 1:47 AM CT",
+  "generated_ts": "2026-11-22T09:57:32Z",
+  "generated_ct": "Sun Nov 22, 3:57 AM CT",
   "today_ct": "2026-11-22",
   "snapshot": {
-    "ts": "2026-11-22T07:40:30Z",
-    "ct": "Sun Nov 22, 1:40 AM CT",
+    "ts": "2026-11-22T09:50:32Z",
+    "ct": "Sun Nov 22, 3:50 AM CT",
     "stale": false,
-    "markets_scanned": 1386,
+    "markets_scanned": 2335,
     "kickoff_source": "kalshi occurrence_datetime - 3h",
     "phases": {
       "CFB": {
-        "pregame": 564
+        "pregame": 1513
       },
       "NFL": {
         "pregame": 822
@@ -61,7 +61,7 @@
     "max_bet": 10.0
   },
   "signals": {
-    "weekly_ct": "Sun Nov 22, 1:42 AM CT",
+    "weekly_ct": "Sun Nov 22, 3:52 AM CT",
     "scorecards": [
       {
         "name": "SHARP shadow football",
@@ -315,50 +315,7 @@
         }
       }
     },
-    "open_alerts": [
-      {
-        "ticker": "KXNCAAFSPREAD-26NOV21HAWNEV-NEV3",
-        "signal": "SHARP",
-        "side": "NO",
-        "game": "Hawai'i vs Nevada: Spread",
-        "contract": "Nevada wins by over 2.5 points",
-        "max_price": 0.36,
-        "stake": 2.26,
-        "gone": true,
-        "sent_ct": "Fri Nov 20, 10:22 PM CT",
-        "kickoff_utc": "2026-11-22T03:30:00Z",
-        "kickoff_ct": "Sat Nov 21, 9:30 PM CT",
-        "kalshi_url": "https://kalshi.com/markets/kxncaafspread/event/kxncaafspread-26nov21hawnev"
-      },
-      {
-        "ticker": "KXNCAAFSPREAD-26NOV21HAWNEV-NEV5",
-        "signal": "SHARP",
-        "side": "NO",
-        "game": "Hawai'i vs Nevada: Spread",
-        "contract": "Nevada wins by over 4.5 points",
-        "max_price": 0.48,
-        "stake": 2.99,
-        "gone": true,
-        "sent_ct": "Thu Nov 19, 12:40 PM CT",
-        "kickoff_utc": "2026-11-22T03:30:00Z",
-        "kickoff_ct": "Sat Nov 21, 9:30 PM CT",
-        "kalshi_url": "https://kalshi.com/markets/kxncaafspread/event/kxncaafspread-26nov21hawnev"
-      },
-      {
-        "ticker": "KXNCAAFSPREAD-26NOV21USUORST-ORST10",
-        "signal": "SHARP",
-        "side": "YES",
-        "game": "Utah St. vs Oregon St.: Spread",
-        "contract": "Oregon St. wins by over 9.5 points",
-        "max_price": 0.47,
-        "stake": 2.44,
-        "gone": true,
-        "sent_ct": "Sat Nov 21, 7:46 AM CT",
-        "kickoff_utc": "2026-11-22T03:30:00Z",
-        "kickoff_ct": "Sat Nov 21, 9:30 PM CT",
-        "kalshi_url": "https://kalshi.com/markets/kxncaafspread/event/kxncaafspread-26nov21usuorst"
-      }
-    ],
+    "open_alerts": [],
     "gates": {
       "MODEL CFB": "closed",
       "MODEL NFL": "closed",

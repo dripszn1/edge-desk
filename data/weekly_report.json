@@ -1,7 +1,7 @@
 {
   "proposals": [],
-  "generated_utc": "2026-11-22T07:42:35Z",
-  "generated_ct": "Sun Nov 22, 1:42 AM CT",
+  "generated_utc": "2026-11-22T09:52:44Z",
+  "generated_ct": "Sun Nov 22, 3:52 AM CT",
   "paper_mode": true,
   "rules": {
     "min_bets": 30,
@@ -335,7 +335,7 @@
     "propose_widen": []
   },
   "settlement": {
-    "pending": 140,
+    "pending": 145,
     "overdue": 0,
     "no_kickoff": 0,
     "grace_hours": 12,
@@ -414,14 +414,14 @@
       "CFB": {
         "SPREAD": {
           "cap_pts": 6.0,
-          "sd": 15.55,
-          "games": 13068,
+          "sd": 15.54,
+          "games": 13119,
           "cap_sd": 0.386
         },
         "TOTAL": {
           "cap_pts": 6.0,
-          "sd": 16.21,
-          "games": 12675,
+          "sd": 16.2,
+          "games": 12726,
           "cap_sd": 0.37
         }
       },
