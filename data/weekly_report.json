@@ -1,7 +1,7 @@
 {
   "proposals": [],
-  "generated_utc": "2026-11-22T01:09:51Z",
-  "generated_ct": "Sat Nov 21, 7:09 PM CT",
+  "generated_utc": "2026-11-22T01:25:07Z",
+  "generated_ct": "Sat Nov 21, 7:25 PM CT",
   "paper_mode": true,
   "rules": {
     "min_bets": 30,
@@ -1574,17 +1574,17 @@
     },
     "football": {
       "plays": 635,
-      "line_checked": 546,
-      "adverse_pct": 56.0,
+      "line_checked": 547,
+      "adverse_pct": 55.9,
       "avg_line_move_fav": -0.76,
       "median_pull_age_min": 6.5,
       "kalshi_first": {
         "False": {
           "plays": 355,
-          "with_close": 316,
+          "with_close": 317,
           "avg_clv_c": -1.55,
-          "games": 87,
-          "t_by_game": -1.71
+          "games": 88,
+          "t_by_game": -1.75
         },
         "True": {
           "plays": 130,
@@ -1597,10 +1597,10 @@
       "by_pull_age": {
         "0-10 min": {
           "plays": 324,
-          "with_close": 290,
+          "with_close": 291,
           "avg_clv_c": -1.44,
-          "games": 90,
-          "t_by_game": -2.0
+          "games": 91,
+          "t_by_game": -2.04
         },
         "10-30 min": {
           "plays": 60,
@@ -1813,7 +1813,7 @@
           "label": "API-ONLY",
           "closed": 507,
           "pending": 128,
-          "closed_early_not_counted": 29,
+          "closed_early_not_counted": 31,
           "pnl_usd": -317.2,
           "avg_c": -7.16,
           "win_pct": 23.1,
@@ -1825,7 +1825,7 @@
           "label": "API-ONLY",
           "closed": 507,
           "pending": 128,
-          "closed_early_not_counted": 66,
+          "closed_early_not_counted": 67,
           "pnl_usd": -286.66,
           "avg_c": -5.93,
           "win_pct": 9.1,
@@ -1837,7 +1837,7 @@
           "label": "API-ONLY",
           "closed": 507,
           "pending": 128,
-          "closed_early_not_counted": 27,
+          "closed_early_not_counted": 29,
           "pnl_usd": -333.41,
           "avg_c": -7.59,
           "win_pct": 16.8,
@@ -1861,7 +1861,7 @@
           "label": "API-ONLY",
           "closed": 507,
           "pending": 128,
-          "closed_early_not_counted": 37,
+          "closed_early_not_counted": 38,
           "pnl_usd": -313.08,
           "avg_c": -6.79,
           "win_pct": 33.1,
@@ -1909,7 +1909,7 @@
           "label": "MANUAL-OK",
           "closed": 507,
           "pending": 128,
-          "closed_early_not_counted": 14,
+          "closed_early_not_counted": 15,
           "pnl_usd": -146.87,
           "avg_c": -3.25,
           "win_pct": 60.9,
@@ -1921,7 +1921,7 @@
           "label": "MANUAL-OK",
           "closed": 507,
           "pending": 128,
-          "closed_early_not_counted": 10,
+          "closed_early_not_counted": 12,
           "pnl_usd": -107.46,
           "avg_c": -2.27,
           "win_pct": 55.0,
@@ -1933,7 +1933,7 @@
           "label": "MANUAL-OK",
           "closed": 507,
           "pending": 128,
-          "closed_early_not_counted": 26,
+          "closed_early_not_counted": 27,
           "pnl_usd": -179.34,
           "avg_c": -3.76,
           "win_pct": 69.6,
@@ -1945,7 +1945,7 @@
           "label": "MANUAL-OK",
           "closed": 507,
           "pending": 128,
-          "closed_early_not_counted": 28,
+          "closed_early_not_counted": 29,
           "pnl_usd": -159.44,
           "avg_c": -3.36,
           "win_pct": 73.6,
@@ -2469,68 +2469,68 @@
     "method": "placebo = other rungs/sides of the same game and series at the same snapshot, ask within 10c, same contracts and fees; snapshot paths only for both",
     "football": {
       "plays": 635,
-      "closed": 468,
-      "games": 89,
+      "closed": 505,
+      "games": 93,
       "no_placebo": 2,
       "exits": {
         "HOLD": {
-          "real_per_play": -0.033,
-          "placebo_mean": -0.314,
+          "real_per_play": -0.078,
+          "placebo_mean": -0.248,
           "band95": [
-            -0.593,
-            -0.034
+            -0.516,
+            0.031
           ],
-          "beats_pct": 97.5,
-          "verdict": "picks add value"
+          "beats_pct": 88.0,
+          "verdict": "placebo matches real: the picks add nothing"
         },
         "EXIT_AT_TIP": {
-          "real_per_play": -0.305,
-          "placebo_mean": -0.426,
+          "real_per_play": -0.306,
+          "placebo_mean": -0.423,
           "band95": [
-            -0.448,
-            -0.404
+            -0.444,
+            -0.402
           ],
           "beats_pct": 100.0,
           "verdict": "picks add value"
         },
         "RESTING_5": {
-          "real_per_play": -0.587,
-          "placebo_mean": -0.737,
+          "real_per_play": -0.585,
+          "placebo_mean": -0.729,
           "band95": [
-            -0.853,
-            -0.617
+            -0.838,
+            -0.62
           ],
-          "beats_pct": 99.4,
+          "beats_pct": 99.6,
           "verdict": "picks add value"
         },
         "RESTING_10": {
-          "real_per_play": -0.501,
-          "placebo_mean": -0.701,
+          "real_per_play": -0.498,
+          "placebo_mean": -0.683,
           "band95": [
-            -0.841,
-            -0.561
+            -0.822,
+            -0.547
           ],
           "beats_pct": 99.9,
           "verdict": "picks add value"
         },
         "RESTING_15": {
-          "real_per_play": -0.42,
-          "placebo_mean": -0.664,
+          "real_per_play": -0.419,
+          "placebo_mean": -0.639,
           "band95": [
-            -0.818,
-            -0.51
+            -0.793,
+            -0.489
           ],
           "beats_pct": 99.9,
           "verdict": "picks add value"
         },
         "RESTING_FAIR": {
-          "real_per_play": -0.581,
-          "placebo_mean": -0.748,
+          "real_per_play": -0.569,
+          "placebo_mean": -0.738,
           "band95": [
-            -0.858,
-            -0.636
+            -0.84,
+            -0.635
           ],
-          "beats_pct": 99.8,
+          "beats_pct": 100.0,
           "verdict": "picks add value"
         }
       }
