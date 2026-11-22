@@ -1,16 +1,15 @@
 {
-  "generated_ts": "2026-11-22T05:52:46Z",
-  "generated_ct": "Sat Nov 21, 11:52 PM CT",
-  "today_ct": "2026-11-21",
+  "generated_ts": "2026-11-22T07:47:11Z",
+  "generated_ct": "Sun Nov 22, 1:47 AM CT",
+  "today_ct": "2026-11-22",
   "snapshot": {
-    "ts": "2026-11-22T05:47:55Z",
-    "ct": "Sat Nov 21, 11:47 PM CT",
+    "ts": "2026-11-22T07:40:30Z",
+    "ct": "Sun Nov 22, 1:40 AM CT",
     "stale": false,
-    "markets_scanned": 1654,
+    "markets_scanned": 1386,
     "kickoff_source": "kalshi occurrence_datetime - 3h",
     "phases": {
       "CFB": {
-        "live": 268,
         "pregame": 564
       },
       "NFL": {
@@ -62,16 +61,16 @@
     "max_bet": 10.0
   },
   "signals": {
-    "weekly_ct": "Sat Nov 21, 11:50 PM CT",
+    "weekly_ct": "Sun Nov 22, 1:42 AM CT",
     "scorecards": [
       {
         "name": "SHARP shadow football",
-        "settled": 104,
-        "pnl": -77.66,
-        "roi": -0.2787,
-        "t_stat": -3.98,
+        "settled": 108,
+        "pnl": -88.34,
+        "roi": -0.3053,
+        "t_stat": -4.35,
         "verdict": "luck / no edge",
-        "why": "t=-3.98, coin-flip beat 4%"
+        "why": "t=-4.35, coin-flip beat 2%"
       },
       {
         "name": "SHARP shadow CBB",
@@ -84,19 +83,19 @@
       },
       {
         "name": "SHARP held back",
-        "settled": 641,
-        "pnl": -68.86,
-        "roi": -0.0349,
-        "t_stat": -0.65,
+        "settled": 665,
+        "pnl": -90.8,
+        "roi": -0.0448,
+        "t_stat": -0.83,
         "verdict": "luck / no edge",
-        "why": "t=-0.65, coin-flip beat 54%",
+        "why": "t=-0.83, coin-flip beat 47%",
         "by_reason": {
           "core_zone": {
-            "settled": 27,
-            "pnl": -25.33,
-            "roi": -0.3654,
-            "t_stat": -1.25,
-            "verdict": "not enough data"
+            "settled": 30,
+            "pnl": -31.43,
+            "roi": -0.4167,
+            "t_stat": -1.69,
+            "verdict": "luck / no edge"
           },
           "far_rung": {
             "settled": 215,
@@ -106,10 +105,10 @@
             "verdict": "luck / no edge"
           },
           "far_rung+core_zone": {
-            "settled": 139,
-            "pnl": 10.65,
-            "roi": 0.0384,
-            "t_stat": 0.41,
+            "settled": 150,
+            "pnl": 14.68,
+            "roi": 0.0494,
+            "t_stat": 0.44,
             "verdict": "luck / no edge"
           },
           "far_rung+stale_line": {
@@ -120,17 +119,17 @@
             "verdict": "luck / no edge"
           },
           "far_rung+stale_line+core_zone": {
-            "settled": 45,
-            "pnl": 23.27,
-            "roi": 0.2746,
-            "t_stat": 0.68,
+            "settled": 48,
+            "pnl": 18.34,
+            "roi": 0.2046,
+            "t_stat": 0.57,
             "verdict": "luck / no edge"
           },
           "kalshi_first": {
-            "settled": 15,
-            "pnl": -10.65,
-            "roi": -0.2145,
-            "t_stat": -1.35,
+            "settled": 18,
+            "pnl": -15.15,
+            "roi": -0.2519,
+            "t_stat": -1.52,
             "verdict": "not enough data"
           },
           "sanity_cap": {
@@ -141,29 +140,29 @@
             "verdict": "not enough data"
           },
           "stale_line": {
-            "settled": 143,
-            "pnl": -14.21,
-            "roi": -0.0303,
-            "t_stat": -1.22,
+            "settled": 146,
+            "pnl": -22.45,
+            "roi": -0.0471,
+            "t_stat": -1.44,
             "verdict": "luck / no edge"
           },
           "stale_line+core_zone": {
-            "settled": 17,
-            "pnl": 4.8,
-            "roi": 0.0886,
-            "t_stat": 0.26,
+            "settled": 18,
+            "pnl": 2.6,
+            "roi": 0.0461,
+            "t_stat": 0.07,
             "verdict": "not enough data"
           }
         }
       },
       {
         "name": "MODEL shadow",
-        "settled": 157,
-        "pnl": -29.45,
-        "roi": -0.0737,
-        "t_stat": -0.56,
+        "settled": 159,
+        "pnl": -29.89,
+        "roi": -0.0747,
+        "t_stat": -0.63,
         "verdict": "luck / no edge",
-        "why": "t=-0.56, coin-flip beat 44%"
+        "why": "t=-0.63, coin-flip beat 45%"
       }
     ],
     "clv": {
@@ -215,7 +214,7 @@
           "events": 102,
           "t_by_event": -7.51,
           "stale": 0,
-          "pending": 82,
+          "pending": 83,
           "no_close": 1
         }
       }
@@ -272,65 +271,51 @@
         "best_manual": "HOLD",
         "variants": {
           "EXIT_AT_TIP": {
-            "closed": 532,
-            "pnl_usd": -164.32,
-            "t_by_game": -8.25,
+            "closed": 556,
+            "pnl_usd": -173.34,
+            "t_by_game": -8.45,
             "gate_open": false
           },
           "HOLD": {
-            "closed": 532,
-            "pnl_usd": -85.75,
-            "t_by_game": -0.47,
+            "closed": 556,
+            "pnl_usd": -106.78,
+            "t_by_game": -0.59,
             "gate_open": false
           },
           "RESTING_10": {
-            "closed": 532,
-            "pnl_usd": -142.0,
-            "t_by_game": -2.17,
+            "closed": 556,
+            "pnl_usd": -164.88,
+            "t_by_game": -2.45,
             "gate_open": false
           },
           "RESTING_15": {
-            "closed": 532,
-            "pnl_usd": -109.89,
-            "t_by_game": -1.42,
+            "closed": 556,
+            "pnl_usd": -137.77,
+            "t_by_game": -1.73,
             "gate_open": false
           },
           "RESTING_5": {
-            "closed": 532,
-            "pnl_usd": -177.88,
-            "t_by_game": -3.65,
+            "closed": 556,
+            "pnl_usd": -201.08,
+            "t_by_game": -3.93,
             "gate_open": false
           },
           "RESTING_FAIR": {
-            "closed": 532,
-            "pnl_usd": -152.69,
-            "t_by_game": -3.1,
+            "closed": 556,
+            "pnl_usd": -175.33,
+            "t_by_game": -3.41,
             "gate_open": false
           },
           "TRADE": {
-            "closed": 532,
-            "pnl_usd": -164.82,
-            "t_by_game": -8.31,
+            "closed": 556,
+            "pnl_usd": -174.0,
+            "t_by_game": -8.53,
             "gate_open": false
           }
         }
       }
     },
     "open_alerts": [
-      {
-        "ticker": "KXNCAAFSPREAD-26NOV21UKMIZZ-MIZZ6",
-        "signal": "SHARP",
-        "side": "NO",
-        "game": "Kentucky vs Missouri: Spread",
-        "contract": "Missouri wins by over 5.5 points",
-        "max_price": 0.5,
-        "stake": 3.11,
-        "gone": true,
-        "sent_ct": "Thu Nov 19, 11:40 AM CT",
-        "kickoff_utc": "2026-11-22T00:30:00Z",
-        "kickoff_ct": "Sat Nov 21, 6:30 PM CT",
-        "kalshi_url": "https://kalshi.com/markets/kxncaafspread/event/kxncaafspread-26nov21ukmizz"
-      },
       {
         "ticker": "KXNCAAFSPREAD-26NOV21HAWNEV-NEV3",
         "signal": "SHARP",
