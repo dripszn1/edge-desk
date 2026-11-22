@@ -46573,3 +46573,6 @@ snapshot_ts,league,event,ticker,side,price,fair,edge,sharp_line,odds_fetched_ts,
 2026-11-22T23:06:25Z,NFL,Minnesota vs San Francisco: Spread,KXNFLSPREAD-26NOV22MINSF-SF7,NO,0.58,0.6299,0.0315,3.5,2026-11-22T23:06:23Z,kalshi moved first
 2026-11-22T23:25:41Z,NFL,Minnesota vs San Francisco: Spread,KXNFLSPREAD-26NOV22MINSF-SF7,NO,0.58,0.6299,0.0315,3.5,2026-11-22T23:25:38Z,kalshi moved first
 2026-11-22T23:25:41Z,CFB,Kent St. vs Eastern Michigan: Total Points,KXNCAAFTOTAL-26NOV24KENTEMU-26,NO,0.07,0.1085,0.0338,45.5,2026-11-22T23:25:38Z,rung far from sharp line (unvalidated range); price outside core zone (35-65c)
+2026-11-22T23:37:13Z,CFB,TCU vs Texas Tech: Spread,KXNCAAFSPREAD-26NOV26TCUTTU-TTU10,NO,0.41,0.4768,0.0491,11.5,2026-11-22T23:25:38Z,sharp line stale
+2026-11-22T23:37:13Z,CFB,Georgia Tech vs Georgia: Spread,KXNCAAFSPREAD-26NOV28GTUGA-UGA36,YES,0.53,0.5834,0.0351,37.0,2026-11-22T23:25:38Z,sharp line stale
+2026-11-22T23:37:13Z,CFB,Kent St. vs Eastern Michigan: Total Points,KXNCAAFTOTAL-26NOV24KENTEMU-26,NO,0.07,0.1085,0.0338,45.5,2026-11-22T23:25:38Z,rung far from sharp line (unvalidated range); sharp line stale; price outside core zone (35-65c)

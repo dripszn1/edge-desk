@@ -1,10 +1,10 @@
 {
-  "generated_ts": "2026-11-22T23:37:07Z",
-  "generated_ct": "Sun Nov 22, 5:37 PM CT",
+  "generated_ts": "2026-11-22T23:52:05Z",
+  "generated_ct": "Sun Nov 22, 5:52 PM CT",
   "today_ct": "2026-11-22",
   "snapshot": {
-    "ts": "2026-11-22T23:30:41Z",
-    "ct": "Sun Nov 22, 5:30 PM CT",
+    "ts": "2026-11-22T23:45:40Z",
+    "ct": "Sun Nov 22, 5:45 PM CT",
     "stale": false,
     "markets_scanned": 4315,
     "kickoff_source": "kalshi occurrence_datetime - 3h",
@@ -62,7 +62,7 @@
     "max_bet": 10.0
   },
   "signals": {
-    "weekly_ct": "Sun Nov 22, 5:34 PM CT",
+    "weekly_ct": "Sun Nov 22, 5:49 PM CT",
     "scorecards": [
       {
         "name": "SHARP shadow football",
@@ -84,12 +84,12 @@
       },
       {
         "name": "SHARP held back",
-        "settled": 720,
-        "pnl": -130.1,
-        "roi": -0.0598,
-        "t_stat": -1.41,
+        "settled": 721,
+        "pnl": -132.01,
+        "roi": -0.0606,
+        "t_stat": -1.43,
         "verdict": "luck / no edge",
-        "why": "t=-1.41, coin-flip beat 35%",
+        "why": "t=-1.43, coin-flip beat 34%",
         "by_reason": {
           "core_zone": {
             "settled": 41,
@@ -120,10 +120,10 @@
             "verdict": "luck / no edge"
           },
           "far_rung+stale_line+core_zone": {
-            "settled": 58,
-            "pnl": 11.63,
-            "roi": 0.0943,
-            "t_stat": 0.31,
+            "settled": 59,
+            "pnl": 9.72,
+            "roi": 0.0776,
+            "t_stat": 0.27,
             "verdict": "luck / no edge"
           },
           "kalshi_first": {
@@ -272,45 +272,45 @@
         "best_manual": "RESTING_15",
         "variants": {
           "EXIT_AT_TIP": {
-            "closed": 612,
-            "pnl_usd": -189.31,
-            "t_by_game": -8.63,
+            "closed": 613,
+            "pnl_usd": -189.76,
+            "t_by_game": -8.65,
             "gate_open": false
           },
           "HOLD": {
-            "closed": 612,
-            "pnl_usd": -149.39,
-            "t_by_game": -0.81,
+            "closed": 613,
+            "pnl_usd": -151.3,
+            "t_by_game": -0.82,
             "gate_open": false
           },
           "RESTING_10": {
-            "closed": 612,
-            "pnl_usd": -186.22,
-            "t_by_game": -2.67,
+            "closed": 613,
+            "pnl_usd": -188.13,
+            "t_by_game": -2.7,
             "gate_open": false
           },
           "RESTING_15": {
-            "closed": 612,
-            "pnl_usd": -138.36,
-            "t_by_game": -1.63,
+            "closed": 613,
+            "pnl_usd": -140.27,
+            "t_by_game": -1.66,
             "gate_open": false
           },
           "RESTING_5": {
-            "closed": 612,
-            "pnl_usd": -225.29,
-            "t_by_game": -4.15,
+            "closed": 613,
+            "pnl_usd": -227.2,
+            "t_by_game": -4.18,
             "gate_open": false
           },
           "RESTING_FAIR": {
-            "closed": 612,
-            "pnl_usd": -198.69,
-            "t_by_game": -3.64,
+            "closed": 613,
+            "pnl_usd": -200.6,
+            "t_by_game": -3.68,
             "gate_open": false
           },
           "TRADE": {
-            "closed": 612,
-            "pnl_usd": -191.59,
-            "t_by_game": -8.55,
+            "closed": 613,
+            "pnl_usd": -192.04,
+            "t_by_game": -8.58,
             "gate_open": false
           }
         }
@@ -325,7 +325,7 @@
         "contract": "San Francisco wins by over 6.5 points",
         "max_price": 0.58,
         "stake": 3.59,
-        "gone": false,
+        "gone": true,
         "sent_ct": "Sun Nov 22, 5:30 PM CT",
         "kickoff_utc": "2026-11-23T01:20:00Z",
         "kickoff_ct": "Sun Nov 22, 7:20 PM CT",
@@ -353,7 +353,7 @@
         "contract": "Georgia wins by over 35.5 points",
         "max_price": 0.53,
         "stake": 3.29,
-        "gone": false,
+        "gone": true,
         "sent_ct": "Sun Nov 22, 4:24 PM CT",
         "kickoff_utc": "2026-11-28T20:00:00Z",
         "kickoff_ct": "Sat Nov 28, 2:00 PM CT",
