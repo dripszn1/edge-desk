@@ -1,7 +1,7 @@
 {
   "proposals": [],
-  "generated_utc": "2026-11-22T01:25:07Z",
-  "generated_ct": "Sat Nov 21, 7:25 PM CT",
+  "generated_utc": "2026-11-22T01:35:57Z",
+  "generated_ct": "Sat Nov 21, 7:35 PM CT",
   "paper_mode": true,
   "rules": {
     "min_bets": 30,
@@ -15,18 +15,18 @@
     "why": "no settled bets yet"
   },
   "model_shadow": {
-    "settled": 146,
-    "staked": 385.0,
-    "fees": 17.03,
-    "pnl": -20.0,
-    "roi": -0.0519,
-    "t_stat": -0.27,
+    "settled": 149,
+    "staked": 385.8,
+    "fees": 17.09,
+    "pnl": -20.8,
+    "roi": -0.0539,
+    "t_stat": -0.37,
     "coin_flip": {
       "sims": 10000,
-      "bets": 146,
-      "real_pnl": -20.0,
-      "sim_median_pnl": -18.0,
-      "beat_pct": 0.4918
+      "bets": 149,
+      "real_pnl": -20.8,
+      "sim_median_pnl": -18.8,
+      "beat_pct": 0.489
     },
     "by_week": [
       {
@@ -39,15 +39,15 @@
       },
       {
         "week_of": "2026-11-16",
-        "bets": 21,
-        "pnl": -27.57,
-        "roi": -0.8733,
-        "claimed_edge_c": 17.47,
-        "realised_edge_c": -28.13
+        "bets": 24,
+        "pnl": -28.37,
+        "roi": -0.8764,
+        "claimed_edge_c": 17.44,
+        "realised_edge_c": -28.09
       }
     ],
     "verdict": "luck / no edge",
-    "why": "t=-0.27, coin-flip beat 49%"
+    "why": "t=-0.37, coin-flip beat 49%"
   },
   "sharp_shadow": {
     "settled": 99,
@@ -335,7 +335,7 @@
     "propose_widen": []
   },
   "settlement": {
-    "pending": 206,
+    "pending": 203,
     "overdue": 0,
     "no_kickoff": 0,
     "grace_hours": 12,
@@ -2173,9 +2173,9 @@
     "football": {
       "MAKER_BID": {
         "plays": 551,
-        "decided": 501,
-        "filled": 163,
-        "fill_rate_pct": 32.5,
+        "decided": 503,
+        "filled": 165,
+        "fill_rate_pct": 32.8,
         "clv": {
           "n": 135,
           "games": 41,
@@ -2271,9 +2271,9 @@
     "NFL": {
       "MAKER_BID": {
         "plays": 139,
-        "decided": 91,
-        "filled": 53,
-        "fill_rate_pct": 58.2,
+        "decided": 93,
+        "filled": 55,
+        "fill_rate_pct": 59.1,
         "clv": {
           "n": 29,
           "games": 5,
