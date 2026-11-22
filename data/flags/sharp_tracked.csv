@@ -46557,3 +46557,4 @@ snapshot_ts,league,event,ticker,side,price,fair,edge,sharp_line,odds_fetched_ts,
 2026-11-22T21:34:06Z,CFB,Miami (OH) vs Western Michigan: Total Points,KXNCAAFTOTAL-26NOV24MOHWMU-28,NO,0.09,0.1333,0.0372,45.5,2026-11-22T21:23:40Z,rung far from sharp line (unvalidated range); sharp line stale; price outside core zone (35-65c)
 2026-11-22T21:34:06Z,CFB,Miami (OH) vs Western Michigan: Total Points,KXNCAAFTOTAL-26NOV24MOHWMU-31,NO,0.13,0.1773,0.0393,45.5,2026-11-22T21:23:40Z,rung far from sharp line (unvalidated range); sharp line stale; price outside core zone (35-65c)
 2026-11-22T21:38:33Z,CFB,Auburn vs Alabama: Spread,KXNCAAFSPREAD-26NOV28AUBALA-ALA17,YES,0.49,0.5407,0.0323,16.5,2026-11-22T21:23:40Z,sharp line stale
+2026-11-22T22:12:48Z,NFL,Denver vs Pittsburgh: Spread,KXNFLSPREAD-26NOV27DENPIT-DEN10,NO,0.71,0.7689,0.0439,2.0,2026-11-22T16:21:53Z,rung outside core zone (>3 pts from sharp line); sharp line stale; price outside core zone (35-65c)
