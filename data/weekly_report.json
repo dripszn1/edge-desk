@@ -1,7 +1,7 @@
 {
   "proposals": [],
-  "generated_utc": "2026-11-22T16:18:58Z",
-  "generated_ct": "Sun Nov 22, 10:18 AM CT",
+  "generated_utc": "2026-11-22T16:34:07Z",
+  "generated_ct": "Sun Nov 22, 10:34 AM CT",
   "paper_mode": true,
   "rules": {
     "min_bets": 30,
@@ -335,7 +335,7 @@
     "propose_widen": []
   },
   "settlement": {
-    "pending": 161,
+    "pending": 164,
     "overdue": 0,
     "no_kickoff": 0,
     "grace_hours": 12,
@@ -1825,7 +1825,7 @@
           "label": "API-ONLY",
           "closed": 556,
           "pending": 87,
-          "closed_early_not_counted": 39,
+          "closed_early_not_counted": 40,
           "pnl_usd": -315.4,
           "avg_c": -5.99,
           "win_pct": 8.8,
@@ -1849,7 +1849,7 @@
           "label": "API-ONLY",
           "closed": 556,
           "pending": 87,
-          "closed_early_not_counted": 37,
+          "closed_early_not_counted": 38,
           "pnl_usd": -323.72,
           "avg_c": -6.14,
           "win_pct": 5.9,
@@ -1873,7 +1873,7 @@
           "label": "API-ONLY",
           "closed": 556,
           "pending": 87,
-          "closed_early_not_counted": 42,
+          "closed_early_not_counted": 43,
           "pnl_usd": -306.04,
           "avg_c": -5.78,
           "win_pct": 14.7,
@@ -1973,8 +1973,8 @@
     "note": "instant paper trades from the Kalshi stream; kept apart from the alert scorecards",
     "maker": {
       "quotes": 28,
-      "fills": 6,
-      "fill_rate_pct": 21.4
+      "fills": 7,
+      "fill_rate_pct": 25.0
     },
     "median_latency_ms": 466,
     "NFL": {
@@ -2173,9 +2173,9 @@
     "football": {
       "MAKER_BID": {
         "plays": 557,
-        "decided": 508,
-        "filled": 168,
-        "fill_rate_pct": 33.1,
+        "decided": 509,
+        "filled": 169,
+        "fill_rate_pct": 33.2,
         "clv": {
           "n": 139,
           "games": 42,
@@ -2271,9 +2271,9 @@
     "NFL": {
       "MAKER_BID": {
         "plays": 144,
-        "decided": 96,
-        "filled": 58,
-        "fill_rate_pct": 60.4,
+        "decided": 97,
+        "filled": 59,
+        "fill_rate_pct": 60.8,
         "clv": {
           "n": 29,
           "games": 5,
