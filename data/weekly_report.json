@@ -1,7 +1,7 @@
 {
   "proposals": [],
-  "generated_utc": "2026-11-22T01:35:57Z",
-  "generated_ct": "Sat Nov 21, 7:35 PM CT",
+  "generated_utc": "2026-11-22T01:58:29Z",
+  "generated_ct": "Sat Nov 21, 7:58 PM CT",
   "paper_mode": true,
   "rules": {
     "min_bets": 30,
@@ -1813,7 +1813,7 @@
           "label": "API-ONLY",
           "closed": 507,
           "pending": 128,
-          "closed_early_not_counted": 31,
+          "closed_early_not_counted": 33,
           "pnl_usd": -317.2,
           "avg_c": -7.16,
           "win_pct": 23.1,
@@ -1825,7 +1825,7 @@
           "label": "API-ONLY",
           "closed": 507,
           "pending": 128,
-          "closed_early_not_counted": 67,
+          "closed_early_not_counted": 68,
           "pnl_usd": -286.66,
           "avg_c": -5.93,
           "win_pct": 9.1,
@@ -1837,7 +1837,7 @@
           "label": "API-ONLY",
           "closed": 507,
           "pending": 128,
-          "closed_early_not_counted": 29,
+          "closed_early_not_counted": 30,
           "pnl_usd": -333.41,
           "avg_c": -7.59,
           "win_pct": 16.8,
@@ -1861,7 +1861,7 @@
           "label": "API-ONLY",
           "closed": 507,
           "pending": 128,
-          "closed_early_not_counted": 38,
+          "closed_early_not_counted": 39,
           "pnl_usd": -313.08,
           "avg_c": -6.79,
           "win_pct": 33.1,
@@ -1873,7 +1873,7 @@
           "label": "API-ONLY",
           "closed": 507,
           "pending": 128,
-          "closed_early_not_counted": 72,
+          "closed_early_not_counted": 73,
           "pnl_usd": -281.51,
           "avg_c": -5.76,
           "win_pct": 14.8,
@@ -1909,7 +1909,7 @@
           "label": "MANUAL-OK",
           "closed": 507,
           "pending": 128,
-          "closed_early_not_counted": 15,
+          "closed_early_not_counted": 18,
           "pnl_usd": -146.87,
           "avg_c": -3.25,
           "win_pct": 60.9,
@@ -1921,7 +1921,7 @@
           "label": "MANUAL-OK",
           "closed": 507,
           "pending": 128,
-          "closed_early_not_counted": 12,
+          "closed_early_not_counted": 14,
           "pnl_usd": -107.46,
           "avg_c": -2.27,
           "win_pct": 55.0,
@@ -1933,7 +1933,7 @@
           "label": "MANUAL-OK",
           "closed": 507,
           "pending": 128,
-          "closed_early_not_counted": 27,
+          "closed_early_not_counted": 29,
           "pnl_usd": -179.34,
           "avg_c": -3.76,
           "win_pct": 69.6,
@@ -1945,7 +1945,7 @@
           "label": "MANUAL-OK",
           "closed": 507,
           "pending": 128,
-          "closed_early_not_counted": 29,
+          "closed_early_not_counted": 31,
           "pnl_usd": -159.44,
           "avg_c": -3.36,
           "win_pct": 73.6,
@@ -1976,7 +1976,7 @@
       "fills": 6,
       "fill_rate_pct": 22.2
     },
-    "median_latency_ms": 466,
+    "median_latency_ms": 462,
     "NFL": {
       "plays": 24,
       "settled": 20,
@@ -2022,7 +2022,7 @@
       }
     },
     "CFB": {
-      "plays": 66,
+      "plays": 67,
       "settled": 48,
       "hold_pnl_usd": -77.38,
       "hold_record": "19-29",
@@ -2036,7 +2036,7 @@
         "t_by_event": -2.22,
         "stale": 0,
         "pending": 3,
-        "no_close": 7
+        "no_close": 8
       },
       "exits": {
         "HOLD": {
