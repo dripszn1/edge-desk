@@ -1,22 +1,4 @@
 league,event_id,commence_utc,home_team,away_team,market,outcome,point,fair,source,n_books,fetched_ts
-CFB,6d977752327ee29e19d3e1856683efee,2026-11-21T21:00:00Z,Southern Mississippi Golden Eagles,South Alabama Jaguars,h2h,South Alabama Jaguars,,0.651913,pinnacle,1,2026-11-21T20:58:59Z
-CFB,6d977752327ee29e19d3e1856683efee,2026-11-21T21:00:00Z,Southern Mississippi Golden Eagles,South Alabama Jaguars,h2h,Southern Mississippi Golden Eagles,,0.348087,pinnacle,1,2026-11-21T20:58:59Z
-CFB,6d977752327ee29e19d3e1856683efee,2026-11-21T21:00:00Z,Southern Mississippi Golden Eagles,South Alabama Jaguars,spreads,South Alabama Jaguars,-5.0,0.509166,pinnacle,1,2026-11-21T20:58:59Z
-CFB,6d977752327ee29e19d3e1856683efee,2026-11-21T21:00:00Z,Southern Mississippi Golden Eagles,South Alabama Jaguars,spreads,Southern Mississippi Golden Eagles,5.0,0.490834,pinnacle,1,2026-11-21T20:58:59Z
-CFB,6d977752327ee29e19d3e1856683efee,2026-11-21T21:00:00Z,Southern Mississippi Golden Eagles,South Alabama Jaguars,totals,Over,65.5,0.486624,pinnacle,1,2026-11-21T20:58:59Z
-CFB,6d977752327ee29e19d3e1856683efee,2026-11-21T21:00:00Z,Southern Mississippi Golden Eagles,South Alabama Jaguars,totals,Under,65.5,0.513376,pinnacle,1,2026-11-21T20:58:59Z
-CFB,0a1a6c2630e51e32d24695f02c0b3f23,2026-11-21T21:05:00Z,Troy Trojans,Georgia Southern Eagles,h2h,Georgia Southern Eagles,,0.727911,pinnacle,1,2026-11-21T20:58:59Z
-CFB,0a1a6c2630e51e32d24695f02c0b3f23,2026-11-21T21:05:00Z,Troy Trojans,Georgia Southern Eagles,h2h,Troy Trojans,,0.272089,pinnacle,1,2026-11-21T20:58:59Z
-CFB,0a1a6c2630e51e32d24695f02c0b3f23,2026-11-21T21:05:00Z,Troy Trojans,Georgia Southern Eagles,spreads,Georgia Southern Eagles,-8.0,0.486239,pinnacle,1,2026-11-21T20:58:59Z
-CFB,0a1a6c2630e51e32d24695f02c0b3f23,2026-11-21T21:05:00Z,Troy Trojans,Georgia Southern Eagles,spreads,Troy Trojans,8.0,0.513761,pinnacle,1,2026-11-21T20:58:59Z
-CFB,0a1a6c2630e51e32d24695f02c0b3f23,2026-11-21T21:05:00Z,Troy Trojans,Georgia Southern Eagles,totals,Over,47.5,0.491091,pinnacle,1,2026-11-21T20:58:59Z
-CFB,0a1a6c2630e51e32d24695f02c0b3f23,2026-11-21T21:05:00Z,Troy Trojans,Georgia Southern Eagles,totals,Under,47.5,0.508909,pinnacle,1,2026-11-21T20:58:59Z
-CFB,e17410526acddf2500fb788f40901b3f,2026-11-21T21:05:00Z,Marshall Thundering Herd,Georgia State Panthers,h2h,Georgia State Panthers,,0.425965,pinnacle,1,2026-11-21T20:58:59Z
-CFB,e17410526acddf2500fb788f40901b3f,2026-11-21T21:05:00Z,Marshall Thundering Herd,Georgia State Panthers,h2h,Marshall Thundering Herd,,0.574035,pinnacle,1,2026-11-21T20:58:59Z
-CFB,e17410526acddf2500fb788f40901b3f,2026-11-21T21:05:00Z,Marshall Thundering Herd,Georgia State Panthers,spreads,Georgia State Panthers,3.0,0.5,pinnacle,1,2026-11-21T20:58:59Z
-CFB,e17410526acddf2500fb788f40901b3f,2026-11-21T21:05:00Z,Marshall Thundering Herd,Georgia State Panthers,spreads,Marshall Thundering Herd,-3.0,0.5,pinnacle,1,2026-11-21T20:58:59Z
-CFB,e17410526acddf2500fb788f40901b3f,2026-11-21T21:05:00Z,Marshall Thundering Herd,Georgia State Panthers,totals,Over,56.5,0.484385,pinnacle,1,2026-11-21T20:58:59Z
-CFB,e17410526acddf2500fb788f40901b3f,2026-11-21T21:05:00Z,Marshall Thundering Herd,Georgia State Panthers,totals,Under,56.5,0.515615,pinnacle,1,2026-11-21T20:58:59Z
 CFB,cc2b1d4b7378697dc11c744aeb015af9,2026-11-21T21:10:00Z,North Dakota State Bison,Northern Illinois Huskies,h2h,North Dakota State Bison,,0.941734,pinnacle,1,2026-11-21T21:09:12Z
 CFB,cc2b1d4b7378697dc11c744aeb015af9,2026-11-21T21:10:00Z,North Dakota State Bison,Northern Illinois Huskies,h2h,Northern Illinois Huskies,,0.058266,pinnacle,1,2026-11-21T21:09:12Z
 CFB,cc2b1d4b7378697dc11c744aeb015af9,2026-11-21T21:10:00Z,North Dakota State Bison,Northern Illinois Huskies,spreads,North Dakota State Bison,-26.0,0.483948,pinnacle,1,2026-11-21T21:09:12Z
@@ -241,21 +223,21 @@ CFB,028f0fcc2f6411c4816e543bb7fa226c,2026-11-22T02:45:00Z,Boise State Broncos,Sa
 CFB,028f0fcc2f6411c4816e543bb7fa226c,2026-11-22T02:45:00Z,Boise State Broncos,San Diego State Aztecs,spreads,San Diego State Aztecs,20.5,0.485194,pinnacle,1,2026-11-22T02:40:58Z
 CFB,028f0fcc2f6411c4816e543bb7fa226c,2026-11-22T02:45:00Z,Boise State Broncos,San Diego State Aztecs,totals,Over,61.0,0.502226,pinnacle,1,2026-11-22T02:40:58Z
 CFB,028f0fcc2f6411c4816e543bb7fa226c,2026-11-22T02:45:00Z,Boise State Broncos,San Diego State Aztecs,totals,Under,61.0,0.497774,pinnacle,1,2026-11-22T02:40:58Z
-CFB,ecfec2fe1db57f88e603f9947add1e26,2026-11-22T03:15:00Z,Arizona State Sun Devils,Oklahoma State Cowboys,h2h,Arizona State Sun Devils,,0.409334,pinnacle,1,2026-11-22T02:52:14Z
-CFB,ecfec2fe1db57f88e603f9947add1e26,2026-11-22T03:15:00Z,Arizona State Sun Devils,Oklahoma State Cowboys,h2h,Oklahoma State Cowboys,,0.590666,pinnacle,1,2026-11-22T02:52:14Z
-CFB,ecfec2fe1db57f88e603f9947add1e26,2026-11-22T03:15:00Z,Arizona State Sun Devils,Oklahoma State Cowboys,spreads,Arizona State Sun Devils,3.0,0.490834,pinnacle,1,2026-11-22T02:52:14Z
-CFB,ecfec2fe1db57f88e603f9947add1e26,2026-11-22T03:15:00Z,Arizona State Sun Devils,Oklahoma State Cowboys,spreads,Oklahoma State Cowboys,-3.0,0.509166,pinnacle,1,2026-11-22T02:52:14Z
-CFB,ecfec2fe1db57f88e603f9947add1e26,2026-11-22T03:15:00Z,Arizona State Sun Devils,Oklahoma State Cowboys,totals,Over,60.0,0.511141,pinnacle,1,2026-11-22T02:52:14Z
-CFB,ecfec2fe1db57f88e603f9947add1e26,2026-11-22T03:15:00Z,Arizona State Sun Devils,Oklahoma State Cowboys,totals,Under,60.0,0.488859,pinnacle,1,2026-11-22T02:52:14Z
-CFB,430ea047c8a027987881d51f810a6cf8,2026-11-22T03:30:00Z,Nevada Wolf Pack,Hawaii Rainbow Warriors,h2h,Hawaii Rainbow Warriors,,0.294689,pinnacle,1,2026-11-22T02:52:14Z
-CFB,430ea047c8a027987881d51f810a6cf8,2026-11-22T03:30:00Z,Nevada Wolf Pack,Hawaii Rainbow Warriors,h2h,Nevada Wolf Pack,,0.705311,pinnacle,1,2026-11-22T02:52:14Z
-CFB,430ea047c8a027987881d51f810a6cf8,2026-11-22T03:30:00Z,Nevada Wolf Pack,Hawaii Rainbow Warriors,spreads,Hawaii Rainbow Warriors,7.0,0.50229,pinnacle,1,2026-11-22T02:52:14Z
-CFB,430ea047c8a027987881d51f810a6cf8,2026-11-22T03:30:00Z,Nevada Wolf Pack,Hawaii Rainbow Warriors,spreads,Nevada Wolf Pack,-7.0,0.49771,pinnacle,1,2026-11-22T02:52:14Z
-CFB,430ea047c8a027987881d51f810a6cf8,2026-11-22T03:30:00Z,Nevada Wolf Pack,Hawaii Rainbow Warriors,totals,Over,40.5,0.508909,pinnacle,1,2026-11-22T02:52:14Z
-CFB,430ea047c8a027987881d51f810a6cf8,2026-11-22T03:30:00Z,Nevada Wolf Pack,Hawaii Rainbow Warriors,totals,Under,40.5,0.491091,pinnacle,1,2026-11-22T02:52:14Z
-CFB,6e36f5c3c55edcb31749b0de4a146d14,2026-11-22T03:30:00Z,Oregon State Beavers,Utah State Aggies,h2h,Oregon State Beavers,,0.698808,pinnacle,1,2026-11-22T02:52:14Z
-CFB,6e36f5c3c55edcb31749b0de4a146d14,2026-11-22T03:30:00Z,Oregon State Beavers,Utah State Aggies,h2h,Utah State Aggies,,0.301192,pinnacle,1,2026-11-22T02:52:14Z
-CFB,6e36f5c3c55edcb31749b0de4a146d14,2026-11-22T03:30:00Z,Oregon State Beavers,Utah State Aggies,spreads,Oregon State Beavers,-7.0,0.482917,pinnacle,1,2026-11-22T02:52:14Z
-CFB,6e36f5c3c55edcb31749b0de4a146d14,2026-11-22T03:30:00Z,Oregon State Beavers,Utah State Aggies,spreads,Utah State Aggies,7.0,0.517083,pinnacle,1,2026-11-22T02:52:14Z
-CFB,6e36f5c3c55edcb31749b0de4a146d14,2026-11-22T03:30:00Z,Oregon State Beavers,Utah State Aggies,totals,Over,52.0,0.486624,pinnacle,1,2026-11-22T02:52:14Z
-CFB,6e36f5c3c55edcb31749b0de4a146d14,2026-11-22T03:30:00Z,Oregon State Beavers,Utah State Aggies,totals,Under,52.0,0.513376,pinnacle,1,2026-11-22T02:52:14Z
+CFB,ecfec2fe1db57f88e603f9947add1e26,2026-11-22T03:15:00Z,Arizona State Sun Devils,Oklahoma State Cowboys,h2h,Arizona State Sun Devils,,0.404489,pinnacle,1,2026-11-22T03:07:29Z
+CFB,ecfec2fe1db57f88e603f9947add1e26,2026-11-22T03:15:00Z,Arizona State Sun Devils,Oklahoma State Cowboys,h2h,Oklahoma State Cowboys,,0.595511,pinnacle,1,2026-11-22T03:07:29Z
+CFB,ecfec2fe1db57f88e603f9947add1e26,2026-11-22T03:15:00Z,Arizona State Sun Devils,Oklahoma State Cowboys,spreads,Arizona State Sun Devils,3.0,0.486239,pinnacle,1,2026-11-22T03:07:29Z
+CFB,ecfec2fe1db57f88e603f9947add1e26,2026-11-22T03:15:00Z,Arizona State Sun Devils,Oklahoma State Cowboys,spreads,Oklahoma State Cowboys,-3.0,0.513761,pinnacle,1,2026-11-22T03:07:29Z
+CFB,ecfec2fe1db57f88e603f9947add1e26,2026-11-22T03:15:00Z,Arizona State Sun Devils,Oklahoma State Cowboys,totals,Over,61.0,0.508909,pinnacle,1,2026-11-22T03:07:29Z
+CFB,ecfec2fe1db57f88e603f9947add1e26,2026-11-22T03:15:00Z,Arizona State Sun Devils,Oklahoma State Cowboys,totals,Under,61.0,0.491091,pinnacle,1,2026-11-22T03:07:29Z
+CFB,430ea047c8a027987881d51f810a6cf8,2026-11-22T03:30:00Z,Nevada Wolf Pack,Hawaii Rainbow Warriors,h2h,Hawaii Rainbow Warriors,,0.294689,pinnacle,1,2026-11-22T03:07:29Z
+CFB,430ea047c8a027987881d51f810a6cf8,2026-11-22T03:30:00Z,Nevada Wolf Pack,Hawaii Rainbow Warriors,h2h,Nevada Wolf Pack,,0.705311,pinnacle,1,2026-11-22T03:07:29Z
+CFB,430ea047c8a027987881d51f810a6cf8,2026-11-22T03:30:00Z,Nevada Wolf Pack,Hawaii Rainbow Warriors,spreads,Hawaii Rainbow Warriors,7.0,0.50229,pinnacle,1,2026-11-22T03:07:29Z
+CFB,430ea047c8a027987881d51f810a6cf8,2026-11-22T03:30:00Z,Nevada Wolf Pack,Hawaii Rainbow Warriors,spreads,Nevada Wolf Pack,-7.0,0.49771,pinnacle,1,2026-11-22T03:07:29Z
+CFB,430ea047c8a027987881d51f810a6cf8,2026-11-22T03:30:00Z,Nevada Wolf Pack,Hawaii Rainbow Warriors,totals,Over,40.5,0.508909,pinnacle,1,2026-11-22T03:07:29Z
+CFB,430ea047c8a027987881d51f810a6cf8,2026-11-22T03:30:00Z,Nevada Wolf Pack,Hawaii Rainbow Warriors,totals,Under,40.5,0.491091,pinnacle,1,2026-11-22T03:07:29Z
+CFB,6e36f5c3c55edcb31749b0de4a146d14,2026-11-22T03:30:00Z,Oregon State Beavers,Utah State Aggies,h2h,Oregon State Beavers,,0.698808,pinnacle,1,2026-11-22T03:07:29Z
+CFB,6e36f5c3c55edcb31749b0de4a146d14,2026-11-22T03:30:00Z,Oregon State Beavers,Utah State Aggies,h2h,Utah State Aggies,,0.301192,pinnacle,1,2026-11-22T03:07:29Z
+CFB,6e36f5c3c55edcb31749b0de4a146d14,2026-11-22T03:30:00Z,Oregon State Beavers,Utah State Aggies,spreads,Oregon State Beavers,-7.0,0.482917,pinnacle,1,2026-11-22T03:07:29Z
+CFB,6e36f5c3c55edcb31749b0de4a146d14,2026-11-22T03:30:00Z,Oregon State Beavers,Utah State Aggies,spreads,Utah State Aggies,7.0,0.517083,pinnacle,1,2026-11-22T03:07:29Z
+CFB,6e36f5c3c55edcb31749b0de4a146d14,2026-11-22T03:30:00Z,Oregon State Beavers,Utah State Aggies,totals,Over,52.0,0.486624,pinnacle,1,2026-11-22T03:07:29Z
+CFB,6e36f5c3c55edcb31749b0de4a146d14,2026-11-22T03:30:00Z,Oregon State Beavers,Utah State Aggies,totals,Under,52.0,0.513376,pinnacle,1,2026-11-22T03:07:29Z
