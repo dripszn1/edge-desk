@@ -1,7 +1,7 @@
 {
   "proposals": [],
-  "generated_utc": "2026-11-22T23:18:56Z",
-  "generated_ct": "Sun Nov 22, 5:18 PM CT",
+  "generated_utc": "2026-11-22T23:34:18Z",
+  "generated_ct": "Sun Nov 22, 5:34 PM CT",
   "paper_mode": true,
   "rules": {
     "min_bets": 30,
@@ -335,7 +335,7 @@
     "propose_widen": []
   },
   "settlement": {
-    "pending": 133,
+    "pending": 136,
     "overdue": 0,
     "no_kickoff": 0,
     "grace_hours": 12,
@@ -364,7 +364,7 @@
         "events": 60,
         "t_by_event": -1.9,
         "stale": 0,
-        "pending": 6,
+        "pending": 7,
         "no_close": 0
       }
     },
@@ -963,8 +963,8 @@
       },
       "NFL SPREAD": {
         "0-3": {
-          "plays": 9,
-          "games": 7,
+          "plays": 10,
+          "games": 8,
           "clv_n": 9,
           "clv_games": 7,
           "avg_clv_c": -2.69,
@@ -975,8 +975,8 @@
           "sd_range": "0.00-0.23",
           "inside_cap": true,
           "adjusted": {
-            "plays": 9,
-            "games": 7,
+            "plays": 10,
+            "games": 8,
             "clv_n": 9,
             "clv_games": 7,
             "avg_clv_c": -2.69,
@@ -1068,8 +1068,8 @@
         },
         "_all": {
           "raw": {
-            "plays": 26,
-            "games": 14,
+            "plays": 27,
+            "games": 15,
             "clv_n": 26,
             "clv_games": 14,
             "avg_clv_c": -1.32,
@@ -1079,8 +1079,8 @@
             "pnl_t_by_game": -1.32
           },
           "adjusted": {
-            "plays": 18,
-            "games": 11,
+            "plays": 19,
+            "games": 12,
             "clv_n": 18,
             "clv_games": 11,
             "avg_clv_c": -1.79,
@@ -1409,8 +1409,8 @@
       },
       "NFL SPREAD": {
         "0-0.25": {
-          "plays": 9,
-          "games": 7,
+          "plays": 10,
+          "games": 8,
           "clv_n": 9,
           "clv_games": 7,
           "avg_clv_c": -2.69,
@@ -1628,8 +1628,8 @@
   },
   "alert_room": {
     "0c": {
-      "alerts": 83,
-      "gone_pct": 95.2,
+      "alerts": 84,
+      "gone_pct": 94.0,
       "median_min_to_gone": 95.2,
       "with_close": 64,
       "avg_clv_c": -1.99
@@ -1909,7 +1909,7 @@
           "label": "MANUAL-OK",
           "closed": 612,
           "pending": 51,
-          "closed_early_not_counted": 1,
+          "closed_early_not_counted": 2,
           "pnl_usd": -186.22,
           "avg_c": -3.25,
           "win_pct": 60.6,
@@ -1933,7 +1933,7 @@
           "label": "MANUAL-OK",
           "closed": 612,
           "pending": 51,
-          "closed_early_not_counted": 4,
+          "closed_early_not_counted": 6,
           "pnl_usd": -225.29,
           "avg_c": -3.91,
           "win_pct": 69.1,
@@ -1945,7 +1945,7 @@
           "label": "MANUAL-OK",
           "closed": 612,
           "pending": 51,
-          "closed_early_not_counted": 6,
+          "closed_early_not_counted": 8,
           "pnl_usd": -198.69,
           "avg_c": -3.53,
           "win_pct": 73.2,
@@ -1972,11 +1972,11 @@
   "stream": {
     "note": "instant paper trades from the Kalshi stream; kept apart from the alert scorecards",
     "maker": {
-      "quotes": 32,
+      "quotes": 33,
       "fills": 7,
-      "fill_rate_pct": 21.9
+      "fill_rate_pct": 21.2
     },
-    "median_latency_ms": 462,
+    "median_latency_ms": 460,
     "NFL": {
       "plays": 27,
       "settled": 23,
@@ -2022,7 +2022,7 @@
       }
     },
     "CFB": {
-      "plays": 71,
+      "plays": 72,
       "settled": 67,
       "hold_pnl_usd": -209.51,
       "hold_record": "22-45",
@@ -2035,7 +2035,7 @@
         "events": 25,
         "t_by_event": -2.66,
         "stale": 0,
-        "pending": 4,
+        "pending": 5,
         "no_close": 8
       },
       "exits": {
@@ -2172,7 +2172,7 @@
     "note": "report only; resting buys fill at the limit when a later ask reaches it, maker fee",
     "football": {
       "MAKER_BID": {
-        "plays": 572,
+        "plays": 573,
         "decided": 544,
         "filled": 172,
         "fill_rate_pct": 31.6,
@@ -2270,7 +2270,7 @@
     },
     "NFL": {
       "MAKER_BID": {
-        "plays": 148,
+        "plays": 149,
         "decided": 131,
         "filled": 61,
         "fill_rate_pct": 46.6,

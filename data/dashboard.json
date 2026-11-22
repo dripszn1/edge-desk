@@ -1,19 +1,19 @@
 {
-  "generated_ts": "2026-11-22T23:25:35Z",
-  "generated_ct": "Sun Nov 22, 5:25 PM CT",
+  "generated_ts": "2026-11-22T23:37:07Z",
+  "generated_ct": "Sun Nov 22, 5:37 PM CT",
   "today_ct": "2026-11-22",
   "snapshot": {
-    "ts": "2026-11-22T23:15:23Z",
-    "ct": "Sun Nov 22, 5:15 PM CT",
+    "ts": "2026-11-22T23:30:41Z",
+    "ct": "Sun Nov 22, 5:30 PM CT",
     "stale": false,
-    "markets_scanned": 4313,
+    "markets_scanned": 4315,
     "kickoff_source": "kalshi occurrence_datetime - 3h",
     "phases": {
       "CFB": {
         "pregame": 3410
       },
       "NFL": {
-        "live": 149,
+        "live": 151,
         "pregame": 754
       }
     }
@@ -62,7 +62,7 @@
     "max_bet": 10.0
   },
   "signals": {
-    "weekly_ct": "Sun Nov 22, 5:18 PM CT",
+    "weekly_ct": "Sun Nov 22, 5:34 PM CT",
     "scorecards": [
       {
         "name": "SHARP shadow football",
@@ -189,7 +189,7 @@
           "events": 60,
           "t_by_event": -1.9,
           "stale": 0,
-          "pending": 6,
+          "pending": 7,
           "no_close": 0
         }
       },
@@ -317,6 +317,20 @@
       }
     },
     "open_alerts": [
+      {
+        "ticker": "KXNFLSPREAD-26NOV22MINSF-SF7",
+        "signal": "SHARP",
+        "side": "NO",
+        "game": "Minnesota vs San Francisco: Spread",
+        "contract": "San Francisco wins by over 6.5 points",
+        "max_price": 0.58,
+        "stake": 3.59,
+        "gone": false,
+        "sent_ct": "Sun Nov 22, 5:30 PM CT",
+        "kickoff_utc": "2026-11-23T01:20:00Z",
+        "kickoff_ct": "Sun Nov 22, 7:20 PM CT",
+        "kalshi_url": "https://kalshi.com/markets/kxnflspread/event/kxnflspread-26nov22minsf"
+      },
       {
         "ticker": "KXNCAAFSPREAD-26NOV26TCUTTU-TTU10",
         "signal": "SHARP",

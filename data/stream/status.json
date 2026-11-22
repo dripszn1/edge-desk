@@ -1,19 +1,19 @@
 {
- "utc": "2026-11-22T23:15:31.982Z",
+ "utc": "2026-11-22T23:30:49.982Z",
  "stream": {
   "connected": true,
   "url": "wss://api.elections.kalshi.com/trade-api/ws/v2",
   "connects": 1,
   "errors": [],
-  "subscribed": 3687
+  "subscribed": 3689
  },
  "engine": {
-  "updates": 686756,
-  "priced_updates": 1373512,
-  "taker_fills": 6,
-  "maker_quotes": 3,
+  "updates": 769892,
+  "priced_updates": 1539784,
+  "taker_fills": 7,
+  "maker_quotes": 4,
   "maker_fills": 0,
-  "median_latency_ms": 425,
-  "open_maker_quotes": 3
+  "median_latency_ms": 322,
+  "open_maker_quotes": 4
  }
 }
