@@ -1,7 +1,7 @@
 {
   "proposals": [],
-  "generated_utc": "2026-11-22T14:20:42Z",
-  "generated_ct": "Sun Nov 22, 8:20 AM CT",
+  "generated_utc": "2026-11-22T14:49:58Z",
+  "generated_ct": "Sun Nov 22, 8:49 AM CT",
   "paper_mode": true,
   "rules": {
     "min_bets": 30,
@@ -335,7 +335,7 @@
     "propose_widen": []
   },
   "settlement": {
-    "pending": 152,
+    "pending": 153,
     "overdue": 0,
     "no_kickoff": 0,
     "grace_hours": 12,
@@ -1909,7 +1909,7 @@
           "label": "MANUAL-OK",
           "closed": 556,
           "pending": 85,
-          "closed_early_not_counted": 2,
+          "closed_early_not_counted": 4,
           "pnl_usd": -164.88,
           "avg_c": -3.37,
           "win_pct": 61.0,
@@ -2173,9 +2173,9 @@
     "football": {
       "MAKER_BID": {
         "plays": 556,
-        "decided": 507,
-        "filled": 167,
-        "fill_rate_pct": 32.9,
+        "decided": 508,
+        "filled": 168,
+        "fill_rate_pct": 33.1,
         "clv": {
           "n": 139,
           "games": 42,
@@ -2271,9 +2271,9 @@
     "NFL": {
       "MAKER_BID": {
         "plays": 144,
-        "decided": 95,
-        "filled": 57,
-        "fill_rate_pct": 60.0,
+        "decided": 96,
+        "filled": 58,
+        "fill_rate_pct": 60.4,
         "clv": {
           "n": 29,
           "games": 5,
