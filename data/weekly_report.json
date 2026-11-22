@@ -1,7 +1,7 @@
 {
   "proposals": [],
-  "generated_utc": "2026-11-22T17:04:29Z",
-  "generated_ct": "Sun Nov 22, 11:04 AM CT",
+  "generated_utc": "2026-11-22T17:19:59Z",
+  "generated_ct": "Sun Nov 22, 11:19 AM CT",
   "paper_mode": true,
   "rules": {
     "min_bets": 30,
@@ -1972,11 +1972,11 @@
   "stream": {
     "note": "instant paper trades from the Kalshi stream; kept apart from the alert scorecards",
     "maker": {
-      "quotes": 28,
+      "quotes": 29,
       "fills": 7,
-      "fill_rate_pct": 25.0
+      "fill_rate_pct": 24.1
     },
-    "median_latency_ms": 466,
+    "median_latency_ms": 470,
     "NFL": {
       "plays": 24,
       "settled": 20,
@@ -2022,7 +2022,7 @@
       }
     },
     "CFB": {
-      "plays": 68,
+      "plays": 69,
       "settled": 67,
       "hold_pnl_usd": -209.51,
       "hold_record": "22-45",
@@ -2035,7 +2035,7 @@
         "events": 25,
         "t_by_event": -2.66,
         "stale": 0,
-        "pending": 1,
+        "pending": 2,
         "no_close": 8
       },
       "exits": {
