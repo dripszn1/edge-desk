@@ -1,10 +1,10 @@
 {
-  "generated_ts": "2026-11-22T22:24:00Z",
-  "generated_ct": "Sun Nov 22, 4:24 PM CT",
+  "generated_ts": "2026-11-22T22:35:29Z",
+  "generated_ct": "Sun Nov 22, 4:35 PM CT",
   "today_ct": "2026-11-22",
   "snapshot": {
-    "ts": "2026-11-22T22:13:48Z",
-    "ct": "Sun Nov 22, 4:13 PM CT",
+    "ts": "2026-11-22T22:29:06Z",
+    "ct": "Sun Nov 22, 4:29 PM CT",
     "stale": false,
     "markets_scanned": 3905,
     "kickoff_source": "kalshi occurrence_datetime - 3h",
@@ -62,7 +62,7 @@
     "max_bet": 10.0
   },
   "signals": {
-    "weekly_ct": "Sun Nov 22, 4:17 PM CT",
+    "weekly_ct": "Sun Nov 22, 4:32 PM CT",
     "scorecards": [
       {
         "name": "SHARP shadow football",
@@ -84,12 +84,12 @@
       },
       {
         "name": "SHARP held back",
-        "settled": 717,
-        "pnl": -125.58,
-        "roi": -0.0578,
-        "t_stat": -1.35,
+        "settled": 719,
+        "pnl": -128.18,
+        "roi": -0.059,
+        "t_stat": -1.39,
         "verdict": "luck / no edge",
-        "why": "t=-1.35, coin-flip beat 37%",
+        "why": "t=-1.39, coin-flip beat 35%",
         "by_reason": {
           "core_zone": {
             "settled": 41,
@@ -106,10 +106,10 @@
             "verdict": "luck / no edge"
           },
           "far_rung+core_zone": {
-            "settled": 159,
-            "pnl": -0.16,
-            "roi": -0.0005,
-            "t_stat": 0.16,
+            "settled": 161,
+            "pnl": -2.76,
+            "roi": -0.0088,
+            "t_stat": 0.1,
             "verdict": "luck / no edge"
           },
           "far_rung+stale_line": {
@@ -189,7 +189,7 @@
           "events": 60,
           "t_by_event": -1.9,
           "stale": 0,
-          "pending": 4,
+          "pending": 6,
           "no_close": 0
         }
       },
@@ -215,7 +215,7 @@
           "events": 110,
           "t_by_event": -7.81,
           "stale": 0,
-          "pending": 35,
+          "pending": 36,
           "no_close": 1
         }
       }
@@ -272,51 +272,79 @@
         "best_manual": "RESTING_15",
         "variants": {
           "EXIT_AT_TIP": {
-            "closed": 609,
-            "pnl_usd": -187.87,
-            "t_by_game": -8.58,
+            "closed": 611,
+            "pnl_usd": -188.88,
+            "t_by_game": -8.62,
             "gate_open": false
           },
           "HOLD": {
-            "closed": 609,
-            "pnl_usd": -144.87,
-            "t_by_game": -0.78,
+            "closed": 611,
+            "pnl_usd": -147.47,
+            "t_by_game": -0.8,
             "gate_open": false
           },
           "RESTING_10": {
-            "closed": 609,
-            "pnl_usd": -181.7,
-            "t_by_game": -2.6,
+            "closed": 611,
+            "pnl_usd": -184.3,
+            "t_by_game": -2.64,
             "gate_open": false
           },
           "RESTING_15": {
-            "closed": 609,
-            "pnl_usd": -133.84,
-            "t_by_game": -1.58,
+            "closed": 611,
+            "pnl_usd": -136.44,
+            "t_by_game": -1.61,
             "gate_open": false
           },
           "RESTING_5": {
-            "closed": 609,
-            "pnl_usd": -220.77,
-            "t_by_game": -4.06,
+            "closed": 611,
+            "pnl_usd": -223.37,
+            "t_by_game": -4.11,
             "gate_open": false
           },
           "RESTING_FAIR": {
-            "closed": 609,
-            "pnl_usd": -194.17,
-            "t_by_game": -3.56,
+            "closed": 611,
+            "pnl_usd": -196.77,
+            "t_by_game": -3.61,
             "gate_open": false
           },
           "TRADE": {
-            "closed": 609,
-            "pnl_usd": -190.15,
-            "t_by_game": -8.5,
+            "closed": 611,
+            "pnl_usd": -191.16,
+            "t_by_game": -8.54,
             "gate_open": false
           }
         }
       }
     },
     "open_alerts": [
+      {
+        "ticker": "KXNCAAFSPREAD-26NOV26TCUTTU-TTU10",
+        "signal": "SHARP",
+        "side": "NO",
+        "game": "TCU vs Texas Tech: Spread",
+        "contract": "Texas Tech wins by over 9.5 points",
+        "max_price": 0.42,
+        "stake": 3.85,
+        "gone": false,
+        "sent_ct": "Sun Nov 22, 4:24 PM CT",
+        "kickoff_utc": "2026-11-27T01:00:00Z",
+        "kickoff_ct": "Thu Nov 26, 7:00 PM CT",
+        "kalshi_url": "https://kalshi.com/markets/kxncaafspread/event/kxncaafspread-26nov26tcuttu"
+      },
+      {
+        "ticker": "KXNCAAFSPREAD-26NOV28GTUGA-UGA36",
+        "signal": "SHARP",
+        "side": "YES",
+        "game": "Georgia Tech vs Georgia: Spread",
+        "contract": "Georgia wins by over 35.5 points",
+        "max_price": 0.53,
+        "stake": 3.29,
+        "gone": false,
+        "sent_ct": "Sun Nov 22, 4:24 PM CT",
+        "kickoff_utc": "2026-11-28T20:00:00Z",
+        "kickoff_ct": "Sat Nov 28, 2:00 PM CT",
+        "kalshi_url": "https://kalshi.com/markets/kxncaafspread/event/kxncaafspread-26nov28gtuga"
+      },
       {
         "ticker": "KXNCAAFSPREAD-26NOV28UABUNT-UNT4",
         "signal": "SHARP",
