@@ -1,16 +1,16 @@
 {
-  "generated_ts": "2026-11-22T02:47:10Z",
-  "generated_ct": "Sat Nov 21, 8:47 PM CT",
+  "generated_ts": "2026-11-22T03:02:25Z",
+  "generated_ct": "Sat Nov 21, 9:02 PM CT",
   "today_ct": "2026-11-21",
   "snapshot": {
-    "ts": "2026-11-22T02:41:00Z",
-    "ct": "Sat Nov 21, 8:41 PM CT",
+    "ts": "2026-11-22T02:56:14Z",
+    "ct": "Sat Nov 21, 8:56 PM CT",
     "stale": false,
-    "markets_scanned": 2298,
+    "markets_scanned": 2250,
     "kickoff_source": "kalshi occurrence_datetime - 3h",
     "phases": {
       "CFB": {
-        "live": 864,
+        "live": 816,
         "pregame": 612
       },
       "NFL": {
@@ -62,7 +62,7 @@
     "max_bet": 10.0
   },
   "signals": {
-    "weekly_ct": "Sat Nov 21, 8:44 PM CT",
+    "weekly_ct": "Sat Nov 21, 8:59 PM CT",
     "scorecards": [
       {
         "name": "SHARP shadow football",
@@ -317,20 +317,6 @@
       }
     },
     "open_alerts": [
-      {
-        "ticker": "KXNCAAFSPREAD-26NOV21NIUNDSU-NDSU28",
-        "signal": "SHARP",
-        "side": "YES",
-        "game": "Northern Illinois vs North Dakota St.: Spread",
-        "contract": "North Dakota St. wins by over 27.5 points",
-        "max_price": 0.48,
-        "stake": 5.26,
-        "gone": true,
-        "sent_ct": "Sat Nov 21, 8:30 AM CT",
-        "kickoff_utc": "2026-11-21T21:00:00Z",
-        "kickoff_ct": "Sat Nov 21, 3:00 PM CT",
-        "kalshi_url": "https://kalshi.com/markets/kxncaafspread/event/kxncaafspread-26nov21niundsu"
-      },
       {
         "ticker": "KXNCAAFSPREAD-26NOV21WSUTXST-TXST10",
         "signal": "SHARP",
