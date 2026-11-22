@@ -1,5 +1,5 @@
 {
-  "snapshot_ts": "2026-11-22T05:27:37Z",
+  "snapshot_ts": "2026-11-22T05:47:55Z",
   "stale": false,
   "markets_scanned": 1654,
   "kickoff_source": "kalshi occurrence_datetime - 3h",
@@ -18,7 +18,7 @@
     "NFL": {
       "ok": true,
       "reason": "ok",
-      "ratings_as_of": "2026-11-22T05:27:37Z",
+      "ratings_as_of": "2026-11-22T05:47:55Z",
       "games_priced": 34,
       "n_games": 1844,
       "events_unmatched": 0,
@@ -35,7 +35,7 @@
   "model_flags": [],
   "model_shadow": [
     {
-      "snapshot_ts": "2026-11-22T05:27:37Z",
+      "snapshot_ts": "2026-11-22T05:47:55Z",
       "league": "NFL",
       "kind": "MODEL",
       "market": "SPREAD",
@@ -57,13 +57,13 @@
       "away": "ARI",
       "proj_margin_home": 8.31,
       "proj_total": 44.89,
-      "ratings_as_of": "2026-11-22T05:27:37Z",
+      "ratings_as_of": "2026-11-22T05:47:55Z",
       "kickoff_utc": "2026-11-22T18:00:00Z",
       "kickoff_ct": "Sun Nov 22, 12:00 PM CT",
       "kalshi_url": "https://kalshi.com/markets/kxnflspread/event/kxnflspread-26nov22arikc"
     },
     {
-      "snapshot_ts": "2026-11-22T05:27:37Z",
+      "snapshot_ts": "2026-11-22T05:47:55Z",
       "league": "NFL",
       "kind": "MODEL",
       "market": "SPREAD",
@@ -85,13 +85,13 @@
       "away": "PHI",
       "proj_margin_home": 0.99,
       "proj_total": 49.48,
-      "ratings_as_of": "2026-11-22T05:27:37Z",
+      "ratings_as_of": "2026-11-22T05:47:55Z",
       "kickoff_utc": "2026-11-26T21:30:00Z",
       "kickoff_ct": "Thu Nov 26, 3:30 PM CT",
       "kalshi_url": "https://kalshi.com/markets/kxnflspread/event/kxnflspread-26nov26phidal"
     },
     {
-      "snapshot_ts": "2026-11-22T05:27:37Z",
+      "snapshot_ts": "2026-11-22T05:47:55Z",
       "league": "NFL",
       "kind": "MODEL",
       "market": "SPREAD",
@@ -102,10 +102,10 @@
       "leg1_desc": "Chicago wins by over 2.5 points",
       "side": "NO",
       "price": 0.2,
-      "fair": 0.4053,
+      "fair": 0.4054,
       "contracts": 2,
       "fee_per_contract": 0.015,
-      "edge": 0.1903,
+      "edge": 0.1904,
       "stake": 0.43,
       "size_available": 110.0,
       "fee_multiplier": 1.0,
@@ -113,13 +113,13 @@
       "away": "NO",
       "proj_margin_home": 5.73,
       "proj_total": 46.51,
-      "ratings_as_of": "2026-11-22T05:27:37Z",
+      "ratings_as_of": "2026-11-22T05:47:55Z",
       "kickoff_utc": "2026-11-22T18:00:00Z",
       "kickoff_ct": "Sun Nov 22, 12:00 PM CT",
       "kalshi_url": "https://kalshi.com/markets/kxnflspread/event/kxnflspread-26nov22nochi"
     },
     {
-      "snapshot_ts": "2026-11-22T05:27:37Z",
+      "snapshot_ts": "2026-11-22T05:47:55Z",
       "league": "NFL",
       "kind": "MODEL",
       "market": "SPREAD",
@@ -141,7 +141,7 @@
       "away": "BAL",
       "proj_margin_home": -1.15,
       "proj_total": 47.23,
-      "ratings_as_of": "2026-11-22T05:27:37Z",
+      "ratings_as_of": "2026-11-22T05:47:55Z",
       "kickoff_utc": "2026-11-22T18:00:00Z",
       "kickoff_ct": "Sun Nov 22, 12:00 PM CT",
       "kalshi_url": "https://kalshi.com/markets/kxnflspread/event/kxnflspread-26nov22balcar"
@@ -155,6 +155,7 @@
       "events_no_sharp_line": 0,
       "odds_fetched": "2026-11-22T05:18:37Z",
       "rungs_out_of_range": 318,
+      "odds_too_old": 766,
       "outside_core_price": 6,
       "outside_core_dist": 263,
       "gate": "gated: 27 settled SHARP shadow bets (< 30)"
@@ -173,6 +174,7 @@
       "events_priced": 12,
       "events_no_sharp_line": 16,
       "odds_fetched": "2026-11-22T05:18:37Z",
+      "odds_too_old": 24,
       "gate": "gated: 0 settled SHARP shadow bets (< 30)"
     },
     "CFB ML": {
