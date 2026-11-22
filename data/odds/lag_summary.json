@@ -1,10 +1,11 @@
 {
-  "moves": 77,
+  "moves": 78,
   "evaluated": 77,
   "status": {
     "already_moved": 63,
     "followed": 10,
-    "not_followed": 4
+    "not_followed": 4,
+    "no_kalshi": 1
   },
   "rules": {
     "move_pts": 1.0,
