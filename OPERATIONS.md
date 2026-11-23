@@ -1,3 +1,8 @@
+# SHUT DOWN 2026-11-22 (Emerson, 9:24 PM CT: "shut it all down")
+
+The core-zone test failed its pre-registered stop rule: 31 closed plays / 22 games, −3.2¢ vs Kalshi's close after fee, t −4.6, 19% beat the close. All football: alerted −1.7¢ (111 plays / 60 games), held back −1.6¢ (587 / 110); every exit negative on 611 finished plays.
+All workflows (collect, live, keeper, automerge, check-keys) are DISABLED in GitHub. Any agent that still runs here: do nothing (no dispatch, no build, no message to Emerson) and reply "edge-desk is shut down." Data and code stay; nothing deleted. Restarting needs Emerson's written go-ahead in chat.
+
 # edge-desk operations: how to pick this up in a fresh chat
 
 Any Claude chat can continue the work from this repo alone. Read this, then CLAUDE.md (rules + backlog),
