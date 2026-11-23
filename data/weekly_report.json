@@ -1,7 +1,7 @@
 {
   "proposals": [],
-  "generated_utc": "2026-11-23T02:32:11Z",
-  "generated_ct": "Sun Nov 22, 8:32 PM CT",
+  "generated_utc": "2026-11-23T02:55:43Z",
+  "generated_ct": "Sun Nov 22, 8:55 PM CT",
   "paper_mode": true,
   "rules": {
     "min_bets": 30,
@@ -15,18 +15,18 @@
     "why": "no settled bets yet"
   },
   "model_shadow": {
-    "settled": 202,
-    "staked": 475.49,
-    "fees": 21.35,
-    "pnl": -76.49,
-    "roi": -0.1609,
-    "t_stat": -1.44,
+    "settled": 205,
+    "staked": 476.03,
+    "fees": 21.39,
+    "pnl": -77.03,
+    "roi": -0.1618,
+    "t_stat": -1.54,
     "coin_flip": {
       "sims": 10000,
-      "bets": 202,
-      "real_pnl": -76.49,
-      "sim_median_pnl": -24.49,
-      "beat_pct": 0.2677
+      "bets": 205,
+      "real_pnl": -77.03,
+      "sim_median_pnl": -25.53,
+      "beat_pct": 0.2663
     },
     "by_week": [
       {
@@ -39,15 +39,15 @@
       },
       {
         "week_of": "2026-11-16",
-        "bets": 50,
-        "pnl": -55.0,
-        "roi": -0.873,
-        "claimed_edge_c": 17.09,
-        "realised_edge_c": -28.65
+        "bets": 53,
+        "pnl": -55.54,
+        "roi": -0.8741,
+        "claimed_edge_c": 16.88,
+        "realised_edge_c": -28.34
       }
     ],
     "verdict": "luck / no edge",
-    "why": "t=-1.44, coin-flip beat 27%"
+    "why": "t=-1.54, coin-flip beat 27%"
   },
   "sharp_shadow": {
     "settled": 111,
@@ -335,7 +335,7 @@
     "propose_widen": []
   },
   "settlement": {
-    "pending": 141,
+    "pending": 139,
     "overdue": 0,
     "no_kickoff": 0,
     "grace_hours": 12,
@@ -400,14 +400,14 @@
       "NFL": {
         "SPREAD": {
           "cap_pts": 10.5,
-          "sd": 13.09,
-          "games": 4781,
-          "cap_sd": 0.802
+          "sd": 13.08,
+          "games": 4791,
+          "cap_sd": 0.803
         },
         "TOTAL": {
           "cap_pts": 10.5,
           "sd": 13.24,
-          "games": 4781,
+          "games": 4791,
           "cap_sd": 0.793
         }
       },
