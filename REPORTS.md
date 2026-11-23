@@ -1,5 +1,9 @@
 # Reports (newest first)
 
+## 2026-11-22 SHUT DOWN (chat, 9:24 PM CT)
+- Emerson: "shut it all down" after the core-zone stop rule failed (31 closed / 22 games, −3.2¢ vs close after fee, t −4.6).
+- All workflows disabled, running live + keeper cancelled. Data and code kept. Restart only with Emerson's written OK.
+
 ## 2026-11-23 (builder, 01:45Z run)
 - Nothing to build: backlog #1–#75 all done; nothing broken (live 179 running since 20:57Z, checkpoint 01:31Z, 1,904 fast ticks, 0 throttled, median pass 8.8 s; keeper 88 active; collect 247 stood down during live as designed; automerge #108 green; settlement 138 pending / 0 overdue; no report errors). Nothing shipped, nothing to merge.
 - Tests: 524/524 green on dev rebased onto main.
