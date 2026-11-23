@@ -1,5 +1,12 @@
 # Reports (newest first)
 
+## 2026-11-23 (builder, 01:45Z run)
+- Nothing to build: backlog #1–#75 all done; nothing broken (live 179 running since 20:57Z, checkpoint 01:31Z, 1,904 fast ticks, 0 throttled, median pass 8.8 s; keeper 88 active; collect 247 stood down during live as designed; automerge #108 green; settlement 138 pending / 0 overdue; no report errors). Nothing shipped, nothing to merge.
+- Tests: 524/524 green on dev rebased onto main.
+- Honest results (football, 7:38 PM CT digest): picks vs Kalshi's close after fee still negative (alerted −1.7¢, 112 plays/61 games; held back −1.6¢, 591/111). Exits (625 done): hold −$171.60, sell at tip −$194.59, Auto Sell at fair −$210.16, Auto Sell +10¢ −$194.67; bracket API-only, worse. Last 24h: alerted 1-11 −$28.66, held back 22-95 −$124.52. No plays on the next-36h slate.
+- Verdict rules: thresholds met since read #1; rule 2 (no exit with P&L > 0) and the held-back half of rule 1 (no edge) read the same. Not acted on.
+- Watchdog: live run active, nothing dispatched. Needs Emerson: nothing.
+
 ## 2026-11-22 (builder, 22:45Z run)
 - Nothing to build: backlog #1–#75 all done; nothing broken (live 177 hit its job limit 20:55Z and chained to live 179, checkpoint 22:29Z, 696 fast ticks, 0 throttled, median pass 8.8 s; keeper 86 active; collect stands down during live; automerge #107 green; settlement 125 pending / 0 overdue; no report errors). Nothing shipped, nothing to merge.
 - Tests: 524/524 green on dev rebased onto main.
