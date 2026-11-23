@@ -1,10 +1,10 @@
 {
-  "generated_ts": "2026-11-23T01:27:20Z",
-  "generated_ct": "Sun Nov 22, 7:27 PM CT",
+  "generated_ts": "2026-11-23T01:38:37Z",
+  "generated_ct": "Sun Nov 22, 7:38 PM CT",
   "today_ct": "2026-11-22",
   "snapshot": {
-    "ts": "2026-11-23T01:16:45Z",
-    "ct": "Sun Nov 22, 7:16 PM CT",
+    "ts": "2026-11-23T01:31:56Z",
+    "ct": "Sun Nov 22, 7:31 PM CT",
     "stale": false,
     "markets_scanned": 4164,
     "kickoff_source": "kalshi occurrence_datetime - 3h",
@@ -13,8 +13,8 @@
         "pregame": 3410
       },
       "NFL": {
-        "pregame": 708,
-        "unknown": 46
+        "live": 46,
+        "pregame": 708
       }
     }
   },
@@ -62,7 +62,7 @@
     "max_bet": 10.0
   },
   "signals": {
-    "weekly_ct": "Sun Nov 22, 7:20 PM CT",
+    "weekly_ct": "Sun Nov 22, 7:35 PM CT",
     "scorecards": [
       {
         "name": "SHARP shadow football",
@@ -215,7 +215,7 @@
           "events": 111,
           "t_by_event": -7.91,
           "stale": 0,
-          "pending": 42,
+          "pending": 43,
           "no_close": 1
         }
       }
@@ -339,7 +339,7 @@
         "contract": "Texas Tech wins by over 9.5 points",
         "max_price": 0.42,
         "stake": 3.85,
-        "gone": false,
+        "gone": true,
         "sent_ct": "Sun Nov 22, 4:24 PM CT",
         "kickoff_utc": "2026-11-27T01:00:00Z",
         "kickoff_ct": "Thu Nov 26, 7:00 PM CT",
@@ -353,7 +353,7 @@
         "contract": "Iowa wins by over 3.5 points",
         "max_price": 0.44,
         "stake": 2.75,
-        "gone": false,
+        "gone": true,
         "sent_ct": "Sun Nov 22, 6:26 PM CT",
         "kickoff_utc": "2026-11-27T17:00:00Z",
         "kickoff_ct": "Fri Nov 27, 11:00 AM CT",
