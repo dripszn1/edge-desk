@@ -1,19 +1,19 @@
 {
-  "generated_ts": "2026-11-23T00:26:37Z",
-  "generated_ct": "Sun Nov 22, 6:26 PM CT",
+  "generated_ts": "2026-11-23T00:37:46Z",
+  "generated_ct": "Sun Nov 22, 6:37 PM CT",
   "today_ct": "2026-11-22",
   "snapshot": {
-    "ts": "2026-11-23T00:16:10Z",
-    "ct": "Sun Nov 22, 6:16 PM CT",
+    "ts": "2026-11-23T00:31:12Z",
+    "ct": "Sun Nov 22, 6:31 PM CT",
     "stale": false,
-    "markets_scanned": 4267,
+    "markets_scanned": 4269,
     "kickoff_source": "kalshi occurrence_datetime - 3h",
     "phases": {
       "CFB": {
         "pregame": 3410
       },
       "NFL": {
-        "live": 103,
+        "live": 105,
         "pregame": 754
       }
     }
@@ -62,7 +62,7 @@
     "max_bet": 10.0
   },
   "signals": {
-    "weekly_ct": "Sun Nov 22, 6:19 PM CT",
+    "weekly_ct": "Sun Nov 22, 6:34 PM CT",
     "scorecards": [
       {
         "name": "SHARP shadow football",
@@ -158,12 +158,12 @@
       },
       {
         "name": "MODEL shadow",
-        "settled": 194,
-        "pnl": -76.77,
-        "roi": -0.162,
-        "t_stat": -1.48,
+        "settled": 196,
+        "pnl": -76.17,
+        "roi": -0.1606,
+        "t_stat": -1.43,
         "verdict": "luck / no edge",
-        "why": "t=-1.48, coin-flip beat 26%"
+        "why": "t=-1.43, coin-flip beat 27%"
       }
     ],
     "clv": {
@@ -189,7 +189,7 @@
           "events": 60,
           "t_by_event": -1.9,
           "stale": 0,
-          "pending": 7,
+          "pending": 8,
           "no_close": 0
         }
       },
@@ -215,7 +215,7 @@
           "events": 110,
           "t_by_event": -7.81,
           "stale": 0,
-          "pending": 43,
+          "pending": 44,
           "no_close": 1
         }
       }
@@ -344,6 +344,20 @@
         "kickoff_utc": "2026-11-27T01:00:00Z",
         "kickoff_ct": "Thu Nov 26, 7:00 PM CT",
         "kalshi_url": "https://kalshi.com/markets/kxncaafspread/event/kxncaafspread-26nov26tcuttu"
+      },
+      {
+        "ticker": "KXNCAAFSPREAD-26NOV27NEBIOWA-IOWA4",
+        "signal": "SHARP",
+        "side": "NO",
+        "game": "Nebraska vs Iowa: Spread",
+        "contract": "Iowa wins by over 3.5 points",
+        "max_price": 0.44,
+        "stake": 2.75,
+        "gone": false,
+        "sent_ct": "Sun Nov 22, 6:26 PM CT",
+        "kickoff_utc": "2026-11-27T17:00:00Z",
+        "kickoff_ct": "Fri Nov 27, 11:00 AM CT",
+        "kalshi_url": "https://kalshi.com/markets/kxncaafspread/event/kxncaafspread-26nov27nebiowa"
       },
       {
         "ticker": "KXNCAAFSPREAD-26NOV28GTUGA-UGA36",
